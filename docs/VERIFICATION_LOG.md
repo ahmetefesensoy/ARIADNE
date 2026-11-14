@@ -78,4 +78,25 @@ Windows TCP dinleyici kontrolünde 9090, 8765, 8080, 8081 ve 8082 portlarında d
 - Ham BXW/YKB/RAD ürünleri bu aktarım paketinde sağlanmadı.
 - Spek/araştırmadaki [?] maddeler kendi uygulama aşamasında küçük deneylerle doğrulanacak.
 
-Kaynak verisi veya yeni uygulama olmadığı için pytest/colcon sonuçları üretilmedi ve T0 yeşil işaretlenmedi.
+İlk aktarım anında kaynak verisi veya yeni uygulama olmadığı için pytest/colcon sonuçları üretilmedi ve T0 yeşil işaretlenmedi. Aşağıdaki tarihli T0 kaydı bu başlangıç durumundan sonra elde edildi.
+
+## T0 — 14 Kasım 2026, 12:52 (+03:00)
+
+Kullanıcının uygulama başlangıcı yönlendirmesiyle `docs/proje.md` §4/5/18 esas alınarak Python paketleri, ROS arayüz paketi, bootstrap/test script'leri ve CI sıfırdan yazıldı. [Yerel sonuç kaydı](verification/T0_LOCAL_2026-11-14.json) test raporlarının hash'lerini içerir.
+
+| Gerçek kontrol | Sonuç |
+|---|---|
+| Saf Python pytest | 53 geçti, 0 hata/başarısız/atlanan; Python 3.12.3, pytest 8.3.5. |
+| ROS arayüz build | Jazzy `colcon build` başarılı; 22 msg, 5 srv, 11 action. |
+| Üretilmiş typesupport/CDR testleri | 98 geçti; pytest 7.4.4, sistem Python. |
+| Colcon/CTest toplamı | 99 test (98 pytest + CTest wrapper), 0 hata/başarısız/atlanan. |
+| Kaynak kopya kökeni | Snapshot ve güncel 42 ROS paket dosyasının SHA256 değerleri eşleşti; eski overlay kullanılmadı. |
+| CLI kurulumu | Gerçek venv console entrypoint: `redline-data --version` → `redline-data 0.1.0`. |
+
+İlk denemede ROS ortamının `PYTHONPATH` değeri saf venv'e `launch_testing` eklentisini sızdırdı; yaml import hatası nedeniyle test başlamadı. Saf pip/pytest çağrılarında ROS Python yolu temizlendi, pytest otomatik eklenti yüklemesi yalnız saf test çağrısında kapatıldı. ROS test ortamı bu ayarla değiştirilmedi.
+
+İkinci denemede 50 saf test geçti; ROS configure işlemi Windows yolundaki `İ` karakterini keserek `rosidl_generate_interfaces.cmake:234` hatası verdi. Sistem ROS'u yamalamadan, kaynak hash'i doğrulanan yeni ASCII Linux workspace yoluna geçildi. Son testte eklenen UTC taşma regresyonlarıyla 53 saf test, ROS build ve 98 ROS arayüz testi geçti.
+
+İlk GitHub CI koşusu [43582459866](https://github.com/ahmetefesensoy/redline/actions/runs/43582459866), `rosdep: error: no such option: --yes` nedeniyle bağımlılık adımında durdu. Yerel `rosdep install --help` ile desteklenen `-y` doğrulandı ve workflow düzeltildi. Yeni CI sonucu ayrıca kaydedilecek; bu ilk koşu yeşil değildir.
+
+Sınır: Bu kanıt saf sözleşme testleri ve arayüz build/codec testleridir (ROS skill L1 ve build kısmı L2). Çalışan bir ROS düğümü/DDS grafiği, Gazebo görevi, Unreal köprüsü veya uçtan uca görev testi yapılmadı. T1 veri QA'sı ve T2 rota/altın testleri henüz yoktur.

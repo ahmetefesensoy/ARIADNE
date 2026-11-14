@@ -49,5 +49,8 @@ env -u PYTHONPATH "$REDLINE_VENV/bin/python" -m pip --disable-pip-version-check 
     -e "$REDLINE_ROOT/python/redline_core[test]" \
     -e "$REDLINE_ROOT/python/redline_data[test]"
 
+# Exercise the installed console entry point with ROS's Python path excluded.
+env -u PYTHONPATH "$REDLINE_VENV/bin/redline-data" --version
+
 printf '\nPython environment: %s\n' "$REDLINE_VENV"
 printf 'Next: bash "%s/scripts/test.sh"\n' "$REDLINE_ROOT"

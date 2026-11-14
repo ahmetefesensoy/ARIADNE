@@ -17,7 +17,7 @@
 
 ## Kayıtların anlamı
 
-**Envanter:** 2026-11-14T12:49:43+03:00 · Europe/Istanbul (UTC+03:00). Aşağıdaki saatler mevcut dosya sisteminin son yazma zamanıdır; aktarma, paketleme veya bağlantı düzenlemesini yansıtabilir. İlk araştırmanın yapıldığı anı kanıtlamaz. İlk yayın envanteri [history/](history/) altında tarihsel haliyle korunur; orada eski yolların bulunması dosyaların hâlâ projede bulunduğu anlamına gelmez.
+**Envanter:** 2026-11-14T12:54:16+03:00 · Europe/Istanbul (UTC+03:00). Aşağıdaki saatler mevcut dosya sisteminin son yazma zamanıdır; aktarma, paketleme veya bağlantı düzenlemesini yansıtabilir. İlk araştırmanın yapıldığı anı kanıtlamaz. İlk yayın envanteri [history/](history/) altında tarihsel haliyle korunur; orada eski yolların bulunması dosyaların hâlâ projede bulunduğu anlamına gelmez.
 
 Kullanıcının son yönlendirmesiyle `önceki deneme` klasörü güncel çalışma ağacından çıkarıldı. Görsel tasarım ve 3D varlık üretimi kullanıcıyla birlikte yapılacak; bu görsel yalnız belge gelişimini anlatır.
 
@@ -25,7 +25,7 @@ Kullanıcının son yönlendirmesiyle `önceki deneme` klasörü güncel çalı�
 
 | Belge / kayıt | Son yazma (UTC+03:00) |
 |---|---|
-| [docs/proje.md](../docs/proje.md) | 2026-11-14T12:34:26+03:00 |
+| [docs/proje.md](../docs/proje.md) | 2026-11-14T12:53:02+03:00 |
 | [research/handoff/HANDOFF_MANIFEST.json](../research/handoff/HANDOFF_MANIFEST.json) | 2026-11-14T12:49:05+03:00 |
 | [research/handoff/YENI_DEPO_AKTARIMI.md](../research/handoff/YENI_DEPO_AKTARIMI.md) | 2026-11-14T12:34:26+03:00 |
 | [research/notebook/nasa-metadata-coverage.ipynb](../research/notebook/nasa-metadata-coverage.ipynb) | 2026-11-14T12:48:58+03:00 |

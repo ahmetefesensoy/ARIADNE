@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-14T12:49:43+03:00",
+  "recorded_at": "2026-11-14T12:54:16+03:00",
   "timezone": "Europe/Istanbul",
   "note": "Current filesystem last-write times, not original research dates. Earlier publication snapshot remains in history/. Git dates show actual commits.",
   "final_specification": "docs/proje.md",
@@ -8,9 +8,9 @@
   "records": [
     {
       "path": "docs/proje.md",
-      "bytes": 67050,
-      "sha256": "658015ce463ff1eebc0291048fe88230e516559820ceaca9e09ed36fe0818077",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 67053,
+      "sha256": "00ca8025a018860eea6acf7a71825c2c36a778937ef400295d9d5b72a4061427",
+      "last_write_at": "2026-11-14T12:53:02+03:00"
     },
     {
       "path": "research/handoff/HANDOFF_MANIFEST.json",

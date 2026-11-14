@@ -17,6 +17,16 @@
 
 T0 için `redline_core`/`redline_data` paket temelleri, eksen/birim ve saat sözleşme testleri, §5 ROS arayüzleri ve pytest/colcon CI kurulur. Veri işleme/rota algoritmaları T1/T2 kabul kapılarından önce tamamlanmış ilan edilmez. `CollectSample` gibi §5'te karşılığı olmayan adlar uydurma bir arayüzle doldurulmaz; belirsizlik günlüğe yazılır.
 
+## D003 — ROS arayüzleri ve build kökeni
+
+14 Kasım 2026 · İlk T0 derlemesi/testleri.
+
+- Esas belge düzenleme sonrasında `docs/proje.md` yolundadır. Günlük `journal/PROGRESS.md` altındadır. Bu taşıma kararları uygulama sözleşmelerini değiştirmez.
+- §5'teki 22 msg, 5 srv ve 11 action alan/tipleri uygulanır. Ortak aksiyon Result sabitleri §5.3 metnindeki SUCCEEDED/PARTIAL/CANCELED/FAILED/REJECTED = 0/1/2/3/4'tür. Şema değişikliği ayrı kararla izlenir.
+- `FieldTile.nodata_byte` uint8, dokümanda PNG 8/16-bit olarak geçiyor. Şema aynen korunur; 16-bit nodata üretim/çözümleme kuralı sonraki veri/bridge aşamasından önce doğrulanacaktır.
+- ROS derlemesi, Unicode Windows yolunun yerel rosidl configure hatası nedeniyle içerik hash'leri eşleşen, yeni ASCII Linux workspace'inde yapılır. Eski overlay veya derleme artığı test kanıtı sayılmaz.
+- Yeni kod için açık lisans seçimi henüz yapılmadı; ROS manifestinde `LicenseRef-Project-Pending` ve geçersiz örnek maintainer adresi açık placeholder'dır. Üçüncü taraf lisansları bu karardan etkilenmez.
+
 ## D003 — Depo düzeni (hackathon yayını)
 
 14 Kasım 2026 · Kullanıcının yönlendirmesi.

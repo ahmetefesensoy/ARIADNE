@@ -4,7 +4,7 @@
 
 ## Güncel durum
 
-Fikir aşaması tamamlandı. Kullanıcının son uygulama belgesi `proje.md` esas alınacak; fikir/gelişim belgeleri `research/proje-fikirleri/` altında. `önceki deneme` güncel depodan çıkarıldı. **T0 henüz tamamlanmadı; uygulama başlangıcı yetkilendirildi.** Görsel tasarım ve 3D varlıklar kullanıcıyla birlikte yapılacak.
+Fikir aşaması tamamlandı. Son uygulama belgesi `docs/proje.md`; fikir/gelişim belgeleri `research/proje-fikirleri/` altında. `önceki deneme` güncel depodan çıkarıldı. **T0 yerel kabulü geçti; GitHub CI sonucu doğrulanacak.** Görsel tasarım ve 3D varlıklar kullanıcıyla birlikte yapılacak.
 
 ## Tamamlanan hazırlık
 
@@ -26,7 +26,7 @@ Fikir aşaması tamamlandı. Kullanıcının son uygulama belgesi `proje.md` esa
 
 ## Sonraki çalışma
 
-`proje.md` temelinde T0'ı sıfırdan uygula: repo iskeleti, venv, `redline_msgs`, colcon derlemesi, pytest ve CI. T0 ancak gerçek `colcon build` ve `pytest` başarı kanıtlarıyla tamamlanmış sayılacak. Henüz T1 veya daha ileri bir taş tamamlanmış değildir.
+T0 GitHub CI sonucunu doğrula, ardından T1 veri hattına geç. Henüz T1 veya daha ileri bir taş tamamlanmış değildir. Yerel T0 sonucu: 53 saf Python testi, ROS build, 98 interface pytest testi geçti. [T0 çalışma kaydı](log/2026-11-14-t0-altyapi.md) ve [doğrulama günlüğü](../docs/VERIFICATION_LOG.md).
 
 İlk ortam hazırlığında yeni bağımlılık yükleme veya editör başlatma yapılmadı.
 

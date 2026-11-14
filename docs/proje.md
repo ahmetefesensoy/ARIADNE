@@ -2,7 +2,7 @@
 
 14 Kasım 2026 · Okur: yeni depoda REDLINE'ı sıfırdan kodlayacak AI ajanı ve CRST mühendisleri.
 
-[REDLINE_V3_KILAVUZU.md](research/proje-fikirleri/REDLINE_V3_KILAVUZU.md) **ne** yapılacağını ve **neden** yapılacağını anlatır. Bu belge **nasıl** yapılacağını anlatır: depo yapısı, mesaj tanımları, düğümler, algoritmalar, Unreal sınıfları, testler ve kabul ölçütleri. Fikir sabittir; bu belge kapsamı değiştirmez, yalnız uygulamayı tanımlar.
+[REDLINE_V3_KILAVUZU.md](../research/proje-fikirleri/REDLINE_V3_KILAVUZU.md) **ne** yapılacağını ve **neden** yapılacağını anlatır. Bu belge **nasıl** yapılacağını anlatır: depo yapısı, mesaj tanımları, düğümler, algoritmalar, Unreal sınıfları, testler ve kabul ölçütleri. Fikir sabittir; bu belge kapsamı değiştirmez, yalnız uygulamayı tanımlar.
 
 Etiketler: **[D]** 14 Kasım'da birincil kaynaktan doğrulandı · **[K]** önceki araştırma kaydı · **[?]** kodlamadan önce kontrol et.
 

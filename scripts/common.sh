@@ -17,6 +17,7 @@ redline_set_paths() {
     checkout_key="$(printf '%s' "$REDLINE_ROOT" | sha256sum | cut -c 1-16)"
     cache_root="${XDG_CACHE_HOME:-${HOME:?HOME is required}/.cache}"
     REDLINE_VENV="${REDLINE_VENV:-$cache_root/redline/$checkout_key/venv}"
+    REDLINE_ROS_CACHE="${REDLINE_ROS_CACHE:-$cache_root/redline/ros}"
     REDLINE_TEST_RESULTS="$REDLINE_ROOT/test-results"
     export REDLINE_ROOT REDLINE_VENV REDLINE_SYSTEM_PYTHON
 }

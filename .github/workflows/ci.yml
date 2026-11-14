@@ -33,7 +33,7 @@ jobs:
             python3-rosdep
           rosdep update --rosdistro jazzy
           rosdep install --from-paths ros_ws/src --ignore-src \
-            --rosdistro jazzy --yes
+            --rosdistro jazzy -y
 
       - name: Create isolated Python environment
         run: bash scripts/bootstrap.sh
@@ -49,5 +49,3 @@ jobs:
           if-no-files-found: warn
           path: |
             test-results/
-            ros_ws/build/**/test_results/
-            ros_ws/log/

@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-11-14T12:52:19+03:00",
+  "milestone": "T0",
+  "scope": "Local pure-Python tests, generated ROS interface build and CDR tests; CI still to be checked",
+  "command": "bash scripts/bootstrap.sh && bash scripts/test.sh",
+  "environment": {
+    "distro": "Ubuntu-24.04 (WSL2)",
+    "python": "3.12.3",
+    "ros": "jazzy",
+    "ros_underlay": "/opt/ros/jazzy",
+    "cmake": "3.28.3",
+    "gcc": "13.3.0",
+    "python_test_pytest": "8.3.5",
+    "ros_test_pytest": "7.4.4"
+  },
+  "python_tests": {
+    "passed": 53,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "report": "test-results/run-mmQGHl9Y/python.xml",
+    "report_sha256": "7a2cc4a005925b1dec1899f4ab88e51902ff1cb51b21321d4dcf7b0c59abab69"
+  },
+  "ros_build": {
+    "package": "redline_msgs",
+    "result": "success",
+    "messages": 22,
+    "services": 5,
+    "actions": 11,
+    "workspace": "/home/ahmetefesensoy/.cache/redline/ros/ws-bb9c5405bf26a968-ypci4ljp",
+    "source_tree_sha256": "bb9c5405bf26a968e2152803cbd8e4db1b2fe24e2becfc0baf6220945898fde6",
+    "source_snapshot_verified": true,
+    "post_build_current_source_mismatches": [],
+    "report": "test-results/run-mmQGHl9Y/ros-workspace.json"
+  },
+  "ros_interface_pytest": {
+    "passed": 98,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "report": "test-results/run-mmQGHl9Y/ros/build/redline_msgs/test_results/redline_msgs/interface_contracts.xunit.xml",
+    "report_sha256": "1b3b9f1a7c212b7c27f7e2f9f1ec3f4bf4bed781fa509a4166127b7658b161e2"
+  },
+  "colcon_test_result": "99 tests, 0 errors, 0 failures, 0 skipped (98 pytest cases plus CTest wrapper)",
+  "cli_smoke": "redline-data --version -> redline-data 0.1.0",
+  "limits": [
+    "No DDS graph, ROS application nodes or action servers exercised",
+    "No actual BXW/YKB data processing, Mars CRS or NASA measurements validated",
+    "No Unreal build, bridge, scene, visual design or 3D asset work",
+    "Local raw reports are ignored test artifacts; this record preserves their hashes and results"
+  ]
+}

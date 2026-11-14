@@ -10,6 +10,8 @@
 **/build/
 **/install/
 **/log/
+!/journal/log/
+!/journal/log/*.md
 **/__pycache__/
 **/.pytest_cache/
 *.py[cod]
