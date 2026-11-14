@@ -34,7 +34,7 @@ Sadece topoğrafya + A* + metabolik maliyet birleşimini yeni buluş diye sunmay
 - Mevcut 2 × 2 km sahada fizik ağı yaklaşık 4 m aralıklı. Teker/ayak boyundaki taşların gerçek konumunu bu yüzeyden çıkartamayız.
 - Son canlı açılışta sensör/TF denetimi geçti; medyan gerçek zaman çarpanı yaklaşık 1,0. Önceki RViz gözlemi yaklaşık 19 FPS idi. Bunlar aynı ölçüm değildir ve bütün senaryolarda performans garantisi vermez.
 
-Yerel kanıt: [ROS açıklaması](önceki%20deneme/ros2_ws/README.md), [canlı denetim](önceki%20deneme/ros2_ws/validation/interfaces.json), [arazi manifesti](önceki%20deneme/ros2_ws/src/redline_mars_sim/TERRAIN_PROVENANCE.json).
+Yerel kanıt: ROS açıklaması (bu depoya dahil edilmedi), canlı denetim (bu depoya dahil edilmedi), arazi manifesti (bu depoya dahil edilmedi).
 
 ### Tam rover deposu
 

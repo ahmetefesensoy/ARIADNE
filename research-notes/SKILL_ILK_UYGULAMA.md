@@ -63,4 +63,4 @@ Dosya bütünlüğü ve negatif kontrol sonuçları
 
 Bu, bütün dış skill bilgi/örneklerinin test edildiği anlamına gelmez. ROS/Unreal
 başlatılmadı; ek sağlayıcı, otomatik hook veya ücretli API etkinleştirilmedi.
-Kaynak/seçim ayrıntıları [skill planında](../SKILL_PLANI.md).
+Kaynak/seçim ayrıntıları [skill planında](../research/proje-fikirleri/SKILL_PLANI.md).

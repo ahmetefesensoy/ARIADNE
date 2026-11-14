@@ -21,7 +21,7 @@ Kod bulguları:
 - Yerel `Build.version`, Unreal **5.8.4** sürümünü doğruluyor. ROS/Gazebo ortamı WSL Ubuntu 24.04, Jazzy/Harmonic; donanım son ölçümde RTX 5080/16 GB VRAM ve yaklaşık 32 GB RAM.
 - Tam rover çalışma ağacı `C:/Users/USER/Desktop/roversim27` altında. Oradaki kaydedilmemiş değişiklikler bu araştırmada korunuyor. Yerel özelliklerin tamamını GitHub'daki eski commit'e atfetmemek gerekiyor.
 
-Yerel başlangıç kaynakları: [ROS açıklaması](önceki%20deneme/ros2_ws/README.md), [arazi manifesti](önceki%20deneme/ros2_ws/src/redline_mars_sim/TERRAIN_PROVENANCE.json), [sentetik rota motoru](önceki%20deneme/redline-demo/planner.js), [önceki araştırma](SPACE_APPS_ARASTIRMA.md).
+Yerel başlangıç kaynakları: ROS açıklaması (bu depoya dahil edilmedi), arazi manifesti (bu depoya dahil edilmedi), sentetik rota motoru (bu depoya dahil edilmedi), [önceki araştırma](SPACE_APPS_ARASTIRMA.md).
 
 ## 2. Sekiz farklı fikir adayı
 
@@ -182,7 +182,7 @@ Bizim önerdiğimiz hazırlık karşılığı: etki için değişen görev karar
 
 Mevcut manifestin yaklaşık sınırı **137.427947–137.461688°E, −4.824993…−4.791252° planetocentric enlem**. JPL PLACES v42.0 için `localized_pos.csv` içindeki 1.470 satırın ROVER kayıtları ve `localized_interp.csv` içindeki 49.315 satır bu kutuyla sorgulandı: **iki tabloda da eşleşme sıfır**. Bu, bu tabloların kapsamındaki konum örnekleri için geçerlidir; uzaktan bu alana bakan fotoğraf olmadığı sonucunu vermez.
 
-Etiketin zaman kapsamı Nisan 2026'da bitiyor. Daha sonraki/yayımlanmamış veri ve görüntü bakış alanı ayrıca değerlendirilir. Sorgu yöntemi, kaynak URL'leri, versiyon ve yakın konum örneği [AOI araştırma notunda](research-notes/Gale_PLACES_AOI_KONTROLU.md) ve [JSON kaydında](research-notes/Gale_PLACES_AOI_KONTROLU.json) bulunuyor.
+Etiketin zaman kapsamı Nisan 2026'da bitiyor. Daha sonraki/yayımlanmamış veri ve görüntü bakış alanı ayrıca değerlendirilir. Sorgu yöntemi, kaynak URL'leri, versiyon ve yakın konum örneği [AOI araştırma notunda](../../research-notes/Gale_PLACES_AOI_KONTROLU.md) ve [JSON kaydında](../../research-notes/Gale_PLACES_AOI_KONTROLU.json) bulunuyor.
 
 **Önerim:** Gale'de kalıp belgeli bir Curiosity gözlemi çevresinde yeni küçük AOI seçmek ilk seçenek. Yakındaki bir PLACES konumu yalnız aday merkezdir, otomatik bilim durağı değil. İkinci seçenek Jezero'da HiRISE/CTX ve Perseverance gözlemlerini birleştirmek. Jezero ürünleri Gale sahasına katman olarak eklenemez; ayrı bölgedir.
 

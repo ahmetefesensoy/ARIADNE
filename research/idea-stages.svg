@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">REDLINE: proje fikir aşamaları ve araştırmalar</title>
+  <desc id="desc">Araştırma, fikrin gelişimi, V3 kararı ve son proje.md belgesi. Fikir aşaması tamamlandı; sonraki adım T0 uygulamasıdır.</desc>
+  <rect width="1200" height="260" rx="18" fill="#101820"/>
+  <g font-family="Arial, sans-serif" fill="#f5f7fa">
+    <text x="32" y="38" font-size="23" font-weight="700">REDLINE · Fikirden uygulama planına</text>
+    <text x="32" y="63" fill="#b9c6d1" font-size="14">Belge gelişiminin kavramsal sırası · kesin tarih/saat kayıtları Research dizininde</text>
+    <g fill="#213242" stroke="#52697c"><rect x="32" y="91" width="252" height="112" rx="10"/><rect x="326" y="91" width="252" height="112" rx="10"/><rect x="620" y="91" width="252" height="112" rx="10"/></g>
+    <rect x="914" y="91" width="252" height="112" rx="10" fill="#493126" stroke="#ffb080"/>
+    <g font-size="15" fill="#b9c6d1"><text x="50" y="116">01</text><text x="344" y="116">02</text><text x="638" y="116">03</text><text x="932" y="116">04 · SON KARAR</text></g>
+    <g font-size="22" font-weight="700"><text x="50" y="149">Araştırma</text><text x="344" y="149">Fikrin gelişimi</text><text x="638" y="149">V3 kararı</text><text x="932" y="149">proje.md</text></g>
+    <g font-size="14" fill="#d5dee5"><text x="50" y="180">Veriler · kaynaklar · araçlar</text><text x="344" y="180">Görevler · roller · eleştiri</text><text x="638" y="180">BXW + YKB · tek EVA</text><text x="932" y="180">Fikir aşaması tamamlandı</text></g>
+    <g font-size="25" fill="#ffb080"><text x="296" y="152">→</text><text x="590" y="152">→</text><text x="884" y="152">→</text></g>
+    <text x="32" y="237" font-size="15" fill="#b9c6d1">Sıradaki aşama: T0 yazılım altyapısı ve testler. Görsel tasarım / 3D, kullanıcıyla birlikte yapılacak.</text>
+  </g>
+</svg>

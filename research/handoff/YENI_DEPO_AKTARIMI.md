@@ -3,8 +3,8 @@
 14 Kasım 2026 · Yeni uygulama sıfırdan yazılacak. Bu belge burada bulunan
 skill, araştırma ve makine bağlamının yeni yerde nasıl kullanılacağını açıklar.
 
-**Yeni ajan için esas dosyalar:** [v3 uygulama spesifikasyonu](REDLINE_V3_UYGULAMA_SPEKI.md)
-§0–4 ve §18, ardından [v3 kılavuzunun](REDLINE_V3_KILAVUZU.md) ilgili bölümü.
+**Yeni ajan için esas dosyalar:** [v3 uygulama spesifikasyonu](../proje-fikirleri/REDLINE_V3_UYGULAMA_SPEKI.md)
+§0–4 ve §18, ardından [v3 kılavuzunun](../proje-fikirleri/REDLINE_V3_KILAVUZU.md) ilgili bölümü.
 `PROJE_KILAVUZU.md` ve diğer eski taslaklar tarihsel başvurudur; v3 ile
 çelişirlerse eski kararı uygulama. Kullanıcının sonraki açık yönlendirmesi esastır.
 
@@ -36,7 +36,7 @@ klasördeki `references`, `scripts`, `assets`, `agents` ve lisanslar da gerekir.
 | Analiz | `jupyter-notebook` |
 | GitHub | `gh-fix-ci`, `gh-address-comments` |
 
-Kaynaklar, lisans ve sabit commit'ler [skill planında](SKILL_PLANI.md), tam
+Kaynaklar, lisans ve sabit commit'ler [skill planında](../proje-fikirleri/SKILL_PLANI.md), tam
 dosya hash'leri `.agents/skills-manifest.json` içinde. 17 dış kaynak skill'i
 değiştirilmedi. `redline-space-apps` bu proje için yazılmış yerel skill'dir.
 

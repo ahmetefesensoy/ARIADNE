@@ -4,7 +4,7 @@
 
 ## Güncel durum
 
-Başlangıç paketi aktarıldı, bütünlüğü doğrulandı ve gerçek makinenin ilk envanteri çıkarıldı. **T0 henüz tamamlanmadı.** Kullanıcı detaylı uygulama/kod dosyasını ayrıca göndereceğini belirtti; bu aşamada uygulama kodu, ROS mesaj paketi, venv, Unreal projesi veya CI oluşturulmadı.
+Fikir aşaması tamamlandı. Kullanıcının son uygulama belgesi `proje.md` esas alınacak; fikir/gelişim belgeleri `research/proje-fikirleri/` altında. `önceki deneme` güncel depodan çıkarıldı. **T0 henüz tamamlanmadı; uygulama başlangıcı yetkilendirildi.** Görsel tasarım ve 3D varlıklar kullanıcıyla birlikte yapılacak.
 
 ## Tamamlanan hazırlık
 
@@ -26,7 +26,7 @@ Başlangıç paketi aktarıldı, bütünlüğü doğrulandı ve gerçek makineni
 
 ## Sonraki çalışma
 
-Kullanıcının detaylı dosyasını okuyup mevcut v3 sözleşmeleriyle karşılaştır. Ardından T0'ı sıfırdan uygula: repo iskeleti, venv, `redline_msgs`, colcon derlemesi, pytest ve CI. T0 ancak gerçek `colcon build` ve `pytest` başarı kanıtlarıyla tamamlanmış sayılacak. Henüz T1 veya daha ileri bir taş tamamlanmış değildir.
+`proje.md` temelinde T0'ı sıfırdan uygula: repo iskeleti, venv, `redline_msgs`, colcon derlemesi, pytest ve CI. T0 ancak gerçek `colcon build` ve `pytest` başarı kanıtlarıyla tamamlanmış sayılacak. Henüz T1 veya daha ileri bir taş tamamlanmış değildir.
 
 İlk ortam hazırlığında yeni bağımlılık yükleme veya editör başlatma yapılmadı.
 

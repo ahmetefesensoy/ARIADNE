@@ -65,7 +65,7 @@ Bu tur ikinci revizyondaki görev/kanıt/asistan modelini astronotun yaşayacağ
 - Windows UE 5.8.4 köprüsünün derleme/çalışma doğrulaması; drone aerodinamiği ve temas/cihaz modellerinin geçerliği.
 - İnsan kaynak modeli ve eğitim değerlendirmesinin gerçek astronotlara genellenebilirliği.
 
-Bu belirsizlikler gizlenmeden ana kılavuza aktarıldı. Üç tur tamamlandı; sonuçlar [PROJE_KILAVUZU.md](../PROJE_KILAVUZU.md) içinde birleştirildi.
+Bu belirsizlikler gizlenmeden ana kılavuza aktarıldı. Üç tur tamamlandı; sonuçlar [PROJE_KILAVUZU.md](../research/proje-fikirleri/PROJE_KILAVUZU.md) içinde birleştirildi.
 
 ## Birleştirme sonrası belge kontrolü
 

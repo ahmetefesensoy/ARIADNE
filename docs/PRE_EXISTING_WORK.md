@@ -9,3 +9,7 @@ Aktarılan v3 tasarım/spek, eski tasarım belgeleri, araştırma notları, kons
 Bu yeni hazırlıkta yazılanlar: `docs/PROGRESS.md`, `docs/VERIFICATION_LOG.md` ve bu belge. Ayrıca uygulama kodu yazmadan makine envanteri ve geçici HTTP localhost deneyi yapıldı. Sonraki Research yayınında README okuma dizini, `research/` tarih/hash kayıtları ve `docs/AI_DISCLOSURE.md` eklendi. Bunlar araştırmanın sunumu ve kayıtlarıdır.
 
 Kullanıcının önceki oturumda ürettirdiği Tripo astronotunun yedeği kullanıcı profilinde kalır; başlangıç paketine veya bu yeni çalışma ağacına kopyalanmadı. Tripo anahtarları, kişisel Codex ayarları ve hesap oturumları bu depoya taşınmadı.
+
+## Güncel düzenleme
+
+Kullanıcının son yönlendirmesiyle ilk aktarımda bulunan `önceki deneme` altındaki 6 araştırma/provenance dosyası güncel ağaçtan kaldırıldı. Önceki yayın commit'inde geri alınabilir; Git geçmişi yeniden yazılmadı. Fikir ve tasarım notları `research/proje-fikirleri/` altına taşındı, aktarım belgeleri `research/handoff/` altında tutuldu. İlk yayın envanteri `research/history/` altında tarihsel haliyle korunur; mevcut dosya listesi değildir. `proje.md` içeriğinin yalnız belge bağlantıları yeni yollara uyarlandı.

@@ -2,14 +2,14 @@
 
 14 Kasım 2026 · **17 dış kaynak skill kuruldu; projeye özel 1 skill yazıldı.**
 
-Sıfırdan başlanacak başka depo/oturum için [aktarım listesi ve başlangıç paketi](YENI_DEPO_AKTARIMI.md). Proje skill'i v1.1 artık v3 kılavuzu ve uygulama spesifikasyonuna yönlendirir.
+Sıfırdan başlanacak başka depo/oturum için [aktarım listesi ve başlangıç paketi](../handoff/YENI_DEPO_AKTARIMI.md). Proje skill'i v1.1 artık v3 kılavuzu ve uygulama spesifikasyonuna yönlendirir.
 
 Kurulum bu depoya özel `.agents/skills` altında. Mevcut kullanıcı skill'leri
 değiştirilmedi. Kaynak commit'leri, lisanslar ve dosya hash'leri
-[manifestte](.agents/skills-manifest.json). İlk kullanım çıktıları:
-[UE bağlamı](.agents/ue-project-context.md),
-[NASA notebook'u](output/jupyter-notebook/nasa-metadata-coverage.ipynb) ve
-[uygulama kaydı](research-notes/SKILL_ILK_UYGULAMA.md).
+[manifestte](../../.agents/skills-manifest.json). İlk kullanım çıktıları:
+[UE bağlamı](../../.agents/ue-project-context.md),
+[NASA notebook'u](../../output/jupyter-notebook/nasa-metadata-coverage.ipynb) ve
+[uygulama kaydı](../../research-notes/SKILL_ILK_UYGULAMA.md).
 
 ## Kurulanlar
 

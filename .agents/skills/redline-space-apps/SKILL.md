@@ -10,14 +10,14 @@ metadata:
 
 Use this project's actual state and the user's current direction. The design is
 allowed to change. Read [README](../../../README.md) first. The current design is
-[REDLINE v3](../../../REDLINE_V3_KILAVUZU.md); implementation starts from
-[the v3 spec](../../../REDLINE_V3_UYGULAMA_SPEKI.md), sections 0–4 and 18.
+[REDLINE v3](../../../research/proje-fikirleri/REDLINE_V3_KILAVUZU.md); implementation starts from
+[the v3 spec](../../../research/proje-fikirleri/REDLINE_V3_UYGULAMA_SPEKI.md), sections 0–4 and 18.
 Older guides and research notes are supporting history, not the current scope.
 Consult only the relevant sections of
-[source catalog](../../../KAYNAK_VE_VARLIK_KATALOGU.md),
+[source catalog](../../../research/proje-fikirleri/KAYNAK_VE_VARLIK_KATALOGU.md),
 [site research](../../../research-notes/SAHA_VE_BILIM_ISTASYONU.md) or
 [mission proof plan](../../../research-notes/GOREV_DEGERI_VE_KANIT_PLANI.md).
-For a fresh repository, use [the handoff](../../../YENI_DEPO_AKTARIMI.md).
+For a fresh repository, use [the handoff](../../../research/handoff/YENI_DEPO_AKTARIMI.md).
 
 ## Choose the specialist
 
@@ -110,6 +110,6 @@ actual submission. Keep prior work, new work, sources and required AI disclosure
 traceable. Do not infer a year's rules from an older event or publish a private
 repository merely because a submission is planned.
 
-Use [the skill plan](../../../SKILL_PLANI.md) for installation/source details.
+Use [the skill plan](../../../research/proje-fikirleri/SKILL_PLANI.md) for installation/source details.
 Update the relevant design or implementation artifact when the task calls for
 work; a list of ideas alone is not completion of an implementation request.

@@ -287,7 +287,7 @@ flowchart LR
 | `redline_safety` | uçuş kuralları (FRET → Ogma → Copilot izleyicileri), `safety_aggregator` (§18 M9) |
 | `redline_comm` | `link_manager` (DEM görüş hattı, mesaj düşürme/geciktirme), isteğe bağlı DTN geçidi (§18 M10) |
 
-ROS düğüm grafiği. v0.3 tasarımından ([REDLINE_RESEARCH.md §6.3](önceki%20deneme/docs/REDLINE_RESEARCH.md)) v3'e uyarlandı:
+ROS düğüm grafiği. v0.3 tasarımından (REDLINE_RESEARCH.md §6.3 (bu depoya dahil edilmedi)) v3'e uyarlandı:
 
 | Düğüm | Dil | Girdi → çıktı |
 |---|---|---|
@@ -532,7 +532,7 @@ Birleşme kapıları (kapsam kesme değil, entegrasyon kontrolü):
 - Cesium Mars'ın çevrimdışı kullanımı
 - teslim saatinin kesin değeri
 
-Konsey karar ve değerlendirme çıktılarının [kalıcı araştırma kopyası](research-notes/council-v3-source/README.md). Özgün oturumun TEMP yolu ve dosya hash'leri [kaynak kaydında](research-notes/council-v3-source/SOURCE.json) korunur; tekrarlanan uzun prompt kopyaları aktarılmadı.
+Konsey karar ve değerlendirme çıktılarının [kalıcı araştırma kopyası](../../research-notes/council-v3-source/README.md). Özgün oturumun TEMP yolu ve dosya hash'leri [kaynak kaydında](../../research-notes/council-v3-source/SOURCE.json) korunur; tekrarlanan uzun prompt kopyaları aktarılmadı.
 
 ---
 
@@ -710,7 +710,7 @@ Kütüphaneler: GDAL, rasterio, pyproj, numpy/scipy, pystac, SpiceyPy, pvl/pds4_
 
 ## 18. Teorik modüller (v0.3'ten taşınan çekirdek)
 
-Ayrıntılı formüller ve kaynaklar: [REDLINE_RESEARCH.md §5](önceki%20deneme/docs/REDLINE_RESEARCH.md). Fikirler araştırmadır; kod yeni depoda yazılır. Aşağıdaki sayılar v0.3 kaba hesaplarıdır [K].
+Ayrıntılı formüller ve kaynaklar: REDLINE_RESEARCH.md §5 (bu depoya dahil edilmedi). Fikirler araştırmadır; kod yeni depoda yazılır. Aşağıdaki sayılar v0.3 kaba hesaplarıdır [K].
 
 | Modül | Ne yapar | Ana yöntem | v3'teki yeri |
 |---|---|---|---|

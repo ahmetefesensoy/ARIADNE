@@ -7,7 +7,8 @@
     "Pinned revisions; no post-install scripts, hooks or paid API calls were enabled.",
     "Source licences/notices are included; root licences were added to selected subdirectories when needed.",
     "Git checkout may normalize line endings; all 17 upstream SKILL.md entries match after CRLF/LF normalization.",
-    "Skills are instructions/resources, not installed runtime/editor dependencies."
+    "Skills are instructions/resources, not installed runtime/editor dependencies.",
+    "2026-11-14: local redline-space-apps links relocated with project idea documents; upstream skills unchanged."
   ],
   "skills": [
     {
@@ -685,7 +686,7 @@
       "upstream_skill_modified": false,
       "installed_files_sha256": {
         "agents/openai.yaml": "7310d60518a60942ee6641d5d81f6f661c8a10a1f963f3bd83f12b0e8c37e3ae",
-        "SKILL.md": "02fe6db39dcceb3616c846f33d716287e2aa9d95f5a56bd51aac6851bbe15d31"
+        "SKILL.md": "ac5303cc76f4860d1daf4c43f1c944d48710ffd52861d0b95dafb5787966151c"
       },
       "local_version": "1.1",
       "local_revision_note": "2026-11-14: v3 guide/spec routing, BXW/YKB roles, separate physics/mission clocks, fresh-implementation handoff."

@@ -2,7 +2,7 @@
 
 13 Kasım 2026 · Varsayımsal jüri eleştirisi · Resmî değerlendirme veya puan değildir.
 
-**14 Kasım düzeltmesi:** Bu sert eleştirinin bazı testleri gereksinim gibi fazla katı ifade edilmişti. Aşağıdaki §8 güncel değerlendirmeyi belirtir; uygulama kapsamı [ana kılavuzun sürüm 2'sidir](../PROJE_KILAVUZU.md).
+**14 Kasım düzeltmesi:** Bu sert eleştirinin bazı testleri gereksinim gibi fazla katı ifade edilmişti. Aşağıdaki §8 güncel değerlendirmeyi belirtir; uygulama kapsamı [ana kılavuzun sürüm 2'sidir](../research/proje-fikirleri/PROJE_KILAVUZU.md).
 
 **Hüküm:** Tasarım challenge'ı kavramsal olarak içeriyor; ana ürün kimliği ise harita/karar aracından geniş bir robotik eğitim oyununa kaymış. Çalışan çoklu NASA veri entegrasyonu henüz gösterilmedi. Araştırma dokümantasyonu güçlü, yarışma katkısının kanıtı açık. Bu ayrım “henüz tasarım” notuyla dürüstçe açıklanabilir ama o not uygulama kanıtının yerine geçmez.
 
@@ -27,7 +27,7 @@ Kullanıcının sağladığı metnin çekirdeği: Mars'ta belirli bir konum/rota
 | “pH, gaz, mineral listesi neden gerekli?” | Ölçüm çeşitliliği bilim amacının önüne geçebilir | Tek araştırma sorusu ve o soruya gerekli örnek/cihaz/konum |
 | “Basit bir haritadan daha iyi olduğunuzu nereden bilelim?” | Bilgi etkisini tahmin eden model ve adil karşılaştırma henüz yok | Keşifsiz/genel keşif/görev odaklı keşif koşuları; sonuç ve maliyet |
 
-Yerel [AOI incelemesi](Gale_PLACES_AOI_KONTROLU.md), sorgulanan iki tabloda konum örneği bulamadı. Bu görüntü yokluğunu kanıtlamaz; fakat hedef–yer gözlemi–arazi bağı henüz tamamlanmadı. [Katalogdaki](../KAYNAK_VE_VARLIK_KATALOGU.md) adayları uygulanmış veri birleşimi gibi sunmamak gerekir.
+Yerel [AOI incelemesi](Gale_PLACES_AOI_KONTROLU.md), sorgulanan iki tabloda konum örneği bulamadı. Bu görüntü yokluğunu kanıtlamaz; fakat hedef–yer gözlemi–arazi bağı henüz tamamlanmadı. [Katalogdaki](../research/proje-fikirleri/KAYNAK_VE_VARLIK_KATALOGU.md) adayları uygulanmış veri birleşimi gibi sunmamak gerekir.
 
 ## 3. Survival'ı somut karara çevirmek
 

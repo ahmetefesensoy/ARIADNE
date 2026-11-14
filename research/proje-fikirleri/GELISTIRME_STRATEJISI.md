@@ -47,7 +47,7 @@ Yöntemin davranışını görmek için tamamen uydurulmuş bir dolambaç maliye
 | 0,50 | 20,000 | 19,750 | 19,400 | Rover |
 | 0,80 | 20,000 | 22,000 | 22,520 | Yeni gözlem yok; uzun yol |
 
-Hesap Bayes güncellemesi ve her gözlemden sonra yeniden rota seçimiyle yapıldı. Sonuç, daha doğru sensörün veya daha çok keşfin her durumda daha iyi olmadığını gösterir; gerçek sistem için avantaj kanıtlamaz. Varsayımlar ve tüm sonuçlar [örnek hesap kaydında](research-notes/karar_degeri_ornek_hesap.json) bulunur.
+Hesap Bayes güncellemesi ve her gözlemden sonra yeniden rota seçimiyle yapıldı. Sonuç, daha doğru sensörün veya daha çok keşfin her durumda daha iyi olmadığını gösterir; gerçek sistem için avantaj kanıtlamaz. Varsayımlar ve tüm sonuçlar [örnek hesap kaydında](../../research-notes/karar_degeri_ornek_hesap.json) bulunur.
 
 Geliştirme çizgisi: maliyetli aday seçimi → gözlem sonrası yeniden planlama → senaryo örneklemesiyle belirsizlik hesabı → gerekirse daha uzun ufuklu görev politikası. Tam bir POMDP çözümünü başlangıç bağımlılığı yapmak gerekmez. Araçlar arasında iş paylaşımı için önce yetenek/enerji/erişim filtresi ve küçük aday kümesi; iş sayısı büyüyünce çizelgeleme optimizasyonu değerlendirilebilir.
 
@@ -83,7 +83,7 @@ Akış: bilim sorusu → görüntü/hedef bağlamı → erişim ve duruş → uy
 
 ### Saha seçiminin kapısı
 
-Mevcut 2 × 2 km Gale arazisinde, önceki PLACES sorgusundaki iki tabloda rover konum örneği bulunmadı. Bu, arazide hiçbir görüntü olmadığı anlamına gelmez. Yine de gerçek bilim durağı kanıtlanmadan görev hedefleri oraya sabitlenmez. [Yerel sorgu kaydı](research-notes/Gale_PLACES_AOI_KONTROLU.md).
+Mevcut 2 × 2 km Gale arazisinde, önceki PLACES sorgusundaki iki tabloda rover konum örneği bulunmadı. Bu, arazide hiçbir görüntü olmadığı anlamına gelmez. Yine de gerçek bilim durağı kanıtlanmadan görev hedefleri oraya sabitlenmez. [Yerel sorgu kaydı](../../research-notes/Gale_PLACES_AOI_KONTROLU.md).
 
 Önce bir kampanyadan sınırlı sayıda gerçek hedef/sol ve ürün ID'si seçilir. Görüntü/ölçüm konumu ve baktığı alan doğrulanır; sonra bu noktaları kapsayan DEM/ortho ürünü seçilir. Raster örtüşmesi, no-data, çözünürlük, koordinat ve ürün sürümü kontrol edildikten sonra habitat ve senaryo nesneleri yerleştirilir. Bugünkü Gale arazisi bağlantı/performans deneyi olarak kullanılmaya devam edebilir. Yeni kampanya sahası henüz üretilmedi.
 

@@ -1,6 +1,6 @@
 # REDLINE — Görevlerin değeri ve kanıt planı
 
-14 Kasım 2026 · Tasarım kararı · Ana tanım: [Proje kılavuzu](../PROJE_KILAVUZU.md)
+14 Kasım 2026 · Tasarım kararı · Ana tanım: [Proje kılavuzu](../research/proje-fikirleri/PROJE_KILAVUZU.md)
 
 **Geliştirme kararı:** Büyük mühendislik kapsamı korunacak; ilk birleşik gösterim, aynı bilim alanına farklı yollardan erişen astronot ve roverın gerekçeli bir örnekleme işi yapması olacak. Keşif, örnek, analiz ve sonraki plan aynı kampanya kaydından ilerleyecek. Sondaj ve istasyon onarımı uygun görev profillerinde bu akışı genişletecek.
 
@@ -126,4 +126,4 @@ Veri QA'sı ile köprü deneyi paralel ilerleyebilir; bilimsel hedefli koşu do�
 
 Seçilen challenge belirli Mars konumu/rotası için katmanlı, çoklu görev verisiyle insanın bilim yürüyüşünü desteklemeyi ister. Bu görev akışı o amaç için tasarlanmıştır. Challenge metninin erişilebilir [organizatör kopyası](https://hackathlone.com/challenges/interplanetary-survival-guide-martian-map) ile [resmî sayfası](https://www.spaceappschallenge.org/2026/challenges/interplanetary-survival-guide-martian-map/) ana referanslardır; resmî kayıt/kaynak ve yerel etkinlik koşulları son kontrolde doğrulanır. Ödül, eğitim sertifikası veya NASA tarafından kullanım sözü verilmez.
 
-Bilim ürünleri ve pH sınırları [saha notunda](SAHA_VE_BILIM_ISTASYONU.md), mühendislik sözleşmeleri ve varlık/teslim koşulları [ana kılavuzda](../PROJE_KILAVUZU.md), edinme kaynakları [katalogda](../KAYNAK_VE_VARLIK_KATALOGU.md) tutulur. Farklılık halinde sürüm 3 görev tanımı ve açık uygulama durumu esas alınır.
+Bilim ürünleri ve pH sınırları [saha notunda](SAHA_VE_BILIM_ISTASYONU.md), mühendislik sözleşmeleri ve varlık/teslim koşulları [ana kılavuzda](../research/proje-fikirleri/PROJE_KILAVUZU.md), edinme kaynakları [katalogda](../research/proje-fikirleri/KAYNAK_VE_VARLIK_KATALOGU.md) tutulur. Farklılık halinde sürüm 3 görev tanımı ve açık uygulama durumu esas alınır.
