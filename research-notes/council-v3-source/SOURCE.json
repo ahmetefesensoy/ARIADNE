@@ -1,0 +1,78 @@
+{
+  "copied_on": "2026-11-14",
+  "kind": "prior council outputs, not new runtime or independent scientific validation",
+  "original_directory": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\8efabc9639ac6d97\\02e6e77a-82e1-4580-b26e-af84c4017eca\\scratchpad\\council\\20261114-redline-v2",
+  "excluded": "Repeated stage2 prompt copies omitted; review outputs and label mapping retained.",
+  "files": [
+    {
+      "path": "aggregate.json",
+      "bytes": 1177,
+      "sha256": "25d6e471e67b900e9a798b87f66c289ac3ea4e7f244af0e5185c08dc380968db"
+    },
+    {
+      "path": "question.md",
+      "bytes": 4704,
+      "sha256": "87060c2368ce0be2b89e048093c9bf8693013b0a344746712332c34706b8bd7c"
+    },
+    {
+      "path": "draft_v1.md",
+      "bytes": 7808,
+      "sha256": "e8808a2e3631126e20b001d49d68627215ce502403bf7ccabdd50aae653cdffe"
+    },
+    {
+      "path": "final.md",
+      "bytes": 6159,
+      "sha256": "bc3f0d55868476e7336735098e77a9ab1dde9288ab078ba6bad855d4e3021f11"
+    },
+    {
+      "path": "stage3_pessimist_brief.md",
+      "bytes": 1783,
+      "sha256": "656a611a80f15ce13fac07edeb6495d90ecfb89b3fb22b0d67a720b38d10d5f7"
+    },
+    {
+      "path": "stage2_prompts/labels.json",
+      "bytes": 109,
+      "sha256": "64c49fb53c75aded7a9d2ded3dcb8c77dfc57aabe903cd0f78079e43eff3a002"
+    },
+    {
+      "path": "stage1/fable.md",
+      "bytes": 18527,
+      "sha256": "f816abe20d1a8f604248a44c43b622d3f2ccc57d92fa67ef5e88f44a6168c23f"
+    },
+    {
+      "path": "stage1/haiku.md",
+      "bytes": 19192,
+      "sha256": "b887c1268872ad6d7bd6f6bbb304bd0d074353af13e168c872268e5aee88c744"
+    },
+    {
+      "path": "stage1/opus.md",
+      "bytes": 33909,
+      "sha256": "0cbed5ae2008638f5aa7411b59d3d798979e463e4608b8c20be9b25e70641264"
+    },
+    {
+      "path": "stage1/sonnet.md",
+      "bytes": 12207,
+      "sha256": "e79e48bef4395d7b00196f9ae1009089f51f84ab622e228d4a1c1a5f65b50724"
+    },
+    {
+      "path": "stage2/fable.md",
+      "bytes": 13146,
+      "sha256": "f3cdfb60fb0bd5f207ceff3444bf8b1c73ef4e07cbd108a26da57dc7ab23e102"
+    },
+    {
+      "path": "stage2/haiku.md",
+      "bytes": 14395,
+      "sha256": "8b9e7dba6eb23d543500d6e8c8f9731b81ea252cea2958f672e69b15abe16151"
+    },
+    {
+      "path": "stage2/opus.md",
+      "bytes": 14088,
+      "sha256": "c2762dbb7ced68ed7d167c310cc695894c9a98f3f4d45c4ab2147888fa6b9ef7"
+    },
+    {
+      "path": "stage2/sonnet.md",
+      "bytes": 6114,
+      "sha256": "c6efcfeea5e69ba172d3cd8877a75371fa4af431effc1b9686e8da5ea0f1b52d"
+    }
+  ]
+}

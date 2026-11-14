@@ -1,0 +1,6 @@
+interface:
+  display_name: "Quorum"
+  short_description: "Choose Auto, Direct, Mini, Full, or Super"
+  default_prompt: "Use $quorum. Ask me to choose a reasoning mode before reviewing my task."
+policy:
+  allow_implicit_invocation: true

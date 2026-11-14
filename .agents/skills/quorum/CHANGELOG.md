@@ -1,0 +1,276 @@
+# Changelog
+
+All notable changes to Quorum are documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## Unreleased
+
+## [0.2.0] - 2026-11-07
+
+### Added
+
+- Add optional local global memory with explicit per-record project sharing,
+  destination preview and admission, requested historical reads, destination
+  revocation, and exact-scope global deletion. Global memory defaults off and
+  does not automatically capture, retrieve, or reuse decisions.
+- Bind global snapshots and admission receipts to source and destination
+  identities, preserve schema-v1 project stores, and fail closed on unsafe
+  managed paths or ambiguous scope.
+
+## [0.1.86] - 2026-11-07
+
+### Added
+
+- Add a four-case synthetic decision-quality corpus, a manifest validator, and an
+  offline scorer for human-assessed host runs. No model runs or quality gain are
+  claimed by the corpus alone.
+- Add append-only QA snapshots and compatible benchmark comparisons, with
+  explicit missing-baseline and hard-failure reporting.
+- Document evidence levels and release gates for source checks, host behavior,
+  and comparative decision quality.
+
+## [0.1.84] - 2026-10-31
+
+### Fixed
+
+- Store update backups outside skill discovery directories and move recognized
+  backups left there by older updates, so assistants do not show duplicate skills.
+
+### Added
+
+- Offer a concise, task-scoped reasoning mode choice after selecting Quorum in
+  Codex, with worker, time, and independence indicators for each option.
+
+## [0.1.83] - 2026-10-11
+
+### Changed
+
+- Describe Quorum as a structured second opinion for coding sessions and general
+  chat decisions in the skill metadata, npm package, README, and user guide.
+  The reasoning protocol and installer behavior are unchanged.
+
+## [0.1.82] - 2026-10-11
+
+### Added
+
+- Explicit, task-scoped Super inference level: Full's independent review with
+  per-agent model and reasoning-effort defaults/overrides, within one provider.
+- Lazy-loaded Super and Claude Code binding references, host capability checks,
+  slot-preserving replacements, and requested/resolved/actual setting receipts.
+- Development reference-policy tests for invalid profiles, host overrides,
+  launch budgets, slot coverage, and honest fallback when settings are unverified.
+
+### Changed
+
+- Automatic routing still selects only Direct, Mini, or Full. Super never raises
+  worker budgets or reasoning effort implicitly and never changes the coordinator.
+- Unsupported model/effort assignments stop dispatch for clarification instead
+  of silently substituting models or claiming settings were applied.
+- Make core-before-task loading explicit in the entry and skill description.
+  Record fresh Codex/Claude smoke results and observed loading/telemetry limits;
+  no verified Super or universal host-adherence claim.
+
+## [0.1.81] - 2026-10-01
+
+### Changed
+
+- Shorten the README around installation and everyday usage; move detailed
+  controls, installation options, and background into `docs/guide.md`.
+
+- Load a shared core for every Quorum request, deliberation rules for Mini/Full,
+  worker coordination for Full, and memory rules only before explicit operations
+  or eligible automatic capture. Direct retains authorization, goals and receipts.
+- Reuse current loaded references within a context and reload required content
+  after context loss or revision changes; model familiarity never replaces rules.
+- Ship all feature modules in npm and installed payloads. Static instruction
+  savings and fresh-host behavioral verification are tracked separately in
+  `docs/testing/staged-loading-smoke.md`.
+
+## [0.1.80] - 2026-09-26
+
+### Added
+
+- 0.1.80 project memory controls: persistent on/off, read-only setting status,
+  and opt-in capture of eligible final decisions; automatic capture defaults off.
+- Capture rechecks enablement under the shared write lock and suppresses exact
+  adjacent full-payload duplicates while preserving changed uncertainty and dissent.
+
+### Changed
+
+- Extend the compact SudoLang memory contract without enabling automatic
+  retrieval, decision reuse, global memory, or learning. Explicit operations work
+  while off; forget preserves the on/off setting.
+- Keep configuration project-bound, schema-validated, atomically written, and
+  excluded from Git alongside records. Existing record format remains compatible.
+
+### Fixed
+
+- Run the memory helper correctly through symlinked parent paths by comparing
+  canonical CLI/module paths, including installed helpers under macOS `/var`.
+
+## [0.1.75] - 2026-09-19
+
+### Fixed
+
+- Keep operational assumptions explicit through review and synthesis; agreement
+  between agents does not verify a claim.
+- Require the execution receipt for memory-only requests as well as deliberation.
+- Route memory reads and record-ID discovery through the bounded, validating
+  helper instead of reading the store directly.
+- Refuse to confirm an empty memory deletion while a pending or interrupted write
+  may still retain records.
+- Match record UUIDs without letter-case sensitivity, including duplicate
+  identity validation.
+- Use metadata for capability discovery; count any accidental inference probe
+  against the worker budget and disclose it.
+- Count failed CLI startup attempts before deciding whether the remaining budget
+  can fund a replacement and independent review.
+
+### Added
+
+- Explicit project decision records with save, historical retrieval, and scoped
+  forget operations. Include the Node helper in every installed skill payload,
+  with bounded records, atomic writes, project isolation, and Git exclusion.
+
+### Changed
+
+- Consolidate executable instructions into a compact SudoLang protocol,
+  with a minimal skill entry and Codex binding. Preserve the existing
+  deliberation controls and installer payload paths.
+- Use the original ASCII logo in the README instead of an SVG image. Remove
+  the SVG asset and generator; use one vibrant blue/teal ANSI color per
+  letter in supported terminals.
+
+## [0.1.66] - 2026-09-18
+
+### Changed
+
+- Restore the terminal-style logo with a solid blue/teal color per letter in
+  the README and installer banners, including the interactive selector.
+- Preserve plain ASCII for redirected output, limited-color terminals,
+  `TERM=dumb`, and `NO_COLOR`; keep version-only output machine-readable.
+
+## [0.1.65] - 2026-09-18
+
+### Added
+
+- Request-scoped creative exploration with automatic activation and explicit
+  on/off controls, respecting direct overrides and existing worker budgets.
+- Grounded baseline options alongside unconventional alternatives, followed by
+  review of usefulness, originality, feasibility, cost, and risk.
+- Explicit evidence, assumptions, conditional constraints, and small validation
+  experiments, with exploration state in execution receipts.
+- Reference-policy regressions and portable protocol checks for creative
+  routing, decision reuse, budget preservation, and fallback reporting.
+
+### Changed
+
+- Rework the README quick start and package description around structured
+  second opinions for coding assistants, retaining usage and installation details.
+
+## [0.1.61] - 2026-09-16
+
+### Fixed
+
+- Refresh the README shipped to npm with current installation and update
+  commands, the npm version badge, and accurate archive availability.
+- Documentation-only patch; installer and deliberation behavior are unchanged.
+
+## [0.1.60] - 2026-09-16
+
+### Added
+
+- Automatic npm publication on stable version-tag pushes, with matching package
+  version and main-branch ancestry checks; manual publishing remains available.
+- Request-scoped auto/direct/mini/full controls,
+  candidate/reviewer targets, and total worker-launch caps.
+- Execution receipts distinguishing requested tiers, actual participation,
+  failed launches, provenance, and fallback behavior.
+- Development-only deterministic deliberation policy tests and host smoke
+  scenarios, with explicit limits on what automated checks prove.
+- npm discovery keywords for reasoning, agent skills, and supported assistants.
+
+### Changed
+
+- Prefer direct execution for routine work and implementation after a decision;
+  reuse compatible conversation decisions without persistent memory.
+- Default full deliberation to three candidates and one independent reviewer;
+  support smaller 1+1 panels and explicit larger panels within host/budget limits.
+- Keep mini within the current context, reserve capacity for independent review,
+  and perform synthesis in the coordinator.
+
+Published to npm through the `v0.1.60` tag workflow with signed provenance.
+Release dates use UTC; npm recorded publication at 22:57:40 UTC.
+
+## [0.1.59] - 2026-09-07
+
+### Added
+
+- `--version` reporting without destination discovery or writes.
+- `--update` and `--upgrade` maintenance commands for the running package.
+- Conservative automatic detection of existing Quorum installations and
+  supported tools.
+- `--skills-dir` for explicit portable installation, update, and removal.
+- Guarded `--uninstall` for permanent removal of recognized Quorum directories
+  and links.
+- Version, identity, discovery, routing, update-policy, uninstall, and packed
+  executable tests.
+
+### Changed
+
+- First-time no-target installation now installs for all detected supported
+  tools without opening the selector.
+- Updates refuse newer versions, foreign content, symbolic links, and
+  destinations that change before mutation.
+- Existing eligible installations retain atomic placement and timestamped
+  backups.
+- npm publication now uses GitHub Actions trusted publishing with provenance.
+
+## [0.1.58] - 2026-09-06
+
+### Added
+
+- Public `quorum-skill` npm package for one-command `npx` installation.
+- Compact `.tgz` and ZIP release assets with SHA-256 checksums.
+- Exact published-file validation and packed-executable integration tests.
+- Token-free trusted npm publishing workflow for releases after `0.1.58`.
+
+### Changed
+
+- Made `npx quorum-skill` the primary installation method.
+- Added a clear error for Node.js versions older than 18.
+
+## [0.1.57] - 2026-09-06
+
+### Added
+
+- Portable Quorum reasoning skill with adaptive direct, mini, and full tiers.
+- SudoLang-style council protocol and Codex runtime adapter.
+- Dependency-free installer for Codex, Claude Code, Antigravity, VS Code, and
+  Cursor.
+- Keyboard and mouse multi-select target selector with an `All` invariant.
+- User-wide and project-local installation paths.
+- Non-interactive `--targets`, `--all`, `--dry-run`, and `--yes` workflows.
+- Atomic placement, timestamped backups, legacy Codex detection, and partial
+  failure reporting.
+- Automated unit and integration coverage for installer behavior and payload
+  integrity.
+
+[Unreleased]: https://github.com/GTuritto/quorum/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/GTuritto/quorum/compare/v0.1.86...v0.2.0
+[0.1.86]: https://github.com/GTuritto/quorum/compare/v0.1.84...v0.1.86
+[0.1.84]: https://github.com/GTuritto/quorum/compare/v0.1.83...v0.1.84
+[0.1.83]: https://github.com/GTuritto/quorum/compare/v0.1.82...v0.1.83
+[0.1.82]: https://github.com/GTuritto/quorum/compare/v0.1.81...v0.1.82
+[0.1.81]: https://github.com/GTuritto/quorum/compare/v0.1.80...v0.1.81
+[0.1.80]: https://github.com/GTuritto/quorum/compare/v0.1.75...v0.1.80
+[0.1.75]: https://github.com/GTuritto/quorum/compare/v0.1.66...v0.1.75
+[0.1.66]: https://github.com/GTuritto/quorum/compare/v0.1.65...v0.1.66
+[0.1.65]: https://github.com/GTuritto/quorum/compare/v0.1.61...v0.1.65
+[0.1.61]: https://github.com/GTuritto/quorum/compare/v0.1.60...v0.1.61
+[0.1.60]: https://github.com/GTuritto/quorum/compare/v0.1.59...v0.1.60
+[0.1.59]: https://github.com/GTuritto/quorum/compare/v0.1.58...v0.1.59
+[0.1.58]: https://github.com/GTuritto/quorum/compare/v0.1.57...v0.1.58
+[0.1.57]: https://github.com/GTuritto/quorum/releases/tag/v0.1.57

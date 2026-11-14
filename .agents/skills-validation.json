@@ -1,0 +1,47 @@
+{
+  "checked_on": "2026-11-14",
+  "scope": "repository skill installation and verifier behavior",
+  "checks": [
+    {
+      "name": "project_integrity",
+      "result": {
+        "exit_code": 0,
+        "stdout": "Project skills checked: 18\nRecorded files checked: 428\nIssues: 0",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "project_skill_schema",
+      "result": {
+        "exit_code": 0,
+        "stdout": "Skill is valid!",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "modified_file_rejected",
+      "expected_exit_code": 1,
+      "result": {
+        "exit_code": 1,
+        "stdout": "Project skills checked: 1\nRecorded files checked: 1\nIssues: 1\nfixture-skill: changed SKILL.md",
+        "stderr": ""
+      }
+    },
+    {
+      "name": "outside_project_path_rejected",
+      "expected_exit_code": 1,
+      "result": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Verification failed: Path escapes project: ../outside-project"
+      }
+    }
+  ],
+  "upstream_skill_entries_verified": 17,
+  "project_skills_total": 18,
+  "recorded_files": 428,
+  "ros_unreal_runtime_tested": false,
+  "paid_api_calls": false,
+  "hooks_enabled": false,
+  "jupyter_kernel_tested": false
+}

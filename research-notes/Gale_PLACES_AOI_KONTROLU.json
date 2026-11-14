@@ -1,0 +1,58 @@
+{
+  "checked_on_client_date": "2026-11-13",
+  "scope": "Read-only archive metadata/table query; no imagery, raster resampling or application code generated.",
+  "aoi": {
+    "coordinate_type": "planetocentric latitude, east-positive longitude; values derived from the existing spherical equirectangular terrain manifest",
+    "longitude_min_deg": 137.427947,
+    "longitude_max_deg": 137.461688,
+    "latitude_min_deg": -4.824993,
+    "latitude_max_deg": -4.791252,
+    "projected_bounds_m": [8146000, -286000, 8148000, -284000],
+    "local_origin_projected_m": [8146812.187812188, -284932.0679320679]
+  },
+  "archive": {
+    "bundle_lid": "urn:nasa:pds:msl_places",
+    "bundle_version": "42.0",
+    "bundle_label_url": "https://planetarydata.jpl.nasa.gov/img/data/msl/msl_places/bundle.xml",
+    "directory_listing_last_modified_display": "2026-08-01 15:37",
+    "note": "Directory display time is not the measurement date or necessarily the product creation date."
+  },
+  "queries": [
+    {
+      "table_url": "https://planetarydata.jpl.nasa.gov/img/data/msl/msl_places/data_localizations/localized_pos.csv",
+      "total_data_rows": 1470,
+      "filter": "frame == ROVER AND longitude in inclusive [137.427947,137.461688] AND planetocentric_latitude in inclusive [-4.824993,-4.791252]",
+      "matching_rows": 0
+    },
+    {
+      "table_url": "https://planetarydata.jpl.nasa.gov/img/data/msl/msl_places/data_localizations/localized_interp.csv",
+      "label_url": "https://planetarydata.jpl.nasa.gov/img/data/msl/msl_places/data_localizations/localized_interp.csv.xml",
+      "product_lid": "urn:nasa:pds:msl_places:data_localizations:localized_interp.csv",
+      "product_version": "42.0",
+      "label_start_date_time": "2012-08-06T05:18:39Z",
+      "label_stop_date_time": "2026-04-17T00:19:01Z",
+      "label_creation_date_time": "2026-05-01",
+      "total_data_rows": 49315,
+      "filter": "all frames; longitude in inclusive [137.427947,137.461688] AND planetocentric_latitude in inclusive [-4.824993,-4.791252]",
+      "matching_rows": 0,
+      "observed_sol_min": -1,
+      "observed_sol_max": 4868,
+      "nearest_sample_to_existing_local_origin_by_projected_euclidean_distance": {
+        "frame": "ROVER",
+        "site": 108,
+        "drive": 762,
+        "pose": -1,
+        "sol": 4255,
+        "sclk": 775236865,
+        "planetocentric_latitude_deg": -4.787292101,
+        "longitude_deg": 137.409190894,
+        "easting_m": 8144888.227,
+        "northing_m": -283765.291,
+        "elevation_m": -3672.721
+      }
+    }
+  ],
+  "method": "Download the public CSV tables in memory with PowerShell Invoke-WebRequest; parse headers with ConvertFrom-Csv; compare numeric longitude and planetocentric_latitude to inclusive AOI limits. For the reported nearest example, sort squared projected distance to the existing local origin. Full source tables were not stored in the workspace.",
+  "interpretation": "No archived position sample in these two queried tables lies in the current AOI. This does not prove absence of distant observations looking into the AOI, a continuous trajectory between samples, unreleased data, or other missions' data. Camera footprint and science target geometry require separate verification.",
+  "next_decision": "Before using Curiosity ground observations as an AOI-local layer, either verify camera/target footprints that intersect this AOI or select a new small AOI around a documented PLACES sample and verify orbital coverage there."
+}

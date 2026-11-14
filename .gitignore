@@ -1,0 +1,26 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated build and editor files
+**/node_modules/
+**/build/
+**/install/
+**/log/
+**/__pycache__/
+**/.pytest_cache/
+*.py[cod]
+*.log
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Unreal generated output
+**/Binaries/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/

@@ -1,0 +1,105 @@
+# Quorum
+
+```text
+  ___   _   _   ___   ____   _   _  __  __
+ / _ \ | | | | / _ \ |  _ \ | | | ||  \/  |
+| | | || | | || | | || |_) || | | || |\/| |
+| |_| || |_| || |_| ||  _ < | |_| || |  | |
+ \__\_\ \___/  \___/ |_| \_\ \___/ |_|  |_|
+
+                    QUORUM v0.2.0
+```
+
+**Give your AI assistant a structured second opinion.**
+
+Quorum helps your assistant challenge plans, compare approaches, and review
+code before you commit to a decision. Use it in coding sessions or general chat
+when another perspective could change your answer. It reports a recommendation,
+disagreements, and uncertainty.
+
+Works with Codex, Claude Code, Cursor, GitHub Copilot in VS Code, and Antigravity.
+Available reasoning modes depend on your assistant's capabilities.
+
+[![npm version](https://img.shields.io/npm/v/quorum-skill)](https://www.npmjs.com/package/quorum-skill)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+## Install
+
+Requires **Node.js 18 or later**.
+
+```sh
+npx quorum-skill --targets codex
+# Or, for Claude Code:
+npx quorum-skill --targets claude
+```
+
+Run `npx quorum-skill` to detect supported tools, or use `--help` for all options.
+Pin this version with `npx quorum-skill@0.2.0 --targets codex`.
+
+## Use it
+
+In a coding session, start a new session in your assistant and ask:
+
+```text
+Use Quorum to review this implementation plan against the requirements.
+Use Quorum to review this code change and identify unsupported assumptions.
+Use Quorum to compare these two approaches and recommend one.
+```
+
+In a general chat project, you can use the same review process for a decision
+outside software development. Give the assistant your goals and constraints:
+
+```text
+Use Quorum to compare these study plans against my available time and goals.
+Challenge the assumptions and explain what could change the recommendation.
+```
+
+In Codex, you can also invoke it with `$quorum`.
+Selecting Quorum from the Codex picker offers a mode choice in chat before the
+review. A request that already names a mode starts with that mode.
+
+## Choose the depth
+
+Quorum selects Direct, Mini, or Full automatically. You can also request a mode:
+
+- **Direct:** a straightforward answer without extra deliberation.
+- **Mini:** multiple perspectives in one context, without delegated workers.
+- **Full:** isolated candidates and independent review when your assistant
+  supports delegation, with a disclosed fallback when it cannot run.
+- **Super:** explicitly requested Full deliberation with a model and
+  reasoning effort assigned per agent for a specific task. Never selected automatically.
+
+```text
+Use mini Quorum to explore ways to simplify onboarding.
+Use full Quorum with 1 candidate and 1 reviewer to assess this migration.
+```
+
+Quorum uses your assistant's existing capabilities and needs no separate council
+service. It reports which mode actually ran. Extra review can take more time and
+model usage; verify consequential findings against relevant evidence and tests.
+
+## Optional memory
+
+Ask Quorum to remember a decision, or say “Turn Quorum memory on for this project”
+to capture future meaningful decisions automatically. Automatic capture is off
+by default. Project decisions stay local unless you explicitly share one.
+
+Version 0.2.0 adds a separate local global store. You can
+explicitly share one saved project record, preview and admit it in another
+project, then request it as historical, unvalidated context. Global memory is
+off by default; enabling it does not export existing project records. Project
+and global forget target their own scopes. See the [user guide](docs/guide.md)
+and [0.2.0 smoke procedure](docs/testing/0.2.0-smoke.md).
+
+## Update
+
+```sh
+npx quorum-skill --update
+```
+
+## Learn more
+
+- [User guide](https://github.com/GTuritto/quorum/blob/main/docs/guide.md): advanced controls, project memory, installation options, and uninstall.
+- [Testing and quality](https://github.com/GTuritto/quorum/blob/main/docs/testing/quality.md): test levels, host evidence, and decision-quality benchmarks.
+- [Why Quorum exists](https://github.com/GTuritto/quorum/blob/main/docs/guide.md#why-quorum-exists)
+- [Contributing](https://github.com/GTuritto/quorum/blob/main/CONTRIBUTING.md) · [Changelog](https://github.com/GTuritto/quorum/blob/main/CHANGELOG.md) · [MIT License](LICENSE)

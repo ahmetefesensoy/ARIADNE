@@ -1,0 +1,60 @@
+{
+  "table": [
+    {
+      "member": "opus",
+      "label": "Response A",
+      "average_rank": 1.25,
+      "average_rank_excluding_self": 1.33,
+      "votes": 4
+    },
+    {
+      "member": "fable",
+      "label": "Response C",
+      "average_rank": 2.25,
+      "average_rank_excluding_self": 2.33,
+      "votes": 4
+    },
+    {
+      "member": "haiku",
+      "label": "Response B",
+      "average_rank": 3.0,
+      "average_rank_excluding_self": 3.67,
+      "votes": 4
+    },
+    {
+      "member": "sonnet",
+      "label": "Response D",
+      "average_rank": 3.5,
+      "average_rank_excluding_self": 3.67,
+      "votes": 4
+    }
+  ],
+  "parsed": {
+    "fable": [
+      "Response A",
+      "Response C",
+      "Response D",
+      "Response B"
+    ],
+    "haiku": [
+      "Response B",
+      "Response A",
+      "Response C",
+      "Response D"
+    ],
+    "opus": [
+      "Response A",
+      "Response C",
+      "Response B",
+      "Response D"
+    ],
+    "sonnet": [
+      "Response A",
+      "Response C",
+      "Response D",
+      "Response B"
+    ]
+  },
+  "unparsed_reviewers": [],
+  "incomplete_rankings": {}
+}

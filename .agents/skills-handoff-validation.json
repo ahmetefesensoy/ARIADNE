@@ -1,0 +1,10 @@
+{
+  "checked_on": "2026-11-14",
+  "scope": "handoff snapshot after local REDLINE skill v1.1 update",
+  "project_skills": 18,
+  "upstream_entries_modified": false,
+  "verification_exit_code": 0,
+  "verification_output": "Project skills checked: 18\nRecorded files checked: 428\nIssues: 0",
+  "runtime_tested": false,
+  "note": "Older skills-validation.json remains the historical v1.0 test record."
+}

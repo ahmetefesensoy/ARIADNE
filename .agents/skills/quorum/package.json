@@ -1,0 +1,75 @@
+{
+  "name": "quorum-skill",
+  "version": "0.2.0",
+  "description": "Structured second opinions for AI assistants: challenge plans, compare options, review code, and examine consequential decisions.",
+  "keywords": [
+    "agent-skills",
+    "ai-agents",
+    "coding-agents",
+    "code-review",
+    "implementation-planning",
+    "software-architecture",
+    "decision-making",
+    "reasoning",
+    "multi-agent",
+    "codex",
+    "claude-code",
+    "cursor",
+    "github-copilot",
+    "antigravity"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Giuseppe Turitto",
+    "email": "giuseppe@turitto.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTuritto/quorum.git"
+  },
+  "homepage": "https://github.com/GTuritto/quorum#readme",
+  "bugs": {
+    "url": "https://github.com/GTuritto/quorum/issues"
+  },
+  "bin": {
+    "quorum-skill": "installer/install.mjs"
+  },
+  "files": [
+    "SKILL.md",
+    "VERSION",
+    "agents/openai.yaml",
+    "install.ps1",
+    "install.sh",
+    "installer/detection.mjs",
+    "installer/identity.mjs",
+    "installer/install.mjs",
+    "installer/selector.mjs",
+    "installer/targets.mjs",
+    "installer/uninstall.mjs",
+    "installer/version.mjs",
+    "references/claude-code-adapter.md",
+    "references/codex-adapter.md",
+    "references/deliberation.sudo.md",
+    "references/full.sudo.md",
+    "references/global-memory.mjs",
+    "references/memory.mjs",
+    "references/memory.sudo.md",
+    "references/protocol.sudo.md",
+    "references/super.sudo.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dist": "node scripts/build-distribution.mjs",
+    "benchmark:check": "node scripts/benchmark.mjs",
+    "quality:record": "node scripts/quality-record.mjs",
+    "test": "node --test tests/*.test.mjs && sh tests/test-install.sh",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test:integration": "sh tests/test-install.sh"
+  }
+}

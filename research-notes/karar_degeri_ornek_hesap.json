@@ -1,0 +1,168 @@
+{
+  "kind": "illustrative_exact_bayesian_decision_calculation",
+  "not_a_ros_or_mars_validation": true,
+  "units": "arbitrary_mission_cost_units",
+  "assumptions": {
+    "short_clear_cost": 10,
+    "short_blocked_cost": 50,
+    "long_cost": 20,
+    "drone_acquisition_cost": 2,
+    "drone_sensitivity": 0.85,
+    "drone_specificity": 0.9,
+    "rover_acquisition_cost": 4,
+    "rover_sensitivity": 0.98,
+    "rover_specificity": 0.98,
+    "calibration": "invented_for_method_illustration",
+    "hazard_constraints": "not_modelled; this is a detour-cost example, not human safety optimisation"
+  },
+  "rows": [
+    {
+      "prior_blocked": 0.05,
+      "expected_costs": {
+        "no_new_observation": 12.0,
+        "drone_camera": 13.675,
+        "rover_inspection": 14.72
+      },
+      "selected_action": "no_new_observation",
+      "drone_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.13749999999999998,
+          "posterior_blocked": 0.30909090909090914,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.8624999999999999,
+          "posterior_blocked": 0.008695652173913045,
+          "selected_route": "short"
+        }
+      ],
+      "rover_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.06800000000000002,
+          "posterior_blocked": 0.7205882352941175,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.9319999999999999,
+          "posterior_blocked": 0.001072961373390559,
+          "selected_route": "short"
+        }
+      ]
+    },
+    {
+      "prior_blocked": 0.25,
+      "expected_costs": {
+        "no_new_observation": 20.0,
+        "drone_camera": 16.375,
+        "rover_inspection": 16.8
+      },
+      "selected_action": "drone_camera",
+      "drone_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.2875,
+          "posterior_blocked": 0.7391304347826088,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.7125,
+          "posterior_blocked": 0.052631578947368425,
+          "selected_route": "short"
+        }
+      ],
+      "rover_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.26,
+          "posterior_blocked": 0.9423076923076923,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.74,
+          "posterior_blocked": 0.006756756756756763,
+          "selected_route": "short"
+        }
+      ]
+    },
+    {
+      "prior_blocked": 0.5,
+      "expected_costs": {
+        "no_new_observation": 20,
+        "drone_camera": 19.75,
+        "rover_inspection": 19.4
+      },
+      "selected_action": "rover_inspection",
+      "drone_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.475,
+          "posterior_blocked": 0.8947368421052632,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.525,
+          "posterior_blocked": 0.14285714285714288,
+          "selected_route": "short"
+        }
+      ],
+      "rover_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.5,
+          "posterior_blocked": 0.98,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.5,
+          "posterior_blocked": 0.020000000000000018,
+          "selected_route": "short"
+        }
+      ]
+    },
+    {
+      "prior_blocked": 0.8,
+      "expected_costs": {
+        "no_new_observation": 20,
+        "drone_camera": 22.0,
+        "rover_inspection": 22.52
+      },
+      "selected_action": "no_new_observation",
+      "drone_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.7000000000000001,
+          "posterior_blocked": 0.9714285714285714,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.3,
+          "posterior_blocked": 0.4000000000000001,
+          "selected_route": "long"
+        }
+      ],
+      "rover_posteriors": [
+        {
+          "observation": "blocked",
+          "probability": 0.788,
+          "posterior_blocked": 0.9949238578680203,
+          "selected_route": "long"
+        },
+        {
+          "observation": "clear",
+          "probability": 0.21199999999999997,
+          "posterior_blocked": 0.07547169811320763,
+          "selected_route": "short"
+        }
+      ]
+    }
+  ]
+}

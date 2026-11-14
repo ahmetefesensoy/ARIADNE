@@ -1,0 +1,559 @@
+{
+  "recorded_on": "2026-11-14",
+  "skills": [
+    {
+      "name": "blender-director",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\blender-director",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/asset-pipeline.md",
+        "../references/mcp-integration.md",
+        "../references/mcp-tools.md",
+        "../references/naming-conventions.md",
+        "../references/polycount-budgets.md",
+        "../references/reference-analysis-template.md",
+        "../references/reference-image-match.md",
+        "../references/validation-checklist.md",
+        "../references/visual-match-checklist.md"
+      ],
+      "files": [
+        {
+          "path": "references/skill-routing.md",
+          "sha256": "8ab89973765d191ecd3c31f26f1c04c3ac77d55f6984244e34b2402d2ee94a04"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ba10ae3243590f94fb114b6cb1e476f8f0510f0a99de100e8c14651d081bc008"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "blender-modeler",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\blender-modeler",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/asset-pipeline.md",
+        "../references/mcp-integration.md",
+        "../references/naming-conventions.md"
+      ],
+      "files": [
+        {
+          "path": "references/modifier-stack.md",
+          "sha256": "705b242c0c4f187ef76287a5048f7a28ea7f153c134ca48edcc015af796c900a"
+        },
+        {
+          "path": "references/scene-organization.md",
+          "sha256": "fa659b29d4be872918c3cb45bce294e535e99baa6acb27c6bf3829d381cf21e5"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "00835b5d2281ae056e4bd4b167540a10c39ae95d9a9a4f12828ce875dce8c12c"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "hard-surface",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\hard-surface",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/asset-pipeline.md"
+      ],
+      "files": [
+        {
+          "path": "references/boolean-workflow.md",
+          "sha256": "ee7a74ab530d40741864218f8604861d70b856ce478943b784235b6c7831df0c"
+        },
+        {
+          "path": "references/greeble-patterns.md",
+          "sha256": "289815eab3a92ac2ebb071f75423945f5d00015b29e693dafa37fc3bd857cdb3"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "353ea5be095fd3cc9d3b4651a23087e3b20b43eb8a0759f99c227031ae96cb37"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "vehicle-artist",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\vehicle-artist",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/proportion-blockout.md",
+          "sha256": "19b62ebf639cb0a8f920f19b3e5563b9fce34640900b84b75a121dc8627e3008"
+        },
+        {
+          "path": "references/vehicle-lod-targets.md",
+          "sha256": "fee8c1c527aaef49787339537b5e1cc162dfdd0fdb5b1603c6d96607816f74e6"
+        },
+        {
+          "path": "references/vehicle-object-split.md",
+          "sha256": "fbe75056f19a9f2a13ea3ed200cb23a2be0401a68c2c884d0412c5c88a4ed79b"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "5a2414566399167883d947e0cbf5149ca056b52334d2a5ad341948f6241db6b8"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "environment-artist",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\environment-artist",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/asset-pipeline.md"
+      ],
+      "files": [
+        {
+          "path": "references/composition.md",
+          "sha256": "422dd5075cf943a3b506fbcd8ae806458f9a0811c14880ee84c9213f50a21277"
+        },
+        {
+          "path": "references/modular-kits.md",
+          "sha256": "90cf2c12a88065bb787a6748ce2178a7d73bf02d159aeac0907ece203690bd9b"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "989c55a26e5db78bf719bfbbe0ba00e0fb1319a4816bce07c08a11472b2cd321"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "prop-artist",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\prop-artist",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/everyday-prop-checklist.md",
+          "sha256": "e62b07c0c62be963ba101bf1c91340204c750fc244a37f0a156618bc436920c6"
+        },
+        {
+          "path": "references/kitbash-library.md",
+          "sha256": "e1c50514a674920efe7ed745d1f21ebc1fb1bdde38ace132909e5524759fc5ea"
+        },
+        {
+          "path": "references/prop-tiers.md",
+          "sha256": "8f3427f8c38bc97780ab5f11c86a07d66c08c13b20ba4e7f995859e77eb4af56"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "f8db44db9707474893cf265592242148cbe7b4a597eed1f017c25131fb2b91ff"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "procedural-modeling",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\procedural-modeling",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "143556702f08e2bcab1d61dc38c0ee953bf90835483ebbaf1058c9e8c2364e03"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "geometry-nodes",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\geometry-nodes",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/building-generators.md",
+          "sha256": "18fbd0a59cfb4fd6bc8b15e838699c389b8db48042145d211559839ea2f3ee83"
+        },
+        {
+          "path": "references/scatter-systems.md",
+          "sha256": "e5554a81f75cf9efb14d59d7be204a7e10e9720c9f693777b3c844f8c17a6957"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "f04add65d17201c3d58d09575fc1da7408e95e270b35614e66bf0928663196d9"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "scene-assembly",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\scene-assembly",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/collection-template.md",
+          "sha256": "cac0ee86159b18a1acacfc90d04c16261a5ddbe89dfcae5a813331ae603555e6"
+        },
+        {
+          "path": "references/linking-overrides.md",
+          "sha256": "dabce0052c44b45b530430577e857f012b5edb22824f04dddd37e8c7aaeff0c1"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "9aad0ebdeac897304989b9a06efdaa566a76962ef9409e6e4076474dec23e34f"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "set-dressing",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\set-dressing",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/density-map.md",
+          "sha256": "cd0cf82bb1da84a5919ef27c197650116f6967cfb8256c44d3d7af10ff1132ad"
+        },
+        {
+          "path": "references/story-clusters.md",
+          "sha256": "6749d8e2abfdd2ecb59bfb976b893ed1e5fe618e64810866c27ea1c5da2a3714"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c35d19573a97282de73f1fe1e1ab9e447d279052a98db76c8faec8a3cd3fbd6b"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "materials",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\materials",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/procedural-patterns.md",
+          "sha256": "e425b825109d850269192b5c6a856c33a422974b94b03c1bf2df256376edeb40"
+        },
+        {
+          "path": "references/surface-recipes.md",
+          "sha256": "ca3213fd8943042fc4f32c01912ba3c98e04fd836f074b05d6678f96ffa204e7"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "fc86c8f2e292791a3bc4f238ae0f2120c52d61b393ef922c55860dd2b78e43b6"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "uv-workflow",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\uv-workflow",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/texel-density.md",
+          "sha256": "3b0b6bcb6468f1f630496176fe28ecd128f1638028260ba6f546324ddf9f3dcf"
+        },
+        {
+          "path": "references/trim-sheets.md",
+          "sha256": "5b16006a6b4fe5107404ec404b9c27f9393613e2d6fdbdd63ab04dd2458b08e4"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "1e55a08843199640cc9d6a957ff40f96d077c00d74d6e1d95b81da8adceaba8b"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "texture-workflow",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\texture-workflow",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/naming-conventions.md",
+        "../references/polycount-budgets.md"
+      ],
+      "files": [
+        {
+          "path": "references/bake-troubleshooting.md",
+          "sha256": "13d12f59de2a70e76b02f6e611acd9582c283ba6d829cbe3fa513f361d04a026"
+        },
+        {
+          "path": "references/orm-packing.md",
+          "sha256": "9b8b1cac124820d8d0fe0e6d4f610d55532caaffd446e6a3aed1a47f26eb5d6c"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "9f8b86bc7fb7350d3195c7a641fa6fc33e6350fbf1364ed55330ff8b04249a9b"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "lighting",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\lighting",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/cinematic-light-rigs.md",
+          "sha256": "651883fdad2ebba49f12514e01fce10d8e465c047f6e820d3f3a689c23b31e5b"
+        },
+        {
+          "path": "references/horror-lighting-setups.md",
+          "sha256": "5b1b4767983ede817e27d63b5c772bf101842618d9cb4f023a4bf73561250c90"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a9ad1a183a4294c3e87101b63d26303ea499cfe8edc25c3b9a4c73f5e7b34232"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "lookdev",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\lookdev",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/lookdev-checklist.md",
+          "sha256": "e32e5e812c5988fcdd4a88893c6df6a88158531b32349c46d642cd55ab785c57"
+        },
+        {
+          "path": "references/lookdev-rig.md",
+          "sha256": "9ac339934e95926aa795742b97d4d28566550cff18118571800a854aa9eb5a56"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "7eb0de0bebf2c3235f46272f93aafc66c72b10493e0e84d42a5cb7c79395e6ce"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "rendering",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\rendering",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/reference-image-match.md",
+        "../references/visual-match-checklist.md"
+      ],
+      "files": [
+        {
+          "path": "references/npr-rendering.md",
+          "sha256": "9fef29b76905d04dbe5ab905b0073a14465531ef7d750491637d91563c1618ff"
+        },
+        {
+          "path": "references/render-passes.md",
+          "sha256": "3bd1590431349b76ccb82a3d3589779baa29b1426c42f900cca19c1332f1a313"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "abf41a30b17a29cc09efcbecf9e163e7f0d30a2b5d6c2f2700acf85a788deff1"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "rigging",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\rigging",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/humanoid-rig.md",
+          "sha256": "975f962367b681d879273671fbc26c111bbfd370eb2751bee3f6ea6a045659b8"
+        },
+        {
+          "path": "references/mechanical-rig.md",
+          "sha256": "d6f9cbb73e44f0e54ec1d31ededf58b48c9a016ffc7051b6a543f083ef42410c"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a5469b3a46f46e659b17e0afd0fb0b1c41751e60246205af785d1dc316a32f9a"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "animation",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\animation",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/combat-animation.md",
+          "sha256": "9db8019516af22e7b5ec8a2cb7fcc4f4631029bcfeb01a4cb7be8dbb74b36c3f"
+        },
+        {
+          "path": "references/walk-cycle.md",
+          "sha256": "5ac01bfacc8d3daa864362a70b3751cfd32a17710708f6f2c93bd1afee77dd6a"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a7c5fcef13d4f68c017a3f5052194cea3b359e38fb0807eb308f8075b1f398d6"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "asset-optimization",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\asset-optimization",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/polycount-budgets.md",
+        "../references/validation-checklist.md"
+      ],
+      "files": [
+        {
+          "path": "references/lod-strategies.md",
+          "sha256": "3aeb430c3f00a7be39318d2959a9bc0fcbfa53e113fc3034ac0d1496c9830cc7"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "37a0f4a04b9015ca892a4c87529737e900e77e58f3022b886e932ab5cb28533c"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "lod-pipeline",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\lod-pipeline",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/lod-budgets.md",
+          "sha256": "188a4f4f8d9859cf1fa06629921569a86ac3902eb1c9fe60bc80f73ee18432c8"
+        },
+        {
+          "path": "references/lod-validation.md",
+          "sha256": "8d49b435f95e690dbc1e94995bc6c4fc6070bb551fe24c08baefc16675e8dbfe"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "8025238b3ef5238e9d5304d8014645df2889e0fc09aa5d86de5fea57eafd5b0e"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "collision-proxy",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\collision-proxy",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/collider-recipes.md",
+          "sha256": "28e5048f5b87f80e608e0dda668ff3b94dafb6c040e8a0b7afea803f27d2b4e9"
+        },
+        {
+          "path": "references/engine-naming.md",
+          "sha256": "1fb5d09885ce99f4ede53f3f9c9506217aa0e3d95e74adf0d7408a48f4c3358d"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "35c3b05ea2b31591cfe9c480730e2963887d7dcc88c80eb891d0c4abdc820af6"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "unreal-export",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\unreal-export",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "references/ucx-naming.md",
+          "sha256": "dbe9bcb9f1ac477c0b0dccc912e15e5c9eb221c7e1abe678d5b3aa2e22191a65"
+        },
+        {
+          "path": "references/unreal-checklist.md",
+          "sha256": "5b8c6f5cbeac3bd7c7c8d18df65d0a16f8e4b39a54876625cf7bd0d88ce531c8"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "9109f7964bb14d3bbad2a5f97fc7a0612317f5790dff638642801d1ea81f5a01"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "qa-review",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\qa-review",
+      "automatically_installed": false,
+      "missing_referenced_files": [
+        "../references/naming-conventions.md",
+        "../references/polycount-budgets.md",
+        "../references/validation-checklist.md",
+        "../references/visual-match-checklist.md"
+      ],
+      "files": [
+        {
+          "path": "references/qa-verdict-template.md",
+          "sha256": "25ed0cd39ebb15385287b41f3f2ababe871b52e80887846013b6d7db5dc6e15f"
+        },
+        {
+          "path": "references/screenshot-angles.md",
+          "sha256": "5134187e427027fc6fd4187df6be9168e8db361801b08683899ac6c89dfa4091"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "14bd366e4c7831973d67e74580ebfeafb1749ce1530ef64ba900d097ac38fce0"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "intent-modeling",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\intent-modeling",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "85cda89eac2915980a30a77ea556288a537b3414ec15d8db4b7af5eeb19fcdac"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "llm-writing",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\llm-writing",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "resources/cold-read.md",
+          "sha256": "c4d63298b9de3cc7193552b3d260a290d20429ffb3cf1bcf06d63e79ec4e7ff3"
+        },
+        {
+          "path": "resources/word-choice.md",
+          "sha256": "95d8ddc4d0934609492e151da2b343d03c57a7606716528b18b0c881d2abbc78"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c946468888ac84c18a92d912098fdcfe24fd4596f2ee547b8e278756ea92a31c"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    },
+    {
+      "name": "information-hierarchy",
+      "original_path": "C:\\Users\\USER\\.codex\\skills\\information-hierarchy",
+      "automatically_installed": false,
+      "missing_referenced_files": [],
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fc2d40b42b953441198619ebcb3e36b46fc0f3d02624c55a679d7b2d68082648"
+        }
+      ],
+      "rights_note": "Existing notices preserved; not a new licence grant or independent source audit."
+    }
+  ]
+}

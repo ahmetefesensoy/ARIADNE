@@ -1,0 +1,208 @@
+import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
+import { access, mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
+import { fileURLToPath } from "node:url";
+
+import { EXPECTED_PACKAGE_FILES } from "../scripts/package-contract.mjs";
+import { buildDistribution, sha256File } from "../scripts/build-distribution.mjs";
+
+const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+
+async function withTempDirectory(callback) {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "quorum-dist-test-"));
+  try {
+    return await callback(directory);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+}
+
+function runNpm(args, options = {}) {
+  const npmCli = process.env.npm_execpath;
+  assert.ok(npmCli, "npm_execpath must be available under npm test");
+  return execFileSync(process.execPath, [npmCli, ...args], {
+    encoding: "utf8",
+    ...options,
+  });
+}
+
+test("builds matching tgz, zip, and SHA256SUMS", async () => {
+  await withTempDirectory(async (temporaryRoot) => {
+    const outputDirectory = path.join(temporaryRoot, "dist");
+    const result = await buildDistribution({ root, outputDirectory });
+
+    assert.equal(result.version, "0.2.0");
+    assert.deepEqual(result.packageFiles, EXPECTED_PACKAGE_FILES);
+
+    const tarEntries = execFileSync("tar", ["-tzf", result.tgzPath], {
+      encoding: "utf8",
+    }).trim().split("\n").filter((entry) => !entry.endsWith("/")).sort();
+    assert.deepEqual(
+      tarEntries,
+      EXPECTED_PACKAGE_FILES.map((file) => `package/${file}`).sort(),
+    );
+
+    const zipRoot = `quorum-skill-${result.version}`;
+    const zipEntries = execFileSync("unzip", ["-Z1", result.zipPath], {
+      encoding: "utf8",
+    }).trim().split("\n").filter((entry) => !entry.endsWith("/")).sort();
+    assert.deepEqual(
+      zipEntries,
+      EXPECTED_PACKAGE_FILES.map((file) => `${zipRoot}/${file}`).sort(),
+    );
+
+    const checksumText = await readFile(result.checksumPath, "utf8");
+    assert.equal(
+      checksumText,
+      `${await sha256File(result.tgzPath)}  ${path.basename(result.tgzPath)}\n` +
+        `${await sha256File(result.zipPath)}  ${path.basename(result.zipPath)}\n`,
+    );
+  });
+});
+
+test("rejects mismatched versions before clearing distribution output", async () => {
+  await withTempDirectory(async (temporaryRoot) => {
+    const fixtureRoot = path.join(temporaryRoot, "fixture");
+    const outputDirectory = path.join(temporaryRoot, "dist");
+    const sentinelPath = path.join(outputDirectory, "sentinel");
+    await mkdir(fixtureRoot);
+    await mkdir(outputDirectory);
+    await Promise.all([
+      writeFile(path.join(fixtureRoot, "VERSION"), "0.1.58\n"),
+      writeFile(path.join(fixtureRoot, "package.json"), '{"version":"0.1.59"}\n'),
+      writeFile(path.join(fixtureRoot, "SKILL.md"), '---\n  version: "0.1.58"\n---\n'),
+      writeFile(sentinelPath, "preserve me"),
+    ]);
+
+    await assert.rejects(
+      buildDistribution({ root: fixtureRoot, outputDirectory }),
+      /VERSION, package\.json, and SKILL\.md versions must match/,
+    );
+    assert.equal(await readFile(sentinelPath, "utf8"), "preserve me");
+  });
+});
+
+test("runs version and maintenance dry-runs from the packed npm executable", async () => {
+  await withTempDirectory(async (temporaryRoot) => {
+    const result = await buildDistribution({
+      root,
+      outputDirectory: path.join(temporaryRoot, "dist"),
+    });
+    const workDirectory = path.join(temporaryRoot, "work");
+    const projectRoot = path.join(temporaryRoot, "project");
+    await mkdir(workDirectory);
+    await mkdir(projectRoot);
+    const environment = {
+      ...process.env,
+      npm_config_cache: path.join(temporaryRoot, "npm-cache"),
+    };
+
+    const version = runNpm([
+      "exec",
+      "--yes",
+      `--package=${result.tgzPath}`,
+      "--",
+      "quorum-skill",
+      "--version",
+    ], { cwd: workDirectory, env: environment });
+    assert.equal(version, "quorum-skill 0.2.0\n");
+
+    const dryRun = runNpm([
+      "exec",
+      "--yes",
+      `--package=${result.tgzPath}`,
+      "--",
+      "quorum-skill",
+      "--targets",
+      "codex,cursor",
+      "--scope",
+      "project",
+      "--project-root",
+      projectRoot,
+      "--dry-run",
+    ], { cwd: workDirectory, env: environment });
+    assert.match(dryRun, /Targets: codex, cursor/);
+    await assert.rejects(access(path.join(projectRoot, ".agents", "skills", "quorum")));
+    await assert.rejects(access(path.join(projectRoot, ".cursor", "skills", "quorum")));
+
+    const updateDryRun = runNpm([
+      "exec",
+      "--yes",
+      `--package=${result.tgzPath}`,
+      "--",
+      "quorum-skill",
+      "--update",
+      "--targets",
+      "codex",
+      "--scope",
+      "project",
+      "--project-root",
+      projectRoot,
+      "--dry-run",
+    ], { cwd: workDirectory, env: environment });
+    assert.match(updateDryRun, /SKIPPED.*not installed/);
+
+    const uninstallDryRun = runNpm([
+      "exec",
+      "--yes",
+      `--package=${result.tgzPath}`,
+      "--",
+      "quorum-skill",
+      "--uninstall",
+      "--targets",
+      "codex",
+      "--scope",
+      "project",
+      "--project-root",
+      projectRoot,
+      "--dry-run",
+    ], { cwd: workDirectory, env: environment });
+    assert.match(uninstallDryRun, /SKIPPED.*missing/);
+    await assert.rejects(access(path.join(projectRoot, ".agents", "skills", "quorum")));
+  });
+});
+
+test("packed installer delivers working project controls without capturing during install", async () => {
+  await withTempDirectory(async (temporaryRoot) => {
+    const built = await buildDistribution({ root, outputDirectory: path.join(temporaryRoot, "dist") });
+    execFileSync("tar", ["-xzf", built.tgzPath, "-C", temporaryRoot]);
+    const unpacked = path.join(temporaryRoot, "package");
+    const project = path.join(temporaryRoot, "project");
+    await mkdir(project);
+    execFileSync(process.execPath, [path.join(unpacked, "installer/install.mjs"), "--targets", "codex", "--project-root", project, "--yes"]);
+    await assert.rejects(access(path.join(project, ".quorum")));
+    for (const file of EXPECTED_PACKAGE_FILES.filter((file) => file.startsWith("references/"))) {
+      assert.deepEqual(await readFile(path.join(project, ".agents/skills/quorum", file)),
+        await readFile(path.join(root, file)), `Installed module bytes: ${file}`);
+    }
+    const helper = path.join(project, ".agents/skills/quorum/references/memory.mjs");
+    assert.deepEqual(await readFile(helper), await readFile(path.join(root, "references/memory.mjs")));
+    const invoke = (action, args = [], record) => JSON.parse(execFileSync(process.execPath,
+      [helper, action, "--project-root", project, ...args], { encoding: "utf8", input: record && JSON.stringify(record) }));
+    const record = { decision: "Use the local store", assumptions: [], uncertainty: ["Unproven capacity"], sources: [], reconsideration: [] };
+    assert.equal(invoke("status").enabled, false);
+    assert.equal(invoke("on").enabled, true);
+    assert.equal(invoke("capture", [], record).saved, true);
+    assert.equal(invoke("capture", [], record).reason, "duplicate");
+    assert.equal(invoke("off").enabled, false);
+    assert.equal(invoke("read", ["--query", "store"]).matched, 1);
+    assert.equal(invoke("forget", ["--all"]).forgotten, 1);
+    assert.equal(invoke("status").enabled, false);
+    const destination = path.join(temporaryRoot, "destination");
+    await mkdir(destination);
+    const global = (action, args = []) => JSON.parse(execFileSync(process.execPath,
+      [helper, action, "--scope", "global", ...args], { encoding: "utf8", env: { ...process.env, HOME: temporaryRoot } }));
+    const source = invoke("save", [], record);
+    assert.equal(global("status").enabled, false);
+    global("on");
+    const shared = global("share", ["--project-root", project, "--source-id", source.id, "--authorized", "--allow-project-off"]);
+    const preview = global("preview", ["--project-root", destination, "--id", shared.id, "--authorized"]);
+    const admitted = global("admit", ["--project-root", destination, "--id", shared.id, "--authorized", "--preview-digest", preview.digest]);
+    assert.equal(global("read", ["--project-root", destination, "--id", shared.id, "--authorized"]).admissionId, admitted.admissionId);
+    assert.equal(global("forget", ["--id", shared.id]).forgotten, 1);
+    assert.equal(invoke("read", ["--id", source.id]).matched, 1);
+  });
+});

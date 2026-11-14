@@ -1,0 +1,4 @@
+interface:
+  display_name: "REDLINE Space Apps"
+  short_description: "Marswalk, ROS–Unreal and NASA data workflows"
+  default_prompt: "Use $redline-space-apps to develop and verify the next REDLINE task."
