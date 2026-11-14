@@ -1,0 +1,5 @@
+# GetManifest.srv — proje.md section 5
+string site_id
+---
+bool success
+string manifest_json

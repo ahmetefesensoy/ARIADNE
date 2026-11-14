@@ -2,7 +2,7 @@
 
 14 Kasım 2026 · Araştırma yayını.
 
-Önceki pakette AI destekli tasarım ve konsey çıktıları bulunur; kaynak ve hash kayıtları `research-notes/council-v3-source/SOURCE.json` ve `HANDOFF_MANIFEST.json` içinde korunur.
+Önceki pakette AI destekli tasarım ve konsey çıktıları bulunur; kaynak ve hash kayıtları `research/notes/council-v3-source/SOURCE.json` ve `HANDOFF_MANIFEST.json` içinde korunur.
 
 Bu depodaki aktarım, ortam kontrol komutları, doğrulama/ilerleme notları ve Research dizini OpenAI Codex yardımıyla hazırlandı. Kullanıcının paylaştığı `proje.md` değiştirilmedi. Tasarım belgeleri çalışan uygulama olarak sunulmaz; T0 henüz tamamlanmadı.
 

@@ -532,7 +532,7 @@ Birleşme kapıları (kapsam kesme değil, entegrasyon kontrolü):
 - Cesium Mars'ın çevrimdışı kullanımı
 - teslim saatinin kesin değeri
 
-Konsey karar ve değerlendirme çıktılarının [kalıcı araştırma kopyası](../../research-notes/council-v3-source/README.md). Özgün oturumun TEMP yolu ve dosya hash'leri [kaynak kaydında](../../research-notes/council-v3-source/SOURCE.json) korunur; tekrarlanan uzun prompt kopyaları aktarılmadı.
+Konsey karar ve değerlendirme çıktılarının [kalıcı araştırma kopyası](../notes/council-v3-source/README.md). Özgün oturumun TEMP yolu ve dosya hash'leri [kaynak kaydında](../notes/council-v3-source/SOURCE.json) korunur; tekrarlanan uzun prompt kopyaları aktarılmadı.
 
 ---
 

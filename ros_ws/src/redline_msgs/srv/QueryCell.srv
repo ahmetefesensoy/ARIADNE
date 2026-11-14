@@ -1,0 +1,7 @@
+# QueryCell.srv — proje.md section 5
+string site_id
+geometry_msgs/Point point
+---
+bool found
+redline_msgs/CellState cell
+redline_msgs/EvidenceRecord[] evidence

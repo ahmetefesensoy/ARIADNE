@@ -12,8 +12,8 @@ TR = timezone(timedelta(hours=3))
 
 
 def main() -> None:
-    paths = [ROOT / "proje.md"]
-    for folder in ("research/proje-fikirleri", "research/handoff", "research-notes", "output/jupyter-notebook"):
+    paths = [ROOT / "docs/proje.md"]
+    for folder in ("research/proje-fikirleri", "research/handoff", "research/notes", "research/notebook"):
         paths.extend(p for p in (ROOT / folder).rglob("*") if p.is_file())
     records = []
     for p in sorted(set(paths)):
@@ -28,13 +28,13 @@ def main() -> None:
     catalog = {
         "recorded_at": stamp, "timezone": "Europe/Istanbul",
         "note": "Current filesystem last-write times, not original research dates. Earlier publication snapshot remains in history/. Git dates show actual commits.",
-        "final_specification": "proje.md", "idea_phase": "finished; implementation starts from T0",
+        "final_specification": "docs/proje.md", "idea_phase": "finished; implementation starts from T0",
         "excluded_folder": "önceki deneme", "records": records,
     }
     (ROOT / "research/FILE_TIMESTAMPS.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     text = """# Proje fikir aşamaları ve araştırmalar / Research
 
-**Fikir aşaması tamamlandı. Son uygulama belgesi kökteki [proje.md](../proje.md).** Aşağıdaki notlar fikrin araştırılmasını ve gelişimini anlatır; tamamlanmış uygulama sayılmaz.
+**Fikir aşaması tamamlandı. Son uygulama belgesi [docs/proje.md](../docs/proje.md).** Aşağıdaki notlar fikrin araştırılmasını ve gelişimini anlatır; tamamlanmış uygulama sayılmaz.
 
 ![Fikir aşamalarının gelişimi](idea-stages.svg)
 
@@ -46,8 +46,8 @@ def main() -> None:
 |---|---|---|
 | 01 — Araştırma | [İlk araştırma](proje-fikirleri/SPACE_APPS_ARASTIRMA.md), [kapsamlı araştırma](proje-fikirleri/SPACE_APPS_KAPSAMLI_ARASTIRMA.md), [kaynak/varlık kataloğu](proje-fikirleri/KAYNAK_VE_VARLIK_KATALOGU.md) | Veri, kaynak ve araç seçenekleri |
 | 02 — Fikrin gelişimi | [Ürün tanımı](proje-fikirleri/PROJE_TANIMI.md), [astronot/rover/drone](proje-fikirleri/ASTRONOT_ROVER_DRONE.md), [görevler](proje-fikirleri/BES_ANA_GOREV_VE_MIMARI.md), [strateji](proje-fikirleri/GELISTIRME_STRATEJISI.md), [tasarım incelemesi](proje-fikirleri/TASARIM_GOZDEN_GECIRME.md), [v2 kılavuzu](proje-fikirleri/PROJE_KILAVUZU.md) | Görevler, roller ve alternatiflerin incelenmesi |
-| 03 — V3 kararı | [V3 kılavuzu](proje-fikirleri/REDLINE_V3_KILAVUZU.md), [konsey kayıtları](../research-notes/council-v3-source/README.md) | BXW ileri EVA, YKB kalibrasyon; tek EVA'nın beş evresi |
-| 04 — Fikir aşaması bitti | [proje.md](../proje.md), [aktarılmış spek nüshası](proje-fikirleri/REDLINE_V3_UYGULAMA_SPEKI.md) | Kodlamanın esas belgesi ve T0–T14 kabul ölçütleri |
+| 03 — V3 kararı | [V3 kılavuzu](proje-fikirleri/REDLINE_V3_KILAVUZU.md), [konsey kayıtları](notes/council-v3-source/README.md) | BXW ileri EVA, YKB kalibrasyon; tek EVA'nın beş evresi |
+| 04 — Fikir aşaması bitti | [docs/proje.md](../docs/proje.md), [aktarılmış spek nüshası](proje-fikirleri/REDLINE_V3_UYGULAMA_SPEKI.md) | Kodlamanın esas belgesi ve T0–T14 kabul ölçütleri |
 
 ## Kayıtların anlamı
 
@@ -63,7 +63,7 @@ Kullanıcının son yönlendirmesiyle `önceki deneme` klasörü güncel çalı�
     for record in records:
         link = "../" + quote(record["path"], safe="/._-")
         text += f'| [{record["path"]}]({link}) | {record["last_write_at"]} |\n'
-    text += "\n[Makinece okunabilir tarih/hash kaydı](FILE_TIMESTAMPS.json) · [Uygulama ilerlemesi](../docs/PROGRESS.md) · [Gerçek test kayıtları](../docs/VERIFICATION_LOG.md).\n"
+    text += "\n[Makinece okunabilir tarih/hash kaydı](FILE_TIMESTAMPS.json) · [Uygulama ilerlemesi](../journal/PROGRESS.md) · [Gerçek test kayıtları](../docs/VERIFICATION_LOG.md).\n"
     (ROOT / "research/README.md").write_text(text, encoding="utf-8")
     print(f"Research index: {len(records)} current records; {stamp}")
 

@@ -1,34 +1,37 @@
 # REDLINE
 
-REDLINE, Mars EVA planlaması için **Bilinen · Bilinmeyen · Kırmızı çizgi** yaklaşımını araştırır. Haritadaki belirsizlikler dönüş payına bağlanır; robot gözlemleri planı günceller, radyasyon olayı yeniden planlamayı tetikler.
+**Known · Unknown · Red line** — an uncertainty-aware Mars EVA planning tool built for NASA Space Apps 2026.
 
-**Fikir aşaması tamamlandı. Uygulamanın esası [proje.md](proje.md).** Fikirler, gelişimleri ve araştırmalar [research/](research/README.md) altında düzenlendi. Sıradaki iş T0 yazılım altyapısıdır; gerçek sonuçlar [doğrulama günlüğünde](docs/VERIFICATION_LOG.md) kayıtlıdır. Görsel tasarım ve 3D varlıklar kullanıcıyla birlikte yapılacak.
+Map uncertainty is converted into a *return margin*: the red line shows how far a crew can safely go given what is known, what is not, and the current radiation environment. Robot observations update the plan, and a radiation event triggers re-planning.
 
-![Proje fikrinin gelişim aşamaları](research/idea-stages.svg)
+*TR: Haritadaki belirsizlikler dönüş payına bağlanır; robot gözlemleri planı günceller, radyasyon olayı yeniden planlamayı tetikler.*
 
-| Nereden başlamalı? | İçerik |
+> **Status:** idea phase finished; implementation is at milestone **T0** (infrastructure). Nothing is marked done without observed test evidence — see [journal/PROGRESS.md](journal/PROGRESS.md).
+
+## Repository layout
+
+| Path | Contents |
 |---|---|
-| [proje.md](proje.md) | Kullanıcının paylaştığı ayrıntılı uygulama planı |
-| [V3 kılavuzu](research/proje-fikirleri/REDLINE_V3_KILAVUZU.md) | Amaç, sahalar, bilim ve insan/robot iş akışı |
-| [V3 uygulama speki](research/proje-fikirleri/REDLINE_V3_UYGULAMA_SPEKI.md) | Sözleşmeler, testler ve T0–T14 sırası |
-| [Research — tarih ve saat dizini](research/README.md) | Bütün araştırma dosyalarına bağlantılar ve zaman kayıtları |
-| [Güncel araştırma tarih/hash envanteri](research/FILE_TIMESTAMPS.json) | Bugünkü belge konumları ve son yazma saatleri |
-| [İlk yayının tarihsel envanteri](research/history/2026-11-14-first-publication-files.json) | İlk aktarımın değişmeden saklanan dosya/zaman kaydı |
+| [docs/](docs/) | [Implementation spec (`proje.md`)](docs/proje.md), decisions, verification log, AI disclosure, pre-existing work |
+| [journal/](journal/README.md) | Hackathon development log — progress per milestone and dated session notes |
+| [research/](research/README.md) | Entire research & idea phase: concept evolution, data-source notes, metadata checks, council records |
+| [python/](python/) | `redline_core` (core algorithms) and `redline_data` (data tooling) |
+| [ros_ws/](ros_ws/) | ROS 2 workspace (`redline_msgs` interfaces) |
+| [config/](config/), [scripts/](scripts/), [tools/](tools/) | Runtime defaults, bootstrap/test scripts, repo tooling |
+| [.github/](.github/) | CI (pytest + colcon) |
 
-`proje.md`, kullanıcının son paylaştığı uygulama planıdır. Düzenleme sırasında yalnız yerel belge bağlantıları yeni klasörlere yönlendirildi; uygulama kararları değiştirilmedi. Research altındaki spek aktarılmış nüshadır; kodlamada kökteki `proje.md` esas alınır. Güncel çerçeve: BXW ileri EVA, YKB kalibrasyon/tutarlılık ve tek EVA'nın beş evresi.
+## Build & test
 
-## Tarih ve saatler
+Target: ROS 2 Jazzy, Python 3.12 (Ubuntu 24.04 / WSL).
 
-İlk yayın envanteri **2026-11-14T12:22:19+03:00** tarihinde hazırlanmaya başladı. Research dizini her belgenin metnindeki tarih beyanını, yerel son yazma ve oluşma/aktarım zamanlarını gösterir. Saat dilimi **Europe/Istanbul (UTC+03:00)**; JSON'daki dosya zamanları UTC'dir.
+```bash
+bash scripts/bootstrap.sh   # isolated venv + dependencies
+bash scripts/test.sh        # pytest + colcon build/test
+```
 
-Dosya sistemi zamanı araştırmanın ilk yazıldığı zamanı kanıtlamaz; arşivden gelen dosyalarda paketleme zamanını yansıtabilir. Saat belirtilmeyen belgeye saat eklenmez. Gerçek yayın/commit tarih ve saatleri [bu reponun commit geçmişinde](https://github.com/ahmetefesensoy/redline/commits/main/) izlenir.
+## Honesty notes
 
-## Kaynaklar ve durum
-
-[Araştırma notları](research-notes/) ve [metadata not defteri](output/jupyter-notebook/nasa-metadata-coverage.ipynb) kaynak/karar kayıtlarıdır. Tarihsel [D]/[K]/[?] işaretleri kendi bağlamında okunur; yeni uygulamanın çalıştığı sonucu çıkarılmaz. `önceki deneme` klasörü kullanıcının yönlendirmesiyle güncel projeden çıkarıldı; eski commit'ler Git geçmişinde kalır.
-
-- [İlerleme](docs/PROGRESS.md) ve [doğrulama](docs/VERIFICATION_LOG.md)
-- [Önceden var olan çalışma](docs/PRE_EXISTING_WORK.md) ve [AI katkısı](docs/AI_DISCLOSURE.md)
-- [Aktarım](research/handoff/YENI_DEPO_AKTARIMI.md) ve [skill kaynakları/lisansları](research/proje-fikirleri/SKILL_PLANI.md)
-
-`.agents/skills` 18 proje skill'ini, `optional-user-skills` 26 ek skill'in referans kopyasını içerir. Bunlar geliştirme rehberleridir; kurulu motor, hesap veya çalışan uygulama sağlamaz.
+- NASA/USGS measurements are kept separate from `DERIVED`, `SIMULATED` and `SCENARIO` data; provenance is preserved.
+- Design documents in `research/` are not a working application.
+- AI assistance is disclosed in [docs/AI_DISCLOSURE.md](docs/AI_DISCLOSURE.md); third-party material in [docs/PRE_EXISTING_WORK.md](docs/PRE_EXISTING_WORK.md).
+- Visual design and 3D assets are developed together with the project owner and are not part of this stage.

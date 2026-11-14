@@ -32,11 +32,11 @@ Bu kılavuz önceki fikirleri birleştiren ana ürün tanımıdır. Kapsam büy�
 18. [Space Apps teslimi ve kaynak hakları](#kurallar)
 19. [Gösterim, çevrimdışı kullanım ve açık sorular](#gosterim)
 
-Ekler: [veri/varlık/repo/ses kataloğu](KAYNAK_VE_VARLIK_KATALOGU.md), [üç tur eleştiri ve revizyon](../../research-notes/UC_TUR_TASARIM_INCELEMESI.md), [derinleştirme araştırması](GELISTIRME_STRATEJISI.md).
+Ekler: [veri/varlık/repo/ses kataloğu](KAYNAK_VE_VARLIK_KATALOGU.md), [üç tur eleştiri ve revizyon](../notes/UC_TUR_TASARIM_INCELEMESI.md), [derinleştirme araştırması](GELISTIRME_STRATEJISI.md).
 
-14 Kasım saha geliştirmesi: [gerçek hedef/ürün eşleştirmesi ve bilim istasyonu](../../research-notes/SAHA_VE_BILIM_ISTASYONU.md). Öncelikli çalışma kampanyası Yellowknife Bay/Sheepbed, yedek Gobabeb; pH simülasyonu numune kökeni ve laboratuvar işlemiyle ilişkilendirilir.
+14 Kasım saha geliştirmesi: [gerçek hedef/ürün eşleştirmesi ve bilim istasyonu](../notes/SAHA_VE_BILIM_ISTASYONU.md). Öncelikli çalışma kampanyası Yellowknife Bay/Sheepbed, yedek Gobabeb; pH simülasyonu numune kökeni ve laboratuvar işlemiyle ilişkilendirilir.
 
-Görevlerin neden bu biçimde kurulduğu ve faydasının nasıl sınanacağı: [görev değeri ve kanıt planı](../../research-notes/GOREV_DEGERI_VE_KANIT_PLANI.md). Bu sürüm görev tasarımını geliştirir; yeni uygulama özelliği tamamlandığı anlamına gelmez.
+Görevlerin neden bu biçimde kurulduğu ve faydasının nasıl sınanacağı: [görev değeri ve kanıt planı](../notes/GOREV_DEGERI_VE_KANIT_PLANI.md). Bu sürüm görev tasarımını geliştirir; yeni uygulama özelliği tamamlandığı anlamına gelmez.
 
 <a id="amac"></a>
 ## 1. Amaç, challenge ve mevcut durum
@@ -467,9 +467,9 @@ Arşiv tekrarı kendi yeri/zamanıyla çalışır. Referans profilli senaryo bir
 
 MRO tabanlı yörünge geometri/görüntü + MSL yer gözlemi/bilim bağlamı + uygun Odyssey bağlamı hedef birleşimdir. Karma DEM'in çok görevli girdileri de geçerli veri kökenidir; hangi NASA görevlerinin nasıl katkı verdiği belgelenir. Her görev için bağımsız aç/kapat katmanı veya her katmanın rota değişikliği üretmesi zorunlu değildir. Bağımsız yer gözlemi/bilim ürünü, birleşimin faydasını ayrıca göstermeye yardım eder. Katalog D01–D16 her ürünün nerede kullanılacağını belirtir.
 
-Mevcut Gale AOI'sindeki PLACES kesişim sorunu çözülmeden nihai bilim hedefleri sabitlenmez. [AOI kontrolü](../../research-notes/Gale_PLACES_AOI_KONTROLU.md). Önce gerçek hedef/sol/ürün seçilir, sonra DEM/ortho ve yer gözlemlerinin gerçek örtüşmesi doğrulanır. Enlem türü, boylam yönü, küre yarıçapı, yatay/dikey datum ve no-data korunur.
+Mevcut Gale AOI'sindeki PLACES kesişim sorunu çözülmeden nihai bilim hedefleri sabitlenmez. [AOI kontrolü](../notes/Gale_PLACES_AOI_KONTROLU.md). Önce gerçek hedef/sol/ürün seçilir, sonra DEM/ortho ve yer gözlemlerinin gerçek örtüşmesi doğrulanır. Enlem türü, boylam yönü, küre yarıçapı, yatay/dikey datum ve no-data korunur.
 
-14 Kasım araştırmasında iki Yellowknife APXS hedef satırı ve John Klein/Cumberland CheMin ürünleri somutlaştırıldı. HiRISE `PSP_010573_1755_RED` label'ı bu iki APXS satırını sayısal sınır kutusunda kapsıyor; bu henüz piksel/no-data veya kesin hedef pozu doğrulaması değildir. APXS hedef/site konumu delik collider'ı gibi kullanılmayacak; örnek kökeni, analiz konumu ve görüntü hedefi ayrı doğrulanacak. Ana saha önceliği bu kayıtlarla Yellowknife Bay; mevcut 2×2 km arazi mühendislik test sahası olarak kalır. [Ürünler ve QA kaydı](../../research-notes/SAHA_VE_BILIM_ISTASYONU.md).
+14 Kasım araştırmasında iki Yellowknife APXS hedef satırı ve John Klein/Cumberland CheMin ürünleri somutlaştırıldı. HiRISE `PSP_010573_1755_RED` label'ı bu iki APXS satırını sayısal sınır kutusunda kapsıyor; bu henüz piksel/no-data veya kesin hedef pozu doğrulaması değildir. APXS hedef/site konumu delik collider'ı gibi kullanılmayacak; örnek kökeni, analiz konumu ve görüntü hedefi ayrı doğrulanacak. Ana saha önceliği bu kayıtlarla Yellowknife Bay; mevcut 2×2 km arazi mühendislik test sahası olarak kalır. [Ürünler ve QA kaydı](../notes/SAHA_VE_BILIM_ISTASYONU.md).
 
 ### 12.3 Bilinmeyen alan ve birleştirme
 
@@ -630,7 +630,7 @@ Bir kullanıcı habitat içinde görevi seçebilmeli; robotu manuel ve otonom ku
 
 ### 16.4 Öncelikli kanıt ve olumsuz sonuçlar
 
-Önce aynı bilgiyi ayrı ekranlarda kullanmak ile ortak hedef/harita bağlantısıyla kullanmak karşılaştırılır. Sonra aynı başlangıç ve kaynaklarla keşif stratejisi, ardından manuel/otonom yardım ayrı denenir. Böylece daha çok sensör verisi, daha iyi arayüz ve otonomi aynı etkide karışmaz. Deney tanımı ve varyantlar [kanıt planında](../../research-notes/GOREV_DEGERI_VE_KANIT_PLANI.md).
+Önce aynı bilgiyi ayrı ekranlarda kullanmak ile ortak hedef/harita bağlantısıyla kullanmak karşılaştırılır. Sonra aynı başlangıç ve kaynaklarla keşif stratejisi, ardından manuel/otonom yardım ayrı denenir. Böylece daha çok sensör verisi, daha iyi arayüz ve otonomi aynı etkide karışmaz. Deney tanımı ve varyantlar [kanıt planında](../notes/GOREV_DEGERI_VE_KANIT_PLANI.md).
 
 Kolay sahada ek drone uçuşu gereksiz maliyet çıkarabilmeli; verisi yetersiz sahada sistem görevi reddedebilmeli; geçersiz hazırlıkta analiz grafiği başarılı bilim sayılmamalı. Gerekçeli durdurma, donanımın korunması, geçerli bilim ve bütün araçların dönüşü ayrı sonuçlardır. Tamamlanan bilim işi olmadan yalnız doğru iptal puanıyla en iyi koşu üretilmez. Ortak arayüz veya otonomi yarar göstermiyorsa bu da raporlanır.
 
@@ -720,4 +720,4 @@ Zayıf laptop için ayrı kayıt inceleme/debrief profili hazırlanabilir: zaman
 
 ### 19.4 Kaynak ve belge dizini
 
-Bu belge ana proje tanımıdır. [Görev değeri ve kanıt planı](../../research-notes/GOREV_DEGERI_VE_KANIT_PLANI.md) sürüm 3 görevlerinin gerekçesini ve ilk karşılaştırmayı; [saha notu](../../research-notes/SAHA_VE_BILIM_ISTASYONU.md) gerçek hedef/ürün bağlarını; [kaynak ve varlık kataloğu](KAYNAK_VE_VARLIK_KATALOGU.md) edinme/uyumluluk kararlarını içerir. [Üç tur kayıt](../../research-notes/UC_TUR_TASARIM_INCELEMESI.md), [ilk ürün tanımı](PROJE_TANIMI.md), [çok araç tasarımı](ASTRONOT_ROVER_DRONE.md), [beş görev taslağı](BES_ANA_GOREV_VE_MIMARI.md), [tasarım revizyonu](TASARIM_GOZDEN_GECIRME.md) ve [strateji raporu](GELISTIRME_STRATEJISI.md) karar geçmişi/ayrıntı olarak korunur. Farklılık varsa bu kılavuzdaki açık durum ve sınırlar esas alınır.
+Bu belge ana proje tanımıdır. [Görev değeri ve kanıt planı](../notes/GOREV_DEGERI_VE_KANIT_PLANI.md) sürüm 3 görevlerinin gerekçesini ve ilk karşılaştırmayı; [saha notu](../notes/SAHA_VE_BILIM_ISTASYONU.md) gerçek hedef/ürün bağlarını; [kaynak ve varlık kataloğu](KAYNAK_VE_VARLIK_KATALOGU.md) edinme/uyumluluk kararlarını içerir. [Üç tur kayıt](../notes/UC_TUR_TASARIM_INCELEMESI.md), [ilk ürün tanımı](PROJE_TANIMI.md), [çok araç tasarımı](ASTRONOT_ROVER_DRONE.md), [beş görev taslağı](BES_ANA_GOREV_VE_MIMARI.md), [tasarım revizyonu](TASARIM_GOZDEN_GECIRME.md) ve [strateji raporu](GELISTIRME_STRATEJISI.md) karar geçmişi/ayrıntı olarak korunur. Farklılık varsa bu kılavuzdaki açık durum ve sınırlar esas alınır.

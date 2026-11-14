@@ -1,0 +1,14 @@
+# Only new application sources use normalized line endings. Preserve the
+# archived research and installed skill payloads exactly as transferred.
+/scripts/*.sh text eol=lf
+/scripts/*.txt text eol=lf
+/config/runtime.env text eol=lf
+/.github/workflows/*.yml text eol=lf
+/python/**/*.py text eol=lf
+/python/**/pyproject.toml text eol=lf
+/ros_ws/src/**/*.msg text eol=lf
+/ros_ws/src/**/*.srv text eol=lf
+/ros_ws/src/**/*.action text eol=lf
+/ros_ws/src/**/*.py text eol=lf
+/ros_ws/src/**/CMakeLists.txt text eol=lf
+/ros_ws/src/**/package.xml text eol=lf

@@ -1,39 +1,213 @@
 {
-  "recorded_at": "2026-11-14T12:45:24+03:00",
+  "recorded_at": "2026-11-14T12:49:43+03:00",
   "timezone": "Europe/Istanbul",
   "note": "Current filesystem last-write times, not original research dates. Earlier publication snapshot remains in history/. Git dates show actual commits.",
-  "final_specification": "proje.md",
+  "final_specification": "docs/proje.md",
   "idea_phase": "finished; implementation starts from T0",
   "excluded_folder": "önceki deneme",
   "records": [
     {
-      "path": "output/jupyter-notebook/nasa-metadata-coverage.ipynb",
-      "bytes": 9950,
-      "sha256": "6e64c58eff40ac3ba5595ac9df59d3dc88e954408a1f25cf0bee27f3522f2e4a",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "output/jupyter-notebook/nasa-metadata-coverage.validation.json",
-      "bytes": 1665,
-      "sha256": "7d9f91daffa2982c77c49242b2e72cb1bf89cc3868531daca285e834ef25b1b3",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "proje.md",
+      "path": "docs/proje.md",
       "bytes": 67050,
       "sha256": "658015ce463ff1eebc0291048fe88230e516559820ceaca9e09ed36fe0818077",
       "last_write_at": "2026-11-14T12:34:26+03:00"
     },
     {
       "path": "research/handoff/HANDOFF_MANIFEST.json",
-      "bytes": 130331,
-      "sha256": "585e03abf1850c09dd9977e131517783be5fd5af8f4f096a0341fe37a1e30c24",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
+      "bytes": 133707,
+      "sha256": "4357d27e5de51f0ca984254ed7fb36cda1834b96d4a9288d3bf0f6b069b3ec52",
+      "last_write_at": "2026-11-14T12:49:05+03:00"
     },
     {
       "path": "research/handoff/YENI_DEPO_AKTARIMI.md",
       "bytes": 11318,
       "sha256": "3f75d1c70a4c8416b5646e505073b60040b032b7dde9f68d1f53f0b46a66efc0",
+      "last_write_at": "2026-11-14T12:34:26+03:00"
+    },
+    {
+      "path": "research/notebook/nasa-metadata-coverage.ipynb",
+      "bytes": 9709,
+      "sha256": "d7df8154c7567d450e45d0486246966a39411f99821123a3a9e3f1e540a1d5f7",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
+    },
+    {
+      "path": "research/notebook/nasa-metadata-coverage.validation.json",
+      "bytes": 1608,
+      "sha256": "44bc01f9bedece050146c9c8ae7b7938fde47d801025cf374e14417a7db60c15",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
+    },
+    {
+      "path": "research/notes/APXS_HEDEF_ON_KONTROL.json",
+      "bytes": 6967,
+      "sha256": "6f791602fb875932eda1df25002aa023031cc5d128e91acfc238d8708fb99f92",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/aggregate.json",
+      "bytes": 1177,
+      "sha256": "25d6e471e67b900e9a798b87f66c289ac3ea4e7f244af0e5185c08dc380968db",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/draft_v1.md",
+      "bytes": 7808,
+      "sha256": "e8808a2e3631126e20b001d49d68627215ce502403bf7ccabdd50aae653cdffe",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/final.md",
+      "bytes": 6159,
+      "sha256": "bc3f0d55868476e7336735098e77a9ab1dde9288ab078ba6bad855d4e3021f11",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/question.md",
+      "bytes": 4704,
+      "sha256": "87060c2368ce0be2b89e048093c9bf8693013b0a344746712332c34706b8bd7c",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/README.md",
+      "bytes": 794,
+      "sha256": "b210252d340a6b867b8cb25b226c4cad383a5505ef6bc782cdf9d49196be61cc",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/SOURCE.json",
+      "bytes": 2597,
+      "sha256": "7dfa50f81bd04692376da0801708ef72614ad72cddd01d92ee8d21d1bea05bf4",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage1/fable.md",
+      "bytes": 18527,
+      "sha256": "f816abe20d1a8f604248a44c43b622d3f2ccc57d92fa67ef5e88f44a6168c23f",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage1/haiku.md",
+      "bytes": 19192,
+      "sha256": "b887c1268872ad6d7bd6f6bbb304bd0d074353af13e168c872268e5aee88c744",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage1/opus.md",
+      "bytes": 33909,
+      "sha256": "0cbed5ae2008638f5aa7411b59d3d798979e463e4608b8c20be9b25e70641264",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage1/sonnet.md",
+      "bytes": 12207,
+      "sha256": "e79e48bef4395d7b00196f9ae1009089f51f84ab622e228d4a1c1a5f65b50724",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage2/fable.md",
+      "bytes": 13146,
+      "sha256": "f3cdfb60fb0bd5f207ceff3444bf8b1c73ef4e07cbd108a26da57dc7ab23e102",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage2/haiku.md",
+      "bytes": 14395,
+      "sha256": "8b9e7dba6eb23d543500d6e8c8f9731b81ea252cea2958f672e69b15abe16151",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage2/opus.md",
+      "bytes": 14088,
+      "sha256": "c2762dbb7ced68ed7d167c310cc695894c9a98f3f4d45c4ab2147888fa6b9ef7",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage2/sonnet.md",
+      "bytes": 6114,
+      "sha256": "c6efcfeea5e69ba172d3cd8877a75371fa4af431effc1b9686e8da5ea0f1b52d",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage2_prompts/labels.json",
+      "bytes": 109,
+      "sha256": "64c49fb53c75aded7a9d2ded3dcb8c77dfc57aabe903cd0f78079e43eff3a002",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/council-v3-source/stage3_pessimist_brief.md",
+      "bytes": 1783,
+      "sha256": "656a611a80f15ce13fac07edeb6495d90ecfb89b3fb22b0d67a720b38d10d5f7",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/CUMBERLAND_CHEMIN_URUN_KONTROLU.json",
+      "bytes": 3260,
+      "sha256": "66c22f545c0de711329b13270857d3c75f31fe8c6cd4cdaae5f10c035df0e0ff",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/Gale_PLACES_AOI_KONTROLU.json",
+      "bytes": 3487,
+      "sha256": "d8e7127411cc2da3b9f19bf984606acc3204c48d5f147a270493ce3cdc9e7c48",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/Gale_PLACES_AOI_KONTROLU.md",
+      "bytes": 2690,
+      "sha256": "64cb24438b0ed24885f5eb0c4bb61ee10362021c48ed78ff5e0dd8e577f73620",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/GOREV_DEGERI_VE_KANIT_PLANI.md",
+      "bytes": 18531,
+      "sha256": "733a37f1d3e27f68965372b73ef2adf1e24a6a0e8eb4327a5eaf6914123f8b82",
+      "last_write_at": "2026-11-14T12:34:26+03:00"
+    },
+    {
+      "path": "research/notes/HIRISE_YELLOWKNIFE_METADATA_KONTROLU.json",
+      "bytes": 9986,
+      "sha256": "693b81c7fe94f10873b9ec3ac05860ddb09bc6f57e08db2b695107eb217db878",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/karar_degeri_ornek_hesap.json",
+      "bytes": 4816,
+      "sha256": "de337f190ba2acccb22d14154b90aa0baba9c96d43252ba5f7a6f927d9947ba2",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/SAHA_OLCUM_METADATA_KONTROLU.json",
+      "bytes": 4581,
+      "sha256": "be8a88f35331a2478e7fc412ebf321d84f08d14565a204db5d9bf7918bf83ef0",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/SAHA_VE_BILIM_ISTASYONU.md",
+      "bytes": 10114,
+      "sha256": "ae957bee2792e3b85b21fa0e72683038ee50bcea90dde861596c2fc203fc44a6",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/SKILL_ILK_UYGULAMA.md",
+      "bytes": 3616,
+      "sha256": "b127fbf9c7aa2c75ba5e162048a6d3a67172dc8f5a2b4f00048b5c59ca7b40ce",
+      "last_write_at": "2026-11-14T12:49:05+03:00"
+    },
+    {
+      "path": "research/notes/SPACE_APPS_2026_VERI_KAYNAKLARI.md",
+      "bytes": 8005,
+      "sha256": "a02f59dfc287df167bcc9dc84bf2ea2d4488b9305382a90e46ec02968d6de96b",
+      "last_write_at": "2026-11-14T12:00:06+03:00"
+    },
+    {
+      "path": "research/notes/SPACE_APPS_MAPPING_JURI_INCELEMESI.md",
+      "bytes": 10520,
+      "sha256": "fb5e261537f231b1e909ab9dd7b032bd98d660f6de46da22def3f15a3fa52c4e",
+      "last_write_at": "2026-11-14T12:34:26+03:00"
+    },
+    {
+      "path": "research/notes/UC_TUR_TASARIM_INCELEMESI.md",
+      "bytes": 10185,
+      "sha256": "4a19c1b140bfa548ff0cdd117051262dfed2efdab763d77c99e5d6c5c7bd8c03",
       "last_write_at": "2026-11-14T12:34:26+03:00"
     },
     {
@@ -50,33 +224,33 @@
     },
     {
       "path": "research/proje-fikirleri/GELISTIRME_STRATEJISI.md",
-      "bytes": 28822,
-      "sha256": "c63bbae66b3db0008b9c1bf75f64a836e2eb79e9e5688fa4d73d9239aecbcc71",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 28798,
+      "sha256": "d800faa9db3f084cdf0240faa48b841af0d4f7695c613532235d2783478a05d1",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
     },
     {
       "path": "research/proje-fikirleri/KAYNAK_VE_VARLIK_KATALOGU.md",
-      "bytes": 22044,
-      "sha256": "322f5c166fd72c93b913d679b2e3f6d5148765dec3f7367c7276fd02ada295af",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 22008,
+      "sha256": "22f03163ee001b54a8d3d0828093af1e74dcee713173c5a4c44e9930a3af533d",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
     },
     {
       "path": "research/proje-fikirleri/PROJE_KILAVUZU.md",
-      "bytes": 83794,
-      "sha256": "5b39beb81ab8dd5f316639a05dd65ce55624e26627b3bd096b67e5b347733a90",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 83686,
+      "sha256": "df92f9dff8836556ad7fcf3db4eeb849a4c34faa09daa7159935261bf6c8ed93",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
     },
     {
       "path": "research/proje-fikirleri/PROJE_TANIMI.md",
-      "bytes": 15976,
-      "sha256": "d9f5479cb9070cea89f35afb36aeb8d7f357c6be1e717217e3f3740a9f3222d4",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 15964,
+      "sha256": "26906437d3683d4e8ec743977f0b14eea2348822da43ee16152b9eda9701a803",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
     },
     {
       "path": "research/proje-fikirleri/REDLINE_V3_KILAVUZU.md",
-      "bytes": 66716,
-      "sha256": "eb53d45382ebc91a7479c22a006f927286a49254fff2b1a3f26574a2b241d5e7",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 66692,
+      "sha256": "5bb2dca708b85139252c62bf6ce53fc0102241f8975936bd7fa59aa30203eaad",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
     },
     {
       "path": "research/proje-fikirleri/REDLINE_V3_UYGULAMA_SPEKI.md",
@@ -86,9 +260,9 @@
     },
     {
       "path": "research/proje-fikirleri/SKILL_PLANI.md",
-      "bytes": 8892,
-      "sha256": "8ca5ed33c970ab8af370891d92189e74f3a6240a2d3d569210ee3c1860a6a42b",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 8862,
+      "sha256": "b955a65031abf1659135a3db473f1ff4b473ca30c828348f54ddc44f48e8557b",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
     },
     {
       "path": "research/proje-fikirleri/SPACE_APPS_ARASTIRMA.md",
@@ -98,189 +272,15 @@
     },
     {
       "path": "research/proje-fikirleri/SPACE_APPS_KAPSAMLI_ARASTIRMA.md",
-      "bytes": 53987,
-      "sha256": "eb8f37cc8802ebcc7418e69ff4c6e2911d9af3002509e7891c50b87193606ba1",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
+      "bytes": 53963,
+      "sha256": "36b831e477cdc058022ec48282a33d82c9a08a635604433265ad8352489c8868",
+      "last_write_at": "2026-11-14T12:48:58+03:00"
     },
     {
       "path": "research/proje-fikirleri/TASARIM_GOZDEN_GECIRME.md",
       "bytes": 17562,
       "sha256": "8c91980124603b4df3a12461641f40ded4b64d14a7b11e62eb715cafde77117b",
       "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/APXS_HEDEF_ON_KONTROL.json",
-      "bytes": 6967,
-      "sha256": "6f791602fb875932eda1df25002aa023031cc5d128e91acfc238d8708fb99f92",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/aggregate.json",
-      "bytes": 1177,
-      "sha256": "25d6e471e67b900e9a798b87f66c289ac3ea4e7f244af0e5185c08dc380968db",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/draft_v1.md",
-      "bytes": 7808,
-      "sha256": "e8808a2e3631126e20b001d49d68627215ce502403bf7ccabdd50aae653cdffe",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/final.md",
-      "bytes": 6159,
-      "sha256": "bc3f0d55868476e7336735098e77a9ab1dde9288ab078ba6bad855d4e3021f11",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/question.md",
-      "bytes": 4704,
-      "sha256": "87060c2368ce0be2b89e048093c9bf8693013b0a344746712332c34706b8bd7c",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/README.md",
-      "bytes": 794,
-      "sha256": "b210252d340a6b867b8cb25b226c4cad383a5505ef6bc782cdf9d49196be61cc",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/SOURCE.json",
-      "bytes": 2597,
-      "sha256": "7dfa50f81bd04692376da0801708ef72614ad72cddd01d92ee8d21d1bea05bf4",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage1/fable.md",
-      "bytes": 18527,
-      "sha256": "f816abe20d1a8f604248a44c43b622d3f2ccc57d92fa67ef5e88f44a6168c23f",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage1/haiku.md",
-      "bytes": 19192,
-      "sha256": "b887c1268872ad6d7bd6f6bbb304bd0d074353af13e168c872268e5aee88c744",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage1/opus.md",
-      "bytes": 33909,
-      "sha256": "0cbed5ae2008638f5aa7411b59d3d798979e463e4608b8c20be9b25e70641264",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage1/sonnet.md",
-      "bytes": 12207,
-      "sha256": "e79e48bef4395d7b00196f9ae1009089f51f84ab622e228d4a1c1a5f65b50724",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage2/fable.md",
-      "bytes": 13146,
-      "sha256": "f3cdfb60fb0bd5f207ceff3444bf8b1c73ef4e07cbd108a26da57dc7ab23e102",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage2/haiku.md",
-      "bytes": 14395,
-      "sha256": "8b9e7dba6eb23d543500d6e8c8f9731b81ea252cea2958f672e69b15abe16151",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage2/opus.md",
-      "bytes": 14088,
-      "sha256": "c2762dbb7ced68ed7d167c310cc695894c9a98f3f4d45c4ab2147888fa6b9ef7",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage2/sonnet.md",
-      "bytes": 6114,
-      "sha256": "c6efcfeea5e69ba172d3cd8877a75371fa4af431effc1b9686e8da5ea0f1b52d",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage2_prompts/labels.json",
-      "bytes": 109,
-      "sha256": "64c49fb53c75aded7a9d2ded3dcb8c77dfc57aabe903cd0f78079e43eff3a002",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/council-v3-source/stage3_pessimist_brief.md",
-      "bytes": 1783,
-      "sha256": "656a611a80f15ce13fac07edeb6495d90ecfb89b3fb22b0d67a720b38d10d5f7",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/CUMBERLAND_CHEMIN_URUN_KONTROLU.json",
-      "bytes": 3260,
-      "sha256": "66c22f545c0de711329b13270857d3c75f31fe8c6cd4cdaae5f10c035df0e0ff",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/Gale_PLACES_AOI_KONTROLU.json",
-      "bytes": 3487,
-      "sha256": "d8e7127411cc2da3b9f19bf984606acc3204c48d5f147a270493ce3cdc9e7c48",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/Gale_PLACES_AOI_KONTROLU.md",
-      "bytes": 2690,
-      "sha256": "64cb24438b0ed24885f5eb0c4bb61ee10362021c48ed78ff5e0dd8e577f73620",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/GOREV_DEGERI_VE_KANIT_PLANI.md",
-      "bytes": 18531,
-      "sha256": "733a37f1d3e27f68965372b73ef2adf1e24a6a0e8eb4327a5eaf6914123f8b82",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
-    },
-    {
-      "path": "research-notes/HIRISE_YELLOWKNIFE_METADATA_KONTROLU.json",
-      "bytes": 9986,
-      "sha256": "693b81c7fe94f10873b9ec3ac05860ddb09bc6f57e08db2b695107eb217db878",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/karar_degeri_ornek_hesap.json",
-      "bytes": 4816,
-      "sha256": "de337f190ba2acccb22d14154b90aa0baba9c96d43252ba5f7a6f927d9947ba2",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/SAHA_OLCUM_METADATA_KONTROLU.json",
-      "bytes": 4581,
-      "sha256": "be8a88f35331a2478e7fc412ebf321d84f08d14565a204db5d9bf7918bf83ef0",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/SAHA_VE_BILIM_ISTASYONU.md",
-      "bytes": 10114,
-      "sha256": "ae957bee2792e3b85b21fa0e72683038ee50bcea90dde861596c2fc203fc44a6",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/SKILL_ILK_UYGULAMA.md",
-      "bytes": 3646,
-      "sha256": "0bc253ff4a2f220fbf61cd24a1be0572df8b4152e93578b796b32d7571ee7b21",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
-    },
-    {
-      "path": "research-notes/SPACE_APPS_2026_VERI_KAYNAKLARI.md",
-      "bytes": 8005,
-      "sha256": "a02f59dfc287df167bcc9dc84bf2ea2d4488b9305382a90e46ec02968d6de96b",
-      "last_write_at": "2026-11-14T12:00:06+03:00"
-    },
-    {
-      "path": "research-notes/SPACE_APPS_MAPPING_JURI_INCELEMESI.md",
-      "bytes": 10520,
-      "sha256": "fb5e261537f231b1e909ab9dd7b032bd98d660f6de46da22def3f15a3fa52c4e",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
-    },
-    {
-      "path": "research-notes/UC_TUR_TASARIM_INCELEMESI.md",
-      "bytes": 10185,
-      "sha256": "4a19c1b140bfa548ff0cdd117051262dfed2efdab763d77c99e5d6c5c7bd8c03",
-      "last_write_at": "2026-11-14T12:34:26+03:00"
     }
   ]
 }

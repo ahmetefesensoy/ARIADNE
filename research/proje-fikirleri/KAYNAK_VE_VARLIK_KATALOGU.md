@@ -8,7 +8,7 @@ Kod, ROS–Unreal, 3D üretim ve bilim çalışmasında kullanılacak skill'ler 
 
 [Ana kılavuz](PROJE_KILAVUZU.md) görevlerin davranışını açıklar. Bu katalog, her görev için hangi gerçek veri/araç/varlığın alınabileceğini ve hangi işi kendimizin yapacağını gösterir. Aynı görevden iki ürün kullanmak iki NASA görevi kullanmak değildir. Varlığın ücretsiz olması açık yeniden dağıtım hakkı demek değildir.
 
-Space Apps'in yayımlanan kaynakları için [14 Kasım incelemesi](../../research-notes/SPACE_APPS_2026_VERI_KAYNAKLARI.md): kaynak listesi duyurusu doğrulandı; resmî Mars Resources sekmesine erişim hatası sürdüğü için beş bağlantı organizatör kopyasından, araç özellikleri üretici sayfalarından kontrol edildi. Yeni tek bir Mars veri paketi doğrulanmadı.
+Space Apps'in yayımlanan kaynakları için [14 Kasım incelemesi](../notes/SPACE_APPS_2026_VERI_KAYNAKLARI.md): kaynak listesi duyurusu doğrulandı; resmî Mars Resources sekmesine erişim hatası sürdüğü için beş bağlantı organizatör kopyasından, araç özellikleri üretici sayfalarından kontrol edildi. Yeni tek bir Mars veri paketi doğrulanmadı.
 
 ## 1. Gerçek bilim ve harita verileri
 
@@ -37,11 +37,11 @@ Durum kodları: **Yerel** dosya/metadata mevcut; **Aday** ürün ailesi doğrula
 
 İlk hedef veri birleşimi D01/D02 + D03/D04 ve kampanyaya uygun D05/D06 + uygun D10'dur. D10 ancak gerçek göreve anlam katıyorsa kullanılır; katman sayısı için eklenmez. Güncel challenge Resources listesinden en az bir NASA kaynağının gerçekten kullanıldığının teslim öncesi kontrolü ayrıca yapılır.
 
-Yerel D01/D02 dosyaları `önceki deneme/ros2_ws/src/redline_mars_sim/models/gale_real/meshes/gale.dae` ve aynı dizindeki `orbital_texture.jpg`. Provenance (bu depoya dahil edilmedi) kaynak URL'leri, hash'leri, 2×2 km AOI sınırını, yerel orijini ve yaklaşık 4 m ağ aralığını içerir. Gale kaynak açıklaması (bu depoya dahil edilmedi) ve [AOI kesişim incelemesi](../../research-notes/Gale_PLACES_AOI_KONTROLU.md) birlikte okunur. “Yerel” bu kayıt/dosya varlığını belirtir; yeni bilim kampanyasının doğrulandığını söylemez.
+Yerel D01/D02 dosyaları `önceki deneme/ros2_ws/src/redline_mars_sim/models/gale_real/meshes/gale.dae` ve aynı dizindeki `orbital_texture.jpg`. Provenance (bu depoya dahil edilmedi) kaynak URL'leri, hash'leri, 2×2 km AOI sınırını, yerel orijini ve yaklaşık 4 m ağ aralığını içerir. Gale kaynak açıklaması (bu depoya dahil edilmedi) ve [AOI kesişim incelemesi](../notes/Gale_PLACES_AOI_KONTROLU.md) birlikte okunur. “Yerel” bu kayıt/dosya varlığını belirtir; yeni bilim kampanyasının doğrulandığını söylemez.
 
 Veri işleme: PDS etiket/kalibrasyonunu oku → tekil ürün seç → yer/zaman/CRS eşle → no-data ve kaliteyi koru → kırp/yeniden örnekle → türetilmiş katmanı ve kaynak zincirini kaydet → Unreal/Gazebo için paketle. Çıktı gridini sıklaştırmak yeni ölçüm ayrıntısı yaratmaz.
 
-14 Kasım somutlaştırması: [saha ve bilim istasyonu kaydı](../../research-notes/SAHA_VE_BILIM_ISTASYONU.md) D05 için iki Yellowknife ve iki Gobabeb APXS satırını, D06 için iki CheMin ürününü ve MRO `PSP_010573_1755_RED` v2.0 label kontrolünü içerir. Yellowknife satırları ürünün sayısal kutusunda, Gobabeb satırları dışındadır; koordinat/piksel QA hâlâ gereklidir. D12 için gerçek WCL koleksiyonu `urn:nasa:pds:phx_meca:data_wcl::1.0`, parent DOI `10.17189/1518770` doğrulandı. Gale pH çıktısı gerçek arşiv yerine tanımlı simülasyon analizi olacaktır.
+14 Kasım somutlaştırması: [saha ve bilim istasyonu kaydı](../notes/SAHA_VE_BILIM_ISTASYONU.md) D05 için iki Yellowknife ve iki Gobabeb APXS satırını, D06 için iki CheMin ürününü ve MRO `PSP_010573_1755_RED` v2.0 label kontrolünü içerir. Yellowknife satırları ürünün sayısal kutusunda, Gobabeb satırları dışındadır; koordinat/piksel QA hâlâ gereklidir. D12 için gerçek WCL koleksiyonu `urn:nasa:pds:phx_meca:data_wcl::1.0`, parent DOI `10.17189/1518770` doğrulandı. Gale pH çıktısı gerçek arşiv yerine tanımlı simülasyon analizi olacaktır.
 
 ## 2. Hazır 3B varlıklar ve kendi üreteceklerimiz
 

@@ -1,0 +1,8 @@
+# SetCommandOwner.srv — proje.md section 5
+string vehicle_id
+uint8 requested_owner        # CommandOwner.*
+string reason
+---
+bool accepted
+uint8 current_owner
+string message

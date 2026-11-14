@@ -182,7 +182,7 @@ Bizim önerdiğimiz hazırlık karşılığı: etki için değişen görev karar
 
 Mevcut manifestin yaklaşık sınırı **137.427947–137.461688°E, −4.824993…−4.791252° planetocentric enlem**. JPL PLACES v42.0 için `localized_pos.csv` içindeki 1.470 satırın ROVER kayıtları ve `localized_interp.csv` içindeki 49.315 satır bu kutuyla sorgulandı: **iki tabloda da eşleşme sıfır**. Bu, bu tabloların kapsamındaki konum örnekleri için geçerlidir; uzaktan bu alana bakan fotoğraf olmadığı sonucunu vermez.
 
-Etiketin zaman kapsamı Nisan 2026'da bitiyor. Daha sonraki/yayımlanmamış veri ve görüntü bakış alanı ayrıca değerlendirilir. Sorgu yöntemi, kaynak URL'leri, versiyon ve yakın konum örneği [AOI araştırma notunda](../../research-notes/Gale_PLACES_AOI_KONTROLU.md) ve [JSON kaydında](../../research-notes/Gale_PLACES_AOI_KONTROLU.json) bulunuyor.
+Etiketin zaman kapsamı Nisan 2026'da bitiyor. Daha sonraki/yayımlanmamış veri ve görüntü bakış alanı ayrıca değerlendirilir. Sorgu yöntemi, kaynak URL'leri, versiyon ve yakın konum örneği [AOI araştırma notunda](../notes/Gale_PLACES_AOI_KONTROLU.md) ve [JSON kaydında](../notes/Gale_PLACES_AOI_KONTROLU.json) bulunuyor.
 
 **Önerim:** Gale'de kalıp belgeli bir Curiosity gözlemi çevresinde yeni küçük AOI seçmek ilk seçenek. Yakındaki bir PLACES konumu yalnız aday merkezdir, otomatik bilim durağı değil. İkinci seçenek Jezero'da HiRISE/CTX ve Perseverance gözlemlerini birleştirmek. Jezero ürünleri Gale sahasına katman olarak eklenemez; ayrı bölgedir.
 

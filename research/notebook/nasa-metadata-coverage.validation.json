@@ -1,0 +1,51 @@
+{
+  "notebook": "research/notebook/nasa-metadata-coverage.ipynb",
+  "python_version": "3.12.10",
+  "executed_code_cells": 4,
+  "execution_method": "Python code cells executed sequentially in one namespace; not an IPython/Jupyter kernel",
+  "result": {
+    "scope": "local metadata consistency; numeric bounding-box containment only",
+    "input_sha256": {
+      "apxs": "6f791602fb875932eda1df25002aa023031cc5d128e91acfc238d8708fb99f92",
+      "hirise": "693b81c7fe94f10873b9ec3ac05860ddb09bc6f57e08db2b695107eb217db878"
+    },
+    "saved_label_hash_matches": true,
+    "saved_fields_match_label": true,
+    "target_rows": 4,
+    "numeric_inside": 2,
+    "results": [
+      {
+        "target": "Wernecke_Brushed",
+        "sample_site": "John_Klein",
+        "sol": "169",
+        "preparation": "RB",
+        "numeric_bbox_contains": true
+      },
+      {
+        "target": "CumberlandNew_RP",
+        "sample_site": "Cumberland",
+        "sol": "276",
+        "preparation": "RU",
+        "numeric_bbox_contains": true
+      },
+      {
+        "target": "Gobabeb_DumpA_APXS",
+        "sample_site": "Gobabeb",
+        "sol": "1226",
+        "preparation": "Postsieve",
+        "numeric_bbox_contains": false
+      },
+      {
+        "target": "Gobabeb_DumpC_corrected",
+        "sample_site": "Gobabeb",
+        "sol": "1242",
+        "preparation": "Sieve150µm-1mm",
+        "numeric_bbox_contains": false
+      }
+    ],
+    "raw_apxs_csv_revalidated": false,
+    "coordinate_conventions_reconciled": false,
+    "raster_footprint_and_nodata_checked": false,
+    "exact_drill_pose_validated": false
+  }
+}

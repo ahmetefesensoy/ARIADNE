@@ -1,0 +1,23 @@
+# Drill.action — proje.md section 5
+string request_id
+string target_id
+float32 depth_mm
+uint8 ROTARY=0
+uint8 PERCUSSIVE=1
+uint8 mode
+---
+uint8 SUCCEEDED=0
+uint8 PARTIAL=1
+uint8 CANCELED=2
+uint8 FAILED=3
+uint8 REJECTED=4
+uint8 outcome
+string reason
+string sample_id
+string fault_code                  # "", "STALL", "FEED_LIMIT", "OVER_TORQUE", "BIT_STUCK"
+float32 achieved_depth_mm
+---
+string phase
+float32 depth_mm
+float32 feed_force_n
+float32 torque_nm

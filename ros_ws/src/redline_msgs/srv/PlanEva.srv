@@ -1,0 +1,10 @@
+# PlanEva.srv — proje.md section 5
+string site_id
+string[] crew_ids
+string[] candidate_target_ids
+float32 max_duration_min
+string objective               # "SAFE", "FAST", "SCIENCE"
+---
+bool success
+string message
+redline_msgs/EVAPlan plan

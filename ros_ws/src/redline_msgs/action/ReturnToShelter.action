@@ -1,0 +1,17 @@
+# ReturnToShelter.action — proje.md section 5
+string request_id
+string[] crew_ids
+string shelter_id                  # "habitat" veya "pr_1"
+bool rover_meets_crew
+---
+uint8 SUCCEEDED=0
+uint8 PARTIAL=1
+uint8 CANCELED=2
+uint8 FAILED=3
+uint8 REJECTED=4
+uint8 outcome
+string reason
+float32 actual_time_min
+---
+float32 eta_min
+float32 distance_m

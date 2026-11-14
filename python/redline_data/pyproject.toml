@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redline-data"
+version = "0.1.0"
+description = "REDLINE data pipeline entry point; T0 scaffold"
+requires-python = ">=3.12,<3.13"
+
+[project.scripts]
+redline-data = "redline_data.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

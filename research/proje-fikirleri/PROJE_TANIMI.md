@@ -120,7 +120,7 @@ Rovera özgü kaynaklar: [JPL Open Source Rover](https://github.com/nasa-jpl/ope
 - Simüle sensörler yeni senaryo gözlemi üretir; NASA'nın Mars'ta ölçtüğü veri diye etiketlenmez.
 - Kaynak modeli, iletişim ve zemin deneyleri açık varsayımlar taşır. Tarihsel hava/radyasyon kaydı bütün sahada canlı koşul sayılmaz.
 
-Mevcut Gale AOI'si için konum tablosu kesişim sorunu sürüyor; belgeye uygun gerçek bilim/görüntü bağlantısı kurulmadan nihai görev sahası seçilmez. [Saha kontrolü](../../research-notes/Gale_PLACES_AOI_KONTROLU.md).
+Mevcut Gale AOI'si için konum tablosu kesişim sorunu sürüyor; belgeye uygun gerçek bilim/görüntü bağlantısı kurulmadan nihai görev sahası seçilmez. [Saha kontrolü](../notes/Gale_PLACES_AOI_KONTROLU.md).
 
 ## Başarıyı nasıl göstereceğiz?
 

@@ -8,8 +8,8 @@ Kurulum bu depoya özel `.agents/skills` altında. Mevcut kullanıcı skill'leri
 değiştirilmedi. Kaynak commit'leri, lisanslar ve dosya hash'leri
 [manifestte](../../.agents/skills-manifest.json). İlk kullanım çıktıları:
 [UE bağlamı](../../.agents/ue-project-context.md),
-[NASA notebook'u](../../output/jupyter-notebook/nasa-metadata-coverage.ipynb) ve
-[uygulama kaydı](../../research-notes/SKILL_ILK_UYGULAMA.md).
+[NASA notebook'u](../notebook/nasa-metadata-coverage.ipynb) ve
+[uygulama kaydı](../notes/SKILL_ILK_UYGULAMA.md).
 
 ## Kurulanlar
 

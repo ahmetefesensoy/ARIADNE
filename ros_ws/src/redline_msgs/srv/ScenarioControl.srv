@@ -1,0 +1,15 @@
+# ScenarioControl.srv — proje.md section 5
+uint8 LOAD=0
+uint8 START=1
+uint8 PAUSE=2
+uint8 RESUME=3
+uint8 SEEK=4
+uint8 STOP=5
+uint8 command
+string scenario_id
+float32 time_scale
+float32 seek_s
+---
+bool success
+string message
+string run_id

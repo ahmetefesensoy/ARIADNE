@@ -1,0 +1,14 @@
+# CacheSample.action — proje.md section 5
+string request_id
+string sample_id
+string container_id
+---
+uint8 SUCCEEDED=0
+uint8 PARTIAL=1
+uint8 CANCELED=2
+uint8 FAILED=3
+uint8 REJECTED=4
+uint8 outcome
+string reason
+---
+string phase

@@ -24,3 +24,24 @@ Thumbs.db
 **/DerivedDataCache/
 **/Intermediate/
 **/Saved/
+
+# Python development environments and test artifacts
+.venv/
+venv/
+**/*.egg-info/
+test-results/
+.coverage
+htmlcov/
+
+# Large generated/downloaded datasets and run recordings
+data/raw/
+data/derived/
+data/engines/
+data/env/
+runs/
+
+# Local AI-assistant tooling (kept on disk, not published)
+AGENTS.md
+.agents/
+optional-user-skills/
+.claude/
