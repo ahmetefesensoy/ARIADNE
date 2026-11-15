@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-11-14",
+  "scope": "read-only archive metadata and small data query; no raster or app changes",
+  "sources": {
+    "places": {
+      "url": "https://planetarydata.jpl.nasa.gov/img/data/msl/msl_places/data_localizations/localized_interp.csv",
+      "bytes": 11755643,
+      "sha256": "09d4474e64aec6e788efdb4ec24a906f487fe1a58e26dd4431847c94d385faec",
+      "total_rows": 49315,
+      "filter": "frame=ROVER and sol in [182,279,1223,1225]",
+      "matches": []
+    },
+    "chemin_label": {
+      "url": "https://pds-geosciences.wustl.edu/msl/msl-m-chemin-4-rdr-v1/mslcmn_1xxx/data/rdr5/cma_414856883min01960060000ch12240p1.lbl",
+      "bytes": 2976,
+      "sha256": "3f7acf00735777d850d9fef083995f530677afe1b900b739b9cb821aef290116",
+      "content": "PDS_VERSION_ID                = PDS3\r\nRECORD_TYPE                   = STREAM\r\nRECORD_BYTES                  = 312\r\nFILE_RECORDS                  = 17\r\n^HEADER                     = (\"CMA_414856883MIN01960060000CH12240P1.CSV\",1)\r\n^SPREADSHEET                = (\"CMA_414856883MIN01960060000CH12240P1.CSV\",2)\r\nDATA_SET_ID                   = \"MSL-M-CHEMIN-4-RDR-V1.0\"\r\nPRODUCT_ID                    = \"CMA_414856883MIN01960060000CH12240P1\"\r\nPRODUCT_VERSION_ID            = \"V1.0\"\r\nRELEASE_ID                    = \"0003\"\r\nSOURCE_PRODUCT_ID             = \"CMA_414856883RDA01960060000CH12240P1\"\r\nPRODUCT_TYPE                  = \"CHEMIN_MIN\"\r\nINSTRUMENT_HOST_ID            = \"MSL\"\r\nINSTRUMENT_HOST_NAME          = \"MARS SCIENCE LABORATORY\"\r\nINSTRUMENT_ID                 = \"CHEMIN\"\r\nTARGET_NAME                   = \"MARS\"\r\nMSL:CALIBRATION_STANDARD_NAME = \"N/A\"\r\nMISSION_PHASE_NAME            = \"PRIMARY SURFACE MISSION\"\r\nPRODUCT_CREATION_TIME         = 2013-08-08T09:30:00 \r\nSTART_TIME                    = 2013-02-23T06:53:49.000\r\nSTOP_TIME                     = \"UNK\"\r\nSPACECRAFT_CLOCK_START_COUNT  = \"414856883.51114\"\r\nSPACECRAFT_CLOCK_STOP_COUNT   = \"UNK\"\r\nOBJECT                        = HEADER\r\n BYTES                        = 23\r\n HEADER_TYPE                  = TEXT\r\n DESCRIPTION                  = \"This header record contains column headings\r\n for the following table.\" \r\nEND_OBJECT                    = HEADER\r\n\r\nOBJECT                        = SPREADSHEET\r\n ROWS                         = 16\r\n ROW_BYTES                    = 289\r\n FIELDS                       = 3\r\n FIELD_DELIMITER              = \"COMMA\"\r\n ^STRUCTURE                   = \"CHEMIN_MIN.FMT\"\r\n DESCRIPTION                  = \"This table contains mineral abundances and\r\n analytical errors derived from diffraction-all K-alpha diffraction data for\r\n the John Klein drill sample, analyzed in CheMin\r\n cell number 13b (Mylar window). The analysis is based on the level 1B EDR \r\n file CMA_414856883RDA01960060000CH12240P1. Mineral identifications,\r\n abundances and analytical errors for crystalline phases, other than clay \r\n minerals, were determined using the program TOPAS.  The abundance of clay \r\n minerals was estimated separately, using the program FULLPAT, at ~22 +/- 11 \r\n weight% of the total sample mass. In addition to the crystalline phases, a \r\n broad rise in background is present and has been modeled using the program \r\n FULLPAT to indicate that ~28 +/- 15 weight% of this sample consists of X-ray \r\n amorphous material; a small amount of this may consist of allophane-like\r\n material. Column 1 of the table lists mineral identifications, column 2 \r\n lists the mineral abundances in weight percent, and column 3 indicates the\r\n estimated 2-sigma analytical errors. This is a preliminary analysis; \r\n additional analysis time was accumulated after sol 269 and an updated \r\n mineral abundance table will be provided in the next data delivery.\"\r\nEND_OBJECT                    = SPREADSHEET\r\nEND\r\n\r\n"
+    },
+    "chemin_csv": {
+      "url": "https://pds-geosciences.wustl.edu/msl/msl-m-chemin-4-rdr-v1/mslcmn_1xxx/data/rdr5/cma_414856883min01960060000ch12240p1.csv",
+      "bytes": 312,
+      "sha256": "c86bea13b16524ce15e58d79894269e53f31c1003e57f42f782801ffb989e2b0",
+      "content": "MINERAL,PERCENT,ERROR\r\nANDESINE,43.8,3.6\r\nSANIDINE,1.7,1.8\r\nALBITE,2.7,1.3\r\nFORSTERITE,5.1,3.3\r\nAUGITE,8.5,3.4\r\nPIGEONITE,12.7,4\r\nORTHOPYROXENE,6.8,3.1\r\nMAGNETITE,7,1.9\r\nANHYDRITE,3.3,2.1\r\nBASSANITE,2,0.9\r\nQUARTZ,0.6,0.7\r\nHEMATITE,1.2,0.9\r\nAKAGANEITE,2.4,1.4\r\nHALITE,0.2,0.3\r\nPYRITE,0.4,0.5\r\nPYRRHOTITE,1.5,1.5\r\n"
+    }
+  }
+}

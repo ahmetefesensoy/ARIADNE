@@ -18,6 +18,7 @@ Map uncertainty is converted into a *return margin*: the red line shows how far 
 | [docs/](docs/) | [Implementation spec (`proje.md`)](docs/proje.md), decisions, verification log, AI disclosure, pre-existing work |
 | [journal/](journal/README.md) | Hackathon development log — progress per milestone and dated session notes |
 | [research/](research/README.md) | Entire research & idea phase: concept evolution, data-source notes, metadata checks, council records |
+| [arastirma-ve-proje-fikri/](arastirma-ve-proje-fikri/README.md) | Turkish idea and research archive retained from the parallel GitHub update |
 | [python/](python/) | `redline_core` (core algorithms) and `redline_data` (data tooling) |
 | [ros_ws/](ros_ws/) | ROS 2 workspace (`redline_msgs` interfaces) |
 | [config/](config/), [scripts/](scripts/), [tools/](tools/) | Runtime defaults, bootstrap/test scripts, repo tooling |
