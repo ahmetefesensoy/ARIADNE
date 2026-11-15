@@ -93,7 +93,7 @@ We built the planning core on real NASA data, ran it in ROS 2 with Gazebo robots
 
 ## Use of artificial intelligence
 
-- **Code:** written with AI coding assistants, Anthropic Claude Code and OpenAI Codex, under team direction and review.
+- **Code:** written with AI coding assistants under team direction and review; detailed tool attribution is retained in `docs/AI_DISCLOSURE.md`.
   - Every result claim is checked automatically against a recorded run or test (claim ledger).
 - **3D models:** some were generated with Tripo (AI). The video footer and end card disclose this as "Some 3D models: Tripo AI".
 - **Music:** the video music was generated with Suno (AI). It is labelled on screen.

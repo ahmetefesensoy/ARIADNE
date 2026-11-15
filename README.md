@@ -11,6 +11,10 @@ Map uncertainty is converted into a *return margin*: the red line shows how far 
 
 > **Status:** implementation is in progress. [Playable EV1 and T5 acceptance](docs/EVA_PLAYABLE.md) are available; T6 and broader mission work remain open. Dated evidence is in [journal/PROGRESS.md](journal/PROGRESS.md). The [rover preview](docs/ROVER_PREVIEW.md) is tracked separately.
 
+## Videos
+
+The [video gallery](media/README.md) contains the final 30-second demo, the Turkish cut, a rover–RViz–Gazebo comparison and the separate mission captures used to build the presentation.
+
 ## Repository layout
 
 | Path | Contents |
@@ -18,6 +22,7 @@ Map uncertainty is converted into a *return margin*: the red line shows how far 
 | [docs/](docs/) | [Implementation spec (`proje.md`)](docs/proje.md), decisions, verification log, AI disclosure, pre-existing work |
 | [journal/](journal/README.md) | Hackathon development log — progress per milestone and dated session notes |
 | [research/](research/README.md) | Entire research & idea phase: concept evolution, data-source notes, metadata checks, council records |
+| [media/](media/README.md) | Curated final demos, robotics comparison and mission captures |
 | [arastirma-ve-proje-fikri/](arastirma-ve-proje-fikri/README.md) | Turkish idea and research archive retained from the parallel GitHub update |
 | [python/](python/) | `redline_core` (core algorithms) and `redline_data` (data tooling) |
 | [ros_ws/](ros_ws/) | ROS 2 workspace (`redline_msgs` interfaces) |
