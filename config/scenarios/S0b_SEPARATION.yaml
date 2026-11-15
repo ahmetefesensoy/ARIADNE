@@ -1,0 +1,23 @@
+# S0b: negative control for S0 (D015). Same EVA, but EV2 walks 5 min behind: FR-05 must fire.
+provenance_status: SCENARIO
+note: >-
+  Identical to S0_NOMINAL except crew_trail_s: EV2 follows the plan 300 s behind EV1, so on the
+  walking legs they are far more than 100 m apart for longer than the 60 s grace. FR-05 must give
+  CAUTION then WARNING; a silent S0b would mean S0's "no violation" proves nothing.
+id: S0b_SEPARATION
+site: BXW
+seed: 1
+time_scale: 60
+start:
+  historical_utc: "2024-05-21T04:00:00Z"
+  pet_min: 0
+initial_phase: BRIEFING
+crew: [EV1, EV2]
+crew_trail_s: {EV2: 300}
+suit_profile: default
+plan: {objective: SCIENCE, max_duration_min: 300}
+replay:
+  rad: {sols: [4190, 4191], detector: E}
+events: []
+expected:
+  - {rule: FR-05, must_hold: false}

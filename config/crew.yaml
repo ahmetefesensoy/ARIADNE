@@ -1,0 +1,9 @@
+# Scenario crew for redline_core (proje.md §7.2). Not real people, not measurements.
+provenance_status: SCENARIO
+note: >-
+  Body mass (W) and carried load + suit mass (L) are scenario assumptions with no
+  measured Mars-suit source. theta is the personal metabolic multiplier (1 = model mean).
+  Change them together with the user before any result is presented as a plan.
+crew:
+  EV1: {body_mass_kg: 75.0, load_mass_kg: 80.0, theta: 1.0}
+  EV2: {body_mass_kg: 68.0, load_mass_kg: 80.0, theta: 1.0}

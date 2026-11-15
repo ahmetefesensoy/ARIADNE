@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,000
+B1 · Contact science with the APXS
+
+2
+00:00:03,000 --> 00:00:07,000
+The sensor head comes down to the rock.
+
+3
+00:00:07,000 --> 00:00:11,000
+Curium-244 sources excite the rock with alpha particles and X-rays.
+
+4
+00:00:11,000 --> 00:00:15,000
+Each element answers with its own X-rays; the detector counts them.
+
+5
+00:00:15,000 --> 00:00:19,000
+Better contact shrinks the error bars.
+
+6
+00:00:19,000 --> 00:00:24,000
+Real APXS archive: counting for an hour cuts the error by only ~16%; good contact gains more.
+

@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-11-14T10:42:39.826047+00:00",
+  "product_id": "DTEEC_019698_1750_019988_1750_U01",
+  "passed": true,
+  "status": "pass",
+  "scope": "Three sparse original IMG to ARD numeric height-transfer diagnostics; not independent georegistration or absolute accuracy.",
+  "predeclared_tolerance_m": 0.1,
+  "resampling": "cubic",
+  "source_window_shape": [
+    8,
+    8
+  ],
+  "point_selection": "Fixed crop fractions (row,col): (0.2,0.2), (0.5,0.8), (0.8,0.4); selected before source pixel reads.",
+  "max_abs_residual_m": 1.177795638795942e-10,
+  "original": {
+    "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+    "crs_wkt_from_PDS_driver": "PROJCS[\"EQUIRECTANGULAR MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS_localRadius\",3396190,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",137.38],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform_from_PDS_driver": [
+      1.0117467945795,
+      0,
+      -4018.6582680699767,
+      0,
+      -1.0117467945795,
+      -280315.578653001,
+      0,
+      0,
+      1
+    ],
+    "projection_parameters_from_label": {
+      "proj": "eqc",
+      "lat_ts": 0,
+      "lat_0": 0,
+      "lon_0": 137.38,
+      "x_0": 0,
+      "y_0": 0,
+      "R": 3396190,
+      "units": "m",
+      "no_defs": true
+    },
+    "shape": [
+      18270,
+      7426
+    ],
+    "sample_type": "PC_REAL",
+    "sample_bits": 32,
+    "record_bytes": 29704,
+    "image_record_one_based": 2,
+    "image_byte_offset_zero_based": 29704,
+    "scaling_factor": 1,
+    "offset": 0,
+    "nodata": -3.4028226550889045e+38,
+    "label_prefix_sha256": "e85b8a680648dca524a50432264fcb2fb57ca9be4715bfad1ab28a9cbf1a8590"
+  },
+  "ard_crop": {
+    "path": "data/raw/BXW/hirise_dtm_bxw_019698.tif",
+    "sha256": "e34ade1cfa0c54034464aced983b78f78fdd6ba0e5d86422fdccb28e13ce6187",
+    "shape": [
+      2966,
+      2976
+    ],
+    "dtype": "float32",
+    "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.tif",
+    "crs_wkt": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0]],PRIMEM[\"Reference Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      1.0117467945795104,
+      0,
+      8141059.582899851,
+      0,
+      -1.0117467945795104,
+      -283314.39615213464,
+      0,
+      0,
+      1
+    ]
+  },
+  "points": [
+    {
+      "id": "P1",
+      "ard_crop_row_col_zero_based": [
+        593,
+        595
+      ],
+      "ard_pixel_center_xy_m": [
+        8141662.078116023,
+        -283914.8678747176
+      ],
+      "original_projected_xy_m": [
+        -1495.867635786147,
+        -283914.8678747176
+      ],
+      "original_fractional_corner_pixel_col_row": [
+        2493.499999999848,
+        3557.5
+      ],
+      "original_nearest_row_col_zero_based": [
+        3557,
+        2493
+      ],
+      "original_8x8_window_row_col": [
+        3554,
+        2490
+      ],
+      "original_window_sha256": "8ab918f34fe5058c3bd17d92fb3eef3ba6e799997b6ecf6670b4e0e1bcd7d66c",
+      "original_window_min_max_m": [
+        -3847.445556640625,
+        -3839.776611328125
+      ],
+      "original_nearest_raw_float32": -3842.385498046875,
+      "nearest_source_scaled_equals_ARD_exactly": true,
+      "predicted_ard_cubic_m": -3842.38549804693,
+      "observed_ard_float32_m": -3842.385498046875,
+      "observed_is_negative_and_fractional": true,
+      "residual_observed_minus_predicted_m": 5.502442945726216e-11,
+      "abs_residual_m": 5.502442945726216e-11,
+      "within_predeclared_tolerance": true,
+      "http_request_index": 1
+    },
+    {
+      "id": "P2",
+      "ard_crop_row_col_zero_based": [
+        1483,
+        2380
+      ],
+      "ard_pixel_center_xy_m": [
+        8143468.046144348,
+        -284815.32252189337
+      ],
+      "original_projected_xy_m": [
+        310.10039253833514,
+        -284815.32252189337
+      ],
+      "original_fractional_corner_pixel_col_row": [
+        4278.499999999922,
+        4447.500000000058
+      ],
+      "original_nearest_row_col_zero_based": [
+        4447,
+        4278
+      ],
+      "original_8x8_window_row_col": [
+        4444,
+        4275
+      ],
+      "original_window_sha256": "af9be729c88258cf14a6536a0ce80624707c664c4fbf48f9b8c94e9a079a70f5",
+      "original_window_min_max_m": [
+        -3619.956298828125,
+        -3618.811279296875
+      ],
+      "original_nearest_raw_float32": -3619.67578125,
+      "nearest_source_scaled_equals_ARD_exactly": true,
+      "predicted_ard_cubic_m": -3619.675781250118,
+      "observed_ard_float32_m": -3619.67578125,
+      "observed_is_negative_and_fractional": true,
+      "residual_observed_minus_predicted_m": 1.177795638795942e-10,
+      "abs_residual_m": 1.177795638795942e-10,
+      "within_predeclared_tolerance": true,
+      "http_request_index": 2
+    },
+    {
+      "id": "P3",
+      "ard_crop_row_col_zero_based": [
+        2372,
+        1190
+      ],
+      "ard_pixel_center_xy_m": [
+        8142264.067458797,
+        -285714.76542227453
+      ],
+      "original_projected_xy_m": [
+        -893.8782930118225,
+        -285714.76542227453
+      ],
+      "original_fractional_corner_pixel_col_row": [
+        3088.4999999993756,
+        5336.500000000058
+      ],
+      "original_nearest_row_col_zero_based": [
+        5336,
+        3088
+      ],
+      "original_8x8_window_row_col": [
+        5333,
+        3085
+      ],
+      "original_window_sha256": "9273c652b726b6034f3ea25eeac9f14c10109f95aa0ddb4628a274c32a26aae1",
+      "original_window_min_max_m": [
+        -3569.956298828125,
+        -3568.8740234375
+      ],
+      "original_nearest_raw_float32": -3569.7822265625,
+      "nearest_source_scaled_equals_ARD_exactly": true,
+      "predicted_ard_cubic_m": -3569.7822265624836,
+      "observed_ard_float32_m": -3569.7822265625,
+      "observed_is_negative_and_fractional": true,
+      "residual_observed_minus_predicted_m": -1.6370904631912708e-11,
+      "abs_residual_m": 1.6370904631912708e-11,
+      "within_predeclared_tolerance": true,
+      "http_request_index": 3
+    }
+  ],
+  "http": {
+    "requests": [
+      {
+        "requested_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "final_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "status": 206,
+        "range": "bytes=0-16383",
+        "content_range": "bytes 0-16383/542721784",
+        "etag": "\"4f76261a-205946f8\"",
+        "last_modified": "Fri, 30 Mar 2012 21:31:06 GMT",
+        "observed_at_utc": "2026-11-14T10:42:35.100256+00:00",
+        "body_bytes": 16384,
+        "body_sha256": "e85b8a680648dca524a50432264fcb2fb57ca9be4715bfad1ab28a9cbf1a8590"
+      },
+      {
+        "requested_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "final_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "status": 206,
+        "range": "bytes=105607680-105815639",
+        "content_range": "bytes 105607680-105815639/542721784",
+        "etag": "\"4f76261a-205946f8\"",
+        "last_modified": "Fri, 30 Mar 2012 21:31:06 GMT",
+        "observed_at_utc": "2026-11-14T10:42:36.679924+00:00",
+        "body_bytes": 207960,
+        "body_sha256": "7838cc6c40c9f9cf26b9f8dfbddcebef41c35c3289529c0c333887d5373eb24b"
+      },
+      {
+        "requested_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "final_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "status": 206,
+        "range": "bytes=132051380-132259339",
+        "content_range": "bytes 132051380-132259339/542721784",
+        "etag": "\"4f76261a-205946f8\"",
+        "last_modified": "Fri, 30 Mar 2012 21:31:06 GMT",
+        "observed_at_utc": "2026-11-14T10:42:38.209749+00:00",
+        "body_bytes": 207960,
+        "body_sha256": "4cd9743019d6bf4bedb95a779afc552d0814a61f72ac0f7ea790966ad1ea45e0"
+      },
+      {
+        "requested_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "final_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+        "status": 206,
+        "range": "bytes=158453476-158661435",
+        "content_range": "bytes 158453476-158661435/542721784",
+        "etag": "\"4f76261a-205946f8\"",
+        "last_modified": "Fri, 30 Mar 2012 21:31:06 GMT",
+        "observed_at_utc": "2026-11-14T10:42:39.702476+00:00",
+        "body_bytes": 207960,
+        "body_sha256": "85d837c40bb8e35cfea1e9b88bd242123a276923fb753a35801b11c702ea1f98"
+      }
+    ],
+    "body_bytes_read": 640264,
+    "body_budget_bytes": 1000000,
+    "byte_count_scope": "HTTP response bodies read by this helper only; excludes headers/TLS and prior ARD crop download.",
+    "full_IMG_downloaded": false,
+    "no_GDAL_remote_reads": true
+  },
+  "versions": {
+    "rasterio": "1.4.3",
+    "gdal": "3.9.3",
+    "numpy": "1.26.4"
+  },
+  "source_vertical_evidence": {
+    "path": "docs/verification/T1_VERTICAL_DATUM.json",
+    "sha256": "e27e008a35a610213b34383b997cb3866b479f7234e245f2312ba320f82de221",
+    "product_id": "DTEEC_019698_1750_019988_1750_U01"
+  },
+  "helper_sha256": "5eeeb6fa35e936a9e9755ddd9c275641176d5a28849a423a890c2875fc93858f",
+  "limits": [
+    "Sparse checks do not prove every ARD pixel equals the original.",
+    "No independent terrain control, absolute accuracy, or sigma was measured.",
+    "No exact areoid realization or vertical transformation model was inferred.",
+    "Negative fractional sampled heights diagnose whether Float32 elevations survived; they do not reconstruct the publisher's exact command history."
+  ]
+}

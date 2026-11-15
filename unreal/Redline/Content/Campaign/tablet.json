@@ -1,0 +1,23 @@
+{
+  "schema": "redline.tablet.asset.v1",
+  "mesh_asset": "/Game/Campaign/Tablet/SM_FieldTablet.SM_FieldTablet",
+  "dimensions_cm": [
+    31.996668815612793,
+    21.999475479125977,
+    1.9976601600646973
+  ],
+  "screen_size_cm": [
+    25.2,
+    15.8
+  ],
+  "screen_center_cm": [
+    0,
+    0,
+    1.15
+  ],
+  "source_task_id": "2ba0f9c0-286a-4899-8487-f1ca42345949",
+  "source_sha256": "aa336f3358a301051f759f79ceccfae3f8ce69df485982d10ad3a160768b576c",
+  "unit_error_cm": 1.430511474609375e-06,
+  "status": "SCENARIO",
+  "passed": true
+}

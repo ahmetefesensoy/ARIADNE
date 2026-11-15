@@ -1,0 +1,36 @@
+{
+  "schema": "redline.prologue.tripo-generation.v1",
+  "status": "SCENARIO",
+  "ai_generated": true,
+  "created_at_utc": "2026-11-15T00:00:09.976Z",
+  "credits_spent": 35,
+  "closing_balance": 485,
+  "tasks": [
+    {
+      "task_id": "29887b9e-a383-4c8d-9b09-09493478d8ae",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T23:45:43.801Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "One realistic modular Mars habitat airlock chamber shell for a first person astronaut game. Human scale: 3 meters long, 2.4 meters wide, 2.8 meters tall inside. Hollow walkable interior with TWO OPEN rectangular portals at OPPOSITE ENDS along its length. No solid door leaves; interactive doors will be added separately. Rounded ivory aerospace wall panels, graphite nonslip floor grilles, recessed warm white light strips, restrained red safety handrails, one flush side-wall pressure panel with blank dark display, oxygen piping and cable conduits close to side walls. Clear central passage and continuous LEVEL floor. Thick rounded portal gaskets, small amber caution accents without lettering. Coherent industrial engineering with realistic surface textures and restrained wear. One complete isolated chamber only, no people, no furniture, no landscape, no ground pedestal, no text, no logos, no flags. Both doorway openings must remain unobstructed for a human to pass through.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "042b8395-a5dd-456e-ad77-b4f3ed95c7e9",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T23:49:28.493Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "29887b9e-a383-4c8d-9b09-09493478d8ae",
+        "format": "FBX"
+      }
+    }
+  ],
+  "derivative": "Rear doorway opened in UV-preserving derivative; raw model unchanged. Single visual shell with separate Unreal door actors; no pressure-system simulation."
+}

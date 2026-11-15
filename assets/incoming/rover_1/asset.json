@@ -1,0 +1,4892 @@
+{
+  "asset_id": "rover_1",
+  "prepared_utc": "2026-11-14T11:43:32.000583+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\curiosity_reference\\source.blend",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        -0.3106153607368469
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.002400219440460205
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0022495852317661047
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      3.9447293281555176,
+      2.7772350311279297,
+      2.2127432823181152
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_rover_1_wheel_03_R_LOD0",
+      "source_name": "wheel_03_R",
+      "source_parent": "suspension_steer_B_R",
+      "pivot_m": [
+        -1.4758594036102295,
+        -1.0605868101119995,
+        0.24549514055252075
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_wheel_03_L_LOD0",
+      "source_name": "wheel_03_L",
+      "source_parent": "suspension_steer_B_L",
+      "pivot_m": [
+        -1.4733707904815674,
+        1.0605870485305786,
+        0.24549485743045807
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_wheel_02_R_LOD0",
+      "source_name": "wheel_02_R",
+      "source_parent": "suspension_arm_B2_R",
+      "pivot_m": [
+        -0.39961549639701843,
+        -1.1912528276443481,
+        0.24557505548000336
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_wheel_02_L_LOD0",
+      "source_name": "wheel_02_L",
+      "source_parent": "suspension_arm_B2_L",
+      "pivot_m": [
+        -0.39961495995521545,
+        1.1912528276443481,
+        0.24557547271251678
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_wheel_01_R_LOD0",
+      "source_name": "wheel_01_R",
+      "source_parent": "suspension_steer_F_R",
+      "pivot_m": [
+        0.7842937707901001,
+        -1.0604913234710693,
+        0.24538402259349823
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_wheel_01_L_LOD0",
+      "source_name": "wheel_01_L",
+      "source_parent": "suspension_steer_F_L",
+      "pivot_m": [
+        0.7819728851318359,
+        1.0610359907150269,
+        0.2426472008228302
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_xmember_LOD0",
+      "source_name": "suspension_xmember",
+      "source_parent": "body",
+      "pivot_m": [
+        -0.45261532068252563,
+        0.0027786153368651867,
+        1.1767207384109497
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_steer_F_R_LOD0",
+      "source_name": "suspension_steer_F_R",
+      "source_parent": "",
+      "pivot_m": [
+        0.7843849658966064,
+        -1.0600988864898682,
+        0.6449847221374512
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_steer_F_L_LOD0",
+      "source_name": "suspension_steer_F_L",
+      "source_parent": "",
+      "pivot_m": [
+        0.7818822860717773,
+        1.0606433153152466,
+        0.6422476768493652
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_steer_B_R_LOD0",
+      "source_name": "suspension_steer_B_R",
+      "source_parent": "suspension_arm_B2_R",
+      "pivot_m": [
+        -1.4746156930923462,
+        -1.0601000785827637,
+        0.6449843645095825
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_steer_B_L_LOD0",
+      "source_name": "suspension_steer_B_L",
+      "source_parent": "suspension_arm_B2_L",
+      "pivot_m": [
+        -1.4746150970458984,
+        1.0600999593734741,
+        0.6449841856956482
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_rod_R_LOD0",
+      "source_name": "suspension_rod_R",
+      "source_parent": "suspension_axel_R",
+      "pivot_m": [
+        -0.09679596871137619,
+        -0.6689174771308899,
+        1.1448049545288086
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_rod_L_LOD0",
+      "source_name": "suspension_rod_L",
+      "source_parent": "suspension_axel_L",
+      "pivot_m": [
+        -0.09660127013921738,
+        0.6742045283317566,
+        1.146193027496338
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_axel_R2_LOD0",
+      "source_name": "suspension_axel_R2",
+      "source_parent": "suspension_axel_R",
+      "pivot_m": [
+        -0.09661528468132019,
+        -0.6312959790229797,
+        0.8752893805503845
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_axel_R_LOD0",
+      "source_name": "suspension_axel_R",
+      "source_parent": "body",
+      "pivot_m": [
+        -0.096615269780159,
+        -0.635599672794342,
+        0.8776145577430725
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_axel_L2_LOD0",
+      "source_name": "suspension_axel_L2",
+      "source_parent": "suspension_axel_L",
+      "pivot_m": [
+        -0.09661495685577393,
+        0.6360986232757568,
+        0.875282347202301
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_axel_L_LOD0",
+      "source_name": "suspension_axel_L",
+      "source_parent": "body",
+      "pivot_m": [
+        -0.09661521017551422,
+        0.6434001922607422,
+        0.8776543140411377
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_arm_F_R_LOD0",
+      "source_name": "suspension_arm_F_R",
+      "source_parent": "",
+      "pivot_m": [
+        -0.09661528468132019,
+        -0.7967625260353088,
+        0.8871475458145142
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_arm_F_L_LOD0",
+      "source_name": "suspension_arm_F_L",
+      "source_parent": "",
+      "pivot_m": [
+        -0.09911823272705078,
+        0.7973068356513977,
+        0.8844106793403625
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_arm_B_R_LOD0",
+      "source_name": "suspension_arm_B_R",
+      "source_parent": "",
+      "pivot_m": [
+        -0.4609159827232361,
+        -0.7917424440383911,
+        0.7834128737449646
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_arm_B_L_LOD0",
+      "source_name": "suspension_arm_B_L",
+      "source_parent": "",
+      "pivot_m": [
+        -0.46091580390930176,
+        0.7917423844337463,
+        0.7834128737449646
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_arm_B2_R_LOD0",
+      "source_name": "suspension_arm_B2_R",
+      "source_parent": "",
+      "pivot_m": [
+        -0.8506192564964294,
+        -0.7973374128341675,
+        0.6455870866775513
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_suspension_arm_B2_L_LOD0",
+      "source_name": "suspension_arm_B2_L",
+      "source_parent": "",
+      "pivot_m": [
+        -0.850618839263916,
+        0.7973374724388123,
+        0.6455870866775513
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_sundial_LOD0",
+      "source_name": "sundial",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -0.6916248202323914,
+        -0.5117073655128479,
+        1.3182343244552612
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_SAM_LOD0",
+      "source_name": "SAM",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.3705781102180481,
+        -0.16138581931591034,
+        1.1317867040634155
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_RTG_LOD0",
+      "source_name": "RTG",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -1.5151491165161133,
+        0.002399881836026907,
+        1.1528152227401733
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_REMS_LOD0",
+      "source_name": "REMS",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.23601482808589935,
+        -0.2217782884836197,
+        1.125055193901062
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_radiators_LOD0",
+      "source_name": "radiators",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -0.2556151747703552,
+        0.0024002152495086193,
+        0.8886541724205017
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_RAD_LOD0",
+      "source_name": "RAD",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -0.24627412855625153,
+        0.35066062211990356,
+        1.1242570877075195
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_NavCam_top_R_LOD0",
+      "source_name": "NavCam_top_R",
+      "source_parent": "NavCam",
+      "pivot_m": [
+        0.531378984451294,
+        -0.7223725318908691,
+        1.9860713481903076
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_NavCam_top_L_LOD0",
+      "source_name": "NavCam_top_L",
+      "source_parent": "NavCam",
+      "pivot_m": [
+        0.5313775539398193,
+        -0.3030604422092438,
+        1.9860713481903076
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_NavCam_LOD0",
+      "source_name": "NavCam",
+      "source_parent": "mast_03.001",
+      "pivot_m": [
+        0.40336331725120544,
+        -0.5359591245651245,
+        1.9046361446380615
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MastCam_R_LOD0",
+      "source_name": "MastCam_R",
+      "source_parent": "MastCam",
+      "pivot_m": [
+        0.5321158170700073,
+        -0.6325634717941284,
+        1.9697448015213013
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MastCam_L_LOD0",
+      "source_name": "MastCam_L",
+      "source_parent": "MastCam",
+      "pivot_m": [
+        0.5321150422096252,
+        -0.3936896026134491,
+        1.9702410697937012
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MastCam_LOD0",
+      "source_name": "MastCam",
+      "source_parent": "mast_03.001",
+      "pivot_m": [
+        0.40336331725120544,
+        -0.5359591245651245,
+        1.9046361446380615
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_mast_03_001_LOD0",
+      "source_name": "mast_03.001",
+      "source_parent": "mast_02.001",
+      "pivot_m": [
+        0.403363436460495,
+        -0.5359591245651245,
+        1.9045462608337402
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_mast_02_001_LOD0",
+      "source_name": "mast_02.001",
+      "source_parent": "mast_01.001",
+      "pivot_m": [
+        0.403366357088089,
+        -0.5566506385803223,
+        1.702423334121704
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_mast_01_001_LOD0",
+      "source_name": "mast_01.001",
+      "source_parent": "",
+      "pivot_m": [
+        0.4462425708770752,
+        -0.5945356488227844,
+        1.4111127853393555
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_mast_01_000_LOD0",
+      "source_name": "mast_01.000",
+      "source_parent": "mast_01.001",
+      "pivot_m": [
+        0.44752395153045654,
+        -0.6341242790222168,
+        1.5133732557296753
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MARDI_001_LOD0",
+      "source_name": "MARDI.001",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.3530510663986206,
+        0.6499366164207458,
+        0.7357898950576782
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MARDI_LOD0",
+      "source_name": "MARDI",
+      "source_parent": "MARDI.001",
+      "pivot_m": [
+        0.3630565404891968,
+        0.6501865386962891,
+        0.6771770715713501
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_lens_cover_LOD0",
+      "source_name": "MAHLI_lens_cover",
+      "source_parent": "",
+      "pivot_m": [
+        1.552284836769104,
+        0.22019465267658234,
+        1.929992914199829
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_LED_04_LOD0",
+      "source_name": "MAHLI_LED_04",
+      "source_parent": "MAHLI",
+      "pivot_m": [
+        1.5755773782730103,
+        0.2026369720697403,
+        1.918195366859436
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_LED_03_LOD0",
+      "source_name": "MAHLI_LED_03",
+      "source_parent": "MAHLI",
+      "pivot_m": [
+        1.5760685205459595,
+        0.2022145688533783,
+        1.9134000539779663
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_LED_02_LOD0",
+      "source_name": "MAHLI_LED_02",
+      "source_parent": "MAHLI",
+      "pivot_m": [
+        1.5524201393127441,
+        0.2172865867614746,
+        1.898985505104065
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_LED_01_LOD0",
+      "source_name": "MAHLI_LED_01",
+      "source_parent": "MAHLI",
+      "pivot_m": [
+        1.5494495630264282,
+        0.2192978709936142,
+        1.9026713371276855
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_cam_LOD0",
+      "source_name": "MAHLI_cam",
+      "source_parent": "MAHLI",
+      "pivot_m": [
+        1.5613040924072266,
+        0.21063292026519775,
+        1.9132133722305298
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_cal_target_LOD0",
+      "source_name": "MAHLI_cal_target",
+      "source_parent": "arm_01.001",
+      "pivot_m": [
+        0.8022356033325195,
+        0.453900009393692,
+        0.8064679503440857
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_MAHLI_LOD0",
+      "source_name": "MAHLI",
+      "source_parent": "arm_05_head.001",
+      "pivot_m": [
+        1.5909358263015747,
+        0.2433517575263977,
+        1.9030903577804565
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_lens_covers_rear_LOD0",
+      "source_name": "lens_covers_rear",
+      "source_parent": "body",
+      "pivot_m": [
+        -1.3481730222702026,
+        0.5034000873565674,
+        0.7502838373184204
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_lens_covers_front_LOD0",
+      "source_name": "lens_covers_front",
+      "source_parent": "body",
+      "pivot_m": [
+        0.5953961610794067,
+        -0.08826479315757751,
+        0.6911072731018066
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_HazCam_rear_R_LOD0",
+      "source_name": "HazCam_rear_R",
+      "source_parent": "HazCam - rear",
+      "pivot_m": [
+        -1.3800737857818604,
+        -0.5484791398048401,
+        0.77283775806427
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_HazCam_rear_L_LOD0",
+      "source_name": "HazCam_rear_L",
+      "source_parent": "HazCam - rear",
+      "pivot_m": [
+        -1.3800735473632812,
+        0.553279459476471,
+        0.7728378176689148
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_HazCam_F_LOD0",
+      "source_name": "HazCam_F",
+      "source_parent": "HazCam - front",
+      "pivot_m": [
+        0.6274574398994446,
+        0.08914150297641754,
+        0.71366947889328
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_HazCam___rear_LOD0",
+      "source_name": "HazCam - rear",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -1.3632581233978271,
+        0.0024001796264201403,
+        0.8245858550071716
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_HazCam___front_LOD0",
+      "source_name": "HazCam - front",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.5663418173789978,
+        0.04212184622883797,
+        0.7289565205574036
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_Dust_Removal_Tool_LOD0",
+      "source_name": "Dust Removal Tool",
+      "source_parent": "arm_05_head.001",
+      "pivot_m": [
+        1.7571666240692139,
+        0.21874630451202393,
+        1.921432375907898
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_Drill_LOD0",
+      "source_name": "Drill",
+      "source_parent": "arm_05_head.001",
+      "pivot_m": [
+        1.6840884685516357,
+        0.3991560935974121,
+        1.9374172687530518
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_DAN_R_LOD0",
+      "source_name": "DAN_R",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -1.1731294393539429,
+        -0.5741004347801208,
+        0.8907757997512817
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_DAN_L_LOD0",
+      "source_name": "DAN_L",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -1.1828783750534058,
+        0.5788998603820801,
+        0.8746343851089478
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_cover_03_LOD0",
+      "source_name": "cover_03",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.2607881426811218,
+        -0.15219925343990326,
+        1.1178041696548462
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_cover_02_LOD0",
+      "source_name": "cover_02",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.4329553544521332,
+        -0.27459055185317993,
+        1.1178861856460571
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_cover_01_LOD0",
+      "source_name": "cover_01",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.3076889216899872,
+        0.2149912714958191,
+        1.116104245185852
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_CHIMERA_LOD0",
+      "source_name": "CHIMERA",
+      "source_parent": "arm_05_head.001",
+      "pivot_m": [
+        1.7331442832946777,
+        0.6433128118515015,
+        1.9104143381118774
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_CheMin_LOD0",
+      "source_name": "CheMin",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        0.36621516942977905,
+        0.12509125471115112,
+        1.131070613861084
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_ChemCam_LOD0",
+      "source_name": "ChemCam",
+      "source_parent": "mast_03.001",
+      "pivot_m": [
+        0.40336331725120544,
+        -0.5359591245651245,
+        1.9046361446380615
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_Chassis_LOD0",
+      "source_name": "Chassis",
+      "source_parent": "",
+      "pivot_m": [
+        -0.2556151747703552,
+        0.0024002152495086193,
+        0.8886541724205017
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_body_001_LOD0",
+      "source_name": "body.001",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -0.2556151747703552,
+        0.0024002152495086193,
+        0.8886541724205017
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_body_LOD0",
+      "source_name": "body",
+      "source_parent": "",
+      "pivot_m": [
+        -0.2556151747703552,
+        0.0024002152495086193,
+        0.8886541724205017
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_bit_03_LOD0",
+      "source_name": "bit_03",
+      "source_parent": "body",
+      "pivot_m": [
+        0.784931480884552,
+        -0.1569402664899826,
+        0.7904543280601501
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_bit_02_LOD0",
+      "source_name": "bit_02",
+      "source_parent": "body",
+      "pivot_m": [
+        0.8012515306472778,
+        -0.46013686060905457,
+        0.7078830003738403
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_bit_01_001_LOD0",
+      "source_name": "bit_01.001",
+      "source_parent": "arm_05_head.001",
+      "pivot_m": [
+        1.8639070987701416,
+        0.4357913136482239,
+        1.9019336700439453
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_arm_05_head_001_LOD0",
+      "source_name": "arm_05_head.001",
+      "source_parent": "arm_04.001",
+      "pivot_m": [
+        1.6849780082702637,
+        0.43559786677360535,
+        1.7618815898895264
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_arm_04_001_LOD0",
+      "source_name": "arm_04.001",
+      "source_parent": "arm_03.001",
+      "pivot_m": [
+        1.786245346069336,
+        0.36130014061927795,
+        1.617902159690857
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_arm_03_001_LOD0",
+      "source_name": "arm_03.001",
+      "source_parent": "arm_02.001",
+      "pivot_m": [
+        1.7875123023986816,
+        0.5205560326576233,
+        0.835236132144928
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_arm_02_001_LOD0",
+      "source_name": "arm_02.001",
+      "source_parent": "arm_01.001",
+      "pivot_m": [
+        0.9627354145050049,
+        0.45005732774734497,
+        0.8346542716026306
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_arm_01_001_LOD0",
+      "source_name": "arm_01.001",
+      "source_parent": "body",
+      "pivot_m": [
+        0.8022356033325195,
+        0.453900009393692,
+        1.0002995729446411
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_APXS_LOD0",
+      "source_name": "APXS",
+      "source_parent": "arm_05_head.001",
+      "pivot_m": [
+        1.53159499168396,
+        0.6248031258583069,
+        1.9193915128707886
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_antenna_UHF_LOD0",
+      "source_name": "antenna_UHF",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -1.3936572074890137,
+        -0.5025264620780945,
+        1.4184582233428955
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_antenna_LG_LOD0",
+      "source_name": "antenna_LG",
+      "source_parent": "Chassis",
+      "pivot_m": [
+        -1.2475107908248901,
+        0.4973967373371124,
+        1.357140064239502
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_antenna_HG_03_LOD0",
+      "source_name": "antenna_HG_03",
+      "source_parent": "",
+      "pivot_m": [
+        -0.5329114198684692,
+        0.002400205470621586,
+        1.3367587327957153
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_1_antenna_HG_01_LOD0",
+      "source_name": "antenna_HG_01",
+      "source_parent": "body",
+      "pivot_m": [
+        -0.7701385617256165,
+        0.4773656129837036,
+        1.2041542530059814
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 48492,
+    "materials": 4,
+    "parts": [
+      {
+        "name": "wheel_03_R",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "wheel_03_L",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "wheel_02_R",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "wheel_02_L",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "wheel_01_R",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "wheel_01_L",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "suspension_xmember",
+        "triangles": 476,
+        "vertices": 454,
+        "uv_layers": 1,
+        "non_manifold_edges": 400
+      },
+      {
+        "name": "suspension_steer_F_R",
+        "triangles": 489,
+        "vertices": 501,
+        "uv_layers": 1,
+        "non_manifold_edges": 473
+      },
+      {
+        "name": "suspension_steer_F_L",
+        "triangles": 489,
+        "vertices": 501,
+        "uv_layers": 1,
+        "non_manifold_edges": 473
+      },
+      {
+        "name": "suspension_steer_B_R",
+        "triangles": 434,
+        "vertices": 383,
+        "uv_layers": 1,
+        "non_manifold_edges": 308
+      },
+      {
+        "name": "suspension_steer_B_L",
+        "triangles": 434,
+        "vertices": 383,
+        "uv_layers": 1,
+        "non_manifold_edges": 308
+      },
+      {
+        "name": "suspension_rod_R",
+        "triangles": 240,
+        "vertices": 210,
+        "uv_layers": 1,
+        "non_manifold_edges": 154
+      },
+      {
+        "name": "suspension_rod_L",
+        "triangles": 240,
+        "vertices": 210,
+        "uv_layers": 1,
+        "non_manifold_edges": 154
+      },
+      {
+        "name": "suspension_axel_R2",
+        "triangles": 34,
+        "vertices": 36,
+        "uv_layers": 1,
+        "non_manifold_edges": 36
+      },
+      {
+        "name": "suspension_axel_R",
+        "triangles": 232,
+        "vertices": 240,
+        "uv_layers": 1,
+        "non_manifold_edges": 240
+      },
+      {
+        "name": "suspension_axel_L2",
+        "triangles": 34,
+        "vertices": 36,
+        "uv_layers": 1,
+        "non_manifold_edges": 36
+      },
+      {
+        "name": "suspension_axel_L",
+        "triangles": 232,
+        "vertices": 240,
+        "uv_layers": 1,
+        "non_manifold_edges": 240
+      },
+      {
+        "name": "suspension_arm_F_R",
+        "triangles": 451,
+        "vertices": 405,
+        "uv_layers": 1,
+        "non_manifold_edges": 339
+      },
+      {
+        "name": "suspension_arm_F_L",
+        "triangles": 451,
+        "vertices": 453,
+        "uv_layers": 1,
+        "non_manifold_edges": 435
+      },
+      {
+        "name": "suspension_arm_B_R",
+        "triangles": 334,
+        "vertices": 296,
+        "uv_layers": 1,
+        "non_manifold_edges": 244
+      },
+      {
+        "name": "suspension_arm_B_L",
+        "triangles": 334,
+        "vertices": 296,
+        "uv_layers": 1,
+        "non_manifold_edges": 244
+      },
+      {
+        "name": "suspension_arm_B2_R",
+        "triangles": 597,
+        "vertices": 620,
+        "uv_layers": 1,
+        "non_manifold_edges": 615
+      },
+      {
+        "name": "suspension_arm_B2_L",
+        "triangles": 597,
+        "vertices": 620,
+        "uv_layers": 1,
+        "non_manifold_edges": 615
+      },
+      {
+        "name": "sundial",
+        "triangles": 316,
+        "vertices": 259,
+        "uv_layers": 1,
+        "non_manifold_edges": 186
+      },
+      {
+        "name": "SAM",
+        "triangles": 609,
+        "vertices": 643,
+        "uv_layers": 1,
+        "non_manifold_edges": 643
+      },
+      {
+        "name": "RTG",
+        "triangles": 352,
+        "vertices": 322,
+        "uv_layers": 1,
+        "non_manifold_edges": 256
+      },
+      {
+        "name": "REMS",
+        "triangles": 10,
+        "vertices": 20,
+        "uv_layers": 1,
+        "non_manifold_edges": 20
+      },
+      {
+        "name": "radiators",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      },
+      {
+        "name": "RAD",
+        "triangles": 140,
+        "vertices": 141,
+        "uv_layers": 1,
+        "non_manifold_edges": 140
+      },
+      {
+        "name": "NavCam_top_R",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "NavCam_top_L",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "NavCam",
+        "triangles": 942,
+        "vertices": 1030,
+        "uv_layers": 1,
+        "non_manifold_edges": 1030
+      },
+      {
+        "name": "MastCam_R",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "MastCam_L",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "MastCam",
+        "triangles": 1028,
+        "vertices": 984,
+        "uv_layers": 1,
+        "non_manifold_edges": 904
+      },
+      {
+        "name": "mast_03.001",
+        "triangles": 1064,
+        "vertices": 1094,
+        "uv_layers": 1,
+        "non_manifold_edges": 1084
+      },
+      {
+        "name": "mast_02.001",
+        "triangles": 344,
+        "vertices": 374,
+        "uv_layers": 1,
+        "non_manifold_edges": 374
+      },
+      {
+        "name": "mast_01.001",
+        "triangles": 918,
+        "vertices": 924,
+        "uv_layers": 1,
+        "non_manifold_edges": 924
+      },
+      {
+        "name": "mast_01.000",
+        "triangles": 212,
+        "vertices": 138,
+        "uv_layers": 1,
+        "non_manifold_edges": 56
+      },
+      {
+        "name": "MARDI.001",
+        "triangles": 310,
+        "vertices": 168,
+        "uv_layers": 1,
+        "non_manifold_edges": 20
+      },
+      {
+        "name": "MARDI",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "MAHLI_lens_cover",
+        "triangles": 154,
+        "vertices": 180,
+        "uv_layers": 1,
+        "non_manifold_edges": 180
+      },
+      {
+        "name": "MAHLI_LED_04",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "MAHLI_LED_03",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "MAHLI_LED_02",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "MAHLI_LED_01",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "MAHLI_cam",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "MAHLI_cal_target",
+        "triangles": 158,
+        "vertices": 166,
+        "uv_layers": 1,
+        "non_manifold_edges": 156
+      },
+      {
+        "name": "MAHLI",
+        "triangles": 294,
+        "vertices": 298,
+        "uv_layers": 1,
+        "non_manifold_edges": 262
+      },
+      {
+        "name": "lens_covers_rear",
+        "triangles": 432,
+        "vertices": 456,
+        "uv_layers": 1,
+        "non_manifold_edges": 448
+      },
+      {
+        "name": "lens_covers_front",
+        "triangles": 156,
+        "vertices": 164,
+        "uv_layers": 1,
+        "non_manifold_edges": 160
+      },
+      {
+        "name": "HazCam_rear_R",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "HazCam_rear_L",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "HazCam_F",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "HazCam - rear",
+        "triangles": 824,
+        "vertices": 960,
+        "uv_layers": 1,
+        "non_manifold_edges": 960
+      },
+      {
+        "name": "HazCam - front",
+        "triangles": 1228,
+        "vertices": 1478,
+        "uv_layers": 1,
+        "non_manifold_edges": 1466
+      },
+      {
+        "name": "Dust Removal Tool",
+        "triangles": 256,
+        "vertices": 276,
+        "uv_layers": 1,
+        "non_manifold_edges": 256
+      },
+      {
+        "name": "Drill",
+        "triangles": 1478,
+        "vertices": 1115,
+        "uv_layers": 1,
+        "non_manifold_edges": 684
+      },
+      {
+        "name": "DAN_R",
+        "triangles": 110,
+        "vertices": 110,
+        "uv_layers": 1,
+        "non_manifold_edges": 108
+      },
+      {
+        "name": "DAN_L",
+        "triangles": 110,
+        "vertices": 110,
+        "uv_layers": 1,
+        "non_manifold_edges": 108
+      },
+      {
+        "name": "cover_03",
+        "triangles": 72,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      },
+      {
+        "name": "cover_02",
+        "triangles": 72,
+        "vertices": 92,
+        "uv_layers": 1,
+        "non_manifold_edges": 92
+      },
+      {
+        "name": "cover_01",
+        "triangles": 114,
+        "vertices": 140,
+        "uv_layers": 1,
+        "non_manifold_edges": 140
+      },
+      {
+        "name": "CHIMERA",
+        "triangles": 1066,
+        "vertices": 954,
+        "uv_layers": 1,
+        "non_manifold_edges": 770
+      },
+      {
+        "name": "CheMin",
+        "triangles": 413,
+        "vertices": 435,
+        "uv_layers": 1,
+        "non_manifold_edges": 435
+      },
+      {
+        "name": "ChemCam",
+        "triangles": 255,
+        "vertices": 345,
+        "uv_layers": 1,
+        "non_manifold_edges": 345
+      },
+      {
+        "name": "Chassis",
+        "triangles": 1013,
+        "vertices": 984,
+        "uv_layers": 1,
+        "non_manifold_edges": 779
+      },
+      {
+        "name": "body.001",
+        "triangles": 142,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "body",
+        "triangles": 7879,
+        "vertices": 8860,
+        "uv_layers": 1,
+        "non_manifold_edges": 8491
+      },
+      {
+        "name": "bit_03",
+        "triangles": 384,
+        "vertices": 378,
+        "uv_layers": 1,
+        "non_manifold_edges": 364
+      },
+      {
+        "name": "bit_02",
+        "triangles": 384,
+        "vertices": 398,
+        "uv_layers": 1,
+        "non_manifold_edges": 396
+      },
+      {
+        "name": "bit_01.001",
+        "triangles": 384,
+        "vertices": 398,
+        "uv_layers": 1,
+        "non_manifold_edges": 394
+      },
+      {
+        "name": "arm_05_head.001",
+        "triangles": 2390,
+        "vertices": 1432,
+        "uv_layers": 1,
+        "non_manifold_edges": 336
+      },
+      {
+        "name": "arm_04.001",
+        "triangles": 1000,
+        "vertices": 1040,
+        "uv_layers": 1,
+        "non_manifold_edges": 1010
+      },
+      {
+        "name": "arm_03.001",
+        "triangles": 1088,
+        "vertices": 1182,
+        "uv_layers": 1,
+        "non_manifold_edges": 1158
+      },
+      {
+        "name": "arm_02.001",
+        "triangles": 999,
+        "vertices": 1009,
+        "uv_layers": 1,
+        "non_manifold_edges": 994
+      },
+      {
+        "name": "arm_01.001",
+        "triangles": 958,
+        "vertices": 897,
+        "uv_layers": 1,
+        "non_manifold_edges": 810
+      },
+      {
+        "name": "APXS",
+        "triangles": 244,
+        "vertices": 164,
+        "uv_layers": 1,
+        "non_manifold_edges": 62
+      },
+      {
+        "name": "antenna_UHF",
+        "triangles": 398,
+        "vertices": 452,
+        "uv_layers": 1,
+        "non_manifold_edges": 416
+      },
+      {
+        "name": "antenna_LG",
+        "triangles": 216,
+        "vertices": 195,
+        "uv_layers": 1,
+        "non_manifold_edges": 154
+      },
+      {
+        "name": "antenna_HG_03",
+        "triangles": 546,
+        "vertices": 576,
+        "uv_layers": 1,
+        "non_manifold_edges": 566
+      },
+      {
+        "name": "antenna_HG_01",
+        "triangles": 852,
+        "vertices": 886,
+        "uv_layers": 1,
+        "non_manifold_edges": 886
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 48492,
+    "materials": 4,
+    "parts": [
+      {
+        "name": "SM_rover_1_wheel_03_R_LOD0",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "SM_rover_1_wheel_03_L_LOD0",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "SM_rover_1_wheel_02_R_LOD0",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "SM_rover_1_wheel_02_L_LOD0",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "SM_rover_1_wheel_01_R_LOD0",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "SM_rover_1_wheel_01_L_LOD0",
+        "triangles": 1626,
+        "vertices": 1541,
+        "uv_layers": 1,
+        "non_manifold_edges": 1392
+      },
+      {
+        "name": "SM_rover_1_suspension_xmember_LOD0",
+        "triangles": 476,
+        "vertices": 454,
+        "uv_layers": 1,
+        "non_manifold_edges": 400
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_F_R_LOD0",
+        "triangles": 489,
+        "vertices": 501,
+        "uv_layers": 1,
+        "non_manifold_edges": 473
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_F_L_LOD0",
+        "triangles": 489,
+        "vertices": 501,
+        "uv_layers": 1,
+        "non_manifold_edges": 473
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_B_R_LOD0",
+        "triangles": 434,
+        "vertices": 383,
+        "uv_layers": 1,
+        "non_manifold_edges": 308
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_B_L_LOD0",
+        "triangles": 434,
+        "vertices": 383,
+        "uv_layers": 1,
+        "non_manifold_edges": 308
+      },
+      {
+        "name": "SM_rover_1_suspension_rod_R_LOD0",
+        "triangles": 240,
+        "vertices": 210,
+        "uv_layers": 1,
+        "non_manifold_edges": 154
+      },
+      {
+        "name": "SM_rover_1_suspension_rod_L_LOD0",
+        "triangles": 240,
+        "vertices": 210,
+        "uv_layers": 1,
+        "non_manifold_edges": 154
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_R2_LOD0",
+        "triangles": 34,
+        "vertices": 36,
+        "uv_layers": 1,
+        "non_manifold_edges": 36
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_R_LOD0",
+        "triangles": 232,
+        "vertices": 240,
+        "uv_layers": 1,
+        "non_manifold_edges": 240
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_L2_LOD0",
+        "triangles": 34,
+        "vertices": 36,
+        "uv_layers": 1,
+        "non_manifold_edges": 36
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_L_LOD0",
+        "triangles": 232,
+        "vertices": 240,
+        "uv_layers": 1,
+        "non_manifold_edges": 240
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_F_R_LOD0",
+        "triangles": 451,
+        "vertices": 405,
+        "uv_layers": 1,
+        "non_manifold_edges": 339
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_F_L_LOD0",
+        "triangles": 451,
+        "vertices": 453,
+        "uv_layers": 1,
+        "non_manifold_edges": 435
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B_R_LOD0",
+        "triangles": 334,
+        "vertices": 296,
+        "uv_layers": 1,
+        "non_manifold_edges": 244
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B_L_LOD0",
+        "triangles": 334,
+        "vertices": 296,
+        "uv_layers": 1,
+        "non_manifold_edges": 244
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B2_R_LOD0",
+        "triangles": 597,
+        "vertices": 620,
+        "uv_layers": 1,
+        "non_manifold_edges": 615
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B2_L_LOD0",
+        "triangles": 597,
+        "vertices": 620,
+        "uv_layers": 1,
+        "non_manifold_edges": 615
+      },
+      {
+        "name": "SM_rover_1_sundial_LOD0",
+        "triangles": 316,
+        "vertices": 259,
+        "uv_layers": 1,
+        "non_manifold_edges": 186
+      },
+      {
+        "name": "SM_rover_1_SAM_LOD0",
+        "triangles": 609,
+        "vertices": 643,
+        "uv_layers": 1,
+        "non_manifold_edges": 643
+      },
+      {
+        "name": "SM_rover_1_RTG_LOD0",
+        "triangles": 352,
+        "vertices": 322,
+        "uv_layers": 1,
+        "non_manifold_edges": 256
+      },
+      {
+        "name": "SM_rover_1_REMS_LOD0",
+        "triangles": 10,
+        "vertices": 20,
+        "uv_layers": 1,
+        "non_manifold_edges": 20
+      },
+      {
+        "name": "SM_rover_1_radiators_LOD0",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      },
+      {
+        "name": "SM_rover_1_RAD_LOD0",
+        "triangles": 140,
+        "vertices": 141,
+        "uv_layers": 1,
+        "non_manifold_edges": 140
+      },
+      {
+        "name": "SM_rover_1_NavCam_top_R_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_NavCam_top_L_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_NavCam_LOD0",
+        "triangles": 942,
+        "vertices": 1030,
+        "uv_layers": 1,
+        "non_manifold_edges": 1030
+      },
+      {
+        "name": "SM_rover_1_MastCam_R_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MastCam_L_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MastCam_LOD0",
+        "triangles": 1028,
+        "vertices": 984,
+        "uv_layers": 1,
+        "non_manifold_edges": 904
+      },
+      {
+        "name": "SM_rover_1_mast_03_001_LOD0",
+        "triangles": 1064,
+        "vertices": 1094,
+        "uv_layers": 1,
+        "non_manifold_edges": 1084
+      },
+      {
+        "name": "SM_rover_1_mast_02_001_LOD0",
+        "triangles": 344,
+        "vertices": 374,
+        "uv_layers": 1,
+        "non_manifold_edges": 374
+      },
+      {
+        "name": "SM_rover_1_mast_01_001_LOD0",
+        "triangles": 918,
+        "vertices": 924,
+        "uv_layers": 1,
+        "non_manifold_edges": 924
+      },
+      {
+        "name": "SM_rover_1_mast_01_000_LOD0",
+        "triangles": 212,
+        "vertices": 138,
+        "uv_layers": 1,
+        "non_manifold_edges": 56
+      },
+      {
+        "name": "SM_rover_1_MARDI_001_LOD0",
+        "triangles": 310,
+        "vertices": 168,
+        "uv_layers": 1,
+        "non_manifold_edges": 20
+      },
+      {
+        "name": "SM_rover_1_MARDI_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MAHLI_lens_cover_LOD0",
+        "triangles": 154,
+        "vertices": 180,
+        "uv_layers": 1,
+        "non_manifold_edges": 180
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_04_LOD0",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_03_LOD0",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_02_LOD0",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_01_LOD0",
+        "triangles": 40,
+        "vertices": 25,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_cam_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MAHLI_cal_target_LOD0",
+        "triangles": 158,
+        "vertices": 166,
+        "uv_layers": 1,
+        "non_manifold_edges": 156
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LOD0",
+        "triangles": 294,
+        "vertices": 298,
+        "uv_layers": 1,
+        "non_manifold_edges": 262
+      },
+      {
+        "name": "SM_rover_1_lens_covers_rear_LOD0",
+        "triangles": 432,
+        "vertices": 456,
+        "uv_layers": 1,
+        "non_manifold_edges": 448
+      },
+      {
+        "name": "SM_rover_1_lens_covers_front_LOD0",
+        "triangles": 156,
+        "vertices": 164,
+        "uv_layers": 1,
+        "non_manifold_edges": 160
+      },
+      {
+        "name": "SM_rover_1_HazCam_rear_R_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_HazCam_rear_L_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_HazCam_F_LOD0",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_HazCam___rear_LOD0",
+        "triangles": 824,
+        "vertices": 960,
+        "uv_layers": 1,
+        "non_manifold_edges": 960
+      },
+      {
+        "name": "SM_rover_1_HazCam___front_LOD0",
+        "triangles": 1228,
+        "vertices": 1478,
+        "uv_layers": 1,
+        "non_manifold_edges": 1466
+      },
+      {
+        "name": "SM_rover_1_Dust_Removal_Tool_LOD0",
+        "triangles": 256,
+        "vertices": 276,
+        "uv_layers": 1,
+        "non_manifold_edges": 256
+      },
+      {
+        "name": "SM_rover_1_Drill_LOD0",
+        "triangles": 1478,
+        "vertices": 1115,
+        "uv_layers": 1,
+        "non_manifold_edges": 684
+      },
+      {
+        "name": "SM_rover_1_DAN_R_LOD0",
+        "triangles": 110,
+        "vertices": 110,
+        "uv_layers": 1,
+        "non_manifold_edges": 108
+      },
+      {
+        "name": "SM_rover_1_DAN_L_LOD0",
+        "triangles": 110,
+        "vertices": 110,
+        "uv_layers": 1,
+        "non_manifold_edges": 108
+      },
+      {
+        "name": "SM_rover_1_cover_03_LOD0",
+        "triangles": 72,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      },
+      {
+        "name": "SM_rover_1_cover_02_LOD0",
+        "triangles": 72,
+        "vertices": 92,
+        "uv_layers": 1,
+        "non_manifold_edges": 92
+      },
+      {
+        "name": "SM_rover_1_cover_01_LOD0",
+        "triangles": 114,
+        "vertices": 140,
+        "uv_layers": 1,
+        "non_manifold_edges": 140
+      },
+      {
+        "name": "SM_rover_1_CHIMERA_LOD0",
+        "triangles": 1066,
+        "vertices": 954,
+        "uv_layers": 1,
+        "non_manifold_edges": 770
+      },
+      {
+        "name": "SM_rover_1_CheMin_LOD0",
+        "triangles": 413,
+        "vertices": 435,
+        "uv_layers": 1,
+        "non_manifold_edges": 435
+      },
+      {
+        "name": "SM_rover_1_ChemCam_LOD0",
+        "triangles": 255,
+        "vertices": 345,
+        "uv_layers": 1,
+        "non_manifold_edges": 345
+      },
+      {
+        "name": "SM_rover_1_Chassis_LOD0",
+        "triangles": 1013,
+        "vertices": 984,
+        "uv_layers": 1,
+        "non_manifold_edges": 779
+      },
+      {
+        "name": "SM_rover_1_body_001_LOD0",
+        "triangles": 142,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "SM_rover_1_body_LOD0",
+        "triangles": 7879,
+        "vertices": 8860,
+        "uv_layers": 1,
+        "non_manifold_edges": 8491
+      },
+      {
+        "name": "SM_rover_1_bit_03_LOD0",
+        "triangles": 384,
+        "vertices": 378,
+        "uv_layers": 1,
+        "non_manifold_edges": 364
+      },
+      {
+        "name": "SM_rover_1_bit_02_LOD0",
+        "triangles": 384,
+        "vertices": 398,
+        "uv_layers": 1,
+        "non_manifold_edges": 396
+      },
+      {
+        "name": "SM_rover_1_bit_01_001_LOD0",
+        "triangles": 384,
+        "vertices": 398,
+        "uv_layers": 1,
+        "non_manifold_edges": 394
+      },
+      {
+        "name": "SM_rover_1_arm_05_head_001_LOD0",
+        "triangles": 2390,
+        "vertices": 1432,
+        "uv_layers": 1,
+        "non_manifold_edges": 336
+      },
+      {
+        "name": "SM_rover_1_arm_04_001_LOD0",
+        "triangles": 1000,
+        "vertices": 1040,
+        "uv_layers": 1,
+        "non_manifold_edges": 1010
+      },
+      {
+        "name": "SM_rover_1_arm_03_001_LOD0",
+        "triangles": 1088,
+        "vertices": 1182,
+        "uv_layers": 1,
+        "non_manifold_edges": 1158
+      },
+      {
+        "name": "SM_rover_1_arm_02_001_LOD0",
+        "triangles": 999,
+        "vertices": 1009,
+        "uv_layers": 1,
+        "non_manifold_edges": 994
+      },
+      {
+        "name": "SM_rover_1_arm_01_001_LOD0",
+        "triangles": 958,
+        "vertices": 897,
+        "uv_layers": 1,
+        "non_manifold_edges": 810
+      },
+      {
+        "name": "SM_rover_1_APXS_LOD0",
+        "triangles": 244,
+        "vertices": 164,
+        "uv_layers": 1,
+        "non_manifold_edges": 62
+      },
+      {
+        "name": "SM_rover_1_antenna_UHF_LOD0",
+        "triangles": 398,
+        "vertices": 452,
+        "uv_layers": 1,
+        "non_manifold_edges": 416
+      },
+      {
+        "name": "SM_rover_1_antenna_LG_LOD0",
+        "triangles": 216,
+        "vertices": 195,
+        "uv_layers": 1,
+        "non_manifold_edges": 154
+      },
+      {
+        "name": "SM_rover_1_antenna_HG_03_LOD0",
+        "triangles": 546,
+        "vertices": 576,
+        "uv_layers": 1,
+        "non_manifold_edges": 566
+      },
+      {
+        "name": "SM_rover_1_antenna_HG_01_LOD0",
+        "triangles": 852,
+        "vertices": 886,
+        "uv_layers": 1,
+        "non_manifold_edges": 886
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 24293,
+      "materials": 4,
+      "parts": [
+        {
+          "name": "SM_rover_1_wheel_03_R_LOD1",
+          "triangles": 813,
+          "vertices": 857,
+          "uv_layers": 1,
+          "non_manifold_edges": 831
+        },
+        {
+          "name": "SM_rover_1_wheel_03_L_LOD1",
+          "triangles": 813,
+          "vertices": 860,
+          "uv_layers": 1,
+          "non_manifold_edges": 837
+        },
+        {
+          "name": "SM_rover_1_wheel_02_R_LOD1",
+          "triangles": 813,
+          "vertices": 856,
+          "uv_layers": 1,
+          "non_manifold_edges": 829
+        },
+        {
+          "name": "SM_rover_1_wheel_02_L_LOD1",
+          "triangles": 813,
+          "vertices": 858,
+          "uv_layers": 1,
+          "non_manifold_edges": 833
+        },
+        {
+          "name": "SM_rover_1_wheel_01_R_LOD1",
+          "triangles": 813,
+          "vertices": 858,
+          "uv_layers": 1,
+          "non_manifold_edges": 833
+        },
+        {
+          "name": "SM_rover_1_wheel_01_L_LOD1",
+          "triangles": 813,
+          "vertices": 861,
+          "uv_layers": 1,
+          "non_manifold_edges": 839
+        },
+        {
+          "name": "SM_rover_1_suspension_xmember_LOD1",
+          "triangles": 238,
+          "vertices": 270,
+          "uv_layers": 1,
+          "non_manifold_edges": 270
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_F_R_LOD1",
+          "triangles": 244,
+          "vertices": 285,
+          "uv_layers": 1,
+          "non_manifold_edges": 283
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_F_L_LOD1",
+          "triangles": 244,
+          "vertices": 285,
+          "uv_layers": 1,
+          "non_manifold_edges": 283
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_B_R_LOD1",
+          "triangles": 217,
+          "vertices": 224,
+          "uv_layers": 1,
+          "non_manifold_edges": 207
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_B_L_LOD1",
+          "triangles": 217,
+          "vertices": 225,
+          "uv_layers": 1,
+          "non_manifold_edges": 209
+        },
+        {
+          "name": "SM_rover_1_suspension_rod_R_LOD1",
+          "triangles": 120,
+          "vertices": 130,
+          "uv_layers": 1,
+          "non_manifold_edges": 114
+        },
+        {
+          "name": "SM_rover_1_suspension_rod_L_LOD1",
+          "triangles": 120,
+          "vertices": 130,
+          "uv_layers": 1,
+          "non_manifold_edges": 114
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_R2_LOD1",
+          "triangles": 17,
+          "vertices": 19,
+          "uv_layers": 1,
+          "non_manifold_edges": 19
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_R_LOD1",
+          "triangles": 116,
+          "vertices": 124,
+          "uv_layers": 1,
+          "non_manifold_edges": 124
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_L2_LOD1",
+          "triangles": 17,
+          "vertices": 19,
+          "uv_layers": 1,
+          "non_manifold_edges": 19
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_L_LOD1",
+          "triangles": 116,
+          "vertices": 124,
+          "uv_layers": 1,
+          "non_manifold_edges": 124
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_F_R_LOD1",
+          "triangles": 225,
+          "vertices": 240,
+          "uv_layers": 1,
+          "non_manifold_edges": 235
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_F_L_LOD1",
+          "triangles": 225,
+          "vertices": 245,
+          "uv_layers": 1,
+          "non_manifold_edges": 245
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B_R_LOD1",
+          "triangles": 167,
+          "vertices": 175,
+          "uv_layers": 1,
+          "non_manifold_edges": 169
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B_L_LOD1",
+          "triangles": 167,
+          "vertices": 175,
+          "uv_layers": 1,
+          "non_manifold_edges": 169
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B2_R_LOD1",
+          "triangles": 298,
+          "vertices": 332,
+          "uv_layers": 1,
+          "non_manifold_edges": 335
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B2_L_LOD1",
+          "triangles": 298,
+          "vertices": 332,
+          "uv_layers": 1,
+          "non_manifold_edges": 335
+        },
+        {
+          "name": "SM_rover_1_sundial_LOD1",
+          "triangles": 158,
+          "vertices": 154,
+          "uv_layers": 1,
+          "non_manifold_edges": 134
+        },
+        {
+          "name": "SM_rover_1_SAM_LOD1",
+          "triangles": 303,
+          "vertices": 374,
+          "uv_layers": 1,
+          "non_manifold_edges": 380
+        },
+        {
+          "name": "SM_rover_1_RTG_LOD1",
+          "triangles": 176,
+          "vertices": 226,
+          "uv_layers": 1,
+          "non_manifold_edges": 211
+        },
+        {
+          "name": "SM_rover_1_REMS_LOD1",
+          "triangles": 10,
+          "vertices": 20,
+          "uv_layers": 1,
+          "non_manifold_edges": 20
+        },
+        {
+          "name": "SM_rover_1_radiators_LOD1",
+          "triangles": 28,
+          "vertices": 74,
+          "uv_layers": 1,
+          "non_manifold_edges": 67
+        },
+        {
+          "name": "SM_rover_1_RAD_LOD1",
+          "triangles": 70,
+          "vertices": 72,
+          "uv_layers": 1,
+          "non_manifold_edges": 72
+        },
+        {
+          "name": "SM_rover_1_NavCam_top_R_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_NavCam_top_L_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_NavCam_LOD1",
+          "triangles": 471,
+          "vertices": 559,
+          "uv_layers": 1,
+          "non_manifold_edges": 559
+        },
+        {
+          "name": "SM_rover_1_MastCam_R_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MastCam_L_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MastCam_LOD1",
+          "triangles": 513,
+          "vertices": 548,
+          "uv_layers": 1,
+          "non_manifold_edges": 533
+        },
+        {
+          "name": "SM_rover_1_mast_03_001_LOD1",
+          "triangles": 532,
+          "vertices": 574,
+          "uv_layers": 1,
+          "non_manifold_edges": 573
+        },
+        {
+          "name": "SM_rover_1_mast_02_001_LOD1",
+          "triangles": 172,
+          "vertices": 210,
+          "uv_layers": 1,
+          "non_manifold_edges": 212
+        },
+        {
+          "name": "SM_rover_1_mast_01_001_LOD1",
+          "triangles": 459,
+          "vertices": 465,
+          "uv_layers": 1,
+          "non_manifold_edges": 465
+        },
+        {
+          "name": "SM_rover_1_mast_01_000_LOD1",
+          "triangles": 105,
+          "vertices": 78,
+          "uv_layers": 1,
+          "non_manifold_edges": 43
+        },
+        {
+          "name": "SM_rover_1_MARDI_001_LOD1",
+          "triangles": 154,
+          "vertices": 87,
+          "uv_layers": 1,
+          "non_manifold_edges": 14
+        },
+        {
+          "name": "SM_rover_1_MARDI_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MAHLI_lens_cover_LOD1",
+          "triangles": 77,
+          "vertices": 103,
+          "uv_layers": 1,
+          "non_manifold_edges": 103
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_04_LOD1",
+          "triangles": 20,
+          "vertices": 15,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_03_LOD1",
+          "triangles": 20,
+          "vertices": 15,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_02_LOD1",
+          "triangles": 20,
+          "vertices": 15,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_01_LOD1",
+          "triangles": 20,
+          "vertices": 15,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_cam_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MAHLI_cal_target_LOD1",
+          "triangles": 79,
+          "vertices": 95,
+          "uv_layers": 1,
+          "non_manifold_edges": 93
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LOD1",
+          "triangles": 147,
+          "vertices": 184,
+          "uv_layers": 1,
+          "non_manifold_edges": 169
+        },
+        {
+          "name": "SM_rover_1_lens_covers_rear_LOD1",
+          "triangles": 216,
+          "vertices": 248,
+          "uv_layers": 1,
+          "non_manifold_edges": 248
+        },
+        {
+          "name": "SM_rover_1_lens_covers_front_LOD1",
+          "triangles": 78,
+          "vertices": 90,
+          "uv_layers": 1,
+          "non_manifold_edges": 90
+        },
+        {
+          "name": "SM_rover_1_HazCam_rear_R_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_HazCam_rear_L_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_HazCam_F_LOD1",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_HazCam___rear_LOD1",
+          "triangles": 412,
+          "vertices": 548,
+          "uv_layers": 1,
+          "non_manifold_edges": 548
+        },
+        {
+          "name": "SM_rover_1_HazCam___front_LOD1",
+          "triangles": 614,
+          "vertices": 871,
+          "uv_layers": 1,
+          "non_manifold_edges": 866
+        },
+        {
+          "name": "SM_rover_1_Dust_Removal_Tool_LOD1",
+          "triangles": 128,
+          "vertices": 167,
+          "uv_layers": 1,
+          "non_manifold_edges": 163
+        },
+        {
+          "name": "SM_rover_1_Drill_LOD1",
+          "triangles": 739,
+          "vertices": 664,
+          "uv_layers": 1,
+          "non_manifold_edges": 521
+        },
+        {
+          "name": "SM_rover_1_DAN_R_LOD1",
+          "triangles": 55,
+          "vertices": 57,
+          "uv_layers": 1,
+          "non_manifold_edges": 57
+        },
+        {
+          "name": "SM_rover_1_DAN_L_LOD1",
+          "triangles": 55,
+          "vertices": 57,
+          "uv_layers": 1,
+          "non_manifold_edges": 57
+        },
+        {
+          "name": "SM_rover_1_cover_03_LOD1",
+          "triangles": 36,
+          "vertices": 61,
+          "uv_layers": 1,
+          "non_manifold_edges": 61
+        },
+        {
+          "name": "SM_rover_1_cover_02_LOD1",
+          "triangles": 36,
+          "vertices": 56,
+          "uv_layers": 1,
+          "non_manifold_edges": 56
+        },
+        {
+          "name": "SM_rover_1_cover_01_LOD1",
+          "triangles": 57,
+          "vertices": 83,
+          "uv_layers": 1,
+          "non_manifold_edges": 83
+        },
+        {
+          "name": "SM_rover_1_CHIMERA_LOD1",
+          "triangles": 533,
+          "vertices": 568,
+          "uv_layers": 1,
+          "non_manifold_edges": 531
+        },
+        {
+          "name": "SM_rover_1_CheMin_LOD1",
+          "triangles": 206,
+          "vertices": 228,
+          "uv_layers": 1,
+          "non_manifold_edges": 228
+        },
+        {
+          "name": "SM_rover_1_ChemCam_LOD1",
+          "triangles": 127,
+          "vertices": 222,
+          "uv_layers": 1,
+          "non_manifold_edges": 212
+        },
+        {
+          "name": "SM_rover_1_Chassis_LOD1",
+          "triangles": 505,
+          "vertices": 677,
+          "uv_layers": 1,
+          "non_manifold_edges": 672
+        },
+        {
+          "name": "SM_rover_1_body_001_LOD1",
+          "triangles": 71,
+          "vertices": 73,
+          "uv_layers": 1,
+          "non_manifold_edges": 73
+        },
+        {
+          "name": "SM_rover_1_body_LOD1",
+          "triangles": 3939,
+          "vertices": 5350,
+          "uv_layers": 1,
+          "non_manifold_edges": 5288
+        },
+        {
+          "name": "SM_rover_1_bit_03_LOD1",
+          "triangles": 192,
+          "vertices": 202,
+          "uv_layers": 1,
+          "non_manifold_edges": 202
+        },
+        {
+          "name": "SM_rover_1_bit_02_LOD1",
+          "triangles": 192,
+          "vertices": 208,
+          "uv_layers": 1,
+          "non_manifold_edges": 206
+        },
+        {
+          "name": "SM_rover_1_bit_01_001_LOD1",
+          "triangles": 192,
+          "vertices": 217,
+          "uv_layers": 1,
+          "non_manifold_edges": 222
+        },
+        {
+          "name": "SM_rover_1_arm_05_head_001_LOD1",
+          "triangles": 1195,
+          "vertices": 820,
+          "uv_layers": 1,
+          "non_manifold_edges": 307
+        },
+        {
+          "name": "SM_rover_1_arm_04_001_LOD1",
+          "triangles": 500,
+          "vertices": 570,
+          "uv_layers": 1,
+          "non_manifold_edges": 570
+        },
+        {
+          "name": "SM_rover_1_arm_03_001_LOD1",
+          "triangles": 544,
+          "vertices": 674,
+          "uv_layers": 1,
+          "non_manifold_edges": 671
+        },
+        {
+          "name": "SM_rover_1_arm_02_001_LOD1",
+          "triangles": 499,
+          "vertices": 534,
+          "uv_layers": 1,
+          "non_manifold_edges": 532
+        },
+        {
+          "name": "SM_rover_1_arm_01_001_LOD1",
+          "triangles": 479,
+          "vertices": 496,
+          "uv_layers": 1,
+          "non_manifold_edges": 487
+        },
+        {
+          "name": "SM_rover_1_APXS_LOD1",
+          "triangles": 122,
+          "vertices": 101,
+          "uv_layers": 1,
+          "non_manifold_edges": 58
+        },
+        {
+          "name": "SM_rover_1_antenna_UHF_LOD1",
+          "triangles": 198,
+          "vertices": 294,
+          "uv_layers": 1,
+          "non_manifold_edges": 286
+        },
+        {
+          "name": "SM_rover_1_antenna_LG_LOD1",
+          "triangles": 108,
+          "vertices": 123,
+          "uv_layers": 1,
+          "non_manifold_edges": 118
+        },
+        {
+          "name": "SM_rover_1_antenna_HG_03_LOD1",
+          "triangles": 273,
+          "vertices": 309,
+          "uv_layers": 1,
+          "non_manifold_edges": 303
+        },
+        {
+          "name": "SM_rover_1_antenna_HG_01_LOD1",
+          "triangles": 426,
+          "vertices": 460,
+          "uv_layers": 1,
+          "non_manifold_edges": 459
+        }
+      ]
+    },
+    "2": {
+      "triangles": 12184,
+      "materials": 4,
+      "parts": [
+        {
+          "name": "SM_rover_1_wheel_03_R_LOD2",
+          "triangles": 406,
+          "vertices": 566,
+          "uv_layers": 1,
+          "non_manifold_edges": 605
+        },
+        {
+          "name": "SM_rover_1_wheel_03_L_LOD2",
+          "triangles": 406,
+          "vertices": 566,
+          "uv_layers": 1,
+          "non_manifold_edges": 603
+        },
+        {
+          "name": "SM_rover_1_wheel_02_R_LOD2",
+          "triangles": 406,
+          "vertices": 560,
+          "uv_layers": 1,
+          "non_manifold_edges": 594
+        },
+        {
+          "name": "SM_rover_1_wheel_02_L_LOD2",
+          "triangles": 406,
+          "vertices": 565,
+          "uv_layers": 1,
+          "non_manifold_edges": 603
+        },
+        {
+          "name": "SM_rover_1_wheel_01_R_LOD2",
+          "triangles": 406,
+          "vertices": 567,
+          "uv_layers": 1,
+          "non_manifold_edges": 605
+        },
+        {
+          "name": "SM_rover_1_wheel_01_L_LOD2",
+          "triangles": 406,
+          "vertices": 563,
+          "uv_layers": 1,
+          "non_manifold_edges": 596
+        },
+        {
+          "name": "SM_rover_1_suspension_xmember_LOD2",
+          "triangles": 119,
+          "vertices": 173,
+          "uv_layers": 1,
+          "non_manifold_edges": 178
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_F_R_LOD2",
+          "triangles": 122,
+          "vertices": 188,
+          "uv_layers": 1,
+          "non_manifold_edges": 190
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_F_L_LOD2",
+          "triangles": 121,
+          "vertices": 186,
+          "uv_layers": 1,
+          "non_manifold_edges": 188
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_B_R_LOD2",
+          "triangles": 108,
+          "vertices": 138,
+          "uv_layers": 1,
+          "non_manifold_edges": 132
+        },
+        {
+          "name": "SM_rover_1_suspension_steer_B_L_LOD2",
+          "triangles": 108,
+          "vertices": 138,
+          "uv_layers": 1,
+          "non_manifold_edges": 132
+        },
+        {
+          "name": "SM_rover_1_suspension_rod_R_LOD2",
+          "triangles": 60,
+          "vertices": 83,
+          "uv_layers": 1,
+          "non_manifold_edges": 74
+        },
+        {
+          "name": "SM_rover_1_suspension_rod_L_LOD2",
+          "triangles": 60,
+          "vertices": 82,
+          "uv_layers": 1,
+          "non_manifold_edges": 72
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_R2_LOD2",
+          "triangles": 8,
+          "vertices": 10,
+          "uv_layers": 1,
+          "non_manifold_edges": 10
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_R_LOD2",
+          "triangles": 58,
+          "vertices": 78,
+          "uv_layers": 1,
+          "non_manifold_edges": 85
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_L2_LOD2",
+          "triangles": 8,
+          "vertices": 10,
+          "uv_layers": 1,
+          "non_manifold_edges": 10
+        },
+        {
+          "name": "SM_rover_1_suspension_axel_L_LOD2",
+          "triangles": 58,
+          "vertices": 78,
+          "uv_layers": 1,
+          "non_manifold_edges": 81
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_F_R_LOD2",
+          "triangles": 112,
+          "vertices": 137,
+          "uv_layers": 1,
+          "non_manifold_edges": 135
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_F_L_LOD2",
+          "triangles": 111,
+          "vertices": 145,
+          "uv_layers": 1,
+          "non_manifold_edges": 147
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B_R_LOD2",
+          "triangles": 83,
+          "vertices": 94,
+          "uv_layers": 1,
+          "non_manifold_edges": 91
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B_L_LOD2",
+          "triangles": 83,
+          "vertices": 94,
+          "uv_layers": 1,
+          "non_manifold_edges": 91
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B2_R_LOD2",
+          "triangles": 149,
+          "vertices": 202,
+          "uv_layers": 1,
+          "non_manifold_edges": 206
+        },
+        {
+          "name": "SM_rover_1_suspension_arm_B2_L_LOD2",
+          "triangles": 149,
+          "vertices": 203,
+          "uv_layers": 1,
+          "non_manifold_edges": 208
+        },
+        {
+          "name": "SM_rover_1_sundial_LOD2",
+          "triangles": 79,
+          "vertices": 89,
+          "uv_layers": 1,
+          "non_manifold_edges": 83
+        },
+        {
+          "name": "SM_rover_1_SAM_LOD2",
+          "triangles": 152,
+          "vertices": 240,
+          "uv_layers": 1,
+          "non_manifold_edges": 244
+        },
+        {
+          "name": "SM_rover_1_RTG_LOD2",
+          "triangles": 88,
+          "vertices": 164,
+          "uv_layers": 1,
+          "non_manifold_edges": 159
+        },
+        {
+          "name": "SM_rover_1_REMS_LOD2",
+          "triangles": 10,
+          "vertices": 20,
+          "uv_layers": 1,
+          "non_manifold_edges": 20
+        },
+        {
+          "name": "SM_rover_1_radiators_LOD2",
+          "triangles": 14,
+          "vertices": 62,
+          "uv_layers": 1,
+          "non_manifold_edges": 50
+        },
+        {
+          "name": "SM_rover_1_RAD_LOD2",
+          "triangles": 35,
+          "vertices": 39,
+          "uv_layers": 1,
+          "non_manifold_edges": 40
+        },
+        {
+          "name": "SM_rover_1_NavCam_top_R_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_NavCam_top_L_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_NavCam_LOD2",
+          "triangles": 234,
+          "vertices": 377,
+          "uv_layers": 1,
+          "non_manifold_edges": 386
+        },
+        {
+          "name": "SM_rover_1_MastCam_R_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MastCam_L_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MastCam_LOD2",
+          "triangles": 256,
+          "vertices": 344,
+          "uv_layers": 1,
+          "non_manifold_edges": 337
+        },
+        {
+          "name": "SM_rover_1_mast_03_001_LOD2",
+          "triangles": 266,
+          "vertices": 354,
+          "uv_layers": 1,
+          "non_manifold_edges": 359
+        },
+        {
+          "name": "SM_rover_1_mast_02_001_LOD2",
+          "triangles": 86,
+          "vertices": 126,
+          "uv_layers": 1,
+          "non_manifold_edges": 124
+        },
+        {
+          "name": "SM_rover_1_mast_01_001_LOD2",
+          "triangles": 229,
+          "vertices": 254,
+          "uv_layers": 1,
+          "non_manifold_edges": 264
+        },
+        {
+          "name": "SM_rover_1_mast_01_000_LOD2",
+          "triangles": 53,
+          "vertices": 45,
+          "uv_layers": 1,
+          "non_manifold_edges": 29
+        },
+        {
+          "name": "SM_rover_1_MARDI_001_LOD2",
+          "triangles": 76,
+          "vertices": 47,
+          "uv_layers": 1,
+          "non_manifold_edges": 12
+        },
+        {
+          "name": "SM_rover_1_MARDI_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MAHLI_lens_cover_LOD2",
+          "triangles": 38,
+          "vertices": 64,
+          "uv_layers": 1,
+          "non_manifold_edges": 58
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_04_LOD2",
+          "triangles": 10,
+          "vertices": 10,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_03_LOD2",
+          "triangles": 10,
+          "vertices": 10,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_02_LOD2",
+          "triangles": 10,
+          "vertices": 10,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LED_01_LOD2",
+          "triangles": 10,
+          "vertices": 10,
+          "uv_layers": 0,
+          "non_manifold_edges": 8
+        },
+        {
+          "name": "SM_rover_1_MAHLI_cam_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_MAHLI_cal_target_LOD2",
+          "triangles": 39,
+          "vertices": 59,
+          "uv_layers": 1,
+          "non_manifold_edges": 60
+        },
+        {
+          "name": "SM_rover_1_MAHLI_LOD2",
+          "triangles": 73,
+          "vertices": 128,
+          "uv_layers": 1,
+          "non_manifold_edges": 116
+        },
+        {
+          "name": "SM_rover_1_lens_covers_rear_LOD2",
+          "triangles": 108,
+          "vertices": 140,
+          "uv_layers": 1,
+          "non_manifold_edges": 139
+        },
+        {
+          "name": "SM_rover_1_lens_covers_front_LOD2",
+          "triangles": 39,
+          "vertices": 51,
+          "uv_layers": 1,
+          "non_manifold_edges": 51
+        },
+        {
+          "name": "SM_rover_1_HazCam_rear_R_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_HazCam_rear_L_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_HazCam_F_LOD2",
+          "triangles": 12,
+          "vertices": 8,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_rover_1_HazCam___rear_LOD2",
+          "triangles": 206,
+          "vertices": 356,
+          "uv_layers": 1,
+          "non_manifold_edges": 347
+        },
+        {
+          "name": "SM_rover_1_HazCam___front_LOD2",
+          "triangles": 307,
+          "vertices": 611,
+          "uv_layers": 1,
+          "non_manifold_edges": 568
+        },
+        {
+          "name": "SM_rover_1_Dust_Removal_Tool_LOD2",
+          "triangles": 64,
+          "vertices": 107,
+          "uv_layers": 1,
+          "non_manifold_edges": 97
+        },
+        {
+          "name": "SM_rover_1_Drill_LOD2",
+          "triangles": 369,
+          "vertices": 397,
+          "uv_layers": 1,
+          "non_manifold_edges": 357
+        },
+        {
+          "name": "SM_rover_1_DAN_R_LOD2",
+          "triangles": 27,
+          "vertices": 29,
+          "uv_layers": 1,
+          "non_manifold_edges": 29
+        },
+        {
+          "name": "SM_rover_1_DAN_L_LOD2",
+          "triangles": 27,
+          "vertices": 29,
+          "uv_layers": 1,
+          "non_manifold_edges": 29
+        },
+        {
+          "name": "SM_rover_1_cover_03_LOD2",
+          "triangles": 17,
+          "vertices": 44,
+          "uv_layers": 1,
+          "non_manifold_edges": 40
+        },
+        {
+          "name": "SM_rover_1_cover_02_LOD2",
+          "triangles": 18,
+          "vertices": 39,
+          "uv_layers": 1,
+          "non_manifold_edges": 38
+        },
+        {
+          "name": "SM_rover_1_cover_01_LOD2",
+          "triangles": 28,
+          "vertices": 54,
+          "uv_layers": 1,
+          "non_manifold_edges": 49
+        },
+        {
+          "name": "SM_rover_1_CHIMERA_LOD2",
+          "triangles": 266,
+          "vertices": 350,
+          "uv_layers": 1,
+          "non_manifold_edges": 341
+        },
+        {
+          "name": "SM_rover_1_CheMin_LOD2",
+          "triangles": 102,
+          "vertices": 135,
+          "uv_layers": 1,
+          "non_manifold_edges": 137
+        },
+        {
+          "name": "SM_rover_1_ChemCam_LOD2",
+          "triangles": 63,
+          "vertices": 164,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        },
+        {
+          "name": "SM_rover_1_Chassis_LOD2",
+          "triangles": 253,
+          "vertices": 439,
+          "uv_layers": 1,
+          "non_manifold_edges": 427
+        },
+        {
+          "name": "SM_rover_1_body_001_LOD2",
+          "triangles": 35,
+          "vertices": 37,
+          "uv_layers": 1,
+          "non_manifold_edges": 37
+        },
+        {
+          "name": "SM_rover_1_body_LOD2",
+          "triangles": 1969,
+          "vertices": 3560,
+          "uv_layers": 1,
+          "non_manifold_edges": 3284
+        },
+        {
+          "name": "SM_rover_1_bit_03_LOD2",
+          "triangles": 96,
+          "vertices": 130,
+          "uv_layers": 1,
+          "non_manifold_edges": 129
+        },
+        {
+          "name": "SM_rover_1_bit_02_LOD2",
+          "triangles": 96,
+          "vertices": 132,
+          "uv_layers": 1,
+          "non_manifold_edges": 128
+        },
+        {
+          "name": "SM_rover_1_bit_01_001_LOD2",
+          "triangles": 96,
+          "vertices": 140,
+          "uv_layers": 1,
+          "non_manifold_edges": 139
+        },
+        {
+          "name": "SM_rover_1_arm_05_head_001_LOD2",
+          "triangles": 597,
+          "vertices": 503,
+          "uv_layers": 1,
+          "non_manifold_edges": 271
+        },
+        {
+          "name": "SM_rover_1_arm_04_001_LOD2",
+          "triangles": 250,
+          "vertices": 331,
+          "uv_layers": 1,
+          "non_manifold_edges": 326
+        },
+        {
+          "name": "SM_rover_1_arm_03_001_LOD2",
+          "triangles": 272,
+          "vertices": 432,
+          "uv_layers": 1,
+          "non_manifold_edges": 400
+        },
+        {
+          "name": "SM_rover_1_arm_02_001_LOD2",
+          "triangles": 249,
+          "vertices": 309,
+          "uv_layers": 1,
+          "non_manifold_edges": 310
+        },
+        {
+          "name": "SM_rover_1_arm_01_001_LOD2",
+          "triangles": 239,
+          "vertices": 272,
+          "uv_layers": 1,
+          "non_manifold_edges": 272
+        },
+        {
+          "name": "SM_rover_1_APXS_LOD2",
+          "triangles": 60,
+          "vertices": 70,
+          "uv_layers": 1,
+          "non_manifold_edges": 58
+        },
+        {
+          "name": "SM_rover_1_antenna_UHF_LOD2",
+          "triangles": 99,
+          "vertices": 221,
+          "uv_layers": 1,
+          "non_manifold_edges": 193
+        },
+        {
+          "name": "SM_rover_1_antenna_LG_LOD2",
+          "triangles": 54,
+          "vertices": 77,
+          "uv_layers": 1,
+          "non_manifold_edges": 72
+        },
+        {
+          "name": "SM_rover_1_antenna_HG_03_LOD2",
+          "triangles": 136,
+          "vertices": 190,
+          "uv_layers": 1,
+          "non_manifold_edges": 181
+        },
+        {
+          "name": "SM_rover_1_antenna_HG_01_LOD2",
+          "triangles": 213,
+          "vertices": 275,
+          "uv_layers": 1,
+          "non_manifold_edges": 284
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 25003,
+    "materials": 4,
+    "parts": [
+      {
+        "name": "SM_rover_1_wheel_03_R_Gazebo",
+        "triangles": 838,
+        "vertices": 881,
+        "uv_layers": 1,
+        "non_manifold_edges": 854
+      },
+      {
+        "name": "SM_rover_1_wheel_03_L_Gazebo",
+        "triangles": 838,
+        "vertices": 881,
+        "uv_layers": 1,
+        "non_manifold_edges": 854
+      },
+      {
+        "name": "SM_rover_1_wheel_02_R_Gazebo",
+        "triangles": 838,
+        "vertices": 879,
+        "uv_layers": 1,
+        "non_manifold_edges": 850
+      },
+      {
+        "name": "SM_rover_1_wheel_02_L_Gazebo",
+        "triangles": 838,
+        "vertices": 881,
+        "uv_layers": 1,
+        "non_manifold_edges": 854
+      },
+      {
+        "name": "SM_rover_1_wheel_01_R_Gazebo",
+        "triangles": 838,
+        "vertices": 881,
+        "uv_layers": 1,
+        "non_manifold_edges": 854
+      },
+      {
+        "name": "SM_rover_1_wheel_01_L_Gazebo",
+        "triangles": 838,
+        "vertices": 882,
+        "uv_layers": 1,
+        "non_manifold_edges": 856
+      },
+      {
+        "name": "SM_rover_1_suspension_xmember_Gazebo",
+        "triangles": 245,
+        "vertices": 277,
+        "uv_layers": 1,
+        "non_manifold_edges": 277
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_F_R_Gazebo",
+        "triangles": 252,
+        "vertices": 292,
+        "uv_layers": 1,
+        "non_manifold_edges": 289
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_F_L_Gazebo",
+        "triangles": 251,
+        "vertices": 292,
+        "uv_layers": 1,
+        "non_manifold_edges": 290
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_B_R_Gazebo",
+        "triangles": 223,
+        "vertices": 229,
+        "uv_layers": 1,
+        "non_manifold_edges": 211
+      },
+      {
+        "name": "SM_rover_1_suspension_steer_B_L_Gazebo",
+        "triangles": 223,
+        "vertices": 230,
+        "uv_layers": 1,
+        "non_manifold_edges": 213
+      },
+      {
+        "name": "SM_rover_1_suspension_rod_R_Gazebo",
+        "triangles": 122,
+        "vertices": 132,
+        "uv_layers": 1,
+        "non_manifold_edges": 116
+      },
+      {
+        "name": "SM_rover_1_suspension_rod_L_Gazebo",
+        "triangles": 122,
+        "vertices": 131,
+        "uv_layers": 1,
+        "non_manifold_edges": 114
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_R2_Gazebo",
+        "triangles": 17,
+        "vertices": 19,
+        "uv_layers": 1,
+        "non_manifold_edges": 19
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_R_Gazebo",
+        "triangles": 119,
+        "vertices": 127,
+        "uv_layers": 1,
+        "non_manifold_edges": 127
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_L2_Gazebo",
+        "triangles": 17,
+        "vertices": 19,
+        "uv_layers": 1,
+        "non_manifold_edges": 19
+      },
+      {
+        "name": "SM_rover_1_suspension_axel_L_Gazebo",
+        "triangles": 119,
+        "vertices": 127,
+        "uv_layers": 1,
+        "non_manifold_edges": 127
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_F_R_Gazebo",
+        "triangles": 232,
+        "vertices": 247,
+        "uv_layers": 1,
+        "non_manifold_edges": 242
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_F_L_Gazebo",
+        "triangles": 232,
+        "vertices": 252,
+        "uv_layers": 1,
+        "non_manifold_edges": 252
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B_R_Gazebo",
+        "triangles": 172,
+        "vertices": 179,
+        "uv_layers": 1,
+        "non_manifold_edges": 172
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B_L_Gazebo",
+        "triangles": 172,
+        "vertices": 179,
+        "uv_layers": 1,
+        "non_manifold_edges": 172
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B2_R_Gazebo",
+        "triangles": 306,
+        "vertices": 336,
+        "uv_layers": 1,
+        "non_manifold_edges": 338
+      },
+      {
+        "name": "SM_rover_1_suspension_arm_B2_L_Gazebo",
+        "triangles": 306,
+        "vertices": 336,
+        "uv_layers": 1,
+        "non_manifold_edges": 338
+      },
+      {
+        "name": "SM_rover_1_sundial_Gazebo",
+        "triangles": 161,
+        "vertices": 157,
+        "uv_layers": 1,
+        "non_manifold_edges": 137
+      },
+      {
+        "name": "SM_rover_1_SAM_Gazebo",
+        "triangles": 313,
+        "vertices": 379,
+        "uv_layers": 1,
+        "non_manifold_edges": 386
+      },
+      {
+        "name": "SM_rover_1_RTG_Gazebo",
+        "triangles": 180,
+        "vertices": 228,
+        "uv_layers": 1,
+        "non_manifold_edges": 213
+      },
+      {
+        "name": "SM_rover_1_REMS_Gazebo",
+        "triangles": 10,
+        "vertices": 20,
+        "uv_layers": 1,
+        "non_manifold_edges": 20
+      },
+      {
+        "name": "SM_rover_1_radiators_Gazebo",
+        "triangles": 28,
+        "vertices": 74,
+        "uv_layers": 1,
+        "non_manifold_edges": 67
+      },
+      {
+        "name": "SM_rover_1_RAD_Gazebo",
+        "triangles": 72,
+        "vertices": 74,
+        "uv_layers": 1,
+        "non_manifold_edges": 74
+      },
+      {
+        "name": "SM_rover_1_NavCam_top_R_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_NavCam_top_L_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_NavCam_Gazebo",
+        "triangles": 485,
+        "vertices": 573,
+        "uv_layers": 1,
+        "non_manifold_edges": 573
+      },
+      {
+        "name": "SM_rover_1_MastCam_R_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MastCam_L_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MastCam_Gazebo",
+        "triangles": 529,
+        "vertices": 561,
+        "uv_layers": 1,
+        "non_manifold_edges": 547
+      },
+      {
+        "name": "SM_rover_1_mast_03_001_Gazebo",
+        "triangles": 548,
+        "vertices": 590,
+        "uv_layers": 1,
+        "non_manifold_edges": 589
+      },
+      {
+        "name": "SM_rover_1_mast_02_001_Gazebo",
+        "triangles": 177,
+        "vertices": 215,
+        "uv_layers": 1,
+        "non_manifold_edges": 217
+      },
+      {
+        "name": "SM_rover_1_mast_01_001_Gazebo",
+        "triangles": 473,
+        "vertices": 479,
+        "uv_layers": 1,
+        "non_manifold_edges": 479
+      },
+      {
+        "name": "SM_rover_1_mast_01_000_Gazebo",
+        "triangles": 109,
+        "vertices": 80,
+        "uv_layers": 1,
+        "non_manifold_edges": 43
+      },
+      {
+        "name": "SM_rover_1_MARDI_001_Gazebo",
+        "triangles": 158,
+        "vertices": 89,
+        "uv_layers": 1,
+        "non_manifold_edges": 14
+      },
+      {
+        "name": "SM_rover_1_MARDI_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MAHLI_lens_cover_Gazebo",
+        "triangles": 79,
+        "vertices": 105,
+        "uv_layers": 1,
+        "non_manifold_edges": 105
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_04_Gazebo",
+        "triangles": 20,
+        "vertices": 15,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_03_Gazebo",
+        "triangles": 20,
+        "vertices": 15,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_02_Gazebo",
+        "triangles": 20,
+        "vertices": 15,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_LED_01_Gazebo",
+        "triangles": 20,
+        "vertices": 15,
+        "uv_layers": 0,
+        "non_manifold_edges": 8
+      },
+      {
+        "name": "SM_rover_1_MAHLI_cam_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_MAHLI_cal_target_Gazebo",
+        "triangles": 81,
+        "vertices": 97,
+        "uv_layers": 1,
+        "non_manifold_edges": 95
+      },
+      {
+        "name": "SM_rover_1_MAHLI_Gazebo",
+        "triangles": 150,
+        "vertices": 186,
+        "uv_layers": 1,
+        "non_manifold_edges": 170
+      },
+      {
+        "name": "SM_rover_1_lens_covers_rear_Gazebo",
+        "triangles": 222,
+        "vertices": 254,
+        "uv_layers": 1,
+        "non_manifold_edges": 254
+      },
+      {
+        "name": "SM_rover_1_lens_covers_front_Gazebo",
+        "triangles": 80,
+        "vertices": 92,
+        "uv_layers": 1,
+        "non_manifold_edges": 92
+      },
+      {
+        "name": "SM_rover_1_HazCam_rear_R_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_HazCam_rear_L_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_HazCam_F_Gazebo",
+        "triangles": 12,
+        "vertices": 8,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_rover_1_HazCam___rear_Gazebo",
+        "triangles": 424,
+        "vertices": 560,
+        "uv_layers": 1,
+        "non_manifold_edges": 560
+      },
+      {
+        "name": "SM_rover_1_HazCam___front_Gazebo",
+        "triangles": 633,
+        "vertices": 889,
+        "uv_layers": 1,
+        "non_manifold_edges": 883
+      },
+      {
+        "name": "SM_rover_1_Dust_Removal_Tool_Gazebo",
+        "triangles": 131,
+        "vertices": 170,
+        "uv_layers": 1,
+        "non_manifold_edges": 166
+      },
+      {
+        "name": "SM_rover_1_Drill_Gazebo",
+        "triangles": 760,
+        "vertices": 681,
+        "uv_layers": 1,
+        "non_manifold_edges": 534
+      },
+      {
+        "name": "SM_rover_1_DAN_R_Gazebo",
+        "triangles": 56,
+        "vertices": 58,
+        "uv_layers": 1,
+        "non_manifold_edges": 58
+      },
+      {
+        "name": "SM_rover_1_DAN_L_Gazebo",
+        "triangles": 56,
+        "vertices": 58,
+        "uv_layers": 1,
+        "non_manifold_edges": 58
+      },
+      {
+        "name": "SM_rover_1_cover_03_Gazebo",
+        "triangles": 36,
+        "vertices": 61,
+        "uv_layers": 1,
+        "non_manifold_edges": 61
+      },
+      {
+        "name": "SM_rover_1_cover_02_Gazebo",
+        "triangles": 37,
+        "vertices": 57,
+        "uv_layers": 1,
+        "non_manifold_edges": 57
+      },
+      {
+        "name": "SM_rover_1_cover_01_Gazebo",
+        "triangles": 58,
+        "vertices": 84,
+        "uv_layers": 1,
+        "non_manifold_edges": 84
+      },
+      {
+        "name": "SM_rover_1_CHIMERA_Gazebo",
+        "triangles": 549,
+        "vertices": 582,
+        "uv_layers": 1,
+        "non_manifold_edges": 543
+      },
+      {
+        "name": "SM_rover_1_CheMin_Gazebo",
+        "triangles": 212,
+        "vertices": 234,
+        "uv_layers": 1,
+        "non_manifold_edges": 234
+      },
+      {
+        "name": "SM_rover_1_ChemCam_Gazebo",
+        "triangles": 131,
+        "vertices": 226,
+        "uv_layers": 1,
+        "non_manifold_edges": 217
+      },
+      {
+        "name": "SM_rover_1_Chassis_Gazebo",
+        "triangles": 522,
+        "vertices": 693,
+        "uv_layers": 1,
+        "non_manifold_edges": 687
+      },
+      {
+        "name": "SM_rover_1_body_001_Gazebo",
+        "triangles": 73,
+        "vertices": 75,
+        "uv_layers": 1,
+        "non_manifold_edges": 75
+      },
+      {
+        "name": "SM_rover_1_body_Gazebo",
+        "triangles": 4062,
+        "vertices": 5459,
+        "uv_layers": 1,
+        "non_manifold_edges": 5393
+      },
+      {
+        "name": "SM_rover_1_bit_03_Gazebo",
+        "triangles": 197,
+        "vertices": 206,
+        "uv_layers": 1,
+        "non_manifold_edges": 206
+      },
+      {
+        "name": "SM_rover_1_bit_02_Gazebo",
+        "triangles": 197,
+        "vertices": 213,
+        "uv_layers": 1,
+        "non_manifold_edges": 211
+      },
+      {
+        "name": "SM_rover_1_bit_01_001_Gazebo",
+        "triangles": 196,
+        "vertices": 221,
+        "uv_layers": 1,
+        "non_manifold_edges": 226
+      },
+      {
+        "name": "SM_rover_1_arm_05_head_001_Gazebo",
+        "triangles": 1231,
+        "vertices": 838,
+        "uv_layers": 1,
+        "non_manifold_edges": 307
+      },
+      {
+        "name": "SM_rover_1_arm_04_001_Gazebo",
+        "triangles": 515,
+        "vertices": 585,
+        "uv_layers": 1,
+        "non_manifold_edges": 585
+      },
+      {
+        "name": "SM_rover_1_arm_03_001_Gazebo",
+        "triangles": 560,
+        "vertices": 690,
+        "uv_layers": 1,
+        "non_manifold_edges": 687
+      },
+      {
+        "name": "SM_rover_1_arm_02_001_Gazebo",
+        "triangles": 515,
+        "vertices": 547,
+        "uv_layers": 1,
+        "non_manifold_edges": 548
+      },
+      {
+        "name": "SM_rover_1_arm_01_001_Gazebo",
+        "triangles": 493,
+        "vertices": 509,
+        "uv_layers": 1,
+        "non_manifold_edges": 499
+      },
+      {
+        "name": "SM_rover_1_APXS_Gazebo",
+        "triangles": 124,
+        "vertices": 102,
+        "uv_layers": 1,
+        "non_manifold_edges": 58
+      },
+      {
+        "name": "SM_rover_1_antenna_UHF_Gazebo",
+        "triangles": 204,
+        "vertices": 297,
+        "uv_layers": 1,
+        "non_manifold_edges": 286
+      },
+      {
+        "name": "SM_rover_1_antenna_LG_Gazebo",
+        "triangles": 111,
+        "vertices": 126,
+        "uv_layers": 1,
+        "non_manifold_edges": 121
+      },
+      {
+        "name": "SM_rover_1_antenna_HG_03_Gazebo",
+        "triangles": 280,
+        "vertices": 315,
+        "uv_layers": 1,
+        "non_manifold_edges": 308
+      },
+      {
+        "name": "SM_rover_1_antenna_HG_01_Gazebo",
+        "triangles": 439,
+        "vertices": 473,
+        "uv_layers": 1,
+        "non_manifold_edges": 472
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "NASA_Curiosity_BaseColor",
+      "path": "textures/NASA_Curiosity_BaseColor.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "parts_AO.png.001",
+      "path": "textures/parts_AO_png.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 18,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": [
+      "_rootAction",
+      "antenna_HG_01Action",
+      "antenna_HG_02_pAction",
+      "arm_01Action.001",
+      "arm_02Action.001",
+      "arm_03Action.001",
+      "arm_04Action.001",
+      "arm_05_headAction.001",
+      "bit_01.001Action",
+      "bodyAction",
+      "cover_01Action.001",
+      "cover_02Action.001",
+      "cover_03Action.001",
+      "Cube.001Action.001",
+      "Cube_03_pAction",
+      "Cube_04_pAction.001",
+      "CubeAction",
+      "CubeAction.001",
+      "lens_covers_frontActi",
+      "lens_covers_rearActio",
+      "MAHLI_lens_cover_pAction.002",
+      "mast_02Action.001",
+      "mast_03Action.001",
+      "suspension_arm_B2_LAc",
+      "suspension_arm_B2_RAc",
+      "suspension_arm_B_L_pA",
+      "suspension_arm_B_R_pA",
+      "suspension_arm_F_L_pA",
+      "suspension_arm_F_LAct",
+      "suspension_arm_F_R_pA",
+      "suspension_axel_LActi.001",
+      "suspension_axel_RActi.001",
+      "suspension_rod_LActio.001",
+      "suspension_rod_RActio.001",
+      "suspension_steer_B_LA",
+      "suspension_steer_B_RA",
+      "suspension_steer_F_LA",
+      "suspension_steer_F_RA",
+      "suspension_xmemberAct",
+      "wheel_01_LAction",
+      "wheel_01_RAction",
+      "wheel_02_LAction",
+      "wheel_02_RAction",
+      "wheel_03_LAction",
+      "wheel_03_RAction"
+    ]
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\rover_1_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "Tripo six-wheel candidate has the wrong wheel arrangement; native NASA Curiosity source is the delivered master. Source arm/mast pose is preserved; dynamic joint behavior remains unverified.",
+    "NASA source provides diffuse/AO art, not calibrated instrument optics or measured material channels."
+  ],
+  "materials": {
+    "MAT_NASA_parts_AO": {
+      "Base Color": {
+        "image": "parts_AO.png.001",
+        "path": "textures/parts_AO_png.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "constant": 0.5
+      },
+      "Metallic": {
+        "constant": 0.0
+      },
+      "Normal": {
+        "constant": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "MAT_NASA_Curiosity_Atlas": {
+      "Base Color": {
+        "image": "NASA_Curiosity_BaseColor",
+        "path": "textures/NASA_Curiosity_BaseColor.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "constant": 0.5
+      },
+      "Metallic": {
+        "constant": 0.0
+      },
+      "Normal": {
+        "constant": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "MAT_NASA_gold": {
+      "Base Color": {
+        "constant": [
+          0.6000000238418579,
+          0.36000001430511475,
+          0.07999999821186066,
+          1.0
+        ]
+      },
+      "Roughness": {
+        "constant": 0.5
+      },
+      "Metallic": {
+        "constant": 0.800000011920929
+      },
+      "Normal": {
+        "constant": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "MAT_NASA_solid": {
+      "Base Color": {
+        "constant": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      "Roughness": {
+        "constant": 0.5
+      },
+      "Metallic": {
+        "constant": 0.0
+      },
+      "Normal": {
+        "constant": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "material_channels": {
+    "BaseColor": "textures/parts_AO_png.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "source_notice": {
+    "kind": "NASA hazır model",
+    "library": {
+      "source": "https://github.com/nasa/NASA-3D-Resources/tree/master/3D%20Models/Curiosity%20Rover%20(MSL)",
+      "credit": "NASA/JPL-Caltech; NASA-3D-Resources",
+      "license": "NASA Media Usage Guidelines; third-party/identifier restrictions remain",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "retrieved_utc": "2026-11-14T10:52:07.783327+00:00",
+      "files": [
+        {
+          "path": "incoming/curiosity_reference/source.blend",
+          "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/3D%20Models/Curiosity%20Rover%20(MSL)/Curiosity%20Rover%20(MSL)%20(Clean).blend",
+          "bytes": 10231670,
+          "sha256": "77fe6665223e38972728af404f1a277f0b0ab467fce5cc0aed6eba93488b74e2",
+          "source_md5": null
+        }
+      ]
+    },
+    "tripo_tasks": [
+      {
+        "asset_id": "rover_1",
+        "historical": false,
+        "task_id": "310774f0-cd27-4265-8657-3c02c288e33d",
+        "type": "text_to_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": false,
+          "quad": false,
+          "prompt": "Realistic Mars science rover, exactly six independent metal wheels, three wheels on each side, exposed rocker bogie suspension. Rectangular low insulated chassis, off-white panels, graphite mechanisms, restrained red accents, bronze metal wheel rims. Tall camera mast with separate pan and tilt head, two forward stereo camera eyes. Five-link folded robotic arm at front with shoulder elbow wrist joints and round contact science turret. Each wheel and steering knuckle, suspension member, mast head and arm link an editable separate solid, assembled neutral pose with visible gaps at moving joints. Scientific aerospace construction, physically plausible panel seams and bolts, clean silhouette, moderate dust. No astronaut, no terrain, no platform, no scenery, no text, no logos. One complete vehicle.",
+          "texture": false,
+          "export_uv": true,
+          "face_limit": 120000,
+          "model_seed": 14112026,
+          "model_version": "v3.1-20260211",
+          "generate_parts": true,
+          "geometry_quality": "detailed",
+          "texture_alignment": "geometry"
+        },
+        "created_at": "2026-11-14T10:48:25.725480Z",
+        "completed_at": "2026-11-14T10:51:04.600580Z",
+        "credits_consumed": 50
+      },
+      {
+        "asset_id": "rover_1",
+        "historical": false,
+        "task_id": "089df3c5-f7e8-45c4-8072-8760fd8f6b2c",
+        "type": "texture_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": true,
+          "bake": true,
+          "texture": true,
+          "model_version": "v3.0-20250812",
+          "texture_quality": "standard",
+          "original_model_id": "310774f0-cd27-4265-8657-3c02c288e33d",
+          "texture_alignment": "original_image"
+        },
+        "created_at": "2026-11-14T10:51:09.586543Z",
+        "completed_at": "2026-11-14T10:52:12.616751Z",
+        "credits_consumed": 10
+      }
+    ],
+    "terms_urls": [
+      "https://developers.tripo3d.ai/en/terms",
+      "https://www.tripo3d.ai/terms"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 82,
+    "triangles": 48492,
+    "dimensions_m": [
+      3.9447293281555176,
+      2.7772350311279297,
+      2.2127432823181152
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [
+      "SM_rover_1_NavCam_top_R_LOD0",
+      "SM_rover_1_NavCam_top_L_LOD0",
+      "SM_rover_1_MastCam_R_LOD0",
+      "SM_rover_1_MastCam_L_LOD0",
+      "SM_rover_1_MARDI_LOD0",
+      "SM_rover_1_MAHLI_LED_04_LOD0",
+      "SM_rover_1_MAHLI_LED_03_LOD0",
+      "SM_rover_1_MAHLI_LED_02_LOD0",
+      "SM_rover_1_MAHLI_LED_01_LOD0",
+      "SM_rover_1_MAHLI_cam_LOD0",
+      "SM_rover_1_HazCam_rear_R_LOD0",
+      "SM_rover_1_HazCam_rear_L_LOD0",
+      "SM_rover_1_HazCam_F_LOD0"
+    ],
+    "max_skin_influences": 0,
+    "rotation_checks": [
+      {
+        "part": "SM_rover_1_wheel_03_R_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519423309969038,
+        "finite": true
+      },
+      {
+        "part": "SM_rover_1_wheel_03_L_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.15194250721842362,
+        "finite": true
+      },
+      {
+        "part": "SM_rover_1_wheel_02_R_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519424735064965,
+        "finite": true
+      },
+      {
+        "part": "SM_rover_1_wheel_02_L_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.151942490362461,
+        "finite": true
+      },
+      {
+        "part": "SM_rover_1_wheel_01_R_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519424735064965,
+        "finite": true
+      },
+      {
+        "part": "SM_rover_1_wheel_01_L_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519425179449443,
+        "finite": true
+      }
+    ],
+    "required_wheel_groups": 6,
+    "wheel_groups": 6,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 82,
+      "dimensions_m": [
+        3.9447293281555176,
+        2.7772350311279297,
+        2.2127432823181152
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 82,
+      "dimensions_m": [
+        3.944830894470215,
+        2.7772350311279297,
+        2.2128052711486816
+      ],
+      "max_dimension_error_m": 0.00010156631469726562
+    },
+    "pass": true
+  },
+  "source_geometry_verification": {
+    "source": "curiosity_reference/source.blend",
+    "source_frame": 180,
+    "compared_parts": 82,
+    "max_vertex_error_m": 1.8047698683238516e-07,
+    "pass": true,
+    "parts": [
+      {
+        "part": "wheel_03_R",
+        "max_vertex_error_m": 1.1913783691745551e-07
+      },
+      {
+        "part": "wheel_03_L",
+        "max_vertex_error_m": 1.072166672005186e-07
+      },
+      {
+        "part": "wheel_02_R",
+        "max_vertex_error_m": 1.2659035859514734e-07
+      },
+      {
+        "part": "wheel_02_L",
+        "max_vertex_error_m": 1.248478601615642e-07
+      },
+      {
+        "part": "wheel_01_R",
+        "max_vertex_error_m": 1.0069483150976658e-07
+      },
+      {
+        "part": "wheel_01_L",
+        "max_vertex_error_m": 1.0802907950139648e-07
+      },
+      {
+        "part": "suspension_xmember",
+        "max_vertex_error_m": 8.293852942384673e-08
+      },
+      {
+        "part": "suspension_steer_F_R",
+        "max_vertex_error_m": 8.271972641351828e-08
+      },
+      {
+        "part": "suspension_steer_F_L",
+        "max_vertex_error_m": 7.644626248813468e-08
+      },
+      {
+        "part": "suspension_steer_B_R",
+        "max_vertex_error_m": 9.76824275512273e-08
+      },
+      {
+        "part": "suspension_steer_B_L",
+        "max_vertex_error_m": 1.0032974634077567e-07
+      },
+      {
+        "part": "suspension_rod_R",
+        "max_vertex_error_m": 8.04716307715624e-08
+      },
+      {
+        "part": "suspension_rod_L",
+        "max_vertex_error_m": 7.792454669863508e-08
+      },
+      {
+        "part": "suspension_axel_R2",
+        "max_vertex_error_m": 2.4521809676111027e-08
+      },
+      {
+        "part": "suspension_axel_R",
+        "max_vertex_error_m": 5.560921779881021e-08
+      },
+      {
+        "part": "suspension_axel_L2",
+        "max_vertex_error_m": 6.213195362895838e-08
+      },
+      {
+        "part": "suspension_axel_L",
+        "max_vertex_error_m": 7.262590795980992e-08
+      },
+      {
+        "part": "suspension_arm_F_R",
+        "max_vertex_error_m": 1.2325994933006365e-07
+      },
+      {
+        "part": "suspension_arm_F_L",
+        "max_vertex_error_m": 1.0052426584919463e-07
+      },
+      {
+        "part": "suspension_arm_B_R",
+        "max_vertex_error_m": 5.819534614683876e-08
+      },
+      {
+        "part": "suspension_arm_B_L",
+        "max_vertex_error_m": 6.785678788621561e-08
+      },
+      {
+        "part": "suspension_arm_B2_R",
+        "max_vertex_error_m": 1.092423938108577e-07
+      },
+      {
+        "part": "suspension_arm_B2_L",
+        "max_vertex_error_m": 8.148872941553211e-08
+      },
+      {
+        "part": "sundial",
+        "max_vertex_error_m": 3.881856158239732e-08
+      },
+      {
+        "part": "SAM",
+        "max_vertex_error_m": 8.062983860774906e-08
+      },
+      {
+        "part": "RTG",
+        "max_vertex_error_m": 1.291104390485394e-07
+      },
+      {
+        "part": "REMS",
+        "max_vertex_error_m": 4.972799144377301e-08
+      },
+      {
+        "part": "radiators",
+        "max_vertex_error_m": 1.4104855969801677e-07
+      },
+      {
+        "part": "RAD",
+        "max_vertex_error_m": 5.9536633595015146e-08
+      },
+      {
+        "part": "NavCam_top_R",
+        "max_vertex_error_m": 1.3208645166112026e-07
+      },
+      {
+        "part": "NavCam_top_L",
+        "max_vertex_error_m": 1.3363454263403158e-07
+      },
+      {
+        "part": "NavCam",
+        "max_vertex_error_m": 7.877891368003345e-08
+      },
+      {
+        "part": "MastCam_R",
+        "max_vertex_error_m": 2.8601539425344456e-08
+      },
+      {
+        "part": "MastCam_L",
+        "max_vertex_error_m": 3.924021389383758e-08
+      },
+      {
+        "part": "MastCam",
+        "max_vertex_error_m": 8.5101133409194e-08
+      },
+      {
+        "part": "mast_03.001",
+        "max_vertex_error_m": 1.1596367503506643e-07
+      },
+      {
+        "part": "mast_02.001",
+        "max_vertex_error_m": 8.419511773173953e-08
+      },
+      {
+        "part": "mast_01.001",
+        "max_vertex_error_m": 8.791099523454894e-08
+      },
+      {
+        "part": "mast_01.000",
+        "max_vertex_error_m": 2.3126860672293684e-08
+      },
+      {
+        "part": "MARDI.001",
+        "max_vertex_error_m": 4.769286434739828e-08
+      },
+      {
+        "part": "MARDI",
+        "max_vertex_error_m": 2.5553318001658453e-08
+      },
+      {
+        "part": "MAHLI_lens_cover",
+        "max_vertex_error_m": 1.2288814281589847e-07
+      },
+      {
+        "part": "MAHLI_LED_04",
+        "max_vertex_error_m": 1.1459712735949187e-07
+      },
+      {
+        "part": "MAHLI_LED_03",
+        "max_vertex_error_m": 1.1462370383455617e-07
+      },
+      {
+        "part": "MAHLI_LED_02",
+        "max_vertex_error_m": 1.1403509977707069e-07
+      },
+      {
+        "part": "MAHLI_LED_01",
+        "max_vertex_error_m": 1.138851207527868e-07
+      },
+      {
+        "part": "MAHLI_cam",
+        "max_vertex_error_m": 1.0377531737012326e-07
+      },
+      {
+        "part": "MAHLI_cal_target",
+        "max_vertex_error_m": 6.00410807270697e-08
+      },
+      {
+        "part": "MAHLI",
+        "max_vertex_error_m": 1.1768265190617835e-07
+      },
+      {
+        "part": "lens_covers_rear",
+        "max_vertex_error_m": 9.042132046928718e-08
+      },
+      {
+        "part": "lens_covers_front",
+        "max_vertex_error_m": 5.0236265584880646e-08
+      },
+      {
+        "part": "HazCam_rear_R",
+        "max_vertex_error_m": 7.437987076796596e-08
+      },
+      {
+        "part": "HazCam_rear_L",
+        "max_vertex_error_m": 7.390132557633965e-08
+      },
+      {
+        "part": "HazCam_F",
+        "max_vertex_error_m": 3.235758171906055e-08
+      },
+      {
+        "part": "HazCam - rear",
+        "max_vertex_error_m": 1.0523885223942835e-07
+      },
+      {
+        "part": "HazCam - front",
+        "max_vertex_error_m": 2.0668619482758652e-08
+      },
+      {
+        "part": "Dust Removal Tool",
+        "max_vertex_error_m": 1.23919131243133e-07
+      },
+      {
+        "part": "Drill",
+        "max_vertex_error_m": 1.4502624374720874e-07
+      },
+      {
+        "part": "DAN_R",
+        "max_vertex_error_m": 7.820508875793169e-08
+      },
+      {
+        "part": "DAN_L",
+        "max_vertex_error_m": 2.6886677057965913e-08
+      },
+      {
+        "part": "cover_03",
+        "max_vertex_error_m": 4.761332316370431e-08
+      },
+      {
+        "part": "cover_02",
+        "max_vertex_error_m": 7.31450785307927e-08
+      },
+      {
+        "part": "cover_01",
+        "max_vertex_error_m": 5.149352542964858e-08
+      },
+      {
+        "part": "CHIMERA",
+        "max_vertex_error_m": 1.3804903251491755e-07
+      },
+      {
+        "part": "CheMin",
+        "max_vertex_error_m": 7.558010588020939e-08
+      },
+      {
+        "part": "ChemCam",
+        "max_vertex_error_m": 1.3835990968543692e-07
+      },
+      {
+        "part": "Chassis",
+        "max_vertex_error_m": 1.8047698683238516e-07
+      },
+      {
+        "part": "body.001",
+        "max_vertex_error_m": 8.704955654950928e-08
+      },
+      {
+        "part": "body",
+        "max_vertex_error_m": 1.7872926295913996e-07
+      },
+      {
+        "part": "bit_03",
+        "max_vertex_error_m": 5.802066827505976e-08
+      },
+      {
+        "part": "bit_02",
+        "max_vertex_error_m": 6.643492143924491e-08
+      },
+      {
+        "part": "bit_01.001",
+        "max_vertex_error_m": 1.1186284995815485e-07
+      },
+      {
+        "part": "arm_05_head.001",
+        "max_vertex_error_m": 1.348755103271033e-07
+      },
+      {
+        "part": "arm_04.001",
+        "max_vertex_error_m": 1.048321359572448e-07
+      },
+      {
+        "part": "arm_03.001",
+        "max_vertex_error_m": 1.1096680108716162e-07
+      },
+      {
+        "part": "arm_02.001",
+        "max_vertex_error_m": 1.0583014382301644e-07
+      },
+      {
+        "part": "arm_01.001",
+        "max_vertex_error_m": 9.516504260632682e-08
+      },
+      {
+        "part": "APXS",
+        "max_vertex_error_m": 1.00021903196578e-07
+      },
+      {
+        "part": "antenna_UHF",
+        "max_vertex_error_m": 8.252770174405454e-08
+      },
+      {
+        "part": "antenna_LG",
+        "max_vertex_error_m": 9.895937023034404e-08
+      },
+      {
+        "part": "antenna_HG_03",
+        "max_vertex_error_m": 9.129149011995908e-08
+      },
+      {
+        "part": "antenna_HG_01",
+        "max_vertex_error_m": 9.309044227898544e-08
+      }
+    ]
+  },
+  "pivot_inspection": {
+    "method": "Rotate separate wheel/rotor visuals by 90 degrees; check origin stays fixed; inspect renders",
+    "records": [
+      {
+        "part": "SM_rover_1_wheel_03_R_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -1.4758594036102295,
+          -1.0605868101119995,
+          0.24549514055252075
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519423309969038
+      },
+      {
+        "part": "SM_rover_1_wheel_03_L_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -1.4733707904815674,
+          1.0605870485305786,
+          0.24549485743045807
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.15194250721842362
+      },
+      {
+        "part": "SM_rover_1_wheel_02_R_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.39961549639701843,
+          -1.1912528276443481,
+          0.24557505548000336
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519424735064965
+      },
+      {
+        "part": "SM_rover_1_wheel_02_L_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.39961495995521545,
+          1.1912528276443481,
+          0.24557547271251678
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.151942490362461
+      },
+      {
+        "part": "SM_rover_1_wheel_01_R_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          0.7842937707901001,
+          -1.0604913234710693,
+          0.24538402259349823
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519424735064965
+      },
+      {
+        "part": "SM_rover_1_wheel_01_L_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          0.7819728851318359,
+          1.0610359907150269,
+          0.2426472008228302
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1519425179449443
+      }
+    ],
+    "engine_joint_binding": "NOT_RUN"
+  },
+  "rejected_candidate": {
+    "path": "source.glb",
+    "reason": "Tripo wheel layout did not match six-wheel brief; preserved as original output, not used by master.blend"
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

@@ -1,0 +1,92 @@
+{
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/ssys/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/projection/v2.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "bxw-hirise_019698_enu",
+  "collection": "redline-bxw-derived-terrain",
+  "geometry": null,
+  "properties": {
+    "datetime": "2026-11-14T10:31:51.805299Z",
+    "created": "2026-11-14T10:31:51.805299Z",
+    "ssys:targets": [
+      "Mars"
+    ],
+    "ssys:target_class": "planet",
+    "proj:code": null,
+    "proj:wkt2": null,
+    "proj:shape": [
+      3000,
+      3000
+    ],
+    "proj:transform": [
+      1.0,
+      0.0,
+      -1500.0,
+      0.0,
+      -1.0,
+      1500.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "proj:bbox": [
+      -1500.0,
+      -1500.0,
+      1500.0,
+      1500.0
+    ],
+    "redline:status": "DERIVED",
+    "redline:site_id": "BXW",
+    "redline:datetime_kind": "processing",
+    "redline:acquired_at": null,
+    "redline:alignment_verified": false,
+    "redline:geometry_reason": "Mars native/engineering data; no WGS84 footprint asserted",
+    "redline:vertical_reference": "source unchanged except explicit H0 offset; datum unverified",
+    "redline:frame": "map",
+    "redline:source_wkt2": "PROJCRS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",BASEGEOGCRS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",ELLIPSOID[\"Mars (2015) - Sphere\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Equidistant Cylindrical (Spherical)\",ID[\"EPSG\",1029]],PARAMETER[\"Latitude of 1st standard parallel\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Longitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+    "redline:local_mapping": {
+      "origin": {
+        "E0_m": 8142565.198776576,
+        "N0_m": -284814.9215994864,
+        "H0_m": 0.0,
+        "status": "SCENARIO"
+      },
+      "east_scale_factor": 0.9964855531857645
+    },
+    "redline:frame_kind": "local affine approximation, not geodetic ENU"
+  },
+  "links": [
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "../../../../../derived/BXW/hirise_019698_enu.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ],
+      "redline:sha256": "d250f724cbc2c9ae19a0f2557c8a9f3596d234a6dd601710ce6aa16ebe7a5e2c",
+      "redline:status": "DERIVED"
+    },
+    "provenance": {
+      "href": "../../../../../derived/BXW/hirise_019698_enu.provenance.json",
+      "type": "application/json",
+      "roles": [
+        "metadata"
+      ],
+      "redline:sha256": "5906dc9d1bf339eb8de08f15830dcd5e4273487c2dc6efbbaeae8686761f3e79"
+    }
+  }
+}

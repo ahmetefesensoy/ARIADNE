@@ -1,0 +1,40 @@
+# Walking, ban and suit consumable model for redline_core (proje.md §7.2, v0.3 [K]).
+provenance_status: SCENARIO
+note: >-
+  Spec defaults except where D010 replaces them with sourced values. Mars 3/8 g suited
+  walking has one analogue data set (EWT, NASA/TP-2009-214796: six astronauts, MKIII suit,
+  POGO offload); everything else is Apollo/analogue-derived. The suit's non-weight cost is
+  proportional to speed (fit to EWT 3/8 g), so it is zero when standing; station work adds
+  a lunar-measured task increment. rock_detour_s is derived geometrically (D010).
+  The planning σ_s is the two-DTM ensemble uncertainty (D010), not the raw T1 proxy.
+walk:
+  g_mars_m_s2: 3.721
+  g_earth_m_s2: 9.80665
+  leg_length_m: 0.9
+  tobler_peak_kmh: 6.0
+  tobler_decay: 3.5
+  tobler_offset: 0.05
+  pandolf_beta: 0.7
+  downhill_kd: 0.3
+  eta_default: 1.1            # soil; BXW terrain classes are not mapped yet
+  slope_max_deg: 25.0
+  slope_z: 1.645
+  wall_relief_m: 0.8
+  wall_slope_deg: 30.0
+  speed_factor_unobserved: 0.7
+  sigma_factor_unobserved: 1.5
+  speed_factor_limited: 0.85
+  sigma_factor_limited: 1.0
+  rock_swath_m: 0.6
+  rock_d_star_m: 0.5
+  rock_detour_s: 1.45          # λ = (π−2)/2·(D̄+w)/v_ref, D̄ = D*+1/q(k=0.3), v_ref = 0.7·v(0) (D010)
+suit:
+  suit_vo2_per_speed: 13.4    # ml/kg/min per m/s: EWT 3/8 g non-weight cost fit through 0 (D010)
+  station_task_vo2_ml_kg_min: 8.0  # EWT/IST 1/6 g suited task increment, lunar value (D010)
+  watts_per_l_min_o2: 335.0
+  o2_g_per_wh: 0.256
+  respiratory_quotient: 0.85
+  evaporative_fraction: 0.8
+  latent_heat_j_kg: 2450000.0
+  battery_base_w: 60.0
+  battery_k: 0.05

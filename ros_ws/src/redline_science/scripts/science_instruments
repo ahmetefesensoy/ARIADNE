@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+"""REDLINE lifecycle science rehearsal entry point."""
+from redline_science.science_instruments import main
+main()

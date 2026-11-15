@@ -1,0 +1,1233 @@
+{
+  "asset_id": "pr_1",
+  "prepared_utc": "2026-11-14T11:14:11.335545+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\pr_1\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549763836323109e-08,
+        -0.999996542930603,
+        0.0,
+        0.39987891912460327
+      ],
+      [
+        0.999996542930603,
+        7.549763836323109e-08,
+        0.0,
+        -4.780276140081696e-05
+      ],
+      [
+        0.0,
+        0.0,
+        0.999996542930603,
+        2.2420847415924072
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 0.9999965564568813,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      5.909811973571777,
+      4.040118217468262,
+      3.9679319858551025
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_pr_1_door_R_LOD0",
+      "source_name": "door_R",
+      "source_parent": "",
+      "pivot_m": [
+        0.39825695753097534,
+        -1.734797477722168,
+        2.2398338317871094
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_door_L_LOD0",
+      "source_name": "door_L",
+      "source_parent": "",
+      "pivot_m": [
+        0.39825719594955444,
+        1.734797477722168,
+        2.2398338317871094
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_R_3_1_LOD0",
+      "source_name": "wheel_R_3_1",
+      "source_parent": "",
+      "pivot_m": [
+        -2.170391082763672,
+        -1.4934625625610352,
+        0.3827454447746277
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_R_3_2_LOD0",
+      "source_name": "wheel_R_3_2",
+      "source_parent": "",
+      "pivot_m": [
+        -2.170391321182251,
+        -1.9090347290039062,
+        0.3827454447746277
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_R_2_1_LOD0",
+      "source_name": "wheel_R_2_1",
+      "source_parent": "",
+      "pivot_m": [
+        -0.4696834087371826,
+        -1.4934626817703247,
+        0.3827452063560486
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_R_2_2_LOD0",
+      "source_name": "wheel_R_2_2",
+      "source_parent": "",
+      "pivot_m": [
+        -0.469683438539505,
+        -1.9090348482131958,
+        0.3827452063560486
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_R_1_1_LOD0",
+      "source_name": "wheel_R_1_1",
+      "source_parent": "",
+      "pivot_m": [
+        1.2313851118087769,
+        -1.4934628009796143,
+        0.38274508714675903
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_R_1_2_LOD0",
+      "source_name": "wheel_R_1_2",
+      "source_parent": "",
+      "pivot_m": [
+        1.2313851118087769,
+        -1.9090349674224854,
+        0.38274508714675903
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_L_3_1_LOD0",
+      "source_name": "wheel_L_3_1",
+      "source_parent": "",
+      "pivot_m": [
+        -2.170391082763672,
+        1.4932823181152344,
+        0.3827454447746277
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_L_3_2_LOD0",
+      "source_name": "wheel_L_3_2",
+      "source_parent": "",
+      "pivot_m": [
+        -2.1703908443450928,
+        1.909035086631775,
+        0.3827454447746277
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_L_2_1_LOD0",
+      "source_name": "wheel_L_2_1",
+      "source_parent": "",
+      "pivot_m": [
+        -0.4696831703186035,
+        1.4932823181152344,
+        0.3827452063560486
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_L_2_2_LOD0",
+      "source_name": "wheel_L_2_2",
+      "source_parent": "",
+      "pivot_m": [
+        -0.4696831703186035,
+        1.9090349674224854,
+        0.3827452063560486
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_L_1_1_LOD0",
+      "source_name": "wheel_L_1_1",
+      "source_parent": "",
+      "pivot_m": [
+        1.231385350227356,
+        1.4932820796966553,
+        0.38274508714675903
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_wheel_L_1_2_LOD0",
+      "source_name": "wheel_L_1_2",
+      "source_parent": "",
+      "pivot_m": [
+        1.231385350227356,
+        1.9090348482131958,
+        0.38274508714675903
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_pr_1_body_LOD0",
+      "source_name": "body",
+      "source_parent": "",
+      "pivot_m": [
+        1.1920928955078125e-07,
+        1.1920928955078125e-07,
+        1.9914644956588745
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 412999,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "door_R",
+        "triangles": 4000,
+        "vertices": 2064,
+        "uv_layers": 1,
+        "non_manifold_edges": 128
+      },
+      {
+        "name": "door_L",
+        "triangles": 4000,
+        "vertices": 2064,
+        "uv_layers": 1,
+        "non_manifold_edges": 128
+      },
+      {
+        "name": "wheel_R_3_1",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_R_3_2",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_R_2_1",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_R_2_2",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_R_1_1",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_R_1_2",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_L_3_1",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_L_3_2",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_L_2_1",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_L_2_2",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_L_1_1",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "wheel_L_1_2",
+        "triangles": 7264,
+        "vertices": 3900,
+        "uv_layers": 1,
+        "non_manifold_edges": 404
+      },
+      {
+        "name": "body",
+        "triangles": 317831,
+        "vertices": 166927,
+        "uv_layers": 1,
+        "non_manifold_edges": 16238
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 149992,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_pr_1_door_R_LOD0",
+        "triangles": 1452,
+        "vertices": 770,
+        "uv_layers": 1,
+        "non_manifold_edges": 88
+      },
+      {
+        "name": "SM_pr_1_door_L_LOD0",
+        "triangles": 1452,
+        "vertices": 770,
+        "uv_layers": 1,
+        "non_manifold_edges": 88
+      },
+      {
+        "name": "SM_pr_1_wheel_R_3_1_LOD0",
+        "triangles": 2638,
+        "vertices": 1530,
+        "uv_layers": 1,
+        "non_manifold_edges": 290
+      },
+      {
+        "name": "SM_pr_1_wheel_R_3_2_LOD0",
+        "triangles": 2637,
+        "vertices": 1529,
+        "uv_layers": 1,
+        "non_manifold_edges": 289
+      },
+      {
+        "name": "SM_pr_1_wheel_R_2_1_LOD0",
+        "triangles": 2638,
+        "vertices": 1531,
+        "uv_layers": 1,
+        "non_manifold_edges": 292
+      },
+      {
+        "name": "SM_pr_1_wheel_R_2_2_LOD0",
+        "triangles": 2638,
+        "vertices": 1530,
+        "uv_layers": 1,
+        "non_manifold_edges": 290
+      },
+      {
+        "name": "SM_pr_1_wheel_R_1_1_LOD0",
+        "triangles": 2637,
+        "vertices": 1529,
+        "uv_layers": 1,
+        "non_manifold_edges": 289
+      },
+      {
+        "name": "SM_pr_1_wheel_R_1_2_LOD0",
+        "triangles": 2638,
+        "vertices": 1530,
+        "uv_layers": 1,
+        "non_manifold_edges": 290
+      },
+      {
+        "name": "SM_pr_1_wheel_L_3_1_LOD0",
+        "triangles": 2638,
+        "vertices": 1530,
+        "uv_layers": 1,
+        "non_manifold_edges": 290
+      },
+      {
+        "name": "SM_pr_1_wheel_L_3_2_LOD0",
+        "triangles": 2638,
+        "vertices": 1531,
+        "uv_layers": 1,
+        "non_manifold_edges": 292
+      },
+      {
+        "name": "SM_pr_1_wheel_L_2_1_LOD0",
+        "triangles": 2638,
+        "vertices": 1531,
+        "uv_layers": 1,
+        "non_manifold_edges": 292
+      },
+      {
+        "name": "SM_pr_1_wheel_L_2_2_LOD0",
+        "triangles": 2637,
+        "vertices": 1530,
+        "uv_layers": 1,
+        "non_manifold_edges": 291
+      },
+      {
+        "name": "SM_pr_1_wheel_L_1_1_LOD0",
+        "triangles": 2638,
+        "vertices": 1530,
+        "uv_layers": 1,
+        "non_manifold_edges": 290
+      },
+      {
+        "name": "SM_pr_1_wheel_L_1_2_LOD0",
+        "triangles": 2638,
+        "vertices": 1530,
+        "uv_layers": 1,
+        "non_manifold_edges": 290
+      },
+      {
+        "name": "SM_pr_1_body_LOD0",
+        "triangles": 115435,
+        "vertices": 63318,
+        "uv_layers": 1,
+        "non_manifold_edges": 11416
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 74990,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_pr_1_door_R_LOD1",
+          "triangles": 726,
+          "vertices": 403,
+          "uv_layers": 1,
+          "non_manifold_edges": 80
+        },
+        {
+          "name": "SM_pr_1_door_L_LOD1",
+          "triangles": 726,
+          "vertices": 403,
+          "uv_layers": 1,
+          "non_manifold_edges": 80
+        },
+        {
+          "name": "SM_pr_1_wheel_R_3_1_LOD1",
+          "triangles": 1318,
+          "vertices": 838,
+          "uv_layers": 1,
+          "non_manifold_edges": 226
+        },
+        {
+          "name": "SM_pr_1_wheel_R_3_2_LOD1",
+          "triangles": 1318,
+          "vertices": 825,
+          "uv_layers": 1,
+          "non_manifold_edges": 200
+        },
+        {
+          "name": "SM_pr_1_wheel_R_2_1_LOD1",
+          "triangles": 1319,
+          "vertices": 833,
+          "uv_layers": 1,
+          "non_manifold_edges": 215
+        },
+        {
+          "name": "SM_pr_1_wheel_R_2_2_LOD1",
+          "triangles": 1318,
+          "vertices": 821,
+          "uv_layers": 1,
+          "non_manifold_edges": 192
+        },
+        {
+          "name": "SM_pr_1_wheel_R_1_1_LOD1",
+          "triangles": 1317,
+          "vertices": 834,
+          "uv_layers": 1,
+          "non_manifold_edges": 219
+        },
+        {
+          "name": "SM_pr_1_wheel_R_1_2_LOD1",
+          "triangles": 1319,
+          "vertices": 826,
+          "uv_layers": 1,
+          "non_manifold_edges": 201
+        },
+        {
+          "name": "SM_pr_1_wheel_L_3_1_LOD1",
+          "triangles": 1318,
+          "vertices": 833,
+          "uv_layers": 1,
+          "non_manifold_edges": 216
+        },
+        {
+          "name": "SM_pr_1_wheel_L_3_2_LOD1",
+          "triangles": 1319,
+          "vertices": 826,
+          "uv_layers": 1,
+          "non_manifold_edges": 201
+        },
+        {
+          "name": "SM_pr_1_wheel_L_2_1_LOD1",
+          "triangles": 1319,
+          "vertices": 833,
+          "uv_layers": 1,
+          "non_manifold_edges": 215
+        },
+        {
+          "name": "SM_pr_1_wheel_L_2_2_LOD1",
+          "triangles": 1318,
+          "vertices": 820,
+          "uv_layers": 1,
+          "non_manifold_edges": 190
+        },
+        {
+          "name": "SM_pr_1_wheel_L_1_1_LOD1",
+          "triangles": 1319,
+          "vertices": 834,
+          "uv_layers": 1,
+          "non_manifold_edges": 217
+        },
+        {
+          "name": "SM_pr_1_wheel_L_1_2_LOD1",
+          "triangles": 1319,
+          "vertices": 825,
+          "uv_layers": 1,
+          "non_manifold_edges": 199
+        },
+        {
+          "name": "SM_pr_1_body_LOD1",
+          "triangles": 57717,
+          "vertices": 32828,
+          "uv_layers": 1,
+          "non_manifold_edges": 8152
+        }
+      ]
+    },
+    "2": {
+      "triangles": 37486,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_pr_1_door_R_LOD2",
+          "triangles": 363,
+          "vertices": 205,
+          "uv_layers": 1,
+          "non_manifold_edges": 47
+        },
+        {
+          "name": "SM_pr_1_door_L_LOD2",
+          "triangles": 363,
+          "vertices": 204,
+          "uv_layers": 1,
+          "non_manifold_edges": 45
+        },
+        {
+          "name": "SM_pr_1_wheel_R_3_1_LOD2",
+          "triangles": 658,
+          "vertices": 471,
+          "uv_layers": 1,
+          "non_manifold_edges": 152
+        },
+        {
+          "name": "SM_pr_1_wheel_R_3_2_LOD2",
+          "triangles": 658,
+          "vertices": 472,
+          "uv_layers": 1,
+          "non_manifold_edges": 154
+        },
+        {
+          "name": "SM_pr_1_wheel_R_2_1_LOD2",
+          "triangles": 658,
+          "vertices": 471,
+          "uv_layers": 1,
+          "non_manifold_edges": 152
+        },
+        {
+          "name": "SM_pr_1_wheel_R_2_2_LOD2",
+          "triangles": 659,
+          "vertices": 472,
+          "uv_layers": 1,
+          "non_manifold_edges": 153
+        },
+        {
+          "name": "SM_pr_1_wheel_R_1_1_LOD2",
+          "triangles": 659,
+          "vertices": 471,
+          "uv_layers": 1,
+          "non_manifold_edges": 151
+        },
+        {
+          "name": "SM_pr_1_wheel_R_1_2_LOD2",
+          "triangles": 658,
+          "vertices": 472,
+          "uv_layers": 1,
+          "non_manifold_edges": 154
+        },
+        {
+          "name": "SM_pr_1_wheel_L_3_1_LOD2",
+          "triangles": 659,
+          "vertices": 469,
+          "uv_layers": 1,
+          "non_manifold_edges": 147
+        },
+        {
+          "name": "SM_pr_1_wheel_L_3_2_LOD2",
+          "triangles": 659,
+          "vertices": 472,
+          "uv_layers": 1,
+          "non_manifold_edges": 153
+        },
+        {
+          "name": "SM_pr_1_wheel_L_2_1_LOD2",
+          "triangles": 658,
+          "vertices": 468,
+          "uv_layers": 1,
+          "non_manifold_edges": 146
+        },
+        {
+          "name": "SM_pr_1_wheel_L_2_2_LOD2",
+          "triangles": 659,
+          "vertices": 472,
+          "uv_layers": 1,
+          "non_manifold_edges": 153
+        },
+        {
+          "name": "SM_pr_1_wheel_L_1_1_LOD2",
+          "triangles": 658,
+          "vertices": 467,
+          "uv_layers": 1,
+          "non_manifold_edges": 144
+        },
+        {
+          "name": "SM_pr_1_wheel_L_1_2_LOD2",
+          "triangles": 659,
+          "vertices": 473,
+          "uv_layers": 1,
+          "non_manifold_edges": 155
+        },
+        {
+          "name": "SM_pr_1_body_LOD2",
+          "triangles": 28858,
+          "vertices": 16985,
+          "uv_layers": 1,
+          "non_manifold_edges": 5322
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 29988,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_pr_1_door_R_Gazebo",
+        "triangles": 290,
+        "vertices": 163,
+        "uv_layers": 1,
+        "non_manifold_edges": 36
+      },
+      {
+        "name": "SM_pr_1_door_L_Gazebo",
+        "triangles": 290,
+        "vertices": 163,
+        "uv_layers": 1,
+        "non_manifold_edges": 36
+      },
+      {
+        "name": "SM_pr_1_wheel_R_3_1_Gazebo",
+        "triangles": 527,
+        "vertices": 402,
+        "uv_layers": 1,
+        "non_manifold_edges": 145
+      },
+      {
+        "name": "SM_pr_1_wheel_R_3_2_Gazebo",
+        "triangles": 527,
+        "vertices": 402,
+        "uv_layers": 1,
+        "non_manifold_edges": 145
+      },
+      {
+        "name": "SM_pr_1_wheel_R_2_1_Gazebo",
+        "triangles": 526,
+        "vertices": 399,
+        "uv_layers": 1,
+        "non_manifold_edges": 138
+      },
+      {
+        "name": "SM_pr_1_wheel_R_2_2_Gazebo",
+        "triangles": 527,
+        "vertices": 401,
+        "uv_layers": 1,
+        "non_manifold_edges": 143
+      },
+      {
+        "name": "SM_pr_1_wheel_R_1_1_Gazebo",
+        "triangles": 527,
+        "vertices": 398,
+        "uv_layers": 1,
+        "non_manifold_edges": 134
+      },
+      {
+        "name": "SM_pr_1_wheel_R_1_2_Gazebo",
+        "triangles": 526,
+        "vertices": 402,
+        "uv_layers": 1,
+        "non_manifold_edges": 146
+      },
+      {
+        "name": "SM_pr_1_wheel_L_3_1_Gazebo",
+        "triangles": 527,
+        "vertices": 379,
+        "uv_layers": 1,
+        "non_manifold_edges": 77
+      },
+      {
+        "name": "SM_pr_1_wheel_L_3_2_Gazebo",
+        "triangles": 527,
+        "vertices": 401,
+        "uv_layers": 1,
+        "non_manifold_edges": 143
+      },
+      {
+        "name": "SM_pr_1_wheel_L_2_1_Gazebo",
+        "triangles": 527,
+        "vertices": 379,
+        "uv_layers": 1,
+        "non_manifold_edges": 77
+      },
+      {
+        "name": "SM_pr_1_wheel_L_2_2_Gazebo",
+        "triangles": 527,
+        "vertices": 401,
+        "uv_layers": 1,
+        "non_manifold_edges": 143
+      },
+      {
+        "name": "SM_pr_1_wheel_L_1_1_Gazebo",
+        "triangles": 527,
+        "vertices": 378,
+        "uv_layers": 1,
+        "non_manifold_edges": 75
+      },
+      {
+        "name": "SM_pr_1_wheel_L_1_2_Gazebo",
+        "triangles": 526,
+        "vertices": 402,
+        "uv_layers": 1,
+        "non_manifold_edges": 146
+      },
+      {
+        "name": "SM_pr_1_body_Gazebo",
+        "triangles": 23087,
+        "vertices": 13839,
+        "uv_layers": 1,
+        "non_manifold_edges": 4795
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "MMSEV_Bump_v1s",
+      "path": "textures/MMSEV_Bump_v1s.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "MMSEV_Color_v2s",
+      "path": "textures/MMSEV_Color_v2s.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "MMSEV_spec_color_v1s",
+      "path": "textures/MMSEV_spec_color_v1s.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "sRGB"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 13,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\pr_1_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [],
+  "material_channels": {
+    "BaseColor": "textures/MMSEV_Color_v2s.png",
+    "NormalGL": "textures/MMSEV_Bump_v1s.png",
+    "NormalDX": "textures/pr_1_NormalDX.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "materials": {
+    "MMSEV": {
+      "Base Color": {
+        "image": "MMSEV_Color_v2s",
+        "path": "textures/MMSEV_Color_v2s.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "constant": 0.494035542011261
+      },
+      "Metallic": {
+        "constant": 0.0
+      },
+      "Normal": {
+        "image": "MMSEV_Bump_v1s",
+        "path": "textures/MMSEV_Bump_v1s.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 0.0
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "NASA hazır model",
+    "library": {
+      "source": "https://science.nasa.gov/3d-resources/space-exploration-vehicle/",
+      "credit": "NASA/LaRC/Advanced Concepts Lab",
+      "license": "NASA Media Usage Guidelines; third-party/identifier restrictions remain",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "retrieved_utc": "2026-11-14T10:52:02.266794+00:00",
+      "files": [
+        {
+          "path": "incoming/pr_1/source.glb",
+          "url": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/space-exploration-vehicle/Space%20Exploration%20Vehicle.glb",
+          "bytes": 22431576,
+          "sha256": "09dcfbd45a475440de4ca2405fe3be4f784dee6f12e752bad5faa9f6db6c4a8d",
+          "source_md5": null
+        }
+      ]
+    },
+    "tripo_tasks": [],
+    "terms_urls": [
+      "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 15,
+    "triangles": 149992,
+    "dimensions_m": [
+      5.909811973571777,
+      4.040118217468262,
+      3.9679319858551025
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [
+      {
+        "part": "SM_pr_1_wheel_R_3_1_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2646886189773759,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_R_3_2_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26470930729694403,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_R_2_1_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2647239429546348,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_R_2_2_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26472381982146703,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_R_1_1_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26470930729694403,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_R_1_2_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26468854156906224,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_L_3_1_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26408663024351053,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_L_3_2_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642132147001082,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_L_2_1_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642283712932947,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_L_2_2_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642282408798058,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_L_1_1_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642131829760944,
+        "finite": true
+      },
+      {
+        "part": "SM_pr_1_wheel_L_1_2_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2640865949777102,
+        "finite": true
+      }
+    ],
+    "required_wheel_groups": 12,
+    "wheel_groups": 12,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 15,
+      "dimensions_m": [
+        5.909811973571777,
+        4.040118217468262,
+        3.9679319858551025
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 15,
+      "dimensions_m": [
+        5.9131975173950195,
+        4.040632724761963,
+        3.972561836242676
+      ],
+      "max_dimension_error_m": 0.004629850387573242
+    },
+    "pass": true
+  },
+  "pivot_inspection": {
+    "method": "Rotate separate wheel/rotor visuals by 90 degrees; check origin stays fixed; inspect renders",
+    "records": [
+      {
+        "part": "SM_pr_1_wheel_R_3_1_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -2.170391082763672,
+          -1.4934625625610352,
+          0.3827454447746277
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2646886189773759
+      },
+      {
+        "part": "SM_pr_1_wheel_R_3_2_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -2.170391321182251,
+          -1.9090347290039062,
+          0.3827454447746277
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26470930729694403
+      },
+      {
+        "part": "SM_pr_1_wheel_R_2_1_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.4696834087371826,
+          -1.4934626817703247,
+          0.3827452063560486
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2647239429546348
+      },
+      {
+        "part": "SM_pr_1_wheel_R_2_2_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.469683438539505,
+          -1.9090348482131958,
+          0.3827452063560486
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26472381982146703
+      },
+      {
+        "part": "SM_pr_1_wheel_R_1_1_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          1.2313851118087769,
+          -1.4934628009796143,
+          0.38274508714675903
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26470930729694403
+      },
+      {
+        "part": "SM_pr_1_wheel_R_1_2_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          1.2313851118087769,
+          -1.9090349674224854,
+          0.38274508714675903
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26468854156906224
+      },
+      {
+        "part": "SM_pr_1_wheel_L_3_1_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -2.170391082763672,
+          1.4932823181152344,
+          0.3827454447746277
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.26408663024351053
+      },
+      {
+        "part": "SM_pr_1_wheel_L_3_2_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -2.1703908443450928,
+          1.909035086631775,
+          0.3827454447746277
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642132147001082
+      },
+      {
+        "part": "SM_pr_1_wheel_L_2_1_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.4696831703186035,
+          1.4932823181152344,
+          0.3827452063560486
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642283712932947
+      },
+      {
+        "part": "SM_pr_1_wheel_L_2_2_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.4696831703186035,
+          1.9090349674224854,
+          0.3827452063560486
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642282408798058
+      },
+      {
+        "part": "SM_pr_1_wheel_L_1_1_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          1.231385350227356,
+          1.4932820796966553,
+          0.38274508714675903
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2642131829760944
+      },
+      {
+        "part": "SM_pr_1_wheel_L_1_2_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          1.231385350227356,
+          1.9090348482131958,
+          0.38274508714675903
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.2640865949777102
+      }
+    ],
+    "engine_joint_binding": "NOT_RUN"
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

@@ -1,0 +1,24 @@
+{
+  "sample_id": "smp-BXW-85834d87582d",
+  "target_id": "BXW_RIDGE_A",
+  "origin_point_m": [
+    -30.0,
+    -382.0,
+    -3595.6417233867187
+  ],
+  "analysis_point_m": [
+    285.1,
+    -468.0,
+    -3580.166064453125
+  ],
+  "tool": "CREW_SCOOP_SCENARIO",
+  "container_id": "container-20261115T062406Z-BXW_CAMPAIGN-15-01",
+  "state": 7,
+  "state_name": "RECORDED",
+  "evidence_ids": [
+    "ev-20261115T062406Z-BXW_CAMPAIGN-15-820df794c7a5f018",
+    "ev-20261115T062406Z-BXW_CAMPAIGN-15-4fe7aa6858c66e14"
+  ],
+  "provenance_status": "SIMULATED",
+  "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed"
+}

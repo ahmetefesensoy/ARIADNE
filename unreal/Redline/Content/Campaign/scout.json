@@ -1,0 +1,60 @@
+{
+  "created_at_utc": "2026-11-15T05:39:26.303393+00:00",
+  "status": "SCENARIO",
+  "passed": true,
+  "parts": [
+    {
+      "mesh": "/Game/Campaign/Scout/SM_CampaignScout_SM_scout_1_body_LOD0.SM_CampaignScout_SM_scout_1_body_LOD0",
+      "pivot_cm": [
+        0.7148534059524536,
+        -2.7810394763946533,
+        22.488892078399658
+      ],
+      "rotor": false
+    },
+    {
+      "mesh": "/Game/Campaign/Scout/SM_CampaignScout_SM_scout_1_rotor_1_LOD0.SM_CampaignScout_SM_scout_1_rotor_1_LOD0",
+      "pivot_cm": [
+        -33.56738984584808,
+        38.602498173713684,
+        44.74860429763794
+      ],
+      "rotor": true
+    },
+    {
+      "mesh": "/Game/Campaign/Scout/SM_CampaignScout_SM_scout_1_rotor_2_LOD0.SM_CampaignScout_SM_scout_1_rotor_2_LOD0",
+      "pivot_cm": [
+        -41.120052337646484,
+        -36.92412972450256,
+        42.35093593597412
+      ],
+      "rotor": true
+    },
+    {
+      "mesh": "/Game/Campaign/Scout/SM_CampaignScout_SM_scout_1_rotor_3_LOD0.SM_CampaignScout_SM_scout_1_rotor_3_LOD0",
+      "pivot_cm": [
+        35.8451783657074,
+        38.242849707603455,
+        29.76316213607788
+      ],
+      "rotor": true
+    },
+    {
+      "mesh": "/Game/Campaign/Scout/SM_CampaignScout_SM_scout_1_rotor_4_LOD0.SM_CampaignScout_SM_scout_1_rotor_4_LOD0",
+      "pivot_cm": [
+        41.959238052368164,
+        -40.1609867811203,
+        30.96199631690979
+      ],
+      "rotor": true
+    }
+  ],
+  "dimensions_cm": [
+    113.81193161010742,
+    120.0,
+    46.33913803100586
+  ],
+  "max_dimension_error_cm": 4.76837158203125e-06,
+  "source_fbx_sha256": "cdf871f5d21adf7f9df0a9249cb61feaaeb0bd74d94559e09695a297a405d4f7",
+  "physics": false
+}

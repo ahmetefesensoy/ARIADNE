@@ -1,0 +1,9 @@
+newmtl MAT_Axis_X
+Kd 0.8 0.8 0.8
+Ns 16
+newmtl MAT_Axis_Y
+Kd 0.8 0.8 0.8
+Ns 16
+newmtl MAT_Axis_Z
+Kd 0.8 0.8 0.8
+Ns 16

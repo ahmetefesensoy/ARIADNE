@@ -1,0 +1,342 @@
+{
+  "asset_id": "map_table",
+  "prepared_utc": "2026-11-14T12:07:56.064956+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\map_table\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      1.0200001001358032,
+      1.6200001239776611,
+      0.9010000228881836
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_map_table_body_frame_LOD0",
+      "source_name": "body_frame",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.8650000095367432
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_map_table_body_pedestal_LOD0",
+      "source_name": "body_pedestal",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.41999998688697815
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_map_table_screen_top_LOD0",
+      "source_name": "screen_top",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.9010000228881836
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 50,
+    "materials": 4,
+    "parts": [
+      {
+        "name": "body_frame",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "body_pedestal",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "screen_top",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 50,
+    "materials": 4,
+    "parts": [
+      {
+        "name": "SM_map_table_body_frame_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_map_table_body_pedestal_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_map_table_screen_top_LOD0",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 26,
+      "materials": 4,
+      "parts": [
+        {
+          "name": "SM_map_table_body_frame_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 32
+        },
+        {
+          "name": "SM_map_table_body_pedestal_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 31
+        },
+        {
+          "name": "SM_map_table_screen_top_LOD1",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        }
+      ]
+    },
+    "2": {
+      "triangles": 14,
+      "materials": 4,
+      "parts": [
+        {
+          "name": "SM_map_table_body_frame_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 21
+        },
+        {
+          "name": "SM_map_table_body_pedestal_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 21
+        },
+        {
+          "name": "SM_map_table_screen_top_LOD2",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 50,
+    "materials": 4,
+    "parts": [
+      {
+        "name": "SM_map_table_body_frame_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_map_table_body_pedestal_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_map_table_screen_top_Gazebo",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 2,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\map_table_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "map_table",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      1.6200000047683716,
+      1.0199999809265137,
+      0.9010000228881836
+    ],
+    "parts": [
+      {
+        "name": "body_frame",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "body_pedestal",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "screen_top",
+        "triangles": 2,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Habitat map table (kılavuz H01 'harita masası')",
+    "notes": "screen_top has full 0..1 UVs for the live map render target."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 1.6200000047683716,
+    "lod0": 50,
+    "gazebo": 50,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 3,
+    "triangles": 50,
+    "dimensions_m": [
+      1.0200001001358032,
+      1.6200001239776611,
+      0.9010000228881836
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "fbx_reimport": {
+      "mesh_count": 3,
+      "dimensions_m": [
+        1.0199999809265137,
+        1.6200000047683716,
+        0.9010000228881836
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07
+    },
+    "obj_reimport": {
+      "mesh_count": 3,
+      "dimensions_m": [
+        1.0200001001358032,
+        1.6200001239776611,
+        0.9010000228881836
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

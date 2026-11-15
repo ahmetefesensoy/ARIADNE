@@ -1,0 +1,138 @@
+{
+  "created_at_utc": "2026-11-14T13:25:10.523267+00:00",
+  "asset_sha256": "3356042ae1cd33deb94011a2b6a0f60b6be44b4a32c8f386400f247b776a1c73",
+  "source": "delivered NASA-derived visual, not flight CAD",
+  "master_axes": "+X forward/+Y left/+Z up",
+  "master_dimensions_m": [
+    3.9447293281555176,
+    2.7772350311279297,
+    2.2127432823181152
+  ],
+  "reference": {
+    "wheel_diameter_m": 0.5,
+    "wheel_width_m": 0.4,
+    "rover_mass_kg": 899,
+    "nominal_body_length_excluding_arm_m": 3.0,
+    "sources": [
+      "https://robotics.jpl.nasa.gov/media/documents/fmwi-rankin-2022-0225-final.pdf",
+      "https://mars.nasa.gov/internal_resources/822/"
+    ]
+  },
+  "wheels": [
+    {
+      "part": "wheel_03_R",
+      "pivot_map_master_m": [
+        -1.4758594036102295,
+        -1.0605868101119995,
+        0.24549514055252075
+      ],
+      "mesh": "assets/incoming/rover_1/gazebo/parts/SM_rover_1_wheel_03_R_Gazebo.obj",
+      "sha256": "1e39335d1d6ad2e7592eb6d659ceac73f560087b060d94faa0f47373cc63eebd",
+      "dimensions_m": [
+        0.47658014299999996,
+        0.394729555,
+        0.486924097
+      ],
+      "radius_about_joint_y_m": 0.2469586435983067,
+      "diameter_about_joint_y_m": 0.4939172871966134,
+      "uniform_scale_to_0_5m_wheel": 1.0123152458135471
+    },
+    {
+      "part": "wheel_03_L",
+      "pivot_map_master_m": [
+        -1.4733707904815674,
+        1.0605870485305786,
+        0.24549485743045807
+      ],
+      "mesh": "assets/incoming/rover_1/gazebo/parts/SM_rover_1_wheel_03_L_Gazebo.obj",
+      "sha256": "997d28524e921570eb3931bd287f3ca6947e39a56fe8a350f655c9385452fe82",
+      "dimensions_m": [
+        0.476292029,
+        0.394729555,
+        0.48774363099999996
+      ],
+      "radius_about_joint_y_m": 0.24971390774366933,
+      "diameter_about_joint_y_m": 0.49942781548733867,
+      "uniform_scale_to_0_5m_wheel": 1.0011456801061491
+    },
+    {
+      "part": "wheel_02_R",
+      "pivot_map_master_m": [
+        -0.39961549639701843,
+        -1.1912528276443481,
+        0.24557505548000336
+      ],
+      "mesh": "assets/incoming/rover_1/gazebo/parts/SM_rover_1_wheel_02_R_Gazebo.obj",
+      "sha256": "0f0f3272ab25160c396e227c31afdaf1e5d23b80e29c686a5c3b382bf3cd5e60",
+      "dimensions_m": [
+        0.484057278,
+        0.394729436,
+        0.489351437
+      ],
+      "radius_about_joint_y_m": 0.24971399248765483,
+      "diameter_about_joint_y_m": 0.49942798497530966,
+      "uniform_scale_to_0_5m_wheel": 1.0011453403531614
+    },
+    {
+      "part": "wheel_02_L",
+      "pivot_map_master_m": [
+        -0.39961495995521545,
+        1.1912528276443481,
+        0.24557547271251678
+      ],
+      "mesh": "assets/incoming/rover_1/gazebo/parts/SM_rover_1_wheel_02_L_Gazebo.obj",
+      "sha256": "30f8908e8a60263a3f7c28b4aff4bc1ef3de05cd38fc6590e7db610a44298647",
+      "dimensions_m": [
+        0.48743246500000004,
+        0.394729555,
+        0.489351437
+      ],
+      "radius_about_joint_y_m": 0.24971400671695884,
+      "diameter_about_joint_y_m": 0.4994280134339177,
+      "uniform_scale_to_0_5m_wheel": 1.0011452833054948
+    },
+    {
+      "part": "wheel_01_R",
+      "pivot_map_master_m": [
+        0.7842937707901001,
+        -1.0604913234710693,
+        0.24538402259349823
+      ],
+      "mesh": "assets/incoming/rover_1/gazebo/parts/SM_rover_1_wheel_01_R_Gazebo.obj",
+      "sha256": "81dfcdc37b59fe0ef216a9f1d58ea5f2ddcfaae77f7dfe35434f3bd3644bee4a",
+      "dimensions_m": [
+        0.487647131,
+        0.394729436,
+        0.48531599400000003
+      ],
+      "radius_about_joint_y_m": 0.24721405427121113,
+      "diameter_about_joint_y_m": 0.49442810854242225,
+      "uniform_scale_to_0_5m_wheel": 1.0112693662866452
+    },
+    {
+      "part": "wheel_01_L",
+      "pivot_map_master_m": [
+        0.7819728851318359,
+        1.0610359907150269,
+        0.2426472008228302
+      ],
+      "mesh": "assets/incoming/rover_1/gazebo/parts/SM_rover_1_wheel_01_L_Gazebo.obj",
+      "sha256": "85f95fb806491c036b448a91187ed12b617fd260c3581717b3510d396087abc5",
+      "dimensions_m": [
+        0.479955301,
+        0.394729614,
+        0.48512736
+      ],
+      "radius_about_joint_y_m": 0.24727174314365122,
+      "diameter_about_joint_y_m": 0.49454348628730244,
+      "uniform_scale_to_0_5m_wheel": 1.0110334356108122
+    }
+  ],
+  "sources_modified": false,
+  "limits": [
+    "Mesh radial extent includes art grousers and may differ from nominal rolling radius.",
+    "Model total length includes posed appendages; never normalize it to body-only length.",
+    "Wheel mesh audit is not inertia, suspension, friction or drive calibration.",
+    "Current simplified test robot has not been replaced by this audit."
+  ]
+}

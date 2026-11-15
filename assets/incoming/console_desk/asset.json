@@ -1,0 +1,502 @@
+{
+  "asset_id": "console_desk",
+  "prepared_utc": "2026-11-14T12:07:58.071298+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\console_desk\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.8000001311302185,
+      1.8585453033447266,
+      1.3105864524841309
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_console_desk_body_desk_LOD0",
+      "source_name": "body_desk",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.38499999046325684
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_console_desk_controls_LOD0",
+      "source_name": "controls",
+      "source_parent": "",
+      "pivot_m": [
+        0.20000001788139343,
+        0.11249996721744537,
+        0.8474999666213989
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_console_desk_monitors_LOD0",
+      "source_name": "monitors",
+      "source_parent": "",
+      "pivot_m": [
+        -0.16499997675418854,
+        0.0,
+        1.0402932167053223
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_console_desk_screen_1_LOD0",
+      "source_name": "screen_1",
+      "source_parent": "",
+      "pivot_m": [
+        -0.12027321755886078,
+        -0.6127991676330566,
+        1.1200000047683716
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_console_desk_screen_2_LOD0",
+      "source_name": "screen_2",
+      "source_parent": "",
+      "pivot_m": [
+        -0.19900000095367432,
+        1.4901161193847656e-08,
+        1.1200000047683716
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_console_desk_screen_3_LOD0",
+      "source_name": "screen_3",
+      "source_parent": "",
+      "pivot_m": [
+        -0.12027312815189362,
+        0.6127991676330566,
+        1.1200000047683716
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 842,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "body_desk",
+        "triangles": 36,
+        "vertices": 72,
+        "uv_layers": 1,
+        "non_manifold_edges": 72
+      },
+      {
+        "name": "controls",
+        "triangles": 632,
+        "vertices": 1272,
+        "uv_layers": 1,
+        "non_manifold_edges": 1272
+      },
+      {
+        "name": "monitors",
+        "triangles": 168,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "screen_1",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      },
+      {
+        "name": "screen_2",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      },
+      {
+        "name": "screen_3",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 842,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_console_desk_body_desk_LOD0",
+        "triangles": 36,
+        "vertices": 72,
+        "uv_layers": 1,
+        "non_manifold_edges": 72
+      },
+      {
+        "name": "SM_console_desk_controls_LOD0",
+        "triangles": 632,
+        "vertices": 1272,
+        "uv_layers": 1,
+        "non_manifold_edges": 1272
+      },
+      {
+        "name": "SM_console_desk_monitors_LOD0",
+        "triangles": 168,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "SM_console_desk_screen_1_LOD0",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      },
+      {
+        "name": "SM_console_desk_screen_2_LOD0",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      },
+      {
+        "name": "SM_console_desk_screen_3_LOD0",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 424,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_console_desk_body_desk_LOD1",
+          "triangles": 18,
+          "vertices": 54,
+          "uv_layers": 1,
+          "non_manifold_edges": 47
+        },
+        {
+          "name": "SM_console_desk_controls_LOD1",
+          "triangles": 316,
+          "vertices": 956,
+          "uv_layers": 1,
+          "non_manifold_edges": 812
+        },
+        {
+          "name": "SM_console_desk_monitors_LOD1",
+          "triangles": 84,
+          "vertices": 204,
+          "uv_layers": 1,
+          "non_manifold_edges": 182
+        },
+        {
+          "name": "SM_console_desk_screen_1_LOD1",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        },
+        {
+          "name": "SM_console_desk_screen_2_LOD1",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        },
+        {
+          "name": "SM_console_desk_screen_3_LOD1",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        }
+      ]
+    },
+    "2": {
+      "triangles": 215,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_console_desk_body_desk_LOD2",
+          "triangles": 9,
+          "vertices": 45,
+          "uv_layers": 1,
+          "non_manifold_edges": 33
+        },
+        {
+          "name": "SM_console_desk_controls_LOD2",
+          "triangles": 158,
+          "vertices": 798,
+          "uv_layers": 1,
+          "non_manifold_edges": 572
+        },
+        {
+          "name": "SM_console_desk_monitors_LOD2",
+          "triangles": 42,
+          "vertices": 162,
+          "uv_layers": 1,
+          "non_manifold_edges": 125
+        },
+        {
+          "name": "SM_console_desk_screen_1_LOD2",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        },
+        {
+          "name": "SM_console_desk_screen_2_LOD2",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        },
+        {
+          "name": "SM_console_desk_screen_3_LOD2",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 842,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_console_desk_body_desk_Gazebo",
+        "triangles": 36,
+        "vertices": 72,
+        "uv_layers": 1,
+        "non_manifold_edges": 72
+      },
+      {
+        "name": "SM_console_desk_controls_Gazebo",
+        "triangles": 632,
+        "vertices": 1272,
+        "uv_layers": 1,
+        "non_manifold_edges": 1272
+      },
+      {
+        "name": "SM_console_desk_monitors_Gazebo",
+        "triangles": 168,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "SM_console_desk_screen_1_Gazebo",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      },
+      {
+        "name": "SM_console_desk_screen_2_Gazebo",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      },
+      {
+        "name": "SM_console_desk_screen_3_Gazebo",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\console_desk_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "console_desk",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      1.8585453033447266,
+      0.800000011920929,
+      1.3105864524841309
+    ],
+    "parts": [
+      {
+        "name": "body_desk",
+        "triangles": 36,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "monitors",
+        "triangles": 168,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "screen_1",
+        "triangles": 2,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "screen_2",
+        "triangles": 2,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "screen_3",
+        "triangles": 2,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "controls",
+        "triangles": 632,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Robot console desk (kılavuz H01 'robot konsolu')",
+    "notes": "Three screen_N planes with full UVs face the operator side (master +X after the build rotation)."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 1.8585453033447266,
+    "lod0": 842,
+    "gazebo": 842,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 6,
+    "triangles": 842,
+    "dimensions_m": [
+      0.8000001311302185,
+      1.8585453033447266,
+      1.3105864524841309
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 6,
+      "dimensions_m": [
+        0.8000000715255737,
+        1.8585453033447266,
+        1.3105864524841309
+      ],
+      "max_dimension_error_m": 5.960464477539063e-08
+    },
+    "obj_reimport": {
+      "mesh_count": 6,
+      "dimensions_m": [
+        0.8000001311302185,
+        1.8585453033447266,
+        1.3105864524841309
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

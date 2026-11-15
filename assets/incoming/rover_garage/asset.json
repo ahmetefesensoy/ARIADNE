@@ -1,0 +1,396 @@
+{
+  "asset_id": "rover_garage",
+  "prepared_utc": "2026-11-14T12:07:53.954121+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\rover_garage\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.003924170508980751
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      7.000000476837158,
+      5.40000057220459,
+      2.7039241790771484
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_rover_garage_back_wall_LOD0",
+      "source_name": "back_wall",
+      "source_parent": "",
+      "pivot_m": [
+        -3.4700000286102295,
+        2.384185791015625e-07,
+        1.3039240837097168
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_garage_body_shell_LOD0",
+      "source_name": "body_shell",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        1.30196213722229
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_garage_floor_pad_LOD0",
+      "source_name": "floor_pad",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.02892417088150978
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_rover_garage_ribs_LOD0",
+      "source_name": "ribs",
+      "source_parent": "",
+      "pivot_m": [
+        -1.1920928955078125e-07,
+        0.0,
+        1.3539241552352905
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 3402,
+    "materials": 2,
+    "parts": [
+      {
+        "name": "back_wall",
+        "triangles": 100,
+        "vertices": 156,
+        "uv_layers": 1,
+        "non_manifold_edges": 156
+      },
+      {
+        "name": "body_shell",
+        "triangles": 212,
+        "vertices": 336,
+        "uv_layers": 1,
+        "non_manifold_edges": 336
+      },
+      {
+        "name": "floor_pad",
+        "triangles": 12,
+        "vertices": 24,
+        "uv_layers": 1,
+        "non_manifold_edges": 24
+      },
+      {
+        "name": "ribs",
+        "triangles": 3078,
+        "vertices": 5598,
+        "uv_layers": 1,
+        "non_manifold_edges": 5598
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 3402,
+    "materials": 2,
+    "parts": [
+      {
+        "name": "SM_rover_garage_back_wall_LOD0",
+        "triangles": 100,
+        "vertices": 156,
+        "uv_layers": 1,
+        "non_manifold_edges": 156
+      },
+      {
+        "name": "SM_rover_garage_body_shell_LOD0",
+        "triangles": 212,
+        "vertices": 336,
+        "uv_layers": 1,
+        "non_manifold_edges": 336
+      },
+      {
+        "name": "SM_rover_garage_floor_pad_LOD0",
+        "triangles": 12,
+        "vertices": 24,
+        "uv_layers": 1,
+        "non_manifold_edges": 24
+      },
+      {
+        "name": "SM_rover_garage_ribs_LOD0",
+        "triangles": 3078,
+        "vertices": 5598,
+        "uv_layers": 1,
+        "non_manifold_edges": 5598
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 1707,
+      "materials": 2,
+      "parts": [
+        {
+          "name": "SM_rover_garage_back_wall_LOD1",
+          "triangles": 50,
+          "vertices": 107,
+          "uv_layers": 1,
+          "non_manifold_edges": 97
+        },
+        {
+          "name": "SM_rover_garage_body_shell_LOD1",
+          "triangles": 106,
+          "vertices": 245,
+          "uv_layers": 1,
+          "non_manifold_edges": 235
+        },
+        {
+          "name": "SM_rover_garage_floor_pad_LOD1",
+          "triangles": 12,
+          "vertices": 24,
+          "uv_layers": 1,
+          "non_manifold_edges": 24
+        },
+        {
+          "name": "SM_rover_garage_ribs_LOD1",
+          "triangles": 1539,
+          "vertices": 4087,
+          "uv_layers": 1,
+          "non_manifold_edges": 3477
+        }
+      ]
+    },
+    "2": {
+      "triangles": 859,
+      "materials": 2,
+      "parts": [
+        {
+          "name": "SM_rover_garage_back_wall_LOD2",
+          "triangles": 25,
+          "vertices": 82,
+          "uv_layers": 1,
+          "non_manifold_edges": 59
+        },
+        {
+          "name": "SM_rover_garage_body_shell_LOD2",
+          "triangles": 53,
+          "vertices": 197,
+          "uv_layers": 1,
+          "non_manifold_edges": 162
+        },
+        {
+          "name": "SM_rover_garage_floor_pad_LOD2",
+          "triangles": 12,
+          "vertices": 24,
+          "uv_layers": 1,
+          "non_manifold_edges": 24
+        },
+        {
+          "name": "SM_rover_garage_ribs_LOD2",
+          "triangles": 769,
+          "vertices": 3317,
+          "uv_layers": 1,
+          "non_manifold_edges": 2351
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 3402,
+    "materials": 2,
+    "parts": [
+      {
+        "name": "SM_rover_garage_back_wall_Gazebo",
+        "triangles": 100,
+        "vertices": 156,
+        "uv_layers": 1,
+        "non_manifold_edges": 156
+      },
+      {
+        "name": "SM_rover_garage_body_shell_Gazebo",
+        "triangles": 212,
+        "vertices": 336,
+        "uv_layers": 1,
+        "non_manifold_edges": 336
+      },
+      {
+        "name": "SM_rover_garage_floor_pad_Gazebo",
+        "triangles": 12,
+        "vertices": 24,
+        "uv_layers": 1,
+        "non_manifold_edges": 24
+      },
+      {
+        "name": "SM_rover_garage_ribs_Gazebo",
+        "triangles": 3078,
+        "vertices": 5598,
+        "uv_layers": 1,
+        "non_manifold_edges": 5598
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 4,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\rover_garage_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "rover_garage",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      5.400000095367432,
+      7.0,
+      2.7039242181926966
+    ],
+    "parts": [
+      {
+        "name": "body_shell",
+        "triangles": 212,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "ribs",
+        "triangles": 3078,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "back_wall",
+        "triangles": 100,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "floor_pad",
+        "triangles": 12,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Inflatable rover garage (kılavuz H03); open front toward master +X",
+    "notes": "Clear width 5.2 m, ridge 2.66 m: fits the 3.94 x 2.78 x 2.21 m rover_1 package with margin. Shell is visual; ingress collision must be checked in the engine."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 7.0,
+    "lod0": 3402,
+    "gazebo": 3402,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 4,
+    "triangles": 3402,
+    "dimensions_m": [
+      7.000000476837158,
+      5.40000057220459,
+      2.7039241790771484
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 4,
+      "dimensions_m": [
+        7.000000476837158,
+        5.400000095367432,
+        2.7039241790771484
+      ],
+      "max_dimension_error_m": 4.76837158203125e-07
+    },
+    "obj_reimport": {
+      "mesh_count": 4,
+      "dimensions_m": [
+        7.000000476837158,
+        5.40000057220459,
+        2.7039241790771484
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+"""walkback_field entry point. Launch files run it with the REDLINE venv Python (D009)."""
+from redline_planner.walkback_field import main
+
+main()

@@ -1,0 +1,9 @@
+# Additive optional laboratory model. Acceptance is not completion.
+string request_id
+string sample_id
+string method
+float32 integration_s
+---
+bool accepted
+string reason
+string operation_id

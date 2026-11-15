@@ -1,0 +1,22 @@
+{
+  "task_id": "a005625a-7eb4-4989-bc0e-50a30764a8aa",
+  "type": "text_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": false,
+    "quad": false,
+    "prompt": "One realistic compact Mars rover coring drill end effector, upright scientific industrial instrument. Rectangular white thermal-covered motor housing attached to two parallel graphite feed rails, central silver sliding carriage and one clearly separate long spiral metal drill bit projecting straight downward, drill bit coaxial with motor, protective circular collar above bit. Rear bolted robot wrist mounting plate, secured short electrical connector. Separate editable solids for fixed motor housing, sliding carriage and drill bit, visibly distinct joint gaps, assembled neutral pose. Clean plausible aerospace engineering, graphite titanium white with small red accents, restrained wear. One complete isolated drill tool only, no robot arm, no rover, no ground, no sample rock, no pedestal, no text, no labels, no logo. Realistic PBR materials.",
+    "texture": false,
+    "export_uv": true,
+    "face_limit": 12000,
+    "model_seed": 14112032,
+    "model_version": "v3.1-20260211",
+    "generate_parts": true,
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "created_at": "2026-11-14T11:18:34.712729Z",
+  "completed_at": "2026-11-14T11:19:21.191567Z",
+  "credits_consumed": 30
+}

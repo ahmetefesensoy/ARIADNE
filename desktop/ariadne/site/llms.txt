@@ -1,0 +1,20 @@
+# PATHFINDER-G
+
+> PATHFINDER-G is a NASA Space Apps Challenge 2026 project for the "Interplanetary Survival Guide: Martian Map" challenge. An autonomous rover starts at Bradbury Landing, where NASA's Curiosity rover landed in Gale Crater on 6 August 2012, maps the terrain around it as it drives, layers NASA data into a hazard map, and gives astronauts a verified route for a Marswalk.
+
+The project focuses on one location and one route rather than a whole region: from Bradbury Landing (4.59°S, 137.44°E) toward Pahrump Hills (4.676°S, 137.379°E) and the boxwork region of Mount Sharp. Safety drives the route: steep slopes, rough ground and surface radiation (about 0.67 mSv/day measured by Curiosity's RAD instrument) are treated as costs or hazards.
+
+## Main pages
+- [Home](/): Mission, how the rover maps the terrain, NASA data used, key facts about Gale Crater, FAQ and team (Turkish)
+- [Key facts](/#data): Gale Crater, Bradbury Landing and Curiosity RAD figures with sources
+- [FAQ](/#faq): Short answers about the project
+- [Simulation](/simulasyon.html): Interactive 3D rover simulation on real NASA Gale Crater data — layers, autonomous route planning and a Marswalk plan (Turkish)
+
+## NASA sources
+- [JPL Mars Trek](https://trek.nasa.gov/mars/): Imagery and elevation for Gale Crater (MRO CTX, HiRISE)
+- [USGS–NASA Planetary Geologic Mapping Program](https://www.usgs.gov/centers/astrogeology-science-center/science/planetary-geologic-mapping): Geologic maps of Mars
+- [Mars Science Laboratory (Curiosity)](https://science.nasa.gov/mission/msl-curiosity/): Landing site and traverse
+- [Perseverance raw images](https://mars.nasa.gov/mars2020/multimedia/raw-images/): Ground-level imagery
+
+## Optional
+- [Challenge page](https://www.spaceappschallenge.org/2026/challenges/interplanetary-survival-guide-martian-map/): The NASA Space Apps challenge this project answers

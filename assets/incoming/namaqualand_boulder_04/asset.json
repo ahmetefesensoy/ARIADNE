@@ -1,0 +1,236 @@
+{
+  "asset_id": "namaqualand_boulder_04",
+  "prepared_utc": "2026-11-14T12:08:14.748583+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\namaqualand_boulder_04\\source.gltf",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        -0.2171635627746582
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.0792163610458374
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.029385626316070557
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      2.4983720779418945,
+      2.5237226486206055,
+      1.9028664827346802
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_namaqualand_boulder_04_boulder_04_LOD0",
+      "source_name": "boulder_04",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.9502310752868652
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 59066,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "boulder_04",
+        "triangles": 59066,
+        "vertices": 30165,
+        "uv_layers": 1,
+        "non_manifold_edges": 1254
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 6000,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_namaqualand_boulder_04_boulder_04_LOD0",
+        "triangles": 6000,
+        "vertices": 3334,
+        "uv_layers": 1,
+        "non_manifold_edges": 658
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 2999,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_namaqualand_boulder_04_boulder_04_LOD1",
+          "triangles": 2999,
+          "vertices": 1805,
+          "uv_layers": 1,
+          "non_manifold_edges": 601
+        }
+      ]
+    },
+    "2": {
+      "triangles": 1499,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_namaqualand_boulder_04_boulder_04_LOD2",
+          "triangles": 1499,
+          "vertices": 982,
+          "uv_layers": 1,
+          "non_manifold_edges": 455
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 800,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_namaqualand_boulder_04_boulder_04_Gazebo",
+        "triangles": 800,
+        "vertices": 572,
+        "uv_layers": 1,
+        "non_manifold_edges": 334
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "boulder_04_diff",
+      "path": "textures/boulder_04_diff.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "boulder_04_nor_gl",
+      "path": "textures/boulder_04_nor_gl.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "boulder_04_rough",
+      "path": "textures/boulder_04_rough.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\namaqualand_boulder_04_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "CC0 terrestrial scan; shape and colour are not Mars mineral or measurement evidence."
+  ],
+  "source_notice": {
+    "kind": "Poly Haven · CC0",
+    "library": {
+      "source": "https://polyhaven.com/a/namaqualand_boulder_04",
+      "credit": {
+        "Jenelle van Heerden": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license"
+    },
+    "tripo_tasks": [],
+    "terms_urls": [
+      "https://polyhaven.com/license"
+    ]
+  },
+  "build_spec": {
+    "source": "source.gltf",
+    "longest": 2.52215313911438,
+    "lod0": 6000,
+    "gazebo": 800,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 1,
+    "triangles": 6000,
+    "dimensions_m": [
+      2.4983720779418945,
+      2.5237226486206055,
+      1.9028664827346802
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "fbx_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        2.4983720779418945,
+        2.5237226486206055,
+        1.9028664827346802
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "obj_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        2.495304584503174,
+        2.5559754371643066,
+        1.866225004196167
+      ],
+      "max_dimension_error_m": 0.036641478538513184
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

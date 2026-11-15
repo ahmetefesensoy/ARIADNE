@@ -1,0 +1,603 @@
+{
+  "asset_id": "scout_1",
+  "prepared_utc": "2026-11-14T11:33:30.829196+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\scout_1\\segmented\\tripo-out\\redline-scout-parts-97e4e850\\model.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        1.1988353729248047,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.1988353729248047,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.1988353729248047,
+        0.23169568181037903
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.1988354075269774,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      1.1381193399429321,
+      1.2000000476837158,
+      0.46339136362075806
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_scout_1_body_LOD0",
+      "source_name": "body",
+      "source_parent": "",
+      "pivot_m": [
+        0.007148534059524536,
+        0.027810394763946533,
+        0.22488892078399658
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_scout_1_rotor_2_LOD0",
+      "source_name": "rotor_2",
+      "source_parent": "",
+      "pivot_m": [
+        -0.41120052337646484,
+        0.36924129724502563,
+        0.4235093593597412
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_scout_1_rotor_3_LOD0",
+      "source_name": "rotor_3",
+      "source_parent": "",
+      "pivot_m": [
+        0.358451783657074,
+        -0.38242849707603455,
+        0.2976316213607788
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_scout_1_rotor_1_LOD0",
+      "source_name": "rotor_1",
+      "source_parent": "",
+      "pivot_m": [
+        -0.33567389845848083,
+        -0.38602498173713684,
+        0.4474860429763794
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_scout_1_rotor_4_LOD0",
+      "source_name": "rotor_4",
+      "source_parent": "",
+      "pivot_m": [
+        0.41959238052368164,
+        0.401609867811203,
+        0.3096199631690979
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 55000,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "body",
+        "triangles": 48689,
+        "vertices": 41876,
+        "uv_layers": 1,
+        "non_manifold_edges": 33771
+      },
+      {
+        "name": "rotor_2",
+        "triangles": 2112,
+        "vertices": 1750,
+        "uv_layers": 1,
+        "non_manifold_edges": 1340
+      },
+      {
+        "name": "rotor_3",
+        "triangles": 1320,
+        "vertices": 1131,
+        "uv_layers": 1,
+        "non_manifold_edges": 902
+      },
+      {
+        "name": "rotor_1",
+        "triangles": 1650,
+        "vertices": 1435,
+        "uv_layers": 1,
+        "non_manifold_edges": 1174
+      },
+      {
+        "name": "rotor_4",
+        "triangles": 1229,
+        "vertices": 1016,
+        "uv_layers": 1,
+        "non_manifold_edges": 777
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 55000,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_scout_1_body_LOD0",
+        "triangles": 48689,
+        "vertices": 41876,
+        "uv_layers": 1,
+        "non_manifold_edges": 33771
+      },
+      {
+        "name": "SM_scout_1_rotor_2_LOD0",
+        "triangles": 2112,
+        "vertices": 1750,
+        "uv_layers": 1,
+        "non_manifold_edges": 1340
+      },
+      {
+        "name": "SM_scout_1_rotor_3_LOD0",
+        "triangles": 1320,
+        "vertices": 1131,
+        "uv_layers": 1,
+        "non_manifold_edges": 902
+      },
+      {
+        "name": "SM_scout_1_rotor_1_LOD0",
+        "triangles": 1650,
+        "vertices": 1435,
+        "uv_layers": 1,
+        "non_manifold_edges": 1174
+      },
+      {
+        "name": "SM_scout_1_rotor_4_LOD0",
+        "triangles": 1229,
+        "vertices": 1016,
+        "uv_layers": 1,
+        "non_manifold_edges": 777
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 27499,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_scout_1_body_LOD1",
+          "triangles": 24344,
+          "vertices": 23844,
+          "uv_layers": 1,
+          "non_manifold_edges": 22015
+        },
+        {
+          "name": "SM_scout_1_rotor_2_LOD1",
+          "triangles": 1056,
+          "vertices": 1015,
+          "uv_layers": 1,
+          "non_manifold_edges": 926
+        },
+        {
+          "name": "SM_scout_1_rotor_3_LOD1",
+          "triangles": 660,
+          "vertices": 656,
+          "uv_layers": 1,
+          "non_manifold_edges": 611
+        },
+        {
+          "name": "SM_scout_1_rotor_1_LOD1",
+          "triangles": 825,
+          "vertices": 830,
+          "uv_layers": 1,
+          "non_manifold_edges": 788
+        },
+        {
+          "name": "SM_scout_1_rotor_4_LOD1",
+          "triangles": 614,
+          "vertices": 591,
+          "uv_layers": 1,
+          "non_manifold_edges": 542
+        }
+      ]
+    },
+    "2": {
+      "triangles": 13749,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_scout_1_body_LOD2",
+          "triangles": 12172,
+          "vertices": 13038,
+          "uv_layers": 1,
+          "non_manifold_edges": 12426
+        },
+        {
+          "name": "SM_scout_1_rotor_2_LOD2",
+          "triangles": 528,
+          "vertices": 553,
+          "uv_layers": 1,
+          "non_manifold_edges": 523
+        },
+        {
+          "name": "SM_scout_1_rotor_3_LOD2",
+          "triangles": 330,
+          "vertices": 360,
+          "uv_layers": 1,
+          "non_manifold_edges": 345
+        },
+        {
+          "name": "SM_scout_1_rotor_1_LOD2",
+          "triangles": 412,
+          "vertices": 454,
+          "uv_layers": 1,
+          "non_manifold_edges": 443
+        },
+        {
+          "name": "SM_scout_1_rotor_4_LOD2",
+          "triangles": 307,
+          "vertices": 324,
+          "uv_layers": 1,
+          "non_manifold_edges": 312
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 11999,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_scout_1_body_Gazebo",
+        "triangles": 10623,
+        "vertices": 11643,
+        "uv_layers": 1,
+        "non_manifold_edges": 11164
+      },
+      {
+        "name": "SM_scout_1_rotor_2_Gazebo",
+        "triangles": 460,
+        "vertices": 491,
+        "uv_layers": 1,
+        "non_manifold_edges": 467
+      },
+      {
+        "name": "SM_scout_1_rotor_3_Gazebo",
+        "triangles": 288,
+        "vertices": 323,
+        "uv_layers": 1,
+        "non_manifold_edges": 313
+      },
+      {
+        "name": "SM_scout_1_rotor_1_Gazebo",
+        "triangles": 360,
+        "vertices": 409,
+        "uv_layers": 1,
+        "non_manifold_edges": 403
+      },
+      {
+        "name": "SM_scout_1_rotor_4_Gazebo",
+        "triangles": 268,
+        "vertices": 285,
+        "uv_layers": 1,
+        "non_manifold_edges": 273
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "Color_f91d9e38-645a-42e6-8287-a9d2266658fd",
+      "path": "textures/Color_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "NormalGL_f91d9e38-645a-42e6-8287-a9d2266658fd",
+      "path": "textures/NormalGL_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "ORM_f91d9e38-645a-42e6-8287-a9d2266658fd",
+      "path": "textures/ORM_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 5,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\scout_1_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "Tripo produced 256 fragments. Blades were grouped geometrically into four rotor candidates and original UVs restored. Rotor/guard separation requires visual review before joint binding."
+  ],
+  "material_channels": {
+    "BaseColor": "textures/Color_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+    "NormalGL": "textures/NormalGL_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+    "NormalDX": "textures/scout_1_NormalDX.png",
+    "AO": "textures/scout_1_AO.png",
+    "Roughness": "textures/scout_1_Roughness.png",
+    "Metallic": "textures/scout_1_Metallic.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "materials": {
+    "tripo_material_f91d9e38-645a-42e6-8287-a9d2266658fd": {
+      "Base Color": {
+        "image": "Color_f91d9e38-645a-42e6-8287-a9d2266658fd",
+        "path": "textures/Color_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "ORM_f91d9e38-645a-42e6-8287-a9d2266658fd",
+        "path": "textures/ORM_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "image": "ORM_f91d9e38-645a-42e6-8287-a9d2266658fd",
+        "path": "textures/ORM_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+        "component": "B",
+        "colorspace": "Non-Color"
+      },
+      "Normal": {
+        "image": "NormalGL_f91d9e38-645a-42e6-8287-a9d2266658fd",
+        "path": "textures/NormalGL_f91d9e38_645a_42e6_8287_a9d2266658fd.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "Tripo · AI üretimi",
+    "library": null,
+    "tripo_tasks": [
+      {
+        "asset_id": "scout_1",
+        "historical": false,
+        "task_id": "97e4e850-f1d3-4a62-8376-3d044bd3ac73",
+        "type": "mesh_segmentation",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "model_version": "v2.0-20260430",
+          "original_model_id": "9249a1f1-2291-4430-b106-b0cdc12702bd",
+          "split_by_connectivity": true,
+          "segmentation_granularity": "detailed"
+        },
+        "created_at": "2026-11-14T11:02:38.863368Z",
+        "completed_at": "2026-11-14T11:03:50.037390Z",
+        "credits_consumed": 40
+      },
+      {
+        "asset_id": "scout_1",
+        "historical": true,
+        "task_id": "f91d9e38-645a-42e6-8287-a9d2266658fd",
+        "type": "text_to_model",
+        "status": "success",
+        "input": {
+          "pbr": true,
+          "prompt": "Compact quadrotor Mars scout drone, realistic scientific aerospace design, four separate rotors with open rotor hubs on short arms, central rectangular body with solar panel on top, small downward-facing camera on a gimbal underneath, four landing legs, matte white and grey carbon-fiber panels, neutral studio pose, single object, no ground, no text, no logo",
+          "texture": true,
+          "export_uv": true,
+          "model_version": "v3.1-20260211",
+          "geometry_quality": "standard",
+          "texture_alignment": "geometry"
+        },
+        "created_at": "2026-11-14T10:40:03.623118Z",
+        "completed_at": "2026-11-14T10:42:40.737428Z",
+        "credits_consumed": 20.0
+      }
+    ],
+    "terms_urls": [
+      "https://developers.tripo3d.ai/en/terms",
+      "https://www.tripo3d.ai/terms"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 5,
+    "triangles": 55000,
+    "dimensions_m": [
+      1.1381193399429321,
+      1.2000000476837158,
+      0.46339136362075806
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [
+      {
+        "part": "SM_scout_1_rotor_2_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.05235714118385075,
+        "finite": true
+      },
+      {
+        "part": "SM_scout_1_rotor_3_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.34197459573232236,
+        "finite": true
+      },
+      {
+        "part": "SM_scout_1_rotor_1_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1288074486122781,
+        "finite": true
+      },
+      {
+        "part": "SM_scout_1_rotor_4_LOD0",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.10254182584762941,
+        "finite": true
+      }
+    ],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 4,
+    "fbx_reimport": {
+      "mesh_count": 5,
+      "dimensions_m": [
+        1.1381193399429321,
+        1.2000000476837158,
+        0.46339136362075806
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 5,
+      "dimensions_m": [
+        1.13677179813385,
+        1.1977616548538208,
+        0.4665573835372925
+      ],
+      "max_dimension_error_m": 0.003166019916534424
+    },
+    "pass": true
+  },
+  "pivot_inspection": {
+    "method": "Rotate separate wheel/rotor visuals by 90 degrees; check origin stays fixed; inspect renders",
+    "records": [
+      {
+        "part": "SM_scout_1_rotor_2_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.41120052337646484,
+          0.36924129724502563,
+          0.4235093593597412
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.05235714118385075
+      },
+      {
+        "part": "SM_scout_1_rotor_3_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          0.358451783657074,
+          -0.38242849707603455,
+          0.2976316213607788
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.34197459573232236
+      },
+      {
+        "part": "SM_scout_1_rotor_1_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          -0.33567389845848083,
+          -0.38602498173713684,
+          0.4474860429763794
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1288074486122781
+      },
+      {
+        "part": "SM_scout_1_rotor_4_LOD0",
+        "angle_deg": 90,
+        "pivot_m": [
+          0.41959238052368164,
+          0.401609867811203,
+          0.3096199631690979
+        ],
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.10254182584762941
+      }
+    ],
+    "engine_joint_binding": "NOT_RUN"
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

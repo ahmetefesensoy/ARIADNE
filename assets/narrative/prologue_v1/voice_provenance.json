@@ -1,0 +1,58 @@
+{
+  "created_at_utc": "2026-11-14T23:32:53.9601539Z",
+  "status": "SCENARIO",
+  "method": "local Windows System.Speech text-to-speech",
+  "voice": "Microsoft Tolga",
+  "language": "tr-TR",
+  "synthetic_voice": true,
+  "human_voice_actor": false,
+  "credits_spent": 0,
+  "script_sha256": "82df08894ac4a53b2a4659861dd22b46dafa8df4cf4497742b228edf86784ef3",
+  "files": [
+    {
+      "id": "landing",
+      "file": "landing.wav",
+      "sha256": "1f46b56d9436aa0b93d631eb5f2d4ec6badd0b20eeb7ceacf1efa3229dd97b6c"
+    },
+    {
+      "id": "rest",
+      "file": "rest.wav",
+      "sha256": "75334b335c493e35475698ad16b740de2b199834efaf50b765fd8ee07a556037"
+    },
+    {
+      "id": "data",
+      "file": "data.wav",
+      "sha256": "2fe0c69d372202b0561c6f1079de91d1f0a1843b9c7cb8963bdd18dd88508e1c"
+    },
+    {
+      "id": "airlock",
+      "file": "airlock.wav",
+      "sha256": "9c81838b388aea74738c473aa2f159983d776767540506431de627dd76dee280"
+    },
+    {
+      "id": "ready",
+      "file": "ready.wav",
+      "sha256": "d95264985752698d99a7c054fbd24fb9caf6c4e6af1a4ca0951d34d3f06aeaba"
+    },
+    {
+      "id": "mission_traverse",
+      "file": "mission_traverse.wav",
+      "sha256": "4a276299364b06843b63bfbcbc5cb4d3de72d8434c651be27dd49f781d3e0b64"
+    },
+    {
+      "id": "mission_science",
+      "file": "mission_science.wav",
+      "sha256": "63dfbc8e4f95759f0ac8843e5d629971c7a1b316c5ff08ce82784b5f9f7bb01f"
+    },
+    {
+      "id": "mission_return",
+      "file": "mission_return.wav",
+      "sha256": "6446679f52badea684460ded5b8c4b1aa8d83b0db89c55021b1636e7e5a5b52b"
+    },
+    {
+      "id": "mission_debrief",
+      "file": "mission_debrief.wav",
+      "sha256": "f272991e033b9a817bef7c060b33b4c8cc1b0c759d2e4f360c0d70bd621d6cf6"
+    }
+  ]
+}

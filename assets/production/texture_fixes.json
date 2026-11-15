@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-11-14T12:14:14.882076+00:00",
+  "script_sha256": "2ff49cdd87527baa4237d11b82826570e5b3aaa9c90e8aa166510f1993313b40",
+  "opencv": "5.0.0",
+  "habitat": {
+    "texture": "HDU_01.png",
+    "files": [
+      "incoming/habitat/textures/HDU_01.png",
+      "incoming/habitat/unreal/habitat_LOD0.fbm/HDU_01.png",
+      "incoming/habitat/unreal/habitat_LOD1.fbm/HDU_01.png",
+      "incoming/habitat/unreal/habitat_LOD2.fbm/HDU_01.png"
+    ],
+    "sha256_before": "8693c53f91fe98be9e7e0217ca2798db7ba30bb31df22ebf5f3ccd00fa7d0019",
+    "sha256_after": "36debd8062cedfe7a45ebd24b14601741b2dd049fc198311d018c85353bff7e5",
+    "saturated_logo_components_removed": 44,
+    "saturated_components_remaining_total": 4,
+    "saturated_components_remaining_outside_porthole_protection": 0,
+    "porthole_protection": "dark blobs (V < 0.3, area >= 150 px) dilated 7 px are never masked",
+    "logo_regions_px_min_saturation": [
+      [
+        0,
+        0,
+        480,
+        660,
+        0.35
+      ],
+      [
+        125,
+        0,
+        157,
+        660,
+        0.12
+      ],
+      [
+        180,
+        0,
+        276,
+        660,
+        0.1
+      ]
+    ],
+    "hdu_emblem_windows_px": [
+      [
+        34,
+        232,
+        92,
+        288
+      ],
+      [
+        62,
+        555,
+        124,
+        610
+      ]
+    ],
+    "masked_pixels": 27386,
+    "method": "OpenCV Telea inpaint, radius 4 px",
+    "kept": "generic 'Segment A-H' and 'AIRLOCK' signage, door art, porthole"
+  },
+  "sample_case": {
+    "texture": "industrial_pastic_container_diff.png",
+    "files": [
+      "incoming/sample_case/textures/industrial_pastic_container_diff.png",
+      "incoming/sample_case/unreal/sample_case_LOD0.fbm/industrial_pastic_container_diff.png",
+      "incoming/sample_case/unreal/sample_case_LOD1.fbm/industrial_pastic_container_diff.png",
+      "incoming/sample_case/unreal/sample_case_LOD2.fbm/industrial_pastic_container_diff.png"
+    ],
+    "sha256_before": "896e7bc4b0b5af990d0b9967e46d31f4c77366187a1f69bac7cdac40fdf411ca",
+    "sha256_after": "c2aae734345384c583ade5b0176f84c0b2e65cdc7c081bf16d69ae43dbd145aa",
+    "recoloured_pixel_fraction": 0.9941253662109375,
+    "reference_value": 170.0,
+    "method": "blue-hue pixels -> light grey scaled by their value; labels and wear kept"
+  }
+}

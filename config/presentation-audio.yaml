@@ -1,0 +1,24 @@
+schema_version: 1
+authority: unreal_presentation_only
+title: REDLINE — Sessiz Yörünge
+source_record: assets/audio/incoming/redline_sessiz_yorunge/generation.json
+playback:
+  volume: 0.28
+  crossfade_seconds: 2.5
+  looping: false
+  loop_reason: Generated endings have not been auditioned as seamless loops.
+  continuation_crossfade_seconds: 4.0
+  continuation: >-
+    Each take is crossfaded into a fresh pass of itself 4 s before its end, so music keeps
+    playing through long walks; the waves stay non-looping, so the seam is never heard.
+routes:
+  BRIEFING: take_01
+  PRECURSOR: take_01
+  TRAVERSE: take_01
+  STATION_SCIENCE: take_01
+  RETURN: take_02
+  CONTINGENCY: take_02
+  DEBRIEF: take_01
+unreal_assets:
+  take_01: /Game/Audio/Music/SW_REDLINE_SessizYorunge_Exploration
+  take_02: /Game/Audio/Music/SW_REDLINE_SessizYorunge_Crisis

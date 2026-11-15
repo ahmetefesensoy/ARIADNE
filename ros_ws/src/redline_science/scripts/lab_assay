@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from redline_science.lab_assay import main
+main()

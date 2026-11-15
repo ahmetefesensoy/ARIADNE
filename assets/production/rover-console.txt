@@ -1,0 +1,199 @@
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:308: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new("MAT_NASA_Curiosity_Atlas");mat.use_nodes=True
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:313: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  white=bpy.data.materials.new("MAT_NASA_solid");white.diffuse_color=(0.65,0.65,0.65,1);white.use_nodes=True
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:314: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  gold=bpy.data.materials.new("MAT_NASA_gold");gold.use_nodes=True
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:338: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  images={n.image for m in mats if m.use_nodes for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image and n.image.size[0]}
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\rover_1\\unreal\\rover_1_LOD0.fbx'
+export finished in 0.0709 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\rover_1\\unreal\\rover_1_LOD1.fbx'
+export finished in 0.0566 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\rover_1\\unreal\\rover_1_LOD2.fbx'
+export finished in 0.0495 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+14:43:31 | INFO: Starting glTF 2.0 export
+14:43:31 | INFO: Extracting primitive: Mesh.101
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.100
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.099
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.098
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.097
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.096
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.095
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.094
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.093
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.092
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.091
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.090
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.089
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.087
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.088
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.086
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.085
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.084
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.083
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: 10253000_1_MSL_Ro.002
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.089
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.088
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.087
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.086
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.082
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.081
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.080
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.079
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.042
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.041
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.040
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.085
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.084
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: _0254220_CAL_MTG_BRACKET_A2_CALIBRATION_MTG_BRACKET_6190.003
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.039
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Sphere.012
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Sphere.011
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Sphere.010
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Sphere.006
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.077
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.078
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.076
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.038
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.075
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.074
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.073
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.072
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.037
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.071
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.036
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.070
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.035
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.034
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.083
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.069
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cube.033
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.068
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.067
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Mesh.066
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.082
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.081
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.080
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.079
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.078
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.077
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.075
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.076
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.073
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.074
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.072
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.071
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.070
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.069
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.068
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.067
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.066
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.065
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.064
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.063
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.062
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.061
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Extracting primitive: Cylinder.060
+14:43:31 | INFO: Primitives created: 1
+14:43:31 | INFO: Finished glTF 2.0 export in 0.12083077430725098 s
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:421: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  node=next((n for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image and n.image.colorspace_settings.name=='sRGB'),None) if m.use_nodes else None
+00:06.718  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\rover_1\preview\perspective.png'
+00:07.171  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\rover_1\preview\front.png'
+00:07.593  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\rover_1\preview\side.png'
+00:08.015  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\rover_1\preview\back.png'
+
+Info: Saved as "master.blend"
+PACKAGE_DONE rover_1 48492 triangles; 25003 Gazebo; 82 parts
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

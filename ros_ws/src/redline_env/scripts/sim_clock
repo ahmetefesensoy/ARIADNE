@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+"""sim_clock entry point. Launch files run it with the REDLINE venv Python (D009)."""
+from redline_env.sim_clock import main
+
+main()

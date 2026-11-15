@@ -1,0 +1,583 @@
+{
+  "asset_id": "relay_mast",
+  "prepared_utc": "2026-11-14T12:08:50.524695+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\relay_mast\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.22499996423721313
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        2.9802322387695312e-08
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.014142215251922607
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      1.4500000476837158,
+      1.6588457822799683,
+      3.5141422748565674
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_relay_mast_antenna_head_LOD0",
+      "source_name": "antenna_head",
+      "source_parent": "",
+      "pivot_m": [
+        0.2647508382797241,
+        2.2351741790771484e-08,
+        2.614142417907715
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_relay_mast_body_box_LOD0",
+      "source_name": "body_box",
+      "source_parent": "",
+      "pivot_m": [
+        0.3804999589920044,
+        1.4901161193847656e-08,
+        0.7041422128677368
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_relay_mast_body_mast_LOD0",
+      "source_name": "body_mast",
+      "source_parent": "",
+      "pivot_m": [
+        0.22499996423721313,
+        2.9802322387695312e-08,
+        1.3141422271728516
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_relay_mast_leg_1_LOD0",
+      "source_name": "leg_1",
+      "source_parent": "",
+      "pivot_m": [
+        -0.24292899668216705,
+        9.685754776000977e-08,
+        0.46414220333099365
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_relay_mast_leg_2_LOD0",
+      "source_name": "leg_2",
+      "source_parent": "",
+      "pivot_m": [
+        0.4657321870326996,
+        -0.40690815448760986,
+        0.46414220333099365
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_relay_mast_leg_3_LOD0",
+      "source_name": "leg_3",
+      "source_parent": "",
+      "pivot_m": [
+        0.46573224663734436,
+        0.40690815448760986,
+        0.46414220333099365
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_relay_mast_solar_panel_LOD0",
+      "source_name": "solar_panel",
+      "source_parent": "",
+      "pivot_m": [
+        0.4078451991081238,
+        1.4901161193847656e-08,
+        1.5641422271728516
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 816,
+    "materials": 6,
+    "parts": [
+      {
+        "name": "antenna_head",
+        "triangles": 236,
+        "vertices": 384,
+        "uv_layers": 1,
+        "non_manifold_edges": 384
+      },
+      {
+        "name": "body_box",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "body_mast",
+        "triangles": 92,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "leg_1",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "leg_2",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "leg_3",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "solar_panel",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 816,
+    "materials": 6,
+    "parts": [
+      {
+        "name": "SM_relay_mast_antenna_head_LOD0",
+        "triangles": 236,
+        "vertices": 384,
+        "uv_layers": 1,
+        "non_manifold_edges": 384
+      },
+      {
+        "name": "SM_relay_mast_body_box_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_relay_mast_body_mast_LOD0",
+        "triangles": 92,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "SM_relay_mast_leg_1_LOD0",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_relay_mast_leg_2_LOD0",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_relay_mast_leg_3_LOD0",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_relay_mast_solar_panel_LOD0",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 408,
+      "materials": 6,
+      "parts": [
+        {
+          "name": "SM_relay_mast_antenna_head_LOD1",
+          "triangles": 118,
+          "vertices": 266,
+          "uv_layers": 1,
+          "non_manifold_edges": 242
+        },
+        {
+          "name": "SM_relay_mast_body_box_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 30
+        },
+        {
+          "name": "SM_relay_mast_body_mast_LOD1",
+          "triangles": 46,
+          "vertices": 98,
+          "uv_layers": 1,
+          "non_manifold_edges": 90
+        },
+        {
+          "name": "SM_relay_mast_leg_1_LOD1",
+          "triangles": 68,
+          "vertices": 148,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        },
+        {
+          "name": "SM_relay_mast_leg_2_LOD1",
+          "triangles": 68,
+          "vertices": 148,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        },
+        {
+          "name": "SM_relay_mast_leg_3_LOD1",
+          "triangles": 68,
+          "vertices": 148,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        },
+        {
+          "name": "SM_relay_mast_solar_panel_LOD1",
+          "triangles": 28,
+          "vertices": 68,
+          "uv_layers": 1,
+          "non_manifold_edges": 64
+        }
+      ]
+    },
+    "2": {
+      "triangles": 204,
+      "materials": 6,
+      "parts": [
+        {
+          "name": "SM_relay_mast_antenna_head_LOD2",
+          "triangles": 59,
+          "vertices": 207,
+          "uv_layers": 1,
+          "non_manifold_edges": 160
+        },
+        {
+          "name": "SM_relay_mast_body_box_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 22
+        },
+        {
+          "name": "SM_relay_mast_body_mast_LOD2",
+          "triangles": 23,
+          "vertices": 75,
+          "uv_layers": 1,
+          "non_manifold_edges": 56
+        },
+        {
+          "name": "SM_relay_mast_leg_1_LOD2",
+          "triangles": 34,
+          "vertices": 114,
+          "uv_layers": 1,
+          "non_manifold_edges": 87
+        },
+        {
+          "name": "SM_relay_mast_leg_2_LOD2",
+          "triangles": 34,
+          "vertices": 114,
+          "uv_layers": 1,
+          "non_manifold_edges": 86
+        },
+        {
+          "name": "SM_relay_mast_leg_3_LOD2",
+          "triangles": 34,
+          "vertices": 114,
+          "uv_layers": 1,
+          "non_manifold_edges": 86
+        },
+        {
+          "name": "SM_relay_mast_solar_panel_LOD2",
+          "triangles": 14,
+          "vertices": 54,
+          "uv_layers": 1,
+          "non_manifold_edges": 42
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 816,
+    "materials": 6,
+    "parts": [
+      {
+        "name": "SM_relay_mast_antenna_head_Gazebo",
+        "triangles": 236,
+        "vertices": 384,
+        "uv_layers": 1,
+        "non_manifold_edges": 384
+      },
+      {
+        "name": "SM_relay_mast_body_box_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_relay_mast_body_mast_Gazebo",
+        "triangles": 92,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "SM_relay_mast_leg_1_Gazebo",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_relay_mast_leg_2_Gazebo",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_relay_mast_leg_3_Gazebo",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_relay_mast_solar_panel_Gazebo",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 5,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\relay_mast_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "relay_mast",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      1.6588457822799683,
+      1.449999988079071,
+      3.5141422152519226
+    ],
+    "parts": [
+      {
+        "name": "leg_1",
+        "triangles": 136,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "leg_2",
+        "triangles": 136,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "leg_3",
+        "triangles": 136,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "body_mast",
+        "triangles": 92,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "body_box",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "solar_panel",
+        "triangles": 56,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "antenna_head",
+        "triangles": 236,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Radio relay point (kılavuz M10 'röle direği', S05 röle noktası)",
+    "notes": "Flat-panel antenna with pan head (antenna_head, pivot at its base) and a whip."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 3.5141422748565674,
+    "lod0": 816,
+    "gazebo": 816,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 7,
+    "triangles": 816,
+    "dimensions_m": [
+      1.4500000476837158,
+      1.6588457822799683,
+      3.5141422748565674
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [
+      {
+        "part": "SM_relay_mast_antenna_head_LOD0",
+        "axis": "Z",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.18709205042526014
+      }
+    ],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 7,
+      "dimensions_m": [
+        1.4500000476837158,
+        1.6588457822799683,
+        3.5141422748565674
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "obj_reimport": {
+      "mesh_count": 7,
+      "dimensions_m": [
+        1.4500000476837158,
+        1.6588457822799683,
+        3.5141422748565674
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

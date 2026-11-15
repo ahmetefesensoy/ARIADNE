@@ -1,0 +1,9 @@
+# User-requested interactive locomotion, SCENARIO; not a validated Mars running model.
+provenance_status: SCENARIO
+sprint_multiplier: 3.6
+sprint_cap_m_s: 3.0
+note: >-
+  Shift accelerates the human preview while preserving slope and zero-speed cell bans.
+  Return planning still uses the conservative walking model. The interactive ROS pose
+  physiology must explicitly enable the same scenario speed cap; faster consumption
+  is a walking-formula extrapolation, not Mars-running validation.

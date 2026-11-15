@@ -1,0 +1,24 @@
+# Planning slope uncertainty per site (docs/DECISIONS.md D010).
+provenance_status: DERIVED
+note: >-
+  The Gale DEM v3 mosaic and the HiRISE DTM DTEEC_019698_1750_019988_1750_U01 are two
+  processings of the same HiRISE stereo pair (Gale FGDC lineage lists ESP_019698/ESP_019988
+  as 'T3'). Their difference shows each processing's own noise but not the error they share,
+  so the planning σ adds a stereo expected-precision floor (Kirk et al. 2008). T1 measured the
+  difference as zero-mean with roughness ratio ≈ 1, so it is noise, not smoothing bias.
+sites:
+  BXW:
+    method: two_processing_ensemble
+    primary: MSL_Gale_DEM_Mosaic_1m_v3
+    reference: DTEEC_019698_1750_019988_1750_U01 (T1 aligned_reference.tif)
+    slope_baseline_m: 5.0
+    window_cells: 5            # 20 m at 4 m; the signed fine-slope difference decorrelates by ~4-8 m
+    stereo:
+      matching_precision_px: 0.2   # Kirk et al. 2008, JGR 113, E00A24, doi:10.1029/2007JE003000
+      gsd_m: 0.291                 # coarser original scale of the pair (29.1 / 27.8 cm/pixel)
+      emission_deg: [24.1, 14.7]   # ESP_019698_1750, ESP_019988_1750
+      opposite_sides: true         # phase 35.5° ≈ i − e (58 − 24.1), 68.7° = i + e (54 + 14.7)
+      sources:
+        - https://www.uahirise.org/ESP_019698_1750
+        - https://www.uahirise.org/ESP_019988_1750
+        - docs/verification/source-metadata/gale-v3-fgdc.xml

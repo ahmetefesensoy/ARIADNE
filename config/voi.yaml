@@ -1,0 +1,15 @@
+# Robot observation value parameters (proje.md §7.11; D011, D015). SCENARIO assumptions.
+provenance_status: SCENARIO
+note: >-
+  BXW has no mapped obstacle features or rock layer (D010). obstacle_density_per_km2 is the
+  SCENARIO density of impassable features (boulder clusters, scarps) a footprint can hide; V3
+  sweeps it. scripts/bench_voi.py (2026-11-15) on the real SCIENCE plan: 1461 candidates,
+  median 11 ms / p95 26 ms each, no negative VOI; gains 0.1-0.2 min against a 63 min tightest
+  margin, so the effect is small unless margins are tight (V3 tightness sweep).
+obstacle_density_per_km2: 100.0
+sight_m: 10.0         # crew sees an obstacle this far ahead (late discovery)
+corridor_m: 50.0      # proje.md §7.11
+window_m: 200.0       # proje.md §7.11
+lattice_m: 12.0
+footprint_m: 6.0
+top_k: 5

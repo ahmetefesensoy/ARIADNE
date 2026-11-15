@@ -1,0 +1,53 @@
+Object = IsisCube
+  Object = Core
+    StartByte = 919904
+    ^Core     = MSL_Gale_DEM_Mosaic_1m_v3.tif
+    Format    = BandSequential
+
+    Group = Dimensions
+      Samples = 32980
+      Lines   = 57440
+      Bands   = 1
+    End_Group
+
+    Group = Pixels
+      Type       = Real
+      ByteOrder  = Lsb
+      Base       = 0.0
+      Multiplier = 1.0
+    End_Group
+  End_Object
+
+  Group = Mapping
+    TargetName           = Mars
+    EquatorialRadius     = 3396190.0 <meters>
+    PolarRadius          = 3396190.0 <meters>
+    LatitudeType         = Planetocentric
+    LongitudeDirection   = PositiveEast
+    LongitudeDomain      = 180
+    MinimumLatitude      = -5.09865233931573592
+    MinimumLongitude     = 137.124166506124737
+    MaximumLatitude      = -4.12960479626559884
+    MaximumLongitude     = 137.680559054345366
+    ProjectionName       = Equirectangular
+    CenterLongitude      = 0.0
+    CenterLatitude       = 0.0
+    CenterLatitudeRadius = 3396190.0
+    UpperLeftCornerX     = 8127993.49278602377
+    UpperLeftCornerY     = -244781.075189438008
+    PixelResolution      = 1.0 <meters/pixel>
+    Scale                = 59274.6975233062185 <pixels/degree>
+  End_Group
+End_Object
+
+Object = Label
+  Bytes = 1391             
+End_Object
+
+Object = History
+  Name      = IsisCube
+  StartByte = 1
+  Bytes     = 410
+  ^History  = MSL_Gale_DEM_Mosaic_1m_v3.History.IsisCube
+End_Object
+End

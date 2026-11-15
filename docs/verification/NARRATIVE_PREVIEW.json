@@ -1,0 +1,3456 @@
+{
+  "schema": "redline.narrative-preview.verification.v1",
+  "created_at_utc": "2026-11-15T00:29:52.027706+00:00",
+  "status": "SCENARIO",
+  "overall_status": "PARTIAL_PREVIEW",
+  "milestone_complete": false,
+  "scope": "Dated local evidence collection for the narrative preview, not T6 or complete game acceptance",
+  "collector": {
+    "path": "scripts/record_narrative_verification.py",
+    "exists": true,
+    "sha256": "b4b52be54cc8756212f01c282bff80e98fd969b5c5836dc670994cf015ba3d57",
+    "bytes": 14512,
+    "modified_at_utc": "2026-11-15T00:25:42.576965+00:00"
+  },
+  "unreal_build": {
+    "receipt": {
+      "path": "test-results/t4-build-source.json",
+      "exists": true,
+      "sha256": "e410115121d573200013fec18448881a0dba018ea5b7f1865e27acf468f6087a",
+      "bytes": 9372,
+      "modified_at_utc": "2026-11-15T00:15:10.167511+00:00"
+    },
+    "status": "CURRENT_BUILD_RUNTIME_TOKEN_REGENERATED",
+    "recorded_at_utc": "2026-11-15T00:15:03.3186512Z",
+    "exit_code": 0,
+    "source": "unreal/Redline",
+    "cache": "C:\\Users\\USER\\AppData\\Local\\Redline\\T4Build\\Redline",
+    "recorded_snapshot_verified": true,
+    "current_input_file_set_matches": true,
+    "added_files": [],
+    "removed_files": [],
+    "source_inputs": {
+      "all_match": true,
+      "files": [
+        {
+          "path": "Config/DefaultEngine.ini",
+          "exists": true,
+          "expected_sha256": "9e3544cc5e34b55e79796d871bae764c8a6f1cf65f0234908d4f142a6a265222",
+          "current_sha256": "9e3544cc5e34b55e79796d871bae764c8a6f1cf65f0234908d4f142a6a265222",
+          "matches": true
+        },
+        {
+          "path": "Config/DefaultGame.ini",
+          "exists": true,
+          "expected_sha256": "4bbc4c2a2b59dcd4083fd3dc9b7c893890371db8c77884d55ed359261b7a83a5",
+          "current_sha256": "4bbc4c2a2b59dcd4083fd3dc9b7c893890371db8c77884d55ed359261b7a83a5",
+          "matches": true
+        },
+        {
+          "path": "Config/DefaultInput.ini",
+          "exists": true,
+          "expected_sha256": "057cac3bcaee5ac375c8f34a31e632c0a0319c9a59763f44151028f594054536",
+          "current_sha256": "057cac3bcaee5ac375c8f34a31e632c0a0319c9a59763f44151028f594054536",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/RedlineBridge.uplugin",
+          "exists": true,
+          "expected_sha256": "322585596e2a46c4d6b7473d511cb6b956d8f6e01b0730dc09114349b163be10",
+          "current_sha256": "322585596e2a46c4d6b7473d511cb6b956d8f6e01b0730dc09114349b163be10",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineBridgeModule.cpp",
+          "exists": true,
+          "expected_sha256": "229686d8d94764bf15c37eb9208e5f82e68d70e833a79de56326540657e6a3f1",
+          "current_sha256": "229686d8d94764bf15c37eb9208e5f82e68d70e833a79de56326540657e6a3f1",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineBridgeSubsystem.cpp",
+          "exists": true,
+          "expected_sha256": "34889b622c0e89952ffb1dfe8fe6c852c910c5e5f74e12515af822b7767dca65",
+          "current_sha256": "34889b622c0e89952ffb1dfe8fe6c852c910c5e5f74e12515af822b7767dca65",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineCoords.cpp",
+          "exists": true,
+          "expected_sha256": "4c64d436ad7caccec83d98ffaf095fbdade5e51687b53f9ed864f02c908cf0eb",
+          "current_sha256": "4c64d436ad7caccec83d98ffaf095fbdade5e51687b53f9ed864f02c908cf0eb",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineEVAData.cpp",
+          "exists": true,
+          "expected_sha256": "85a2efd16e7bb764da46bb44c158130f646ffb8805bb3303ae1858d6a70ba498",
+          "current_sha256": "85a2efd16e7bb764da46bb44c158130f646ffb8805bb3303ae1858d6a70ba498",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineOverlay.cpp",
+          "exists": true,
+          "expected_sha256": "bd082ad3f4e721f75debbcf0a8b177aedf8a52094fcb4afaccd9496647a4c791",
+          "current_sha256": "bd082ad3f4e721f75debbcf0a8b177aedf8a52094fcb4afaccd9496647a4c791",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineRoverActor.cpp",
+          "exists": true,
+          "expected_sha256": "e94be0f3a715d9fbb4c9220a62e5d744108e91719e67a345fff0f61ee829bb25",
+          "current_sha256": "e94be0f3a715d9fbb4c9220a62e5d744108e91719e67a345fff0f61ee829bb25",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineStaleMonitor.cpp",
+          "exists": true,
+          "expected_sha256": "ea32e136c19ca3c6afd342656baecc792351bfc963dba9214836771fac8920cf",
+          "current_sha256": "ea32e136c19ca3c6afd342656baecc792351bfc963dba9214836771fac8920cf",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineTypes.cpp",
+          "exists": true,
+          "expected_sha256": "0795756f4f9694653451b6a0f533b55afb99534d90de3c764fc6397479052a6b",
+          "current_sha256": "0795756f4f9694653451b6a0f533b55afb99534d90de3c764fc6397479052a6b",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/Tests/RedlineContractTests.cpp",
+          "exists": true,
+          "expected_sha256": "d76977bd331a4ac7e80a1a27a42206b79dd0437379d58344ae6b353e0949bc83",
+          "current_sha256": "d76977bd331a4ac7e80a1a27a42206b79dd0437379d58344ae6b353e0949bc83",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/Tests/RedlineEVATests.cpp",
+          "exists": true,
+          "expected_sha256": "6f9a7de2cd36caa0e251d188d6e233bb5aab2b2bc79026655aa7b7c755c7b580",
+          "current_sha256": "6f9a7de2cd36caa0e251d188d6e233bb5aab2b2bc79026655aa7b7c755c7b580",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineBridgeSubsystem.h",
+          "exists": true,
+          "expected_sha256": "e90c5bc74f16c6fbe5aec74be2671afd0d68a086045cb4d8234ced69fc0d8451",
+          "current_sha256": "e90c5bc74f16c6fbe5aec74be2671afd0d68a086045cb4d8234ced69fc0d8451",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineCoords.h",
+          "exists": true,
+          "expected_sha256": "855ed0e868c1678e00c5f3619417022564f19554af75ff22f051f59001af8279",
+          "current_sha256": "855ed0e868c1678e00c5f3619417022564f19554af75ff22f051f59001af8279",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineEVAData.h",
+          "exists": true,
+          "expected_sha256": "8190fe43725f38122b6c5d53f1ed2d9af46e5ce5ab06c5527dd5dfddfc03b3c6",
+          "current_sha256": "8190fe43725f38122b6c5d53f1ed2d9af46e5ce5ab06c5527dd5dfddfc03b3c6",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineOverlay.h",
+          "exists": true,
+          "expected_sha256": "8539278ce55ced1b5c53ccd1a26613a2ef255be2613a97bd0b9051c922390859",
+          "current_sha256": "8539278ce55ced1b5c53ccd1a26613a2ef255be2613a97bd0b9051c922390859",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineRoverActor.h",
+          "exists": true,
+          "expected_sha256": "30c4db67abb9777e26b4bbad9ed6e9394bdaf73792dacb95939397b1c0ad75e0",
+          "current_sha256": "30c4db67abb9777e26b4bbad9ed6e9394bdaf73792dacb95939397b1c0ad75e0",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineSettings.h",
+          "exists": true,
+          "expected_sha256": "c5ea3f9315cef83503805e7c96852668ae051df7fc8fc41b7d0cac15c693ce7e",
+          "current_sha256": "c5ea3f9315cef83503805e7c96852668ae051df7fc8fc41b7d0cac15c693ce7e",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineStaleMonitor.h",
+          "exists": true,
+          "expected_sha256": "cb529942a1a0e807e09deeef1f764577fcfc4fba930c28aaf78097ac784eebf3",
+          "current_sha256": "cb529942a1a0e807e09deeef1f764577fcfc4fba930c28aaf78097ac784eebf3",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineTypes.h",
+          "exists": true,
+          "expected_sha256": "3752ec88e9f89eb62ffa9dab83960d7bb20bfbdd5489108b7a784ed9df4656e1",
+          "current_sha256": "3752ec88e9f89eb62ffa9dab83960d7bb20bfbdd5489108b7a784ed9df4656e1",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/RedlineBridge.Build.cs",
+          "exists": true,
+          "expected_sha256": "328b4b0a67098cfa140b671918d02287d12757635c4d77b8597810126754b4b7",
+          "current_sha256": "328b4b0a67098cfa140b671918d02287d12757635c4d77b8597810126754b4b7",
+          "matches": true
+        },
+        {
+          "path": "Redline.uproject",
+          "exists": true,
+          "expected_sha256": "4992806cf5e7fb9fcbdbb3c02d93a8fb09831751da8cc46b3d7d618f7839de53",
+          "current_sha256": "4992806cf5e7fb9fcbdbb3c02d93a8fb09831751da8cc46b3d7d618f7839de53",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline.Target.cs",
+          "exists": true,
+          "expected_sha256": "c4d84163943de9bb34caca3c8f045ac4b542240102de6499ff846e5483a51894",
+          "current_sha256": "c4d84163943de9bb34caca3c8f045ac4b542240102de6499ff846e5483a51894",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Redline.cpp",
+          "exists": true,
+          "expected_sha256": "a806775a183593886c4d4c3b9f53816530beae965c6ad921709ce3643b8e45a8",
+          "current_sha256": "a806775a183593886c4d4c3b9f53816530beae965c6ad921709ce3643b8e45a8",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineAstronautCharacter.cpp",
+          "exists": true,
+          "expected_sha256": "bc09d18af8bed058361bf5047ac7da82532f016153e6638bc1fbc4d057b13625",
+          "current_sha256": "bc09d18af8bed058361bf5047ac7da82532f016153e6638bc1fbc4d057b13625",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineEVAGameMode.cpp",
+          "exists": true,
+          "expected_sha256": "17d162693d12d8526b7b8a154d16d77b4770288dcf87beff8aae7da8518f6aa4",
+          "current_sha256": "17d162693d12d8526b7b8a154d16d77b4770288dcf87beff8aae7da8518f6aa4",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineEVAImportLibrary.cpp",
+          "exists": true,
+          "expected_sha256": "4951749ff2f1b203cf18e29dcd5bf3dc08e1476e6f4a5b1f6f85d1ca7a1ce7e7",
+          "current_sha256": "4951749ff2f1b203cf18e29dcd5bf3dc08e1476e6f4a5b1f6f85d1ca7a1ce7e7",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineMusicSubsystem.cpp",
+          "exists": true,
+          "expected_sha256": "47b8d9697001c9272a9cb976a6f6616b1e58ffc0b75ec869c14dfaa95dcf2a89",
+          "current_sha256": "47b8d9697001c9272a9cb976a6f6616b1e58ffc0b75ec869c14dfaa95dcf2a89",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlinePrologueDirector.cpp",
+          "exists": true,
+          "expected_sha256": "7890929af2324f808357ad77a9559b840e32ce9c8d7d2fec6e74638656b87d01",
+          "current_sha256": "7890929af2324f808357ad77a9559b840e32ce9c8d7d2fec6e74638656b87d01",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineEVAAssetTests.cpp",
+          "exists": true,
+          "expected_sha256": "51560ea8e7eb2fba6668027d310e75bd878d065d8fa7cba4af3dcebe815792ed",
+          "current_sha256": "51560ea8e7eb2fba6668027d310e75bd878d065d8fa7cba4af3dcebe815792ed",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineEVAPoseTests.cpp",
+          "exists": true,
+          "expected_sha256": "20ca48b20eb076f9301ac1f2f2aa0586bb84867b17f45c974ab94a7c98f80537",
+          "current_sha256": "20ca48b20eb076f9301ac1f2f2aa0586bb84867b17f45c974ab94a7c98f80537",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineInteriorTests.cpp",
+          "exists": true,
+          "expected_sha256": "8fafad1af47c7271bfe497f1f89b63606540f56a051a4be873c0c32fb4dc0869",
+          "current_sha256": "8fafad1af47c7271bfe497f1f89b63606540f56a051a4be873c0c32fb4dc0869",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineLocomotionTests.cpp",
+          "exists": true,
+          "expected_sha256": "f309186ef7bb54a8fc5735442eb441efa6feb25f93f2727932132b952fb854f3",
+          "current_sha256": "f309186ef7bb54a8fc5735442eb441efa6feb25f93f2727932132b952fb854f3",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineMusicTests.cpp",
+          "exists": true,
+          "expected_sha256": "b6d2fae4baafc0c05950510580d28ff32bb916698ef7665d4a08f5b9a6459ea3",
+          "current_sha256": "b6d2fae4baafc0c05950510580d28ff32bb916698ef7665d4a08f5b9a6459ea3",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlinePrologueTests.cpp",
+          "exists": true,
+          "expected_sha256": "0cbf3474c7a1e2f705d0c24631e11a768f7ecae566581559478b2c9007dce6be",
+          "current_sha256": "0cbf3474c7a1e2f705d0c24631e11a768f7ecae566581559478b2c9007dce6be",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineSeatedPoseTests.cpp",
+          "exists": true,
+          "expected_sha256": "bcc7c0d223275d0db1a503fa99376855852dcae78d88b440e1625df6693dab0f",
+          "current_sha256": "bcc7c0d223275d0db1a503fa99376855852dcae78d88b440e1625df6693dab0f",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineAstronautCharacter.h",
+          "exists": true,
+          "expected_sha256": "132354135ba2c210e6eb90882c629d5a5727643fa9aaad65f468e98bf5025a5e",
+          "current_sha256": "132354135ba2c210e6eb90882c629d5a5727643fa9aaad65f468e98bf5025a5e",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineEVAGameMode.h",
+          "exists": true,
+          "expected_sha256": "fefe1c6bfd914f3e4488dcf9b9e431abec9c07fb91fa5df823f488ec3278725c",
+          "current_sha256": "fefe1c6bfd914f3e4488dcf9b9e431abec9c07fb91fa5df823f488ec3278725c",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineEVAImportLibrary.h",
+          "exists": true,
+          "expected_sha256": "0bb66743650c3a8bf3a38d4f3267afde9eefa56353e7a5ab50c07a5980afa295",
+          "current_sha256": "0bb66743650c3a8bf3a38d4f3267afde9eefa56353e7a5ab50c07a5980afa295",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineMusicSettings.h",
+          "exists": true,
+          "expected_sha256": "0c8182315852d60c2dd54307f9c397b20a75391c12353e51c575d9d7bae7e889",
+          "current_sha256": "0c8182315852d60c2dd54307f9c397b20a75391c12353e51c575d9d7bae7e889",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineMusicSubsystem.h",
+          "exists": true,
+          "expected_sha256": "9b588e9a76e2e2bd70d1aff3fc293d5b43516f9a0bbf68dc24ceb99229bec19a",
+          "current_sha256": "9b588e9a76e2e2bd70d1aff3fc293d5b43516f9a0bbf68dc24ceb99229bec19a",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlinePrologueDirector.h",
+          "exists": true,
+          "expected_sha256": "13adbf7b541f4cbb63f2094b9849284489d94fbd351f1775763e66099981bd5c",
+          "current_sha256": "13adbf7b541f4cbb63f2094b9849284489d94fbd351f1775763e66099981bd5c",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Redline.Build.cs",
+          "exists": true,
+          "expected_sha256": "b28d908ee32c134303c992d379ed5d33927cf19011101565ea07f0696bf04cca",
+          "current_sha256": "b28d908ee32c134303c992d379ed5d33927cf19011101565ea07f0696bf04cca",
+          "matches": true
+        },
+        {
+          "path": "Source/RedlineEditor.Target.cs",
+          "exists": true,
+          "expected_sha256": "4ec2bea5e826fd72260f68b00702b3a17307d5c9d349817f538e682160d0e130",
+          "current_sha256": "4ec2bea5e826fd72260f68b00702b3a17307d5c9d349817f538e682160d0e130",
+          "matches": true
+        }
+      ]
+    },
+    "cache_inputs": {
+      "all_match": false,
+      "files": [
+        {
+          "path": "Config/DefaultEngine.ini",
+          "exists": true,
+          "expected_sha256": "9e3544cc5e34b55e79796d871bae764c8a6f1cf65f0234908d4f142a6a265222",
+          "current_sha256": "6e7afe18af3b23943b51c9aa69b582ca0469e50e4c6d974c4f85e493461a6fcf",
+          "matches": false
+        },
+        {
+          "path": "Config/DefaultGame.ini",
+          "exists": true,
+          "expected_sha256": "4bbc4c2a2b59dcd4083fd3dc9b7c893890371db8c77884d55ed359261b7a83a5",
+          "current_sha256": "4bbc4c2a2b59dcd4083fd3dc9b7c893890371db8c77884d55ed359261b7a83a5",
+          "matches": true
+        },
+        {
+          "path": "Config/DefaultInput.ini",
+          "exists": true,
+          "expected_sha256": "057cac3bcaee5ac375c8f34a31e632c0a0319c9a59763f44151028f594054536",
+          "current_sha256": "057cac3bcaee5ac375c8f34a31e632c0a0319c9a59763f44151028f594054536",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/RedlineBridge.uplugin",
+          "exists": true,
+          "expected_sha256": "322585596e2a46c4d6b7473d511cb6b956d8f6e01b0730dc09114349b163be10",
+          "current_sha256": "322585596e2a46c4d6b7473d511cb6b956d8f6e01b0730dc09114349b163be10",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineBridgeModule.cpp",
+          "exists": true,
+          "expected_sha256": "229686d8d94764bf15c37eb9208e5f82e68d70e833a79de56326540657e6a3f1",
+          "current_sha256": "229686d8d94764bf15c37eb9208e5f82e68d70e833a79de56326540657e6a3f1",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineBridgeSubsystem.cpp",
+          "exists": true,
+          "expected_sha256": "34889b622c0e89952ffb1dfe8fe6c852c910c5e5f74e12515af822b7767dca65",
+          "current_sha256": "34889b622c0e89952ffb1dfe8fe6c852c910c5e5f74e12515af822b7767dca65",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineCoords.cpp",
+          "exists": true,
+          "expected_sha256": "4c64d436ad7caccec83d98ffaf095fbdade5e51687b53f9ed864f02c908cf0eb",
+          "current_sha256": "4c64d436ad7caccec83d98ffaf095fbdade5e51687b53f9ed864f02c908cf0eb",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineEVAData.cpp",
+          "exists": true,
+          "expected_sha256": "85a2efd16e7bb764da46bb44c158130f646ffb8805bb3303ae1858d6a70ba498",
+          "current_sha256": "85a2efd16e7bb764da46bb44c158130f646ffb8805bb3303ae1858d6a70ba498",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineOverlay.cpp",
+          "exists": true,
+          "expected_sha256": "bd082ad3f4e721f75debbcf0a8b177aedf8a52094fcb4afaccd9496647a4c791",
+          "current_sha256": "bd082ad3f4e721f75debbcf0a8b177aedf8a52094fcb4afaccd9496647a4c791",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineRoverActor.cpp",
+          "exists": true,
+          "expected_sha256": "e94be0f3a715d9fbb4c9220a62e5d744108e91719e67a345fff0f61ee829bb25",
+          "current_sha256": "e94be0f3a715d9fbb4c9220a62e5d744108e91719e67a345fff0f61ee829bb25",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineStaleMonitor.cpp",
+          "exists": true,
+          "expected_sha256": "ea32e136c19ca3c6afd342656baecc792351bfc963dba9214836771fac8920cf",
+          "current_sha256": "ea32e136c19ca3c6afd342656baecc792351bfc963dba9214836771fac8920cf",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/RedlineTypes.cpp",
+          "exists": true,
+          "expected_sha256": "0795756f4f9694653451b6a0f533b55afb99534d90de3c764fc6397479052a6b",
+          "current_sha256": "0795756f4f9694653451b6a0f533b55afb99534d90de3c764fc6397479052a6b",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/Tests/RedlineContractTests.cpp",
+          "exists": true,
+          "expected_sha256": "d76977bd331a4ac7e80a1a27a42206b79dd0437379d58344ae6b353e0949bc83",
+          "current_sha256": "d76977bd331a4ac7e80a1a27a42206b79dd0437379d58344ae6b353e0949bc83",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Private/Tests/RedlineEVATests.cpp",
+          "exists": true,
+          "expected_sha256": "6f9a7de2cd36caa0e251d188d6e233bb5aab2b2bc79026655aa7b7c755c7b580",
+          "current_sha256": "6f9a7de2cd36caa0e251d188d6e233bb5aab2b2bc79026655aa7b7c755c7b580",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineBridgeSubsystem.h",
+          "exists": true,
+          "expected_sha256": "e90c5bc74f16c6fbe5aec74be2671afd0d68a086045cb4d8234ced69fc0d8451",
+          "current_sha256": "e90c5bc74f16c6fbe5aec74be2671afd0d68a086045cb4d8234ced69fc0d8451",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineCoords.h",
+          "exists": true,
+          "expected_sha256": "855ed0e868c1678e00c5f3619417022564f19554af75ff22f051f59001af8279",
+          "current_sha256": "855ed0e868c1678e00c5f3619417022564f19554af75ff22f051f59001af8279",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineEVAData.h",
+          "exists": true,
+          "expected_sha256": "8190fe43725f38122b6c5d53f1ed2d9af46e5ce5ab06c5527dd5dfddfc03b3c6",
+          "current_sha256": "8190fe43725f38122b6c5d53f1ed2d9af46e5ce5ab06c5527dd5dfddfc03b3c6",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineOverlay.h",
+          "exists": true,
+          "expected_sha256": "8539278ce55ced1b5c53ccd1a26613a2ef255be2613a97bd0b9051c922390859",
+          "current_sha256": "8539278ce55ced1b5c53ccd1a26613a2ef255be2613a97bd0b9051c922390859",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineRoverActor.h",
+          "exists": true,
+          "expected_sha256": "30c4db67abb9777e26b4bbad9ed6e9394bdaf73792dacb95939397b1c0ad75e0",
+          "current_sha256": "30c4db67abb9777e26b4bbad9ed6e9394bdaf73792dacb95939397b1c0ad75e0",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineSettings.h",
+          "exists": true,
+          "expected_sha256": "c5ea3f9315cef83503805e7c96852668ae051df7fc8fc41b7d0cac15c693ce7e",
+          "current_sha256": "c5ea3f9315cef83503805e7c96852668ae051df7fc8fc41b7d0cac15c693ce7e",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineStaleMonitor.h",
+          "exists": true,
+          "expected_sha256": "cb529942a1a0e807e09deeef1f764577fcfc4fba930c28aaf78097ac784eebf3",
+          "current_sha256": "cb529942a1a0e807e09deeef1f764577fcfc4fba930c28aaf78097ac784eebf3",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/Public/RedlineTypes.h",
+          "exists": true,
+          "expected_sha256": "3752ec88e9f89eb62ffa9dab83960d7bb20bfbdd5489108b7a784ed9df4656e1",
+          "current_sha256": "3752ec88e9f89eb62ffa9dab83960d7bb20bfbdd5489108b7a784ed9df4656e1",
+          "matches": true
+        },
+        {
+          "path": "Plugins/RedlineBridge/Source/RedlineBridge/RedlineBridge.Build.cs",
+          "exists": true,
+          "expected_sha256": "328b4b0a67098cfa140b671918d02287d12757635c4d77b8597810126754b4b7",
+          "current_sha256": "328b4b0a67098cfa140b671918d02287d12757635c4d77b8597810126754b4b7",
+          "matches": true
+        },
+        {
+          "path": "Redline.uproject",
+          "exists": true,
+          "expected_sha256": "4992806cf5e7fb9fcbdbb3c02d93a8fb09831751da8cc46b3d7d618f7839de53",
+          "current_sha256": "4992806cf5e7fb9fcbdbb3c02d93a8fb09831751da8cc46b3d7d618f7839de53",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline.Target.cs",
+          "exists": true,
+          "expected_sha256": "c4d84163943de9bb34caca3c8f045ac4b542240102de6499ff846e5483a51894",
+          "current_sha256": "c4d84163943de9bb34caca3c8f045ac4b542240102de6499ff846e5483a51894",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Redline.cpp",
+          "exists": true,
+          "expected_sha256": "a806775a183593886c4d4c3b9f53816530beae965c6ad921709ce3643b8e45a8",
+          "current_sha256": "a806775a183593886c4d4c3b9f53816530beae965c6ad921709ce3643b8e45a8",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineAstronautCharacter.cpp",
+          "exists": true,
+          "expected_sha256": "bc09d18af8bed058361bf5047ac7da82532f016153e6638bc1fbc4d057b13625",
+          "current_sha256": "bc09d18af8bed058361bf5047ac7da82532f016153e6638bc1fbc4d057b13625",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineEVAGameMode.cpp",
+          "exists": true,
+          "expected_sha256": "17d162693d12d8526b7b8a154d16d77b4770288dcf87beff8aae7da8518f6aa4",
+          "current_sha256": "17d162693d12d8526b7b8a154d16d77b4770288dcf87beff8aae7da8518f6aa4",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineEVAImportLibrary.cpp",
+          "exists": true,
+          "expected_sha256": "4951749ff2f1b203cf18e29dcd5bf3dc08e1476e6f4a5b1f6f85d1ca7a1ce7e7",
+          "current_sha256": "4951749ff2f1b203cf18e29dcd5bf3dc08e1476e6f4a5b1f6f85d1ca7a1ce7e7",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlineMusicSubsystem.cpp",
+          "exists": true,
+          "expected_sha256": "47b8d9697001c9272a9cb976a6f6616b1e58ffc0b75ec869c14dfaa95dcf2a89",
+          "current_sha256": "47b8d9697001c9272a9cb976a6f6616b1e58ffc0b75ec869c14dfaa95dcf2a89",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/RedlinePrologueDirector.cpp",
+          "exists": true,
+          "expected_sha256": "7890929af2324f808357ad77a9559b840e32ce9c8d7d2fec6e74638656b87d01",
+          "current_sha256": "7890929af2324f808357ad77a9559b840e32ce9c8d7d2fec6e74638656b87d01",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineEVAAssetTests.cpp",
+          "exists": true,
+          "expected_sha256": "51560ea8e7eb2fba6668027d310e75bd878d065d8fa7cba4af3dcebe815792ed",
+          "current_sha256": "51560ea8e7eb2fba6668027d310e75bd878d065d8fa7cba4af3dcebe815792ed",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineEVAPoseTests.cpp",
+          "exists": true,
+          "expected_sha256": "20ca48b20eb076f9301ac1f2f2aa0586bb84867b17f45c974ab94a7c98f80537",
+          "current_sha256": "20ca48b20eb076f9301ac1f2f2aa0586bb84867b17f45c974ab94a7c98f80537",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineInteriorTests.cpp",
+          "exists": true,
+          "expected_sha256": "8fafad1af47c7271bfe497f1f89b63606540f56a051a4be873c0c32fb4dc0869",
+          "current_sha256": "8fafad1af47c7271bfe497f1f89b63606540f56a051a4be873c0c32fb4dc0869",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineLocomotionTests.cpp",
+          "exists": true,
+          "expected_sha256": "f309186ef7bb54a8fc5735442eb441efa6feb25f93f2727932132b952fb854f3",
+          "current_sha256": "f309186ef7bb54a8fc5735442eb441efa6feb25f93f2727932132b952fb854f3",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineMusicTests.cpp",
+          "exists": true,
+          "expected_sha256": "b6d2fae4baafc0c05950510580d28ff32bb916698ef7665d4a08f5b9a6459ea3",
+          "current_sha256": "b6d2fae4baafc0c05950510580d28ff32bb916698ef7665d4a08f5b9a6459ea3",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlinePrologueTests.cpp",
+          "exists": true,
+          "expected_sha256": "0cbf3474c7a1e2f705d0c24631e11a768f7ecae566581559478b2c9007dce6be",
+          "current_sha256": "0cbf3474c7a1e2f705d0c24631e11a768f7ecae566581559478b2c9007dce6be",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Private/Tests/RedlineSeatedPoseTests.cpp",
+          "exists": true,
+          "expected_sha256": "bcc7c0d223275d0db1a503fa99376855852dcae78d88b440e1625df6693dab0f",
+          "current_sha256": "bcc7c0d223275d0db1a503fa99376855852dcae78d88b440e1625df6693dab0f",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineAstronautCharacter.h",
+          "exists": true,
+          "expected_sha256": "132354135ba2c210e6eb90882c629d5a5727643fa9aaad65f468e98bf5025a5e",
+          "current_sha256": "132354135ba2c210e6eb90882c629d5a5727643fa9aaad65f468e98bf5025a5e",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineEVAGameMode.h",
+          "exists": true,
+          "expected_sha256": "fefe1c6bfd914f3e4488dcf9b9e431abec9c07fb91fa5df823f488ec3278725c",
+          "current_sha256": "fefe1c6bfd914f3e4488dcf9b9e431abec9c07fb91fa5df823f488ec3278725c",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineEVAImportLibrary.h",
+          "exists": true,
+          "expected_sha256": "0bb66743650c3a8bf3a38d4f3267afde9eefa56353e7a5ab50c07a5980afa295",
+          "current_sha256": "0bb66743650c3a8bf3a38d4f3267afde9eefa56353e7a5ab50c07a5980afa295",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineMusicSettings.h",
+          "exists": true,
+          "expected_sha256": "0c8182315852d60c2dd54307f9c397b20a75391c12353e51c575d9d7bae7e889",
+          "current_sha256": "0c8182315852d60c2dd54307f9c397b20a75391c12353e51c575d9d7bae7e889",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlineMusicSubsystem.h",
+          "exists": true,
+          "expected_sha256": "9b588e9a76e2e2bd70d1aff3fc293d5b43516f9a0bbf68dc24ceb99229bec19a",
+          "current_sha256": "9b588e9a76e2e2bd70d1aff3fc293d5b43516f9a0bbf68dc24ceb99229bec19a",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Public/RedlinePrologueDirector.h",
+          "exists": true,
+          "expected_sha256": "13adbf7b541f4cbb63f2094b9849284489d94fbd351f1775763e66099981bd5c",
+          "current_sha256": "13adbf7b541f4cbb63f2094b9849284489d94fbd351f1775763e66099981bd5c",
+          "matches": true
+        },
+        {
+          "path": "Source/Redline/Redline.Build.cs",
+          "exists": true,
+          "expected_sha256": "b28d908ee32c134303c992d379ed5d33927cf19011101565ea07f0696bf04cca",
+          "current_sha256": "b28d908ee32c134303c992d379ed5d33927cf19011101565ea07f0696bf04cca",
+          "matches": true
+        },
+        {
+          "path": "Source/RedlineEditor.Target.cs",
+          "exists": true,
+          "expected_sha256": "4ec2bea5e826fd72260f68b00702b3a17307d5c9d349817f538e682160d0e130",
+          "current_sha256": "4ec2bea5e826fd72260f68b00702b3a17307d5c9d349817f538e682160d0e130",
+          "matches": true
+        }
+      ]
+    },
+    "only_runtime_generated_credential_differs": true
+  },
+  "native_automation": {
+    "receipt": {
+      "path": "test-results/firstperson-tests-index.json",
+      "exists": true,
+      "sha256": "5c2200787639d0ed98444bd48a84bfe4964e11d490814d3f767310439cbc56cd",
+      "bytes": 10205,
+      "modified_at_utc": "2026-11-15T00:16:27.914452+00:00"
+    },
+    "status": "RECORDED_PASS",
+    "scope": "Native automation; key holding, audio routing and room traversal require live checks",
+    "report_created_on": "2026.11.15-00.16.27",
+    "tests": [
+      {
+        "name": "Redline.EVA.AstronautFootPose",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.EVA.FieldTileGeometry",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.EVA.FirstAndThirdPerson",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.EVA.InteriorQueryCollision",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.EVA.PersistentSkeletonAndMaterial",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.EVA.RADSourceAndAlert",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.EVA.RedLineUnknownAndFrame",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.EVA.SprintBounds",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.Music.Assets",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.Music.PhaseRouting",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.Music.RuntimePhaseRouting",
+        "state": "Success",
+        "warnings": 0,
+        "errors": 0
+      },
+      {
+        "name": "Redline.Prologue.SeatedPoseGeometry",
+        "state": "Success",
+        "warnings": 1,
+        "errors": 0
+      },
+      {
+        "name": "Redline.Prologue.SeatedPoseIdempotent",
+        "state": "Success",
+        "warnings": 1,
+        "errors": 0
+      },
+      {
+        "name": "Redline.Prologue.SkipRestoresControl",
+        "state": "Success",
+        "warnings": 1,
+        "errors": 0
+      }
+    ],
+    "test_count": 14,
+    "succeeded": 11,
+    "succeeded_with_warnings": 3,
+    "failed": 0,
+    "not_run": 0,
+    "current_build_verified": false,
+    "binding_limit": "Report has no binary digest binding. Current build hashes are recorded separately; passing results remain dated observations."
+  },
+  "scene_import": {
+    "receipt": {
+      "path": "test-results/prologue-import.json",
+      "exists": true,
+      "sha256": "f45ba54740d7c23e0eea5e9404b80513a4738cfe31290876cd6e9846eee9309a",
+      "bytes": 48451,
+      "modified_at_utc": "2026-11-15T00:27:45.487407+00:00"
+    },
+    "scope": "Import, source and scale checks",
+    "status": "RECORDED_PASS",
+    "recorded_at_utc": "2026-11-15T00:27:36.253292+00:00",
+    "reported_passed": true,
+    "recorded_scope": "skippable presentation opening + optional record-player rest; no flight hardware or science data claim",
+    "source_inputs": {
+      "all_match": false,
+      "files": [
+        {
+          "path": "data/engines/BXW/eva-runtime-v1.json",
+          "exists": true,
+          "expected_sha256": "453433cdc50ee7b664b3961c57b59465306ed8e14c0a6b5fa7e3c02bea14dd06",
+          "current_sha256": "453433cdc50ee7b664b3961c57b59465306ed8e14c0a6b5fa7e3c02bea14dd06",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/script.json",
+          "exists": true,
+          "expected_sha256": "82df08894ac4a53b2a4659861dd22b46dafa8df4cf4497742b228edf86784ef3",
+          "current_sha256": "82df08894ac4a53b2a4659861dd22b46dafa8df4cf4497742b228edf86784ef3",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/provenance.json",
+          "exists": true,
+          "expected_sha256": "733199b2cbf5412d66c28631276bc37d67374d00fb7bf125b5b7a0ec25c79d5f",
+          "current_sha256": "733199b2cbf5412d66c28631276bc37d67374d00fb7bf125b5b7a0ec25c79d5f",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/voice_provenance.json",
+          "exists": true,
+          "expected_sha256": "d759f0486592d1d784e0fb1594a05ddb09d4ef8942cd550f11b8896231bdb48f",
+          "current_sha256": "d759f0486592d1d784e0fb1594a05ddb09d4ef8942cd550f11b8896231bdb48f",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/audio_provenance.json",
+          "exists": true,
+          "expected_sha256": "61a5c6db1708e2bf754ccd84b7da4330d5b15b4ce7c7999f1b22628a2cc18957",
+          "current_sha256": "61a5c6db1708e2bf754ccd84b7da4330d5b15b4ce7c7999f1b22628a2cc18957",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/airlock.wav",
+          "exists": true,
+          "expected_sha256": "9c81838b388aea74738c473aa2f159983d776767540506431de627dd76dee280",
+          "current_sha256": "9c81838b388aea74738c473aa2f159983d776767540506431de627dd76dee280",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/airlock.wav",
+          "exists": true,
+          "expected_sha256": "f9c7afa7ba60bc20a4c14c92cf3a82af7fdfde57447271dad6cd9ef59123f2f0",
+          "current_sha256": "f9c7afa7ba60bc20a4c14c92cf3a82af7fdfde57447271dad6cd9ef59123f2f0",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/airlock_door.wav",
+          "exists": true,
+          "expected_sha256": "9ee993a3b58395443a7858fcc451c2c28549858d1146d7813396735da9c9a706",
+          "current_sha256": "9ee993a3b58395443a7858fcc451c2c28549858d1146d7813396735da9c9a706",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/airlock_pressure.wav",
+          "exists": true,
+          "expected_sha256": "80910794c1d101da5ec0f242041eca53fefb947b16ed0b85c5a2187f543b92be",
+          "current_sha256": "80910794c1d101da5ec0f242041eca53fefb947b16ed0b85c5a2187f543b92be",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/data.wav",
+          "exists": true,
+          "expected_sha256": "2fe0c69d372202b0561c6f1079de91d1f0a1843b9c7cb8963bdd18dd88508e1c",
+          "current_sha256": "2fe0c69d372202b0561c6f1079de91d1f0a1843b9c7cb8963bdd18dd88508e1c",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/data.wav",
+          "exists": true,
+          "expected_sha256": "3ea8a5e4bc5a89d4516f1b7a08056b7548cb2302e5b1e94b9cd86cc378bde099",
+          "current_sha256": "3ea8a5e4bc5a89d4516f1b7a08056b7548cb2302e5b1e94b9cd86cc378bde099",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/landing.wav",
+          "exists": true,
+          "expected_sha256": "1f46b56d9436aa0b93d631eb5f2d4ec6badd0b20eeb7ceacf1efa3229dd97b6c",
+          "current_sha256": "1f46b56d9436aa0b93d631eb5f2d4ec6badd0b20eeb7ceacf1efa3229dd97b6c",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/landing.wav",
+          "exists": true,
+          "expected_sha256": "5b0ae4c164cca903c5d80b374faf89cc1738010f4d227fd46c18aa8fd307fe33",
+          "current_sha256": "5b0ae4c164cca903c5d80b374faf89cc1738010f4d227fd46c18aa8fd307fe33",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/landing_thrust.wav",
+          "exists": true,
+          "expected_sha256": "4ca8123377c68dc98c74c25e2b8c0ff2c6251a4511a152c81bdb0a7a863f1212",
+          "current_sha256": "4ca8123377c68dc98c74c25e2b8c0ff2c6251a4511a152c81bdb0a7a863f1212",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/mission_debrief.wav",
+          "exists": true,
+          "expected_sha256": "f272991e033b9a817bef7c060b33b4c8cc1b0c759d2e4f360c0d70bd621d6cf6",
+          "current_sha256": "f272991e033b9a817bef7c060b33b4c8cc1b0c759d2e4f360c0d70bd621d6cf6",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/mission_debrief.wav",
+          "exists": true,
+          "expected_sha256": "5f06b63b86387ea44afa6c0869297a083c0310af2f19d3b43bdb09ffdb92ace8",
+          "current_sha256": "5f06b63b86387ea44afa6c0869297a083c0310af2f19d3b43bdb09ffdb92ace8",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/mission_return.wav",
+          "exists": true,
+          "expected_sha256": "6446679f52badea684460ded5b8c4b1aa8d83b0db89c55021b1636e7e5a5b52b",
+          "current_sha256": "6446679f52badea684460ded5b8c4b1aa8d83b0db89c55021b1636e7e5a5b52b",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/mission_return.wav",
+          "exists": true,
+          "expected_sha256": "5e14ae98a29ce9e38b9255543aaad818ee8b02627c51860bdfe9bf8b6a88e682",
+          "current_sha256": "5e14ae98a29ce9e38b9255543aaad818ee8b02627c51860bdfe9bf8b6a88e682",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/mission_science.wav",
+          "exists": true,
+          "expected_sha256": "63dfbc8e4f95759f0ac8843e5d629971c7a1b316c5ff08ce82784b5f9f7bb01f",
+          "current_sha256": "63dfbc8e4f95759f0ac8843e5d629971c7a1b316c5ff08ce82784b5f9f7bb01f",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/mission_science.wav",
+          "exists": true,
+          "expected_sha256": "d3cb2a5da6d1f31345f02a90a7d75d6c9f16ecd27a05e9de7b1603c76a3e527d",
+          "current_sha256": "d3cb2a5da6d1f31345f02a90a7d75d6c9f16ecd27a05e9de7b1603c76a3e527d",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/mission_traverse.wav",
+          "exists": true,
+          "expected_sha256": "4a276299364b06843b63bfbcbc5cb4d3de72d8434c651be27dd49f781d3e0b64",
+          "current_sha256": "4a276299364b06843b63bfbcbc5cb4d3de72d8434c651be27dd49f781d3e0b64",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/mission_traverse.wav",
+          "exists": true,
+          "expected_sha256": "9399ded038727df8070dfbdf3c0840b839713a4b1a4e228c1cdeb75f38b2c41e",
+          "current_sha256": "9399ded038727df8070dfbdf3c0840b839713a4b1a4e228c1cdeb75f38b2c41e",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/ready.wav",
+          "exists": true,
+          "expected_sha256": "d95264985752698d99a7c054fbd24fb9caf6c4e6af1a4ca0951d34d3f06aeaba",
+          "current_sha256": "d95264985752698d99a7c054fbd24fb9caf6c4e6af1a4ca0951d34d3f06aeaba",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/ready.wav",
+          "exists": true,
+          "expected_sha256": "a9882bbef3db3ebe7380869bf4a796b921f2397d14de3a069889f007675b529f",
+          "current_sha256": "a9882bbef3db3ebe7380869bf4a796b921f2397d14de3a069889f007675b529f",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/ready_chime.wav",
+          "exists": true,
+          "expected_sha256": "fbf1d38b94ddd06d24d923cfe512f7512b75fbda467f83d04773400f16629637",
+          "current_sha256": "fbf1d38b94ddd06d24d923cfe512f7512b75fbda467f83d04773400f16629637",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/rest.wav",
+          "exists": true,
+          "expected_sha256": "75334b335c493e35475698ad16b740de2b199834efaf50b765fd8ee07a556037",
+          "current_sha256": "75334b335c493e35475698ad16b740de2b199834efaf50b765fd8ee07a556037",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/rest.wav",
+          "exists": true,
+          "expected_sha256": "9661d1f2694f557b1f53ca4ddb6385f57663b904d0b747b0286db0e8456b921f",
+          "current_sha256": "9661d1f2694f557b1f53ca4ddb6385f57663b904d0b747b0286db0e8456b921f",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/vardiya_arasi_jazz.wav",
+          "exists": true,
+          "expected_sha256": "f93f4f94e258250c6bd03225d9128a135fe5e51180e59f563eeba5660853d1e5",
+          "current_sha256": "f93f4f94e258250c6bd03225d9128a135fe5e51180e59f563eeba5660853d1e5",
+          "matches": true
+        },
+        {
+          "path": "data/engines/prologue-tripo-v1/anchors.json",
+          "exists": true,
+          "expected_sha256": "e069d25d94b1d71e5410f8d0bf915c303b07a80a3167355a85b8de7791bd4e30",
+          "current_sha256": "e069d25d94b1d71e5410f8d0bf915c303b07a80a3167355a85b8de7791bd4e30",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chet_baker_label.png",
+          "exists": true,
+          "expected_sha256": "6aeca8e83f0a413d0772a238a93ca636e09352c9b3c4206c606a674fd5d4a375",
+          "current_sha256": "6aeca8e83f0a413d0772a238a93ca636e09352c9b3c4206c606a674fd5d4a375",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chet_baker_sleeve.png",
+          "exists": true,
+          "expected_sha256": "656d88fd42e278459c66fcc87da18d0526d4ff467ab4cf60ecc60e50c9bd795e",
+          "current_sha256": "656d88fd42e278459c66fcc87da18d0526d4ff467ab4cf60ecc60e50c9bd795e",
+          "matches": true
+        },
+        {
+          "path": "scripts/prepare_command_rooms.py",
+          "exists": true,
+          "expected_sha256": "b05328d130e03057b2dfe91aa8bc3cd4e14d763e3c8a5d0a050825ee8a5aad4b",
+          "current_sha256": "f79803a0379f4eebce6869a87028c9a4a2955f257a1502ee5f82a967e9e85aba",
+          "matches": false
+        }
+      ]
+    },
+    "map": "/Game/EVAFixtures/BXW_EVA",
+    "narration_method": "Chatterbox Multilingual V3 local CUDA synthetic Turkish voice",
+    "narrative_duration_s": 62.0,
+    "mission_intros": [
+      {
+        "id": "mission_traverse",
+        "phase": 2,
+        "duration_s": 9
+      },
+      {
+        "id": "mission_science",
+        "phase": 3,
+        "duration_s": 9
+      },
+      {
+        "id": "mission_return",
+        "phase": 4,
+        "duration_s": 8
+      },
+      {
+        "id": "mission_debrief",
+        "phase": 6,
+        "duration_s": 9
+      }
+    ],
+    "player_start_map_xyz_m": [
+      285.1,
+      -456.0,
+      -3580.0709736436843
+    ],
+    "airlock": {
+      "extent_end_x_cm": 900,
+      "source": "Tripo prologue_airlock",
+      "floor_anchor_cm": 31.022491315254722,
+      "dimensions_cm": [
+        300,
+        240,
+        280
+      ],
+      "minimum_portal_width_cm": 94,
+      "pressure_simulation": false
+    },
+    "imported_tripo_assets": [
+      {
+        "id": "prologue_turntable",
+        "unit_error_cm": 6.67572021484375e-06,
+        "triangles": 78603,
+        "source_sha256": "94990c6af5ff50bfa63ecb145a13ebc82ef03c2fe49c9988fb88ff666bc87aba"
+      },
+      {
+        "id": "prologue_lounge",
+        "unit_error_cm": 3.0517578125e-05,
+        "triangles": 78605,
+        "source_sha256": "42be495306c8317965afc6b811f836e10b3cef2de2f2f3f626add01c8bd281fb"
+      },
+      {
+        "id": "prologue_lander",
+        "unit_error_cm": 6.4849853515625e-05,
+        "triangles": 78605,
+        "source_sha256": "d40e828d10622f9a5eda17653e725533d892057bb38a2fa7bced0cc0c463c60c"
+      },
+      {
+        "id": "prologue_airlock",
+        "unit_error_cm": 6.67572021484375e-06,
+        "triangles": 78590,
+        "source_sha256": "0f32f9ea02db89f2b2c471206bc3a82dfdf3d5bf33a70e08fb2f5ca4d6371326"
+      },
+      {
+        "id": "prologue_command",
+        "unit_error_cm": 3.0517578125e-05,
+        "triangles": 78604,
+        "source_sha256": "eb39048b215ba2e0deb5ce4fb40335f4f777d3466a3ec4218aa69f95d3ffba9e"
+      },
+      {
+        "id": "prologue_lab",
+        "unit_error_cm": 6.103515625e-05,
+        "triangles": 78604,
+        "source_sha256": "c322f5829e53ae42c7c0a5869bd1e839cb021bfdf1c86185b3ef1d2c7d517e01"
+      },
+      {
+        "id": "prologue_corridor",
+        "unit_error_cm": 9.918212890625e-05,
+        "triangles": 78591,
+        "source_sha256": "cb244cd269cfd220b2547e8dd044f8efc9f2cdba09a1f00805a9f1570e18c0b7"
+      }
+    ]
+  },
+  "saved_room_inspection": {
+    "receipt": {
+      "path": "test-results/command-rooms-verification.json",
+      "exists": true,
+      "sha256": "de33300091dc4d72755bdea944ba4db3924ba4ac0c6ef251a454e0fd7fe724d5",
+      "bytes": 18355,
+      "modified_at_utc": "2026-11-15T00:28:21.317047+00:00"
+    },
+    "scope": "Saved asset/map inspection only",
+    "status": "RECORDED_PASS",
+    "recorded_at_utc": "2026-11-15T00:28:20.923980+00:00",
+    "reported_passed": true,
+    "recorded_scope": "saved map/asset/source inspection only; no gameplay, pressure, audio-device or rendered-look acceptance",
+    "source_inputs": {
+      "all_match": true,
+      "files": [
+        {
+          "path": "data/engines/BXW/eva-runtime-v1.json",
+          "exists": true,
+          "expected_sha256": "453433cdc50ee7b664b3961c57b59465306ed8e14c0a6b5fa7e3c02bea14dd06",
+          "current_sha256": "453433cdc50ee7b664b3961c57b59465306ed8e14c0a6b5fa7e3c02bea14dd06",
+          "matches": true
+        },
+        {
+          "path": "test-results/prologue-import.json",
+          "exists": true,
+          "expected_sha256": "f45ba54740d7c23e0eea5e9404b80513a4738cfe31290876cd6e9846eee9309a",
+          "current_sha256": "f45ba54740d7c23e0eea5e9404b80513a4738cfe31290876cd6e9846eee9309a",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/script.json",
+          "exists": true,
+          "expected_sha256": "82df08894ac4a53b2a4659861dd22b46dafa8df4cf4497742b228edf86784ef3",
+          "current_sha256": "82df08894ac4a53b2a4659861dd22b46dafa8df4cf4497742b228edf86784ef3",
+          "matches": true
+        },
+        {
+          "path": "data/engines/prologue-tripo-v1/anchors.json",
+          "exists": true,
+          "expected_sha256": "e069d25d94b1d71e5410f8d0bf915c303b07a80a3167355a85b8de7791bd4e30",
+          "current_sha256": "e069d25d94b1d71e5410f8d0bf915c303b07a80a3167355a85b8de7791bd4e30",
+          "matches": true
+        },
+        {
+          "path": "assets/narrative/prologue_v1/chatterbox/provenance.json",
+          "exists": true,
+          "expected_sha256": "733199b2cbf5412d66c28631276bc37d67374d00fb7bf125b5b7a0ec25c79d5f",
+          "current_sha256": "733199b2cbf5412d66c28631276bc37d67374d00fb7bf125b5b7a0ec25c79d5f",
+          "matches": true
+        }
+      ]
+    },
+    "checks": [
+      {
+        "name": "unique actor: prologue_room_command",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_rest",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_lab",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_visual_command",
+        "passed": true
+      },
+      {
+        "name": "dedicated Tripo room with human query collision: command",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_visual_lab",
+        "passed": true
+      },
+      {
+        "name": "dedicated Tripo room with human query collision: lab",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_corridor_visual",
+        "passed": true
+      },
+      {
+        "name": "dedicated Tripo connection corridor",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_door_command",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_door_rest",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_door_lab",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_door_airlock",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_room_door_exit",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_airlock_visual",
+        "passed": true
+      },
+      {
+        "name": "separate Tripo airlock with two independent door actors",
+        "passed": true
+      },
+      {
+        "name": "derived airlock has two open end portals",
+        "passed": true
+      },
+      {
+        "name": "three independent room door actors",
+        "passed": true
+      },
+      {
+        "name": "room door movable visual: command",
+        "passed": true
+      },
+      {
+        "name": "room door movable visual: rest",
+        "passed": true
+      },
+      {
+        "name": "room door movable visual: lab",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_traverse_start",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_traverse_end",
+        "passed": true
+      },
+      {
+        "name": "finite independent camera pair: mission_traverse",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_science_start",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_science_end",
+        "passed": true
+      },
+      {
+        "name": "finite independent camera pair: mission_science",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_return_start",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_return_end",
+        "passed": true
+      },
+      {
+        "name": "finite independent camera pair: mission_return",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_debrief_start",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_cam_mission_debrief_end",
+        "passed": true
+      },
+      {
+        "name": "finite independent camera pair: mission_debrief",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_command_screen",
+        "passed": true
+      },
+      {
+        "name": "command screen uses live display material",
+        "passed": true
+      },
+      {
+        "name": "live display supports freshness blanking",
+        "passed": true
+      },
+      {
+        "name": "unique actor: prologue_mission_board",
+        "passed": true
+      },
+      {
+        "name": "mission board has readable text material",
+        "passed": true
+      },
+      {
+        "name": "one PlayerStart",
+        "passed": true
+      },
+      {
+        "name": "PlayerStart inside command room above floor",
+        "passed": true
+      },
+      {
+        "name": "PlayerStart near ROS briefing goal",
+        "passed": true
+      },
+      {
+        "name": "one room floor matching generated-floor availability: command",
+        "passed": true
+      },
+      {
+        "name": "one room floor matching generated-floor availability: lab",
+        "passed": true
+      },
+      {
+        "name": "pre-build room terrain probes clear the deck",
+        "passed": true
+      },
+      {
+        "name": "nine unique runtime voice/script entries",
+        "passed": true
+      },
+      {
+        "name": "mission intros use existing ROS phases",
+        "passed": true
+      },
+      {
+        "name": "voice provenance matches current nine-entry script",
+        "passed": true
+      },
+      {
+        "name": "all nine narration assets fit and have finite unclipped PCM sources",
+        "passed": true
+      }
+    ],
+    "voices": [
+      {
+        "id": "landing",
+        "passed": true,
+        "sha256": "5b0ae4c164cca903c5d80b374faf89cc1738010f4d227fd46c18aa8fd307fe33",
+        "duration_s": 5.16
+      },
+      {
+        "id": "rest",
+        "passed": true,
+        "sha256": "9661d1f2694f557b1f53ca4ddb6385f57663b904d0b747b0286db0e8456b921f",
+        "duration_s": 4.88
+      },
+      {
+        "id": "data",
+        "passed": true,
+        "sha256": "3ea8a5e4bc5a89d4516f1b7a08056b7548cb2302e5b1e94b9cd86cc378bde099",
+        "duration_s": 7.04
+      },
+      {
+        "id": "airlock",
+        "passed": true,
+        "sha256": "f9c7afa7ba60bc20a4c14c92cf3a82af7fdfde57447271dad6cd9ef59123f2f0",
+        "duration_s": 6.12
+      },
+      {
+        "id": "ready",
+        "passed": true,
+        "sha256": "a9882bbef3db3ebe7380869bf4a796b921f2397d14de3a069889f007675b529f",
+        "duration_s": 4.92
+      },
+      {
+        "id": "mission_traverse",
+        "passed": true,
+        "sha256": "9399ded038727df8070dfbdf3c0840b839713a4b1a4e228c1cdeb75f38b2c41e",
+        "duration_s": 7.8
+      },
+      {
+        "id": "mission_science",
+        "passed": true,
+        "sha256": "d3cb2a5da6d1f31345f02a90a7d75d6c9f16ecd27a05e9de7b1603c76a3e527d",
+        "duration_s": 6.48
+      },
+      {
+        "id": "mission_return",
+        "passed": true,
+        "sha256": "5e14ae98a29ce9e38b9255543aaad818ee8b02627c51860bdfe9bf8b6a88e682",
+        "duration_s": 6.2
+      },
+      {
+        "id": "mission_debrief",
+        "passed": true,
+        "sha256": "5f06b63b86387ea44afa6c0869297a083c0310af2f19d3b43bdb09ffdb92ace8",
+        "duration_s": 7.56
+      }
+    ],
+    "runtime_script": {
+      "recorded_sha256": "1e5c2208914bfffa4e491fe7593373b5f58535cbcf9c56fddc9147181c3dbece",
+      "current_cache_sha256": "1e5c2208914bfffa4e491fe7593373b5f58535cbcf9c56fddc9147181c3dbece",
+      "matches": true
+    }
+  },
+  "sprint_ros": {
+    "receipt": {
+      "path": "test-results/sprint-ros-LjcbbqV7/verification.json",
+      "exists": true,
+      "sha256": "162b2dbf2d1f848e05350b713e180e4190e807ed7cd885740825e536e9c3b702",
+      "bytes": 1585,
+      "modified_at_utc": "2026-11-14T23:36:07.888075+00:00"
+    },
+    "status": "RECORDED_PASS",
+    "scope": "Installed ROS sprint metering and launch, isolated DDS",
+    "workspace": "/home/ahmetefesensoy/.cache/redline/ros/ws-e93609af983c6966-fp0wvg41",
+    "source_tree_sha256": "e93609af983c6966845577cd2742a92d0decd068ef5ed58cae7c0183913a3a4d",
+    "ros_source_snapshot_verified": true,
+    "frozen_core": "/home/ahmetefesensoy/.cache/redline/ros/ws-e93609af983c6966-fp0wvg41/core/redline_core",
+    "frozen_core_verified": true,
+    "colcon_build": {
+      "packages_up_to": "redline_planner",
+      "exit_code": 0,
+      "packages_finished": 6,
+      "seconds": 29.9
+    },
+    "tests": {
+      "seconds": 33.07,
+      "scope": "Installed ev_sim, plan-mode regression, installed T5 thread launch",
+      "isolation_note": "Existing CMake tests include hard-coded live domains87/88, so checks used explicit isolated domains instead.",
+      "full_colcon_test_suite_run": false,
+      "failed": 0,
+      "passed": 16,
+      "junit": "test-results/sprint-ros-LjcbbqV7/installed-node-tests.xml",
+      "domain": 143
+    },
+    "installed_sprint_launch_probe": {
+      "launch_sha256": "f6d25563e993b8579986c3d8c98ad7070bb459c048974f9ab35b397e2393986e",
+      "cap_m_s": 3.0,
+      "node_sha256": "9c7f4495862d520ae3712775643a78b74d6df68efc10a2ccd5b3a28dddac7311",
+      "report": "test-results/sprint-ros-LjcbbqV7/sprint-launch-probe.json",
+      "passed": true,
+      "domain": 144
+    },
+    "current_ros_source_inputs": {
+      "all_match": false,
+      "files": [
+        {
+          "path": "redline_bringup/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "6d8805a2d49d7bd8f146bb9ef659e61c76b13105c4a08981d7e0c61cd8eee838",
+          "current_sha256": "6d8805a2d49d7bd8f146bb9ef659e61c76b13105c4a08981d7e0c61cd8eee838",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/config/bridge.yaml",
+          "exists": true,
+          "expected_sha256": "bd99c78506d4b7ce187258792d1a5ee11123d0ab32c2f5ae527a17ee5a259d9c",
+          "current_sha256": "bd99c78506d4b7ce187258792d1a5ee11123d0ab32c2f5ae527a17ee5a259d9c",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/launch/__pycache__/simulation.launch.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "06b00430d05ccdbdad481290dd08bd8882f1bee0de0b794aba934d0a66d79393",
+          "current_sha256": "06b00430d05ccdbdad481290dd08bd8882f1bee0de0b794aba934d0a66d79393",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/launch/simulation.launch.py",
+          "exists": true,
+          "expected_sha256": "c615bd264a9d35a8124627aa87ee4aaa5dbff059240f2bf568cafabd9a728641",
+          "current_sha256": "c615bd264a9d35a8124627aa87ee4aaa5dbff059240f2bf568cafabd9a728641",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/package.xml",
+          "exists": true,
+          "expected_sha256": "1b5780c550553f45abc07f02e5241434fa4d543ea03c156894fa9f3508e7aff3",
+          "current_sha256": "1b5780c550553f45abc07f02e5241434fa4d543ea03c156894fa9f3508e7aff3",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/scripts/__pycache__/cmd_watchdog.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "fd1d0817fffb72cd7ea25300d121226ae109d37d0ab08e54176c6d7a84f8ab16",
+          "current_sha256": "fd1d0817fffb72cd7ea25300d121226ae109d37d0ab08e54176c6d7a84f8ab16",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/scripts/__pycache__/verify_navigation.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "efd30171152ad1bf0d691ec45247db0ce117d4660deeec84f9fe60dad0281563",
+          "current_sha256": "efd30171152ad1bf0d691ec45247db0ce117d4660deeec84f9fe60dad0281563",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/scripts/cmd_watchdog.py",
+          "exists": true,
+          "expected_sha256": "45107aa83bff8a76243aa77f154f05fe281bb0ada57ec7fc2fe0f8bd8fd0f1c9",
+          "current_sha256": "45107aa83bff8a76243aa77f154f05fe281bb0ada57ec7fc2fe0f8bd8fd0f1c9",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/scripts/ground_filter.py",
+          "exists": true,
+          "expected_sha256": "d88e791a757368c147abdacd1145eb80811c16708d3073f2113ef7cf0fdd7679",
+          "current_sha256": "d88e791a757368c147abdacd1145eb80811c16708d3073f2113ef7cf0fdd7679",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/scripts/verify_navigation.py",
+          "exists": true,
+          "expected_sha256": "81f44f44b5bfe1b0bdab3a6f4aa66457e9959edf469fb0b0f18dc9b5c3269c56",
+          "current_sha256": "81f44f44b5bfe1b0bdab3a6f4aa66457e9959edf469fb0b0f18dc9b5c3269c56",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/src/rviz_goal_observer.cpp",
+          "exists": true,
+          "expected_sha256": "033d8f0aed216a8c2bbd8b5abfa11f1d5ce11ddc0fa2829763b9b4c08651c301",
+          "current_sha256": "033d8f0aed216a8c2bbd8b5abfa11f1d5ce11ddc0fa2829763b9b4c08651c301",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/__pycache__/test_goal_observer.cpython-312-pytest-7.4.4.pyc",
+          "exists": true,
+          "expected_sha256": "b04986264338c59f457fdefe505d7070e5f4ab48b335e5a30cddd27d3dbf4dc8",
+          "current_sha256": "b04986264338c59f457fdefe505d7070e5f4ab48b335e5a30cddd27d3dbf4dc8",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/__pycache__/test_navigation_verifier.cpython-312-pytest-7.4.4.pyc",
+          "exists": true,
+          "expected_sha256": "924ab2dce03b1cddae9f89b0145a32d3f95f6611b336e4309b1ad8956add2db2",
+          "current_sha256": "924ab2dce03b1cddae9f89b0145a32d3f95f6611b336e4309b1ad8956add2db2",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/__pycache__/test_watchdog.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "7ac4c655b03e8f363fd4f0e1a93a850adad9f49d6c5f4a09c36bbe22bbd94779",
+          "current_sha256": "7ac4c655b03e8f363fd4f0e1a93a850adad9f49d6c5f4a09c36bbe22bbd94779",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/test_collision_limit.py",
+          "exists": true,
+          "expected_sha256": "b59eca03db3f3bb30e88039b44210671ee3372fe153add962933b9b727ba5c13",
+          "current_sha256": "b59eca03db3f3bb30e88039b44210671ee3372fe153add962933b9b727ba5c13",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/test_goal_observer.py",
+          "exists": true,
+          "expected_sha256": "beca6688b2377d5ca09adddc78f15842479e30073badb2b700186ceeed476447",
+          "current_sha256": "beca6688b2377d5ca09adddc78f15842479e30073badb2b700186ceeed476447",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/test_ground_filter.py",
+          "exists": true,
+          "expected_sha256": "67c4bbec080c29748947bbcc6d0541150911b1e90560fc22f03cb030d86e2069",
+          "current_sha256": "67c4bbec080c29748947bbcc6d0541150911b1e90560fc22f03cb030d86e2069",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/test_navigation_verifier.py",
+          "exists": true,
+          "expected_sha256": "8fa7cdbac649dda6a6dc3aab3a40a1dae79ab6614026b1c0f7ef631a66a02dd1",
+          "current_sha256": "8fa7cdbac649dda6a6dc3aab3a40a1dae79ab6614026b1c0f7ef631a66a02dd1",
+          "matches": true
+        },
+        {
+          "path": "redline_bringup/test/test_watchdog.py",
+          "exists": true,
+          "expected_sha256": "b950a58a6100a19f7b9b8c439389fab8a4f7a664853eee5e610fddd4523f3bb1",
+          "current_sha256": "b950a58a6100a19f7b9b8c439389fab8a4f7a664853eee5e610fddd4523f3bb1",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "9cd5ba2832d189f482e11aac1021c51427940c7c5e5ec3cf816a1dab3605528e",
+          "current_sha256": "9cd5ba2832d189f482e11aac1021c51427940c7c5e5ec3cf816a1dab3605528e",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/package.xml",
+          "exists": true,
+          "expected_sha256": "be16d97f9d2f804b4decb2370800dd9b49d7f497f81eded1310d75f92ebeadc4",
+          "current_sha256": "be16d97f9d2f804b4decb2370800dd9b49d7f497f81eded1310d75f92ebeadc4",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/redline_crew/__init__.py",
+          "exists": true,
+          "expected_sha256": "b8779afce7aa7a3d0a04597cb3a9a6fe37a49bef1e34af1c74e779f90fb44c52",
+          "current_sha256": "b8779afce7aa7a3d0a04597cb3a9a6fe37a49bef1e34af1c74e779f90fb44c52",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/redline_crew/__pycache__/__init__.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "c0953813a126f5233991db761e590384e51243d6c75d34b68cdcb4d14d6121a5",
+          "current_sha256": "c0953813a126f5233991db761e590384e51243d6c75d34b68cdcb4d14d6121a5",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/redline_crew/__pycache__/ev_sim.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "f043491009dafc1ed5f4916298b517f61762aedbce3ea0fa03b47801f01b0755",
+          "current_sha256": "f043491009dafc1ed5f4916298b517f61762aedbce3ea0fa03b47801f01b0755",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/redline_crew/ev_sim.py",
+          "exists": true,
+          "expected_sha256": "9c7f4495862d520ae3712775643a78b74d6df68efc10a2ccd5b3a28dddac7311",
+          "current_sha256": "9c7f4495862d520ae3712775643a78b74d6df68efc10a2ccd5b3a28dddac7311",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/scripts/ev_sim",
+          "exists": true,
+          "expected_sha256": "f292d7c37b1663c8ed0227978880c965e4bfeaf737430a2cbe5afc8cd6acf6a1",
+          "current_sha256": "f292d7c37b1663c8ed0227978880c965e4bfeaf737430a2cbe5afc8cd6acf6a1",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/test/__pycache__/test_ev_sim.cpython-312-pytest-8.3.5.pyc",
+          "exists": true,
+          "expected_sha256": "c92ee818e4a5b0253a6a96b1d0ed4a36664cd4c5d4353ca3f16948e2abbc8946",
+          "current_sha256": "c92ee818e4a5b0253a6a96b1d0ed4a36664cd4c5d4353ca3f16948e2abbc8946",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/test/__pycache__/test_ev_sim_plan.cpython-312-pytest-8.3.5.pyc",
+          "exists": true,
+          "expected_sha256": "24fea69c0dba9db53c0c1afa9122a1bd1167d795be0a6d88a4c019271534136c",
+          "current_sha256": "24fea69c0dba9db53c0c1afa9122a1bd1167d795be0a6d88a4c019271534136c",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/test/test_ev_sim.py",
+          "exists": true,
+          "expected_sha256": "7ec105023ea26a22896bcef8d17b64c744585bba6cf30c46cce342286ce7e721",
+          "current_sha256": "7ec105023ea26a22896bcef8d17b64c744585bba6cf30c46cce342286ce7e721",
+          "matches": true
+        },
+        {
+          "path": "redline_crew/test/test_ev_sim_plan.py",
+          "exists": true,
+          "expected_sha256": "a0c4557055e1fc1be645d7a27a2f23211edf05aad06e01527f727b5302fcb3fb",
+          "current_sha256": "a0c4557055e1fc1be645d7a27a2f23211edf05aad06e01527f727b5302fcb3fb",
+          "matches": true
+        },
+        {
+          "path": "redline_description/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "55e32903c00ed490759f119bf64d9c5d7cf8c98c2fca307a811f1cb9c928d45b",
+          "current_sha256": "55e32903c00ed490759f119bf64d9c5d7cf8c98c2fca307a811f1cb9c928d45b",
+          "matches": true
+        },
+        {
+          "path": "redline_description/package.xml",
+          "exists": true,
+          "expected_sha256": "38c0c7d29de8aea94fdbfadaf9509d2762b74e988b81890c779b38ac1040b6f1",
+          "current_sha256": "38c0c7d29de8aea94fdbfadaf9509d2762b74e988b81890c779b38ac1040b6f1",
+          "matches": true
+        },
+        {
+          "path": "redline_description/scripts/__pycache__/generate_rover.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "87293f3681ee9aaf4aa8cca2ff64101b4d3a513859f8bd71d278c773599dfd24",
+          "current_sha256": "87293f3681ee9aaf4aa8cca2ff64101b4d3a513859f8bd71d278c773599dfd24",
+          "matches": true
+        },
+        {
+          "path": "redline_description/scripts/__pycache__/stage_delivered_rover.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "a4e8a73f4ccfb12a5205dc29072c77baac580609ccb18b1a41e628c8e23d8079",
+          "current_sha256": "a4e8a73f4ccfb12a5205dc29072c77baac580609ccb18b1a41e628c8e23d8079",
+          "matches": true
+        },
+        {
+          "path": "redline_description/scripts/generate_rover.py",
+          "exists": true,
+          "expected_sha256": "8282cacd3da9d4bf5c6c294aad83c8834b300e1f54cc56cf69455dcccab6dac7",
+          "current_sha256": "8282cacd3da9d4bf5c6c294aad83c8834b300e1f54cc56cf69455dcccab6dac7",
+          "matches": true
+        },
+        {
+          "path": "redline_description/scripts/stage_delivered_rover.py",
+          "exists": true,
+          "expected_sha256": "897ce193d20367c90bb6ce52af587c99e250dd27795d237c7821d5f23a4e16c9",
+          "current_sha256": "897ce193d20367c90bb6ce52af587c99e250dd27795d237c7821d5f23a4e16c9",
+          "matches": true
+        },
+        {
+          "path": "redline_description/test/__pycache__/test_description.cpython-312-pytest-8.3.5.pyc",
+          "exists": true,
+          "expected_sha256": "2e61e2b38d440ed658b512dae6514c0cca0caafd3924bd0963f699bafdef6f38",
+          "current_sha256": "2e61e2b38d440ed658b512dae6514c0cca0caafd3924bd0963f699bafdef6f38",
+          "matches": true
+        },
+        {
+          "path": "redline_description/test/__pycache__/test_description.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "59fd153af505e4e6bd535f676df2571adf980992483b42c6593b4f4056d1f514",
+          "current_sha256": "59fd153af505e4e6bd535f676df2571adf980992483b42c6593b4f4056d1f514",
+          "matches": true
+        },
+        {
+          "path": "redline_description/test/test_delivered_rover.py",
+          "exists": true,
+          "expected_sha256": "263fe72ed672843540cb1600f46e4ce16f6b9dc5eb63d226f07c6f4c06e8b2d1",
+          "current_sha256": "263fe72ed672843540cb1600f46e4ce16f6b9dc5eb63d226f07c6f4c06e8b2d1",
+          "matches": true
+        },
+        {
+          "path": "redline_description/test/test_description.py",
+          "exists": true,
+          "expected_sha256": "d11a591b5a3ae5cdc66dff72ca6d66c7c7a3446f051c75ea1ea903ebe80052e5",
+          "current_sha256": "d11a591b5a3ae5cdc66dff72ca6d66c7c7a3446f051c75ea1ea903ebe80052e5",
+          "matches": true
+        },
+        {
+          "path": "redline_env/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "0d34a09aeb84bf6b09eb5d8e1d4da592b2b0dc0b76adecbf533bc53cce134284",
+          "current_sha256": "0d34a09aeb84bf6b09eb5d8e1d4da592b2b0dc0b76adecbf533bc53cce134284",
+          "matches": true
+        },
+        {
+          "path": "redline_env/package.xml",
+          "exists": true,
+          "expected_sha256": "c7b977c1984f0c97fc3c3001ce33792d78a185ec92d1d69336ee57a56abdcecb",
+          "current_sha256": "c7b977c1984f0c97fc3c3001ce33792d78a185ec92d1d69336ee57a56abdcecb",
+          "matches": true
+        },
+        {
+          "path": "redline_env/redline_env/__init__.py",
+          "exists": true,
+          "expected_sha256": "239ff9690a1797cb01b40a21fdc58350553f1e8662ba9c22b5996d41484a6bdc",
+          "current_sha256": "239ff9690a1797cb01b40a21fdc58350553f1e8662ba9c22b5996d41484a6bdc",
+          "matches": true
+        },
+        {
+          "path": "redline_env/redline_env/env_server.py",
+          "exists": true,
+          "expected_sha256": "09530641f831b7ea5a0099e7e72998030a6e618fdbc867ad38c7c76713406549",
+          "current_sha256": "09530641f831b7ea5a0099e7e72998030a6e618fdbc867ad38c7c76713406549",
+          "matches": true
+        },
+        {
+          "path": "redline_env/redline_env/rad_replay.py",
+          "exists": true,
+          "expected_sha256": "42c838bcc47e3923a5e37fa98bd73e2feefaf6c77e1f5629c450a5b160f8823c",
+          "current_sha256": "42c838bcc47e3923a5e37fa98bd73e2feefaf6c77e1f5629c450a5b160f8823c",
+          "matches": true
+        },
+        {
+          "path": "redline_env/redline_env/scenario_player.py",
+          "exists": true,
+          "expected_sha256": "0876087c31a9030db5ad9d0828b580912b259cc128e2e91ed3f6a9c01974d4b4",
+          "current_sha256": "0876087c31a9030db5ad9d0828b580912b259cc128e2e91ed3f6a9c01974d4b4",
+          "matches": true
+        },
+        {
+          "path": "redline_env/redline_env/scout_stub.py",
+          "exists": true,
+          "expected_sha256": "a3343d2c5ad787ac1bd85c1f4780b061d0085b6d3154f2d0d7108c6a5b66e8d7",
+          "current_sha256": "a3343d2c5ad787ac1bd85c1f4780b061d0085b6d3154f2d0d7108c6a5b66e8d7",
+          "matches": true
+        },
+        {
+          "path": "redline_env/redline_env/sim_clock.py",
+          "exists": true,
+          "expected_sha256": "2ddb702dd908033eb69e361bef90235c38455516a912f74cd846a32251828f39",
+          "current_sha256": "2ddb702dd908033eb69e361bef90235c38455516a912f74cd846a32251828f39",
+          "matches": true
+        },
+        {
+          "path": "redline_env/scripts/env_server",
+          "exists": true,
+          "expected_sha256": "3567544c51f556e02b8c98809b33a6c63df84c700521263412eb4985c1a67128",
+          "current_sha256": "3567544c51f556e02b8c98809b33a6c63df84c700521263412eb4985c1a67128",
+          "matches": true
+        },
+        {
+          "path": "redline_env/scripts/rad_replay",
+          "exists": true,
+          "expected_sha256": "eeae8e04edd7481f5977dbea3e38d49d6166ec9271950ee265b8b864c51d63df",
+          "current_sha256": "eeae8e04edd7481f5977dbea3e38d49d6166ec9271950ee265b8b864c51d63df",
+          "matches": true
+        },
+        {
+          "path": "redline_env/scripts/scenario_player",
+          "exists": true,
+          "expected_sha256": "b237c46a002be6d08bb2bbf28307e04d9acfe63b74d7f1408707fbf87962e36b",
+          "current_sha256": "b237c46a002be6d08bb2bbf28307e04d9acfe63b74d7f1408707fbf87962e36b",
+          "matches": true
+        },
+        {
+          "path": "redline_env/scripts/scout_stub",
+          "exists": true,
+          "expected_sha256": "d62fb54f4853a018fa02eea443474bb6657de73647d2bee38592f61a2f870e3a",
+          "current_sha256": "d62fb54f4853a018fa02eea443474bb6657de73647d2bee38592f61a2f870e3a",
+          "matches": true
+        },
+        {
+          "path": "redline_env/scripts/sim_clock",
+          "exists": true,
+          "expected_sha256": "65c60a2caa15acec3f4f48fb8e9f3e83655c29b5274effc7cda13ed4a4cd9c12",
+          "current_sha256": "65c60a2caa15acec3f4f48fb8e9f3e83655c29b5274effc7cda13ed4a4cd9c12",
+          "matches": true
+        },
+        {
+          "path": "redline_env/test/test_env_server.py",
+          "exists": true,
+          "expected_sha256": "c6f5fc492aa00e0f1f61341cab224c169bde6d716f150e79c22271f9365c72a1",
+          "current_sha256": "c6f5fc492aa00e0f1f61341cab224c169bde6d716f150e79c22271f9365c72a1",
+          "matches": true
+        },
+        {
+          "path": "redline_env/test/test_rad_replay.py",
+          "exists": true,
+          "expected_sha256": "12bfb61a9669eaa2f847a607ae61c11bd60b2092a1471fa76542832451e344cd",
+          "current_sha256": "12bfb61a9669eaa2f847a607ae61c11bd60b2092a1471fa76542832451e344cd",
+          "matches": true
+        },
+        {
+          "path": "redline_env/test/test_scenario_player.py",
+          "exists": true,
+          "expected_sha256": "1ee4af08dcfebc9b91dfd1ad0684337591bd1c05e446bd2076935749bd27a5fe",
+          "current_sha256": "1ee4af08dcfebc9b91dfd1ad0684337591bd1c05e446bd2076935749bd27a5fe",
+          "matches": true
+        },
+        {
+          "path": "redline_env/test/test_scout_stub.py",
+          "exists": true,
+          "expected_sha256": "6f3d49b8ca6a95cc8a533ec1b9a469c1f23bde06a59e5efe1938ab87cf9eee4d",
+          "current_sha256": "6f3d49b8ca6a95cc8a533ec1b9a469c1f23bde06a59e5efe1938ab87cf9eee4d",
+          "matches": true
+        },
+        {
+          "path": "redline_env/test/test_sim_clock.py",
+          "exists": true,
+          "expected_sha256": "37bf1a0ffffe58b7dcd65d1edee9840d66af07f49f6c2dc4b7fa3acc2f3b38a0",
+          "current_sha256": "37bf1a0ffffe58b7dcd65d1edee9840d66af07f49f6c2dc4b7fa3acc2f3b38a0",
+          "matches": true
+        },
+        {
+          "path": "redline_gazebo/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "fcc56abcf8ccec808f3d4a20473640d55c6f334725eff3daae0dd42886693498",
+          "current_sha256": "fcc56abcf8ccec808f3d4a20473640d55c6f334725eff3daae0dd42886693498",
+          "matches": true
+        },
+        {
+          "path": "redline_gazebo/package.xml",
+          "exists": true,
+          "expected_sha256": "20be943bf35f4a998fa46f985cd88aea969fed1d1997804f2cc14790316bedcd",
+          "current_sha256": "20be943bf35f4a998fa46f985cd88aea969fed1d1997804f2cc14790316bedcd",
+          "matches": true
+        },
+        {
+          "path": "redline_gazebo/scripts/__pycache__/prepare_world.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "cf258547bfba7cd870e1f04a7b90b5be0447d4555fa6b4ada0188935540fab9e",
+          "current_sha256": "cf258547bfba7cd870e1f04a7b90b5be0447d4555fa6b4ada0188935540fab9e",
+          "matches": true
+        },
+        {
+          "path": "redline_gazebo/scripts/prepare_world.py",
+          "exists": true,
+          "expected_sha256": "b5fd164574a0237a487aaf8f6177b433913900ea6ce4893f9925a73769b4db41",
+          "current_sha256": "b5fd164574a0237a487aaf8f6177b433913900ea6ce4893f9925a73769b4db41",
+          "matches": true
+        },
+        {
+          "path": "redline_gazebo/test/__pycache__/test_world.cpython-312-pytest-8.3.5.pyc",
+          "exists": true,
+          "expected_sha256": "92b5f3ec500fa224bb5cafa338ac54ac2c0f4acd6bfd2e16b9cab9c0fae8628a",
+          "current_sha256": "92b5f3ec500fa224bb5cafa338ac54ac2c0f4acd6bfd2e16b9cab9c0fae8628a",
+          "matches": true
+        },
+        {
+          "path": "redline_gazebo/test/__pycache__/test_world.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "e23f3d5acb30ee3f6a5eef8ab032ba5c5b461915ef06357d2bf246a99866eea6",
+          "current_sha256": "e23f3d5acb30ee3f6a5eef8ab032ba5c5b461915ef06357d2bf246a99866eea6",
+          "matches": true
+        },
+        {
+          "path": "redline_gazebo/test/test_world.py",
+          "exists": true,
+          "expected_sha256": "7df303aa56f2126f9c455093c97b40290f7d7d67fc5aa839e20d413c08467fb1",
+          "current_sha256": "7df303aa56f2126f9c455093c97b40290f7d7d67fc5aa839e20d413c08467fb1",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "8ec9314599a532f3f71cf1dfdfa631ee4e5a7d86fa3ec747d6586e4797c6056a",
+          "current_sha256": "3371ece54bc3cf926818112ae0546062e729594da68c07a56128704de053dbbc",
+          "matches": false
+        },
+        {
+          "path": "redline_mission/package.xml",
+          "exists": true,
+          "expected_sha256": "e540411fda42f4372e4a3d1c4ed6fc36110604bf411879b6a0e96dcc0ff6e3f7",
+          "current_sha256": "e540411fda42f4372e4a3d1c4ed6fc36110604bf411879b6a0e96dcc0ff6e3f7",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/redline_mission/__init__.py",
+          "exists": true,
+          "expected_sha256": "ee391c44c57997555455fd813c4030c671e584e08d08f02c51bf7d7981080cd7",
+          "current_sha256": "ee391c44c57997555455fd813c4030c671e584e08d08f02c51bf7d7981080cd7",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/redline_mission/cell_store.py",
+          "exists": true,
+          "expected_sha256": "c00e4cab56e6e951e939ccb4e26104c2b9b173718430b1a9f856f60f37f5999a",
+          "current_sha256": "c00e4cab56e6e951e939ccb4e26104c2b9b173718430b1a9f856f60f37f5999a",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/redline_mission/mission_manager.py",
+          "exists": true,
+          "expected_sha256": "bb2a5e282c28c202d4bdd19330de706133bd6ae5c568e01b4d0ce43daf2087b4",
+          "current_sha256": "e975e0c47e1d99e51b2c7160dcb6274eb68316482c8dc55149c7686318983254",
+          "matches": false
+        },
+        {
+          "path": "redline_mission/redline_mission/voi_tasker.py",
+          "exists": true,
+          "expected_sha256": "c2028b3967094ebbc18616f993172e2c5318bb6e79e905457f7802ab3522d558",
+          "current_sha256": "28fc19fd194745881301ae8878db70061533514aeebfd138b42d096e63054f31",
+          "matches": false
+        },
+        {
+          "path": "redline_mission/scripts/cell_store",
+          "exists": true,
+          "expected_sha256": "876997fa5855dcd8aa9667613ae7c9d914732687845d4c561ad1712840b6e324",
+          "current_sha256": "876997fa5855dcd8aa9667613ae7c9d914732687845d4c561ad1712840b6e324",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/scripts/mission_manager",
+          "exists": true,
+          "expected_sha256": "cdb452a74fc5de5b8e78589e9a7d06d9d740be00e8b6fb51e9eda9b525e99e6a",
+          "current_sha256": "cdb452a74fc5de5b8e78589e9a7d06d9d740be00e8b6fb51e9eda9b525e99e6a",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/scripts/voi_tasker",
+          "exists": true,
+          "expected_sha256": "3870b51bc1344ed124a4da868987d04ee09850a3996a5d1786ada41f9414dbe9",
+          "current_sha256": "3870b51bc1344ed124a4da868987d04ee09850a3996a5d1786ada41f9414dbe9",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/test/test_cell_store.py",
+          "exists": true,
+          "expected_sha256": "78a98f0e8045e0c5b91869ccba4a3043dc8fa6d2d126daf286dba870acdd5ae1",
+          "current_sha256": "78a98f0e8045e0c5b91869ccba4a3043dc8fa6d2d126daf286dba870acdd5ae1",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/test/test_eva_intro_node.py",
+          "exists": true,
+          "expected_sha256": "82db67ff2782bac767faa35d4d4a438aca1ceef522e3c050d86246a49c9b5c2d",
+          "current_sha256": "82db67ff2782bac767faa35d4d4a438aca1ceef522e3c050d86246a49c9b5c2d",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/test/test_mission_flow_node.py",
+          "exists": true,
+          "expected_sha256": "dd276f569034ef8536998e9e6ab32294be4a5887f8c9c22f6bc717c1fb2df81f",
+          "current_sha256": "dd276f569034ef8536998e9e6ab32294be4a5887f8c9c22f6bc717c1fb2df81f",
+          "matches": true
+        },
+        {
+          "path": "redline_mission/test/test_mission_precursor_node.py",
+          "exists": true,
+          "expected_sha256": "c71454398c12745b1707f4573978a9da5a7c9473a36fd6d6623772231e8a7036",
+          "current_sha256": "768a922b226c24ec41b03742c6981e1e5398f1b566d6fa52253713f58f144363",
+          "matches": false
+        },
+        {
+          "path": "redline_mission/test/test_voi_tasker.py",
+          "exists": true,
+          "expected_sha256": "167babf56a577d72b43051859c9eebeb178fcca6d4bed183160bbefe74c8f174",
+          "current_sha256": "001e3c3934fbcfcca96acc0ea65481aa02d2d2308d55fd9ac62ca7dbecb731f6",
+          "matches": false
+        },
+        {
+          "path": "redline_msgs/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "5cc1f2321af688212585635bca30ffb76e121b24085cfa19a10d263c667d7b86",
+          "current_sha256": "5cc1f2321af688212585635bca30ffb76e121b24085cfa19a10d263c667d7b86",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/README.md",
+          "exists": true,
+          "expected_sha256": "db35d5bb5510f980b0f09c0d080740a3b1ebbeb41d66ad471bfcf9838a0345b8",
+          "current_sha256": "db35d5bb5510f980b0f09c0d080740a3b1ebbeb41d66ad471bfcf9838a0345b8",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/CacheSample.action",
+          "exists": true,
+          "expected_sha256": "f3b92c13c4bc8f9ca87b1d431360f871419e3f23195c540f43da1220d84b3730",
+          "current_sha256": "f3b92c13c4bc8f9ca87b1d431360f871419e3f23195c540f43da1220d84b3730",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/ContactScience.action",
+          "exists": true,
+          "expected_sha256": "fa6427b0ecce32a20b5f9e6209362fca3ca2f2e63667d6695e377a37a5057ce3",
+          "current_sha256": "fa6427b0ecce32a20b5f9e6209362fca3ca2f2e63667d6695e377a37a5057ce3",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/DeployStation.action",
+          "exists": true,
+          "expected_sha256": "b4e4f3a8902f4cf37932f33b85801cd940ea0e30d98d32ed3be984447cf3fed5",
+          "current_sha256": "b4e4f3a8902f4cf37932f33b85801cd940ea0e30d98d32ed3be984447cf3fed5",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/Drill.action",
+          "exists": true,
+          "expected_sha256": "59e686f713431aa0bd791ec9bb7804e5f58ce2507ebd7c97730b53cc41f2ea79",
+          "current_sha256": "59e686f713431aa0bd791ec9bb7804e5f58ce2507ebd7c97730b53cc41f2ea79",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/ExecuteScout.action",
+          "exists": true,
+          "expected_sha256": "4aa1e472ce4c760c0c2e753beaaf0abad48e01a79a0215b1fec426e252f32594",
+          "current_sha256": "4aa1e472ce4c760c0c2e753beaaf0abad48e01a79a0215b1fec426e252f32594",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/InspectTarget.action",
+          "exists": true,
+          "expected_sha256": "8b617d86c0b49c8da9a00d6280cb6dac2cc3b6bcf12563b79a1b96644b70ca27",
+          "current_sha256": "8b617d86c0b49c8da9a00d6280cb6dac2cc3b6bcf12563b79a1b96644b70ca27",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/MultispectralImage.action",
+          "exists": true,
+          "expected_sha256": "735baf65494620616b32d23413f387967fe3fdd2b78a5676ada3d97f96346219",
+          "current_sha256": "735baf65494620616b32d23413f387967fe3fdd2b78a5676ada3d97f96346219",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/NeutronSurvey.action",
+          "exists": true,
+          "expected_sha256": "67d48d9a367f1ee3f15dbe252ead3b655755f29141ec5e5d5b3b730072e11fba",
+          "current_sha256": "67d48d9a367f1ee3f15dbe252ead3b655755f29141ec5e5d5b3b730072e11fba",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/RemoteLibs.action",
+          "exists": true,
+          "expected_sha256": "65b6172d38a92bc76583d521e1d0e7f2dca8c2963e6cc82e22e00895a0a625d6",
+          "current_sha256": "65b6172d38a92bc76583d521e1d0e7f2dca8c2963e6cc82e22e00895a0a625d6",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/ReturnToShelter.action",
+          "exists": true,
+          "expected_sha256": "55191b37e25cb872caf622f976218d9c13aaa7f4eb9dab689e0f567a8e2cfd8d",
+          "current_sha256": "55191b37e25cb872caf622f976218d9c13aaa7f4eb9dab689e0f567a8e2cfd8d",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/action/SurveyArea.action",
+          "exists": true,
+          "expected_sha256": "cea466fc545964fbff5067cced0167a4f435d3ae61bae20ced1f9c3d3701b9d8",
+          "current_sha256": "cea466fc545964fbff5067cced0167a4f435d3ae61bae20ced1f9c3d3701b9d8",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/Alert.msg",
+          "exists": true,
+          "expected_sha256": "3edf790d1a38d36d3b133e6b84ac5c334141b58053a227993304cb2d85e9e1d1",
+          "current_sha256": "3edf790d1a38d36d3b133e6b84ac5c334141b58053a227993304cb2d85e9e1d1",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/CellDelta.msg",
+          "exists": true,
+          "expected_sha256": "498c218b58bcc9bcf05460abfe5d141961af4498de1a092164b62f24ebf961b2",
+          "current_sha256": "498c218b58bcc9bcf05460abfe5d141961af4498de1a092164b62f24ebf961b2",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/CellState.msg",
+          "exists": true,
+          "expected_sha256": "1e81abe73ef0bd8d83db9f14e1ce5492263cdc36e18f776a0b02f74cbd7c78b8",
+          "current_sha256": "1e81abe73ef0bd8d83db9f14e1ce5492263cdc36e18f776a0b02f74cbd7c78b8",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/CommandOwner.msg",
+          "exists": true,
+          "expected_sha256": "7c73c66ce9bb236b7aaa773da877a9ef1fa0b3ce8621040d550d96cf15431d09",
+          "current_sha256": "7c73c66ce9bb236b7aaa773da877a9ef1fa0b3ce8621040d550d96cf15431d09",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/Consumables.msg",
+          "exists": true,
+          "expected_sha256": "b8af38f9f4c916374720810df389d59f32e41ee189ded307faf0db08b8399cb8",
+          "current_sha256": "b8af38f9f4c916374720810df389d59f32e41ee189ded307faf0db08b8399cb8",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/CrewState.msg",
+          "exists": true,
+          "expected_sha256": "05d45c493cb07d1d94170c831a39f5d533d07f4c516b08569db1150dfcbdb25d",
+          "current_sha256": "05d45c493cb07d1d94170c831a39f5d533d07f4c516b08569db1150dfcbdb25d",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/DecisionRecord.msg",
+          "exists": true,
+          "expected_sha256": "8f75ef9b93e4673d536a97875712b9d52b0a175fad9cfc50bc7d05a719daf69c",
+          "current_sha256": "8f75ef9b93e4673d536a97875712b9d52b0a175fad9cfc50bc7d05a719daf69c",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/DoseRate.msg",
+          "exists": true,
+          "expected_sha256": "c0ee3310885879216fc42af6e06bbe8628feb03a29bd83b1ea6e12158fd03fd2",
+          "current_sha256": "c0ee3310885879216fc42af6e06bbe8628feb03a29bd83b1ea6e12158fd03fd2",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/EVAPlan.msg",
+          "exists": true,
+          "expected_sha256": "c1abcea91685bcc3413054fd1c4f4c696e8bab9488f108c1edd85867f458d33a",
+          "current_sha256": "c1abcea91685bcc3413054fd1c4f4c696e8bab9488f108c1edd85867f458d33a",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/EnvState.msg",
+          "exists": true,
+          "expected_sha256": "b4172c0324601af3cfe5c7e3eabed49324a0c6905d43c2e11bc5683e236d0a4c",
+          "current_sha256": "b4172c0324601af3cfe5c7e3eabed49324a0c6905d43c2e11bc5683e236d0a4c",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/EvidenceRecord.msg",
+          "exists": true,
+          "expected_sha256": "ea2a5cbd9a0e1e07320924bc8c78d7eb139028c68ce798ee88d4230e41fc241f",
+          "current_sha256": "ea2a5cbd9a0e1e07320924bc8c78d7eb139028c68ce798ee88d4230e41fc241f",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/FieldTile.msg",
+          "exists": true,
+          "expected_sha256": "981d6896b00628087e4dddf52129e9d49d44c82acb57192f432b2ff870937c73",
+          "current_sha256": "981d6896b00628087e4dddf52129e9d49d44c82acb57192f432b2ff870937c73",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/InstrumentProduct.msg",
+          "exists": true,
+          "expected_sha256": "85f42365c5821dfba85fcc9fc818046a703b683e6cf4901af5ce4c4e62e61fd9",
+          "current_sha256": "85f42365c5821dfba85fcc9fc818046a703b683e6cf4901af5ce4c4e62e61fd9",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/MarginField.msg",
+          "exists": true,
+          "expected_sha256": "d0d48564bdc628380c071904ccac4ea8376cd71973acfcc2a862040dfbb4f372",
+          "current_sha256": "d0d48564bdc628380c071904ccac4ea8376cd71973acfcc2a862040dfbb4f372",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/MissionState.msg",
+          "exists": true,
+          "expected_sha256": "48e88e0c2ded76f095994d3895153a198964222fe6fd8b5ce8c9af449223aa3d",
+          "current_sha256": "48e88e0c2ded76f095994d3895153a198964222fe6fd8b5ce8c9af449223aa3d",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/PlanLeg.msg",
+          "exists": true,
+          "expected_sha256": "39c7837ff5354bff4c5ced1634c1a41e82b109534de5502322119b3f3eb73377",
+          "current_sha256": "39c7837ff5354bff4c5ced1634c1a41e82b109534de5502322119b3f3eb73377",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/Provenance.msg",
+          "exists": true,
+          "expected_sha256": "d3f2ee322ce8930658327e144ae0b783d591e50a2aa79470deb4032edd53940c",
+          "current_sha256": "d3f2ee322ce8930658327e144ae0b783d591e50a2aa79470deb4032edd53940c",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/RedLine.msg",
+          "exists": true,
+          "expected_sha256": "c1eb9c2e9d496a981c115049ae54d1fd620c40960a1c59d2a2770d5d9190f037",
+          "current_sha256": "c1eb9c2e9d496a981c115049ae54d1fd620c40960a1c59d2a2770d5d9190f037",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/RuleViolation.msg",
+          "exists": true,
+          "expected_sha256": "0bc887dc415dfc0d0f6f079ae26cb12a8b240c98ad1a6a0172eb94faba851987",
+          "current_sha256": "0bc887dc415dfc0d0f6f079ae26cb12a8b240c98ad1a6a0172eb94faba851987",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/SampleRecord.msg",
+          "exists": true,
+          "expected_sha256": "2c3ef8a864dad3efef141b9fe48dc7e48f79739780bc5c49503f1f6c99f316ee",
+          "current_sha256": "2c3ef8a864dad3efef141b9fe48dc7e48f79739780bc5c49503f1f6c99f316ee",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/ScalarField.msg",
+          "exists": true,
+          "expected_sha256": "63b35e0568f3dbcefc05749af6e538c00ebf62e8c2c519776b39b00e7f7ebce7",
+          "current_sha256": "63b35e0568f3dbcefc05749af6e538c00ebf62e8c2c519776b39b00e7f7ebce7",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/msg/Station.msg",
+          "exists": true,
+          "expected_sha256": "708d4de0fe541051aab0460efcceb52b51c1deb108177f72dd8bc9d88e15901d",
+          "current_sha256": "708d4de0fe541051aab0460efcceb52b51c1deb108177f72dd8bc9d88e15901d",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/package.xml",
+          "exists": true,
+          "expected_sha256": "a74d4599022c1e331e937ed2f69136c8b18232fd35e5ee5f00de07688a3e5274",
+          "current_sha256": "a74d4599022c1e331e937ed2f69136c8b18232fd35e5ee5f00de07688a3e5274",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/srv/GetManifest.srv",
+          "exists": true,
+          "expected_sha256": "c597188743c9021514d3d6e313200cc252c875878163fd8ce0145ba38d55a942",
+          "current_sha256": "c597188743c9021514d3d6e313200cc252c875878163fd8ce0145ba38d55a942",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/srv/PlanEva.srv",
+          "exists": true,
+          "expected_sha256": "a36a40e2eef62920a77de99b6a2297ba7482c7d52a1bb368f28640c5b3ff21d0",
+          "current_sha256": "a36a40e2eef62920a77de99b6a2297ba7482c7d52a1bb368f28640c5b3ff21d0",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/srv/QueryCell.srv",
+          "exists": true,
+          "expected_sha256": "09d05b7f90ab2c7486c0305882c4f707a03934e2a374d5284e5da60b9a93c918",
+          "current_sha256": "09d05b7f90ab2c7486c0305882c4f707a03934e2a374d5284e5da60b9a93c918",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/srv/ScenarioControl.srv",
+          "exists": true,
+          "expected_sha256": "41200d384a89a5a234374d5824f147784c5965b5302fd802ad46d64715bc8a3a",
+          "current_sha256": "41200d384a89a5a234374d5824f147784c5965b5302fd802ad46d64715bc8a3a",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/srv/SetCommandOwner.srv",
+          "exists": true,
+          "expected_sha256": "df89c54405703554d44fdabde67e6ebaf5d61d346e270fb633598a888409db46",
+          "current_sha256": "df89c54405703554d44fdabde67e6ebaf5d61d346e270fb633598a888409db46",
+          "matches": true
+        },
+        {
+          "path": "redline_msgs/test/test_interface_contracts.py",
+          "exists": true,
+          "expected_sha256": "f21d93159773ba607282d175726441dd7e448d6c924f1bbfd8015562b8f323c9",
+          "current_sha256": "f21d93159773ba607282d175726441dd7e448d6c924f1bbfd8015562b8f323c9",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "bd961f6cfe0b1b5108cb3216c5691277417a2981388a6eff58cda98ff7def41d",
+          "current_sha256": "bd961f6cfe0b1b5108cb3216c5691277417a2981388a6eff58cda98ff7def41d",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/README.md",
+          "exists": true,
+          "expected_sha256": "2ca45b1714833728aadd94d39d703b54a77cdf08e734d7b1b2d1999ecaeb1030",
+          "current_sha256": "2ca45b1714833728aadd94d39d703b54a77cdf08e734d7b1b2d1999ecaeb1030",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/behavior_trees/navigate_wait_replan.xml",
+          "exists": true,
+          "expected_sha256": "a3432c5261335cd3796da8d8cda2c290ee007f614dbeab872cf8e51ad6821504",
+          "current_sha256": "a3432c5261335cd3796da8d8cda2c290ee007f614dbeab872cf8e51ad6821504",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/config/ekf.yaml",
+          "exists": true,
+          "expected_sha256": "273bb1610e725d30b1ef736ede1f2d55127e8dfb89090246b37d5e07d97bc9a1",
+          "current_sha256": "273bb1610e725d30b1ef736ede1f2d55127e8dfb89090246b37d5e07d97bc9a1",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/config/nav2.yaml",
+          "exists": true,
+          "expected_sha256": "0ebafeb101ddec3ae8744329505ee2b9e2a452b347a43a8df565ae373df8aaf2",
+          "current_sha256": "0ebafeb101ddec3ae8744329505ee2b9e2a452b347a43a8df565ae373df8aaf2",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/include/redline_navigation/path_interpolation.hpp",
+          "exists": true,
+          "expected_sha256": "b22c40056395f071e3c66b175551b7a80d10d1aee1aa678500f1e5d6e8bf0c11",
+          "current_sha256": "b22c40056395f071e3c66b175551b7a80d10d1aee1aa678500f1e5d6e8bf0c11",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/include/redline_navigation/planner_geometry.hpp",
+          "exists": true,
+          "expected_sha256": "49e7f810554c4586d4d2fe192f0467d7e4696422db773aeea5f96a929405a89f",
+          "current_sha256": "49e7f810554c4586d4d2fe192f0467d7e4696422db773aeea5f96a929405a89f",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/launch/__pycache__/navigation.launch.cpython-312.pyc",
+          "exists": true,
+          "expected_sha256": "4c62f5f0091d4cc51cba1ea62a67d3a2ea8c6203720060ab76a5f7e9e832b941",
+          "current_sha256": "4c62f5f0091d4cc51cba1ea62a67d3a2ea8c6203720060ab76a5f7e9e832b941",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/launch/navigation.launch.py",
+          "exists": true,
+          "expected_sha256": "6e496f5dea069c8d084d206c7e12a9b4a50a543d1e3c19c4cd8a5b1c6af86357",
+          "current_sha256": "6e496f5dea069c8d084d206c7e12a9b4a50a543d1e3c19c4cd8a5b1c6af86357",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/package.xml",
+          "exists": true,
+          "expected_sha256": "325d06d9993a2159471eca515a484bccf0ac2ba49257f69d871049062135a1d9",
+          "current_sha256": "325d06d9993a2159471eca515a484bccf0ac2ba49257f69d871049062135a1d9",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/planner_plugin.xml",
+          "exists": true,
+          "expected_sha256": "564dded8f8e670f8fcb13b21a19f0fc4a2c0930c9f98639e1cb6be578f0dd841",
+          "current_sha256": "564dded8f8e670f8fcb13b21a19f0fc4a2c0930c9f98639e1cb6be578f0dd841",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/rviz/navigation.rviz",
+          "exists": true,
+          "expected_sha256": "b47a667f32c293f9853c69ac019b4c34bacc528deb2dd47c33152d325970ae52",
+          "current_sha256": "b47a667f32c293f9853c69ac019b4c34bacc528deb2dd47c33152d325970ae52",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/src/interpolating_planner.cpp",
+          "exists": true,
+          "expected_sha256": "4faec0f82f9c665fff3bbb4b9bb85a3b7d10d2b142f81d1b74899cfbff1c36fa",
+          "current_sha256": "4faec0f82f9c665fff3bbb4b9bb85a3b7d10d2b142f81d1b74899cfbff1c36fa",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/test/__pycache__/test_launch_contracts.cpython-312-pytest-7.4.4.pyc",
+          "exists": true,
+          "expected_sha256": "1f40981620668db3b3c7e179cbf3bd5558e724ac68782d9d49272c3d1f141105",
+          "current_sha256": "1f40981620668db3b3c7e179cbf3bd5558e724ac68782d9d49272c3d1f141105",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/test/__pycache__/test_navigation_contracts.cpython-312-pytest-7.4.4.pyc",
+          "exists": true,
+          "expected_sha256": "9b3e95609b596a1c2be6966004cc0fe3726b9a7348f73ce816a97ce4bb81ecf8",
+          "current_sha256": "9b3e95609b596a1c2be6966004cc0fe3726b9a7348f73ce816a97ce4bb81ecf8",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/test/test_launch_contracts.py",
+          "exists": true,
+          "expected_sha256": "b565020e135d82ba308c6809cbb23f75b18bf3248c841c1259c8237c7b286649",
+          "current_sha256": "b565020e135d82ba308c6809cbb23f75b18bf3248c841c1259c8237c7b286649",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/test/test_navigation_contracts.py",
+          "exists": true,
+          "expected_sha256": "adadc8c46a3bb58efc4e4b188ab35629826900b757aa09b8a7c7d2a7a32daa67",
+          "current_sha256": "adadc8c46a3bb58efc4e4b188ab35629826900b757aa09b8a7c7d2a7a32daa67",
+          "matches": true
+        },
+        {
+          "path": "redline_navigation/test/test_path_interpolation.cpp",
+          "exists": true,
+          "expected_sha256": "eb9cd5bbde6b5bf894b318ca8480007586c6695e358b25c2089ca5c84fec6486",
+          "current_sha256": "eb9cd5bbde6b5bf894b318ca8480007586c6695e358b25c2089ca5c84fec6486",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "e7b6be108b91b7e91ad602d2e0b0c18d394e1c42664a15321f149ad564e156c4",
+          "current_sha256": "586da9770a31d9fc976b37f4043c33c6c59498c2782084d89decb84912607173",
+          "matches": false
+        },
+        {
+          "path": "redline_planner/launch/t5_thread.launch.py",
+          "exists": true,
+          "expected_sha256": "f6d25563e993b8579986c3d8c98ad7070bb459c048974f9ab35b397e2393986e",
+          "current_sha256": "48b9c55501f04def65c5aecc62c5349f7262271f16c0b0e801d6d5543b00e735",
+          "matches": false
+        },
+        {
+          "path": "redline_planner/package.xml",
+          "exists": true,
+          "expected_sha256": "665860f055accd77d5bbd7aab71c2b95c6529a78c2ed5a75f97022244e4a79d8",
+          "current_sha256": "665860f055accd77d5bbd7aab71c2b95c6529a78c2ed5a75f97022244e4a79d8",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/redline_planner/__init__.py",
+          "exists": true,
+          "expected_sha256": "7dba207feb4921e1d7a56e0985b7cf2da96bccfdfc60775e9b7e21381387519d",
+          "current_sha256": "7dba207feb4921e1d7a56e0985b7cf2da96bccfdfc60775e9b7e21381387519d",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/redline_planner/planner_server.py",
+          "exists": true,
+          "expected_sha256": "fdb4be4dcdc4a728d42d1cf2f7aad0e4b799d431c8163fb718a00cbb155879e3",
+          "current_sha256": "fdb4be4dcdc4a728d42d1cf2f7aad0e4b799d431c8163fb718a00cbb155879e3",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/redline_planner/walkback_field.py",
+          "exists": true,
+          "expected_sha256": "03e3f4a4f4f207ed1b627ec88dffa12b8eed09014899c8a54627dc99e6f3f2e8",
+          "current_sha256": "03e3f4a4f4f207ed1b627ec88dffa12b8eed09014899c8a54627dc99e6f3f2e8",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/scripts/planner_server",
+          "exists": true,
+          "expected_sha256": "93cec33d31afb44682c6c2f2a24f64a183f8ac19190d8bbe762f28a40d6e508f",
+          "current_sha256": "93cec33d31afb44682c6c2f2a24f64a183f8ac19190d8bbe762f28a40d6e508f",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/scripts/walkback_field",
+          "exists": true,
+          "expected_sha256": "9cc0dcdbb74313c505f0abcb149b51a7ff6eac57d103b752277b9012149de0c0",
+          "current_sha256": "9cc0dcdbb74313c505f0abcb149b51a7ff6eac57d103b752277b9012149de0c0",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/test/t5_fixtures.py",
+          "exists": true,
+          "expected_sha256": "8819b26f717f50c67c9f52227acf6d1e11817d4c2f74da69f436d3701b104f2b",
+          "current_sha256": "8819b26f717f50c67c9f52227acf6d1e11817d4c2f74da69f436d3701b104f2b",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/test/test_planner_server.py",
+          "exists": true,
+          "expected_sha256": "090c04e7fd13caefa3495d4e86addc1e48f55e13505f9f33f111dd68acb6692d",
+          "current_sha256": "090c04e7fd13caefa3495d4e86addc1e48f55e13505f9f33f111dd68acb6692d",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/test/test_s1_launch.py",
+          "exists": true,
+          "expected_sha256": "860879f378e1de72298d1273c65def700580159d11b9b53a248df948cd833491",
+          "current_sha256": "860879f378e1de72298d1273c65def700580159d11b9b53a248df948cd833491",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/test/test_t5_thread_launch.py",
+          "exists": true,
+          "expected_sha256": "86d854acf39620df26c3e69bb54ae788a7aaf1359e1a0ade255e58e8a63a5180",
+          "current_sha256": "86d854acf39620df26c3e69bb54ae788a7aaf1359e1a0ade255e58e8a63a5180",
+          "matches": true
+        },
+        {
+          "path": "redline_planner/test/test_walkback_field.py",
+          "exists": true,
+          "expected_sha256": "f1b0c1332d1f169edfa40ac9b8423c3997ff18cc7075c29417a204c7ab196d54",
+          "current_sha256": "f1b0c1332d1f169edfa40ac9b8423c3997ff18cc7075c29417a204c7ab196d54",
+          "matches": true
+        },
+        {
+          "path": "redline_safety/CMakeLists.txt",
+          "exists": true,
+          "expected_sha256": "dfc785d16e9304e4d7bc1cb5a2518a3e73cb3e193c3bce5b5cb49c044ba82ca4",
+          "current_sha256": "2fa1accaa75ec2bffc638a1e9edf0f1e0612672985cd55194413bf51a74c92bc",
+          "matches": false
+        },
+        {
+          "path": "redline_safety/package.xml",
+          "exists": true,
+          "expected_sha256": "6146076731c0bae938465795fa8458f13a9e02c7cc4bda9356e350ad54b151b7",
+          "current_sha256": "6146076731c0bae938465795fa8458f13a9e02c7cc4bda9356e350ad54b151b7",
+          "matches": true
+        },
+        {
+          "path": "redline_safety/redline_safety/__init__.py",
+          "exists": true,
+          "expected_sha256": "bd1b091f5cb50a64e4869c918f128775eed79baa5057862b7c53b613a07c2874",
+          "current_sha256": "bd1b091f5cb50a64e4869c918f128775eed79baa5057862b7c53b613a07c2874",
+          "matches": true
+        },
+        {
+          "path": "redline_safety/redline_safety/rule_monitor.py",
+          "exists": true,
+          "expected_sha256": "c16f8ac6d6a1578f6bd8e6db8498d67d06251aeb935e9fb0fcb4570613710e26",
+          "current_sha256": "c16f8ac6d6a1578f6bd8e6db8498d67d06251aeb935e9fb0fcb4570613710e26",
+          "matches": true
+        },
+        {
+          "path": "redline_safety/scripts/rule_monitor",
+          "exists": true,
+          "expected_sha256": "05c57028ac32b7704642a8065f9f40f7583ca95f3accd065f5eca7beeaf6e33e",
+          "current_sha256": "05c57028ac32b7704642a8065f9f40f7583ca95f3accd065f5eca7beeaf6e33e",
+          "matches": true
+        },
+        {
+          "path": "redline_safety/test/test_rule_monitor.py",
+          "exists": true,
+          "expected_sha256": "1ed467e55bbc015f1efed83b3f60bcb7c82c4d375a482e363ba96eb981f784a3",
+          "current_sha256": "1ed467e55bbc015f1efed83b3f60bcb7c82c4d375a482e363ba96eb981f784a3",
+          "matches": true
+        }
+      ]
+    },
+    "core_tests": {
+      "failed": 0,
+      "passed": 19,
+      "junit": "test-results/sprint-core.xml"
+    },
+    "current_metering_sources": {
+      "all_match": true,
+      "files": [
+        {
+          "path": "python/redline_core/src/redline_core/suit_state.py",
+          "exists": true,
+          "expected_sha256": "f3470c034da9d97662ddc5f3318351c8bd071a3929a2f56aa9aa9cc7c029ce2a",
+          "current_sha256": "f3470c034da9d97662ddc5f3318351c8bd071a3929a2f56aa9aa9cc7c029ce2a",
+          "matches": true
+        },
+        {
+          "path": "python/redline_core/tests/test_suit_state.py",
+          "exists": true,
+          "expected_sha256": "a6d2379e91f21f6b63062d935d5f07bebfbd769dd3a0d3f43bc0e2f0d96a617d",
+          "current_sha256": "a6d2379e91f21f6b63062d935d5f07bebfbd769dd3a0d3f43bc0e2f0d96a617d",
+          "matches": true
+        },
+        {
+          "path": "ros_ws/src/redline_crew/redline_crew/ev_sim.py",
+          "exists": true,
+          "expected_sha256": "9c7f4495862d520ae3712775643a78b74d6df68efc10a2ccd5b3a28dddac7311",
+          "current_sha256": "9c7f4495862d520ae3712775643a78b74d6df68efc10a2ccd5b3a28dddac7311",
+          "matches": true
+        },
+        {
+          "path": "ros_ws/src/redline_crew/test/test_ev_sim.py",
+          "exists": true,
+          "expected_sha256": "7ec105023ea26a22896bcef8d17b64c744585bba6cf30c46cce342286ce7e721",
+          "current_sha256": "7ec105023ea26a22896bcef8d17b64c744585bba6cf30c46cce342286ce7e721",
+          "matches": true
+        }
+      ]
+    }
+  },
+  "source_cache_content": {
+    "scope": "Current native content bytes only; equality is not visual or collision acceptance",
+    "status": "CURRENT_MATCH",
+    "groups": [
+      {
+        "group": "Prologue",
+        "files": [
+          {
+            "file": "AN_SeatedIdle.uasset",
+            "runtime_file": true,
+            "source_sha256": "9d8a08d76940d339a9eecf9176e6c5e5d59c523afcb6cb5dfa7f5260358d6c32",
+            "cache_sha256": "9d8a08d76940d339a9eecf9176e6c5e5d59c523afcb6cb5dfa7f5260358d6c32",
+            "equal": true,
+            "source_bytes": 1631674,
+            "cache_bytes": 1631674
+          },
+          {
+            "file": "Audio/SFX_airlock_door.uasset",
+            "runtime_file": true,
+            "source_sha256": "ba8d59ce2f33f0dc661c63d26727c5383847a00c0cf90d775202461161477e49",
+            "cache_sha256": "ba8d59ce2f33f0dc661c63d26727c5383847a00c0cf90d775202461161477e49",
+            "equal": true,
+            "source_bytes": 61544,
+            "cache_bytes": 61544
+          },
+          {
+            "file": "Audio/SFX_airlock_pressure.uasset",
+            "runtime_file": true,
+            "source_sha256": "64b7d65c6a169ea9cc78401ae489aa2bd2084809020fe4cb79c0906f3b3d824a",
+            "cache_sha256": "64b7d65c6a169ea9cc78401ae489aa2bd2084809020fe4cb79c0906f3b3d824a",
+            "equal": true,
+            "source_bytes": 156050,
+            "cache_bytes": 156050
+          },
+          {
+            "file": "Audio/SFX_landing_thrust.uasset",
+            "runtime_file": true,
+            "source_sha256": "9b70835cf25be842c28b0ed58d6be4d49eb51b4aa64df1b783806976820a8082",
+            "cache_sha256": "9b70835cf25be842c28b0ed58d6be4d49eb51b4aa64df1b783806976820a8082",
+            "equal": true,
+            "source_bytes": 476206,
+            "cache_bytes": 476206
+          },
+          {
+            "file": "Audio/SFX_ready_chime.uasset",
+            "runtime_file": true,
+            "source_sha256": "1ca9cb4239252333f51eaf707f050f6c99d3e0747d134181b9eefe744396ef3a",
+            "cache_sha256": "1ca9cb4239252333f51eaf707f050f6c99d3e0747d134181b9eefe744396ef3a",
+            "equal": true,
+            "source_bytes": 16600,
+            "cache_bytes": 16600
+          },
+          {
+            "file": "Audio/SFX_vardiya_arasi_jazz.uasset",
+            "runtime_file": true,
+            "source_sha256": "5426038873b84e13ac5a869c32dc1cf873ced6c1d59ea588c11f9034568c06f8",
+            "cache_sha256": "5426038873b84e13ac5a869c32dc1cf873ced6c1d59ea588c11f9034568c06f8",
+            "equal": true,
+            "source_bytes": 2425219,
+            "cache_bytes": 2425219
+          },
+          {
+            "file": "Audio/VO_airlock.uasset",
+            "runtime_file": true,
+            "source_sha256": "34994c495712288bdb763ec96f0cb46a30a839033d560b3f6d923ea200985fbb",
+            "cache_sha256": "34994c495712288bdb763ec96f0cb46a30a839033d560b3f6d923ea200985fbb",
+            "equal": true,
+            "source_bytes": 172868,
+            "cache_bytes": 172868
+          },
+          {
+            "file": "Audio/VO_data.uasset",
+            "runtime_file": true,
+            "source_sha256": "fab03f46ddf41f0a159c0e8330fbcd78de9d29033838a9ec6cb42061ff287125",
+            "cache_sha256": "fab03f46ddf41f0a159c0e8330fbcd78de9d29033838a9ec6cb42061ff287125",
+            "equal": true,
+            "source_bytes": 204316,
+            "cache_bytes": 204316
+          },
+          {
+            "file": "Audio/VO_landing.uasset",
+            "runtime_file": true,
+            "source_sha256": "a78697445b41572ec1dc2c98491fca83df1390f234a244de656c3e8c51890a7b",
+            "cache_sha256": "a78697445b41572ec1dc2c98491fca83df1390f234a244de656c3e8c51890a7b",
+            "equal": true,
+            "source_bytes": 140619,
+            "cache_bytes": 140619
+          },
+          {
+            "file": "Audio/VO_mission_debrief.uasset",
+            "runtime_file": true,
+            "source_sha256": "26138da7a40ff048cfb984ba287828be6f4b31fb03879543273b86a8b2f68315",
+            "cache_sha256": "26138da7a40ff048cfb984ba287828be6f4b31fb03879543273b86a8b2f68315",
+            "equal": true,
+            "source_bytes": 221960,
+            "cache_bytes": 221960
+          },
+          {
+            "file": "Audio/VO_mission_return.uasset",
+            "runtime_file": true,
+            "source_sha256": "ac8c2c5f15f6d86f5e9c1eae47614c1ea870ede11058d4873b85742a57b969da",
+            "cache_sha256": "ac8c2c5f15f6d86f5e9c1eae47614c1ea870ede11058d4873b85742a57b969da",
+            "equal": true,
+            "source_bytes": 172260,
+            "cache_bytes": 172260
+          },
+          {
+            "file": "Audio/VO_mission_science.uasset",
+            "runtime_file": true,
+            "source_sha256": "cbb0a300e8c6c73f305abd019fab123dede84b10a927b3de655666f63b9aab60",
+            "cache_sha256": "cbb0a300e8c6c73f305abd019fab123dede84b10a927b3de655666f63b9aab60",
+            "equal": true,
+            "source_bytes": 191359,
+            "cache_bytes": 191359
+          },
+          {
+            "file": "Audio/VO_mission_traverse.uasset",
+            "runtime_file": true,
+            "source_sha256": "4468826f817dc0f4b1637c9df3fac9073ad582d665c3d417b7723bb3ecdbb001",
+            "cache_sha256": "4468826f817dc0f4b1637c9df3fac9073ad582d665c3d417b7723bb3ecdbb001",
+            "equal": true,
+            "source_bytes": 219105,
+            "cache_bytes": 219105
+          },
+          {
+            "file": "Audio/VO_ready.uasset",
+            "runtime_file": true,
+            "source_sha256": "543d9e1bb99de452dbf06b6a0f9a75a89c6fdcf7288af054eb6097a4864d01a4",
+            "cache_sha256": "543d9e1bb99de452dbf06b6a0f9a75a89c6fdcf7288af054eb6097a4864d01a4",
+            "equal": true,
+            "source_bytes": 134367,
+            "cache_bytes": 134367
+          },
+          {
+            "file": "Audio/VO_rest.uasset",
+            "runtime_file": true,
+            "source_sha256": "2cfb91c4f00cab8addff4cc4a74c4a38fe3d2ad41bbb9543004082c20579afc2",
+            "cache_sha256": "2cfb91c4f00cab8addff4cc4a74c4a38fe3d2ad41bbb9543004082c20579afc2",
+            "equal": true,
+            "source_bytes": 124145,
+            "cache_bytes": 124145
+          },
+          {
+            "file": "Materials/M_AirlockPaint.uasset",
+            "runtime_file": true,
+            "source_sha256": "53f47600d3111394e5087bd0101775c5ffdf1ca272e01809cb48d6627fc611f5",
+            "cache_sha256": "53f47600d3111394e5087bd0101775c5ffdf1ca272e01809cb48d6627fc611f5",
+            "equal": true,
+            "source_bytes": 5823,
+            "cache_bytes": 5823
+          },
+          {
+            "file": "Materials/M_BluePractical.uasset",
+            "runtime_file": true,
+            "source_sha256": "02a576cead12ca4cfb914304c01f7c427b3923a958f1c7411f4f8e6417907ca2",
+            "cache_sha256": "02a576cead12ca4cfb914304c01f7c427b3923a958f1c7411f4f8e6417907ca2",
+            "equal": true,
+            "source_bytes": 6484,
+            "cache_bytes": 6484
+          },
+          {
+            "file": "Materials/M_CabinFloor.uasset",
+            "runtime_file": true,
+            "source_sha256": "ba0b62458e3800dcc0fc1f190a8b64493223d4ae9948c402c3a4a37640580a07",
+            "cache_sha256": "ba0b62458e3800dcc0fc1f190a8b64493223d4ae9948c402c3a4a37640580a07",
+            "equal": true,
+            "source_bytes": 5811,
+            "cache_bytes": 5811
+          },
+          {
+            "file": "Materials/M_CabinText.uasset",
+            "runtime_file": true,
+            "source_sha256": "b260bbf7f48cc216f0da576a4f38c37d5366982724a16c7d9a4cf4134c9ad1c8",
+            "cache_sha256": "b260bbf7f48cc216f0da576a4f38c37d5366982724a16c7d9a4cf4134c9ad1c8",
+            "equal": true,
+            "source_bytes": 8543,
+            "cache_bytes": 8543
+          },
+          {
+            "file": "Materials/M_ChetBakerLabel.uasset",
+            "runtime_file": true,
+            "source_sha256": "e7f1cd517cd9f2a7944284ff109dd138100a5e431a3739da53d249d09aedcf01",
+            "cache_sha256": "e7f1cd517cd9f2a7944284ff109dd138100a5e431a3739da53d249d09aedcf01",
+            "equal": true,
+            "source_bytes": 6899,
+            "cache_bytes": 6899
+          },
+          {
+            "file": "Materials/M_ChetBakerSleeve.uasset",
+            "runtime_file": true,
+            "source_sha256": "ea1c41000955931c3cd9304ab5f5be45ef0c837629b4c3c239c7c0e4db2bed6f",
+            "cache_sha256": "ea1c41000955931c3cd9304ab5f5be45ef0c837629b4c3c239c7c0e4db2bed6f",
+            "equal": true,
+            "source_bytes": 6907,
+            "cache_bytes": 6907
+          },
+          {
+            "file": "Materials/M_CommandAmber.uasset",
+            "runtime_file": true,
+            "source_sha256": "8f6d2b71a32e0e896b7bc975d0a4b6c117f7b734ec97d672fc77c5d628921871",
+            "cache_sha256": "8f6d2b71a32e0e896b7bc975d0a4b6c117f7b734ec97d672fc77c5d628921871",
+            "equal": true,
+            "source_bytes": 6478,
+            "cache_bytes": 6478
+          },
+          {
+            "file": "Materials/M_CommandBoardDark.uasset",
+            "runtime_file": true,
+            "source_sha256": "3064bf377c0c2fa8132b21871a50c0961f8abab86cdfdaebff789ea7ebfa4edd",
+            "cache_sha256": "3064bf377c0c2fa8132b21871a50c0961f8abab86cdfdaebff789ea7ebfa4edd",
+            "equal": true,
+            "source_bytes": 6305,
+            "cache_bytes": 6305
+          },
+          {
+            "file": "Materials/M_CommandCyan.uasset",
+            "runtime_file": true,
+            "source_sha256": "dd6dad4e8b8205fb6bb04d056e1f51a27b216ce38ff14582dbb66e3ac8ba9c4a",
+            "cache_sha256": "dd6dad4e8b8205fb6bb04d056e1f51a27b216ce38ff14582dbb66e3ac8ba9c4a",
+            "equal": true,
+            "source_bytes": 6472,
+            "cache_bytes": 6472
+          },
+          {
+            "file": "Materials/M_GraphiteFrame.uasset",
+            "runtime_file": true,
+            "source_sha256": "3772ad73e1bc7e3f75455a33161df95647a9fe45135be449b3eb7710d57d4b03",
+            "cache_sha256": "3772ad73e1bc7e3f75455a33161df95647a9fe45135be449b3eb7710d57d4b03",
+            "equal": true,
+            "source_bytes": 5858,
+            "cache_bytes": 5858
+          },
+          {
+            "file": "Materials/M_LandingDust.uasset",
+            "runtime_file": true,
+            "source_sha256": "0c49dc976ceeb317be3bd4892ff42a4fe5d57950b39f01493e2813601de12e19",
+            "cache_sha256": "0c49dc976ceeb317be3bd4892ff42a4fe5d57950b39f01493e2813601de12e19",
+            "equal": true,
+            "source_bytes": 11720,
+            "cache_bytes": 11720
+          },
+          {
+            "file": "Materials/M_LiveDataDisplay.uasset",
+            "runtime_file": true,
+            "source_sha256": "d6247f01a5510c15399bf5ca4b676adce2aecd0248de83b7aed107c6935a7212",
+            "cache_sha256": "d6247f01a5510c15399bf5ca4b676adce2aecd0248de83b7aed107c6935a7212",
+            "equal": true,
+            "source_bytes": 8325,
+            "cache_bytes": 8325
+          },
+          {
+            "file": "Materials/M_MAT_prologue_airlock_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "1cbdb9d29370e476c654bcf626de3b927ae65958e538d6ab9654f2d8bef347d6",
+            "cache_sha256": "1cbdb9d29370e476c654bcf626de3b927ae65958e538d6ab9654f2d8bef347d6",
+            "equal": true,
+            "source_bytes": 5520,
+            "cache_bytes": 5520
+          },
+          {
+            "file": "Materials/M_MAT_prologue_command_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "5893a34f354d17438101635b120c8e39da5c9b66aa589b4e095c7106b1f53105",
+            "cache_sha256": "5893a34f354d17438101635b120c8e39da5c9b66aa589b4e095c7106b1f53105",
+            "equal": true,
+            "source_bytes": 5520,
+            "cache_bytes": 5520
+          },
+          {
+            "file": "Materials/M_MAT_prologue_corridor_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "f39f6053ffe29bc6749699d4cfc45dea48d8431dd73fd6e97e33d47669b776ea",
+            "cache_sha256": "f39f6053ffe29bc6749699d4cfc45dea48d8431dd73fd6e97e33d47669b776ea",
+            "equal": true,
+            "source_bytes": 5528,
+            "cache_bytes": 5528
+          },
+          {
+            "file": "Materials/M_MAT_prologue_lab_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "5d97feb20dfce2f5c67e41a0ee02845fbd767c2fbbad8e50ea26b55576977cda",
+            "cache_sha256": "5d97feb20dfce2f5c67e41a0ee02845fbd767c2fbbad8e50ea26b55576977cda",
+            "equal": true,
+            "source_bytes": 5488,
+            "cache_bytes": 5488
+          },
+          {
+            "file": "Materials/M_MAT_prologue_lander_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "013abd45411259848f356acfca9d77896a8901041a3545933e4c36fd2c5a4948",
+            "cache_sha256": "013abd45411259848f356acfca9d77896a8901041a3545933e4c36fd2c5a4948",
+            "equal": true,
+            "source_bytes": 5512,
+            "cache_bytes": 5512
+          },
+          {
+            "file": "Materials/M_MAT_prologue_lounge_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "ccea537e27ae001c64dc94d085692de4cf067710803bfc964f02b433c4457552",
+            "cache_sha256": "ccea537e27ae001c64dc94d085692de4cf067710803bfc964f02b433c4457552",
+            "equal": true,
+            "source_bytes": 5512,
+            "cache_bytes": 5512
+          },
+          {
+            "file": "Materials/M_MAT_prologue_turntable_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "8fccac88ea2329567afb7221d1a3b00792360e03b4ad806fa3c67ad330337a24",
+            "cache_sha256": "8fccac88ea2329567afb7221d1a3b00792360e03b4ad806fa3c67ad330337a24",
+            "equal": true,
+            "source_bytes": 5536,
+            "cache_bytes": 5536
+          },
+          {
+            "file": "Materials/M_RecordLabel.uasset",
+            "runtime_file": true,
+            "source_sha256": "e34b16b6442bac9cba571381070cc0f724109b33bada6f5802d84056c0838204",
+            "cache_sha256": "e34b16b6442bac9cba571381070cc0f724109b33bada6f5802d84056c0838204",
+            "equal": true,
+            "source_bytes": 5817,
+            "cache_bytes": 5817
+          },
+          {
+            "file": "Materials/M_RecordWalnut.uasset",
+            "runtime_file": true,
+            "source_sha256": "24ccaca07fc40d232d0ee0e3a396a96bc4f2bc710ba97f52c8ecc2daf5026e24",
+            "cache_sha256": "24ccaca07fc40d232d0ee0e3a396a96bc4f2bc710ba97f52c8ecc2daf5026e24",
+            "equal": true,
+            "source_bytes": 5823,
+            "cache_bytes": 5823
+          },
+          {
+            "file": "Materials/M_RedSafety.uasset",
+            "runtime_file": true,
+            "source_sha256": "0bcb64e5926ad09b8beec3f7c38734d0a6138b558187f2f833e7e4d9c165da7f",
+            "cache_sha256": "0bcb64e5926ad09b8beec3f7c38734d0a6138b558187f2f833e7e4d9c165da7f",
+            "equal": true,
+            "source_bytes": 5805,
+            "cache_bytes": 5805
+          },
+          {
+            "file": "Materials/M_SeatFabric.uasset",
+            "runtime_file": true,
+            "source_sha256": "595f343013613a0c0dda7447f89e0cf638e2f7a4521afeb37ea9b5920d5ab688",
+            "cache_sha256": "595f343013613a0c0dda7447f89e0cf638e2f7a4521afeb37ea9b5920d5ab688",
+            "equal": true,
+            "source_bytes": 5811,
+            "cache_bytes": 5811
+          },
+          {
+            "file": "Materials/M_Vinyl.uasset",
+            "runtime_file": true,
+            "source_sha256": "6cd238d02333c7cac55315d26d1aacd4b05955c9f689eb82d91eec346525c048",
+            "cache_sha256": "6cd238d02333c7cac55315d26d1aacd4b05955c9f689eb82d91eec346525c048",
+            "equal": true,
+            "source_bytes": 5781,
+            "cache_bytes": 5781
+          },
+          {
+            "file": "Materials/M_WarmCabin.uasset",
+            "runtime_file": true,
+            "source_sha256": "221b07100feca12b708c3d1aa50292c54381df89b9beddf517510cb539e16fe2",
+            "cache_sha256": "221b07100feca12b708c3d1aa50292c54381df89b9beddf517510cb539e16fe2",
+            "equal": true,
+            "source_bytes": 5805,
+            "cache_bytes": 5805
+          },
+          {
+            "file": "Materials/M_WarmPractical.uasset",
+            "runtime_file": true,
+            "source_sha256": "969ccc2ed511d8f736a36d0e03f627033010ee211098796c91d340373ec5e87f",
+            "cache_sha256": "969ccc2ed511d8f736a36d0e03f627033010ee211098796c91d340373ec5e87f",
+            "equal": true,
+            "source_bytes": 6484,
+            "cache_bytes": 6484
+          },
+          {
+            "file": "Textures/T_ChetBakerLabel.uasset",
+            "runtime_file": true,
+            "source_sha256": "e26539b773f847654e69fdf545307cbab5e15d8b3b8feb3e1963db03db57387e",
+            "cache_sha256": "e26539b773f847654e69fdf545307cbab5e15d8b3b8feb3e1963db03db57387e",
+            "equal": true,
+            "source_bytes": 38349,
+            "cache_bytes": 38349
+          },
+          {
+            "file": "Textures/T_ChetBakerSleeve.uasset",
+            "runtime_file": true,
+            "source_sha256": "973e8bc4ea07cc6f95b56320de500a529f5f8e9516e64f24de9c6d8384102f51",
+            "cache_sha256": "973e8bc4ea07cc6f95b56320de500a529f5f8e9516e64f24de9c6d8384102f51",
+            "equal": true,
+            "source_bytes": 86859,
+            "cache_bytes": 86859
+          },
+          {
+            "file": "Textures/T_MAT_prologue_airlock_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "d3d69f030239f0387055f5b70a6c5e097981ae910509f689057bb77d1994df43",
+            "cache_sha256": "d3d69f030239f0387055f5b70a6c5e097981ae910509f689057bb77d1994df43",
+            "equal": true,
+            "source_bytes": 2732492,
+            "cache_bytes": 2732492
+          },
+          {
+            "file": "Textures/T_MAT_prologue_command_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "822c998c01fad3ad82d9cf877077e390f8e6cd15028909f2ebdf1826d4c1a875",
+            "cache_sha256": "822c998c01fad3ad82d9cf877077e390f8e6cd15028909f2ebdf1826d4c1a875",
+            "equal": true,
+            "source_bytes": 2841996,
+            "cache_bytes": 2841996
+          },
+          {
+            "file": "Textures/T_MAT_prologue_corridor_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "139c1d0808da2202955e1207a5afabc3a13abd0f513a8c57c68cc4716d5f881d",
+            "cache_sha256": "139c1d0808da2202955e1207a5afabc3a13abd0f513a8c57c68cc4716d5f881d",
+            "equal": true,
+            "source_bytes": 2817659,
+            "cache_bytes": 2817659
+          },
+          {
+            "file": "Textures/T_MAT_prologue_lab_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "8a101b7c9a29b690c80ce0cf6bfc84c68bb7b993eaa934b40d8f7356fc9f4cb2",
+            "cache_sha256": "8a101b7c9a29b690c80ce0cf6bfc84c68bb7b993eaa934b40d8f7356fc9f4cb2",
+            "equal": true,
+            "source_bytes": 2643838,
+            "cache_bytes": 2643838
+          },
+          {
+            "file": "Textures/T_MAT_prologue_lander_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "4c4e5e47765f6593994741ffb6be177f7730e9ed5dc80645f684db021c11301d",
+            "cache_sha256": "4c4e5e47765f6593994741ffb6be177f7730e9ed5dc80645f684db021c11301d",
+            "equal": true,
+            "source_bytes": 2983213,
+            "cache_bytes": 2983213
+          },
+          {
+            "file": "Textures/T_MAT_prologue_lounge_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "6a887cd39706fbc5a61c26c63f020d5163db7e63a77500a733c1ec59e0e50b32",
+            "cache_sha256": "6a887cd39706fbc5a61c26c63f020d5163db7e63a77500a733c1ec59e0e50b32",
+            "equal": true,
+            "source_bytes": 2685189,
+            "cache_bytes": 2685189
+          },
+          {
+            "file": "Textures/T_MAT_prologue_turntable_00.uasset",
+            "runtime_file": true,
+            "source_sha256": "e06f544f99f8be5e14476829b45b090213a34cefad3b6cd88dc6d127068d939b",
+            "cache_sha256": "e06f544f99f8be5e14476829b45b090213a34cefad3b6cd88dc6d127068d939b",
+            "equal": true,
+            "source_bytes": 3196547,
+            "cache_bytes": 3196547
+          },
+          {
+            "file": "Tripo/SM_prologue_airlock.uasset",
+            "runtime_file": true,
+            "source_sha256": "b0431c0c5998bf9f6df3080521ef4be157da7b73af06de748b3eca4abf7f23ba",
+            "cache_sha256": "b0431c0c5998bf9f6df3080521ef4be157da7b73af06de748b3eca4abf7f23ba",
+            "equal": true,
+            "source_bytes": 4301958,
+            "cache_bytes": 4301958
+          },
+          {
+            "file": "Tripo/SM_prologue_command.uasset",
+            "runtime_file": true,
+            "source_sha256": "dc65fb2f3c82fd05c67bb853819d435fb50191a459ce59971e453b9731b6f63d",
+            "cache_sha256": "dc65fb2f3c82fd05c67bb853819d435fb50191a459ce59971e453b9731b6f63d",
+            "equal": true,
+            "source_bytes": 4172955,
+            "cache_bytes": 4172955
+          },
+          {
+            "file": "Tripo/SM_prologue_corridor.uasset",
+            "runtime_file": true,
+            "source_sha256": "dc22807f1da7df0e61077e650a5cb5ee60c7e6d4b55d2a7dd2ad8c899f9363a2",
+            "cache_sha256": "dc22807f1da7df0e61077e650a5cb5ee60c7e6d4b55d2a7dd2ad8c899f9363a2",
+            "equal": true,
+            "source_bytes": 4390766,
+            "cache_bytes": 4390766
+          },
+          {
+            "file": "Tripo/SM_prologue_lab.uasset",
+            "runtime_file": true,
+            "source_sha256": "25ce98bf548599519670974b3a93d9020a792cba4a5c9b6d5002bcc326228a54",
+            "cache_sha256": "25ce98bf548599519670974b3a93d9020a792cba4a5c9b6d5002bcc326228a54",
+            "equal": true,
+            "source_bytes": 4250940,
+            "cache_bytes": 4250940
+          },
+          {
+            "file": "Tripo/SM_prologue_lander.uasset",
+            "runtime_file": true,
+            "source_sha256": "3e0c9e3060ff3ecf7e304a9460213cfa5653ef3a7aa5524a7fd4fa91b2b54633",
+            "cache_sha256": "3e0c9e3060ff3ecf7e304a9460213cfa5653ef3a7aa5524a7fd4fa91b2b54633",
+            "equal": true,
+            "source_bytes": 3878237,
+            "cache_bytes": 3878237
+          },
+          {
+            "file": "Tripo/SM_prologue_lounge.uasset",
+            "runtime_file": true,
+            "source_sha256": "ce36e37f3e4bb90873ac0bc74746c6b6d59784cd0b9c4ce7eaafce70d3e5ec0f",
+            "cache_sha256": "ce36e37f3e4bb90873ac0bc74746c6b6d59784cd0b9c4ce7eaafce70d3e5ec0f",
+            "equal": true,
+            "source_bytes": 4210190,
+            "cache_bytes": 4210190
+          },
+          {
+            "file": "Tripo/SM_prologue_turntable.uasset",
+            "runtime_file": true,
+            "source_sha256": "0275f3ee411a9d2a3323efea2a8540206acb07dbd6cec9aec02e7447ff9138a2",
+            "cache_sha256": "0275f3ee411a9d2a3323efea2a8540206acb07dbd6cec9aec02e7447ff9138a2",
+            "equal": true,
+            "source_bytes": 3729192,
+            "cache_bytes": 3729192
+          },
+          {
+            "file": "script.json",
+            "runtime_file": true,
+            "source_sha256": "1e5c2208914bfffa4e491fe7593373b5f58535cbcf9c56fddc9147181c3dbece",
+            "cache_sha256": "1e5c2208914bfffa4e491fe7593373b5f58535cbcf9c56fddc9147181c3dbece",
+            "equal": true,
+            "source_bytes": 3313,
+            "cache_bytes": 3313
+          }
+        ],
+        "file_count": 58,
+        "all_equal": true,
+        "all_runtime_equal": true
+      },
+      {
+        "group": "EVAFixtures",
+        "files": [
+          {
+            "file": "Astronaut/AN_Idle.uasset",
+            "runtime_file": true,
+            "source_sha256": "4ef02c4b1b1fb83bdda686c26e80c9ad5f6fc40bd3111fcd738e255e671c241c",
+            "cache_sha256": "4ef02c4b1b1fb83bdda686c26e80c9ad5f6fc40bd3111fcd738e255e671c241c",
+            "equal": true,
+            "source_bytes": 1915830,
+            "cache_bytes": 1915830
+          },
+          {
+            "file": "Astronaut/AN_Walk.uasset",
+            "runtime_file": true,
+            "source_sha256": "de2a3ad45815a8ace4687084589ca3909a7a73fbde6703ab895c0466e973257d",
+            "cache_sha256": "de2a3ad45815a8ace4687084589ca3909a7a73fbde6703ab895c0466e973257d",
+            "equal": true,
+            "source_bytes": 284785,
+            "cache_bytes": 284785
+          },
+          {
+            "file": "Astronaut/SK_Astronaut.uasset",
+            "runtime_file": true,
+            "source_sha256": "51363271a272a6ee56b58ffe7bfa946e80889f853982a1322d058036db9e9131",
+            "cache_sha256": "51363271a272a6ee56b58ffe7bfa946e80889f853982a1322d058036db9e9131",
+            "equal": true,
+            "source_bytes": 14521596,
+            "cache_bytes": 14521596
+          },
+          {
+            "file": "Astronaut/SK_Astronaut_Skeleton.uasset",
+            "runtime_file": true,
+            "source_sha256": "a2510b110eefd658f97666e6d2055c47a506e86fde33cf36ddd7613368132f99",
+            "cache_sha256": "a2510b110eefd658f97666e6d2055c47a506e86fde33cf36ddd7613368132f99",
+            "equal": true,
+            "source_bytes": 18686,
+            "cache_bytes": 18686
+          },
+          {
+            "file": "Astronaut/T_EV1_AO.uasset",
+            "runtime_file": true,
+            "source_sha256": "904eca961569c2a26b15e9a1245a6d214ee5337561e56861796242209d6e11d3",
+            "cache_sha256": "904eca961569c2a26b15e9a1245a6d214ee5337561e56861796242209d6e11d3",
+            "equal": true,
+            "source_bytes": 738443,
+            "cache_bytes": 738443
+          },
+          {
+            "file": "Astronaut/T_EV1_BaseColor.uasset",
+            "runtime_file": true,
+            "source_sha256": "b92977f833c391ebc6ab52b77d75eca9b6e02870684ec4e81fddc8b9b1eb6096",
+            "cache_sha256": "b92977f833c391ebc6ab52b77d75eca9b6e02870684ec4e81fddc8b9b1eb6096",
+            "equal": true,
+            "source_bytes": 5180515,
+            "cache_bytes": 5180515
+          },
+          {
+            "file": "Astronaut/T_EV1_Metallic.uasset",
+            "runtime_file": true,
+            "source_sha256": "6dbf78050eab851b87093557644eafad76864d2845c386f260a59cfc81e3e523",
+            "cache_sha256": "6dbf78050eab851b87093557644eafad76864d2845c386f260a59cfc81e3e523",
+            "equal": true,
+            "source_bytes": 1607497,
+            "cache_bytes": 1607497
+          },
+          {
+            "file": "Astronaut/T_EV1_Normal.uasset",
+            "runtime_file": true,
+            "source_sha256": "a1160598aacb8638f7e766197f387edc854368fa49c49e87c77191b1bd1246c8",
+            "cache_sha256": "a1160598aacb8638f7e766197f387edc854368fa49c49e87c77191b1bd1246c8",
+            "equal": true,
+            "source_bytes": 2969368,
+            "cache_bytes": 2969368
+          },
+          {
+            "file": "Astronaut/T_EV1_Roughness.uasset",
+            "runtime_file": true,
+            "source_sha256": "6fae365b12a81bba3cc03ac93de7da8e66bf61b08278986e4f35734618285100",
+            "cache_sha256": "6fae365b12a81bba3cc03ac93de7da8e66bf61b08278986e4f35734618285100",
+            "equal": true,
+            "source_bytes": 1377076,
+            "cache_bytes": 1377076
+          },
+          {
+            "file": "BXW_EVA.umap",
+            "runtime_file": true,
+            "source_sha256": "e6bb0b2e52156fa6d5b40a0e398ac9fc8bbd58898e7043b05a56d9c3989836a0",
+            "cache_sha256": "e6bb0b2e52156fa6d5b40a0e398ac9fc8bbd58898e7043b05a56d9c3989836a0",
+            "equal": true,
+            "source_bytes": 380387,
+            "cache_bytes": 380387
+          },
+          {
+            "file": "Intro/habitat/HDU_01.uasset",
+            "runtime_file": true,
+            "source_sha256": "575e1f36ab5dc8f891158caf245280342e643cb8395da68f9a9ea8765356f788",
+            "cache_sha256": "575e1f36ab5dc8f891158caf245280342e643cb8395da68f9a9ea8765356f788",
+            "equal": true,
+            "source_bytes": 795970,
+            "cache_bytes": 795970
+          },
+          {
+            "file": "Intro/habitat/M_habitat_947.uasset",
+            "runtime_file": true,
+            "source_sha256": "1c3cf1495459b943c2a9d32296db83cde82482dbd7db35df363961c78c39c0be",
+            "cache_sha256": "1c3cf1495459b943c2a9d32296db83cde82482dbd7db35df363961c78c39c0be",
+            "equal": true,
+            "source_bytes": 6015,
+            "cache_bytes": 6015
+          },
+          {
+            "file": "Intro/habitat/SM_habitat.uasset",
+            "runtime_file": true,
+            "source_sha256": "6ace86acde41b97064ac8e93430a258a8d1debdf982bd6c194fec1cab82bdf68",
+            "cache_sha256": "6ace86acde41b97064ac8e93430a258a8d1debdf982bd6c194fec1cab82bdf68",
+            "equal": true,
+            "source_bytes": 82367,
+            "cache_bytes": 82367
+          },
+          {
+            "file": "Intro/habitat/T_habitat_HDU_01.uasset",
+            "runtime_file": true,
+            "source_sha256": "e049e729395e4bc75c2a835bf71b2629ee3e5861198a490e6573ee3244042ba7",
+            "cache_sha256": "e049e729395e4bc75c2a835bf71b2629ee3e5861198a490e6573ee3244042ba7",
+            "equal": true,
+            "source_bytes": 802325,
+            "cache_bytes": 802325
+          },
+          {
+            "file": "Intro/habitat/lambert2SG.uasset",
+            "runtime_file": true,
+            "source_sha256": "214129e72fb8f1f92f2b51bbb5456f08056c09eeca74648390218723f60785e9",
+            "cache_sha256": "214129e72fb8f1f92f2b51bbb5456f08056c09eeca74648390218723f60785e9",
+            "equal": true,
+            "source_bytes": 4947,
+            "cache_bytes": 4947
+          },
+          {
+            "file": "Intro/map_table/MAT_RL_graphite.uasset",
+            "runtime_file": true,
+            "source_sha256": "ff5858985953383946b8b199a0a9bfd9651cfdd8135d7c581824f5b436acb6e6",
+            "cache_sha256": "ff5858985953383946b8b199a0a9bfd9651cfdd8135d7c581824f5b436acb6e6",
+            "equal": true,
+            "source_bytes": 5013,
+            "cache_bytes": 5013
+          },
+          {
+            "file": "Intro/map_table/MAT_RL_red.uasset",
+            "runtime_file": true,
+            "source_sha256": "474f2cfa6a97dd5fc8daa29e5ce44425883643bcf2c7c29c077242b5cbb617ad",
+            "cache_sha256": "474f2cfa6a97dd5fc8daa29e5ce44425883643bcf2c7c29c077242b5cbb617ad",
+            "equal": true,
+            "source_bytes": 4983,
+            "cache_bytes": 4983
+          },
+          {
+            "file": "Intro/map_table/MAT_RL_screen.uasset",
+            "runtime_file": true,
+            "source_sha256": "3750f75b15a2b70eb5a025f073cec8558084ad63e391539da19968b9f335000d",
+            "cache_sha256": "3750f75b15a2b70eb5a025f073cec8558084ad63e391539da19968b9f335000d",
+            "equal": true,
+            "source_bytes": 5001,
+            "cache_bytes": 5001
+          },
+          {
+            "file": "Intro/map_table/MAT_RL_white.uasset",
+            "runtime_file": true,
+            "source_sha256": "d0dc665d7f68a56de809340bd889f586d06d48eb355c3637fec3439db3678837",
+            "cache_sha256": "d0dc665d7f68a56de809340bd889f586d06d48eb355c3637fec3439db3678837",
+            "equal": true,
+            "source_bytes": 4995,
+            "cache_bytes": 4995
+          },
+          {
+            "file": "Intro/map_table/SM_map_table.uasset",
+            "runtime_file": true,
+            "source_sha256": "5b73003ab3834bd404ebc89a2d93c79a798afcfa3da3d128ce437db25d6c8a1d",
+            "cache_sha256": "5b73003ab3834bd404ebc89a2d93c79a798afcfa3da3d128ce437db25d6c8a1d",
+            "equal": true,
+            "source_bytes": 18966,
+            "cache_bytes": 18966
+          },
+          {
+            "file": "Intro/science_station/MAT_science_station_Atlas.uasset",
+            "runtime_file": true,
+            "source_sha256": "b211536d8b23645c83a9786bda2584ab0c1472fd374d0811acd1bbda47290f42",
+            "cache_sha256": "b211536d8b23645c83a9786bda2584ab0c1472fd374d0811acd1bbda47290f42",
+            "equal": true,
+            "source_bytes": 5947,
+            "cache_bytes": 5947
+          },
+          {
+            "file": "Intro/science_station/M_science_station_2512.uasset",
+            "runtime_file": true,
+            "source_sha256": "7a5f4bde265f25b4f8ca43d6d8a508dde1335f23f8dfcad552c8910f987ba2e0",
+            "cache_sha256": "7a5f4bde265f25b4f8ca43d6d8a508dde1335f23f8dfcad552c8910f987ba2e0",
+            "equal": true,
+            "source_bytes": 7576,
+            "cache_bytes": 7576
+          },
+          {
+            "file": "Intro/science_station/SM_science_station.uasset",
+            "runtime_file": true,
+            "source_sha256": "b138b8b6fadc9ff6fbd37611a79f8a73966ae03050b36454f88c9a5dbb9a4d14",
+            "cache_sha256": "b138b8b6fadc9ff6fbd37611a79f8a73966ae03050b36454f88c9a5dbb9a4d14",
+            "equal": true,
+            "source_bytes": 1060042,
+            "cache_bytes": 1060042
+          },
+          {
+            "file": "Intro/science_station/T_science_station_science_station_BaseColor.uasset",
+            "runtime_file": true,
+            "source_sha256": "dcb2ed1f688cb6f8b1bc29689bdc59654a8b1bc880e438926b669b07596dd4b3",
+            "cache_sha256": "dcb2ed1f688cb6f8b1bc29689bdc59654a8b1bc880e438926b669b07596dd4b3",
+            "equal": true,
+            "source_bytes": 911589,
+            "cache_bytes": 911589
+          },
+          {
+            "file": "Intro/science_station/T_science_station_science_station_NormalGL.uasset",
+            "runtime_file": true,
+            "source_sha256": "2ca480124d09c6873bb2420d7f95589c710c06c85d50c407cd0768fbbc3dc111",
+            "cache_sha256": "2ca480124d09c6873bb2420d7f95589c710c06c85d50c407cd0768fbbc3dc111",
+            "equal": true,
+            "source_bytes": 955822,
+            "cache_bytes": 955822
+          },
+          {
+            "file": "Intro/science_station/T_science_station_science_station_ORM.uasset",
+            "runtime_file": true,
+            "source_sha256": "624b0e568c84f658df691a9facf4c9246c3bc72dbac5e84a91b081a2e5264227",
+            "cache_sha256": "624b0e568c84f658df691a9facf4c9246c3bc72dbac5e84a91b081a2e5264227",
+            "equal": true,
+            "source_bytes": 715923,
+            "cache_bytes": 715923
+          },
+          {
+            "file": "Intro/science_station/science_station_BaseColor.uasset",
+            "runtime_file": true,
+            "source_sha256": "38fe2e2ddeac83ee49cbca272653914e8f9f7539c590fc64a1dcf57dee63d6f1",
+            "cache_sha256": "38fe2e2ddeac83ee49cbca272653914e8f9f7539c590fc64a1dcf57dee63d6f1",
+            "equal": true,
+            "source_bytes": 904770,
+            "cache_bytes": 904770
+          },
+          {
+            "file": "Intro/science_station/science_station_NormalGL.uasset",
+            "runtime_file": true,
+            "source_sha256": "225e25759d35a7cf97ca20211cd7c72970daba3f0549f190f83ccb449c3a2cc5",
+            "cache_sha256": "225e25759d35a7cf97ca20211cd7c72970daba3f0549f190f83ccb449c3a2cc5",
+            "equal": true,
+            "source_bytes": 948969,
+            "cache_bytes": 948969
+          },
+          {
+            "file": "M_EV1_Original.uasset",
+            "runtime_file": true,
+            "source_sha256": "c5f49c9891feec8fcee2de5ee7eeb1a02dd494aa03d56650423996ab18e0b7d4",
+            "cache_sha256": "c5f49c9891feec8fcee2de5ee7eeb1a02dd494aa03d56650423996ab18e0b7d4",
+            "equal": true,
+            "source_bytes": 8368,
+            "cache_bytes": 8368
+          },
+          {
+            "file": "M_FieldTile.uasset",
+            "runtime_file": true,
+            "source_sha256": "081ff4bea37a279d3eb52f3450f516e3d6bf7bb3f1cbcb933d0d9b77b2cd2033",
+            "cache_sha256": "081ff4bea37a279d3eb52f3450f516e3d6bf7bb3f1cbcb933d0d9b77b2cd2033",
+            "equal": true,
+            "source_bytes": 9018,
+            "cache_bytes": 9018
+          },
+          {
+            "file": "SOURCE.md",
+            "runtime_file": false,
+            "source_sha256": "f20a46c2161e72ce562fa586a40687507a2519fcb311598268ba0a8edf0902d3",
+            "cache_sha256": "f20a46c2161e72ce562fa586a40687507a2519fcb311598268ba0a8edf0902d3",
+            "equal": true,
+            "source_bytes": 1625,
+            "cache_bytes": 1625
+          }
+        ],
+        "file_count": 31,
+        "all_equal": true,
+        "all_runtime_equal": true
+      }
+    ]
+  },
+  "unverified": [
+    "This collector does not observe or confirm live gameplay, current audio device output or user listening quality.",
+    "First-person automation toggles cameras; physical key hold, mouse look and initial control pitch need live input evidence.",
+    "Indoor capsule passage, doorway closure around the player and full room-to-surface traversal need runtime collision checks.",
+    "MotionWindow estimates endpoint displacement over its time window; tight turns/backtracking can undercount traveled speed.",
+    "Sprint physiology is an explicit SCENARIO extrapolation of the walking formula, not validated running physiology.",
+    "Facial lip sync, final station gameplay, robot escort and full T6 S1 alarm/line-shrink acceptance remain separate work."
+  ],
+  "authority": {
+    "robot_physics_control": "ROS/Gazebo",
+    "human_character": "Unreal",
+    "mission_phase_and_pet": "ROS; narrative cameras/skip do not advance them"
+  }
+}

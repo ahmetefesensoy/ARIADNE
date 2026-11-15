@@ -56,7 +56,9 @@ SERVICE_NAMES = [
     "PlanEva",
     "QueryCell",
     "ScenarioControl",
-    "GetManifest"
+    "GetManifest",
+    "MissionCommand",
+    "AnalyzeSample"
 ]
 ACTION_NAMES = [
     "SurveyArea",
@@ -69,7 +71,8 @@ ACTION_NAMES = [
     "CacheSample",
     "DeployStation",
     "ReturnToShelter",
-    "ExecuteScout"
+    "ExecuteScout",
+    "CollectSample"
 ]
 OUTCOME_NAMES = ("SUCCEEDED", "PARTIAL", "CANCELED", "FAILED", "REJECTED")
 

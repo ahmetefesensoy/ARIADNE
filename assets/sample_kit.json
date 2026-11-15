@@ -1,0 +1,7 @@
+{
+  "provenance": "SCENARIO",
+  "tube_and_cap": "incoming/sample_tube",
+  "carrying_case": "incoming/sample_case",
+  "cache": "Reuse sample_case at scenario-recorded cache pose; no scene placement authored",
+  "origin_vs_analysis": "Asset location does not define sample collection origin or assay location"
+}

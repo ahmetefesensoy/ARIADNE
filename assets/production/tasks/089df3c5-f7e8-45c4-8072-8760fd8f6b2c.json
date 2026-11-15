@@ -1,0 +1,18 @@
+{
+  "task_id": "089df3c5-f7e8-45c4-8072-8760fd8f6b2c",
+  "type": "texture_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": true,
+    "bake": true,
+    "texture": true,
+    "model_version": "v3.0-20250812",
+    "texture_quality": "standard",
+    "original_model_id": "310774f0-cd27-4265-8657-3c02c288e33d",
+    "texture_alignment": "original_image"
+  },
+  "created_at": "2026-11-14T10:51:09.586543Z",
+  "completed_at": "2026-11-14T10:52:12.616751Z",
+  "credits_consumed": 10
+}

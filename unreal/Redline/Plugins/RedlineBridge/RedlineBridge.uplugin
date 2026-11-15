@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "FriendlyName": "REDLINE ROS Presentation Bridge",
+  "Description": "Fresh rosbridge v2 client; presentation only, no robot physics.",
+  "Category": "Simulation",
+  "CanContainContent": false,
+  "EnabledByDefault": true,
+  "Modules": [{"Name": "RedlineBridge", "Type": "Runtime", "LoadingPhase": "Default"}]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- Accelerated SCENARIO demo only. RPC acknowledgement budget 1000 ms in
+     physics time (=250 ms wall at requested 4x). Collision/observation freshness,
+     footprint checks, speed caps and bounded recovery counts are unchanged. -->
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <RecoveryNode number_of_retries="3" name="NavigateWithBoundedWait">
+      <PipelineSequence name="ReplanAndFollow">
+        <RateController hz="1.0">
+          <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"
+                             server_timeout="1000" error_code_id="{compute_path_error_code}"/>
+        </RateController>
+        <FollowPath path="{path}" controller_id="FollowPath" goal_checker_id="goal_checker"
+                    server_timeout="1000" error_code_id="{follow_path_error_code}"/>
+      </PipelineSequence>
+      <ReactiveFallback name="WaitOrAcceptNewGoal">
+        <GoalUpdated/>
+        <Wait wait_duration="2.0" server_timeout="1000"/>
+      </ReactiveFallback>
+    </RecoveryNode>
+  </BehaviorTree>
+</root>

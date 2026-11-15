@@ -1,0 +1,85 @@
+{
+  "schema": "redline.prologue.tripo-generation.v1",
+  "status": "SCENARIO",
+  "created_at_utc": "2026-11-14T23:09:36.872Z",
+  "ai_generated": true,
+  "credits_spent": 105,
+  "notices": "User-authorized Tripo art. Tripo account/model terms apply; not NASA archive or CC0. Raw downloads retained. No signed artifact URLs copied into this manifest.",
+  "tasks": [
+    {
+      "task_id": "6fdddbfa-4a50-4f2a-ba0d-9313472f6a4a",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:40:52.800Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "A single premium vintage record player console for a realistic astronaut habitat interior, a walnut wood low cabinet with rounded bevelled corners, brushed aluminum control panel, black circular platter on top, one black 12 inch vinyl record seated flat, a delicate separate-looking silver tonearm and small pickup, small analog knobs and rectangular warm amber power indicator, clean mid century hi-fi craftsmanship, subtle wear, tactile real materials. The record center label is plain warm cream blank with no lettering; exact artist label will be added later. Complete self-contained freestanding console, isolated on neutral background. No people, no walls, no room, no text, no logo, no invented lettering, no transparent dust cover, no cables across the floor. Coherent solid geometry and readable silhouette. Natural real world size about 95 cm wide, 70 cm tall and 55 cm deep.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "beab3820-a4f5-4e11-b039-142290105b4f",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:44:07.808Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "6fdddbfa-4a50-4f2a-ba0d-9313472f6a4a",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "c3d7d581-63e5-4a90-abfd-9f6f8aa35e8b",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:45:54.830Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "A realistic modular open-front Mars habitat crew relaxation alcove interior set, six meters wide by four meters deep by three meters tall, two solid side and rear walls and a solid level floor, no roof and open front for a game camera. Warm off-white aerospace wall panels with rounded ribs, graphite floor grilles, visible seams and service fasteners, tasteful amber practical light housings, built-in bookshelf with small blank books and record sleeves, a pair of compact wall speakers, shallow equipment niches, a small oval porthole window frame in the rear wall. No chairs, no tables, no record player, no people, no text, no flags, no logos, no space backdrop. Single cohesive architectural environment module, hollow accessible interior, neutral blank background. Clean hard surface science fiction engineering, cozy lived-in crew lounge, subtle Martian dust around floor edges. Separate visual architecture, not a terrain landscape.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "58cd3f92-806e-4c23-9bcd-869162386267",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:50:21.108Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "c3d7d581-63e5-4a90-abfd-9f6f8aa35e8b",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "e9c1bda6-8d00-47b9-a6d3-061df4803064",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:54:53.992Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "One complete realistic fictional Mars landing capsule for an astronaut narrative game opening, about six meters high and eight meters wide including four deployed landing legs. Coherent squat pressurized crew capsule, ivory aerospace panels and graphite heat shield, restrained gold thermal foil, sturdy mechanically plausible struts, circular top hatch and small dark windows, three recessed descent engine nozzles underneath, stable footpads. All four legs deployed, pristine but lightly dusted, no motion effects, no terrain, no astronauts, no backdrop, no writing, no logos, no flags, no NASA marks. Isolated complete hard surface spacecraft with clean manufactured geometry and realistic material textures. Visual prop only, not a real flight hardware claim.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "e7fc4c9e-c4e8-4e72-950e-fe454dd49337",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:57:38.420Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "e9c1bda6-8d00-47b9-a6d3-061df4803064",
+        "format": "FBX"
+      }
+    }
+  ]
+}

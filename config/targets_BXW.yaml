@@ -1,0 +1,26 @@
+# Human/robot science rehearsal targets. No NASA measured chemistry is supplied.
+schema: redline.science.targets.v1
+site_id: BXW
+provenance_status: SCENARIO
+noise_calibration: UNCALIBRATED_SCENARIO
+seed: 20261115
+note: >-
+  These named points and chemistry values are authored demonstration inputs,
+  not Curiosity observations. Target points use the current local ENU map and
+  approximate existing EVA surface height. Physical contact, actual drilled
+  sample retrieval and chemistry calibration remain separate acceptance work.
+targets:
+  - id: BXW_RIDGE_A
+    point_m: [306.0, -454.0, -3581.47]
+    composition_percent: {SiO2: 46.0, Al2O3: 12.0, FeO: 18.0, CaO: 6.0, MgO: 5.0}
+    sigma_percent: 1.4
+    weh_percent: 2.8
+    hardness: 0.45
+    input_ids: [scenario-BXW-20261115-ridge-a, config/targets_BXW.yaml]
+  - id: BXW_HOLLOW_B
+    point_m: [320.0, -448.0, -3581.47]
+    composition_percent: {SiO2: 39.0, Al2O3: 8.0, FeO: 15.0, CaO: 14.0, MgO: 9.0}
+    sigma_percent: 1.6
+    weh_percent: 4.2
+    hardness: 0.85
+    input_ids: [scenario-BXW-20261115-hollow-b, config/targets_BXW.yaml]

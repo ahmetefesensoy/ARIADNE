@@ -1,0 +1,242 @@
+{
+  "recorded_at_utc": "2026-11-14T20:18:11.4680909Z",
+  "recorded_at_local": "2026-11-14T23:18:11.4706071+03:00",
+  "status": "SCENARIO",
+  "scope": "Exposure/atmosphere correction and display-only rover visual update; not full reference-scene acceptance",
+  "map": "/Game/VisualShowcase/BXW_Atmosphere_Autonomy",
+  "build": {
+    "report": "test-results/t4-build-source.json",
+    "log": "test-results/t4-build-look-final.log",
+    "exit_code": 0,
+    "current_source_matches_built_inputs": true,
+    "source_file_count": 27
+  },
+  "automation": {
+    "report": "test-results/t4-visual-automation/index.json",
+    "report_created_utc": "2026.11.14-19.53.02",
+    "passed": 14,
+    "failed": 0,
+    "warnings": 0,
+    "scope": "12 bridge + 2 music; run before lighting-only edits and removal of unused local AFS token; no later C++ changes"
+  },
+  "python": {
+    "report": "test-results/visual-showcase-python-final.xml",
+    "passed": 7,
+    "failed": 0,
+    "errors": 0
+  },
+  "import_report": "test-results/t4-atmosphere-import.json",
+  "render_review": {
+    "method": "CUA live Unreal game screenshot",
+    "window_id": 17763670,
+    "observed": "Orange sky and visible sun; no full-screen white wash; terrain shadows and rover body/wheels readable; no directional-light-priority warning in final frame",
+    "exposure_fix_verified": true,
+    "verdict": "SHIP_WITH_NOTES for exposure correction; final reference match not accepted",
+    "reference_scene_accepted": false,
+    "open": "Natural rock dressing, close-range terrain texture fidelity, more cinematic atmosphere depth and final user art direction",
+    "screenshot_file": null,
+    "evidence_location": "Conversation CUA screenshot from the named window; not an exported local PNG"
+  },
+  "lighting": {
+    "observed_at_utc": "2026-11-14T23:14:09.070687+03:00",
+    "status": "SCENARIO",
+    "passed": true,
+    "map": "/Game/VisualShowcase/BXW_Atmosphere_Autonomy",
+    "scope": "engine atmosphere/lighting and original rover material derivatives; not measured Mars atmosphere",
+    "sun_intensity_lux": 12000.0,
+    "sun_pitch_deg": -12.0,
+    "sun_yaw_deg": -70.0,
+    "fog_density": 0.001,
+    "fog_start_distance_m": 100.0,
+    "volumetric_fog": false,
+    "skylight_intensity": 150.0,
+    "reflection_cube": "/Engine/MapTemplates/Sky/SunsetAmbientCubemap",
+    "diffuse_scenario_fill_lux": 4000.0,
+    "exposure": {
+      "method": "manual",
+      "iso": 100,
+      "fstop": 4,
+      "shutter_speed": 125,
+      "ev100": 10.965784,
+      "bias": 0.6
+    },
+    "roughness": {
+      "atlas": 0.38,
+      "paint": 0.32,
+      "gold": 0.23
+    },
+    "physical_atmosphere_validation": false,
+    "render_verified": false
+  },
+  "source_master": {
+    "path": "assets/incoming/rover_1/master.blend",
+    "sha256": "df0f9985e1ccb3f48c80f55b11e96c6430cf64a02a8a372d95d79f4b90384f77",
+    "matches_export_source": true
+  },
+  "authority": {
+    "physics_control": "ROS/Gazebo",
+    "unreal": "Presentation and gated command intent only",
+    "physical_pose": "Display/evaluation only, never Nav2/EKF input",
+    "physical_scenario_time": "Requested 1x/2x/4x; actual factor reported separately",
+    "mission_pet_time": "Unchanged by preview time keys"
+  },
+  "open_navigation": {
+    "original_t3_rviz_acceptance": "docs/verification/T3_RVIZ_ACCEPTANCE.json",
+    "full_low_obstacle_3d_drive_accepted": false,
+    "latest_atmosphere_route": "test-results/atmosphere-moving-autonomy.json",
+    "latest_first_action_status": 6,
+    "note": "Physical error about 0.10m does not make the aborted action successful; single-pose goal-cell boundary handling remains open"
+  },
+  "asset_files": [
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/BXW_Atmosphere_Autonomy.umap",
+      "sha256": "7135c092db87b8039733d7d6982a42f49fc9ee6e93d468b4a1f28e4f48d192fa",
+      "bytes": 102464
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/BXW_Sand_Autonomy.umap",
+      "sha256": "854e4d758267bed9a5e432b42bcec4f6f47a42e3b152de9b39b4ffaf4a189b7b",
+      "bytes": 93011
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/MPC_WheelContacts.uasset",
+      "sha256": "34d797006135832c81a039c79c18bf0431b245fe193d7aa68de39c737442cf19",
+      "bytes": 2645
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Materials/M_ScenarioSand_context.uasset",
+      "sha256": "acfb7be351bd5a04aac48fcac819b5b4e4ef4f5c5793da9a9192427e05f28053",
+      "bytes": 15906
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Materials/M_ScenarioSand_ops.uasset",
+      "sha256": "b5bf04c5823ecde32ec8df7983173e3730c393556825abdeeb9c8b9728d1fa0b",
+      "bytes": 15874
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Materials/M_ScenarioTyreTread.uasset",
+      "sha256": "b1476f4fc2cd33e9498e88f360ed62c3edb701cb6efd075cb1e0f705d280d4b2",
+      "bytes": 7578
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Materials/MAT_NASA_Curiosity_Atlas_Sunlit.uasset",
+      "sha256": "2bda0c4d3508f603ad4d24970f89c4baf081ff6f8ce39335d7ad5475b49ff9d0",
+      "bytes": 7833
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Materials/MAT_NASA_gold_Sunlit.uasset",
+      "sha256": "907128bb78427c6d2c86c2419c4792842a8d21c74aca50c8d3340f7fbf20404c",
+      "bytes": 7558
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Materials/MAT_NASA_parts_AO_Sunlit.uasset",
+      "sha256": "3ca11ea920d2edc1c19872ee548f64aee622638c996432318586c644d72e09df",
+      "bytes": 7767
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Materials/MAT_NASA_solid_Sunlit.uasset",
+      "sha256": "126f763d5fd4b286fcf213c3163af5055e970f1c14f7c5efcf5f36cfe35b074c",
+      "bytes": 7535
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Rover/SM_body.uasset",
+      "sha256": "fe8be6239bfbbd1d193704d66ebddd74af1f16d7eccc53d4b99101a579826472",
+      "bytes": 1261015
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Rover/SM_wheel_01_L.uasset",
+      "sha256": "a83ba89090a0f5b4e9aaec031dd6395c8bb8f2931215f9521d925c41eb436dbc",
+      "bytes": 71652
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Rover/SM_wheel_01_R.uasset",
+      "sha256": "26d43649ff7e7b789a8cfcd04bf6d9b173ea5b153aa3591cc83bc4bddaa9c909",
+      "bytes": 71619
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Rover/SM_wheel_02_L.uasset",
+      "sha256": "9a1e20d486e5a3b37f7e4fc7bbd77cd4dfc72b2cdcf2dfc97d30c52d84b40399",
+      "bytes": 71816
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Rover/SM_wheel_02_R.uasset",
+      "sha256": "b421b2cc94919f9a71e9afde0725b36a9ef9ef55d4e9e486b38d3d0e5ede82c5",
+      "bytes": 71695
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Rover/SM_wheel_03_L.uasset",
+      "sha256": "5bb29cb3d19563ba5d22a75e794d64345da30e6bf99dd2e779e8cd653820c926",
+      "bytes": 71667
+    },
+    {
+      "path": "unreal/Redline/Content/VisualShowcase/Rover/SM_wheel_03_R.uasset",
+      "sha256": "8bc14396105f8fa607ab147a3265d3365b3ab526ba3febfafc8fdb95b627fca0",
+      "bytes": 71610
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/BXW_Autonomy_Showcase.umap",
+      "sha256": "59bc1673d09703fa2fabaf37c23bcfdb417c0bb2fef0ef2dd4feff88dd7f4aae",
+      "bytes": 78280
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/BXW_LivePreview.umap",
+      "sha256": "066340544fdb0ca926a8ed07e9a1f0fe3d17444359415f6f7a08ebd638307c34",
+      "bytes": 58887
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Materials/M_BXW_Archive_context.uasset",
+      "sha256": "abdd0ac8f5e4ee2081ce561e9f999dca06bfbc3bd95eaa0b43a9d8490061a9e3",
+      "bytes": 5793
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Materials/M_BXW_Archive_ops.uasset",
+      "sha256": "159c2535b9101e9e1690fdeb0279282833fb9c79781b98568262c75da0511cc0",
+      "bytes": 5761
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Materials/MAT_NASA_Curiosity_Atlas.uasset",
+      "sha256": "26e14a0dbc37d23d3cc77e23423307d712507953636da6bb7fc1f2377f329a7a",
+      "bytes": 5833
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Materials/MAT_NASA_gold.uasset",
+      "sha256": "70a26260deed033b680e10134e5c0bb6249a3fb1f9a94a187ba158852096ae9f",
+      "bytes": 5558
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Materials/MAT_NASA_parts_AO.uasset",
+      "sha256": "d8f86bcaa771985f5fc758e95418e8f3304a434be89cf6e7f57c9fca47bb2702",
+      "bytes": 5767
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Materials/MAT_NASA_solid.uasset",
+      "sha256": "ff3f3482359a40f837dd783ab9697bb8407f30cacbb7a3ca39363e499ac806b6",
+      "bytes": 5535
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Rover/SM_DeliveredRover.uasset",
+      "sha256": "7c359be740e5ab1c682192cd909ec68ad23cf5b92589c95f8acb4cd60b029ef8",
+      "bytes": 1514242
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Textures/atlas_context.uasset",
+      "sha256": "aa6365e75f522eeab98e9b2d5ac201abce669a7ec9058d62751310ca59d744c7",
+      "bytes": 41446920
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Textures/atlas_ops.uasset",
+      "sha256": "77afe63d63b4f2368efa26807cf7b2a9b7fcd790599cf852699019afba96bd03",
+      "bytes": 30265605
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Textures/NASA_Curiosity_BaseColor.uasset",
+      "sha256": "c945566438712542922f51a24563874d01b9cdbf45f08b2b614675fcbf782d83",
+      "bytes": 4576085
+    },
+    {
+      "path": "unreal/Redline/Content/DerivedPreview/Textures/parts_AO_png.uasset",
+      "sha256": "61043af1a92dc7bec56517a9600d3f0a1f4b3fe4d3448fe37c85c0819d95233e",
+      "bytes": 495303
+    }
+  ]
+}

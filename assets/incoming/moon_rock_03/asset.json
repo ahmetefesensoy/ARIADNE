@@ -1,0 +1,238 @@
+{
+  "asset_id": "moon_rock_03",
+  "prepared_utc": "2026-11-14T12:08:09.173389+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\moon_rock_03\\source.gltf",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.001965310424566269
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        -0.002641899511218071
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0016210168832913041
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.08606579899787903,
+      0.11202366650104523,
+      0.05816437304019928
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_moon_rock_03_moon_rock_03_LOD0_LOD0",
+      "source_name": "moon_rock_03_LOD0",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.02908218652009964
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 5598,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "moon_rock_03_LOD0",
+        "triangles": 5598,
+        "vertices": 3046,
+        "uv_layers": 1,
+        "non_manifold_edges": 484
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 4499,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_moon_rock_03_moon_rock_03_LOD0_LOD0",
+        "triangles": 4499,
+        "vertices": 2496,
+        "uv_layers": 1,
+        "non_manifold_edges": 483
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 2249,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_moon_rock_03_moon_rock_03_LOD1_LOD1",
+          "triangles": 2249,
+          "vertices": 1358,
+          "uv_layers": 1,
+          "non_manifold_edges": 457
+        }
+      ]
+    },
+    "2": {
+      "triangles": 1123,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_moon_rock_03_moon_rock_03_LOD2_LOD2",
+          "triangles": 1123,
+          "vertices": 757,
+          "uv_layers": 1,
+          "non_manifold_edges": 381
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 800,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_moon_rock_03_moon_rock_03_Gazebo_Gazebo",
+        "triangles": 800,
+        "vertices": 568,
+        "uv_layers": 1,
+        "non_manifold_edges": 326
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "moon_rock_03_diff",
+      "path": "textures/moon_rock_03_diff.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "moon_rock_03_nor_gl",
+      "path": "textures/moon_rock_03_nor_gl.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "moon_rock_03_rough",
+      "path": "textures/moon_rock_03_rough.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\moon_rock_03_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "CC0 terrestrial scan; shape and colour are not Mars mineral or measurement evidence."
+  ],
+  "source_notice": {
+    "kind": "Poly Haven · CC0",
+    "library": {
+      "source": "https://polyhaven.com/a/moon_rock_03",
+      "credit": {
+        "Greg Zaal": "Photography",
+        "Rico Cilliers": "Photography",
+        "Jenelle van Heerden": "Processing"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license"
+    },
+    "tripo_tasks": [],
+    "terms_urls": [
+      "https://polyhaven.com/license"
+    ]
+  },
+  "build_spec": {
+    "source": "source.gltf",
+    "longest": 0.11202366650104523,
+    "lod0": 4500,
+    "gazebo": 800,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 1,
+    "triangles": 4499,
+    "dimensions_m": [
+      0.08606579899787903,
+      0.11202366650104523,
+      0.05816437304019928
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "fbx_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.08606579899787903,
+        0.11202366650104523,
+        0.05816437304019928
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "obj_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.08602096885442734,
+        0.11287780851125717,
+        0.058779433369636536
+      ],
+      "max_dimension_error_m": 0.0008541420102119446
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

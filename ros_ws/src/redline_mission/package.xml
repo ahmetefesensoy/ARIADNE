@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>redline_mission</name>
+  <version>0.1.0</version>
+  <description>REDLINE mission nodes: cell knowledge store (proje.md section 8.3).</description>
+  <maintainer email="maintainer@example.invalid">REDLINE team (placeholder)</maintainer>
+  <license>LicenseRef-Project-Pending</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>redline_msgs</exec_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>rosgraph_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>nav2_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>diagnostic_updater</exec_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>redline_science</test_depend>
+  <test_depend>geometry_msgs</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

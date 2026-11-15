@@ -1,0 +1,23 @@
+{
+  "schema": "redline.light_time.v1",
+  "status": "DERIVED",
+  "method": "spkpos MARS BARYCENTER from EARTH BARYCENTER, J2000, light-time corrected (LT)",
+  "kernels": {
+    "naif0012.tls": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+    "de440s.bsp": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2"
+  },
+  "events": {
+    "alarm_utc": {
+      "utc": "2024-05-20T05:21:50Z",
+      "one_way_min": 15.84,
+      "round_trip_min": 31.67,
+      "distance_au": 1.904
+    },
+    "peak_utc": {
+      "utc": "2024-05-20T06:15:19Z",
+      "one_way_min": 15.83,
+      "round_trip_min": 31.67,
+      "distance_au": 1.904
+    }
+  }
+}

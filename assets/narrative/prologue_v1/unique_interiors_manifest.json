@@ -1,0 +1,85 @@
+{
+  "schema": "redline.prologue.tripo-generation.v1",
+  "status": "SCENARIO",
+  "ai_generated": true,
+  "created_at_utc": "2026-11-15T00:20:04.914Z",
+  "credits_spent": 105,
+  "tasks": [
+    {
+      "task_id": "80896b55-290c-4f8a-8a14-15a2bc9f5340",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:07:09.330Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "INTERIOR architecture of a realistic Mars habitat COMMAND CENTER for a first person game. Complete walkable room module, 6 meters deep, 3.6 meters wide, 2.8 meters tall. Open front, three interior walls, level graphite floor, ceiling cut away for camera. Mission control design: graphite and warm ivory wall panels, three large recessed blank dark widescreen displays on rear wall at human eye height, amber light housings, two compact angled operator console desks along side walls, low central planning table with dark inset glass, overhead cable trays, structural ribs, acoustic panels, blue task lighting and warm practical lamps. Clear 1.2 meter central walking aisle from open front to rear screens. Coherent manufactured aerospace geometry, realistic textures and restrained wear. Show inside surfaces prominently. No sofa, no beds, no lounge furniture, no people, no landscape, no lettering, no logos, no flags. One room with built-in furniture, no outside base.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "b9425aa5-ca6b-4e11-b149-5e0d546218bf",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:10:54.280Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "80896b55-290c-4f8a-8a14-15a2bc9f5340",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "4c8ac69c-d0d6-4ffa-92da-a582e6754441",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:11:24.948Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "INTERIOR modular Mars habitat CORRIDOR for a first person game. Long straight walkable passage 15.6 meters long, 3 meters wide, 2.8 meters tall. Show inside prominently. Ivory curved aerospace wall panels over dark structural ribs, continuous level graphite anti-slip floor grilles, recessed ceiling light strips, low amber guide lights, flush pipe runs and service niches. Three large OPEN doorway portals evenly spaced on ONE long side wall, opening to habitat rooms; one OPEN doorway in center of opposite side wall for airlock access. Door leaves omitted for separate interactive doors. Both short ends have solid bulkheads, ceiling cut away for game camera. Central aisle clear, manufactured geometry and realistic textures, subtle reddish dust near floor edges. No rooms beyond portals, no furniture, no people, no landscape, no lettering, no signs, no logos, no flags. Single hollow architectural module, not an exterior building.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "0a3aa050-4ce2-4728-835a-35e7a2fa6016",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:14:08.478Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "4c8ac69c-d0d6-4ffa-92da-a582e6754441",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "bd119488-c6cc-4817-91ad-b0a69214ba36",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:14:52.379Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "INTERIOR architecture of a realistic Mars habitat SAMPLE LABORATORY for a first person game. Walkable room module, 6 meters deep, 3.6 meters wide, 2.8 meters tall. Open front, three inner walls, level grey nonslip floor, ceiling cut away for camera. Clean science preparation space: off-white and pale blue modular panels, stainless steel workbenches along side walls, compact enclosed sample preparation glovebox with transparent front and two circular glove ports, sample drawers with blank fronts, rack of capped small sample containers, instrument cabinets, one recessed blank dark display at eye height on rear wall, cable conduits, cool white task lamps and amber warning housings. Wide clear central walking aisle, coherent industrial geometry, realistic lightly worn materials. No sofa, no beds, no people, no terrain, no lettering, no logos, no flags. Complete room with built-in equipment; keep door opening unobstructed.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "d59ba098-7c6b-4f36-bc7c-3e87a439924e",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:18:05.960Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "bd119488-c6cc-4817-91ad-b0a69214ba36",
+        "format": "FBX"
+      }
+    }
+  ],
+  "notices": "Three distinct user-requested interiors. Raw downloads unchanged. Derived corridor portal/clearance cuts align the rooms; architectural art is not NASA archive or pressure hardware."
+}

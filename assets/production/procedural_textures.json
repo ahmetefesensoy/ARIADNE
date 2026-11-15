@@ -1,0 +1,36 @@
+{
+  "aruco": {
+    "dictionary": "DICT_4X4_50",
+    "marker_size_m": 0.15,
+    "plate_size_m": 0.19999999999999998,
+    "cell_size_m": 0.024999999999999998,
+    "quiet_zone_cells": 1,
+    "opencv": "5.0.0",
+    "markers": [
+      {
+        "id": 10,
+        "png": "incoming/valve_panel/textures_src/aruco_10.png",
+        "sha256": "230ead5a979aa162d4a3364fd5b15b34747504c1aa3f481e434e75ec65f614d3",
+        "pixels": 640,
+        "redetected_ids": [
+          10
+        ]
+      },
+      {
+        "id": 11,
+        "png": "incoming/valve_panel/textures_src/aruco_11.png",
+        "sha256": "f126ee50cb4569ecab23523f49df6d4733d40ab21568dd4567f42e3afb5deb20",
+        "pixels": 640,
+        "redetected_ids": [
+          11
+        ]
+      }
+    ]
+  },
+  "drone_pad": {
+    "png": "incoming/drone_pad/textures_src/drone_pad_markings.png",
+    "sha256": "11a1b13257421af47fb4570c98da6e3e24dfef8f9010e80f76a892ceb95973b3",
+    "pixels": 1024,
+    "content": "graphite field, outer/inner rings, crosshair, red heading mark toward texture +v"
+  }
+}

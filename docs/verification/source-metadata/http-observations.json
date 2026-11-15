@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "observations": [
+    {
+      "requested_url": "https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m.xml",
+      "final_url": "https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m.xml",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "status": 200,
+      "response_headers": {
+        "Date": "Sat, 14 Nov 2026 10:34:17 GMT",
+        "Content-Type": "text/xml",
+        "Content-Length": "13786",
+        "Connection": "close",
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Server": "cloudflare",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "Accept-Ranges": "bytes",
+        "last-modified": "Sat, 14 Nov 2026 10:34:17 GMT",
+        "cf-cache-status": "EXPIRED",
+        "X-Content-Type-Options": "nosniff",
+        "CF-RAY": "a5a55ce3a9f736ee-IST"
+      },
+      "observed_at_utc": "2026-11-14T10:34:17.877821+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.304229+00:00",
+      "body_size_bytes": 13786,
+      "body_sha256": "63672068718403653375a817f2cefe40f24901540ddb45ac9963bfccb59f3993",
+      "body_path": "source-metadata/gale-v3-fgdc.xml",
+      "omitted_sensitive_headers": [
+        "set-cookie"
+      ]
+    },
+    {
+      "requested_url": "https://astrogeology.usgs.gov/ckan/dataset/b3d63877-8544-49bb-b0f3-532cf2c648d1/resource/cd140a94-1e66-46e0-8d5a-d8f0e4128b7e/download/msl_gale_dem_mosaic_1m_v3_pds3.lbl",
+      "final_url": "https://astrogeology.usgs.gov/ckan/dataset/b3d63877-8544-49bb-b0f3-532cf2c648d1/resource/cd140a94-1e66-46e0-8d5a-d8f0e4128b7e/download/msl_gale_dem_mosaic_1m_v3_pds3.lbl",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "status": 200,
+      "response_headers": {
+        "Date": "Sat, 14 Nov 2026 10:34:18 GMT",
+        "Content-Type": "text/plain",
+        "Content-Length": "2188",
+        "Connection": "close",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"1692216889.934631-2188-1117001163\"",
+        "expires": "Sat, 14 Nov 2026 22:34:17 GMT",
+        "last-modified": "Wed, 16 Aug 2023 20:14:49 GMT",
+        "Server": "cloudflare",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "Accept-Ranges": "bytes",
+        "cf-cache-status": "EXPIRED",
+        "X-Content-Type-Options": "nosniff",
+        "CF-RAY": "a5a55ce3ab1623f6-IST"
+      },
+      "observed_at_utc": "2026-11-14T10:34:17.937338+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.304229+00:00",
+      "body_size_bytes": 2188,
+      "body_sha256": "52eaf7a3f5c03812e0e6f3d5305495a329cb64eea65e161b0a6204a8092a9a16",
+      "body_path": "source-metadata/gale-v3-pds3.lbl",
+      "omitted_sensitive_headers": [
+        "set-cookie"
+      ]
+    },
+    {
+      "requested_url": "https://astrogeology.usgs.gov/ckan/dataset/b3d63877-8544-49bb-b0f3-532cf2c648d1/resource/d1a8afb0-3a48-4dcb-92a8-6c5794bb662f/download/msl_gale_dem_mosaic_1m_v3.lbl",
+      "final_url": "https://astrogeology.usgs.gov/ckan/dataset/b3d63877-8544-49bb-b0f3-532cf2c648d1/resource/d1a8afb0-3a48-4dcb-92a8-6c5794bb662f/download/msl_gale_dem_mosaic_1m_v3.lbl",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "status": 200,
+      "response_headers": {
+        "Date": "Sat, 14 Nov 2026 10:34:17 GMT",
+        "Content-Type": "text/plain",
+        "Content-Length": "1391",
+        "Connection": "close",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "etag": "\"1692216891.518616-1391-1350309420\"",
+        "expires": "Sat, 14 Nov 2026 22:34:17 GMT",
+        "last-modified": "Wed, 16 Aug 2023 20:14:51 GMT",
+        "Server": "cloudflare",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "Accept-Ranges": "bytes",
+        "cf-cache-status": "EXPIRED",
+        "X-Content-Type-Options": "nosniff",
+        "CF-RAY": "a5a55ce3be7d46a6-IST"
+      },
+      "observed_at_utc": "2026-11-14T10:34:17.895328+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.304229+00:00",
+      "body_size_bytes": 1391,
+      "body_sha256": "dd55ca3c5256ea7384c06b87279ce2ee8d08ce38cf69eda5dc57af3f11aae2cc",
+      "body_path": "source-metadata/gale-v3-isis3.lbl",
+      "omitted_sensitive_headers": [
+        "set-cookie"
+      ]
+    },
+    {
+      "requested_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.vrt",
+      "final_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.vrt",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "status": 200,
+      "response_headers": {
+        "x-amz-request-id": "WK73S3FGB10WEG53",
+        "x-amz-id-2": "pDedehmsCxTUBIz7YS+OlKvHmnkw3pPf8cmiiH56qal6PkOkX+uv+/r9ITN9cK1j4UBUcyoo67tc1mRAWHSqhyecRrUftepW",
+        "Content-Length": "1799",
+        "Accept-Ranges": "bytes",
+        "Date": "Sat, 14 Nov 2026 10:34:18 GMT",
+        "Server": "AmazonS3",
+        "Last-Modified": "Wed, 09 Nov 2022 15:53:40 GMT",
+        "ETag": "\"48df751b155791480ae97830058533fe\"",
+        "x-amz-version-id": "null",
+        "Content-Type": "binary/octet-stream",
+        "x-amz-storage-class": "STANDARD_IA",
+        "Connection": "close"
+      },
+      "observed_at_utc": "2026-11-14T10:34:18.040087+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.304229+00:00",
+      "body_size_bytes": 1799,
+      "body_sha256": "b4bea2368d651e01bb041301a2ca45198d121e7f4d1417ab51d8c3c5584fd392",
+      "body_path": "source-metadata/gale-v3-source.vrt"
+    },
+    {
+      "requested_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif.md5",
+      "final_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif.md5",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "status": 200,
+      "response_headers": {
+        "x-amz-request-id": "WK79Q1JFMH6R5HCD",
+        "x-amz-id-2": "qHBCLJJ4DqgceVser8FXvrWdqyGUA7WVfktu22ktyGWXbflyhC0Te+su6CKMJM0hNk+aOogcOURuZgehkC1cYfF50NHRvZhf",
+        "Content-Length": "64",
+        "Accept-Ranges": "bytes",
+        "Date": "Sat, 14 Nov 2026 10:34:18 GMT",
+        "Server": "AmazonS3",
+        "Last-Modified": "Wed, 09 Nov 2022 15:52:52 GMT",
+        "ETag": "\"bbd98d1f9f2b72baa5f2f0740a5fc7ca\"",
+        "x-amz-version-id": "null",
+        "Content-Type": "binary/octet-stream",
+        "x-amz-storage-class": "STANDARD_IA",
+        "Connection": "close"
+      },
+      "observed_at_utc": "2026-11-14T10:34:18.035353+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.304229+00:00",
+      "body_size_bytes": 64,
+      "body_sha256": "d0a70c53809078b0b40475600261ce984eef5723b8a71cb8af193382c192d863",
+      "body_path": "source-metadata/gale-v3-source.md5"
+    },
+    {
+      "requested_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+      "final_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Range": "bytes=0-16383"
+      },
+      "status": 206,
+      "response_headers": {
+        "Server": "nginx/1.18.0",
+        "Date": "Sat, 14 Nov 2026 10:34:18 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "16384",
+        "Connection": "close",
+        "Last-Modified": "Fri, 30 Mar 2012 21:31:06 GMT",
+        "ETag": "\"4f76261a-205946f8\"",
+        "Content-Range": "bytes 0-16383/542721784"
+      },
+      "observed_at_utc": "2026-11-14T10:34:18.727397+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.883821+00:00",
+      "body_size_bytes": 16384,
+      "body_sha256": "e85b8a680648dca524a50432264fcb2fb57ca9be4715bfad1ab28a9cbf1a8590",
+      "body_path": "source-metadata/hirise-DTEEC_019698_1750_019988_1750_U01-label-prefix16384.lbl"
+    },
+    {
+      "requested_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/provenance.txt",
+      "final_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/provenance.txt",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "status": 200,
+      "response_headers": {
+        "x-amz-request-id": "WK789ZP3MT28C0JE",
+        "x-amz-id-2": "8e9fzVW4qfd3jmAH95yldWBwijqDSxQiYMmUFuh9YP8At0W7GJAtv9pgO/c9ckL2uwC1YaFAWN8=",
+        "Content-Length": "4036",
+        "Accept-Ranges": "bytes",
+        "Date": "Sat, 14 Nov 2026 10:34:18 GMT",
+        "Server": "AmazonS3",
+        "Last-Modified": "Sat, 08 Jul 2023 00:46:25 GMT",
+        "ETag": "\"cd2404d319f93b19ec1ee2f153dc9384\"",
+        "Content-Type": "text/plain",
+        "x-amz-server-side-encryption": "AES256",
+        "Connection": "close"
+      },
+      "observed_at_utc": "2026-11-14T10:34:18.612822+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.902836+00:00",
+      "body_size_bytes": 4036,
+      "body_sha256": "29875aad7e9accfd0604493d526503444bfb282cad8780f3c2015c28aa451dc5",
+      "body_path": "source-metadata/hirise-DTEEC_019698_1750_019988_1750_U01-provenance.txt"
+    },
+    {
+      "requested_url": "https://planetarymaps.usgs.gov/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+      "final_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+      "method": "GET",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Range": "bytes=0-63"
+      },
+      "status": 206,
+      "response_headers": {
+        "x-amz-request-id": "FCBA2YKT4MZ9NPYK",
+        "x-amz-id-2": "KZo76g3p+Z11aMFkEw5NIBtF6eYuTGTTkkI7Ut5ai1kTuuvz/5oQdzdBycloIkC7PXC2kkJtB04/BOBJf14ePtVbd7S07/Rl",
+        "Content-Length": "64",
+        "Accept-Ranges": "bytes",
+        "Content-Range": "bytes 0-63/3868256546",
+        "Date": "Sat, 14 Nov 2026 10:34:19 GMT",
+        "Server": "AmazonS3",
+        "Last-Modified": "Wed, 09 Nov 2022 15:50:28 GMT",
+        "ETag": "\"746836824e520f8f0a7fb3987bdef0ff-462\"",
+        "x-amz-version-id": "null",
+        "Content-Type": "image/tiff",
+        "x-amz-storage-class": "STANDARD_IA",
+        "Connection": "close"
+      },
+      "observed_at_utc": "2026-11-14T10:34:19.159595+00:00",
+      "request_started_at_utc": "2026-11-14T10:34:17.944371+00:00",
+      "body_size_bytes": 64,
+      "body_sha256": "fe5c1a68d127ca37aff189bb9f001e38bd0244fe5ea971affc40c9d74827362e",
+      "body_hex": "49492a002ee189e613000001030001000000d4800000010103000100000060e00000020103000100000020000000030103000100000005000000060103000100"
+    }
+  ]
+}

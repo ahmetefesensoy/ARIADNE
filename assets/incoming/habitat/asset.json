@@ -1,0 +1,338 @@
+{
+  "asset_id": "habitat",
+  "prepared_utc": "2026-11-14T11:20:12.265179+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\habitat\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        0.021041661500930786,
+        0.0,
+        0.0,
+        -1.0066742897033691
+      ],
+      [
+        0.0,
+        0.021041661500930786,
+        0.0,
+        -0.00010394649871159345
+      ],
+      [
+        0.0,
+        0.0,
+        0.021041661500930786,
+        -0.2425047755241394
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 0.021041661114826606,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      8.0,
+      3.491424798965454,
+      4.574987411499023
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_habitat_HDU_lowRez_part1_LOD0",
+      "source_name": "HDU_lowRez_part1",
+      "source_parent": "",
+      "pivot_m": [
+        -2.384185791015625e-07,
+        1.1920928955078125e-07,
+        2.2874937057495117
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_habitat_door_LOD0",
+      "source_name": "door",
+      "source_parent": "",
+      "pivot_m": [
+        3.926265001296997,
+        0.811085045337677,
+        0.2534339129924774
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 2264,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "HDU_lowRez_part1",
+        "triangles": 2166,
+        "vertices": 1824,
+        "uv_layers": 1,
+        "non_manifold_edges": 1234
+      },
+      {
+        "name": "door",
+        "triangles": 98,
+        "vertices": 119,
+        "uv_layers": 1,
+        "non_manifold_edges": 118
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 2264,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_habitat_HDU_lowRez_part1_LOD0",
+        "triangles": 2166,
+        "vertices": 1824,
+        "uv_layers": 1,
+        "non_manifold_edges": 1234
+      },
+      {
+        "name": "SM_habitat_door_LOD0",
+        "triangles": 98,
+        "vertices": 119,
+        "uv_layers": 1,
+        "non_manifold_edges": 118
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 1131,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_habitat_HDU_lowRez_part1_LOD1",
+          "triangles": 1082,
+          "vertices": 1215,
+          "uv_layers": 1,
+          "non_manifold_edges": 1095
+        },
+        {
+          "name": "SM_habitat_door_LOD1",
+          "triangles": 49,
+          "vertices": 71,
+          "uv_layers": 1,
+          "non_manifold_edges": 63
+        }
+      ]
+    },
+    "2": {
+      "triangles": 565,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_habitat_HDU_lowRez_part1_LOD2",
+          "triangles": 541,
+          "vertices": 856,
+          "uv_layers": 1,
+          "non_manifold_edges": 771
+        },
+        {
+          "name": "SM_habitat_door_LOD2",
+          "triangles": 24,
+          "vertices": 48,
+          "uv_layers": 1,
+          "non_manifold_edges": 41
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 2264,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_habitat_HDU_lowRez_part1_Gazebo",
+        "triangles": 2166,
+        "vertices": 1824,
+        "uv_layers": 1,
+        "non_manifold_edges": 1234
+      },
+      {
+        "name": "SM_habitat_door_Gazebo",
+        "triangles": 98,
+        "vertices": 119,
+        "uv_layers": 1,
+        "non_manifold_edges": 118
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "HDU_01",
+      "path": "textures/HDU_01.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 2,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\habitat_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "NASA source part 1 is used; source part 2 is an optional reference. The airlock end door is separated for presentation. Interior, hinge operation and ingress collision remain unverified."
+  ],
+  "material_channels": {
+    "BaseColor": "textures/HDU_01.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "materials": {
+    "lambert2SG": {
+      "Base Color": {
+        "image": "HDU_01",
+        "path": "textures/HDU_01.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "constant": 1.0
+      },
+      "Metallic": {
+        "constant": 1.0
+      },
+      "Normal": {
+        "constant": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "NASA hazır model",
+    "library": {
+      "source": "https://science.nasa.gov/3d-resources/habitat-demonstration-unit/",
+      "credit": "NASA/LaRC/Advanced Concepts Lab; part 1",
+      "license": "NASA Media Usage Guidelines; third-party/identifier restrictions remain",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "retrieved_utc": "2026-11-14T10:52:03.536438+00:00",
+      "files": [
+        {
+          "path": "incoming/habitat/source.glb",
+          "url": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/habitat-demonstration-unit/Habitat%20Demonstration%20Unit%20%28part%201%29.glb",
+          "bytes": 516748,
+          "sha256": "3106557bea24c9ba012556ddbecf3740c39276dc369cf359b77225de97458cfe",
+          "source_md5": null
+        }
+      ]
+    },
+    "tripo_tasks": [],
+    "terms_urls": [
+      "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 2,
+    "triangles": 2264,
+    "dimensions_m": [
+      8.0,
+      3.491424798965454,
+      4.574987411499023
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 2,
+      "dimensions_m": [
+        8.0,
+        3.491425037384033,
+        4.574987411499023
+      ],
+      "max_dimension_error_m": 2.384185791015625e-07,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 2,
+      "dimensions_m": [
+        8.0,
+        3.491424798965454,
+        4.574987411499023
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING",
+  "revisions": [
+    {
+      "date_utc": "2026-11-14T12:14:42+00:00",
+      "texture": "HDU_01.png",
+      "reason": "NASA insignia, US flags, the HAB X logo and HDU emblems removed (proje kÄ±lavuzu Â§8: no NASA brand elements; NASA media guidelines restrict insignia use). Generic Segment/AIRLOCK signage kept.",
+      "sha256_before": "8693c53f91fe98be9e7e0217ca2798db7ba30bb31df22ebf5f3ccd00fa7d0019",
+      "sha256_after": "36debd8062cedfe7a45ebd24b14601741b2dd049fc198311d018c85353bff7e5",
+      "files": [
+        "incoming/habitat/textures/HDU_01.png",
+        "incoming/habitat/unreal/habitat_LOD0.fbm/HDU_01.png",
+        "incoming/habitat/unreal/habitat_LOD1.fbm/HDU_01.png",
+        "incoming/habitat/unreal/habitat_LOD2.fbm/HDU_01.png",
+        "incoming/habitat/master.blend (packed image)",
+        "incoming/habitat/presentation.glb"
+      ],
+      "script": "production/texture_fixes.py + production/refresh_textures.py",
+      "material_slots_rebound": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# S1: real SEP replay (proje.md §16). RAD sol 4190 E alarm at 2024-05-20 05:21:50 UTC (T6_RAD.json).
+provenance_status: SCENARIO
+note: >-
+  The EVA starts at historical 03:30 UTC so the real alarm arrives 1 h 51 min 50 s into the
+  EVA (PET 111.8 min), while the crew is out. Dose values are ARCHIVE RAD measurements at the
+  rover; the crew, timing and rules are scenario choices.
+id: S1_SEP_4190
+site: BXW
+seed: 42
+time_scale: 10
+start:
+  historical_utc: "2024-05-20T03:30:00Z"
+  pet_min: 0
+crew: [EV1]
+suit_profile: default
+replay:
+  rad: {sols: [4189, 4190, 4191], detector: E}
+events: []
+expected:
+  - {rule: FR-04, must_hold: true}

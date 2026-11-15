@@ -1,0 +1,550 @@
+{
+  "asset_id": "astronaut",
+  "prepared_utc": "2026-11-14T11:20:02.391024+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\astronaut\\animations\\tripo-out\\redline-astronaut-idle-walk-0df6992f\\model.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        1.0277777910232544,
+        1.2252066028395348e-07,
+        0.0,
+        9.189052008196086e-08
+      ],
+      [
+        -1.2252066028395348e-07,
+        1.0277777910232544,
+        0.0,
+        2.4504132056790695e-07
+      ],
+      [
+        0.0,
+        0.0,
+        1.0277777910232544,
+        -5.925770096837368e-07
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0277777369375598,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.6546781063079834,
+      1.2474462985992432,
+      1.8501251935958862
+    ]
+  },
+  "parts": [
+    {
+      "name": "SK_Astronaut_LOD0",
+      "pivot_m": [
+        0,
+        0,
+        0
+      ],
+      "suggested_axis": null,
+      "source_name": "Tripo Unreal biped skin"
+    }
+  ],
+  "source_audit": {
+    "triangles": 193893,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "tripo_node_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+        "triangles": 193893,
+        "vertices": 105801,
+        "uv_layers": 1,
+        "non_manifold_edges": 17281
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 95000,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SK_Astronaut_LOD0",
+        "triangles": 95000,
+        "vertices": 56028,
+        "uv_layers": 1,
+        "non_manifold_edges": 16628
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 47499,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SK_Astronaut_LOD1",
+          "triangles": 47499,
+          "vertices": 31533,
+          "uv_layers": 1,
+          "non_manifold_edges": 15139
+        }
+      ]
+    },
+    "2": {
+      "triangles": 23749,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SK_Astronaut_LOD2",
+          "triangles": 23749,
+          "vertices": 17995,
+          "uv_layers": 1,
+          "non_manifold_edges": 11806
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 7999,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SK_Astronaut_Gazebo",
+        "triangles": 7999,
+        "vertices": 7206,
+        "uv_layers": 1,
+        "non_manifold_edges": 5898
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "Color_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+      "path": "textures/Color_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "NormalGL_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+      "path": "textures/NormalGL_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "ORM_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+      "path": "textures/ORM_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+      "width": 2048,
+      "height": 2048,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "12-segment capsule; static proxy geometry; skeletal PhysicsAsset not created",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [
+      {
+        "name": "Armature",
+        "bones": 80
+      }
+    ],
+    "animations": [
+      "idle",
+      "walk"
+    ]
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\astronaut_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [],
+  "material_channels": {
+    "BaseColor": "textures/Color_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+    "NormalGL": "textures/NormalGL_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+    "NormalDX": "textures/astronaut_NormalDX.png",
+    "AO": "textures/astronaut_AO.png",
+    "Roughness": "textures/astronaut_Roughness.png",
+    "Metallic": "textures/astronaut_Metallic.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "material_variants": {
+    "EV1": {
+      "BaseColor": "textures/Color_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+      "accent": "source red"
+    },
+    "EV2": {
+      "BaseColor": "textures/astronaut_EV2_BaseColor.png",
+      "accent": "scenario blue; head/neck UV region protected",
+      "changed_texels": 112998
+    },
+    "mesh_and_rig": "Shared; no second human generated"
+  },
+  "materials": {
+    "tripo_material_7583fea2-05ef-4340-8cc9-5b5a756d3eb4": {
+      "Base Color": {
+        "image": "Color_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+        "path": "textures/Color_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "ORM_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+        "path": "textures/ORM_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "image": "ORM_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+        "path": "textures/ORM_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+        "component": "B",
+        "colorspace": "Non-Color"
+      },
+      "Normal": {
+        "image": "NormalGL_7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+        "path": "textures/NormalGL_7583fea2_05ef_4340_8cc9_5b5a756d3eb4.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "Tripo · AI üretimi",
+    "library": null,
+    "tripo_tasks": [
+      {
+        "asset_id": "astronaut",
+        "historical": true,
+        "task_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+        "type": "text_to_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": true,
+          "prompt": "Photorealistic full-body adult human astronaut, 1.85m tall, believable anatomy and natural proportions. Neutral standing A-pose, arms slightly separated from torso, feet shoulder-width apart, both gloved hands visible with five fingers. Helmet with raised visor revealing a realistic human face: natural skin, subtle pores, clear eyes, eyelids, nose, lips and calm expression. Contemporary Mars EVA suit in off-white woven fabric with muted red accents, graphite flexible joints, reinforced knees and elbows, layered seams, stitching, fabric folds and realistic pressure-suit bulk. Detailed locking neck ring, metal wrist couplings, chest life-support controls, oxygen connectors, short secured hoses and compact backpack. Thick articulated gloves and boots with treaded soles. Restrained wear and fine reddish dust around boots. Realistic fabric, rubber, painted metal and skin PBR materials. Complete coherent geometry from every angle, isolated single character, no ground or scenery.",
+          "texture": true,
+          "auto_size": true,
+          "export_uv": true,
+          "face_limit": 200000,
+          "model_seed": 1401126,
+          "model_version": "v3.1-20260211",
+          "negative_prompt": "cartoon, anime, toy, chibi, robot, mannequin, plastic skin, distorted face, opaque visor hiding face, extra limbs, missing fingers, fused hands, duplicate person, cropped feet, pedestal, scenery, text, logos, weapons",
+          "texture_quality": "detailed",
+          "geometry_quality": "detailed",
+          "texture_alignment": "geometry"
+        },
+        "created_at": "2026-11-14T07:46:30.551793Z",
+        "completed_at": "2026-11-14T07:48:27.257376Z",
+        "credits_consumed": 50
+      },
+      {
+        "asset_id": "astronaut",
+        "historical": false,
+        "task_id": "2ddc3f89-aa39-4433-8651-bd8ea06a15a5",
+        "type": "animate_prerigcheck",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "original_model_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4"
+        },
+        "created_at": "2026-11-14T10:48:58.162440Z",
+        "completed_at": "2026-11-14T10:48:58.809915Z",
+        "credits_consumed": 0
+      },
+      {
+        "asset_id": "astronaut",
+        "historical": false,
+        "task_id": "f43b5416-7d9d-4f96-8e36-66a31d3f58ad",
+        "type": "animate_rig",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "spec": "unreal",
+          "topology": "biped",
+          "out_format": "glb",
+          "original_model_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4"
+        },
+        "created_at": "2026-11-14T10:49:38.189245Z",
+        "completed_at": "2026-11-14T10:49:54.851109Z",
+        "credits_consumed": 25
+      },
+      {
+        "asset_id": "astronaut",
+        "historical": false,
+        "task_id": "0df6992f-5e0f-4687-8a32-524cdb69ca6e",
+        "type": "animate_retarget",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "animations": [
+            "preset:idle",
+            "preset:walk"
+          ],
+          "out_format": "glb",
+          "animate_in_place": true,
+          "original_model_id": "f43b5416-7d9d-4f96-8e36-66a31d3f58ad"
+        },
+        "created_at": "2026-11-14T10:51:12.004521Z",
+        "completed_at": "2026-11-14T10:51:24.153084Z",
+        "credits_consumed": 20
+      }
+    ],
+    "terms_urls": [
+      "https://developers.tripo3d.ai/en/terms",
+      "https://www.tripo3d.ai/terms"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 1,
+    "triangles": 95000,
+    "dimensions_m": [
+      0.6546781063079834,
+      1.2474462985992432,
+      1.8501251935958862
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 4,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.6546781063079834,
+        1.2474462985992432,
+        1.8501250743865967
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "armature_count": 1,
+      "animations": [
+        "Armature|Armature|idle",
+        "Armature|Armature|walk"
+      ]
+    },
+    "obj_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.6531983613967896,
+        1.2411611080169678,
+        1.8508501052856445
+      ],
+      "max_dimension_error_m": 0.006285190582275391
+    },
+    "pass": true
+  },
+  "animation_inspection": {
+    "idle": {
+      "range": [
+        0.8000000715255737,
+        368.79998779296875
+      ],
+      "samples": [
+        {
+          "frame": 19,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.325534462928772,
+            -0.0818001851439476,
+            -0.02054416947066784
+          ],
+          "max": [
+            0.318939208984375,
+            0.5683029294013977,
+            1.7934945821762085
+          ]
+        },
+        {
+          "frame": 93,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.31972384452819824,
+            -0.0885242447257042,
+            -0.02190208248794079
+          ],
+          "max": [
+            0.3231847882270813,
+            0.5764891505241394,
+            1.794464111328125
+          ]
+        },
+        {
+          "frame": 185,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.2939862310886383,
+            -0.08681266754865646,
+            -0.02503478340804577
+          ],
+          "max": [
+            0.34960517287254333,
+            0.6781819462776184,
+            1.790074110031128
+          ]
+        },
+        {
+          "frame": 277,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.3012831509113312,
+            -0.07722979038953781,
+            -0.026402635499835014
+          ],
+          "max": [
+            0.357550710439682,
+            0.6034808158874512,
+            1.7801926136016846
+          ]
+        }
+      ],
+      "fbx": "unreal/AN_Astronaut_idle.fbx",
+      "visual_acceptance": "Review rendered shoulders/knees/fingers/backpack; no Unreal import performed"
+    },
+    "walk": {
+      "range": [
+        0.8000000715255737,
+        56.79999542236328
+      ],
+      "samples": [
+        {
+          "frame": 4,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.33324307203292847,
+            -0.288918137550354,
+            -0.017074644565582275
+          ],
+          "max": [
+            0.5599251985549927,
+            0.4098455011844635,
+            1.7671079635620117
+          ]
+        },
+        {
+          "frame": 15,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.33657971024513245,
+            -0.29886165261268616,
+            -0.026190388947725296
+          ],
+          "max": [
+            0.31736114621162415,
+            0.3918556869029999,
+            1.7879829406738281
+          ]
+        },
+        {
+          "frame": 29,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.33580508828163147,
+            -0.28538551926612854,
+            -0.01815992034971714
+          ],
+          "max": [
+            0.3603762090206146,
+            0.41322439908981323,
+            1.7770003080368042
+          ]
+        },
+        {
+          "frame": 43,
+          "finite": true,
+          "vertices": 56028,
+          "min": [
+            -0.34159034490585327,
+            -0.3062308430671692,
+            -0.02530474215745926
+          ],
+          "max": [
+            0.3235624432563782,
+            0.3963583707809448,
+            1.7802176475524902
+          ]
+        }
+      ],
+      "fbx": "unreal/AN_Astronaut_walk.fbx",
+      "visual_acceptance": "Review rendered shoulders/knees/fingers/backpack; no Unreal import performed"
+    }
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING",
+  "revisions": [
+    {
+      "kind": "reorient_plus_x",
+      "date_utc": "2026-11-14T12:16:17+00:00",
+      "reason": "Master faced -Y (front preview showed a profile); rotated +90Â° about Z to the documented +X forward / +Y left / +Z up convention used by every robot package.",
+      "check_before": {
+        "head_x_minus_centre_x": 0.018091591075062752,
+        "dimensions_m": [
+          1.2474462985992432,
+          0.6546781659126282,
+          1.8501251935958862
+        ]
+      },
+      "check_after": {
+        "head_x_minus_centre_x": 0.0758473128080368,
+        "dimensions_m": [
+          0.6546781063079834,
+          1.2474462985992432,
+          1.8501251935958862
+        ]
+      },
+      "re_exported": [
+        "unreal/astronaut_LOD0.fbx",
+        "unreal/astronaut_LOD1.fbx",
+        "unreal/astronaut_LOD2.fbx",
+        "presentation.glb",
+        "gazebo/assembly.obj",
+        "gazebo/collision.obj",
+        "preview/*"
+      ],
+      "script": "production/reorient_astronaut.py; then production/rig_previews.py and inspect_variants.py",
+      "unchanged": "textures, skin weights, bone hierarchy, gazebo/parts local-space OBJ"
+    }
+  ]
+}

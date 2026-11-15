@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0807">
+<title>Ariadne · Simülasyon · Gale Krateri'nde otonom rover haritalama</title>
+<meta name="description" content="Otonom bir rover Curiosity'nin Bradbury Landing noktasından çıkar, Gale Krateri'ni kendisi haritalar ve astronotlara güvenli bir Mars yürüyüşü planı verir. NASA HiRISE ve CTX verileriyle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Space+Grotesk:wght@400;500;700&family=Overpass:wght@600;700;800&family=Overpass+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0807; --panel:rgba(20,14,12,.82); --line:rgba(255,190,160,.14);
+  --ink:#f3e6dc; --dim:#b39c8e; --rust:#e0643a; --amber:#f2b24c; --ok:#6fd39b; --bad:#ff5a5a; --cyan:#7ad3ff;
+  --mono:'Overpass Mono',ui-monospace,monospace; --brand:Overpass,'Fira Sans',system-ui,sans-serif; --sans:'Space Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+html,body{margin:0;height:100%;touch-action:manipulation;background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidden}
+button{font-family:inherit;color:inherit}
+canvas{display:block}
+#stage{position:fixed;inset:0}
+.hidden{display:none!important}
+.drawer{display:none;position:sticky;top:0;z-index:2;width:calc(100% + 32px);margin:0 -16px 10px;padding:12px 16px;justify-content:space-between;align-items:center;background:inherit;border:0;border-bottom:1px solid var(--line);color:var(--ink);font:600 13px var(--sans,system-ui);cursor:pointer}
+#left:not(.closed) .drawer span{display:inline-block;transform:rotate(180deg)}
+
+/* ---------- intro ---------- */
+#intro{position:fixed;inset:0;display:grid;grid-template-columns:minmax(320px,560px) 1fr;align-items:center;padding:0 6vw;pointer-events:none;transition:opacity .9s}
+#intro.fade{opacity:0}
+#intro .copy{pointer-events:auto}
+.kicker{font-family:var(--brand);font-weight:700;font-size:13px;letter-spacing:.01em;color:var(--amber)}
+h1{font-size:clamp(34px,5vw,64px);line-height:1.02;margin:14px 0 18px;font-weight:700;letter-spacing:-.02em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--rust)}
+.lede{color:var(--dim);font-size:17px;line-height:1.55;max-width:34em;text-wrap:pretty}
+.cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:rgba(255,255,255,.04);padding:12px 18px;border-radius:6px;font-size:15px;cursor:pointer;transition:background-color .2s,border-color .2s;touch-action:manipulation}
+.btn:hover{background:rgba(255,255,255,.09);border-color:rgba(255,190,160,.35)}
+.btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.btn.primary{background:var(--rust);border-color:var(--rust);color:#1a0d07;font-weight:700}
+.btn.primary:hover{background:#ef7449}
+.stats{display:flex;gap:28px;margin-top:34px;font-family:var(--mono);font-size:12px;color:var(--dim)}
+.stats b{display:block;font-size:20px;color:var(--ink);font-family:var(--sans);font-weight:500;font-variant-numeric:tabular-nums}
+
+/* ---------- mission UI ---------- */
+#ui{position:fixed;inset:0;pointer-events:none;opacity:0;transition:opacity .8s}
+#ui.on{opacity:1}
+#ui:not(.on){visibility:hidden}
+.panel{position:absolute;background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:10px;pointer-events:auto}
+#top{top:14px;left:14px;right:14px;height:52px;display:flex;align-items:center;gap:18px;padding:0 16px}
+#top .brand{font-family:"Instrument Serif",Georgia,serif;font-weight:700;font-size:22px;letter-spacing:-.01em;text-transform:none}
+#top .brand span{color:var(--rust)}
+#top .loc{font-family:var(--mono);font-size:12px;color:var(--dim)}
+#top .spacer{flex:1}
+.seg{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{background:transparent;border:0;padding:8px 12px;font-size:13px;cursor:pointer;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--rust);color:#1a0d07;font-weight:700}
+.seg button:focus-visible{outline:2px solid var(--amber);outline-offset:-2px}
+
+#left{top:80px;left:14px;width:292px;bottom:14px;overflow:auto;padding:16px;overscroll-behavior:contain}
+#right{top:80px;right:14px;width:300px;padding:16px}
+#legend{bottom:14px;right:14px;width:300px;padding:12px 16px}
+h2{font-size:13px;font-family:var(--brand);letter-spacing:.01em;color:var(--amber);margin:0 0 10px;font-weight:700}
+section+section{margin-top:22px}
+.layers{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.layers button{text-align:left;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:6px;padding:8px 9px;font-size:13px;cursor:pointer}
+.layers button small{display:block;color:var(--dim);font-family:var(--mono);font-size:11px;margin-top:2px}
+.layers button[aria-pressed="true"]{border-color:var(--rust);background:rgba(224,100,58,.16)}
+.layers button:focus-visible{outline:2px solid var(--amber)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;margin:8px 0}
+.row label{color:var(--dim)}
+input[type=range]{min-height:28px;accent-color:var(--rust);cursor:pointer}
+input[type=checkbox]{width:18px;height:18px;accent-color:var(--rust)}
+.check{min-height:32px}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+input[type=range]{width:130px;accent-color:var(--rust)}
+.check{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--dim);cursor:pointer;margin:8px 0}
+.check input{accent-color:var(--rust)}
+.hint{font-size:12px;color:var(--dim);line-height:1.5;margin:8px 0 0}
+.targets{display:flex;flex-direction:column;gap:6px}
+.targets button{text-align:left;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:13px;cursor:pointer}
+.targets button[aria-pressed="true"]{border-color:var(--cyan);background:rgba(122,211,255,.12)}
+.targets small{display:block;color:var(--dim);font-family:var(--mono);font-size:11px}
+.btnrow{display:flex;gap:6px;margin-top:10px}
+.btnrow .btn{flex:1;padding:9px 8px;font-size:13px;text-align:center}
+
+.tele{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+.tele div{font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+.tele b{display:block;font-family:var(--sans);font-size:19px;color:var(--ink);font-weight:500;text-transform:none;letter-spacing:0;font-variant-numeric:tabular-nums;margin-top:2px}
+.bar{height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--rust),var(--amber));width:0%}
+#log{margin-top:14px;font-family:var(--mono);font-size:11px;color:var(--dim);max-height:150px;overflow:auto;line-height:1.55;border-top:1px solid var(--line);padding-top:10px;overscroll-behavior:contain}
+#log p{margin:0}
+#log .w{color:var(--amber)} #log .g{color:var(--ok)} #log .r{color:var(--bad)}
+.gradient{height:10px;border-radius:3px;margin:6px 0 4px}
+.scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--dim)}
+#legend p{margin:6px 0 0;font-size:11px;color:var(--dim);line-height:1.45}
+.keys{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--dim)}
+.keys span{display:flex;align-items:center;gap:5px}
+.keys i{width:14px;height:3px;border-radius:2px;display:inline-block}
+
+/* EVA card */
+#eva{position:absolute;left:320px;bottom:14px;width:360px;padding:14px 16px}
+#eva table{width:100%;border-collapse:collapse;font-size:13px;margin-top:4px}
+#eva td{padding:5px 0;border-bottom:1px solid var(--line)}
+#eva td:last-child{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+#eva .verdict{margin-top:10px;font-size:13px;padding:8px 10px;border-radius:6px}
+.v-ok{background:rgba(111,211,155,.12);color:var(--ok)} .v-bad{background:rgba(255,90,90,.12);color:var(--bad)}
+
+/* HUD */
+#hud{position:fixed;inset:0;pointer-events:none;display:none}
+#hud.on{display:block}
+#hud .visor{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
+#hud .tl,#hud .tr,#hud .bc{position:absolute;font-family:var(--mono);color:#a6f0ff;text-shadow:0 0 8px rgba(80,200,255,.6);font-size:13px;line-height:1.7}
+#hud .tl{top:90px;left:40px} #hud .tr{top:90px;right:40px;text-align:right}
+#hud .bc{bottom:40px;left:50%;transform:translateX(-50%);text-align:center}
+#hud .compass{font-size:22px;letter-spacing:.3em}
+#hud .warn{color:var(--amber)}
+#hud .exit{pointer-events:auto;position:absolute;top:24px;right:24px}
+
+/* about */
+#about{position:fixed;inset:0;background:rgba(6,4,3,.86);display:flex;align-items:center;justify-content:center;z-index:10;padding:20px}
+#about .card{max-width:760px;max-height:86vh;overflow:auto;background:#140e0c;border:1px solid var(--line);border-radius:12px;padding:28px 30px;overscroll-behavior:contain}
+#about h3{margin:22px 0 8px;font-size:15px}
+#about p,#about li{color:var(--dim);font-size:14px;line-height:1.6}
+#about a{color:var(--cyan)}
+#about code{font-family:var(--mono);font-size:12px;color:var(--ink)}
+.toast{position:fixed;top:78px;left:50%;transform:translateX(-50%);background:#1d1411;border:1px solid var(--line);padding:9px 14px;border-radius:6px;font-size:13px;pointer-events:none;opacity:0;transition:opacity .3s}
+.toast.on{opacity:1}
+
+@media (max-width:900px){
+  #intro{grid-template-columns:1fr;align-items:end;padding:0 22px 40px;background:linear-gradient(180deg,transparent 35%,rgba(11,8,7,.88) 62%)}
+  .stats{gap:18px}
+  #left{top:auto;bottom:14px;height:56vh;width:auto;right:14px;transition:transform .3s;padding-top:0}
+  #left.closed{transform:translateY(calc(100% - 46px));overflow:hidden}
+  #left .drawer{display:flex}
+  #right{top:72px;left:14px;right:14px;width:auto;padding:10px 12px}
+  #right .tele{grid-template-columns:repeat(4,1fr)} #right .tele b{font-size:14px}
+  #right h2{display:none}
+  #right #log{display:block;max-height:none;margin-top:8px;padding-top:6px;font-size:11px}
+  #right #log p{display:none} #right #log p:last-child{display:block}
+  #legend{display:none}
+  #eva{left:14px;right:14px;width:auto;bottom:14px;max-height:60vh;overflow:auto;z-index:6}
+  #top .loc{display:none}
+  #top{gap:8px;padding:0 10px;overflow-x:auto;scrollbar-width:none;padding-left:max(10px,env(safe-area-inset-left))}
+  #top .seg button{padding:7px 9px;font-size:12px;white-space:nowrap}
+  #top .btn{white-space:nowrap;padding:7px 9px!important;font-size:12px!important}
+  #top .brand{font-size:18px;white-space:nowrap;flex:none}
+  #top::-webkit-scrollbar{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stage" aria-hidden="true"></div>
+
+<!-- ============ INTRO ============ -->
+<div id="intro">
+  <div class="copy">
+    <div class="kicker">NASA Space Apps 2026 · Interplanetary Survival Guide: Mars Haritası</div>
+    <h1>Haritasını <em>kendi çizen</em> rover; astronotlar güvenle yürüsün diye.</h1>
+    <p class="lede"><span style="font-family:'Instrument Serif',Georgia,serif;font-weight:700;font-size:1.08em" translate="no">Ariadne</span>, Curiosity'nin indiği yerden, Gale Krateri'ndeki Bradbury Landing'den başlar. Çevresindeki araziyi algılar, üzerinde bir tehlike haritası oluşturur, öğrendikçe rotasını yeniden planlar ve haritaladığı her şeyi skafandır giymiş bir astronotun gerçekten izleyebileceği bir Mars yürüyüşü planına dönüştürür.</p>
+    <div class="cta">
+      <button class="btn primary" id="go">Gale'e iniş başlasın →</button>
+      <button class="btn" id="aboutBtn">Veri ve yöntem</button>
+    </div>
+    <div class="stats">
+      <div><b>20,8&nbsp;km</b>harita kenarı</div>
+      <div><b>3</b>NASA veri seti</div>
+      <div><b>6</b>harita katmanı</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MISSION UI ============ -->
+<div id="ui" aria-live="polite">
+  <div class="panel" id="top">
+    <div class="brand" lang="en" translate="no">Ariadne</div>
+    <div class="loc" id="loc">Gale Krateri · 4,57°G–4,92°G · 137,29°D–137,64°D</div>
+    <div class="spacer"></div>
+    <div class="seg" role="group" aria-label="View">
+      <button aria-pressed="true" data-view="orbit">Harita</button>
+      <button aria-pressed="false" data-view="follow">Rover'ı takip et</button>
+      <button aria-pressed="false" data-view="hud">Astronot HUD</button>
+    </div>
+    <button class="btn" id="aboutBtn2" style="padding:8px 12px;font-size:13px">Veri ve yöntem</button>
+    <a class="btn" href="index.html" style="padding:8px 12px;font-size:13px;text-decoration:none">← Tanıtım sayfası</a>
+  </div>
+
+  <div class="panel" id="left">
+    <button class="drawer" id="drawer" type="button" aria-expanded="false" aria-controls="left">Kontroller <span aria-hidden="true">▴</span></button>
+    <section>
+      <h2>Harita katmanları</h2>
+      <div class="layers" id="layers">
+        <button data-layer="optical" aria-pressed="true">Optik<small>MRO CTX</small></button>
+        <button data-layer="elev" aria-pressed="false">Yükseklik<small>MRO HiRISE DEM</small></button>
+        <button data-layer="slope" aria-pressed="false">Eğim<small>türetilmiş · DEM</small></button>
+        <button data-layer="rough" aria-pressed="false">Pürüzlülük<small>türetilmiş · DEM+CTX</small></button>
+        <button data-layer="rad" aria-pressed="false">Radyasyon<small>MSL RAD + arazi</small></button>
+        <button data-layer="cost" aria-pressed="false">Rover maliyet haritası<small>araç üstü birleştirme</small></button>
+      </div>
+      <label class="check"><input type="checkbox" id="fog" checked> Sadece rover'ın haritaladığı alanı göster</label>
+      <div class="row"><label for="exag">Dikey abartma</label><input type="range" id="exag" min="1" max="6" step="0.5" value="3"></div>
+    </section>
+
+    <section>
+      <h2>Bilimsel hedef</h2>
+      <div class="targets" id="targets"></div>
+      <p class="hint">Ya da kendi hedefini koymak için araziye tıkla.</p>
+    </section>
+
+    <section>
+      <h2>Otonomi</h2>
+      <div class="row"><label for="sense">Algılayıcı menzili</label><input type="range" id="sense" min="3" max="12" step="1" value="6"></div>
+      <div class="row"><label for="maxs">Rover eğim sınırı <span id="maxsV" style="color:var(--ink)">6°</span></label><input type="range" id="maxs" min="3" max="10" step="0.5" value="6"></div>
+      <div class="row"><label for="spd">Simülasyon hızı</label><input type="range" id="spd" min="1" max="10" step="1" value="4"></div>
+      <div class="btnrow">
+        <button class="btn primary" id="run">Sürüşü başlat</button>
+        <button class="btn" id="reset">Sıfırla</button>
+      </div>
+      <div class="btnrow">
+        <button class="btn" id="mkEva">Mars yürüyüşü planla</button>
+      </div>
+      <p class="hint">Eğimler ~100 m'lik hücrelerde ortalanıyor; bu, metre ölçeğindeki daha dik araziyi gizler, bu yüzden sınırlar temkinli tutuldu. Rover yalnızca kendi algıladığı araziye güvenir. Bilinmeyen hücreleri geçilebilir varsayar; algılayıcıları bir tehlike gösterdiğinde rotayı yeniden planlar.</p>
+    </section>
+  </div>
+
+  <div class="panel" id="right">
+    <h2>Telemetri</h2>
+    <div class="tele">
+      <div title="Sol başına ~100 m otonom sürüş varsayımıyla">Sol<b id="tSol">0</b></div>
+      <div>Gidilen<b id="tDist">0 m</b></div>
+      <div>Yükseklik<b id="tElev">–</b></div>
+      <div>Yerel eğim<b id="tSlope">–</b></div>
+      <div>Doz hızı<b id="tDose">–</b></div>
+      <div>Yeniden plan<b id="tRe">0</b></div>
+    </div>
+    <div style="margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em">Harita kapsamı <span id="tCov" style="float:right;color:var(--ink)">0%</span></div>
+    <div class="bar"><i id="covBar"></i></div>
+    <div id="log" role="log"></div>
+  </div>
+
+  <div class="panel" id="legend">
+    <h2 id="lgTitle">Optik · MRO CTX</h2>
+    <div class="gradient" id="lgGrad"></div>
+    <div class="scale"><span id="lgMin"></span><span id="lgMax"></span></div>
+    <p id="lgNote"></p>
+    <div class="keys">
+      <span><i style="background:#7ad3ff"></i>Planlanan</span>
+      <span><i style="background:#f2b24c"></i>Gidilen</span>
+      <span><i style="background:#6fd39b"></i>Mars yürüyüşü</span>
+    </div>
+  </div>
+
+  <div class="panel hidden" id="eva">
+    <h2>Mars yürüyüşü planı</h2>
+    <table id="evaT"></table>
+    <div class="verdict" id="evaV"></div>
+    <div class="btnrow"><button class="btn" id="evaHud">HUD'da yürü</button><button class="btn" id="evaClose">Kapat</button></div>
+  </div>
+</div>
+
+<!-- ============ HUD ============ -->
+<div id="hud">
+  <div class="visor"></div>
+  <div class="tl" id="hudL"></div>
+  <div class="tr" id="hudR"></div>
+  <div class="bc"><div class="compass" id="hudC">N</div><div id="hudB"></div></div>
+  <button class="btn exit" id="hudExit">HUD'dan çık</button>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<div id="about" class="hidden" role="dialog" aria-modal="true" aria-labelledby="abT">
+  <div class="card">
+    <div class="kicker">Veri ve yöntem</div>
+    <h2 id="abT" style="font-size:26px;font-family:var(--sans);text-transform:none;letter-spacing:-.01em;color:var(--ink);margin:10px 0 6px">Ariadne haritasını nasıl çıkarıyor</h2>
+    <p>Challenge, bir Mars astronotunun bir Mars yürüyüşünü planlayıp gerçekleştirirken kullanabileceği katmanlı bir harita istiyor. Yörünge haritaları bölgeseldir; astronotlar noktasal ayrıntıya ihtiyaç duyar. Cevabımız: önce otonom bir rover göndermek. Yörünge verisinden başlar, zemini kendisi algılar, üzerinde bir maliyet haritası tutar ve mürettebata zaten denediği bir rotayı verir.</p>
+
+    <h3>Bu sayfadaki NASA verileri</h3>
+    <ul>
+      <li><b>MRO HiRISE Gale Crater DEM</b> (<code>Gale_DEM_SMG_1m</code>): yükseklik verisi, kaynak: <a href="https://trek.nasa.gov/mars/">JPL Mars Trek</a>. 3B arazi ve planlayıcı için 96×96 ızgaraya (~217&nbsp;m) indirildi ve 192×192'ye yumuşatıldı.</li>
+      <li><b>MRO CTX Gale Crater mosaic</b> (<code>Gale_CTX_BlockAdj_dd</code>): optik görüntü, JPL Mars Trek'ten, 96×96'ya indirildi.</li>
+      <li><b>MSL RAD</b>: Curiosity'nin Radyasyon Değerlendirme Dedektörü, Gale Krateri'nde yüzeyde ortalama günde yaklaşık 0,67&nbsp;mSv doz eşdeğeri ölçtü (Hassler ve&nbsp;ark., <i>Science</i>, 2014). Bunu DEM'den hesaplanan gökyüzü görüş faktörüyle (krater duvarları ve tepeler gökyüzünün bir kısmını kapatır) ve yukarıdaki incelen atmosfer için yükseklik kazancının her km'si başına varsayılan +%4 ile ölçekliyoruz. Bu katsayı örnek amaçlıdır, veriye uydurulmamıştır.</li>
+    </ul>
+
+    <h3>Türetilmiş katmanlar</h3>
+    <ul>
+      <li><b>Eğim</b>: DEM üzerinde merkezi farklar.</li>
+      <li><b>Pürüzlülük</b>: yerel DEM sapması ve yerel CTX parlaklık varyansı; kaya alanları ve ana kaya sırtları için bir gösterge.</li>
+      <li><b>Rover maliyet haritası</b>: eğim + pürüzlülük; eğim sınırını aşan veya en pürüzlü %10'luk dilimdeki hücreler geçilemez sayılır. Eğimler ~100 m'de ortalandığı için bu ölçekte rover sınırı varsayılan 6°, skafandırlı astronot sınırı 4,5°. Rover yalnızca algıladığı hücreleri kullanır; bilinmeyen hücrelere iyimser bir varsayılan maliyet verilir. Gerçek rover'larda kullanılan D* tipi planlayıcılarla aynı fikir.</li>
+    </ul>
+
+    <h3>Dürüst sınırlar</h3>
+    <ul>
+      <li>Trek, DEM'i 8 bitlik karolar olarak sunuyor. Bradbury Landing yaklaşık −4.501&nbsp;m (MOLA) olacak şekilde doğrusal kalibre ettik. Mutlak yükseklikler yaklaşıktır; planlayıcı göreli kabartma ve eğimleri kullanır.</li>
+      <li>Planlayıcı hücresi ~108&nbsp;m olduğu için eğimler yumuşar. Gerçek bir sistem 1&nbsp;m çözünürlüklü HiRISE ve rover'ın kendi stereo kameralarını kullanırdı.</li>
+      <li>Hedef koordinatları doğrulanmış kaynaklara bağlıdır: Pahrump Hills için HiRISE ESP_039280_1755 (Curiosity'nin 2014'teki konumu), boxwork bölgesi için HiRISE PSP_001752_1750 görüntü merkezi. Boxwork hedefi görüntü merkezidir, Curiosity'nin tam konumu değildir.</li>
+      <li>Radyasyon kalkanlaması birinci dereceden geometrik bir tahmindir, parçacık taşınım modeli değildir.</li>
+      <li>Sol sayısı, sol başına ~100&nbsp;m otonom sürüş varsayımıyla hesaplanır (gerçekte bilim duraklarıyla birlikte ortalama çok daha düşüktür).</li>
+    </ul>
+
+    <h3>Kaynakları inceleyin</h3>
+    <ul>
+      <li><a href="https://trek.nasa.gov/mars/">JPL Mars Trek</a></li>
+      <li><a href="https://www.usgs.gov/centers/astrogeology-science-center/science/planetary-geologic-mapping">USGS–NASA Gezegen Jeolojisi Haritalama Programı</a></li>
+      <li><a href="https://science.nasa.gov/mission/msl-curiosity/">Mars Science Laboratory (Curiosity)</a></li>
+      <li><a href="https://mars.nasa.gov/mars2020/multimedia/raw-images/">Mars Perseverance ham görüntüleri</a></li>
+      <li><a href="https://www.spaceappschallenge.org/2026/challenges/interplanetary-survival-guide-martian-map/">Challenge sayfası</a></li>
+    </ul>
+    <div class="btnrow" style="max-width:220px"><button class="btn primary" id="abClose">Kapat</button></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>window.__errs=[];window.addEventListener('error',e=>{const m=(e.message||'')+' @'+(e.filename||e.target&&e.target.src||'')+':'+(e.lineno||'');window.__errs.push(m);let d=document.getElementById('errbox');if(!d){d=document.createElement('div');d.id='errbox';d.style.cssText='position:fixed;left:8px;right:8px;top:8px;z-index:99;background:#400;color:#fff;font:12px monospace;padding:8px;white-space:pre-wrap';document.body.appendChild(d)}d.textContent+=m+'\n'},true);</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+"use strict";
+/* ================= DATA (NASA JPL Mars Trek, Gale Crater) ================= */
+const DEM_B64="__DEM__";
+const CTX_B64="__CTX__";
+const GEO={lon0:137.28515625,lat0:-4.5703125,span:0.3515625};
+// Trek 8-bit stretch: 0..255 here maps to raw 4..208.57; calibration below
+const RAW_MIN=4, RAW_MAX=208.5667, M_PER_LEVEL=5.5, BRADBURY_RAW=5, BRADBURY_ELEV=-4501;
+const RAD_FLAT=0.67; // mSv/day, MSL RAD surface average (Hassler et al. 2014)
+const ALT_COEF=0.04; // assumed: ~4% more dose per km of elevation gain (thinner atmospheric column). Illustrative.
+
+const N=96, M=192;
+const KM_PER_DEG=2*Math.PI*3396.19/360;
+const DX=GEO.span*KM_PER_DEG*1000*Math.cos(-4.746*Math.PI/180)/M; // m per cell, east-west
+const DY=GEO.span*KM_PER_DEG*1000/M;                               // m per cell, north-south
+const U=100; // metres per world unit
+const SOL_M=100; // assumed autonomous drive distance per sol (m); Curiosity's longest single-sol drives are of this order
+
+function b64bytes(s){const b=atob(s),u=new Uint8Array(b.length);for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u}
+function resample(src,n,m){ // bilinear n×n -> m×m
+  const out=new Float32Array(m*m);
+  for(let j=0;j<m;j++)for(let i=0;i<m;i++){
+    const x=i/(m-1)*(n-1), y=j/(m-1)*(n-1), x0=Math.floor(x), y0=Math.floor(y), x1=Math.min(n-1,x0+1), y1=Math.min(n-1,y0+1), fx=x-x0, fy=y-y0;
+    out[j*m+i]=src[y0*n+x0]*(1-fx)*(1-fy)+src[y0*n+x1]*fx*(1-fy)+src[y1*n+x0]*(1-fx)*fy+src[y1*n+x1]*fx*fy;
+  }return out;
+}
+function blur(a,m,r){const t=new Float32Array(m*m),o=new Float32Array(m*m);
+  for(let j=0;j<m;j++)for(let i=0;i<m;i++){let s=0,c=0;for(let k=-r;k<=r;k++){const x=i+k;if(x>=0&&x<m){s+=a[j*m+x];c++}}t[j*m+i]=s/c}
+  for(let j=0;j<m;j++)for(let i=0;i<m;i++){let s=0,c=0;for(let k=-r;k<=r;k++){const y=j+k;if(y>=0&&y<m){s+=t[y*m+i];c++}}o[j*m+i]=s/c}
+  return o;}
+
+const dem8=b64bytes(DEM_B64), ctx8=b64bytes(CTX_B64);
+const elev96=new Float32Array(N*N);
+for(let k=0;k<N*N;k++){const raw=RAW_MIN+dem8[k]/255*(RAW_MAX-RAW_MIN);elev96[k]=BRADBURY_ELEV+(raw-BRADBURY_RAW)*M_PER_LEVEL}
+const E=blur(resample(elev96,N,M),M,1);              // elevation (m)
+const C=resample(Float32Array.from(ctx8),N,M);       // optical 0..255
+let eMin=1e9,eMax=-1e9;for(const v of E){eMin=Math.min(eMin,v);eMax=Math.max(eMax,v)}
+
+/* ---- derived layers ---- */
+const S=new Float32Array(M*M), R=new Float32Array(M*M), SVF=new Float32Array(M*M), DOSE=new Float32Array(M*M);
+const idx=(i,j)=>j*M+i;
+(function derive(){
+  for(let j=0;j<M;j++)for(let i=0;i<M;i++){
+    const l=E[idx(Math.max(0,i-1),j)], r=E[idx(Math.min(M-1,i+1),j)], u=E[idx(i,Math.max(0,j-1))], d=E[idx(i,Math.min(M-1,j+1))];
+    const gx=(r-l)/((Math.min(M-1,i+1)-Math.max(0,i-1))*DX), gy=(d-u)/((Math.min(M-1,j+1)-Math.max(0,j-1))*DY);
+    S[idx(i,j)]=Math.atan(Math.hypot(gx,gy))*180/Math.PI;
+  }
+  const Es=blur(E,M,2), Cm=blur(C,M,2), C2=blur(C.map(v=>v*v),M,2);
+  const res=new Float32Array(M*M), cv=new Float32Array(M*M);
+  for(let k=0;k<M*M;k++){res[k]=Math.abs(E[k]-Es[k]);cv[k]=Math.sqrt(Math.max(0,C2[k]-Cm[k]*Cm[k]))}
+  const p95=a=>{const s=Array.from(a).sort((x,y)=>x-y);return s[Math.floor(s.length*.95)]||1};
+  const rp=p95(res), cp=p95(cv);
+  for(let k=0;k<M*M;k++)R[k]=Math.min(1,0.6*res[k]/rp+0.4*cv[k]/cp);
+  // sky-view factor: 12 azimuths, horizon search to ~2.6 km
+  const dirs=[];for(let a=0;a<12;a++){const t=a/12*2*Math.PI;dirs.push([Math.cos(t),Math.sin(t)])}
+  for(let j=0;j<M;j++)for(let i=0;i<M;i++){
+    const h0=E[idx(i,j)];let acc=0;
+    for(const [dx,dy] of dirs){let mx=0;
+      for(let s=1;s<=24;s++){const x=Math.round(i+dx*s), y=Math.round(j+dy*s);if(x<0||y<0||x>=M||y>=M)break;
+        const dist=Math.hypot(dx*s*DX,dy*s*DY), ang=Math.atan2(E[idx(x,y)]-h0,dist);if(ang>mx)mx=ang}
+      acc+=Math.cos(mx)**2;}
+    SVF[idx(i,j)]=acc/dirs.length; DOSE[idx(i,j)]=RAD_FLAT*SVF[idx(i,j)]*Math.exp(ALT_COEF*(E[idx(i,j)]-BRADBURY_ELEV)/1000);
+  }
+})();
+let dMin=1e9,dMax=-1e9;for(const v of DOSE){dMin=Math.min(dMin,v);dMax=Math.max(dMax,v)}
+
+/* ---- geo helpers ---- */
+const ll2c=(lat,lon)=>[(lon-GEO.lon0)/GEO.span*(M-1),(GEO.lat0-lat)/GEO.span*(M-1)];
+const c2ll=(i,j)=>[GEO.lat0-j/(M-1)*GEO.span, GEO.lon0+i/(M-1)*GEO.span];
+function sample(a,x,y){x=Math.max(0,Math.min(M-1.001,x));y=Math.max(0,Math.min(M-1.001,y));const i=Math.floor(x),j=Math.floor(y),fx=x-i,fy=y-j;
+  return a[idx(i,j)]*(1-fx)*(1-fy)+a[idx(i+1,j)]*fx*(1-fy)+a[idx(i,j+1)]*(1-fx)*fy+a[idx(i+1,j+1)]*fx*fy}
+const fmtLL=(lat,lon)=>`${Math.abs(lat).toFixed(3).replace('.',',')}°G ${lon.toFixed(3).replace('.',',')}°D`;
+
+const BRADBURY=ll2c(-4.5895,137.4417);
+const TARGETS=[
+  // Verified references: HiRISE PSP_001752_1750 image centre (boxwork, NASA PIA26306); HiRISE ESP_039280_1755 centre (Curiosity at Pahrump Hills, Dec 2014)
+  {name:'Mount Sharp boxwork bölgesi',sub:'4,843°G 137,298°D · HiRISE PSP_001752_1750 merkezi',ll:[-4.843,137.298],why:'Boxwork: Mount Sharp\'ta geç dönem yeraltı suyunu kaydeden, minerallerle dolmuş çatlak ağı. Curiosity 2025\'te yakından inceledi. Hedef, bu bölgeyi gösteren HiRISE görüntüsünün merkezidir.'},
+  {name:'Pahrump Hills (Mount Sharp eteği)',sub:'4,676°G 137,379°D · HiRISE ESP_039280_1755',ll:[-4.676,137.379],why:'Curiosity\'nin 2014\'te Mount Sharp\'ın taban katmanlarını ilk kez incelediği yer.'},
+  {name:'Doğu krater tabanı düzlükleri',sub:'≈4,66°G 137,58°D · test sürüşü',ll:[-4.66,137.58],why:'Düz arazi: otonomi sistemi için düşük riskli bir test sürüşü.'},
+];
+
+/* ================= THREE.JS ================= */
+const stage=document.getElementById('stage');
+const renderer=new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(2,window.devicePixelRatio));
+renderer.setSize(innerWidth,innerHeight);
+stage.appendChild(renderer.domElement);
+const camera=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,0.05,4000);
+const controls=new THREE.OrbitControls(camera,renderer.domElement);
+controls.enableDamping=true; controls.dampingFactor=.08;
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- intro globe ---------- */
+const globeScene=new THREE.Scene();
+function noise2(seed){const p=new Uint8Array(512),q=[];for(let i=0;i<256;i++)q[i]=i;let s=seed;for(let i=255;i>0;i--){s=(s*16807)%2147483647;const j=s%(i+1);[q[i],q[j]]=[q[j],q[i]]}for(let i=0;i<512;i++)p[i]=q[i&255];
+  const g=(h,x,y)=>((h&1)?x:-x)+((h&2)?y:-y), f=t=>t*t*t*(t*(t*6-15)+10);
+  return (x,y)=>{const X=Math.floor(x)&255,Y=Math.floor(y)&255;x-=Math.floor(x);y-=Math.floor(y);const u=f(x),v=f(y),a=p[X]+Y,b=p[X+1]+Y;
+    const l=(t,a1,b1)=>a1+t*(b1-a1);return l(v,l(u,g(p[a],x,y),g(p[b],x-1,y)),l(u,g(p[a+1],x,y-1),g(p[b+1],x-1,y-1)))}}
+const GLOBE_B64="__GLOBE__";
+function marsTexture(){
+  const w=1024,h=512,c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d'),im=x.createImageData(w,h),n=noise2(7),n2=noise2(99);
+  for(let j=0;j<h;j++)for(let i=0;i<w;i++){
+    const lon=i/w*2*Math.PI, lat=(j/h-.5)*Math.PI, cx=Math.cos(lat)*Math.cos(lon), cy=Math.cos(lat)*Math.sin(lon), cz=Math.sin(lat);
+    let v=0,a=1,fr=1.6;for(let o=0;o<6;o++){v+=a*n(cx*fr+cz*fr*.7+10,cy*fr-cz*fr*.3+3);a*=.5;fr*=2.1}
+    const d=n2(cx*3+cz,cy*3-cz)*.5; const t=Math.max(0,Math.min(1,.5+v*.55+d*.3));
+    const pole=Math.max(0,(Math.abs(lat)-1.32)*6);
+    const k=(j*w+i)*4;
+    im.data[k]=Math.min(255,(120+t*110)*(1-pole)+235*pole);
+    im.data[k+1]=Math.min(255,(52+t*62)*(1-pole)+232*pole);
+    im.data[k+2]=Math.min(255,(30+t*36)*(1-pole)+228*pole);im.data[k+3]=255;
+  }x.putImageData(im,0,0);return new THREE.CanvasTexture(c)}
+const globe=new THREE.Mesh(new THREE.SphereGeometry(1,96,96),new THREE.MeshStandardMaterial({map:marsTexture(),roughness:1,metalness:0}));
+globeScene.add(globe);
+// swap in the real NASA JPL Mars Trek Viking MDIM 2.1 colour mosaic (1024×512) once decoded; procedural texture is only a placeholder
+{const im=new Image();im.onload=()=>{const T=new THREE.Texture(im);T.anisotropy=renderer.capabilities.getMaxAnisotropy();T.needsUpdate=true;globe.material.map=T;globe.material.needsUpdate=true;hiRes()};im.src='data:image/webp;base64,'+GLOBE_B64}
+function hiRes(){const max=renderer.capabilities.maxTextureSize,small=innerWidth<900||(navigator.deviceMemory&&navigator.deviceMemory<4);
+  const url=(!small&&max>=8192)?'mars_nasa_viking_8k.jpg':'mars_nasa_viking_4k.jpg';const hi=new Image();
+  hi.onload=()=>{const T=new THREE.Texture(hi);T.anisotropy=renderer.capabilities.getMaxAnisotropy();T.minFilter=THREE.LinearMipmapLinearFilter;T.needsUpdate=true;globe.material.map=T;globe.material.needsUpdate=true};hi.src=url}
+function ll2v(lat,lon,r){const phi=lat*Math.PI/180, th=lon*Math.PI/180;return new THREE.Vector3(r*Math.cos(phi)*Math.cos(th),r*Math.sin(phi),-r*Math.cos(phi)*Math.sin(th))}
+const galeMk=new THREE.Group();
+const ring=new THREE.Mesh(new THREE.RingGeometry(.035,.045,48),new THREE.MeshBasicMaterial({color:0xf2b24c,side:THREE.DoubleSide,transparent:true}));
+const dot=new THREE.Mesh(new THREE.SphereGeometry(.012,16,16),new THREE.MeshBasicMaterial({color:0xf2b24c}));
+galeMk.add(ring,dot);const gp=ll2v(-5.4,137.8,1.002);galeMk.position.copy(gp);galeMk.lookAt(gp.clone().multiplyScalar(2));globe.add(galeMk);
+const sun=new THREE.DirectionalLight(0xfff1e6,1.35);sun.position.set(-3,1.5,2.5);globeScene.add(sun,new THREE.AmbientLight(0x3a2a24,.9));
+const stars=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(Array.from({length:4500},()=> (Math.random()-.5)*400),3)),new THREE.PointsMaterial({color:0xffffff,size:.6,sizeAttenuation:false,transparent:true,opacity:.7}));
+globeScene.add(stars);
+// rotate so Gale faces the camera, offset to the right of the copy
+globe.rotation.y=2.03; globe.rotation.x=0.12; // Gale (137.8°E) faces the camera with the NASA texture UV layout
+camera.position.set(-0.9,0.15,3.2);controls.target.set(-0.9,0,0);controls.enabled=false;
+
+/* ---------- terrain scene ---------- */
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(0x1a0f0a); scene.fog=new THREE.Fog(0x2a1810,180,520);
+const W=(M-1)*DX/U, H=(M-1)*DY/U;
+const geo=new THREE.PlaneGeometry(W,H,M-1,M-1);geo.rotateX(-Math.PI/2);
+let EXAG=3;
+const eRef=E[idx(Math.round(BRADBURY[0]),Math.round(BRADBURY[1]))];
+function hAt(x,y){return (sample(E,x,y)-eRef)/U*EXAG}
+function applyHeights(){const p=geo.attributes.position;for(let j=0;j<M;j++)for(let i=0;i<M;i++)p.setY(j*M+i,(E[idx(i,j)]-eRef)/U*EXAG);p.needsUpdate=true;geo.computeVertexNormals()}
+applyHeights();
+const TEX=768, tc=document.createElement('canvas');tc.width=tc.height=TEX;const tx=tc.getContext('2d');
+const base=document.createElement('canvas');base.width=base.height=M;const bx=base.getContext('2d');
+const tex=new THREE.CanvasTexture(tc);tex.anisotropy=renderer.capabilities.getMaxAnisotropy();
+const terrain=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({map:tex,roughness:1,metalness:0}));
+scene.add(terrain);
+const tsun=new THREE.DirectionalLight(0xfff0e0,1.25);tsun.position.set(-120,140,-60);scene.add(tsun,new THREE.HemisphereLight(0xd9a080,0x2a1408,.55));
+const c2w=(x,y)=>new THREE.Vector3(x/(M-1)*W-W/2,hAt(x,y),y/(M-1)*H-H/2);
+
+// rover
+const rover=new THREE.Group();
+{const body=new THREE.Mesh(new THREE.BoxGeometry(1.6,.55,2.2),new THREE.MeshStandardMaterial({color:0xe8e2da,roughness:.6}));body.position.y=.75;
+ const mast=new THREE.Mesh(new THREE.CylinderGeometry(.07,.07,1.3),new THREE.MeshStandardMaterial({color:0xcfc8bd}));mast.position.set(.45,1.6,.7);
+ const head=new THREE.Mesh(new THREE.BoxGeometry(.5,.3,.3),new THREE.MeshStandardMaterial({color:0x333}));head.position.set(.45,2.3,.75);
+ rover.add(body,mast,head);
+ for(const sx of [-.95,.95])for(const sz of [-.8,0,.8]){const w=new THREE.Mesh(new THREE.CylinderGeometry(.32,.32,.28,16),new THREE.MeshStandardMaterial({color:0x2b2522}));w.rotation.z=Math.PI/2;w.position.set(sx,.32,sz);rover.add(w)}
+ const beacon=new THREE.Mesh(new THREE.SphereGeometry(1.4,16,16),new THREE.MeshBasicMaterial({color:0xf2b24c,transparent:true,opacity:.35}));beacon.position.y=4;rover.add(beacon);rover.userData.beacon=beacon;}
+scene.add(rover);
+const senseRing=new THREE.Mesh(new THREE.RingGeometry(.96,1,64),new THREE.MeshBasicMaterial({color:0x7ad3ff,transparent:true,opacity:.55,side:THREE.DoubleSide,depthTest:false}));senseRing.rotation.x=-Math.PI/2;scene.add(senseRing);
+const tgtMk=new THREE.Mesh(new THREE.ConeGeometry(1.4,4,4),new THREE.MeshBasicMaterial({color:0x7ad3ff}));tgtMk.rotation.x=Math.PI;tgtMk.visible=false;scene.add(tgtMk);
+
+/* ================= LAYER RENDERING ================= */
+const ramps={
+  elev:[[0,'#1b2a4a'],[.25,'#2f6b7a'],[.5,'#9fb36a'],[.75,'#d9a35a'],[1,'#f6efe6']],
+  slope:[[0,'#1f3b2c'],[.25,'#6fd39b'],[.5,'#f2d24c'],[.75,'#ef7a3a'],[1,'#ff3d3d']],
+  rough:[[0,'#16202a'],[.5,'#8a7bd6'],[1,'#ffd1f0']],
+  rad:[[0,'#1d1745'],[.4,'#5b2a86'],[.7,'#d1495b'],[1,'#ffd166']],
+  cost:[[0,'#163a26'],[.35,'#6fd39b'],[.7,'#f2b24c'],[1,'#ff5a5a']]
+};
+function hex(h){return[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)]}
+function rampAt(r,t){t=Math.max(0,Math.min(1,t));for(let k=1;k<r.length;k++)if(t<=r[k][0]){const a=hex(r[k-1][1]),b=hex(r[k][1]),f=(t-r[k-1][0])/(r[k][0]-r[k-1][0]);return[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f,a[2]+(b[2]-a[2])*f]}return hex(r[r.length-1][1])}
+const LEG={
+  optical:{t:'Optik · MRO CTX',min:'koyu',max:'parlak',g:'linear-gradient(90deg,#3a1c10,#c98a5c,#f7e0c8)',n:'CTX ~6 m/piksel mozaiği ~217 m\'ye indirildi. Mars rengine boyandı; parlaklık gerçek.'},
+  elev:{t:'Yükseklik · HiRISE DEM',min:'',max:'',g:'',n:'Bradbury Landing ≈ −4.501 m\'ye kalibre edildi. Mutlak değerler yaklaşık.'},
+  slope:{t:'Eğim (°, ~100 m ölçek)',min:'0°',max:'10°+',g:'',n:'~108 m\'lik hücrelerde DEM\'den. Metre ölçeğinde gerçek eğimler daha diktir; sınırlar buna göre ölçeklendi.'},
+  rough:{t:'Yüzey pürüzlülük endeksi',min:'düz',max:'pürüzlü',g:'',n:'DEM sapması + CTX doku varyansı. Kaya, sırt ve ana kaya için gösterge.'},
+  rad:{t:'Doz eşdeğeri (mSv/gün)',min:'',max:'',g:'',n:'Bradbury\'de MSL RAD 0,67 mSv/gün; gökyüzü görüş faktörü ve varsayılan +%4/km yükseklik terimiyle ölçeklendi.'},
+  cost:{t:'Rover maliyet haritası',min:'ucuz',max:'geçilemez',g:'',n:'Rover\'ın inandığı harita. Kırmızı = eğim sınırının üstü. Algılanmamış zemin karanlık kalır.'}
+};
+let layer='optical', showFog=true;
+const known=new Uint8Array(M*M);
+function costOf(k,maxS){const s=S[k];if(s>=maxS||R[k]>0.9)return Infinity;return 1+4*(s/maxS)**2+3*R[k]}
+function drawBase(){
+  const im=bx.createImageData(M,M),d=im.data,maxS=+document.getElementById('maxs').value;
+  for(let k=0;k<M*M;k++){
+    let c;
+    if(layer==='optical'){const v=C[k]/255;c=[60+v*190,28+v*140,16+v*110]}
+    else if(layer==='elev')c=rampAt(ramps.elev,(E[k]-eMin)/(eMax-eMin));
+    else if(layer==='slope')c=rampAt(ramps.slope,S[k]/10);
+    else if(layer==='rough')c=rampAt(ramps.rough,R[k]);
+    else if(layer==='rad')c=rampAt(ramps.rad,(DOSE[k]-dMin)/(dMax-dMin));
+    else {const cc=costOf(k,maxS);c=cc===Infinity?hex('#ff3d3d'):rampAt(ramps.cost,(cc-1)/7)}
+    // gentle CTX texture under thematic layers so the ground stays readable
+    if(layer!=='optical'){const v=C[k]/255;const m=.72+.5*(v-.5);c=c.map(x=>x*m)}
+    if(showFog&&!known[k]){const v=C[k]/255;const g=layer==='cost'?14:(20+v*40);c=[c[0]*.18+g,c[1]*.16+g*.75,c[2]*.16+g*.6]}
+    d[k*4]=c[0];d[k*4+1]=c[1];d[k*4+2]=c[2];d[k*4+3]=255;
+  }bx.putImageData(im,0,0);
+  const L=LEG[layer];document.getElementById('lgTitle').textContent=L.t;
+  const r=ramps[layer];document.getElementById('lgGrad').style.background=L.g||`linear-gradient(90deg,${r.map(s=>s[1]+' '+s[0]*100+'%').join(',')})`;
+  const mn={elev:Math.round(eMin).toLocaleString('tr-TR')+' m',rad:dMin.toFixed(2),slope:L.min,rough:L.min,cost:L.min,optical:L.min}[layer];
+  const mx={elev:Math.round(eMax).toLocaleString('tr-TR')+' m',rad:dMax.toFixed(2),slope:L.max,rough:L.max,cost:L.max,optical:L.max}[layer];
+  document.getElementById('lgMin').textContent=mn;document.getElementById('lgMax').textContent=mx;document.getElementById('lgNote').textContent=L.n;
+}
+let plan=[], trail=[], evaPath=[];
+const sc=TEX/(M-1);
+function strokePath(p,color,w,dash){if(p.length<2)return;tx.save();tx.strokeStyle=color;tx.lineWidth=w;tx.lineJoin='round';tx.lineCap='round';if(dash)tx.setLineDash(dash);tx.beginPath();tx.moveTo(p[0][0]*sc,p[0][1]*sc);for(const q of p)tx.lineTo(q[0]*sc,q[1]*sc);tx.stroke();tx.restore()}
+function compose(){
+  tx.imageSmoothingEnabled=true;tx.imageSmoothingQuality='high';tx.drawImage(base,0,0,TEX,TEX);
+  strokePath(evaPath,'rgba(0,0,0,.55)',7);strokePath(evaPath,'#6fd39b',3.5);
+  strokePath(plan,'#7ad3ff',2.5,[6,5]);
+  strokePath(trail,'rgba(0,0,0,.5)',6);strokePath(trail,'#f2b24c',3);
+  // labels
+  const lab=(c,t)=>{tx.font='600 15px Space Grotesk, sans-serif';tx.fillStyle='rgba(0,0,0,.6)';tx.fillText(t,c[0]*sc+9,c[1]*sc+5);tx.fillStyle='#fff';tx.fillText(t,c[0]*sc+8,c[1]*sc+4);tx.beginPath();tx.arc(c[0]*sc,c[1]*sc,4,0,7);tx.fill()};
+  lab(BRADBURY,'Bradbury Landing (Curiosity, 2012)');
+  tex.needsUpdate=true;
+}
+let dirty=true;
+
+/* ================= PLANNER (A*) ================= */
+function astar(start,goal,costFn){
+  const sI=Math.round(start[0]),sJ=Math.round(start[1]),gI=Math.round(goal[0]),gJ=Math.round(goal[1]);
+  const g=new Float32Array(M*M).fill(Infinity),from=new Int32Array(M*M).fill(-1),closed=new Uint8Array(M*M);
+  const heap=[];const push=(k,f)=>{heap.push([f,k]);let i=heap.length-1;while(i>0){const p=(i-1)>>1;if(heap[p][0]<=heap[i][0])break;[heap[p],heap[i]]=[heap[i],heap[p]];i=p}};
+  const pop=()=>{const top=heap[0],last=heap.pop();if(heap.length){heap[0]=last;let i=0;for(;;){const l=2*i+1,r=l+1;let m=i;if(l<heap.length&&heap[l][0]<heap[m][0])m=l;if(r<heap.length&&heap[r][0]<heap[m][0])m=r;if(m===i)break;[heap[m],heap[i]]=[heap[i],heap[m]];i=m}}return top};
+  const h=(i,j)=>{const dx=Math.abs(i-gI)*DX,dy=Math.abs(j-gJ)*DY;return (Math.max(dx,dy)+(Math.SQRT2-1)*Math.min(dx,dy))/100};
+  const s=idx(sI,sJ);g[s]=0;push(s,h(sI,sJ));
+  const nb=[[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]];
+  while(heap.length){const [,k]=pop();if(closed[k])continue;closed[k]=1;const i=k%M,j=(k/M)|0;
+    if(i===gI&&j===gJ){const p=[];let c=k;while(c!==-1){p.push([c%M,(c/M)|0]);c=from[c]}return p.reverse()}
+    for(const [di,dj] of nb){const ni=i+di,nj=j+dj;if(ni<0||nj<0||ni>=M||nj>=M)continue;const nk=idx(ni,nj);if(closed[nk])continue;
+      const c=costFn(nk);if(c===Infinity)continue;const step=Math.hypot(di*DX,dj*DY)/100;const ng=g[k]+step*c;
+      if(ng<g[nk]){g[nk]=ng;from[nk]=k;push(nk,ng+h(ni,nj))}}}
+  return null;
+}
+
+/* ================= SIMULATION ================= */
+const st={pos:[...BRADBURY],target:null,targetName:'',running:false,dist:0,replans:0,heading:0,done:false};
+function sense(){const r=+document.getElementById('sense').value,ci=st.pos[0],cj=st.pos[1];let added=0;
+  for(let j=Math.max(0,Math.floor(cj-r));j<=Math.min(M-1,Math.ceil(cj+r));j++)for(let i=Math.max(0,Math.floor(ci-r));i<=Math.min(M-1,Math.ceil(ci+r));i++){
+    if(Math.hypot((i-ci)*DX,(j-cj)*DY)<=r*DX){const k=idx(i,j);if(!known[k]){known[k]=1;added++}}}
+  if(added)dirty=true;return added}
+function roverCost(k){const maxS=+document.getElementById('maxs').value;if(!known[k])return 1.6;return costOf(k,maxS)}
+function replan(reason){if(!st.target)return false;const p=astar(st.pos,st.target,roverCost);
+  if(!p){log(`Bildiklerimle ${st.targetName} hedefine güvenli rota yok. Eğim sınırını artırmayı dene.`,'r');st.running=false;updRun();plan=[];dirty=true;return false}
+  plan=p;dirty=true;if(reason){st.replans++;log(reason,'w')}return true}
+function planBlocked(){for(let n=1;n<Math.min(plan.length,60);n++){const k=idx(plan[n][0],plan[n][1]);if(known[k]&&roverCost(k)===Infinity)return true}return false}
+let stepAcc=0;
+function tick(dt){
+  if(!st.running||!plan.length)return;
+  stepAcc+=dt*(+document.getElementById('spd').value)*2.2;
+  while(stepAcc>=1&&plan.length>1){stepAcc-=1;
+    const nx=plan[1];const d=Math.hypot((nx[0]-st.pos[0])*DX,(nx[1]-st.pos[1])*DY);st.dist+=d;
+    st.heading=Math.atan2(nx[0]-st.pos[0],-(nx[1]-st.pos[1]));
+    st.pos=[nx[0],nx[1]];plan.shift();trail.push([...st.pos]);
+    const add=sense();
+    if(add&&planBlocked())replan(`${fmtLL(...c2ll(...st.pos))} önünde tehlike algılandı. Yeniden planlanıyor.`);
+    else if(add&&st.dist%800<120)replan(null);
+    dirty=true;
+  }
+  if(plan.length<=1){st.running=false;st.done=true;updRun();log(`${st.targetName} hedefine varıldı. ${Math.round(st.dist).toLocaleString('tr-TR')} m gidildi, ${st.replans} kez yeniden planlandı.`,'g');toast('Hedefe varıldı. Buradan bir Mars yürüyüşü planla.')}
+}
+function setTarget(c,name){st.target=c;st.targetName=name;const p=c2w(...c);tgtMk.position.set(p.x,p.y+3.2,p.z);tgtMk.visible=true;plan=[];replan(null);
+  log(`Hedef: ${name} · ${fmtLL(...c2ll(...c))}. Kuş uçuşu ${(Math.hypot((c[0]-st.pos[0])*DX,(c[1]-st.pos[1])*DY)/1000).toFixed(1).replace('.',',')} km.`)}
+function reset(){known.fill(0);st.pos=[...BRADBURY];st.dist=0;st.replans=0;st.running=false;st.done=false;trail=[[...st.pos]];evaPath=[];sense();
+  document.getElementById('eva').classList.add('hidden');if(st.target)replan(null);updRun();dirty=true;document.getElementById('log').innerHTML='';
+  log('Ariadne Bradbury Landing\'de çevrimiçi, 4,590°G 137,442°D. Yerel harita başlatıldı.','g')}
+
+/* ---------- Marswalk planning (astronaut) ---------- */
+const EVA={maxSlope:4.5,speed:1.6,maxHours:4,doseBudget:0.25,walkKm:2}; // km/h, h, mSv per EVA
+function evaCost(k){if(!known[k])return Infinity;const s=S[k];if(s>=EVA.maxSlope||R[k]>0.8)return Infinity;return 1+6*(s/EVA.maxSlope)**2+4*R[k]+2*(DOSE[k]/RAD_FLAT)}
+function planEva(){
+  if(trail.length<5){toast('Önce rover biraz arazi haritalasın.');return}
+  // Crew rides a pressurised rover along the verified trail, then walks the last ~2 km on ground Ariadne has mapped.
+  // walk to the target cell, or to the nearest suit-safe mapped cell beside it (within ~500 m)
+  let goal=st.pos;
+  if(evaCost(idx(...goal))===Infinity){let best=null,bd=1e9;for(let dj=-5;dj<=5;dj++)for(let di=-5;di<=5;di++){const x=goal[0]+di,y=goal[1]+dj;if(x<0||y<0||x>=M||y>=M)continue;if(evaCost(idx(x,y))<Infinity){const d=Math.hypot(di*DX,dj*DY);if(d<bd){bd=d;best=[x,y]}}}if(best)goal=best}
+  let drop=trail[0],acc=0;
+  for(let n=trail.length-1;n>0;n--){acc+=Math.hypot((trail[n][0]-trail[n-1][0])*DX,(trail[n][1]-trail[n-1][1])*DY);drop=trail[n-1];if(acc>=EVA.walkKm*1000)break}
+  let p=astar(drop,goal,evaCost);
+  if(!p){for(let n=trail.length-1;n>=0&&!p;n-=3){if(evaCost(idx(...trail[n]))<Infinity){p=astar(trail[n],goal,evaCost)}}}
+  if(!p){toast('Haritalanmış arazide skafandır sınırları içinde yürünebilir rota yok.');return}
+  evaPath=p;dirty=true;
+  let len=0,dose=0,maxS=0,gain=0;for(let n=1;n<p.length;n++){const d=Math.hypot((p[n][0]-p[n-1][0])*DX,(p[n][1]-p[n-1][1])*DY);len+=d;const k=idx(...p[n]);maxS=Math.max(maxS,S[k]);const de=E[k]-E[idx(...p[n-1])];if(de>0)gain+=de;dose+=DOSE[k]*(d/1000/EVA.speed)/24}
+  const hours=len/1000/EVA.speed; const rt=hours*2; const rtDose=dose*2;
+  const ok=rt<=EVA.maxHours*2&&rtDose<=EVA.doseBudget;
+  const t=document.getElementById('evaT');
+  t.innerHTML=`<tr><td>Nereden → nereye</td><td>Rover bırakma noktası → ${st.done?st.targetName:'rover konumu'}</td></tr>
+  <tr><td>Tek yön mesafe</td><td>${(len/1000).toFixed(2).replace('.',',')} km</td></tr>
+  <tr><td>Yükseklik kazancı</td><td>${Math.round(gain)} m</td></tr>
+  <tr><td>En dik bölüm</td><td>${maxS.toFixed(1).replace('.',',')}° (sınır ${String(EVA.maxSlope).replace('.',',')}°)</td></tr>
+  <tr><td>Yürüme süresi, gidiş-dönüş</td><td>${rt.toFixed(1).replace('.',',')} sa · ${String(EVA.speed).replace('.',',')} km/sa</td></tr>
+  <tr><td>Radyasyon, gidiş-dönüş</td><td>${(rtDose*1000).toFixed(0)} µSv</td></tr>`;
+  const v=document.getElementById('evaV');v.className='verdict '+(ok?'v-ok':'v-bad');
+  v.textContent=ok?'UYGUN: skafandır, süre ve doz sınırları içinde. Rota yalnızca rover\'ın doğruladığı zeminden geçiyor.':'TEK EVA İÇİN UYGUN DEĞİL: süre veya doz sınırını aşıyor. İlk bölüm için basınçlı rover\'ı kullanın.';
+  document.getElementById('eva').classList.remove('hidden');
+  document.getElementById('evaV').insertAdjacentHTML('beforeend','');log(`Mars yürüyüşü planı: bırakma noktasından tek yön ${(len/1000).toFixed(2).replace('.',',')} km, en dik ${maxS.toFixed(1).replace('.',',')}°, ${ok?'UYGUN':'UYGUN DEĞİL'}.`,ok?'g':'w');
+}
+
+/* ================= UI ================= */
+{const L=document.getElementById('left'),B=document.getElementById('drawer');if(matchMedia('(max-width:900px)').matches)L.classList.add('closed');B.onclick=()=>{const c=L.classList.toggle('closed');B.setAttribute('aria-expanded',String(!c))}}
+const logEl=document.getElementById('log');
+function log(m,c){const p=document.createElement('p');if(c)p.className=c;p.textContent='› '+m;logEl.appendChild(p);logEl.scrollTop=logEl.scrollHeight}
+let tt;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),2600)}
+function updRun(){const b=document.getElementById('run');b.textContent=st.running?'Duraklat':(st.done?'Sürüş tamamlandı':'Sürüşü başlat')}
+const tgtBox=document.getElementById('targets');
+TARGETS.forEach((t,n)=>{const b=document.createElement('button');b.setAttribute('aria-pressed','false');b.innerHTML=`${t.name}<small>${t.sub}</small>`;b.title=t.why;
+  b.onclick=()=>{[...tgtBox.children].forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');st.done=false;setTarget(ll2c(...t.ll),t.name);log(t.why);updRun()};tgtBox.appendChild(b)});
+document.getElementById('layers').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;layer=b.dataset.layer;[...e.currentTarget.children].forEach(x=>x.setAttribute('aria-pressed',x===b));dirty=true});
+document.getElementById('fog').onchange=e=>{showFog=e.target.checked;dirty=true};
+document.getElementById('exag').oninput=e=>{EXAG=+e.target.value;applyHeights();placeRover();dirty=true;if(st.target){const p=c2w(...st.target);tgtMk.position.set(p.x,p.y+3.2,p.z)}};
+function evaStale(){if(!evaPath.length&&document.getElementById('eva').classList.contains('hidden'))return;evaPath=[];dirty=true;document.getElementById('eva').classList.add('hidden');if(view==='hud')setView('orbit');toast('Parametre değişti: Mars yürüyüşü planı sıfırlandı, yeniden planla.')}
+document.getElementById('maxs').oninput=e=>{document.getElementById('maxsV').textContent=e.target.value+'°';dirty=true;evaStale();if(st.target)replan(null)};
+document.getElementById('sense').oninput=()=>{evaStale();sense()};
+document.getElementById('run').onclick=()=>{if(!st.target){toast('Önce bir bilimsel hedef seç.');return}if(st.done)return;st.running=!st.running;if(st.running&&!plan.length)replan(null);updRun();if(st.running)log('Sürüş başladı. Yalnızca algılanan arazide sürülüyor.')};
+document.getElementById('reset').onclick=reset;
+document.getElementById('mkEva').onclick=planEva;
+document.getElementById('evaClose').onclick=()=>document.getElementById('eva').classList.add('hidden');
+document.getElementById('evaHud').onclick=()=>{setView('hud')};
+const about=document.getElementById('about');
+const openAbout=()=>{about.classList.remove('hidden');document.getElementById('abClose').focus()};
+document.getElementById('aboutBtn').onclick=openAbout;document.getElementById('aboutBtn2').onclick=openAbout;
+document.getElementById('abClose').onclick=()=>about.classList.add('hidden');
+about.addEventListener('click',e=>{if(e.target===about)about.classList.add('hidden')});
+addEventListener('keydown',e=>{if(e.key==='Escape'){about.classList.add('hidden');if(view==='hud')setView('orbit')}});
+
+// click on terrain = custom waypoint
+const ray=new THREE.Raycaster(),mouse=new THREE.Vector2();let downAt=null;
+renderer.domElement.addEventListener('pointerdown',e=>{downAt=[e.clientX,e.clientY]});
+renderer.domElement.addEventListener('pointerup',e=>{
+  if(mode!=='terrain'||view==='hud'||!downAt||Math.hypot(e.clientX-downAt[0],e.clientY-downAt[1])>5)return;
+  mouse.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight)*2+1);ray.setFromCamera(mouse,camera);const hit=ray.intersectObject(terrain)[0];if(!hit)return;
+  const i=(hit.point.x+W/2)/W*(M-1), j=(hit.point.z+H/2)/H*(M-1);[...tgtBox.children].forEach(x=>x.setAttribute('aria-pressed','false'));st.done=false;setTarget([Math.round(i),Math.round(j)],'Özel hedef');updRun()});
+
+/* ---------- views ---------- */
+let view='orbit',mode='globe';
+function setView(v){
+  if(v==='hud'&&!evaPath.length){planEva();if(!evaPath.length)return}
+  view=v;document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===v));
+  document.getElementById('hud').classList.toggle('on',v==='hud');
+  document.getElementById('ui').style.visibility=v==='hud'?'hidden':'visible';
+  controls.enabled=v!=='hud';hudT=0;rover.visible=senseRing.visible=v!=='hud';
+  if(v==='orbit')overview();
+  if(v==='follow'){const p=rover.position;controls.target.copy(p);camera.position.set(p.x+18,p.y+16,p.z+26);controls.update()}
+}
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
+document.getElementById('hudExit').onclick=()=>setView('orbit');
+
+function placeRover(){const p=c2w(...rPos);rover.position.copy(p);rover.rotation.y=-st.heading+Math.PI;const r=+document.getElementById('sense').value*DX/U;senseRing.scale.set(r,r,1);senseRing.position.set(p.x,p.y+.3,p.z)}
+let rPos=[...BRADBURY];
+
+/* ---------- descent transition ---------- */
+let trans=0;
+document.getElementById('go').onclick=()=>{
+  document.getElementById('intro').classList.add('fade');trans=0.0001;
+};
+function overview(){camera.position.set(-10,175,150);controls.target.set(0,0,5);camera.lookAt(controls.target);controls.update()}
+function enterTerrain(){
+  mode='terrain';document.getElementById('intro').classList.add('hidden');document.getElementById('ui').classList.add('on');
+  controls.enabled=true;controls.maxPolarAngle=Math.PI*.47;controls.minDistance=8;controls.maxDistance=420;
+  overview();
+  reset();
+  log(`Harita: ${(W*U/1000).toFixed(1).replace('.',',')} × ${(H*U/1000).toFixed(1).replace('.',',')} km, ${M}×${M} hücre (~${Math.round(DX)} m). Kabartma ${Math.round(eMax-eMin)} m.`);
+  log('Başlamak için bir bilimsel hedef seç.');
+}
+
+/* ---------- HUD ---------- */
+let hudT=0;
+const card=['K','KD','D','GD','G','GB','B','KB'];
+function hudFrame(dt){
+  if(!evaPath.length)return;hudT+=dt*(reduceMotion?.6:1.2)*(+document.getElementById('spd').value)/4;
+  const n=Math.min(evaPath.length-2,Math.floor(hudT)),f=hudT-Math.floor(hudT);
+  if(hudT>=evaPath.length-1){hudT=0}
+  const a=evaPath[n],b=evaPath[Math.min(evaPath.length-1,n+1)],ahead=evaPath[Math.min(evaPath.length-1,n+6)];
+  const x=a[0]+(b[0]-a[0])*f,y=a[1]+(b[1]-a[1])*f,p=c2w(x,y),q=c2w(...ahead);
+  camera.position.set(p.x,p.y+0.6*EXAG/3+0.25,p.z);camera.lookAt(q.x,q.y+0.3,q.z);
+  const k=idx(Math.round(x),Math.round(y));let rem=0;for(let m=n;m<evaPath.length-1;m++)rem+=Math.hypot((evaPath[m+1][0]-evaPath[m][0])*DX,(evaPath[m+1][1]-evaPath[m][1])*DY);
+  const hd=(Math.atan2(ahead[0]-x,-(ahead[1]-y))*180/Math.PI+360)%360;
+  const ll=c2ll(x,y);
+  document.getElementById('hudL').innerHTML=`MARS YÜRÜYÜŞÜ · EVA-01<br>${fmtLL(...ll)}<br>YÜKSEKLİK ${Math.round(E[k]).toLocaleString('tr-TR')} m<br>EĞİM <span class="${S[k]>3.5?'warn':''}">${S[k].toFixed(1)}°</span>`;
+  document.getElementById('hudR').innerHTML=`DOZ HIZI ${DOSE[k].toFixed(2).replace('.',',')} mSv/g<br>GÖKYÜZÜ GÖRÜŞÜ %${(SVF[k]*100).toFixed(0)}<br>HEDEFE ${(rem/1000).toFixed(2).replace('.',',')} km<br>VARIŞ ${(rem/1000/EVA.speed*60).toFixed(0)} dk`;
+  document.getElementById('hudC').textContent=card[Math.round(hd/45)%8]+' '+Math.round(hd)+'°';
+  document.getElementById('hudB').innerHTML=R[k]>.6?'<span class="warn">ENGEBELİ ZEMİN · ADIMINA DİKKAT</span>':'ROTA ARIADNE TARAFINDAN DOĞRULANDI';
+}
+
+/* ================= LOOP ================= */
+let last=performance.now(),acc=0;
+function frame(now){
+  const dt=Math.min(.1,(now-last)/1000);last=now;
+  if(mode==='globe'){
+    if(!reduceMotion)globe.rotation.y+=dt*.012;ring.material.opacity=.55+.45*Math.sin(now/300);
+    if(trans>0){trans=Math.min(1,trans+dt*.6);const e=trans*trans*(3-2*trans);
+      const target=globe.localToWorld(gp.clone());camera.position.lerpVectors(new THREE.Vector3(-0.9,0.15,3.2),target.clone().multiplyScalar(1.35),e);camera.lookAt(target);
+      if(trans>=1)enterTerrain();}
+    else{controls.update()}
+    renderer.render(globeScene,camera);
+  }else{
+    tick(dt);
+    rPos[0]+=(st.pos[0]-rPos[0])*Math.min(1,dt*8);rPos[1]+=(st.pos[1]-rPos[1])*Math.min(1,dt*8);placeRover();
+    rover.userData.beacon.material.opacity=.25+.2*Math.sin(now/250);
+    acc+=dt;if(dirty&&acc>.08){acc=0;dirty=false;drawBase();compose()}
+    if(view==='follow'){const d=rover.position.clone().sub(controls.target);controls.target.add(d);camera.position.add(d);controls.update()} // keeps user's orbit/zoom, moves with the rover
+    else if(view==='hud')hudFrame(dt);
+    else controls.update();
+    // telemetry
+    const k=idx(Math.round(st.pos[0]),Math.round(st.pos[1]));
+    document.getElementById('tSol').textContent=Math.floor(st.dist/SOL_M);
+    document.getElementById('tDist').textContent=st.dist<1000?Math.round(st.dist)+' m':(st.dist/1000).toFixed(2).replace('.',',')+' km';
+    document.getElementById('tElev').textContent=Math.round(E[k]).toLocaleString('tr-TR')+' m';
+    document.getElementById('tSlope').textContent=S[k].toFixed(1).replace('.',',')+'°';
+    document.getElementById('tDose').textContent=DOSE[k].toFixed(2).replace('.',',')+' mSv/g';
+    document.getElementById('tRe').textContent=st.replans;
+    let kc=0;for(let q=0;q<M*M;q+=7)kc+=known[q];const cov=kc/(M*M/7)*100;
+    document.getElementById('tCov').textContent='%'+cov.toFixed(1).replace('.',',');document.getElementById('covBar').style.width=Math.min(100,cov)+'%';
+    renderer.render(scene,camera);
+  }
+  requestAnimationFrame(frame);
+}
+addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix()});
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

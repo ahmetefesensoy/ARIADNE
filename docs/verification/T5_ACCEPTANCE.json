@@ -1,0 +1,249 @@
+{
+  "schema": "redline.t5.acceptance.v1",
+  "recorded_at_utc": "2026-11-15T01:20:32.494735+03:00",
+  "recorded_at_local": "2026-11-15T01:20:32.494735+03:00",
+  "milestone": "T5",
+  "milestone_completed": true,
+  "scope": "proje.md §18 technical EV1 walk + ROS FieldTile/RedLine + visible margin; final UI/science/whole narrative not accepted",
+  "status": "SCENARIO human/suit/orientation, DERIVED BXW return field",
+  "build": {
+    "report": "test-results/t4-build-source.json",
+    "exit_code": 0,
+    "current_source_matches": true
+  },
+  "ros": {
+    "report": "test-results/t5-build-jL2iSmSU/ros-workspace.json",
+    "tests": 39,
+    "errors": 0,
+    "failures": 0,
+    "current_source_matches": true,
+    "workspace": "/home/ahmetefesensoy/.cache/redline/ros/ws-45b2c7184584023a-l5d987gx"
+  },
+  "unreal_tests": {
+    "report": "test-results/eva-final-automation/index.json",
+    "passed": 20,
+    "errors": 0,
+    "warnings": 0,
+    "scope_note": "Full suite after skeleton/root conversion and input fixes; final later C++ edit changes interaction label text only, followed by successful build."
+  },
+  "core_tests": {
+    "report": "test-results/eva-intro-core.xml",
+    "passed": 14
+  },
+  "runtime": {
+    "report": "test-results/eva-final-game.log",
+    "pose_csv": "test-results/eva-final-unreal-pose.csv",
+    "median_pose_publication_period_s": 0.04999995231628418,
+    "median_publication_hz": 20.000019073504518,
+    "observed_displacement_m": 4.267478816344046,
+    "moving_walk_samples": 80,
+    "observed_walk_max_speed_m_s": 0.71587,
+    "bone_positions_changed": true,
+    "idle_and_walk_present": true
+  },
+  "live_capture": {
+    "report": "test-results/eva-final-live/capture.json",
+    "passed": true,
+    "topic_counts": {
+      "/redline/tiles/margin_min": 36,
+      "/redline/mission/state": 71,
+      "/redline/redline": 36,
+      "/crew/EV1/pose": 63,
+      "/redline/mission/clock": 349,
+      "/crew/EV1/state": 175
+    },
+    "pose_span_s": 3.0686957880006958,
+    "note": "Client was closed during capture; its pose span is shorter than the 35 s backend capture. This is not a 35 s continuous-pose claim."
+  },
+  "render_review": {
+    "method": "CUA live Unreal game screenshots",
+    "window_id": 4983490,
+    "observed": "Readable original light suit with red accents, human scale, idle/walk and movement, context station marker, return margin and north-up field/line map",
+    "earlier_briefing_window_id": 2558580,
+    "briefing_E_to_TRAVERSE_observed": true,
+    "full_manual_station_return_cycle_observed": false,
+    "screenshot_file": null,
+    "evidence_location": "CUA screenshots in conversation; no exported PNG"
+  },
+  "persistence": {
+    "report": "test-results/eva-import-diagnosis.json",
+    "skeleton_and_material_reload": true,
+    "animation_scale_tests": "test-results/eva-repaired-animation-tests/index.json"
+  },
+  "authority": {
+    "human": "Unreal",
+    "robot_physics_control": "ROS/Gazebo",
+    "return_field_rules": "ROS/redline_core",
+    "mission_phase": "ROS mission_manager; UE requests interaction only",
+    "PET": "sim_clock; independent of robot physics clock"
+  },
+  "open": [
+    "T6 S1 complete visual alarm/line shrink acceptance and SpaceWeather chart",
+    "env/state visual integration, REMS and terrain horizon",
+    "nominal PRECURSOR robot/science mission; orientation creates no science products",
+    "full manual orientation out-and-back review, habitat interior, final UI and lighting polish",
+    "T3 expanded low-obstacle 3D navigation acceptance"
+  ],
+  "assets": [
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/AN_Idle.uasset",
+      "sha256": "4ef02c4b1b1fb83bdda686c26e80c9ad5f6fc40bd3111fcd738e255e671c241c",
+      "bytes": 1915830
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/AN_Walk.uasset",
+      "sha256": "de2a3ad45815a8ace4687084589ca3909a7a73fbde6703ab895c0466e973257d",
+      "bytes": 284785
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/SK_Astronaut.uasset",
+      "sha256": "51363271a272a6ee56b58ffe7bfa946e80889f853982a1322d058036db9e9131",
+      "bytes": 14521596
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/SK_Astronaut_Skeleton.uasset",
+      "sha256": "a2510b110eefd658f97666e6d2055c47a506e86fde33cf36ddd7613368132f99",
+      "bytes": 18686
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/T_EV1_AO.uasset",
+      "sha256": "904eca961569c2a26b15e9a1245a6d214ee5337561e56861796242209d6e11d3",
+      "bytes": 738443
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/T_EV1_BaseColor.uasset",
+      "sha256": "b92977f833c391ebc6ab52b77d75eca9b6e02870684ec4e81fddc8b9b1eb6096",
+      "bytes": 5180515
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/T_EV1_Metallic.uasset",
+      "sha256": "6dbf78050eab851b87093557644eafad76864d2845c386f260a59cfc81e3e523",
+      "bytes": 1607497
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/T_EV1_Normal.uasset",
+      "sha256": "a1160598aacb8638f7e766197f387edc854368fa49c49e87c77191b1bd1246c8",
+      "bytes": 2969368
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Astronaut/T_EV1_Roughness.uasset",
+      "sha256": "6fae365b12a81bba3cc03ac93de7da8e66bf61b08278986e4f35734618285100",
+      "bytes": 1377076
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/BXW_EVA.umap",
+      "sha256": "064b9ed0d57c32176229af1f56b5d1aa553578f9b04ba3a45e5850bede0a40c0",
+      "bytes": 85017
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/habitat/HDU_01.uasset",
+      "sha256": "575e1f36ab5dc8f891158caf245280342e643cb8395da68f9a9ea8765356f788",
+      "bytes": 795970
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/habitat/lambert2SG.uasset",
+      "sha256": "214129e72fb8f1f92f2b51bbb5456f08056c09eeca74648390218723f60785e9",
+      "bytes": 4947
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/habitat/M_habitat_947.uasset",
+      "sha256": "1c3cf1495459b943c2a9d32296db83cde82482dbd7db35df363961c78c39c0be",
+      "bytes": 6015
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/habitat/SM_habitat.uasset",
+      "sha256": "6ace86acde41b97064ac8e93430a258a8d1debdf982bd6c194fec1cab82bdf68",
+      "bytes": 82367
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/habitat/T_habitat_HDU_01.uasset",
+      "sha256": "e049e729395e4bc75c2a835bf71b2629ee3e5861198a490e6573ee3244042ba7",
+      "bytes": 802325
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/map_table/MAT_RL_graphite.uasset",
+      "sha256": "ff5858985953383946b8b199a0a9bfd9651cfdd8135d7c581824f5b436acb6e6",
+      "bytes": 5013
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/map_table/MAT_RL_red.uasset",
+      "sha256": "474f2cfa6a97dd5fc8daa29e5ce44425883643bcf2c7c29c077242b5cbb617ad",
+      "bytes": 4983
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/map_table/MAT_RL_screen.uasset",
+      "sha256": "3750f75b15a2b70eb5a025f073cec8558084ad63e391539da19968b9f335000d",
+      "bytes": 5001
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/map_table/MAT_RL_white.uasset",
+      "sha256": "d0dc665d7f68a56de809340bd889f586d06d48eb355c3637fec3439db3678837",
+      "bytes": 4995
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/map_table/SM_map_table.uasset",
+      "sha256": "5b73003ab3834bd404ebc89a2d93c79a798afcfa3da3d128ce437db25d6c8a1d",
+      "bytes": 18966
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/M_science_station_2512.uasset",
+      "sha256": "7a5f4bde265f25b4f8ca43d6d8a508dde1335f23f8dfcad552c8910f987ba2e0",
+      "bytes": 7576
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/MAT_science_station_Atlas.uasset",
+      "sha256": "b211536d8b23645c83a9786bda2584ab0c1472fd374d0811acd1bbda47290f42",
+      "bytes": 5947
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/science_station_BaseColor.uasset",
+      "sha256": "38fe2e2ddeac83ee49cbca272653914e8f9f7539c590fc64a1dcf57dee63d6f1",
+      "bytes": 904770
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/science_station_NormalGL.uasset",
+      "sha256": "225e25759d35a7cf97ca20211cd7c72970daba3f0549f190f83ccb449c3a2cc5",
+      "bytes": 948969
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/SM_science_station.uasset",
+      "sha256": "b138b8b6fadc9ff6fbd37611a79f8a73966ae03050b36454f88c9a5dbb9a4d14",
+      "bytes": 1060042
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/T_science_station_science_station_BaseColor.uasset",
+      "sha256": "dcb2ed1f688cb6f8b1bc29689bdc59654a8b1bc880e438926b669b07596dd4b3",
+      "bytes": 911589
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/T_science_station_science_station_NormalGL.uasset",
+      "sha256": "2ca480124d09c6873bb2420d7f95589c710c06c85d50c407cd0768fbbc3dc111",
+      "bytes": 955822
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/Intro/science_station/T_science_station_science_station_ORM.uasset",
+      "sha256": "624b0e568c84f658df691a9facf4c9246c3bc72dbac5e84a91b081a2e5264227",
+      "bytes": 715923
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/M_EV1_Original.uasset",
+      "sha256": "c5f49c9891feec8fcee2de5ee7eeb1a02dd494aa03d56650423996ab18e0b7d4",
+      "bytes": 8368
+    },
+    {
+      "path": "unreal/Redline/Content/EVAFixtures/M_FieldTile.uasset",
+      "sha256": "081ff4bea37a279d3eb52f3450f516e3d6bf7bb3f1cbcb933d0d9b77b2cd2033",
+      "bytes": 9018
+    }
+  ],
+  "final_open": {
+    "observed_at_local": "2026-11-15T01:21:26.9313234+03:00",
+    "window_id": 11273568,
+    "backend": "test-results/eva-client-nB5WVuG5",
+    "phase": "BRIEFING",
+    "PET_min": 0,
+    "visible": "Textured human-scale EV1 with animation, briefing, map and margin",
+    "probe_enabled": false,
+    "time_scale": 1
+  }
+}

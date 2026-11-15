@@ -1,0 +1,68 @@
+{
+  "created_at_utc": "2026-11-14T22:48:02.770882+00:00",
+  "status": "SCENARIO",
+  "method": "locally authored deterministic procedural synthesis; no generative music service",
+  "jazz_composition": "Vardiya Arası, original instrumental sketch; synthetic piano/bass/brushed percussion",
+  "credits_spent": 0,
+  "files": [
+    {
+      "file": "vardiya_arasi_jazz.wav",
+      "duration_s": 48.0,
+      "peak": 0.19843467708810772,
+      "rms": 0.03291859551887989,
+      "sha256": "f93f4f94e258250c6bd03225d9128a135fe5e51180e59f563eeba5660853d1e5"
+    },
+    {
+      "file": "airlock_pressure.wav",
+      "duration_s": 5.0,
+      "peak": 0.16901326197749444,
+      "rms": 0.024384157059794576,
+      "sha256": "80910794c1d101da5ec0f242041eca53fefb947b16ed0b85c5a2187f543b92be"
+    },
+    {
+      "file": "airlock_door.wav",
+      "duration_s": 2.0,
+      "peak": 0.06333962605396717,
+      "rms": 0.018059702930572245,
+      "sha256": "9ee993a3b58395443a7858fcc451c2c28549858d1146d7813396735da9c9a706"
+    },
+    {
+      "file": "ready_chime.wav",
+      "duration_s": 0.7,
+      "peak": 0.16593529844408383,
+      "rms": 0.028356938598301604,
+      "sha256": "fbf1d38b94ddd06d24d923cfe512f7512b75fbda467f83d04773400f16629637"
+    },
+    {
+      "file": "landing_thrust.wav",
+      "duration_s": 16.0,
+      "peak": 0.2299894925993501,
+      "rms": 0.04905118726199955,
+      "sha256": "4ca8123377c68dc98c74c25e2b8c0ff2c6251a4511a152c81bdb0a7a863f1212"
+    }
+  ],
+  "voice_durations": [
+    {
+      "file": "landing.wav",
+      "duration_s": 8.26154195011338
+    },
+    {
+      "file": "rest.wav",
+      "duration_s": 6.980408163265306
+    },
+    {
+      "file": "data.wav",
+      "duration_s": 8.672199546485261
+    },
+    {
+      "file": "airlock.wav",
+      "duration_s": 8.4859410430839
+    },
+    {
+      "file": "ready.wav",
+      "duration_s": 7.281043083900227
+    }
+  ],
+  "jazz_endpoint_delta": 0.0,
+  "listening_review": "not an acoustic/acting or final loop-mix acceptance"
+}

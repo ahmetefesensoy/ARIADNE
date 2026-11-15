@@ -1,0 +1,1530 @@
+{
+  "recorded_at_utc": "2026-11-14T12:13:15.584886+00:00",
+  "milestone": "T3",
+  "milestone_complete": false,
+  "surface_package_ready": true,
+  "pending": [
+    "Observed RViz click goal arrival acceptance",
+    "Full Unreal rendered scene / human terrain collision / LOD performance",
+    "Application T4 C++/ROS bridge integration"
+  ],
+  "ros_build": {
+    "workspace_snapshot": {
+      "created_at": "2026-11-14T11:56:38.281533+00:00",
+      "source": "/mnt/c/Users/USER/Desktop/SPACE APPS BASKETBEYB\u0130/ros_ws/src",
+      "workspace": "/home/ahmetefesensoy/.cache/redline/ros/ws-fc2d460433599417-xw9hhwnf",
+      "source_tree_sha256": "fc2d460433599417d55c398cdde73362514cf34d0dc1a4feb2ac91f7154574f9",
+      "source_snapshot_verified": true,
+      "fresh_workspace": true,
+      "files": [
+        {
+          "path": "redline_bringup/CMakeLists.txt",
+          "bytes": 490,
+          "sha256": "524d440ce92106249ac975b5d3e1e18fda4a51b334adabde7101cfd2d9ba6270"
+        },
+        {
+          "path": "redline_bringup/config/bridge.yaml",
+          "bytes": 1620,
+          "sha256": "7800b50060741232b7eb6bb2a5a1dabec624e2b6e9c3319dff961e41c7218e3f"
+        },
+        {
+          "path": "redline_bringup/launch/__pycache__/simulation.launch.cpython-312.pyc",
+          "bytes": 2335,
+          "sha256": "02ef5b2de26a8fc2b5ed249fe42941239ac396f4b6bc7ff48e4a9dda256bef34"
+        },
+        {
+          "path": "redline_bringup/launch/simulation.launch.py",
+          "bytes": 1884,
+          "sha256": "d5831a4ecccd0b0ac7e08bf604090f32bd013e2851a87f1088d2ca3003f10598"
+        },
+        {
+          "path": "redline_bringup/package.xml",
+          "bytes": 1097,
+          "sha256": "fd854a5cf92e02317edd6cbd55a35a80650ecf52311a8f3c56073fff747f576e"
+        },
+        {
+          "path": "redline_bringup/scripts/__pycache__/cmd_watchdog.cpython-312.pyc",
+          "bytes": 3923,
+          "sha256": "fd1d0817fffb72cd7ea25300d121226ae109d37d0ab08e54176c6d7a84f8ab16"
+        },
+        {
+          "path": "redline_bringup/scripts/__pycache__/verify_navigation.cpython-312.pyc",
+          "bytes": 28273,
+          "sha256": "c002f7a8d750ddab706d456ddfc20c9bbfacd8a4a5924cd935c31bd1e398467f"
+        },
+        {
+          "path": "redline_bringup/scripts/cmd_watchdog.py",
+          "bytes": 1423,
+          "sha256": "45107aa83bff8a76243aa77f154f05fe281bb0ada57ec7fc2fe0f8bd8fd0f1c9"
+        },
+        {
+          "path": "redline_bringup/scripts/verify_navigation.py",
+          "bytes": 15221,
+          "sha256": "1edc9d3d5c17739f7a5f333198c4c4e428a5e87a9facc7385821b41f7195846a"
+        },
+        {
+          "path": "redline_bringup/test/__pycache__/test_navigation_verifier.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 30673,
+          "sha256": "187d195f58496ac6a15285c99c2f0b8bb132e3f2ce63bebd190f546b0e9fa065"
+        },
+        {
+          "path": "redline_bringup/test/__pycache__/test_watchdog.cpython-312.pyc",
+          "bytes": 4208,
+          "sha256": "7ac4c655b03e8f363fd4f0e1a93a850adad9f49d6c5f4a09c36bbe22bbd94779"
+        },
+        {
+          "path": "redline_bringup/test/test_navigation_verifier.py",
+          "bytes": 5852,
+          "sha256": "a3d2f3a1aa6a99e79474f4667324679ea0dd4d69a7e02878bde1acd272172162"
+        },
+        {
+          "path": "redline_bringup/test/test_watchdog.py",
+          "bytes": 1782,
+          "sha256": "b950a58a6100a19f7b9b8c439389fab8a4f7a664853eee5e610fddd4523f3bb1"
+        },
+        {
+          "path": "redline_description/CMakeLists.txt",
+          "bytes": 782,
+          "sha256": "5251855296e94eda1797d997332a92407cefecb0c90686ed1a93cf3c085056c3"
+        },
+        {
+          "path": "redline_description/package.xml",
+          "bytes": 564,
+          "sha256": "38c0c7d29de8aea94fdbfadaf9509d2762b74e988b81890c779b38ac1040b6f1"
+        },
+        {
+          "path": "redline_description/scripts/__pycache__/generate_rover.cpython-312.pyc",
+          "bytes": 13805,
+          "sha256": "586b2bba87ba0153e5b06943b44ac927db7de5ab8eca8465d481153b29365ab8"
+        },
+        {
+          "path": "redline_description/scripts/generate_rover.py",
+          "bytes": 8862,
+          "sha256": "a0c34a2442d40c81d16c77d67c907dddc5f643420b8613cb2182354f24778a0a"
+        },
+        {
+          "path": "redline_description/test/__pycache__/test_description.cpython-312-pytest-8.3.5.pyc",
+          "bytes": 15869,
+          "sha256": "2e61e2b38d440ed658b512dae6514c0cca0caafd3924bd0963f699bafdef6f38"
+        },
+        {
+          "path": "redline_description/test/__pycache__/test_description.cpython-312.pyc",
+          "bytes": 4577,
+          "sha256": "59fd153af505e4e6bd535f676df2571adf980992483b42c6593b4f4056d1f514"
+        },
+        {
+          "path": "redline_description/test/test_description.py",
+          "bytes": 1837,
+          "sha256": "b0404fd38e28b7df57bc0d6fd1148012250ade361ce3c5e58354f5ca38ddb539"
+        },
+        {
+          "path": "redline_gazebo/CMakeLists.txt",
+          "bytes": 315,
+          "sha256": "fcc56abcf8ccec808f3d4a20473640d55c6f334725eff3daae0dd42886693498"
+        },
+        {
+          "path": "redline_gazebo/package.xml",
+          "bytes": 583,
+          "sha256": "20be943bf35f4a998fa46f985cd88aea969fed1d1997804f2cc14790316bedcd"
+        },
+        {
+          "path": "redline_gazebo/scripts/__pycache__/prepare_world.cpython-312.pyc",
+          "bytes": 7163,
+          "sha256": "cf258547bfba7cd870e1f04a7b90b5be0447d4555fa6b4ada0188935540fab9e"
+        },
+        {
+          "path": "redline_gazebo/scripts/prepare_world.py",
+          "bytes": 6501,
+          "sha256": "a24d45f468ef477fe3796612c0adf32326977dd86ea02a9a794c0c25070b07da"
+        },
+        {
+          "path": "redline_gazebo/test/__pycache__/test_world.cpython-312-pytest-8.3.5.pyc",
+          "bytes": 6276,
+          "sha256": "92b5f3ec500fa224bb5cafa338ac54ac2c0f4acd6bfd2e16b9cab9c0fae8628a"
+        },
+        {
+          "path": "redline_gazebo/test/__pycache__/test_world.cpython-312.pyc",
+          "bytes": 1786,
+          "sha256": "e23f3d5acb30ee3f6a5eef8ab032ba5c5b461915ef06357d2bf246a99866eea6"
+        },
+        {
+          "path": "redline_gazebo/test/test_world.py",
+          "bytes": 1490,
+          "sha256": "74abb151ca662bf2afe0b18463a8e4d5ac1102d920ddddd5eaac0ce081d236b3"
+        },
+        {
+          "path": "redline_msgs/CMakeLists.txt",
+          "bytes": 1727,
+          "sha256": "5cc1f2321af688212585635bca30ffb76e121b24085cfa19a10d263c667d7b86"
+        },
+        {
+          "path": "redline_msgs/README.md",
+          "bytes": 2218,
+          "sha256": "db35d5bb5510f980b0f09c0d080740a3b1ebbeb41d66ad471bfcf9838a0345b8"
+        },
+        {
+          "path": "redline_msgs/action/CacheSample.action",
+          "bytes": 231,
+          "sha256": "f3b92c13c4bc8f9ca87b1d431360f871419e3f23195c540f43da1220d84b3730"
+        },
+        {
+          "path": "redline_msgs/action/ContactScience.action",
+          "bytes": 358,
+          "sha256": "fa6427b0ecce32a20b5f9e6209362fca3ca2f2e63667d6695e377a37a5057ce3"
+        },
+        {
+          "path": "redline_msgs/action/DeployStation.action",
+          "bytes": 354,
+          "sha256": "b4e4f3a8902f4cf37932f33b85801cd940ea0e30d98d32ed3be984447cf3fed5"
+        },
+        {
+          "path": "redline_msgs/action/Drill.action",
+          "bytes": 457,
+          "sha256": "59e686f713431aa0bd791ec9bb7804e5f58ce2507ebd7c97730b53cc41f2ea79"
+        },
+        {
+          "path": "redline_msgs/action/ExecuteScout.action",
+          "bytes": 445,
+          "sha256": "4aa1e472ce4c760c0c2e753beaaf0abad48e01a79a0215b1fec426e252f32594"
+        },
+        {
+          "path": "redline_msgs/action/InspectTarget.action",
+          "bytes": 363,
+          "sha256": "8b617d86c0b49c8da9a00d6280cb6dac2cc3b6bcf12563b79a1b96644b70ca27"
+        },
+        {
+          "path": "redline_msgs/action/MultispectralImage.action",
+          "bytes": 253,
+          "sha256": "735baf65494620616b32d23413f387967fe3fdd2b78a5676ada3d97f96346219"
+        },
+        {
+          "path": "redline_msgs/action/NeutronSurvey.action",
+          "bytes": 425,
+          "sha256": "67d48d9a367f1ee3f15dbe252ead3b655755f29141ec5e5d5b3b730072e11fba"
+        },
+        {
+          "path": "redline_msgs/action/RemoteLibs.action",
+          "bytes": 409,
+          "sha256": "65b6172d38a92bc76583d521e1d0e7f2dca8c2963e6cc82e22e00895a0a625d6"
+        },
+        {
+          "path": "redline_msgs/action/ReturnToShelter.action",
+          "bytes": 343,
+          "sha256": "55191b37e25cb872caf622f976218d9c13aaa7f4eb9dab689e0f567a8e2cfd8d"
+        },
+        {
+          "path": "redline_msgs/action/SurveyArea.action",
+          "bytes": 403,
+          "sha256": "cea466fc545964fbff5067cced0167a4f435d3ae61bae20ced1f9c3d3701b9d8"
+        },
+        {
+          "path": "redline_msgs/msg/Alert.msg",
+          "bytes": 295,
+          "sha256": "3edf790d1a38d36d3b133e6b84ac5c334141b58053a227993304cb2d85e9e1d1"
+        },
+        {
+          "path": "redline_msgs/msg/CellDelta.msg",
+          "bytes": 216,
+          "sha256": "498c218b58bcc9bcf05460abfe5d141961af4498de1a092164b62f24ebf961b2"
+        },
+        {
+          "path": "redline_msgs/msg/CellState.msg",
+          "bytes": 390,
+          "sha256": "1e81abe73ef0bd8d83db9f14e1ce5492263cdc36e18f776a0b02f74cbd7c78b8"
+        },
+        {
+          "path": "redline_msgs/msg/CommandOwner.msg",
+          "bytes": 193,
+          "sha256": "7c73c66ce9bb236b7aaa773da877a9ef1fa0b3ce8621040d550d96cf15431d09"
+        },
+        {
+          "path": "redline_msgs/msg/Consumables.msg",
+          "bytes": 315,
+          "sha256": "b8af38f9f4c916374720810df389d59f32e41ee189ded307faf0db08b8399cb8"
+        },
+        {
+          "path": "redline_msgs/msg/CrewState.msg",
+          "bytes": 265,
+          "sha256": "05d45c493cb07d1d94170c831a39f5d533d07f4c516b08569db1150dfcbdb25d"
+        },
+        {
+          "path": "redline_msgs/msg/DecisionRecord.msg",
+          "bytes": 228,
+          "sha256": "8f75ef9b93e4673d536a97875712b9d52b0a175fad9cfc50bc7d05a719daf69c"
+        },
+        {
+          "path": "redline_msgs/msg/DoseRate.msg",
+          "bytes": 385,
+          "sha256": "c0ee3310885879216fc42af6e06bbe8628feb03a29bd83b1ea6e12158fd03fd2"
+        },
+        {
+          "path": "redline_msgs/msg/EVAPlan.msg",
+          "bytes": 223,
+          "sha256": "c1abcea91685bcc3413054fd1c4f4c696e8bab9488f108c1edd85867f458d33a"
+        },
+        {
+          "path": "redline_msgs/msg/EnvState.msg",
+          "bytes": 315,
+          "sha256": "b4172c0324601af3cfe5c7e3eabed49324a0c6905d43c2e11bc5683e236d0a4c"
+        },
+        {
+          "path": "redline_msgs/msg/EvidenceRecord.msg",
+          "bytes": 400,
+          "sha256": "ea2a5cbd9a0e1e07320924bc8c78d7eb139028c68ce798ee88d4230e41fc241f"
+        },
+        {
+          "path": "redline_msgs/msg/FieldTile.msg",
+          "bytes": 406,
+          "sha256": "981d6896b00628087e4dddf52129e9d49d44c82acb57192f432b2ff870937c73"
+        },
+        {
+          "path": "redline_msgs/msg/InstrumentProduct.msg",
+          "bytes": 443,
+          "sha256": "85f42365c5821dfba85fcc9fc818046a703b683e6cf4901af5ce4c4e62e61fd9"
+        },
+        {
+          "path": "redline_msgs/msg/MarginField.msg",
+          "bytes": 391,
+          "sha256": "d0d48564bdc628380c071904ccac4ea8376cd71973acfcc2a862040dfbb4f372"
+        },
+        {
+          "path": "redline_msgs/msg/MissionState.msg",
+          "bytes": 300,
+          "sha256": "48e88e0c2ded76f095994d3895153a198964222fe6fd8b5ce8c9af449223aa3d"
+        },
+        {
+          "path": "redline_msgs/msg/PlanLeg.msg",
+          "bytes": 189,
+          "sha256": "39c7837ff5354bff4c5ced1634c1a41e82b109534de5502322119b3f3eb73377"
+        },
+        {
+          "path": "redline_msgs/msg/Provenance.msg",
+          "bytes": 230,
+          "sha256": "d3f2ee322ce8930658327e144ae0b783d591e50a2aa79470deb4032edd53940c"
+        },
+        {
+          "path": "redline_msgs/msg/RedLine.msg",
+          "bytes": 345,
+          "sha256": "c1eb9c2e9d496a981c115049ae54d1fd620c40960a1c59d2a2770d5d9190f037"
+        },
+        {
+          "path": "redline_msgs/msg/RuleViolation.msg",
+          "bytes": 171,
+          "sha256": "0bc887dc415dfc0d0f6f079ae26cb12a8b240c98ad1a6a0172eb94faba851987"
+        },
+        {
+          "path": "redline_msgs/msg/SampleRecord.msg",
+          "bytes": 458,
+          "sha256": "2c3ef8a864dad3efef141b9fe48dc7e48f79739780bc5c49503f1f6c99f316ee"
+        },
+        {
+          "path": "redline_msgs/msg/ScalarField.msg",
+          "bytes": 384,
+          "sha256": "63b35e0568f3dbcefc05749af6e538c00ebf62e8c2c519776b39b00e7f7ebce7"
+        },
+        {
+          "path": "redline_msgs/msg/Station.msg",
+          "bytes": 283,
+          "sha256": "708d4de0fe541051aab0460efcceb52b51c1deb108177f72dd8bc9d88e15901d"
+        },
+        {
+          "path": "redline_msgs/package.xml",
+          "bytes": 946,
+          "sha256": "a74d4599022c1e331e937ed2f69136c8b18232fd35e5ee5f00de07688a3e5274"
+        },
+        {
+          "path": "redline_msgs/srv/GetManifest.srv",
+          "bytes": 94,
+          "sha256": "c597188743c9021514d3d6e313200cc252c875878163fd8ce0145ba38d55a942"
+        },
+        {
+          "path": "redline_msgs/srv/PlanEva.srv",
+          "bytes": 242,
+          "sha256": "a36a40e2eef62920a77de99b6a2297ba7482c7d52a1bb368f28640c5b3ff21d0"
+        },
+        {
+          "path": "redline_msgs/srv/QueryCell.srv",
+          "bytes": 162,
+          "sha256": "09d05b7f90ab2c7486c0305882c4f707a03934e2a374d5284e5da60b9a93c918"
+        },
+        {
+          "path": "redline_msgs/srv/ScenarioControl.srv",
+          "bytes": 240,
+          "sha256": "41200d384a89a5a234374d5824f147784c5965b5302fd802ad46d64715bc8a3a"
+        },
+        {
+          "path": "redline_msgs/srv/SetCommandOwner.srv",
+          "bytes": 176,
+          "sha256": "df89c54405703554d44fdabde67e6ebaf5d61d346e270fb633598a888409db46"
+        },
+        {
+          "path": "redline_msgs/test/test_interface_contracts.py",
+          "bytes": 10493,
+          "sha256": "f21d93159773ba607282d175726441dd7e448d6c924f1bbfd8015562b8f323c9"
+        },
+        {
+          "path": "redline_navigation/CMakeLists.txt",
+          "bytes": 1485,
+          "sha256": "bd961f6cfe0b1b5108cb3216c5691277417a2981388a6eff58cda98ff7def41d"
+        },
+        {
+          "path": "redline_navigation/README.md",
+          "bytes": 5981,
+          "sha256": "2ca45b1714833728aadd94d39d703b54a77cdf08e734d7b1b2d1999ecaeb1030"
+        },
+        {
+          "path": "redline_navigation/behavior_trees/navigate_wait_replan.xml",
+          "bytes": 971,
+          "sha256": "a3432c5261335cd3796da8d8cda2c290ee007f614dbeab872cf8e51ad6821504"
+        },
+        {
+          "path": "redline_navigation/config/ekf.yaml",
+          "bytes": 1515,
+          "sha256": "273bb1610e725d30b1ef736ede1f2d55127e8dfb89090246b37d5e07d97bc9a1"
+        },
+        {
+          "path": "redline_navigation/config/nav2.yaml",
+          "bytes": 9786,
+          "sha256": "c3481f6997f6fe250dd422b5f94d4ce56af9d4e756ead34c3112bda17138286f"
+        },
+        {
+          "path": "redline_navigation/include/redline_navigation/path_interpolation.hpp",
+          "bytes": 3227,
+          "sha256": "b22c40056395f071e3c66b175551b7a80d10d1aee1aa678500f1e5d6e8bf0c11"
+        },
+        {
+          "path": "redline_navigation/include/redline_navigation/planner_geometry.hpp",
+          "bytes": 3225,
+          "sha256": "7bc23c071a0d1fdde23aea72441779948636ef3357bd1bb9bec6dc1ebb909648"
+        },
+        {
+          "path": "redline_navigation/launch/__pycache__/navigation.launch.cpython-312.pyc",
+          "bytes": 7097,
+          "sha256": "4c62f5f0091d4cc51cba1ea62a67d3a2ea8c6203720060ab76a5f7e9e832b941"
+        },
+        {
+          "path": "redline_navigation/launch/navigation.launch.py",
+          "bytes": 7700,
+          "sha256": "6e496f5dea069c8d084d206c7e12a9b4a50a543d1e3c19c4cd8a5b1c6af86357"
+        },
+        {
+          "path": "redline_navigation/package.xml",
+          "bytes": 1561,
+          "sha256": "a75db32d88fc64861730c99f2936cc7bace1734b31fad5918ab35bdaaab36121"
+        },
+        {
+          "path": "redline_navigation/planner_plugin.xml",
+          "bytes": 271,
+          "sha256": "564dded8f8e670f8fcb13b21a19f0fc4a2c0930c9f98639e1cb6be578f0dd841"
+        },
+        {
+          "path": "redline_navigation/rviz/navigation.rviz",
+          "bytes": 2289,
+          "sha256": "3f263d15c6f62919f9a6253c6ea93c92dfba37700747df38e0aa891738558ae0"
+        },
+        {
+          "path": "redline_navigation/src/interpolating_planner.cpp",
+          "bytes": 2633,
+          "sha256": "4faec0f82f9c665fff3bbb4b9bb85a3b7d10d2b142f81d1b74899cfbff1c36fa"
+        },
+        {
+          "path": "redline_navigation/test/__pycache__/test_launch_contracts.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 21648,
+          "sha256": "1f40981620668db3b3c7e179cbf3bd5558e724ac68782d9d49272c3d1f141105"
+        },
+        {
+          "path": "redline_navigation/test/__pycache__/test_navigation_contracts.cpython-312-pytest-7.4.4.pyc",
+          "bytes": 40294,
+          "sha256": "7a8d7538ba30affbee5327d965a855a10d1b2c2a7c0490e3f6443a3c7b5b78bc"
+        },
+        {
+          "path": "redline_navigation/test/test_launch_contracts.py",
+          "bytes": 6634,
+          "sha256": "b565020e135d82ba308c6809cbb23f75b18bf3248c841c1259c8237c7b286649"
+        },
+        {
+          "path": "redline_navigation/test/test_navigation_contracts.py",
+          "bytes": 8758,
+          "sha256": "da047db0f7ec4a36c585cb253c0e98d8e9c09158b086f4e8459c07823f51f137"
+        },
+        {
+          "path": "redline_navigation/test/test_path_interpolation.cpp",
+          "bytes": 4667,
+          "sha256": "8f356c74f608e0e1d69339ed806b2c225b7e91dd5d28fe022fce7d25fe22e40e"
+        }
+      ]
+    },
+    "actual_tests": 49,
+    "ctest_wrappers": 7,
+    "colcon_reported_total": 56,
+    "reports": [
+      {
+        "path": "test-results/t3-build-uEoow3Jk/ros/build/redline_bringup/test_results/redline_bringup/command_gate.xunit.xml",
+        "sha256": "9496288faf3a98ebf0d808dbbbda80874023d2e725ae10fc15939b70b3f00647",
+        "bytes": 533
+      },
+      {
+        "path": "test-results/t3-build-uEoow3Jk/ros/build/redline_bringup/test_results/redline_bringup/navigation_verifier.xunit.xml",
+        "sha256": "7c40f6fb774e729913d1c56d5d0daa74363579346f931eea157961f72d786fdb",
+        "bytes": 2561
+      },
+      {
+        "path": "test-results/t3-build-uEoow3Jk/ros/build/redline_description/test_results/redline_description/rover_contract.xunit.xml",
+        "sha256": "26d980ab0ee3f2c065b89acc0922fbe7d369b2c1fed9d60d38eac53eef30c2d9",
+        "bytes": 735
+      },
+      {
+        "path": "test-results/t3-build-uEoow3Jk/ros/build/redline_gazebo/test_results/redline_gazebo/world_contract.xunit.xml",
+        "sha256": "0d0c232d8dbeea265cd3c0c85a431c5bc896c5fc31c9fd21470ce92dddfaee47",
+        "bytes": 544
+      },
+      {
+        "path": "test-results/t3-build-uEoow3Jk/ros/build/redline_navigation/test_results/redline_navigation/launch_contracts.xunit.xml",
+        "sha256": "df00f5d53312c9d4a4463facc58cce2b1e1fe19b5366552c8a15914cc6096a2b",
+        "bytes": 1821
+      },
+      {
+        "path": "test-results/t3-build-uEoow3Jk/ros/build/redline_navigation/test_results/redline_navigation/navigation_contracts.xunit.xml",
+        "sha256": "21573afff48f0c82b03f1d2e164f1763bee2f8f6e7c037f59fa4c8cdf4ff992c",
+        "bytes": 3114
+      },
+      {
+        "path": "test-results/t3-build-uEoow3Jk/ros/build/redline_navigation/test_results/redline_navigation/test_path_interpolation.gtest.xml",
+        "sha256": "b9be0de0d2d9684f3ef3ad064b16b69dda15c5499d9237ffe3b0b4cb24c3fbd1",
+        "bytes": 2312
+      }
+    ]
+  },
+  "terrain_helper_tests": {
+    "count": 18,
+    "report": {
+      "path": "test-results/t3-terrain-surface.xml",
+      "sha256": "2f6748bf6cad8048277677168156b165b3259600b37bea4eb76a30435fab12d0",
+      "bytes": 2766
+    },
+    "warnings": "3 Rasterio is_tiled PendingDeprecationWarning"
+  },
+  "surface": {
+    "manifest": {
+      "path": "data/engines/BXW/surface-v1/manifest.json",
+      "sha256": "22833a64eb2c2f7631ca9f14644df0e1a073ae74ab12f7da8b79579a261ceec8",
+      "bytes": 41092
+    },
+    "meshes": 17,
+    "triangles": 3003000,
+    "qa": {
+      "three_point_test": [
+        {
+          "id": "P1",
+          "map_x_m": -308.7,
+          "map_y_m": -118.30000000000001,
+          "dem_bilinear_z_m": -3666.80001953125,
+          "mesh_triangle_z_m": -3666.804736328125,
+          "error_bound_m": 0.004717796874618012,
+          "passed": true
+        },
+        {
+          "id": "P2",
+          "map_x_m": 31.100000000000023,
+          "map_y_m": 216.30000000000007,
+          "dem_bilinear_z_m": -3714.1953222656252,
+          "mesh_triangle_z_m": -3714.173150634766,
+          "error_bound_m": 0.022172630859247672,
+          "passed": true
+        },
+        {
+          "id": "P3",
+          "map_x_m": 317.9,
+          "map_y_m": -230.7,
+          "dem_bilinear_z_m": -3563.02880859375,
+          "mesh_triangle_z_m": -3563.0483032226566,
+          "error_bound_m": 0.0194956289066138,
+          "passed": true
+        }
+      ],
+      "three_point_passed": true,
+      "tolerance_m": 0.1,
+      "serialization_error_allowance_m": 1e-06,
+      "visual_collision_same_artifact": false,
+      "topology": "Partition: 16 default ops tiles and four joined ring patches; zero-area shared edges, no coplanar face overlap",
+      "independent_ground_alignment_verified": false,
+      "uv_three_point_test": [
+        {
+          "id": "P1",
+          "map_xy_m": [
+            -308.7,
+            -118.30000000000001
+          ],
+          "uv": [
+            0.1913,
+            0.3817
+          ],
+          "inverse_error_m": 0.0,
+          "passed": true
+        },
+        {
+          "id": "P2",
+          "map_xy_m": [
+            31.100000000000023,
+            216.30000000000007
+          ],
+          "uv": [
+            0.5311,
+            0.7163
+          ],
+          "inverse_error_m": 0.0,
+          "passed": true
+        },
+        {
+          "id": "P3",
+          "map_xy_m": [
+            317.9,
+            -230.7
+          ],
+          "uv": [
+            0.8179,
+            0.2693
+          ],
+          "inverse_error_m": 0.0,
+          "passed": true
+        }
+      ],
+      "visual_collision_geometry_identical": true
+    },
+    "origin": {
+      "E0_m": 8142565.198776576,
+      "N0_m": -284814.9215994864,
+      "H0_m": 0.0,
+      "status": "SCENARIO"
+    }
+  },
+  "imagery": {
+    "manifest": {
+      "path": "data/engines/BXW/surface-v1/imagery.json",
+      "sha256": "fe57f43826e0583f2de350c6f2ba892021dec88c3ddc98c0c802106f34453392",
+      "bytes": 15776
+    },
+    "executed_helper_snapshot": {
+      "path": "docs/verification/source-metadata/T3_fetch_t3_imagery_v1.py",
+      "sha256": "a4c875bb2ac52c0a3064fb7b8284332d3fe4fed1774f64d1a5d35845971fc708",
+      "bytes": 18016
+    },
+    "source": {
+      "url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_HiRISE-LRGB_78quads_sharp_cog.tif",
+      "range_probe": {
+        "source_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_HiRISE-LRGB_78quads_sharp_cog.tif",
+        "final_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_HiRISE-LRGB_78quads_sharp_cog.tif",
+        "http_status": 206,
+        "observed_at_utc": "2026-11-14T11:54:22.462410+00:00",
+        "headers": {
+          "Content-Length": "16384",
+          "Accept-Ranges": "bytes",
+          "Content-Range": "bytes 0-16383/1030625379",
+          "Last-Modified": "Fri, 25 Jul 2025 16:58:53 GMT",
+          "ETag": "\"adae62ea1be4cf769f7232a2a7dee80c-60\"",
+          "Content-Type": "image/tiff"
+        },
+        "body_bytes": 16384,
+        "body_sha256": "bb9f538a5881137024a56b54308ba1bf729e0137c69e510ea3bb4a0965d9c970"
+      }
+    },
+    "source_metadata": {
+      "source_wkt": "PROJCS[\"GCS_INTERPLANETARY,_MARS_2000_SPHERE\",GEOGCS[\"unknown\",DATUM[\"unnamed\",SPHEROID[\"unnamed\",3396190,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "crs_report": {
+        "ok": true,
+        "source_wkt": "PROJCRS[\"GCS_INTERPLANETARY,_MARS_2000_SPHERE\",BASEGEOGCRS[\"unknown\",DATUM[\"unnamed\",ELLIPSOID[\"unnamed\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Equidistant Cylindrical (Spherical)\",ID[\"EPSG\",1029]],PARAMETER[\"Latitude of 1st standard parallel\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Longitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+        "projection": "eqc",
+        "sphere_radius_m": 3396190.0,
+        "lon_0_deg": 0.0,
+        "lat_ts_deg": 0.0,
+        "units": "m",
+        "expected": {
+          "sphere_radius_m": 3396190.0,
+          "lon_0_deg": 0,
+          "lat_ts_deg": 0
+        },
+        "vertical_reference": "not established by horizontal WKT; check source label",
+        "alignment_verified": false
+      },
+      "shape": [
+        76000,
+        36000
+      ],
+      "bands": 3,
+      "dtype": "uint8",
+      "colour_interpretation": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "transform": [
+        0.25,
+        0.0,
+        8140000.0,
+        0.0,
+        -0.25,
+        -270000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds_projected_m": [
+        8140000.0,
+        -289000.0,
+        8149000.0,
+        -270000.0
+      ],
+      "pixel_resolution_m": [
+        0.25,
+        0.25
+      ],
+      "block_shapes": [
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        257
+      ],
+      "nodata": null,
+      "mask_flags": [
+        [
+          "per_dataset"
+        ],
+        [
+          "per_dataset"
+        ],
+        [
+          "per_dataset"
+        ]
+      ],
+      "internal_dataset_mask_verified": true,
+      "source_tags": {
+        "TIFFTAG_XRESOLUTION": "72",
+        "TIFFTAG_YRESOLUTION": "72",
+        "TIFFTAG_RESOLUTIONUNIT": "2 (pixels/inch)",
+        "AREA_OR_POINT": "Area"
+      },
+      "image_structure": {
+        "LAYOUT": "COG",
+        "SOURCE_COLOR_SPACE": "YCbCr",
+        "COMPRESSION": "YCbCr JPEG",
+        "INTERLEAVE": "PIXEL",
+        "JPEG_QUALITY": "85",
+        "JPEGTABLESMODE": "1"
+      },
+      "validity_status": "internal_mask_verified; absolute_alignment_not_validated"
+    },
+    "atlases": {
+      "ops": {
+        "bounds_map_m": [
+          -500.0,
+          -500.0,
+          500.0,
+          500.0
+        ],
+        "shape": [
+          4096,
+          4096
+        ],
+        "resolution_map_m": [
+          0.244140625,
+          0.244140625
+        ],
+        "transform_map": [
+          0.244140625,
+          0,
+          -500.0,
+          0,
+          -0.244140625,
+          500.0,
+          0,
+          0,
+          1
+        ],
+        "frame": "map",
+        "units": "m",
+        "status": "DERIVED",
+        "rgb_resampling": "bilinear excluding provider-masked contributors",
+        "alpha_resampling": "nearest provider dataset mask plus in-source interpolation support",
+        "source_window_reads": 64,
+        "source_pixels_decoded_including_overlap": 16120176,
+        "max_source_window_side_pixels": 503,
+        "max_estimated_working_array_bytes": 118448524,
+        "output_valid_fraction": 1.0,
+        "all_read_provider_mask_samples_255": true,
+        "three_point_coordinate_qa": [
+          {
+            "id": "northwest",
+            "output_row_col": [
+              0,
+              0
+            ],
+            "map_pixel_center_xy_m": [
+              -499.8779296875,
+              499.8779296875
+            ],
+            "source_corner_pixel_col_row": [
+              8254.231426220387,
+              57260.17467919551
+            ],
+            "inverse_error_m": 1.1681322575896047e-10
+          },
+          {
+            "id": "northeast",
+            "output_row_col": [
+              0,
+              4095
+            ],
+            "map_pixel_center_xy_m": [
+              499.8779296875,
+              499.8779296875
+            ],
+            "source_corner_pixel_col_row": [
+              12267.358786385506,
+              57260.17467919551
+            ],
+            "inverse_error_m": 1.1681322575896047e-10
+          },
+          {
+            "id": "southwest",
+            "output_row_col": [
+              4095,
+              0
+            ],
+            "map_pixel_center_xy_m": [
+              -499.8779296875,
+              -499.8779296875
+            ],
+            "source_corner_pixel_col_row": [
+              8254.231426220387,
+              61259.19811669551
+            ],
+            "inverse_error_m": 1.1681322575896047e-10
+          }
+        ],
+        "coordinate_qa_passed": true,
+        "pixel_row_orientation": "row 0 north; col 0 west; PNG is not vertically flipped",
+        "relative_path": "atlas_ops.png",
+        "sha256": "cfcb82706da6afcb5ed1dc3f86118a7eb996fafdfe9a3a2ec635012a7344f445",
+        "bytes": 34949142,
+        "colour_mode": "RGBA8",
+        "alpha_source": "GDAL read_masks(1); never RGB brightness"
+      },
+      "context": {
+        "bounds_map_m": [
+          -1500.0,
+          -1500.0,
+          1500.0,
+          1500.0
+        ],
+        "shape": [
+          4096,
+          4096
+        ],
+        "resolution_map_m": [
+          0.732421875,
+          0.732421875
+        ],
+        "transform_map": [
+          0.732421875,
+          0,
+          -1500.0,
+          0,
+          -0.732421875,
+          1500.0,
+          0,
+          0,
+          1
+        ],
+        "frame": "map",
+        "units": "m",
+        "status": "DERIVED",
+        "rgb_resampling": "bilinear excluding provider-masked contributors",
+        "alpha_resampling": "nearest provider dataset mask plus in-source interpolation support",
+        "source_window_reads": 64,
+        "source_pixels_decoded_including_overlap": 144311728,
+        "max_source_window_side_pixels": 1505,
+        "max_estimated_working_array_bytes": 126464492,
+        "output_valid_fraction": 1.0,
+        "all_read_provider_mask_samples_255": true,
+        "three_point_coordinate_qa": [
+          {
+            "id": "northwest",
+            "output_row_col": [
+              0,
+              0
+            ],
+            "map_pixel_center_xy_m": [
+              -1499.6337890625,
+              1499.6337890625
+            ],
+            "source_corner_pixel_col_row": [
+              4241.104066055268,
+              53261.15124169551
+            ],
+            "inverse_error_m": 3.503828338580206e-10
+          },
+          {
+            "id": "northeast",
+            "output_row_col": [
+              0,
+              4095
+            ],
+            "map_pixel_center_xy_m": [
+              1499.6337890625,
+              1499.6337890625
+            ],
+            "source_corner_pixel_col_row": [
+              16280.486146550626,
+              53261.15124169551
+            ],
+            "inverse_error_m": 3.503828338580206e-10
+          },
+          {
+            "id": "southwest",
+            "output_row_col": [
+              4095,
+              0
+            ],
+            "map_pixel_center_xy_m": [
+              -1499.6337890625,
+              -1499.6337890625
+            ],
+            "source_corner_pixel_col_row": [
+              4241.104066055268,
+              65258.22155419551
+            ],
+            "inverse_error_m": 3.503828338580206e-10
+          }
+        ],
+        "coordinate_qa_passed": true,
+        "pixel_row_orientation": "row 0 north; col 0 west; PNG is not vertically flipped",
+        "relative_path": "atlas_context.png",
+        "sha256": "03e19cbb36da0d731475a6aea48b43d65071874b41a3e83d5b97d5bfcdaa7636",
+        "bytes": 47519885,
+        "colour_mode": "RGBA8",
+        "alpha_source": "GDAL read_masks(1); never RGB brightness"
+      }
+    },
+    "credit": "Timothy J. Parker and Fred J. Calef III; NASA/JPL-Caltech, USGS Astrogeology Science Center, University of Arizona",
+    "limits": [
+      "Internal source mask is used; mask=255 does not independently prove the absence of every black mosaic hole.",
+      "No RGB black-pixel heuristic or invented fill was applied.",
+      "Coordinate QA verifies affine/inverse pixel placement, not independent DEM/ortho landmark registration.",
+      "Provider imagery includes baked lighting and publisher sharpening; texture pixels are not newly measured 3D geometry.",
+      "Window budgets bound decoded arrays; HTTP/TLS wire byte count was not measured."
+    ]
+  },
+  "blender": {
+    "created_at_utc": "2026-11-14T12:00:07.001922+00:00",
+    "blender": "5.2.3 LTS",
+    "status": "DERIVED",
+    "master_units": "metres; right handed ENU",
+    "fbx_axes": {
+      "forward": "-Y",
+      "up": "Z",
+      "unit_scale": 1,
+      "apply_scale_options": "FBX_SCALE_UNITS"
+    },
+    "glb": "Standard glTF metres/Y-up; file carries map-space tile transforms",
+    "checks": [
+      {
+        "id": "ops_00_00",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          46.62762451171875
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -375.0,
+          -375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_00_00_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_00_01",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          48.07843017578125
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -125.0,
+          -375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_00_01_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_00_02",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          34.34033203125
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          125.0,
+          -375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_00_02_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_00_03",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          63.46881103515625
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          375.0,
+          -375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_00_03_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_01_00",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          100.19561767578125
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -375.0,
+          -125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_01_00_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_01_01",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          72.029052734375
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -125.0,
+          -125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_01_01_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_01_02",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          68.81390380859375
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          125.0,
+          -125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_01_02_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_01_03",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          65.02020263671875
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          375.0,
+          -125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_01_03_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_02_00",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          94.07696533203125
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -375.0,
+          125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_02_00_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_02_01",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          94.41497802734375
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -125.0,
+          125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_02_01_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_02_02",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          114.045654296875
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          125.0,
+          125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_02_02_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_02_03",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          101.69793701171875
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          375.0,
+          125.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_02_03_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_03_00",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          76.2156982421875
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -375.0,
+          375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_03_00_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_03_01",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          81.13055419921875
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          -125.0,
+          375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_03_01_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_03_02",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          76.7305908203125
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          125.0,
+          375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_03_02_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "ops_03_03",
+        "triangles": 125000,
+        "dimensions_m": [
+          250.0,
+          250.0,
+          78.41833543777466
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 1.52587890625e-05,
+        "actor_pose_map_m": [
+          375.0,
+          375.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_ops_03_03_LOD0.fbx",
+        "passed": true
+      },
+      {
+        "id": "coarse_ring",
+        "triangles": 1003000,
+        "dimensions_m": [
+          2999.0,
+          2999.0,
+          707.8475952148438
+        ],
+        "fbx_roundtrip_max_dimension_error_m": 0.000244140625,
+        "actor_pose_map_m": [
+          0.0,
+          0.0,
+          -3639.0006713867188,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fbx": "fbx\\SM_BXW_coarse_ring_LOD0.fbx",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "unreal_import_verified": false,
+    "limits": [
+      "Blender roundtrip is not an observed Unreal import.",
+      "Landscape holes outside measured mesh support remain open boundary edges.",
+      "No simplified convex terrain collision or artificial microgeometry was added.",
+      "Only fixed diagnostic lighting was used; baked orbital shadows remain in the texture."
+    ]
+  },
+  "unreal_representative_import": {
+    "created_at_utc": "2026-11-14T12:08:06.905849+00:00",
+    "engine": "5.8.4-58902052+++UE5+Release-5.8",
+    "passed": true,
+    "checks": [
+      {
+        "id": "ops_00_00",
+        "asset": "/Game/T3TerrainProbeV2/SM_BXW_ops_00_00_LOD0.SM_BXW_ops_00_00_LOD0",
+        "bounds_size_cm": [
+          25000.001953125,
+          25000.001953125,
+          4662.762451171875
+        ],
+        "expected_bounds_size_cm": [
+          25000.0,
+          25000.0,
+          4662.762451171875
+        ],
+        "max_dimension_error_cm": 0.001953125,
+        "uv_channel_0_sample": [
+          0.0,
+          1.0
+        ],
+        "vertex_0_cm": [
+          -12499.9990234375,
+          12500.0009765625,
+          584.002685546875
+        ],
+        "expected_vertex_0_cm": [
+          -12500.0,
+          12500.0,
+          584.0027
+        ],
+        "vertex_conversion_error_cm": 0.0009765625,
+        "material": "/Game/T3TerrainProbeV2/MAT_BXW_ORBITAL_ops.MAT_BXW_ORBITAL_ops",
+        "textures": [
+          "/Game/T3TerrainProbeV2/atlas_ops.atlas_ops"
+        ],
+        "texture_check": "saved BaseColor texture-sample graph; no GPU shader/render claim",
+        "triangles": 125000,
+        "material_slots": 1,
+        "passed": true,
+        "imported_objects": [
+          "/Game/T3TerrainProbeV2/SM_BXW_ops_00_00_LOD0.SM_BXW_ops_00_00_LOD0"
+        ]
+      },
+      {
+        "id": "coarse_ring",
+        "asset": "/Game/T3TerrainProbeV2/SM_BXW_coarse_ring_LOD0.SM_BXW_coarse_ring_LOD0",
+        "bounds_size_cm": [
+          299900.03125,
+          299900.03125,
+          70784.759765625
+        ],
+        "expected_bounds_size_cm": [
+          299900.0,
+          299900.0,
+          70784.75952148438
+        ],
+        "max_dimension_error_cm": 0.03125,
+        "uv_channel_0_sample": [
+          0.00016666666488163173,
+          0.3333333134651184
+        ],
+        "vertex_0_cm": [
+          -149950.0,
+          -49999.98828125,
+          -32751.984375
+        ],
+        "expected_vertex_0_cm": [
+          -149950.0,
+          -50000.0,
+          -32751.9836
+        ],
+        "vertex_conversion_error_cm": 0.01171875,
+        "material": "/Game/T3TerrainProbeV2/MAT_BXW_ORBITAL_context.MAT_BXW_ORBITAL_context",
+        "textures": [
+          "/Game/T3TerrainProbeV2/atlas_context.atlas_context"
+        ],
+        "texture_check": "saved BaseColor texture-sample graph; no GPU shader/render claim",
+        "triangles": 1003000,
+        "material_slots": 1,
+        "passed": true,
+        "imported_objects": [
+          "/Game/T3TerrainProbeV2/SM_BXW_coarse_ring_LOD0.SM_BXW_coarse_ring_LOD0"
+        ]
+      }
+    ],
+    "scope": "FBX import and geometry/unit/UV/material checks; no gameplay, ROS bridge or rendered UE scene"
+  },
+  "gazebo_visible_surface": {
+    "observed": true,
+    "method": "Computer Use: actual Gazebo GUI screenshot",
+    "run": "test-results/t3-runtime-1iMx5ewX",
+    "navigation_in_that_run": "RViz target not received; not a navigation pass"
+  },
+  "programmatic_navigation": {
+    "created_at": "2026-11-14T12:03:18.977620+00:00",
+    "passed": true,
+    "mode": "programmatic NavigateToPose; not an observed RViz click",
+    "start_map_xy": [
+      144.99999672834866,
+      -289.00065242260547
+    ],
+    "measured_start_map_xyz": [
+      144.98724117693843,
+      -289.0233525432178,
+      -3598.465645166818
+    ],
+    "goal_accepted": true,
+    "action_status": 4,
+    "final_map_xy": [
+      144.89699845917465,
+      -298.51451784945704
+    ],
+    "goal_map": {
+      "map_x_m": 145.0,
+      "map_y_m": -299.0,
+      "ground_z_m": -3599.12939453125,
+      "yaw_rad": 4.71238898038469
+    },
+    "goal_error_m": 0.4962884603818798,
+    "estimated_displacement_m": 9.514422946437392,
+    "measured_final_map_xyz": [
+      144.87046229645435,
+      -298.5176335471053,
+      -3598.624169230242
+    ],
+    "measured_goal_error_m": 0.4994571167959451,
+    "measured_displacement_m": 9.494999162069762,
+    "measured_ground_contact_height_error_m": 0.005225301008067618,
+    "topic_counts": {
+      "/rover_1/imu": 3951,
+      "/rover_1/camera/image": 396,
+      "/rover_1/depth/image": 396,
+      "/rover_1/scan": 790,
+      "/rover_1/odom": 3951
+    },
+    "sensor_samples": {
+      "/rover_1/imu": {
+        "frame_id": "rover_1/imu_link"
+      },
+      "/rover_1/camera/image": {
+        "width": 320,
+        "height": 240,
+        "encoding": "rgb8",
+        "frame_id": "rover_1/camera_optical_frame",
+        "data_bytes": 230400
+      },
+      "/rover_1/depth/image": {
+        "width": 320,
+        "height": 240,
+        "encoding": "32FC1",
+        "frame_id": "rover_1/depth_optical_frame",
+        "data_bytes": 307200
+      },
+      "/rover_1/scan": {
+        "rays": 360,
+        "finite_returns": 53,
+        "frame_id": "rover_1/lidar_link"
+      }
+    }
+  },
+  "runtime_result": {
+    "path": "test-results/t3-runtime-b9oXFpQp/result.json",
+    "sha256": "db537b367eb5e912a2105902890c34429eea804c471d01b1d98f24e361770d10",
+    "bytes": 294239
+  },
+  "runtime_renderer": [
+    "15:03:25: GL_VENDOR = Microsoft Corporation",
+    "15:03:25: GL_RENDERER = D3D12 (NVIDIA GeForce RTX 5080)"
+  ],
+  "owned_process_exit_codes": {
+    "simulation": 0,
+    "navigation": 0,
+    "verification": 0
+  },
+  "outputs": [
+    {
+      "path": "data/engines/BXW/surface-blender-v1/BXW_surface_overview.png",
+      "sha256": "2c4d04e053cd6952305e6f203225c8ebdeda630414b17bb23a1841d1f760fc33",
+      "bytes": 2944082
+    },
+    {
+      "path": "data/engines/BXW/surface-blender-v1/BXW_surface.glb",
+      "sha256": "cf0ec577bef191f894022a4a9b6d2fec6b8f330d85850248d92459bc6de16f5b",
+      "bytes": 143716848
+    },
+    {
+      "path": "data/engines/BXW/surface-blender-v1/BXW_surface.blend",
+      "sha256": "df4462a17a47d6dce0c1f1679d3c082dc491cc76a4be2da33d442b37a65f5e34",
+      "bytes": 101535692
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/export_t3_terrain.py",
+      "sha256": "38b7f93813638131d2fd7d27b7aa50ee4d2c87be7459c81c924c2c44fbcbf6cd",
+      "bytes": 29604
+    },
+    {
+      "path": "scripts/fetch_t3_imagery.py",
+      "sha256": "33426af2a2aaf3aadfc43bf1588519bb708e9b9daed20c6f0d476e859b46bb7f",
+      "bytes": 18225
+    },
+    {
+      "path": "scripts/package_t3_surface.py",
+      "sha256": "11441284b46e0dcbd744788fa1366f947db1d3b00c288aec56af9ff16708cdbe",
+      "bytes": 7048
+    },
+    {
+      "path": "scripts/blender_t3_surface.py",
+      "sha256": "3d436fc8180fad111ecde4d12dc80804e01a753ce7d25c6a092eab673e74ffdc",
+      "bytes": 6752
+    },
+    {
+      "path": "scripts/verify_t3_unreal_import.py",
+      "sha256": "ee7516b17f18bb0ff45dfca5eb01fbdc13f35132b28b8ff344def332720a26a9",
+      "bytes": 6606
+    },
+    {
+      "path": "scripts/t3_supervisor.py",
+      "sha256": "a872c61f983306968cbfacc79317ed6dc3fff27e7b76dc5a27791223ea54dfc2",
+      "bytes": 7117
+    }
+  ],
+  "limits": [
+    "Source CRS/pixel/geometry checks do not prove absolute DEM/ortho feature registration.",
+    "FBX smoothing-group warning remains for final normal/appearance review.",
+    "Robot dynamics and calibration are SCENARIO, not certified hardware behaviour.",
+    "No Git/GitHub changes or Tripo generation by this T3 work."
+  ]
+}

@@ -15,9 +15,9 @@ def test_version_entry_point():
     assert result.stdout.strip() == "redline-data 0.1.0"
 
 
-def test_unimplemented_fetch_is_rejected_without_artifacts(tmp_path, monkeypatch):
+def test_fetch_missing_required_metadata_is_rejected_without_artifacts(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     result = _cli("fetch", "BXW")
     assert result.returncode == 2
-    assert "unrecognized arguments" in result.stderr
+    assert "required" in result.stderr
     assert not list(tmp_path.iterdir())

@@ -1,0 +1,310 @@
+{
+  "asset_id": "sample_tube",
+  "prepared_utc": "2026-11-14T11:20:14.286757+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\sample_tube\\source.stl",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices. Separate cap is a scenario derivative, not flight sealing CAD. Separate cap is a scenario derivative, not flight sealing CAD. Separate cap is a scenario derivative, not flight sealing CAD. Separate cap is a scenario derivative, not flight sealing CAD."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        2.0221231356032376e-09,
+        -0.026783831417560577,
+        0.0,
+        0.012248488143086433
+      ],
+      [
+        0.026783831417560577,
+        2.0221231356032376e-09,
+        0.0,
+        -0.012256292626261711
+      ],
+      [
+        0.0,
+        0.0,
+        0.026783831417560577,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 0.02678383094177998,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.02597195655107498,
+      0.02426794171333313,
+      0.15000082552433014
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_sample_tube_tube_LOD0",
+      "source_name": "tube",
+      "source_parent": "",
+      "pivot_m": [
+        6.859190762042999e-07,
+        0.0008969418704509735,
+        0.05423726141452789
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_sample_tube_cap_LOD0",
+      "source_name": "cap",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        -9.313225746154785e-10,
+        0.12923726439476013
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 43676,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "tube",
+        "triangles": 8140,
+        "vertices": 4072,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "cap",
+        "triangles": 35536,
+        "vertices": 17770,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 6998,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_sample_tube_tube_LOD0",
+        "triangles": 1304,
+        "vertices": 654,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_sample_tube_cap_LOD0",
+        "triangles": 5694,
+        "vertices": 2849,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 3498,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_sample_tube_tube_LOD1",
+          "triangles": 652,
+          "vertices": 328,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_sample_tube_cap_LOD1",
+          "triangles": 2846,
+          "vertices": 1425,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        }
+      ]
+    },
+    "2": {
+      "triangles": 1748,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_sample_tube_tube_LOD2",
+          "triangles": 326,
+          "vertices": 165,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        },
+        {
+          "name": "SM_sample_tube_cap_LOD2",
+          "triangles": 1422,
+          "vertices": 713,
+          "uv_layers": 0,
+          "non_manifold_edges": 0
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 1498,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_sample_tube_tube_Gazebo",
+        "triangles": 278,
+        "vertices": 141,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      },
+      {
+        "name": "SM_sample_tube_cap_Gazebo",
+        "triangles": 1220,
+        "vertices": 612,
+        "uv_layers": 0,
+        "non_manifold_edges": 0
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 2,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\sample_tube_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "The printable NASA STL was split into a tube and a separate scenario cap at source z=4.05. The cut was closed; flight sealing, internal volume and sample containment are not modeled."
+  ],
+  "material_channels": {},
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "materials": {
+    "MAT_Scenario_Titanium": {
+      "Base Color": {
+        "constant": [
+          0.5199999809265137,
+          0.550000011920929,
+          0.5799999833106995,
+          1.0
+        ]
+      },
+      "Roughness": {
+        "constant": 0.3799999952316284
+      },
+      "Metallic": {
+        "constant": 0.800000011920929
+      },
+      "Normal": {
+        "constant": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "NASA hazır model",
+    "library": {
+      "source": "https://science.nasa.gov/3d-resources/mars-2020-sample-tube/",
+      "credit": "NASA/JPL-Caltech; printable sample-tube model",
+      "license": "NASA Media Usage Guidelines; third-party/identifier restrictions remain",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "retrieved_utc": "2026-11-14T10:52:05.108742+00:00",
+      "files": [
+        {
+          "path": "incoming/sample_tube/source.stl",
+          "url": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/printable/mars-2020-sample-tube/Mars%202020%20sample%20tube.stl",
+          "bytes": 2120884,
+          "sha256": "9f0f9dabbad8a8baf8d8ed2919c505d7b878bdd31b57424d0c93f07c53928aa8",
+          "source_md5": null
+        }
+      ]
+    },
+    "tripo_tasks": [],
+    "terms_urls": [
+      "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 2,
+    "triangles": 6998,
+    "dimensions_m": [
+      0.02597195655107498,
+      0.02426794171333313,
+      0.15000082552433014
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [
+      "SM_sample_tube_tube_LOD0",
+      "SM_sample_tube_cap_LOD0"
+    ],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 2,
+      "dimensions_m": [
+        0.02597195655107498,
+        0.02426794171333313,
+        0.15000082552433014
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 2,
+      "dimensions_m": [
+        0.025952015072107315,
+        0.02435380034148693,
+        0.15013910830020905
+      ],
+      "max_dimension_error_m": 0.00013828277587890625
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

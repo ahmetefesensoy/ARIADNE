@@ -1,0 +1,267 @@
+{
+  "site_id": "BXW",
+  "created_at": "2026-11-14T10:44:18.465562+00:00",
+  "milestone": "T1",
+  "passed": true,
+  "gates": {
+    "fine_source_transfer_and_nodata": true,
+    "plan_source_transfer_and_nodata": true,
+    "product_specific_vertical_declarations": true,
+    "original_to_ard_numeric_transfer": true,
+    "bounded_relative_registration": true,
+    "slope_disagreement_units_and_support": true,
+    "stac_offline_schema_validation": true,
+    "nonempty_zero_skip_test_run": true
+  },
+  "manifest_sha256": "54f6ab5be5958d9891f9ad002314db82cd0480b70223c2d4e409f0041dd74c90",
+  "test_report_sha256": "f5bda02671479e57e8e4018eefadb169e8f104293d8d15f2b64749e0a77f38d1",
+  "tests": {
+    "tests": 299,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "stac": {
+    "ok": true,
+    "items_validated": 12,
+    "documents_validated": 13,
+    "schema_versions": {
+      "core": "1.1.0",
+      "projection": "2.1.0",
+      "ssys": "1.1.1"
+    },
+    "schemas_used": [
+      "https://schemas.stacspec.org/v1.1.0/collection-spec/json-schema/collection.json",
+      "https://schemas.stacspec.org/v1.1.0/item-spec/json-schema/item.json",
+      "https://stac-extensions.github.io/projection/v2.1.0/schema.json",
+      "https://stac-extensions.github.io/ssys/v1.1.1/schema.json"
+    ],
+    "schema_fixture_hashes": {
+      "schemas.stacspec.org-v1.1.0-collection-spec-json-schema-collection.json": "2c502f5aaafd7ca9059aa64327c569c9f439184ba5f39945a8d2f4e9a3475656",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-item.json": "f6d247783017fde0aaf081f7f4c838ecdab700bcf3d573089791fbffdde31549",
+      "stac-extensions.github.io-projection-v2.1.0-schema.json": "5e74f032c9e2ac9a3d9734b853bc3625a075d358f0513d93fba0dc9a74c97f43",
+      "stac-extensions.github.io-ssys-v1.1.1-schema.json": "2ddaa44ca0d9a4ddd0d94a567530f9c20f5914a83508d0c971b46f8f16b7edb9",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-common.json": "9f1bb9d24a94d7f519cc2c478b6581c0d9a66117518376ac1a71ec5643ad3fd7",
+      "geojson.org-schema-Feature.json": "3957840b2ff19f9450ea97a12f85944d938c68a7a6bf115a2e69b98e007b9922",
+      "geojson.org-schema-Geometry.json": "152369d7eb6b3314ffc7deca1d66f9d498ed5b614ca38ed4e2c813fed01024fd",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-bands.json": "16d06f48bae4fad8e33fa685812b8543c051347df825e50194f2c01c8c74f957",
+      "proj.org-schemas-v0.7-projjson.schema.json": "67f090556bae996522edad482597c0f9e1b919ca4c9288ac9f8f7cd4180f49b6",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-basics.json": "d98869c9f550d489495ff8e75591e9499351852caf8eb6dc5ad2888d2cb6efc2",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-datetime.json": "e0dd6adb913b82bd0c3a2308c44967d7e5441cf0336bbde00120af0dd2417550",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-data-values.json": "777c1307dc74527b78e4eceb0ba2f3d0655d2fba43e5c5a1a18f3c9a2e4ae16b",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-instrument.json": "bdab9d90af0853719be77a737da55c6d291af4ca767033e12f2bde85561ecf4a",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-licensing.json": "7a685fc0c5063f5393bd816cd4501d78bd377346878d9045c1438f16b35357de",
+      "schemas.stacspec.org-v1.1.0-item-spec-json-schema-provider.json": "668a5382c50862ac2b7e2da11576ef4be4869f86c932c9b74eb1a1adb168145a",
+      "LICENSE-stac.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "LICENSE-projection.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "LICENSE-ssys.txt": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd",
+      "LICENSE-geojson.txt": "282276965fe3a662d8154de193bcd482379e7b38d2f39ff11ac5541dae177a3e",
+      "LICENSE-projjson.txt": "6a8f30793e877d32e3f88b972f0970a051a3b5a26cd057d3993cb51e21c43319"
+    },
+    "schema_manifest_sha256": "352f301b841757bed3304ab317da8710318a1424cef0458fa717eb8a651745df",
+    "document_sha256": {
+      "collection.json": "f624b1915437ff60e75bca998fa18bc2ed1f528e69052cd10c72d5057686744e",
+      "items/bxw-aligned_reference.json": "efe98d1938d49ec58acd4e19946a8d9e853d84546a170f7d475cff0d58a60189",
+      "items/bxw-dtm_residual_m.json": "7a540e4121c258e2a91e170ef7f8f606e899f2c2e8d9f2b76ad9e0b45bef23a5",
+      "items/bxw-slope_sigma.json": "2a6a67a4bd4997be1706b976e7f59a13e9f22f68939727b08f36a1b180d79bca",
+      "items/bxw-dem_enu.json": "eb9ec941d33916073ee984d49dd55935b8240cf0b1a4299eca2cee73aef28761",
+      "items/bxw-dem_plan_4m.json": "b87a52d5e8afb95c310cf65096ed89f229cec52e32f3ac02a4bc733d556316d7",
+      "items/bxw-hirise_019698_enu.json": "2e91566c4f4c1a1414a26e3ccf593426c985100f854374927bc2b9e2d5b6afdb",
+      "items/bxw-hirise_019698_plan_4m.json": "d25738362df2f410a889fb43aaab5b4e8ccd47d4b9207344554b7eb277164966",
+      "items/bxw-roughness.json": "4e0511b7209690590effb0d9de453bf4cfe6c2ee14c3d89506812ba1b48e18d0",
+      "items/bxw-slope_2m.json": "bfb4e3d43a477385940aab1dd7c5230dd6f3284d721cd159245b7abb3b776ef1",
+      "items/bxw-slope_5m.json": "ef3cc4ca45413b0d175cc59d89a69fd5996f0bc122ae83b2147514dbece9b105",
+      "items/bxw-gale_dem_v3.json": "c11bb39369a46662b9ae32ad3989519c9be60fb72870c86ca7a70280b9c01120",
+      "items/bxw-hirise_dtm_bxw_019698.json": "9c280c48acce2dff8094b689534233c444961d46fbe6bb51239ab5d27fa54495"
+    },
+    "network_retrieval": false,
+    "scope": "Schema and explicit Mars/processing-time semantics only; asset hashes checked by writer, no pixel accuracy validation",
+    "planetary_convention_limit": "SSYS 1.1.1 official Collection example; proposal extension does not explicitly override core WGS84 wording. Do not spatially index as Earth."
+  },
+  "stac_items": [
+    "items/bxw-aligned_reference.json",
+    "items/bxw-dtm_residual_m.json",
+    "items/bxw-slope_sigma.json",
+    "items/bxw-dem_enu.json",
+    "items/bxw-dem_plan_4m.json",
+    "items/bxw-hirise_019698_enu.json",
+    "items/bxw-hirise_019698_plan_4m.json",
+    "items/bxw-roughness.json",
+    "items/bxw-slope_2m.json",
+    "items/bxw-slope_5m.json",
+    "items/bxw-gale_dem_v3.json",
+    "items/bxw-hirise_dtm_bxw_019698.json"
+  ],
+  "vertical_reference": {
+    "MSL_Gale_DEM_Mosaic_1m_v3": {
+      "vertical_datum": "MOLA",
+      "units": "m",
+      "realization_status": "declared_not_realization_verified"
+    },
+    "DTEEC_019698_1750_019988_1750_U01": {
+      "vertical_datum": "Mars 2000 Datum (martian equipotential surface)",
+      "units": "m",
+      "realization_status": "declared_not_realization_verified"
+    }
+  },
+  "registration": {
+    "shift_east_m": -30.192700817622324,
+    "shift_north_m": 30.47901305662042,
+    "vertical_offset_removed_m": -14.457418938227647,
+    "converged": true,
+    "iterations": 6,
+    "resolution_m": 4.0,
+    "max_shift_m_per_axis": 80.0,
+    "fit_cells": 8160,
+    "heldout_cells": 2041,
+    "before_heldout": {
+      "count": 2041,
+      "rmse_m": 6.8360754473551575,
+      "median_m": 0.0,
+      "nmad_m": 5.35343115234375
+    },
+    "after_heldout": {
+      "count": 2041,
+      "rmse_m": 1.5093647866657163,
+      "median_m": -0.04474541356626105,
+      "nmad_m": 1.248253695526556
+    },
+    "training_residual": {
+      "count": 8160,
+      "rmse_m": 1.591633359121758,
+      "median_m": 0.0,
+      "nmad_m": 1.2434982423678909
+    },
+    "zero_shift_training_vertical_bias_m": -7.666015625,
+    "method": "bounded fixed-Huber gradient/pattern translation with bilinear sampling and median vertical offset",
+    "interpretation": "internal stable-terrain agreement, not absolute geodetic accuracy or independent uncertainty",
+    "reference": "https://doi.org/10.5194/tc-5-271-2011"
+  },
+  "slope_disagreement": {
+    "unit": "degree",
+    "baseline_m": 5,
+    "definition": "abs(slope5m(primary)-slope5m(aligned_reference))",
+    "interpretation": "empirical disagreement proxy, NOT independent one-sigma uncertainty"
+  },
+  "three_points_1m": [
+    {
+      "row": 600,
+      "col": 750,
+      "local_xy_m": [
+        -749.5,
+        899.5
+      ],
+      "source_EN_m": [
+        8141813.0554087125,
+        -283915.4215994864
+      ],
+      "source_interpolated_height_m": -3858.905977843765,
+      "local_height_m": -3858.906005859375,
+      "absolute_error_m": 2.8015610041620675e-05,
+      "tolerance_m": 0.1,
+      "passed": true
+    },
+    {
+      "row": 1500,
+      "col": 1500,
+      "local_xy_m": [
+        0.5,
+        -0.5
+      ],
+      "source_EN_m": [
+        8142565.700539997,
+        -284815.4215994864
+      ],
+      "source_interpolated_height_m": -3638.9176835243356,
+      "local_height_m": -3638.917724609375,
+      "absolute_error_m": 4.1085039356403286e-05,
+      "tolerance_m": 0.1,
+      "passed": true
+    },
+    {
+      "row": 2400,
+      "col": 2250,
+      "local_xy_m": [
+        750.5,
+        -900.5
+      ],
+      "source_EN_m": [
+        8143318.34567128,
+        -285715.4215994864
+      ],
+      "source_interpolated_height_m": -3531.4270407135737,
+      "local_height_m": -3531.427001953125,
+      "absolute_error_m": 3.876044866046868e-05,
+      "tolerance_m": 0.1,
+      "passed": true
+    }
+  ],
+  "three_points_4m": [
+    {
+      "row": 150,
+      "col": 187,
+      "local_xy_m": [
+        -750.0,
+        898.0
+      ],
+      "source_EN_m": [
+        8141812.553645292,
+        -283916.9215994864
+      ],
+      "source_interpolated_height_m": -3858.2263125986947,
+      "local_height_m": -3858.226318359375,
+      "absolute_error_m": 5.760680323874112e-06,
+      "tolerance_m": 0.1,
+      "passed": true
+    },
+    {
+      "row": 375,
+      "col": 375,
+      "local_xy_m": [
+        2.0,
+        -2.0
+      ],
+      "source_EN_m": [
+        8142567.205830259,
+        -284816.9215994864
+      ],
+      "source_interpolated_height_m": -3638.595890698483,
+      "local_height_m": -3638.595947265625,
+      "absolute_error_m": 5.65671421099978e-05,
+      "tolerance_m": 0.1,
+      "passed": true
+    },
+    {
+      "row": 600,
+      "col": 562,
+      "local_xy_m": [
+        750.0,
+        -902.0
+      ],
+      "source_EN_m": [
+        8143317.843907859,
+        -285716.9215994864
+      ],
+      "source_interpolated_height_m": -3531.2516916855852,
+      "local_height_m": -3531.251708984375,
+      "absolute_error_m": 1.7298789771302836e-05,
+      "tolerance_m": 0.1,
+      "passed": true
+    }
+  ],
+  "original_to_ard_transfer": {
+    "passed": true,
+    "max_abs_residual_m": 1.177795638795942e-10,
+    "body_bytes_read": 640264
+  },
+  "scope": "T1 local data engineering acceptance; no absolute geodetic/physical accuracy or independent one-sigma calibration",
+  "remaining_limits": [
+    "MOLA exact areoid realization/version equality not established",
+    "DTMs may share source/control; slope_sigma is empirical disagreement in degrees, not independent one-sigma",
+    "Registered comparison edges without source support stay unknown; primary DEM nodata gate is separate",
+    "SSYS conservative body-envelope convention requires planetary-aware clients",
+    "No Unreal/Gazebo terrain, sensor or feature alignment test; these belong to later integration",
+    "Horizon/skyview/rocks/environment and engine exports remain separate \u00a76.2 capabilities outside \u00a718 T1 chain"
+  ],
+  "html_sha256": "775dbe6b57ad63e5641237a042b99ccf5be1841dcb9e216d92a2bfc50f71559e"
+}

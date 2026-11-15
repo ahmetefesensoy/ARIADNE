@@ -1,0 +1,57 @@
+{
+  "schema": "redline.prologue.v1",
+  "status": "SCENARIO",
+  "language": "tr-TR",
+  "note": "Kurgu seslendirmesi; airlock göstergeleri gerçek sensör veya uçuş kontrolü değildir. Görev onayı ROS'ta kalır.",
+  "shots": [
+    {
+      "id": "landing",
+      "title": "Mars · Son alçalma",
+      "subtitle": "İnişe az kaldı. Biraz sarsılabiliriz. Tamam… temas ettik. Mars'tayız.",
+      "duration_s": 16.0,
+      "voice": "landing.wav"
+    },
+    {
+      "id": "rest",
+      "title": "Bir plak, bir nefes",
+      "subtitle": "Dışarı çıkmadan bir plak dinleyelim. Acelemiz yok. Sonra komutada buluşuruz.",
+      "duration_s": 12.0,
+      "voice": "rest.wav"
+    },
+    {
+      "id": "data",
+      "title": "Boxwork-Batı · Görev brifingi",
+      "subtitle": "Bugün sırtın öbür tarafına bakacağız. Önce drone gitsin. Bu çizgiyi gözden kaçırma; eve dönecek vaktimiz kalsın.",
+      "duration_s": 13.0,
+      "voice": "data.wav"
+    },
+    {
+      "id": "airlock",
+      "title": "Airlock · Çıkış hazırlığı",
+      "subtitle": "Kask kilidin tamam. Basınç düşüyor… Dış kapı hazır. Hazır olunca çıkabiliriz.",
+      "duration_s": 12.0,
+      "voice": "airlock.wav"
+    },
+    {
+      "id": "ready",
+      "title": "Yüzeye çıkış",
+      "subtitle": "Telsiz açık. Konumun geliyor. Hadi başlayalım; dönüş payını birlikte izleyeceğiz.",
+      "duration_s": 9.0,
+      "voice": "ready.wav"
+    }
+  ],
+  "mission_intros": [
+    {"id":"mission_traverse","phase":2,"title":"Yüzey · İlk görev","subtitle":"Görev başladı. İşaretli bağlam istasyonuna ilerle. Dönüş payını kontrol et. Her bilinmeyen, zamanından bir parçadır.","duration_s":9,"voice":"mission_traverse.wav"},
+    {"id":"mission_science","phase":3,"title":"İstasyon · Bağlam incelemesi","subtitle":"İstasyondayız. Önce çevreyi incele. Sırtı ve çukuru birlikte oku. Kaya rengi tek başına bir mineral ölçümü değildir.","duration_s":9,"voice":"mission_science.wav"},
+    {"id":"mission_return","phase":4,"title":"Dönüş · Habitat rotası","subtitle":"İnceleme tamam. Şimdi habitata dönüyoruz. Panodaki dönüş payını izle ve işaretli girişe yaklaş.","duration_s":8,"voice":"mission_return.wav"},
+    {"id":"mission_debrief","phase":6,"title":"Habitat · Görev değerlendirmesi","subtitle":"Habitata döndün. Komuta odasında rotanı ve kalan kaynaklarını inceleyebilirsin. Bir sonraki çıkış, yeni bir soruyla başlayacak.","duration_s":9,"voice":"mission_debrief.wav"}
+  ],
+  "jazz": {
+    "title": "Vardiya Arası",
+    "route": "original local procedural instrumental, no paid generator",
+    "destination": "habitat record player and optional rest corner",
+    "style": "Quiet small-combo jazz; warm electric piano, walking upright-style bass, soft brushed percussion, gentle swing; room for speech; no vocals or artist imitation.",
+    "structure": "16-bar turnaround, two 8-bar phrases, short crossfade at loop seam",
+    "credits_spent": 0
+  }
+}

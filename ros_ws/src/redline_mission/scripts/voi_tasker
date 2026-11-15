@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+"""voi_tasker entry point (D015). Launch files run it with the REDLINE venv Python (D009)."""
+from redline_mission.voi_tasker import main
+
+main()

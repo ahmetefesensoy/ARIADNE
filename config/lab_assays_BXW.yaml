@@ -1,0 +1,9 @@
+schema: redline.lab.recipe.v1
+status: SCENARIO
+seed: 20261115
+method: WCL_SCENARIO
+ph_equilibrium: 7.7
+ph_sigma: 0.12
+conductivity_ms_cm: 1.2
+mixing_tau_s: 28.0
+note: Authored game laboratory recipe; no Gale pH measurement, no inference from oxides. Phoenix WCL is a procedure reference only; these numbers are not its measurements.

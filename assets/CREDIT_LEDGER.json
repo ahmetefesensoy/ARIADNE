@@ -1,0 +1,531 @@
+{
+  "opening_balance": 930,
+  "closing_balance": 380,
+  "frozen": 0,
+  "current_session_consumed": 550,
+  "historical_consumed": 70.0,
+  "task_records": [
+    {
+      "asset_id": "astronaut",
+      "historical": true,
+      "task_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "prompt": "Photorealistic full-body adult human astronaut, 1.85m tall, believable anatomy and natural proportions. Neutral standing A-pose, arms slightly separated from torso, feet shoulder-width apart, both gloved hands visible with five fingers. Helmet with raised visor revealing a realistic human face: natural skin, subtle pores, clear eyes, eyelids, nose, lips and calm expression. Contemporary Mars EVA suit in off-white woven fabric with muted red accents, graphite flexible joints, reinforced knees and elbows, layered seams, stitching, fabric folds and realistic pressure-suit bulk. Detailed locking neck ring, metal wrist couplings, chest life-support controls, oxygen connectors, short secured hoses and compact backpack. Thick articulated gloves and boots with treaded soles. Restrained wear and fine reddish dust around boots. Realistic fabric, rubber, painted metal and skin PBR materials. Complete coherent geometry from every angle, isolated single character, no ground or scenery.",
+        "texture": true,
+        "auto_size": true,
+        "export_uv": true,
+        "face_limit": 200000,
+        "model_seed": 1401126,
+        "model_version": "v3.1-20260211",
+        "negative_prompt": "cartoon, anime, toy, chibi, robot, mannequin, plastic skin, distorted face, opaque visor hiding face, extra limbs, missing fingers, fused hands, duplicate person, cropped feet, pedestal, scenery, text, logos, weapons",
+        "texture_quality": "detailed",
+        "geometry_quality": "detailed",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T07:46:30.551793Z",
+      "completed_at": "2026-11-14T07:48:27.257376Z",
+      "credits_consumed": 50
+    },
+    {
+      "asset_id": "astronaut",
+      "historical": false,
+      "task_id": "2ddc3f89-aa39-4433-8651-bd8ea06a15a5",
+      "type": "animate_prerigcheck",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "original_model_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4"
+      },
+      "created_at": "2026-11-14T10:48:58.16244Z",
+      "completed_at": "2026-11-14T10:48:58.809915Z",
+      "credits_consumed": 0
+    },
+    {
+      "asset_id": "astronaut",
+      "historical": false,
+      "task_id": "f43b5416-7d9d-4f96-8e36-66a31d3f58ad",
+      "type": "animate_rig",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "spec": "unreal",
+        "topology": "biped",
+        "out_format": "glb",
+        "original_model_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4"
+      },
+      "created_at": "2026-11-14T10:49:38.189245Z",
+      "completed_at": "2026-11-14T10:49:54.851109Z",
+      "credits_consumed": 25
+    },
+    {
+      "asset_id": "astronaut",
+      "historical": false,
+      "task_id": "0df6992f-5e0f-4687-8a32-524cdb69ca6e",
+      "type": "animate_retarget",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "animations": [
+          "preset:idle",
+          "preset:walk"
+        ],
+        "out_format": "glb",
+        "animate_in_place": true,
+        "original_model_id": "f43b5416-7d9d-4f96-8e36-66a31d3f58ad"
+      },
+      "created_at": "2026-11-14T10:51:12.004521Z",
+      "completed_at": "2026-11-14T10:51:24.153084Z",
+      "credits_consumed": 20
+    },
+    {
+      "asset_id": "rover_1",
+      "historical": false,
+      "task_id": "310774f0-cd27-4265-8657-3c02c288e33d",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": false,
+        "quad": false,
+        "prompt": "Realistic Mars science rover, exactly six independent metal wheels, three wheels on each side, exposed rocker bogie suspension. Rectangular low insulated chassis, off-white panels, graphite mechanisms, restrained red accents, bronze metal wheel rims. Tall camera mast with separate pan and tilt head, two forward stereo camera eyes. Five-link folded robotic arm at front with shoulder elbow wrist joints and round contact science turret. Each wheel and steering knuckle, suspension member, mast head and arm link an editable separate solid, assembled neutral pose with visible gaps at moving joints. Scientific aerospace construction, physically plausible panel seams and bolts, clean silhouette, moderate dust. No astronaut, no terrain, no platform, no scenery, no text, no logos. One complete vehicle.",
+        "texture": false,
+        "export_uv": true,
+        "face_limit": 120000,
+        "model_seed": 14112026,
+        "model_version": "v3.1-20260211",
+        "generate_parts": true,
+        "geometry_quality": "detailed",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T10:48:25.72548Z",
+      "completed_at": "2026-11-14T10:51:04.60058Z",
+      "credits_consumed": 50
+    },
+    {
+      "asset_id": "rover_1",
+      "historical": false,
+      "task_id": "089df3c5-f7e8-45c4-8072-8760fd8f6b2c",
+      "type": "texture_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "bake": true,
+        "texture": true,
+        "model_version": "v3.0-20250812",
+        "texture_quality": "standard",
+        "original_model_id": "310774f0-cd27-4265-8657-3c02c288e33d",
+        "texture_alignment": "original_image"
+      },
+      "created_at": "2026-11-14T10:51:09.586543Z",
+      "completed_at": "2026-11-14T10:52:12.616751Z",
+      "credits_consumed": 10
+    },
+    {
+      "asset_id": "science_station",
+      "historical": false,
+      "task_id": "d22a9e35-8dc4-4f79-a9a6-a3b7108c931c",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": false,
+        "quad": false,
+        "prompt": "Compact deployable Mars environmental science station, one waist-high sensor box standing on three splayed folding tripod legs, white thermal insulation panels, graphite metal hinges, muted red identification bands without text, short separate upright communication antenna, small radiation detector and weather sensor on top, compact top solar panel. Realistic engineered NASA-inspired field equipment, robust and simple, complete assembled neutral pose, distinct sensor box and separate legs and antenna with visible joints. Single isolated object, no ground, no rocks, no platform, no people, no cables on ground, no letters, no logos.",
+        "texture": false,
+        "export_uv": true,
+        "face_limit": 25000,
+        "model_seed": 14112027,
+        "model_version": "v3.1-20260211",
+        "generate_parts": true,
+        "geometry_quality": "standard",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T10:48:47.633468Z",
+      "completed_at": "2026-11-14T10:49:31.467814Z",
+      "credits_consumed": 30
+    },
+    {
+      "asset_id": "science_station",
+      "historical": false,
+      "task_id": "c6235dab-3741-4b3f-9dc5-822f724df7f2",
+      "type": "texture_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "bake": true,
+        "texture": true,
+        "model_version": "v3.0-20250812",
+        "texture_quality": "standard",
+        "original_model_id": "d22a9e35-8dc4-4f79-a9a6-a3b7108c931c",
+        "texture_alignment": "original_image"
+      },
+      "created_at": "2026-11-14T10:49:34.279737Z",
+      "completed_at": "2026-11-14T10:50:38.707425Z",
+      "credits_consumed": 10
+    },
+    {
+      "asset_id": "scout_1",
+      "historical": false,
+      "task_id": "97e4e850-f1d3-4a62-8376-3d044bd3ac73",
+      "type": "mesh_segmentation",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "model_version": "v2.0-20260430",
+        "original_model_id": "9249a1f1-2291-4430-b106-b0cdc12702bd",
+        "split_by_connectivity": true,
+        "segmentation_granularity": "detailed"
+      },
+      "created_at": "2026-11-14T11:02:38.863368Z",
+      "completed_at": "2026-11-14T11:03:50.03739Z",
+      "credits_consumed": 40
+    },
+    {
+      "asset_id": "tool_apxs",
+      "historical": false,
+      "task_id": "759649d6-e41f-4274-afbf-d93d718c8177",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "prompt": "One realistic Mars rover contact-science sensor head inspired by APXS, compact short cylindrical metal instrument with a broad circular flat sensing window at the front, protective annular contact rim, small recessed round detector apertures arranged around the central window, bolted flange at the back for mounting on a robot wrist. White ceramic thermal sleeve, brushed titanium rings, dark graphite rear connector block, small secured cable connector. Functional restrained aerospace engineering, clear coherent manufactured geometry, no decorative spikes. Complete isolated single instrument, mounted axis horizontal, no arm, no rover, no ground, no pedestal, no words, no labels, no logos. Realistic PBR materials.",
+        "texture": true,
+        "export_uv": true,
+        "face_limit": 12000,
+        "model_seed": 14112030,
+        "model_version": "v3.1-20260211",
+        "geometry_quality": "standard",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T11:18:24.123348Z",
+      "completed_at": "2026-11-14T11:20:23.985151Z",
+      "credits_consumed": 20
+    },
+    {
+      "asset_id": "tool_libs",
+      "historical": false,
+      "task_id": "c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "prompt": "One realistic Mars rover remote LIBS optical instrument head, compact rectangular telescope housing with one large recessed circular optical aperture and a smaller adjacent camera aperture facing forward, black internal baffles inside a thick titanium lens collar, white multilayer thermal panels, graphite electronics enclosure at back, short rigid mounting flange underneath, secured rear electrical connector. Clean functional aerospace engineering and plausible panel seams. Muted white grey black metal palette, small red fasteners without symbols, no weapon appearance. Complete isolated single scientific instrument, no mast, no rover, no terrain, no pedestal, no lettering, no labels, no logos. Realistic PBR materials.",
+        "texture": true,
+        "export_uv": true,
+        "face_limit": 12000,
+        "model_seed": 14112031,
+        "model_version": "v3.1-20260211",
+        "geometry_quality": "standard",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T11:20:41.133566Z",
+      "completed_at": "2026-11-14T11:22:48.74324Z",
+      "credits_consumed": 20
+    },
+    {
+      "asset_id": "tool_drill",
+      "historical": false,
+      "task_id": "a005625a-7eb4-4989-bc0e-50a30764a8aa",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": false,
+        "quad": false,
+        "prompt": "One realistic compact Mars rover coring drill end effector, upright scientific industrial instrument. Rectangular white thermal-covered motor housing attached to two parallel graphite feed rails, central silver sliding carriage and one clearly separate long spiral metal drill bit projecting straight downward, drill bit coaxial with motor, protective circular collar above bit. Rear bolted robot wrist mounting plate, secured short electrical connector. Separate editable solids for fixed motor housing, sliding carriage and drill bit, visibly distinct joint gaps, assembled neutral pose. Clean plausible aerospace engineering, graphite titanium white with small red accents, restrained wear. One complete isolated drill tool only, no robot arm, no rover, no ground, no sample rock, no pedestal, no text, no labels, no logo. Realistic PBR materials.",
+        "texture": false,
+        "export_uv": true,
+        "face_limit": 12000,
+        "model_seed": 14112032,
+        "model_version": "v3.1-20260211",
+        "generate_parts": true,
+        "geometry_quality": "standard",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T11:18:34.712729Z",
+      "completed_at": "2026-11-14T11:19:21.191567Z",
+      "credits_consumed": 30
+    },
+    {
+      "asset_id": "tool_drill",
+      "historical": false,
+      "task_id": "695a96a1-3728-4fc2-a536-c41fb26406fb",
+      "type": "texture_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "bake": true,
+        "texture": true,
+        "model_version": "v3.0-20250812",
+        "texture_quality": "standard",
+        "original_model_id": "a005625a-7eb4-4989-bc0e-50a30764a8aa",
+        "texture_alignment": "original_image"
+      },
+      "created_at": "2026-11-14T11:19:44.949579Z",
+      "completed_at": "2026-11-14T11:20:44.10806Z",
+      "credits_consumed": 10
+    },
+    {
+      "asset_id": "tool_neutron",
+      "historical": false,
+      "task_id": "d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "prompt": "One realistic compact Mars rover neutron sensor electronics box, a low rectangular robust white insulated instrument housing with slightly rounded edges, ribbed graphite side heat sink, two separate circular gold titanium electrical connectors recessed into one short end, small dark circular detector window on the broad front panel, four visible bolted corner mounting feet, no tall antenna. Clean coherent aerospace engineering, scientifically plausible packaging, muted white graphite and titanium finish, restrained dust, small red mechanical latches without writing. Complete isolated single scientific instrument, no vehicle, no ground, no stand, no pedestal, no scene, no wires on floor, no lettering, no labels, no logo. Realistic PBR materials.",
+        "texture": true,
+        "export_uv": true,
+        "face_limit": 8000,
+        "model_seed": 14112033,
+        "model_version": "v3.1-20260211",
+        "geometry_quality": "standard",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T11:21:00.90146Z",
+      "completed_at": "2026-11-14T11:23:06.783349Z",
+      "credits_consumed": 20
+    },
+    {
+      "asset_id": "tool_multispectral",
+      "historical": false,
+      "task_id": "1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+      "type": "text_to_model",
+      "status": "success",
+      "progress": 100,
+      "input": {
+        "pbr": true,
+        "prompt": "One realistic compact Mars exploration multispectral camera head, sturdy rectangular white thermal-insulated optical housing with six small round glass lens apertures in a clean two by three array on the front, each aperture has a recessed dark baffle and a titanium ring. Subtle lens coating reflections, graphite rear electronics module, small bolted mounting plate underneath and a secured rear electrical connector. Plausible precision optical instrument, clean aerospace machining, white graphite titanium with tiny red fasteners, no bright lights. Complete isolated single camera, no gimbal, no mast, no drone, no rover, no tripod, no terrain, no base, no pedestal, no writing, no labels, no logos. Realistic PBR materials.",
+        "texture": true,
+        "export_uv": true,
+        "face_limit": 12000,
+        "model_seed": 14112034,
+        "model_version": "v3.1-20260211",
+        "geometry_quality": "standard",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T11:23:17.229013Z",
+      "completed_at": "2026-11-14T11:26:17.061618Z",
+      "credits_consumed": 20
+    },
+    {
+      "asset_id": "scout_1",
+      "historical": true,
+      "task_id": "f91d9e38-645a-42e6-8287-a9d2266658fd",
+      "type": "text_to_model",
+      "status": "success",
+      "input": {
+        "pbr": true,
+        "prompt": "Compact quadrotor Mars scout drone, realistic scientific aerospace design, four separate rotors with open rotor hubs on short arms, central rectangular body with solar panel on top, small downward-facing camera on a gimbal underneath, four landing legs, matte white and grey carbon-fiber panels, neutral studio pose, single object, no ground, no text, no logo",
+        "texture": true,
+        "export_uv": true,
+        "model_version": "v3.1-20260211",
+        "geometry_quality": "standard",
+        "texture_alignment": "geometry"
+      },
+      "created_at": "2026-11-14T10:40:03.623118Z",
+      "completed_at": "2026-11-14T10:42:40.737428Z",
+      "credits_consumed": 20.0
+    },
+    {
+      "task_id": "6fdddbfa-4a50-4f2a-ba0d-9313472f6a4a",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:40:52.8Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "A single premium vintage record player console for a realistic astronaut habitat interior, a walnut wood low cabinet with rounded bevelled corners, brushed aluminum control panel, black circular platter on top, one black 12 inch vinyl record seated flat, a delicate separate-looking silver tonearm and small pickup, small analog knobs and rectangular warm amber power indicator, clean mid century hi-fi craftsmanship, subtle wear, tactile real materials. The record center label is plain warm cream blank with no lettering; exact artist label will be added later. Complete self-contained freestanding console, isolated on neutral background. No people, no walls, no room, no text, no logo, no invented lettering, no transparent dust cover, no cables across the floor. Coherent solid geometry and readable silhouette. Natural real world size about 95 cm wide, 70 cm tall and 55 cm deep.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "beab3820-a4f5-4e11-b039-142290105b4f",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:44:07.808Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "6fdddbfa-4a50-4f2a-ba0d-9313472f6a4a",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "c3d7d581-63e5-4a90-abfd-9f6f8aa35e8b",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:45:54.83Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "A realistic modular open-front Mars habitat crew relaxation alcove interior set, six meters wide by four meters deep by three meters tall, two solid side and rear walls and a solid level floor, no roof and open front for a game camera. Warm off-white aerospace wall panels with rounded ribs, graphite floor grilles, visible seams and service fasteners, tasteful amber practical light housings, built-in bookshelf with small blank books and record sleeves, a pair of compact wall speakers, shallow equipment niches, a small oval porthole window frame in the rear wall. No chairs, no tables, no record player, no people, no text, no flags, no logos, no space backdrop. Single cohesive architectural environment module, hollow accessible interior, neutral blank background. Clean hard surface science fiction engineering, cozy lived-in crew lounge, subtle Martian dust around floor edges. Separate visual architecture, not a terrain landscape.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "58cd3f92-806e-4c23-9bcd-869162386267",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:50:21.108Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "c3d7d581-63e5-4a90-abfd-9f6f8aa35e8b",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "e9c1bda6-8d00-47b9-a6d3-061df4803064",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:54:53.992Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "One complete realistic fictional Mars landing capsule for an astronaut narrative game opening, about six meters high and eight meters wide including four deployed landing legs. Coherent squat pressurized crew capsule, ivory aerospace panels and graphite heat shield, restrained gold thermal foil, sturdy mechanically plausible struts, circular top hatch and small dark windows, three recessed descent engine nozzles underneath, stable footpads. All four legs deployed, pristine but lightly dusted, no motion effects, no terrain, no astronauts, no backdrop, no writing, no logos, no flags, no NASA marks. Isolated complete hard surface spacecraft with clean manufactured geometry and realistic material textures. Visual prop only, not a real flight hardware claim.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "e7fc4c9e-c4e8-4e72-950e-fe454dd49337",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T22:57:38.42Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "e9c1bda6-8d00-47b9-a6d3-061df4803064",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "29887b9e-a383-4c8d-9b09-09493478d8ae",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-14T23:45:43.801Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "One realistic modular Mars habitat airlock chamber shell for a first person astronaut game. Human scale: 3 meters long, 2.4 meters wide, 2.8 meters tall inside. Hollow walkable interior with TWO OPEN rectangular portals at OPPOSITE ENDS along its length. No solid door leaves; interactive doors will be added separately. Rounded ivory aerospace wall panels, graphite nonslip floor grilles, recessed warm white light strips, restrained red safety handrails, one flush side-wall pressure panel with blank dark display, oxygen piping and cable conduits close to side walls. Clear central passage and continuous LEVEL floor. Thick rounded portal gaskets, small amber caution accents without lettering. Coherent industrial engineering with realistic surface textures and restrained wear. One complete isolated chamber only, no people, no furniture, no landscape, no ground pedestal, no text, no logos, no flags. Both doorway openings must remain unobstructed for a human to pass through.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "042b8395-a5dd-456e-ad77-b4f3ed95c7e9",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-14T23:49:28.493Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "29887b9e-a383-4c8d-9b09-09493478d8ae",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "80896b55-290c-4f8a-8a14-15a2bc9f5340",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:07:09.33Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "INTERIOR architecture of a realistic Mars habitat COMMAND CENTER for a first person game. Complete walkable room module, 6 meters deep, 3.6 meters wide, 2.8 meters tall. Open front, three interior walls, level graphite floor, ceiling cut away for camera. Mission control design: graphite and warm ivory wall panels, three large recessed blank dark widescreen displays on rear wall at human eye height, amber light housings, two compact angled operator console desks along side walls, low central planning table with dark inset glass, overhead cable trays, structural ribs, acoustic panels, blue task lighting and warm practical lamps. Clear 1.2 meter central walking aisle from open front to rear screens. Coherent manufactured aerospace geometry, realistic textures and restrained wear. Show inside surfaces prominently. No sofa, no beds, no lounge furniture, no people, no landscape, no lettering, no logos, no flags. One room with built-in furniture, no outside base.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "b9425aa5-ca6b-4e11-b149-5e0d546218bf",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:10:54.28Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "80896b55-290c-4f8a-8a14-15a2bc9f5340",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "4c8ac69c-d0d6-4ffa-92da-a582e6754441",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:11:24.948Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "INTERIOR modular Mars habitat CORRIDOR for a first person game. Long straight walkable passage 15.6 meters long, 3 meters wide, 2.8 meters tall. Show inside prominently. Ivory curved aerospace wall panels over dark structural ribs, continuous level graphite anti-slip floor grilles, recessed ceiling light strips, low amber guide lights, flush pipe runs and service niches. Three large OPEN doorway portals evenly spaced on ONE long side wall, opening to habitat rooms; one OPEN doorway in center of opposite side wall for airlock access. Door leaves omitted for separate interactive doors. Both short ends have solid bulkheads, ceiling cut away for game camera. Central aisle clear, manufactured geometry and realistic textures, subtle reddish dust near floor edges. No rooms beyond portals, no furniture, no people, no landscape, no lettering, no signs, no logos, no flags. Single hollow architectural module, not an exterior building.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "0a3aa050-4ce2-4728-835a-35e7a2fa6016",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:14:08.478Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "4c8ac69c-d0d6-4ffa-92da-a582e6754441",
+        "format": "FBX"
+      }
+    },
+    {
+      "task_id": "bd119488-c6cc-4817-91ad-b0a69214ba36",
+      "type": "text_to_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:14:52.379Z",
+      "credits_consumed": 30,
+      "input": {
+        "prompt": "INTERIOR architecture of a realistic Mars habitat SAMPLE LABORATORY for a first person game. Walkable room module, 6 meters deep, 3.6 meters wide, 2.8 meters tall. Open front, three inner walls, level grey nonslip floor, ceiling cut away for camera. Clean science preparation space: off-white and pale blue modular panels, stainless steel workbenches along side walls, compact enclosed sample preparation glovebox with transparent front and two circular glove ports, sample drawers with blank fronts, rack of capped small sample containers, instrument cabinets, one recessed blank dark display at eye height on rear wall, cable conduits, cool white task lamps and amber warning housings. Wide clear central walking aisle, coherent industrial geometry, realistic lightly worn materials. No sofa, no beds, no people, no terrain, no lettering, no logos, no flags. Complete room with built-in equipment; keep door opening unobstructed.",
+        "texture": true,
+        "texture_quality": "detailed",
+        "pbr": false,
+        "model": "v3.1-20260211"
+      }
+    },
+    {
+      "task_id": "d59ba098-7c6b-4f36-bc7c-3e87a439924e",
+      "type": "convert_model",
+      "status": "success",
+      "created_at": "2026-11-15T00:18:05.96Z",
+      "credits_consumed": 5,
+      "input": {
+        "input": "bd119488-c6cc-4817-91ad-b0a69214ba36",
+        "format": "FBX"
+      }
+    }
+  ],
+  "failed_operations": [
+    {
+      "asset_id": "scout_1",
+      "step": "segment old task",
+      "result": "404 TASK_NOT_FOUND; local source retained",
+      "credits": 0
+    },
+    {
+      "asset_id": "scout_1",
+      "step": "upload original 44 MB GLB",
+      "result": "POST /v3/files timed out before task creation; balance unchanged; bounded 55k-triangle derivative used",
+      "credits": 0
+    }
+  ],
+  "latest_balance_verified_utc": "2026-11-15T00:20:32.7243681Z"
+}

@@ -1,0 +1,62 @@
+{
+ "task": "libs",
+ "status": "SCENARIO presentation",
+ "video": "libs.mp4",
+ "poster": "poster.png",
+ "fps": 30,
+ "frames": 720,
+ "resolution": [
+  1920,
+  1080
+ ],
+ "captions": {
+  "tr": "captions_tr.srt",
+  "en": "captions_en.srt"
+ },
+ "beats": [
+  {
+   "start_s": 0.0,
+   "end_s": 3.0,
+   "tr": "B2 · Uzaktan LIBS ve otonom hedef seçimi",
+   "en": "B2 · Remote LIBS with autonomous targeting"
+  },
+  {
+   "start_s": 3.0,
+   "end_s": 8.0,
+   "tr": "Rover çevredeki kayaları tarar; boyut ve parlaklığa göre aday seçer (AEGIS benzeri).",
+   "en": "The rover scans the rocks around it and picks candidates by size and brightness (AEGIS-like)."
+  },
+  {
+   "start_s": 8.0,
+   "end_s": 10.0,
+   "tr": "Hedef seçildi.",
+   "en": "Target chosen."
+  },
+  {
+   "start_s": 10.0,
+   "end_s": 17.0,
+   "tr": "Lazer kayadan mikroskobik bir noktayı buharlaştırır; plazma ışık saçar. 5 noktalık tarama.",
+   "en": "The laser vaporises a microscopic spot of rock; the plasma glows. A 5-point raster."
+  },
+  {
+   "start_s": 17.0,
+   "end_s": 21.0,
+   "tr": "Teleskop bu ışığı toplar; spektrumdaki çizgiler elementleri söyler.",
+   "en": "A telescope collects that light; the lines in the spectrum name the elements."
+  },
+  {
+   "start_s": 21.0,
+   "end_s": 24.0,
+   "tr": "İlk atışlar yüzeydeki tozu temizler. (Simülasyon)",
+   "en": "The first shots clear the surface dust. (Simulation)"
+  }
+ ],
+ "assets": [
+  "assets/incoming/tool_libs",
+  "assets/incoming/rock_07",
+  "assets/incoming/moon_rock_03",
+  "assets/incoming/namaqualand_boulder_04",
+  "NIST atomic spectra line wavelengths"
+ ],
+ "note": "Shows how the instrument works; numbers are the SCENARIO model's story, not a measurement."
+}

@@ -1,0 +1,370 @@
+{
+  "schema": "redline.space_apps_claims.v1",
+  "slide_ready": true,
+  "failing_slide_claims": [],
+  "not_yet": [
+    "unreal_live_storm"
+  ],
+  "claims": [
+    {
+      "id": "rad_spike",
+      "text_en": "20 May 2024, Curiosity radiation detector: 5.7 -> 351 uGy/h (x61); alarm 05:21:50 UTC, peak 06:15:19 UTC (53 min)",
+      "on_slide": true,
+      "evidence": "docs/verification/T6_RAD.json",
+      "checks": [
+        {
+          "key": "all_pass",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "key": "checks.0.observed",
+          "observed": 5.72292,
+          "passed": true
+        },
+        {
+          "key": "checks.7.observed",
+          "observed": 351.42427,
+          "passed": true
+        },
+        {
+          "key": "checks.8.observed_utc",
+          "observed": "2024-05-20T05:21:50+00:00",
+          "passed": true
+        },
+        {
+          "key": "checks.7.observed_utc",
+          "observed": "2024-05-20T06:15:19+00:00",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "light_time",
+      "text_en": "At the alarm, Earth was 15.8 light-minutes away: about 32 min for a question and an answer",
+      "on_slide": true,
+      "evidence": "docs/verification/LIGHT_TIME_SOL4190.json",
+      "checks": [
+        {
+          "key": "events.alarm_utc.one_way_min",
+          "observed": 15.84,
+          "passed": true
+        },
+        {
+          "key": "events.alarm_utc.round_trip_min",
+          "observed": 31.67,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "storm_shrinks_line_ros",
+      "text_en": "Real storm replay: shelter rule held at once; safe-return area 6.02 -> 0.41 km2",
+      "on_slide": true,
+      "evidence": "test-results/s1-bxw-20261114T193408Z-S1_SEP_4190-42/s1_summary.json",
+      "checks": [
+        {
+          "key": "fr04.value",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "key": "abort_area_km2_before_alarm",
+          "observed": 6.022376,
+          "passed": true
+        },
+        {
+          "key": "abort_area_km2_during_alarm_min",
+          "observed": 0.405344,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "drone_replan",
+      "text_en": "Simulated drone scouting found 16 blocked cells on the route; the plan changed v1 -> v2; no rule violations",
+      "on_slide": true,
+      "evidence": "test-results/scn-bxw-20261115T065851Z-S4_BLOCKED_CORRIDOR-4/summary.json",
+      "checks": [
+        {
+          "key": "plans.plan-BXW-0002.version",
+          "observed": 2,
+          "passed": true
+        },
+        {
+          "key": "decisions.4.context",
+          "observed": "replan after precursor",
+          "passed": true
+        },
+        {
+          "key": "all_expected_ok",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "key": "violations_above_info",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "key": "debrief_reached",
+          "observed": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "drone_replan_cells",
+      "text_en": "16 blocked cells (S4 acceptance log)",
+      "on_slide": true,
+      "evidence": "docs/VERIFICATION_LOG.md",
+      "checks": [
+        {
+          "contains": "Rotada 16 engelli hücre bulundu",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "suit_leak",
+      "text_en": "Suit leak caught from telemetry in 36 s; whole crew sent home; lowest margin +17 min",
+      "on_slide": true,
+      "evidence": "test-results/scn-bxw-20261115T070933Z-S2_SUIT_LEAK-2/s2_acceptance.json",
+      "checks": [
+        {
+          "key": "detection_delay_s",
+          "observed": 36.4,
+          "passed": true
+        },
+        {
+          "key": "limiting_after_detection_is_crew_o2",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "key": "min_published_margin_after_detection_min",
+          "observed": 17.318466186523438,
+          "passed": true
+        },
+        {
+          "key": "margin_within_tolerance",
+          "observed": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "apxs_finding",
+      "text_en": "690 archive APXS measurements: 6x longer counting cuts major-oxide error only 7-29% (counting law: 59%); each cm of standoff adds 6-24%",
+      "on_slide": true,
+      "evidence": "docs/verification/APXS_PRECISION.json",
+      "checks": [
+        {
+          "key": "rows_used",
+          "observed": 690,
+          "passed": true
+        },
+        {
+          "key": "oxides.SiO2.sigma_1h_over_10min",
+          "observed": 0.844,
+          "passed": true
+        },
+        {
+          "key": "oxides.FeO.sigma_1h_over_10min",
+          "observed": 0.928,
+          "passed": true
+        },
+        {
+          "key": "oxides.Al2O3.sigma_1h_over_10min",
+          "observed": 0.853,
+          "passed": true
+        },
+        {
+          "key": "oxides.MgO.sigma_1h_over_10min",
+          "observed": 0.823,
+          "passed": true
+        },
+        {
+          "key": "oxides.CaO.sigma_1h_over_10min",
+          "observed": 0.71,
+          "passed": true
+        },
+        {
+          "key": "oxides.Na2O.sigma_1h_over_10min",
+          "observed": 0.752,
+          "passed": true
+        },
+        {
+          "key": "oxides.SiO2.per_cm_standoff",
+          "observed": 0.063,
+          "passed": true
+        },
+        {
+          "key": "oxides.MgO.per_cm_standoff",
+          "observed": 0.217,
+          "passed": true
+        },
+        {
+          "key": "oxides.SiO2.exp_t",
+          "observed": -0.095,
+          "passed": true
+        },
+        {
+          "key": "oxides.SiO2.exp_t",
+          "observed": -0.095,
+          "passed": true
+        },
+        {
+          "key": "oxides.SiO2.counting_law_exp_t",
+          "observed": -0.5,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "sensitivity",
+      "text_en": "Storm-time safe area 0.38 km2; it moves most with warning time (0.25-0.82) and with walking speed over terrain no robot has seen (0.31-0.54)",
+      "on_slide": true,
+      "evidence": "docs/verification/SENSITIVITY.json",
+      "checks": [
+        {
+          "key": "base_km2",
+          "observed": 0.3832,
+          "passed": true
+        },
+        {
+          "key": "bars.0.parameter",
+          "observed": "sep_limit_min",
+          "passed": true
+        },
+        {
+          "key": "bars.0.metric_low",
+          "observed": 0.2503,
+          "passed": true
+        },
+        {
+          "key": "bars.0.metric_high",
+          "observed": 0.8247,
+          "passed": true
+        },
+        {
+          "key": "bars.1.parameter",
+          "observed": "speed_factor_unobserved",
+          "passed": true
+        },
+        {
+          "key": "bars.1.metric_low",
+          "observed": 0.3056,
+          "passed": true
+        },
+        {
+          "key": "bars.1.metric_high",
+          "observed": 0.5387,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "storm_chapter_realtime_ros",
+      "text_en": "Real-time storm chapter: the real alarm hits 11.8 min into the walk; shelter mode in 0 s; crew home 8 min later; no rule broken (simulated walker)",
+      "on_slide": true,
+      "evidence": "test-results/c1-bxw-20261115T101234Z-C1_SOL4190_CHAPTER-42/c1_summary.json",
+      "checks": [
+        {
+          "key": "alarm_pet_s",
+          "observed": 710.059019909,
+          "passed": true
+        },
+        {
+          "key": "fr04.value",
+          "observed": 0.0,
+          "passed": true
+        },
+        {
+          "key": "abort_area_km2_during_alarm_min",
+          "observed": 0.405344,
+          "passed": true
+        },
+        {
+          "key": "debrief_reached",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "key": "phases.3.pet_s",
+          "observed": 1190.058973651,
+          "passed": true
+        },
+        {
+          "key": "env_first.earth_light_time_s",
+          "observed": 950.177978515625,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "storm_chapter_capture",
+      "text_en": "Real-time storm chapter capture complete (all topics seen)",
+      "on_slide": true,
+      "evidence": "test-results/c1-bxw-20261115T101234Z-C1_SOL4190_CHAPTER-42/capture.json",
+      "checks": [
+        {
+          "key": "passed",
+          "observed": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "python_tests",
+      "text_en": "700 automated core and data tests pass",
+      "on_slide": true,
+      "evidence": "test-results/space-apps-python.xml",
+      "checks": [
+        {
+          "junit_min_tests": 700,
+          "observed": {
+            "tests": 700,
+            "failures": 0,
+            "errors": 0,
+            "skipped": 0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "reason": ""
+    },
+    {
+      "id": "unreal_live_storm",
+      "text_en": "Live in Unreal: the real storm alarm reaches the astronaut and the red line shrinks (C1)",
+      "on_slide": false,
+      "evidence": "test-results/c1-live-unreal/capture.json",
+      "checks": [],
+      "passed": false,
+      "reason": "evidence missing: test-results/c1-live-unreal/capture.json"
+    }
+  ],
+  "checked_at_utc": "2026-11-15T10:39:16+00:00",
+  "claims_file": "config/space_apps_claims.yaml"
+}

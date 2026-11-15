@@ -1,0 +1,27 @@
+# S4c: counterfactual of S4 (D015). Same precursor, no hidden obstacle: plan v1 must be kept.
+provenance_status: SCENARIO
+note: >-
+  Identical to S4_BLOCKED_CORRIDOR except truth_file has no obstacle. A replan here would mean
+  the precursor changes plans without cause; the expected record is "route clear, plan kept".
+id: S4c_CLEAR_CORRIDOR
+site: BXW
+seed: 4
+time_scale: 60
+start:
+  historical_utc: "2024-05-21T04:00:00Z"
+  pet_min: 0
+initial_phase: BRIEFING
+crew: [EV1, EV2]
+crew_trail_s: {EV2: 20}
+suit_profile: default
+plan: {objective: SCIENCE, max_duration_min: 300}
+precursor: {vehicle_id: scout_1}
+truth_file: data/derived/BXW/scenario/scenario_rocks_4c.json
+replay:
+  rad: {sols: [4190, 4191], detector: E}
+events: []
+expected:
+  - {rule: FR-01, must_hold: true}
+  - {rule: FR-04, must_hold: true}
+  - {rule: FR-05, must_hold: true}
+  - {rule: FR-12, must_hold: true}

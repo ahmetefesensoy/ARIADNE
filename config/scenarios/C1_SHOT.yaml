@@ -1,0 +1,26 @@
+# C1_SHOT: film take of C1. Egress 05:19:50 UTC so the real alarm (05:21:50) lands 2.0 min in;
+# dose data unshifted, x1. Presentation take only; acceptance evidence stays C1.
+# C1: a short playable chapter around the real sol 4190 SEP (council 2026-11-15; proje.md §16).
+provenance_status: SCENARIO
+note: >-
+  The player (EV1, Unreal-driven, x1 per D015) egresses at historical 05:10:00 UTC, so the first
+  ARCHIVE RAD E alarm at 2024-05-20 05:21:50 UTC (docs/verification/T6_RAD.json) arrives at PET
+  11.8 min, inside a short session; the dose data is not shifted. The Sun is high then (about 60
+  degrees), so the alarm beat comes from sound and HUD, not light. For the red line to bind, the
+  science stop should sit in the 12-18 min risk-adjusted return band, 280-454 m (p10-p90) from the
+  habitat on the real grid (docs/verification/CHAPTER_REACH.json); stops 16-31 m out never meet FR-03.
+  Crew, timing and target placement are scenario choices.
+id: C1_SHOT
+site: BXW
+seed: 42
+time_scale: 1
+start:
+  historical_utc: "2024-05-20T05:19:50Z"
+  pet_min: 0
+crew: [EV1]
+suit_profile: default
+replay:
+  rad: {sols: [4189, 4190, 4191], detector: E}
+events: []
+expected:
+  - {rule: FR-04, must_hold: true}

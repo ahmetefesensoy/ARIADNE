@@ -1,0 +1,51 @@
+{
+ "schema": "redline.t6_spice_verification.v1",
+ "table": "data/env/sun_BXW_2024-05-19_22.csv",
+ "sidecar": {
+  "schema": "redline.sun_table.v1",
+  "status": "DERIVED",
+  "site_id": "BXW",
+  "site": {
+   "lat_deg": -4.805,
+   "lon_east_deg": 137.37,
+   "radius_m": 3396190.0
+  },
+  "utc_range": [
+   "2024-05-19T12:00:00+00:00",
+   "2024-05-22T12:00:00+00:00"
+  ],
+  "step_s": 60.0,
+  "rows": 4321,
+  "kernels": {
+   "naif0012.tls": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b",
+   "pck00011.tpc": "3dff7b1dbeceaa01f25467767d3fa25816051c85d162d1edf04acb310ee28bb1",
+   "de440s.bsp": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2"
+  },
+  "method": "proje.md \u00a76.4 with observer MARS BARYCENTER (de440s has no 499): spkpos SUN J2000 LT+S rotated by pxform J2000->IAU_MARS at et; latrec sphere; ENU az/el; spkpos EARTH J2000 NONE light time",
+  "horizon": "geometric (elevation 0); terrain horizon needs the horizon cube",
+  "csv_sha256": "73a217a9a8b1bb75accd3ff126cae69dbfb67b7131272bc6aec5796f336609e9"
+ },
+ "checks": [
+  {
+   "check": "LMST vs RAD START_OBS_MARS (sol 4190, all observations)",
+   "n": 258,
+   "mean_s": 39.71977433367052,
+   "max_abs_s": 58.12462987618346,
+   "pass": true
+  },
+  {
+   "check": "noon: maximum elevation near LMST 12:00 with the Sun due north or south",
+   "elevation_deg": 70.1348,
+   "azimuth_deg": 180.153,
+   "lmst": "12:00:50",
+   "pass": true
+  },
+  {
+   "check": "sunset after the S1 EVA start",
+   "utc": "2024-05-20T13:00:56.537937+00:00",
+   "lmst": "18:09:38",
+   "pass": true
+  }
+ ],
+ "all_pass": true
+}

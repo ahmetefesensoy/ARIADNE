@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+"""env_server entry point. Launch files run it with the REDLINE venv Python (D009)."""
+from redline_env.env_server import main
+
+main()

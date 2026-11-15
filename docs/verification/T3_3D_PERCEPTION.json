@@ -1,0 +1,268 @@
+{
+  "schema": "redline.t3.perception-commissioning.v1",
+  "created_at_utc": "2026-11-14T17:36:11.712464+00:00",
+  "status": "SIMULATED",
+  "stationary_low_object_detection_passed": true,
+  "full_low_object_navigation_passed": false,
+  "stationary_result": {
+    "created_at_utc": "2026-11-14T17:33:03.335279+00:00",
+    "evaluation_only": true,
+    "passed": true,
+    "raw_cloud_count": 18,
+    "valid_segmentations": 18,
+    "invalid_reasons": {},
+    "max_ground_points": 5357,
+    "max_obstacle_points": 83,
+    "max_processing_ms": 66.76807999997436,
+    "low_fixture_returns": 44,
+    "raw_2d_finite_max": 0,
+    "raw_dimensions": [
+      360,
+      32
+    ],
+    "raw_z_extent_m": [
+      -4.223454475402832,
+      -0.13079971075057983
+    ],
+    "fixture_points_sensor_xyz_m": [
+      [
+        4.47539758682251,
+        -0.4321538805961609,
+        -1.9438554048538208
+      ],
+      [
+        4.477772235870361,
+        -0.3534082770347595,
+        -1.9419025182724
+      ],
+      [
+        4.490634918212891,
+        -0.2754402756690979,
+        -1.9450920820236206
+      ],
+      [
+        4.484214782714844,
+        -0.19634534418582916,
+        -1.9405254125595093
+      ],
+      [
+        4.480644702911377,
+        -0.11767097562551498,
+        -1.937792181968689
+      ],
+      [
+        4.478931903839111,
+        -0.039210107177495956,
+        -1.9364581108093262
+      ],
+      [
+        4.500936985015869,
+        0.039374254643917084,
+        -1.9459718465805054
+      ],
+      [
+        4.480332374572754,
+        0.11763440072536469,
+        -1.9376568794250488
+      ],
+      [
+        4.491386890411377,
+        0.19663086533546448,
+        -1.9436284303665161
+      ],
+      [
+        4.481344223022461,
+        0.27484190464019775,
+        -1.9410669803619385
+      ],
+      [
+        4.488051414489746,
+        0.35419097542762756,
+        -1.9463595151901245
+      ],
+      [
+        4.499234676361084,
+        0.43442684412002563,
+        -1.9542077779769897
+      ],
+      [
+        4.7233357429504395,
+        -0.4560953378677368,
+        -1.8634580373764038
+      ],
+      [
+        4.751211643218994,
+        -0.37498947978019714,
+        -1.8715792894363403
+      ],
+      [
+        4.732207298278809,
+        -0.2902574837207794,
+        -1.8618067502975464
+      ],
+      [
+        4.735804557800293,
+        -0.20736141502857208,
+        -1.8615089654922485
+      ],
+      [
+        4.744414329528809,
+        -0.12459811568260193,
+        -1.8637505769729614
+      ],
+      [
+        4.727088451385498,
+        -0.0413825549185276,
+        -1.8563754558563232
+      ],
+      [
+        4.723907470703125,
+        0.04132480174303055,
+        -1.855126142501831
+      ],
+      [
+        4.738095283508301,
+        0.12440215051174164,
+        -1.8612676858901978
+      ]
+    ],
+    "last_plane_z_abc": [
+      0.01794927453879728,
+      0.0032699849029009798,
+      -2.2980352531790276
+    ],
+    "last_fit_rms_m": 0.028037923403218964,
+    "limits": [
+      "Stationary low SCENARIO box detection, not general terrain classification or autonomous avoidance.",
+      "Expected box region is used only here for evaluation, never in the segmentation node."
+    ]
+  },
+  "stationary_runtime": "test-results/t3-runtime-rBwIyXYE",
+  "terrain": "Verified T1 BXW collision mesh",
+  "fixture": "SCENARIO 1 x 1 x .4 m; centred 5 m forward on collision triangle, nominal .05 m embedded",
+  "core_source_snapshots": [
+    {
+      "path": "docs/verification/source-metadata/T3_ground_131307b2fb8b.py",
+      "sha256": "131307b2fb8b2096af0a2fb07a269071277c206214ae747bef0152cf3f680dc6"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "test-results/t3-runtime-rBwIyXYE/result.json",
+      "sha256": "eabc1cd320ab6ac6ac3461db1cfd1817d2dbb793e444edec951e25e818d11bf3"
+    },
+    {
+      "path": "test-results/t3-runtime-rBwIyXYE/perception-result.json",
+      "sha256": "1e475ac83d9bc58bf9e7e0c1c70478f2841b091e95b83855b8ba700831099adf"
+    },
+    {
+      "path": "test-results/t3-runtime-rBwIyXYE/perception-result.npz",
+      "sha256": "9e5b8bccb2adbfc94f4f52cac8c8f8fc2f1189454427c2d894ee125cb4ee3b58"
+    },
+    {
+      "path": "test-results/t3-runtime-rBwIyXYE/rover-geometry.json",
+      "sha256": "b29fa96ae31588a5dc33c1e5e7ba0d2699a9261d985ce43aa9d6aeb0d92add0f"
+    },
+    {
+      "path": "test-results/t3-runtime-rBwIyXYE/nav2-delivered.yaml",
+      "sha256": "c366a90665ca70920940954822df39da75e204569a518dfeaa3543951028da32"
+    },
+    {
+      "path": "test-results/t3-runtime-rBwIyXYE/bxw.sdf",
+      "sha256": "275cc356ef68acda4ed6ece84e493c958b49500e1b52459d59b98e9685c41e14"
+    }
+  ],
+  "failed_navigation_attempts": [
+    {
+      "run": "test-results/t3-runtime-8O2IQ2ZF",
+      "controller": "mppi",
+      "started_at_utc": "2026-11-14T17:17:45.132407+00:00",
+      "passed": false,
+      "action_status": 6,
+      "physical_displacement_m": 9.838364773817299e-05,
+      "error": "Nav2 result/position/displacement gate failed",
+      "evidence": [
+        {
+          "path": "test-results/t3-runtime-8O2IQ2ZF/result.json",
+          "sha256": "7fdcf5dbb83afa547b117c0abb0acd8925599806c1cf00a43415a28475f2326f"
+        },
+        {
+          "path": "test-results/t3-runtime-8O2IQ2ZF/navigation_result.json",
+          "sha256": "06a4f1b4e4f22ef8fe076131eacd54e4b5f306d2348bc1becbac40cfaf1dc1f6"
+        },
+        {
+          "path": "test-results/t3-runtime-8O2IQ2ZF/perception.log",
+          "sha256": "d09bfcdb8fd4a5e51cbe4ac71aa20373d5155235d345843d4986ee0ae52df4cd"
+        }
+      ]
+    },
+    {
+      "run": "test-results/t3-runtime-vSXPwYoI",
+      "controller": "mppi",
+      "started_at_utc": "2026-11-14T17:23:09.960222+00:00",
+      "passed": false,
+      "action_status": 6,
+      "physical_displacement_m": 3.7959558499202006,
+      "error": "Nav2 result/position/displacement gate failed",
+      "evidence": [
+        {
+          "path": "test-results/t3-runtime-vSXPwYoI/result.json",
+          "sha256": "921f2d3d2a7d69b72ef20ac941c122ac5e04c6c12e2485eada0b28a1bc8286d8"
+        },
+        {
+          "path": "test-results/t3-runtime-vSXPwYoI/navigation_result.json",
+          "sha256": "56e109e82a62ec590e1d19f5ac0d523cf262ad0bdc32cca1d390d016874ba063"
+        },
+        {
+          "path": "test-results/t3-runtime-vSXPwYoI/perception.log",
+          "sha256": "bf5af9fd37abbcb134058e7e42cfd1922b50cd7eb5ea688621574f797fa64c21"
+        }
+      ]
+    },
+    {
+      "run": "test-results/t3-runtime-ayn453t9",
+      "controller": "rpp",
+      "started_at_utc": "2026-11-14T17:30:07.620688+00:00",
+      "passed": false,
+      "action_status": 6,
+      "physical_displacement_m": 3.9763021141316615,
+      "error": "Nav2 result/position/displacement gate failed",
+      "evidence": [
+        {
+          "path": "test-results/t3-runtime-ayn453t9/result.json",
+          "sha256": "60f685048e2db0f7f534d76837e16a36fab3f64feedfc2c92fc6485ee48626e2"
+        },
+        {
+          "path": "test-results/t3-runtime-ayn453t9/navigation_result.json",
+          "sha256": "f8b8ded4d51de22faf7fee9e4921246faf1c3cb12d2b47d00213021cbfe63d0d"
+        },
+        {
+          "path": "test-results/t3-runtime-ayn453t9/perception.log",
+          "sha256": "3f30e6d38bdbdffc8a9394877ebcb38a20cebfcb33ac2cb996d90222fcdf7aa5"
+        }
+      ]
+    }
+  ],
+  "tests": {
+    "ros_build": "test-results/t3-build-IsT2aCpf",
+    "records": 76,
+    "actual_cases": 65,
+    "ctest_wrappers": 11,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "pure_core_plus_geometry_cases": 13,
+    "core_junit": {
+      "path": "test-results/t3-ground-core.xml",
+      "sha256": "619909362b55d830a08ce9f8a63933f56e90c3118870b4ae62e0299ecc4fa691"
+    }
+  },
+  "limits": [
+    "Low-object full navigation failed; profile is optional/experimental and does not replace the accepted 2D MPPI default.",
+    "Local observed plane patches and SCENARIO thresholds do not validate general terrain traversability, holes, cliffs or broad raised platforms.",
+    "Unknown return classifications are not certified free space; ground support can be occluded by the staged self envelope.",
+    "A single low box is not a natural-rock detection campaign.",
+    "Actual 50 Hz joint publication observed: 1240 joint samples alongside 124 raw 5 Hz clouds in ayn453t9.",
+    "Gazebo bounded shutdown required; process cleanliness is tracked separately."
+  ]
+}

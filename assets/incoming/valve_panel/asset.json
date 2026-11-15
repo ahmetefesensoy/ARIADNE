@@ -1,0 +1,750 @@
+{
+  "asset_id": "valve_panel",
+  "prepared_utc": "2026-11-14T12:08:46.295751+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\valve_panel\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        -0.06000000238418579
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.22000008821487427,
+      1.0,
+      0.800000011920929
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_valve_panel_aruco_10_LOD0",
+      "source_name": "aruco_10",
+      "source_parent": "",
+      "pivot_m": [
+        -0.04725002497434616,
+        -0.36000001430511475,
+        0.6200000047683716
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_aruco_11_LOD0",
+      "source_name": "aruco_11",
+      "source_parent": "",
+      "pivot_m": [
+        -0.04724997282028198,
+        0.36000001430511475,
+        0.6200000047683716
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_body_panel_LOD0",
+      "source_name": "body_panel",
+      "source_parent": "",
+      "pivot_m": [
+        -0.08000000566244125,
+        0.0,
+        0.4000000059604645
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_gauge_LOD0",
+      "source_name": "gauge",
+      "source_parent": "",
+      "pivot_m": [
+        -0.023000000044703484,
+        -3.725290298461914e-09,
+        0.699999988079071
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_gauge_needle_LOD0",
+      "source_name": "gauge_needle",
+      "source_parent": "",
+      "pivot_m": [
+        -0.010000001639127731,
+        -3.774895063202166e-09,
+        0.699999988079071
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_pipes_LOD0",
+      "source_name": "pipes",
+      "source_parent": "",
+      "pivot_m": [
+        -1.1175870895385742e-08,
+        0.0,
+        0.3700000047683716
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_valve_1_LOD0",
+      "source_name": "valve_1",
+      "source_parent": "",
+      "pivot_m": [
+        0.09999997168779373,
+        -0.30000001192092896,
+        0.5
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_valve_2_LOD0",
+      "source_name": "valve_2",
+      "source_parent": "",
+      "pivot_m": [
+        0.09999999403953552,
+        -1.2079663491704196e-08,
+        0.5
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_valve_panel_valve_3_LOD0",
+      "source_name": "valve_3",
+      "source_parent": "",
+      "pivot_m": [
+        0.10000001639127731,
+        0.30000001192092896,
+        0.5
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 3104,
+    "materials": 7,
+    "parts": [
+      {
+        "name": "aruco_10",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "aruco_11",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "body_panel",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "gauge",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "gauge_needle",
+        "triangles": 12,
+        "vertices": 24,
+        "uv_layers": 1,
+        "non_manifold_edges": 24
+      },
+      {
+        "name": "pipes",
+        "triangles": 540,
+        "vertices": 864,
+        "uv_layers": 1,
+        "non_manifold_edges": 864
+      },
+      {
+        "name": "valve_1",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      },
+      {
+        "name": "valve_2",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      },
+      {
+        "name": "valve_3",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 3104,
+    "materials": 7,
+    "parts": [
+      {
+        "name": "SM_valve_panel_aruco_10_LOD0",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "SM_valve_panel_aruco_11_LOD0",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "SM_valve_panel_body_panel_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_valve_panel_gauge_LOD0",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "SM_valve_panel_gauge_needle_LOD0",
+        "triangles": 12,
+        "vertices": 24,
+        "uv_layers": 1,
+        "non_manifold_edges": 24
+      },
+      {
+        "name": "SM_valve_panel_pipes_LOD0",
+        "triangles": 540,
+        "vertices": 864,
+        "uv_layers": 1,
+        "non_manifold_edges": 864
+      },
+      {
+        "name": "SM_valve_panel_valve_1_LOD0",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      },
+      {
+        "name": "SM_valve_panel_valve_2_LOD0",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      },
+      {
+        "name": "SM_valve_panel_valve_3_LOD0",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 1572,
+      "materials": 7,
+      "parts": [
+        {
+          "name": "SM_valve_panel_aruco_10_LOD1",
+          "triangles": 14,
+          "vertices": 28,
+          "uv_layers": 1,
+          "non_manifold_edges": 28
+        },
+        {
+          "name": "SM_valve_panel_aruco_11_LOD1",
+          "triangles": 14,
+          "vertices": 28,
+          "uv_layers": 1,
+          "non_manifold_edges": 28
+        },
+        {
+          "name": "SM_valve_panel_body_panel_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 30
+        },
+        {
+          "name": "SM_valve_panel_gauge_LOD1",
+          "triangles": 92,
+          "vertices": 196,
+          "uv_layers": 1,
+          "non_manifold_edges": 172
+        },
+        {
+          "name": "SM_valve_panel_gauge_needle_LOD1",
+          "triangles": 12,
+          "vertices": 24,
+          "uv_layers": 1,
+          "non_manifold_edges": 24
+        },
+        {
+          "name": "SM_valve_panel_pipes_LOD1",
+          "triangles": 270,
+          "vertices": 594,
+          "uv_layers": 1,
+          "non_manifold_edges": 543
+        },
+        {
+          "name": "SM_valve_panel_valve_1_LOD1",
+          "triangles": 386,
+          "vertices": 986,
+          "uv_layers": 1,
+          "non_manifold_edges": 872
+        },
+        {
+          "name": "SM_valve_panel_valve_2_LOD1",
+          "triangles": 386,
+          "vertices": 986,
+          "uv_layers": 1,
+          "non_manifold_edges": 869
+        },
+        {
+          "name": "SM_valve_panel_valve_3_LOD1",
+          "triangles": 386,
+          "vertices": 986,
+          "uv_layers": 1,
+          "non_manifold_edges": 877
+        }
+      ]
+    },
+    "2": {
+      "triangles": 806,
+      "materials": 7,
+      "parts": [
+        {
+          "name": "SM_valve_panel_aruco_10_LOD2",
+          "triangles": 14,
+          "vertices": 28,
+          "uv_layers": 1,
+          "non_manifold_edges": 28
+        },
+        {
+          "name": "SM_valve_panel_aruco_11_LOD2",
+          "triangles": 14,
+          "vertices": 28,
+          "uv_layers": 1,
+          "non_manifold_edges": 28
+        },
+        {
+          "name": "SM_valve_panel_body_panel_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 22
+        },
+        {
+          "name": "SM_valve_panel_gauge_LOD2",
+          "triangles": 46,
+          "vertices": 150,
+          "uv_layers": 1,
+          "non_manifold_edges": 116
+        },
+        {
+          "name": "SM_valve_panel_gauge_needle_LOD2",
+          "triangles": 12,
+          "vertices": 24,
+          "uv_layers": 1,
+          "non_manifold_edges": 24
+        },
+        {
+          "name": "SM_valve_panel_pipes_LOD2",
+          "triangles": 135,
+          "vertices": 459,
+          "uv_layers": 1,
+          "non_manifold_edges": 351
+        },
+        {
+          "name": "SM_valve_panel_valve_1_LOD2",
+          "triangles": 193,
+          "vertices": 793,
+          "uv_layers": 1,
+          "non_manifold_edges": 577
+        },
+        {
+          "name": "SM_valve_panel_valve_2_LOD2",
+          "triangles": 193,
+          "vertices": 793,
+          "uv_layers": 1,
+          "non_manifold_edges": 572
+        },
+        {
+          "name": "SM_valve_panel_valve_3_LOD2",
+          "triangles": 193,
+          "vertices": 793,
+          "uv_layers": 1,
+          "non_manifold_edges": 576
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 3104,
+    "materials": 7,
+    "parts": [
+      {
+        "name": "SM_valve_panel_aruco_10_Gazebo",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "SM_valve_panel_aruco_11_Gazebo",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "SM_valve_panel_body_panel_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_valve_panel_gauge_Gazebo",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "SM_valve_panel_gauge_needle_Gazebo",
+        "triangles": 12,
+        "vertices": 24,
+        "uv_layers": 1,
+        "non_manifold_edges": 24
+      },
+      {
+        "name": "SM_valve_panel_pipes_Gazebo",
+        "triangles": 540,
+        "vertices": 864,
+        "uv_layers": 1,
+        "non_manifold_edges": 864
+      },
+      {
+        "name": "SM_valve_panel_valve_1_Gazebo",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      },
+      {
+        "name": "SM_valve_panel_valve_2_Gazebo",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      },
+      {
+        "name": "SM_valve_panel_valve_3_Gazebo",
+        "triangles": 772,
+        "vertices": 1372,
+        "uv_layers": 1,
+        "non_manifold_edges": 1372
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "aruco_10",
+      "path": "textures/aruco_10.png",
+      "width": 640,
+      "height": 640,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "aruco_11",
+      "path": "textures/aruco_11.png",
+      "width": 640,
+      "height": 640,
+      "colorspace": "sRGB"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\valve_panel_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only.",
+    "ArUco detection was verified on the source PNGs only; in-engine camera detection is NOT_RUN."
+  ],
+  "generator": {
+    "asset_id": "valve_panel",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      1.0,
+      0.2200000174343586,
+      0.800000011920929
+    ],
+    "parts": [
+      {
+        "name": "body_panel",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "pipes",
+        "triangles": 540,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "valve_1",
+        "triangles": 772,
+        "suggested_source_pivot": [
+          -0.3,
+          -0.16,
+          0.5
+        ]
+      },
+      {
+        "name": "valve_2",
+        "triangles": 772,
+        "suggested_source_pivot": [
+          0.0,
+          -0.16,
+          0.5
+        ]
+      },
+      {
+        "name": "valve_3",
+        "triangles": 772,
+        "suggested_source_pivot": [
+          0.3,
+          -0.16,
+          0.5
+        ]
+      },
+      {
+        "name": "gauge",
+        "triangles": 184,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "gauge_needle",
+        "triangles": 12,
+        "suggested_source_pivot": [
+          0.0,
+          -0.05,
+          0.7
+        ]
+      },
+      {
+        "name": "aruco_10",
+        "triangles": 14,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "aruco_11",
+        "triangles": 14,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Habitat service-line valve panel (kılavuz H06, optional Evre 5 sub-task: ArUco ID + arm action)",
+    "notes": "Handwheels and gauge needle rotate about the panel normal (master +X). ArUco plates carry the exact OpenCV pattern; keep the texture unfiltered/uncompressed so the bit cells stay sharp.",
+    "aruco": {
+      "dictionary": "DICT_4X4_50",
+      "marker_size_m": 0.15,
+      "plate_size_m": 0.19999999999999998,
+      "cell_size_m": 0.024999999999999998,
+      "quiet_zone_cells": 1,
+      "opencv": "5.0.0",
+      "markers": [
+        {
+          "id": 10,
+          "png": "incoming/valve_panel/textures_src/aruco_10.png",
+          "sha256": "230ead5a979aa162d4a3364fd5b15b34747504c1aa3f481e434e75ec65f614d3",
+          "pixels": 640,
+          "redetected_ids": [
+            10
+          ]
+        },
+        {
+          "id": 11,
+          "png": "incoming/valve_panel/textures_src/aruco_11.png",
+          "sha256": "f126ee50cb4569ecab23523f49df6d4733d40ab21568dd4567f42e3afb5deb20",
+          "pixels": 640,
+          "redetected_ids": [
+            11
+          ]
+        }
+      ]
+    }
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 1.0,
+    "lod0": 3104,
+    "gazebo": 3104,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 9,
+    "triangles": 3104,
+    "dimensions_m": [
+      0.22000008821487427,
+      1.0,
+      0.800000011920929
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [
+      {
+        "part": "SM_valve_panel_gauge_needle_LOD0",
+        "axis": "X",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.07436736029318232
+      },
+      {
+        "part": "SM_valve_panel_valve_1_LOD0",
+        "axis": "X",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.10465185164285741
+      },
+      {
+        "part": "SM_valve_panel_valve_2_LOD0",
+        "axis": "X",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.10465185831729172
+      },
+      {
+        "part": "SM_valve_panel_valve_3_LOD0",
+        "axis": "X",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.1046518538676689
+      }
+    ],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 9,
+      "dimensions_m": [
+        0.22000005841255188,
+        1.0,
+        0.800000011920929
+      ],
+      "max_dimension_error_m": 2.9802322387695312e-08
+    },
+    "obj_reimport": {
+      "mesh_count": 9,
+      "dimensions_m": [
+        0.22000008821487427,
+        1.0,
+        0.800000011920929
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

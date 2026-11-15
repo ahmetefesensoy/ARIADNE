@@ -1,0 +1,567 @@
+{
+  "asset_id": "station_marker",
+  "prepared_utc": "2026-11-14T12:07:31.675328+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\station_marker\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.11249998211860657
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        -0.035144269466400146
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.009370490908622742
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.7350000143051147,
+      0.909711480140686,
+      1.7843704223632812
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_station_marker_beacon_LOD0",
+      "source_name": "beacon",
+      "source_parent": "",
+      "pivot_m": [
+        0.11249998211860657,
+        -0.035144269466400146,
+        1.7493704557418823
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_station_marker_body_pole_LOD0",
+      "source_name": "body_pole",
+      "source_parent": "",
+      "pivot_m": [
+        0.11249998211860657,
+        -0.035144269466400146,
+        0.8593704700469971
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_station_marker_flag_LOD0",
+      "source_name": "flag",
+      "source_parent": "",
+      "pivot_m": [
+        0.11250000447034836,
+        0.20985573530197144,
+        1.488370418548584
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_station_marker_id_plate_LOD0",
+      "source_name": "id_plate",
+      "source_parent": "",
+      "pivot_m": [
+        0.1369999796152115,
+        -0.035144269466400146,
+        1.1293704509735107
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_station_marker_leg_1_LOD0",
+      "source_name": "leg_1",
+      "source_parent": "",
+      "pivot_m": [
+        -0.12375184148550034,
+        -0.03514423593878746,
+        0.1893705129623413
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_station_marker_leg_2_LOD0",
+      "source_name": "leg_2",
+      "source_parent": "",
+      "pivot_m": [
+        0.234562948346138,
+        -0.24068889021873474,
+        0.1893705129623413
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_station_marker_leg_3_LOD0",
+      "source_name": "leg_3",
+      "source_parent": "",
+      "pivot_m": [
+        0.2345629781484604,
+        0.17040032148361206,
+        0.1893705129623413
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 1108,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "beacon",
+        "triangles": 528,
+        "vertices": 1104,
+        "uv_layers": 1,
+        "non_manifold_edges": 1104
+      },
+      {
+        "name": "body_pole",
+        "triangles": 92,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "flag",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      },
+      {
+        "name": "id_plate",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "leg_1",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "leg_2",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "leg_3",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 1108,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_station_marker_beacon_LOD0",
+        "triangles": 528,
+        "vertices": 1104,
+        "uv_layers": 1,
+        "non_manifold_edges": 1104
+      },
+      {
+        "name": "SM_station_marker_body_pole_LOD0",
+        "triangles": 92,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "SM_station_marker_flag_LOD0",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      },
+      {
+        "name": "SM_station_marker_id_plate_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_station_marker_leg_1_LOD0",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_station_marker_leg_2_LOD0",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_station_marker_leg_3_LOD0",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 554,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_station_marker_beacon_LOD1",
+          "triangles": 264,
+          "vertices": 840,
+          "uv_layers": 1,
+          "non_manifold_edges": 696
+        },
+        {
+          "name": "SM_station_marker_body_pole_LOD1",
+          "triangles": 46,
+          "vertices": 98,
+          "uv_layers": 1,
+          "non_manifold_edges": 93
+        },
+        {
+          "name": "SM_station_marker_flag_LOD1",
+          "triangles": 28,
+          "vertices": 68,
+          "uv_layers": 1,
+          "non_manifold_edges": 64
+        },
+        {
+          "name": "SM_station_marker_id_plate_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 31
+        },
+        {
+          "name": "SM_station_marker_leg_1_LOD1",
+          "triangles": 68,
+          "vertices": 148,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        },
+        {
+          "name": "SM_station_marker_leg_2_LOD1",
+          "triangles": 68,
+          "vertices": 148,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        },
+        {
+          "name": "SM_station_marker_leg_3_LOD1",
+          "triangles": 68,
+          "vertices": 148,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        }
+      ]
+    },
+    "2": {
+      "triangles": 277,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_station_marker_beacon_LOD2",
+          "triangles": 132,
+          "vertices": 708,
+          "uv_layers": 1,
+          "non_manifold_edges": 504
+        },
+        {
+          "name": "SM_station_marker_body_pole_LOD2",
+          "triangles": 23,
+          "vertices": 75,
+          "uv_layers": 1,
+          "non_manifold_edges": 59
+        },
+        {
+          "name": "SM_station_marker_flag_LOD2",
+          "triangles": 14,
+          "vertices": 54,
+          "uv_layers": 1,
+          "non_manifold_edges": 42
+        },
+        {
+          "name": "SM_station_marker_id_plate_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 22
+        },
+        {
+          "name": "SM_station_marker_leg_1_LOD2",
+          "triangles": 34,
+          "vertices": 114,
+          "uv_layers": 1,
+          "non_manifold_edges": 88
+        },
+        {
+          "name": "SM_station_marker_leg_2_LOD2",
+          "triangles": 34,
+          "vertices": 114,
+          "uv_layers": 1,
+          "non_manifold_edges": 87
+        },
+        {
+          "name": "SM_station_marker_leg_3_LOD2",
+          "triangles": 34,
+          "vertices": 114,
+          "uv_layers": 1,
+          "non_manifold_edges": 87
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 1108,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_station_marker_beacon_Gazebo",
+        "triangles": 528,
+        "vertices": 1104,
+        "uv_layers": 1,
+        "non_manifold_edges": 1104
+      },
+      {
+        "name": "SM_station_marker_body_pole_Gazebo",
+        "triangles": 92,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 144
+      },
+      {
+        "name": "SM_station_marker_flag_Gazebo",
+        "triangles": 56,
+        "vertices": 96,
+        "uv_layers": 1,
+        "non_manifold_edges": 96
+      },
+      {
+        "name": "SM_station_marker_id_plate_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_station_marker_leg_1_Gazebo",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_station_marker_leg_2_Gazebo",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_station_marker_leg_3_Gazebo",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 4,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\station_marker_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "station_marker",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      0.9097114503383636,
+      0.7349999845027924,
+      1.7843704670667648
+    ],
+    "parts": [
+      {
+        "name": "leg_1",
+        "triangles": 136,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "leg_2",
+        "triangles": 136,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "leg_3",
+        "triangles": 136,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "body_pole",
+        "triangles": 92,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "flag",
+        "triangles": 56,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "id_plate",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "beacon",
+        "triangles": 528,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Station flag / survey marker (proje kılavuzu M10 'istasyon bayrağı')",
+    "notes": "Blank ID plate: station number is shown with an Unreal decal or text render."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 1.7843704223632812,
+    "lod0": 1108,
+    "gazebo": 1108,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 7,
+    "triangles": 1108,
+    "dimensions_m": [
+      0.7350000143051147,
+      0.909711480140686,
+      1.7843704223632812
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 7,
+      "dimensions_m": [
+        0.7350000143051147,
+        0.909711480140686,
+        1.7843704223632812
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "obj_reimport": {
+      "mesh_count": 7,
+      "dimensions_m": [
+        0.7350000143051147,
+        0.909711480140686,
+        1.7843704223632812
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

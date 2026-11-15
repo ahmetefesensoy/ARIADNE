@@ -1,0 +1,59 @@
+{
+  "evidence_id": "ev-20261115T062406Z-BXW_CAMPAIGN-15-fe7a804b6da3a83d",
+  "input_ids": [
+    "scenario-BXW-20261115-ridge-a",
+    "config/targets_BXW.yaml"
+  ],
+  "instrument": "LIBS",
+  "instrument_point_m": [
+    -33.412112573830406,
+    -382.00583877612456,
+    -3595.54057883923
+  ],
+  "integration_s": 20.0,
+  "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed",
+  "measured_utc": "2026-11-15T06:29:58.891996+00:00",
+  "measurement": {
+    "input_ids": [
+      "scenario-BXW-20261115-ridge-a",
+      "config/targets_BXW.yaml"
+    ],
+    "integration_s": 20.0,
+    "labels": [
+      "Al2O3",
+      "CaO",
+      "FeO",
+      "MgO",
+      "SiO2"
+    ],
+    "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed",
+    "noise_calibration": "UNCALIBRATED_SCENARIO",
+    "seed": 20261115,
+    "sigma": [
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4
+    ],
+    "unit": "mass_percent_SCENARIO",
+    "values": [
+      11.682942528767647,
+      6.431813261891232,
+      18.88279634872218,
+      5.050483451212558,
+      45.21215440851877
+    ]
+  },
+  "product_id": "sim-libs-20261115T062406Z-BXW_CAMPAIGN-15-fe7a804b6da3a83d",
+  "provenance_status": "SIMULATED",
+  "request_id": "integration-6-12",
+  "run_id": "20261115T062406Z-BXW_CAMPAIGN-15",
+  "schema": "redline.science.product.v1",
+  "target_id": "BXW_RIDGE_A",
+  "target_point_m": [
+    -30.0,
+    -382.0,
+    -3595.6417233867187
+  ]
+}

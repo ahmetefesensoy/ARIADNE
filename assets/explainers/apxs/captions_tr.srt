@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,000
+B1 · APXS ile temas bilimi
+
+2
+00:00:03,000 --> 00:00:07,000
+Ölçüm kafası kayaya yaklaşır.
+
+3
+00:00:07,000 --> 00:00:11,000
+Küryum-244 kaynakları kayayı alfa parçacığı ve X ışınıyla uyarır.
+
+4
+00:00:11,000 --> 00:00:15,000
+Atomlar kendine özgü X ışınıyla cevap verir; dedektör bunları sayar.
+
+5
+00:00:15,000 --> 00:00:19,000
+Temas iyileşince hata çubukları küçülür.
+
+6
+00:00:19,000 --> 00:00:24,000
+Gerçek APXS arşivi: 1 saat saymak hatayı yalnız ~%16 azaltır; iyi temas daha çok kazandırır.
+

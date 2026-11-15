@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-14T10:43:40.463217+00:00",
+  "entries": [
+    {
+      "key": "gale_dem_v3",
+      "product_id": "MSL_Gale_DEM_Mosaic_1m_v3",
+      "status": "DERIVED",
+      "source_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+      "final_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+      "checked_at": "2026-11-14T10:43:40.472653+00:00",
+      "http_status": 200,
+      "available": true,
+      "error": null,
+      "content_length": 3868256546,
+      "etag": "\"746836824e520f8f0a7fb3987bdef0ff-462\"",
+      "last_modified": "Wed, 09 Nov 2022 15:50:28 GMT",
+      "content_type": "image/tiff",
+      "unknown_fields": [
+        "horizontal_crs",
+        "vertical_datum",
+        "nodata",
+        "acquired_at",
+        "license",
+        "footprint",
+        "alignment"
+      ],
+      "metadata_verified": false,
+      "acquired_at": null,
+      "sha256": null,
+      "method": "HEAD"
+    },
+    {
+      "key": "hirise_dtm_bxw_019698",
+      "product_id": "DTEEC_019698_1750_019988_1750_U01",
+      "status": "DERIVED",
+      "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.tif",
+      "final_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.tif",
+      "checked_at": "2026-11-14T10:43:41.190320+00:00",
+      "http_status": 200,
+      "available": true,
+      "error": null,
+      "content_length": 265874780,
+      "etag": "\"d36cca32e3457b61a9db2c44a5cf3a70-32\"",
+      "last_modified": "Sat, 08 Jul 2023 00:46:10 GMT",
+      "content_type": "image/tiff",
+      "unknown_fields": [
+        "raster_valid_footprint",
+        "alignment",
+        "correlated_error",
+        "exact_areoid_model_realization"
+      ],
+      "metadata_verified": false,
+      "acquired_at": null,
+      "sha256": null,
+      "method": "HEAD"
+    }
+  ],
+  "schema_version": 1,
+  "ok": true,
+  "errors": []
+}

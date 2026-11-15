@@ -1,0 +1,185 @@
+# T3 diagnostic map/goal view; no scene or presentation design.
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Value: true
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 20
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Name: DEM slope occupancy map
+      Enabled: true
+      Alpha: 0.7
+      Draw Behind: true
+      Topic:
+        Value: /rover_1/map
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/RobotModel
+      Name: Rover
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /rover_1/robot_description
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+      TF Prefix: ""
+      Visual Enabled: true
+      Collision Enabled: false
+    - Class: rviz_default_plugins/LaserScan
+      Name: LiDAR
+      Enabled: true
+      Topic:
+        Value: /rover_1/scan
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+      Style: Spheres
+      Size (m): 0.12
+      Color Transformer: FlatColor
+      Color: 0; 255; 255
+      Decay Time: 0.3
+    - Class: rviz_default_plugins/Map
+      Name: Global costmap - sensed obstacles and inflation
+      Enabled: true
+      Color Scheme: costmap
+      Draw Behind: true
+      Alpha: 0.45
+      Topic:
+        Value: /rover_1/global_costmap/costmap
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/Map
+      Name: Local costmap - live LiDAR
+      Enabled: true
+      Color Scheme: costmap
+      Draw Behind: true
+      Alpha: 0.6
+      Topic:
+        Value: /rover_1/local_costmap/costmap
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/PointCloud2
+      Name: LiDAR points - optional 3D
+      Enabled: false
+      Topic:
+        Value: /rover_1/lidar/points
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+      Style: Points
+      Size (Pixels): 3
+      Color Transformer: FlatColor
+      Color: 0; 255; 255
+    - Class: rviz_default_plugins/Path
+      Name: Global plan
+      Enabled: true
+      Line Style: Billboards
+      Line Width: 0.12
+      Color: 0; 255; 0
+      Topic:
+        Value: /rover_1/plan
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Measured 3D LiDAR ground
+      Enabled: true
+      Topic:
+        Value: /rover_1/lidar/ground
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 2
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: FlatColor
+      Color: 110; 110; 110
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Measured 3D LiDAR obstacles
+      Enabled: true
+      Topic:
+        Value: /rover_1/lidar/obstacles
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 2
+      Style: Spheres
+      Size (m): 0.10
+      Color Transformer: FlatColor
+      Color: 255; 100; 0
+    - Class: rviz_default_plugins/Polygon
+      Name: Local footprint
+      Enabled: true
+      Color: 255; 255; 0
+      Topic:
+        Value: /rover_1/local_costmap/published_footprint
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 1
+    - Class: rviz_default_plugins/Polygon
+      Name: Collision stop zone
+      Enabled: true
+      Color: 255; 0; 0
+      Topic:
+        Value: /rover_1/collision_stop
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 1
+    - Class: rviz_default_plugins/Polygon
+      Name: Collision slowdown zone
+      Enabled: true
+      Color: 255; 165; 0
+      Topic:
+        Value: /rover_1/collision_slow
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        Depth: 1
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Axes: true
+      Show Names: true
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Value: /rover_1/goal_pose
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 1
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Value: TopDownOrtho (rviz_default_plugins)
+      Target Frame: map
+      Near Clip Distance: 0.01
+      Scale: 20
+      Angle: 0
+      X: 145
+      Y: -294
+Window Geometry:
+  X: 0
+  Y: 0
+  Width: 1280
+  Height: 800

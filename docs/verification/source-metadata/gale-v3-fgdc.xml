@@ -1,0 +1,242 @@
+<?xml version="1.0" ?>
+<metadata>
+   <file_identifier>USGS:0c7c5c57-2ad3-4d36-8e47-56bbb79d3377</file_identifier>
+   <idinfo>
+      <citation>
+         <citeinfo>
+            <origin>JPL-Caltech,NASA,USGS Astrogeology Science Center,University of Arizona</origin>
+            <originator/>
+            <pubdate>2016-10-20</pubdate>
+            <title>Mars MSL Gale Merged DEM 1m</title>
+            <edition>version 3</edition>
+            <geoform>Digital Elevation Model,Grey Scale,Landing Site Map,Remote-sensing Data,Topographic Map</geoform>
+            <serinfo>
+               <sername/>
+               <issue>Digital Elevation Model (DEM)</issue>
+            </serinfo>
+            <pubinfo>
+               <pubplace>Flagstaff, AZ</pubplace>
+               <publish>USGS Astrogeology Science Center</publish>
+            </pubinfo>
+            <onlink>https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m</onlink>
+         </citeinfo>
+      </citation>
+      <descript>
+         <abstract>[![CDATA[&lt;b&gt;Product Information:&lt;/b&gt;
+
+This digital elevation model (DEM) was initially created as an assessment tool for the entry, descent, and landing (EDL) analysis conducted by the Mars Science Laborarory (MSL) engineering team to assess Gale crater as a safe landing site for the rover. The DEM is built up from High Resolution Stereo Camera (HRSC), Mars Reconnaissance Orbiter (MRO) Context Camera (CTX), and High Resolution Imaging Science Experiment (HiRISE) DEMs all tied to a Mars Orbiter Laser Altimeter (MOLA) DEM.  Georeferencing was manually done from CTX to HRSC, then HiRISE to CTX or overlapping pre-georefererenced HiRISE.  Pixel resolution is one meter per pixel (m).
+
+DEMS were created using the following HiRISE stereo pairs (USGS processing designations/names in quotes):
+
+ESP_024234_1755, ESP_024300_1755 'West Gap'; PSP_009650_1755, PSP_009716_1755, 'West'; PSP_010573_1755, PSP_010639_1755, 'Center'; PSP_009505_1755, PSP_009571_1755, 'G2' (Landed in this stereo pair.); ESP_011417_1755, ESP_011562_1755, 'East'; ESP_018854_1755, ESP_018920_1755, 'West of Center'; ESP_023957_1755, ESP_024023_1755, 'Center Gap'; ESP_024102_1755, ESP_025368_1755, 'East Gap'; PSP_009149_1755, PSP_009294_1755, 'Traverse'; ESP_012551_1755, ESP_012841_1755, 'T2'; PSP_001488_1755, PSP_001752_1755, 'T1'; ESP_019698_1755, ESP_019988_1755, 'T3'
+
+&lt;b&gt;Mission and Instrument Information:&lt;/b&gt;
+
+Mars Global Surveyor was the first successful U.S. mission launched to Mars since the Viking mission in 1976 (Albee et al., 2001). After a 20-year absence at the planet, MGS launched on November 7, 1996 and ushered in a new era of Mars exploration with its five science investigations. The Mars Orbiter Laser Altimeter (MOLA) created the most accurate global topographic map of any planet in the solar system, giving scientists elevation maps precise to within about 30 centimeters (1 foot) in the vertical dimension. Data from the laser altimeter identified pathways for the flow of past water and the locations, sizes, and volumes of watersheds (NASA JPL, 2010).
+
+Mars Express is a mission of the European Space Agency (ESA) it launched in June 2003 onboard a Soyuz-Fregat launcher from the Baikonur Cosmodrome in Kazakhstan. The High-Resolution Stereo Camera (HRSC) is imaging the entire planet in full color, 3D and with a resolution of about 10 meters. Selected areas will be imaged at 2-meter resolution. One of the camera's greatest strengths will be the unprecedented pointing accuracy achieved by combining images at the two different resolutions. Another will be the 3D imaging which will reveal the topography of Mars in full color (ESA, 2010).
+
+Mars Reconnaissance Orbiter launched August 12, 2005 and arrived at Mars on March 10, 2006. The mission has shown unprecedented detail in orbital images of Mars. The Context Camera (CTX) is currently orbiting Mars and acquiring grayscale (black &amp; white) images at 6 meters per pixel scale over a swath 30 kilometers wide. The Hi Resolution Imaging Science Experiment (HiRISE camera) is a pushbroom imaging system featuring a 0.5 m aperture telescope with a 12 m focal effective length and 14 CCD detectors capable of generating images of up to 20,000 cross-scan observation pixels and 65,000 unbinned scan lines. The HiRISE instrument capabilities include the acquisition of observations of the Mars surface from orbit with a ground sampling dimension between 25 and 32 cm (PDS IMG, 2018a).
+
+The Mars Science Laboratory mission's Curiosity rover, the most technologically advanced rover ever built, landed in Mars' Gale Crater in August, 2012 using a series of complicated landing maneuvers never before attempted. The specialized landing sequence, which employed a giant parachute, a jet-controlled descent vehicle and a bungee-like apparatus called a &quot;sky crane,&quot; was devised because tested landing techniques used during previous rover missions could not safely accommodate the much larger and heavier rover (PDS IMG, 2018b; NASA, 2019).
+
+&lt;b&gt;Reference:&lt;/b&gt;
+
+Albee, A. L., et al. (2001). Overview of the Mars Global Surveyor mission. &lt;em&gt;Journal of Geophysical Research, 106&lt;/em&gt;(E10), 23291â23316. &lt;a href='https://doi.org/10.1029/2000JE001306' target='_blank'&gt;https://doi.org/10.1029/2000JE001306 &lt;/a&gt;
+
+European Space Agency (ESA) (2010). Mars Express. &lt;em&gt;Mars Express Orbiter Instruments.&lt;/em&gt; &lt;a href='https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_Express_instruments' target='_blank'&gt;https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_Express_instruments&lt;/a&gt;
+
+Kirk, R.L., et al. and the HiRISE Team (2008). Ultrahigh resolution topographic mapping of Mars with MRO HiRISE stereo images: Meter-scale slopes of candidate Phoenix landing sites. &lt;em&gt;Journal of Geophysical Research, 113&lt;/em&gt;(E3). &lt;a href='https://doi.org/10.1029/2007JE003000' target='_blank'&gt;https://doi.org/10.1029/2007JE003000&lt;/a&gt;
+
+National Aeronautics and Space Administration (NASA) Jet Propulsion Laboratory (JPL) (2019). Mars Curiosity Rover. &lt;em&gt;Timeline: Entry, Descent, and Landing.&lt;/em&gt; &lt;a href='https://mars.nasa.gov/msl/timeline/edl/' target='_blank'&gt;https://mars.nasa.gov/msl/timeline/edl/&lt;/a&gt;
+
+National Aeronautics and Space Administration (NASA) Jet Propulsion Laboratory (JPL) (2010). Mars Global Surveyor. &lt;a href='https://mars.nasa.gov/mgs/overview/' target='_blank'&gt;https://mars.nasa.gov/mgs/overview/&lt;/a&gt;
+
+Planetary Data Systems (PDS) Cartography and Imaging Sciences (IMG) (2018a). Mars Reconnaissance Orbiter (MRO). &lt;a href='https://pds-imaging.jpl.nasa.gov/portal/mro_mission.html' target='_blank'&gt;https://pds-imaging.jpl.nasa.gov/portal/mro_mission.html&lt;/a&gt;
+
+Planetary Data Systems (PDS) Cartography and Imaging Sciences (IMG) (2018b). Mars Science Laboratory (MSL). &lt;a href='https://pds-imaging.jpl.nasa.gov/portal/msl_mission.html' target='_blank'&gt;https://pds-imaging.jpl.nasa.gov/portal/msl_mission.html&lt;/a&gt;
+
+&lt;b&gt;Recommended Citation:&lt;/b&gt;
+
+Calef III, F.J. and Parker, T., 2016, MSL Gale Merged Orthophoto Mosaic, Publisher: PDS Annex, U.S. Geological Survey, &lt;a href='https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m' target='_blank'&gt;https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m&lt;/a&gt;]]&gt;</abstract>
+         <purpose>[![CDATA[This DEM facilitates science and engineering operations conducted by the Mars Science Laboratory (MSL),  aka Curiosity rover,  on Mars.]]&gt;</purpose>
+         <supplinf>[![CDATA[http://mars.nasa.gov/msl/, http://hrscview.fu-berlin.de/, http://mars.nasa.gov/mro/mission/instruments/ctx/, http://hirise.lpl.arizona.edu/]]&gt;</supplinf>
+      </descript>
+      <timeperd>
+         <current/>
+         <timeinfo>
+            <rngdates>
+               <begdate/>
+               <enddate/>
+            </rngdates>
+         </timeinfo>
+      </timeperd>
+      <status>
+         <progress>In Work</progress>
+         <update>As needed</update>
+      </status>
+      <spdom>
+         <bounding>
+            <westbc/>
+            <eastbc/>
+            <northbc/>
+            <southbc/>
+         </bounding>
+      </spdom>
+      <keywords>
+         <theme>
+            <themekt/>
+            <themekey>Image Processing,Landing sites,Photogrammetry,Remote Sensing,Topography</themekey>
+         </theme>
+         <theme>
+            <themekt>USGS Metadata Identifier</themekt>
+            <themekey>USGS:0c7c5c57-2ad3-4d36-8e47-56bbb79d3377</themekey>
+         </theme>
+      </keywords>
+      <accscope>PDS</accscope>
+      <accconst>Please credit authors</accconst>
+      <useconst>None</useconst>
+      <browse>
+         <browsen>https://astrogeology.usgs.gov/ckan/dataset/b3d63877-8544-49bb-b0f3-532cf2c648d1/resource/a5c163e8-4e8b-4a79-839f-a1bf997af2ce/download/msl_gale_dem_mosaic_1024.jpg</browsen>
+      </browse>
+      <native>ESRI Arcinfo,GDAL</native>
+   </idinfo>
+   <cntinfo>
+      <cntorgp>
+         <cntorg>USGS Astrogeology Science Center</cntorg>
+      </cntorgp>
+      <cntaddr>
+         <addrtype>mailing and physical</addrtype>
+         <address>2255 N. Gemini Drive</address>
+         <city>Flagstaff</city>
+         <state>AZ</state>
+         <postal>86001</postal>
+      </cntaddr>
+      <cntvoice>928-556-7011</cntvoice>
+      <cntemail>astropedia@usgs.gov</cntemail>
+   </cntinfo>
+   <dataqual>
+      <attracc>
+         <attraccr/>
+         <logic>HRSC is controlled to MOLA and thus only as accurate as MOLA (~100m horizontal and ~1 m vertical accuracy).</logic>
+         <complete>Where HiRISE stereo-coverage is lacking either CTX DEMs,  HRSC DEMs and then lastly the MOLA 128ppd DEM was used. Elevation minimum = -4625.875,  max=-322.56,  std dev=984.73</complete>
+      </attracc>
+      <posacc>
+         <horizpa>
+            <horizpar>Accurate to Control Net</horizpar>
+         </horizpa>
+         <vertacc>
+            <vertaccr>Accurate to Control Net</vertaccr>
+         </vertacc>
+      </posacc>
+      <lineage>
+         <srcinfo>
+            <srccite>
+               <citeinfo>
+                  <origin/>
+                  <pubdate/>
+                  <title>MRO HiRISE and CTX and Mars Express HRSC Archives</title>
+                  <online>{http://hrscview.fu-berlin.de/,https://pds-imaging.jpl.nasa.gov/volumes/mro.html,https://www.esa.int/Our_Activities/Space_Science/Mars_Express/The_mission,https://pds-imaging.jpl.nasa.gov/portal/mro_mission.html}</online>
+               </citeinfo>
+            </srccite>
+            <typesrc/>
+         </srcinfo>
+         <procstep>
+            <procdesc>[![CDATA[Georeferencing was manually done from CTX to HRSC (already registered to MOLA),  then HiRISE to CTX.]]&gt;</procdesc>
+            <procdate>2011-01-01</procdate>
+         </procstep>
+      </lineage>
+   </dataqual>
+   <spdoinfo>
+      <direct>Raster</direct>
+      <rastinfo>
+         <rasttype>Grid Cell</rasttype>
+         <rowcount>57440</rowcount>
+         <colcount>32980</colcount>
+      </rastinfo>
+   </spdoinfo>
+   <spref>
+      <horizsys>
+         <planar>
+            <mapproj>
+               <mapprojn>,Equirectangular</mapprojn>
+            </mapproj>
+            <planci>
+               <coordrep>
+                  <absres>1</absres>
+                  <ordres>1</ordres>
+               </coordrep>
+            </planci>
+         </planar>
+         <geodetic>
+            <horizdn>MOLA</horizdn>
+            <semiaxis>3396190</semiaxis>
+         </geodetic>
+      </horizsys>
+      <vertdef>
+         <altdatum>MOLA</altdatum>
+         <altres>1</altres>
+         <altunits>Meters</altunits>
+      </vertdef>
+   </spref>
+   <distinfo>
+      <distrib>
+         <cntinfo>
+            <cntorgp>
+               <cntorg>USGS Astrogeology Science Center</cntorg>
+            </cntorgp>
+            <cntaddr>
+               <addrtype>mailing and physical</addrtype>
+               <address>2255 N. Gemini Drive</address>
+               <city>Flagstaff</city>
+               <state>AZ</state>
+               <postal>86001</postal>
+            </cntaddr>
+            <cntvoice>928-556-7011</cntvoice>
+            <cntemail>astropedia@usgs.gov</cntemail>
+         </cntinfo>
+      </distrib>
+      <stdorder>
+         <digform>
+            <diginfo>
+               <formname/>
+               <transize>3.6 GB</transize>
+            </diginfo>
+            <digtopt>
+               <onlinopt>
+                  <computer>
+                     <networka>
+                        <networkr>https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m</networkr>
+                     </networka>
+                  </computer>
+               </onlinopt>
+            </digtopt>
+         </digform>
+      </stdorder>
+   </distinfo>
+   <metainfo>
+      <metd>2026-11-14</metd>
+      <metc>
+         <cntinfo>
+            <cntorgp>
+               <cntorg>USGS Astrogeology Science Center</cntorg>
+            </cntorgp>
+            <cntaddr>
+               <addrtype>mailing and physical</addrtype>
+               <address>2255 N. Gemini Drive</address>
+               <city>Flagstaff</city>
+               <state>AZ</state>
+               <postal>86001</postal>
+            </cntaddr>
+            <cntvoice>928-556-7011</cntvoice>
+            <cntemail>astropedia@usgs.gov</cntemail>
+         </cntinfo>
+      </metc>
+      <metsdn>FGDC Content Standard for Digital Geospatial Metadata</metsdn>
+      <metstdv>Modifided FGDC standard for use with planetary data</metstdv>
+      <mettc>local time</mettc>
+      <metextns>
+         <metprof>USGS Astrogeology Planetary Geoscience Metadata Standard</metprof>
+      </metextns>
+   </metainfo>
+</metadata>

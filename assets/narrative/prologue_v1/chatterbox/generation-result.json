@@ -1,0 +1,243 @@
+{
+  "schema": "redline.synthetic-voice.v1",
+  "status": "SCENARIO",
+  "synthetic_audio": true,
+  "created_at_utc": "2026-11-14T23:14:28.331176+00:00",
+  "language": "tr",
+  "tool": "Chatterbox Multilingual V3",
+  "tool_license": "MIT",
+  "tool_source": "https://github.com/resemble-ai/chatterbox",
+  "source_revision": "ab55923c27757c90cfcc407baa57dc25a7d25217",
+  "model": {
+    "repository": "ResembleAI/chatterbox",
+    "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+    "license": "mit",
+    "source_url": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+    "files": [
+      {
+        "name": "grapheme_mtl_merged_expanded_v1.json",
+        "size_bytes": 69989,
+        "sha256": "69632f47220a788a52ce2661d096453c5655e9bf25289d89a8d832c46ee07dbf",
+        "expected_lfs_sha256": null,
+        "elapsed_s": 0.57,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/grapheme_mtl_merged_expanded_v1.json"
+      },
+      {
+        "name": "conds.pt",
+        "size_bytes": 107374,
+        "sha256": "6552d70568833628ba019c6b03459e77fe71ca197d5c560cef9411bee9d87f4e",
+        "expected_lfs_sha256": "6552d70568833628ba019c6b03459e77fe71ca197d5c560cef9411bee9d87f4e",
+        "elapsed_s": 0.92,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/conds.pt"
+      },
+      {
+        "name": "Cangjie5_TC.json",
+        "size_bytes": 1920163,
+        "sha256": "7073fd9de919443ae88e0bd2449917a65fe54898a4413ed1edcc4b67f28bce8c",
+        "expected_lfs_sha256": null,
+        "elapsed_s": 1.74,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/Cangjie5_TC.json"
+      },
+      {
+        "name": "ve.pt",
+        "size_bytes": 5698626,
+        "sha256": "4b16d836bc598509860f6fa068165a8bb5e9ac84f05582dfcf278a5a372879f1",
+        "expected_lfs_sha256": "4b16d836bc598509860f6fa068165a8bb5e9ac84f05582dfcf278a5a372879f1",
+        "elapsed_s": 2.45,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/ve.pt"
+      },
+      {
+        "name": "s3gen.pt",
+        "size_bytes": 1057165844,
+        "sha256": "9b9ff07e60b20c136e2b1b3d7563a24604e8d2c4c267888d1ee929dd0151d2a3",
+        "expected_lfs_sha256": "9b9ff07e60b20c136e2b1b3d7563a24604e8d2c4c267888d1ee929dd0151d2a3",
+        "elapsed_s": 220.13,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/s3gen.pt"
+      },
+      {
+        "name": "t3_mtl23ls_v3.safetensors",
+        "size_bytes": 2143989928,
+        "sha256": "5abca8321ede76f8e61f1cc0d19aea6c946b28871017ce8726f8a69203f05953",
+        "expected_lfs_sha256": "5abca8321ede76f8e61f1cc0d19aea6c946b28871017ce8726f8a69203f05953",
+        "elapsed_s": 399.34,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/t3_mtl23ls_v3.safetensors"
+      }
+    ]
+  },
+  "voice": "Bundled conds.pt default voice; no user recording or artist voice reference supplied",
+  "reference_audio_supplied": false,
+  "artist_imitation_requested": false,
+  "credits_spent": 0,
+  "input_script_sha256": "997605dd2b1b0b3b7a66916d1b0a16e2cb7362444c2eeebc7d9a1cf82b172852",
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "device": "cuda",
+  "parameters": {
+    "language_id": "tr",
+    "exaggeration": 0.35,
+    "cfg_weight": 0.5,
+    "temperature": 0.75,
+    "seed": 271828
+  },
+  "dependency_override": "Official source pins torch/torchaudio2.6.0 on Python3.12; matching official cu128 2.11.0 wheels used for RTX5080 Blackwell support.",
+  "quality_scope": "Finite audio, duration, RMS, peak and clipping checked. Naturalness/pronunciation require listening review.",
+  "original_voice_hashes": {
+    "landing.wav": "1f46b56d9436aa0b93d631eb5f2d4ec6badd0b20eeb7ceacf1efa3229dd97b6c",
+    "rest.wav": "75334b335c493e35475698ad16b740de2b199834efaf50b765fd8ee07a556037",
+    "data.wav": "2fe0c69d372202b0561c6f1079de91d1f0a1843b9c7cb8963bdd18dd88508e1c",
+    "airlock.wav": "9c81838b388aea74738c473aa2f159983d776767540506431de627dd76dee280",
+    "ready.wav": "d95264985752698d99a7c054fbd24fb9caf6c4e6af1a4ca0951d34d3f06aeaba"
+  },
+  "clips": [
+    {
+      "text": "Mars'a yaklaşıyoruz. Son alçalma. Toz kalkıyor. Temas. Yüzeydeyiz.",
+      "path": "assets/narrative/prologue_v1/chatterbox/landing.wav",
+      "sha256": "5b0ae4c164cca903c5d80b374faf89cc1738010f4d227fd46c18aa8fd307fe33",
+      "elapsed_s": 4.543,
+      "raw_stats": {
+        "duration_s": 4.76,
+        "sample_rate_hz": 24000,
+        "sample_count": 114240,
+        "finite": true,
+        "peak": 0.7384227514266968,
+        "rms": 0.11660715686129726,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.16324404761904762
+      },
+      "gain": 1.0,
+      "output_stats": {
+        "duration_s": 5.16,
+        "sample_rate_hz": 24000,
+        "sample_count": 123840,
+        "finite": true,
+        "peak": 0.738433837890625,
+        "rms": 0.11199638016872909,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.22861757105943153
+      },
+      "shot_id": "landing",
+      "planned_shot_duration_s": 16.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Mars'ta bir vardiya daha. Plağı dinle. Hazır olduğunda kontrol masasına geç.",
+      "path": "assets/narrative/prologue_v1/chatterbox/rest.wav",
+      "sha256": "9661d1f2694f557b1f53ca4ddb6385f57663b904d0b747b0286db0e8456b921f",
+      "elapsed_s": 1.83,
+      "raw_stats": {
+        "duration_s": 4.48,
+        "sample_rate_hz": 24000,
+        "sample_count": 107520,
+        "finite": true,
+        "peak": 0.8648298382759094,
+        "rms": 0.11807786227044591,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.18186383928571428
+      },
+      "gain": 1.0,
+      "output_stats": {
+        "duration_s": 4.88,
+        "sample_rate_hz": 24000,
+        "sample_count": 117120,
+        "finite": true,
+        "peak": 0.864837646484375,
+        "rms": 0.11313515777901284,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.24951331967213114
+      },
+      "shot_id": "rest",
+      "planned_shot_duration_s": 12.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Ekrandaki çizgi, bildiklerimizle dönüşe ayırabildiğin zamanı gösteriyor. Bilinmeyen bölgelerde temkinli ol.",
+      "path": "assets/narrative/prologue_v1/chatterbox/data.wav",
+      "sha256": "3ea8a5e4bc5a89d4516f1b7a08056b7548cb2302e5b1e94b9cd86cc378bde099",
+      "elapsed_s": 2.595,
+      "raw_stats": {
+        "duration_s": 6.64,
+        "sample_rate_hz": 24000,
+        "sample_count": 159360,
+        "finite": true,
+        "peak": 0.9540730118751526,
+        "rms": 0.14136735308549697,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.06511671686746988
+      },
+      "gain": 0.9328426534681845,
+      "output_stats": {
+        "duration_s": 7.04,
+        "sample_rate_hz": 24000,
+        "sample_count": 168960,
+        "finite": true,
+        "peak": 0.889984130859375,
+        "rms": 0.1280723264169833,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.11796283143939394
+      },
+      "shot_id": "data",
+      "planned_shot_duration_s": 13.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Kask kilidi kapalı. Basınç dengeleniyor. Dış kapı hazır. Çıkış kararını sen vereceksin.",
+      "path": "assets/narrative/prologue_v1/chatterbox/airlock.wav",
+      "sha256": "f9c7afa7ba60bc20a4c14c92cf3a82af7fdfde57447271dad6cd9ef59123f2f0",
+      "elapsed_s": 2.033,
+      "raw_stats": {
+        "duration_s": 5.72,
+        "sample_rate_hz": 24000,
+        "sample_count": 137280,
+        "finite": true,
+        "peak": 1.0081067085266113,
+        "rms": 0.1345979568392021,
+        "clipping_samples": 3,
+        "quiet_sample_ratio": 0.09423076923076923
+      },
+      "gain": 0.8828430487292074,
+      "output_stats": {
+        "duration_s": 6.12,
+        "sample_rate_hz": 24000,
+        "sample_count": 146880,
+        "finite": true,
+        "peak": 0.889984130859375,
+        "rms": 0.11487996942020308,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.16303785403050108
+      },
+      "shot_id": "airlock",
+      "planned_shot_duration_s": 12.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Brifing tamam. Görev saatini başlatmak için çıkışı onayla. Güvenli yolculuk.",
+      "path": "assets/narrative/prologue_v1/chatterbox/ready.wav",
+      "sha256": "a9882bbef3db3ebe7380869bf4a796b921f2397d14de3a069889f007675b529f",
+      "elapsed_s": 1.955,
+      "raw_stats": {
+        "duration_s": 4.52,
+        "sample_rate_hz": 24000,
+        "sample_count": 108480,
+        "finite": true,
+        "peak": 0.8197414875030518,
+        "rms": 0.1449710813969042,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.1248801622418879
+      },
+      "gain": 1.0,
+      "output_stats": {
+        "duration_s": 4.92,
+        "sample_rate_hz": 24000,
+        "sample_count": 118080,
+        "finite": true,
+        "peak": 0.819732666015625,
+        "rms": 0.13895305837198757,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.19623983739837397
+      },
+      "shot_id": "ready",
+      "planned_shot_duration_s": 9.0,
+      "fits_planned_shot": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,500
+B5 · Sondaj ve arıza yönetimi
+
+2
+00:00:03,500 --> 00:00:08,000
+Matkap kayaya iner, uç dönmeye başlar.
+
+3
+00:00:08,000 --> 00:00:13,500
+Besleme kuvvetiyle uç kayaya girer; toz dışarı atılır.
+
+4
+00:00:13,500 --> 00:00:16,500
+Sıkışma! Tork sınırı aşıldı: uç geri çekilir, besleme azalır.
+
+5
+00:00:16,500 --> 00:00:21,000
+Darbeli moda geçilir; 5 cm'e ulaşılır.
+
+6
+00:00:21,000 --> 00:00:25,000
+Toz numune tüpe alınır ve laboratuvara gider. (Simülasyon)
+

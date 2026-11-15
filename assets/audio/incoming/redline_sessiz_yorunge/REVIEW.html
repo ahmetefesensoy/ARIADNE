@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REDLINE — Sessiz Yörünge / Aday Karşılaştırması</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #090c12;
+      color: #e8edf5;
+    }
+    body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      background:
+        radial-gradient(circle at 80% 0%, #2b1d26 0, transparent 38%),
+        radial-gradient(circle at 0% 100%, #132335 0, transparent 42%);
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    h1 { margin-bottom: 8px; font-size: clamp(28px, 5vw, 46px); }
+    .lede { color: #aab5c4; line-height: 1.6; margin-bottom: 32px; }
+    .track {
+      margin: 18px 0;
+      padding: 22px;
+      border: 1px solid #313949;
+      border-radius: 14px;
+      background: rgba(15, 19, 28, 0.86);
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.25);
+    }
+    h2 { margin: 0 0 6px; font-size: 21px; }
+    .meta { color: #8e9bae; font-size: 14px; margin-bottom: 16px; }
+    audio { width: 100%; }
+    .note {
+      margin-top: 30px;
+      padding: 16px 18px;
+      border-left: 3px solid #a24d54;
+      background: rgba(162, 77, 84, 0.09);
+      color: #c8d0dc;
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+  <h1>REDLINE — Sessiz Yörünge</h1>
+  <p class="lede">
+    Mars EVA arka plan müziği için üretilen iki özgün aday. Karşılaştırırken özellikle
+    konuşma ve alarm seslerine alan bırakmasına, epik yükselişin ölçülü kalmasına ve
+    yalnızlık hissine dikkat et.
+  </p>
+
+  <section class="track">
+    <h2>Aday 1</h2>
+    <div class="meta">59,6 saniye · MP3 · Beatra/Suno 6</div>
+    <audio controls preload="metadata" src="redline_sessiz_yorunge_take_01.mp3">
+      Tarayıcın MP3 oynatmayı desteklemiyor.
+    </audio>
+  </section>
+
+  <section class="track">
+    <h2>Aday 2</h2>
+    <div class="meta">62,4 saniye · MP3 · Beatra/Suno 6</div>
+    <audio controls preload="metadata" src="redline_sessiz_yorunge_take_02.mp3">
+      Tarayıcın MP3 oynatmayı desteklemiyor.
+    </audio>
+  </section>
+
+  <div class="note">
+    Seçim için yalnızca <strong>1</strong> veya <strong>2</strong> demen yeterli.
+    Seçilen parçayı daha sonra döngü, seviye ve Unreal içe aktarma açısından hazırlayacağız.
+  </div>
+</body>
+</html>

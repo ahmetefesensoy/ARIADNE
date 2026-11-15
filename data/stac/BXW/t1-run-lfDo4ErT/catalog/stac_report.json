@@ -1,0 +1,137 @@
+{
+  "site_id": "BXW",
+  "is_stac_collection": true,
+  "collection": "collection.json",
+  "items": [
+    "items/bxw-aligned_reference.json",
+    "items/bxw-dtm_residual_m.json",
+    "items/bxw-slope_sigma.json",
+    "items/bxw-dem_enu.json",
+    "items/bxw-dem_plan_4m.json",
+    "items/bxw-hirise_019698_enu.json",
+    "items/bxw-hirise_019698_plan_4m.json",
+    "items/bxw-roughness.json",
+    "items/bxw-slope_2m.json",
+    "items/bxw-slope_5m.json",
+    "items/bxw-gale_dem_v3.json",
+    "items/bxw-hirise_dtm_bxw_019698.json"
+  ],
+  "uncataloged_assets": [
+    {
+      "path": "data/derived/BXW/comparison/aligned_reference.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/comparison/comparison.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/comparison/dtm_residual_m.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/comparison/slope_sigma.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/dem_enu.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/dem_plan_4m.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/hirise_019698_enu.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/hirise_019698_plan_4m.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/qa_1m/dem_preview.png",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/qa_1m/qa.html",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/qa_1m/qa.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/qa_1m/slope_2m_preview.png",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/qa_1m/slope_5m_preview.png",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/qa_4m/qa.html",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/qa_4m/qa.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/derived/BXW/terrain/derivatives.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/raw/BXW/gale_dem_v3.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "data/raw/BXW/hirise_dtm_bxw_019698.provenance.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/T1_HIRISE_TRANSFER.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/T1_VERTICAL_DATUM.json",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/source-metadata/gale-v3-fgdc.xml",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/source-metadata/gale-v3-isis3.lbl",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/source-metadata/gale-v3-pds3.lbl",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/source-metadata/gale-v3-source.md5",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/source-metadata/gale-v3-source.vrt",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/source-metadata/hirise-DTEEC_019698_1750_019988_1750_U01-label-prefix16384.lbl",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    },
+    {
+      "path": "docs/verification/source-metadata/hirise-DTEEC_019698_1750_019988_1750_U01-provenance.txt",
+      "reason": "non-raster run artifact; retained by run-manifest asset"
+    }
+  ],
+  "source_manifest_sha256": "54f6ab5be5958d9891f9ad002314db82cd0480b70223c2d4e409f0041dd74c90",
+  "schema_versions": {
+    "core": "1.1.0",
+    "projection": "2.1.0",
+    "ssys": "1.1.1"
+  },
+  "scope": "processing-time catalog; acquisition unknown; vertical reference from source provenance/extra evidence, no independent accuracy claim; no Earth footprint or alignment claim",
+  "planetary_convention_limit": "SSYS 1.1.1 official Collection example; proposal extension does not explicitly override core WGS84 wording. Do not spatially index as Earth."
+}

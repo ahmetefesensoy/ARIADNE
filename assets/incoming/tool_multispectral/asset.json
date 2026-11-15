@@ -1,0 +1,302 @@
+{
+  "asset_id": "tool_multispectral",
+  "prepared_utc": "2026-11-14T11:44:17.184570+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\tool_multispectral\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        0.23999999463558197,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.23999999463558197,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.23999999463558197,
+        0.08512482792139053
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 0.24,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.23999999463558197,
+      0.1904897540807724,
+      0.17024965584278107
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_tool_multispectral_tripo_node_1d1334b7_6e5f_4f38_b3ce_736803da0b83_LOD0",
+      "source_name": "tripo_node_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.08512482792139053
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 10757,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "tripo_node_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+        "triangles": 10757,
+        "vertices": 7628,
+        "uv_layers": 1,
+        "non_manifold_edges": 4081
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 10757,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_tool_multispectral_tripo_node_1d1334b7_6e5f_4f38_b3ce_736803da0b83_LOD0",
+        "triangles": 10757,
+        "vertices": 7628,
+        "uv_layers": 1,
+        "non_manifold_edges": 4081
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 5377,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_tool_multispectral_tripo_node_1d1334b7_6e5f_4f38_b3ce_736803da0b83_LOD1",
+          "triangles": 5377,
+          "vertices": 4771,
+          "uv_layers": 1,
+          "non_manifold_edges": 3745
+        }
+      ]
+    },
+    "2": {
+      "triangles": 2688,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_tool_multispectral_tripo_node_1d1334b7_6e5f_4f38_b3ce_736803da0b83_LOD2",
+          "triangles": 2688,
+          "vertices": 2911,
+          "uv_layers": 1,
+          "non_manifold_edges": 2688
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 2999,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_tool_multispectral_tripo_node_1d1334b7_6e5f_4f38_b3ce_736803da0b83_Gazebo",
+        "triangles": 2999,
+        "vertices": 3152,
+        "uv_layers": 1,
+        "non_manifold_edges": 2870
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "Color_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+      "path": "textures/Color_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "NormalGL_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+      "path": "textures/NormalGL_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "ORM_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+      "path": "textures/ORM_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\tool_multispectral_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "Tripo SCENARIO instrument appearance; not flight CAD, measured geometry, sensor optics or calibrated detection/illumination physics."
+  ],
+  "materials": {
+    "tripo_material_1d1334b7-6e5f-4f38-b3ce-736803da0b83": {
+      "Base Color": {
+        "image": "Color_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+        "path": "textures/Color_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "ORM_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+        "path": "textures/ORM_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "image": "ORM_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+        "path": "textures/ORM_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+        "component": "B",
+        "colorspace": "Non-Color"
+      },
+      "Normal": {
+        "image": "NormalGL_1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+        "path": "textures/NormalGL_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "material_channels": {
+    "BaseColor": "textures/Color_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+    "NormalGL": "textures/NormalGL_1d1334b7_6e5f_4f38_b3ce_736803da0b83.png",
+    "NormalDX": "textures/tool_multispectral_NormalDX.png",
+    "AO": "textures/tool_multispectral_AO.png",
+    "Roughness": "textures/tool_multispectral_Roughness.png",
+    "Metallic": "textures/tool_multispectral_Metallic.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "source_notice": {
+    "kind": "Tripo · AI üretimi",
+    "library": null,
+    "tripo_tasks": [
+      {
+        "asset_id": "tool_multispectral",
+        "historical": false,
+        "task_id": "1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+        "type": "text_to_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": true,
+          "prompt": "One realistic compact Mars exploration multispectral camera head, sturdy rectangular white thermal-insulated optical housing with six small round glass lens apertures in a clean two by three array on the front, each aperture has a recessed dark baffle and a titanium ring. Subtle lens coating reflections, graphite rear electronics module, small bolted mounting plate underneath and a secured rear electrical connector. Plausible precision optical instrument, clean aerospace machining, white graphite titanium with tiny red fasteners, no bright lights. Complete isolated single camera, no gimbal, no mast, no drone, no rover, no tripod, no terrain, no base, no pedestal, no writing, no labels, no logos. Realistic PBR materials.",
+          "texture": true,
+          "export_uv": true,
+          "face_limit": 12000,
+          "model_seed": 14112034,
+          "model_version": "v3.1-20260211",
+          "geometry_quality": "standard",
+          "texture_alignment": "geometry"
+        },
+        "created_at": "2026-11-14T11:23:17.229013Z",
+        "completed_at": "2026-11-14T11:26:17.061618Z",
+        "credits_consumed": 20
+      }
+    ],
+    "terms_urls": [
+      "https://developers.tripo3d.ai/en/terms",
+      "https://www.tripo3d.ai/terms"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 1,
+    "triangles": 10757,
+    "dimensions_m": [
+      0.23999999463558197,
+      0.1904897540807724,
+      0.17024965584278107
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.24000000953674316,
+        0.1904897689819336,
+        0.17024965584278107
+      ],
+      "max_dimension_error_m": 1.4901161193847656e-08,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.24240697920322418,
+        0.19132643938064575,
+        0.1716296374797821
+      ],
+      "max_dimension_error_m": 0.002406984567642212
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

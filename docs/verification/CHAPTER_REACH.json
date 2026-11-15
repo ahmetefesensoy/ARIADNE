@@ -1,0 +1,240 @@
+{
+ "check": "red-line binding distance for a short chapter (FR-03 SEP shelter limit)",
+ "status": "DERIVED (real BXW grid, conservative planning walk); sprint is SCENARIO",
+ "grid": "data/derived/BXW/planning/bxw_planning_4m_v2.npz",
+ "grid_sha256": "bf2a5f1a1e4796a50a2fe29e0e25c3eeda51c518d26d055a3c2a6920617fabbd",
+ "habitat_xy_m": [
+  290.0,
+  -454.0
+ ],
+ "sep_limit_min": 20.0,
+ "z_eps": 1.645,
+ "sigma_theta": 0.2,
+ "sprint_cap_m_s": 3.0,
+ "walkable_area_by_t_eps": {
+  "t_eps<=5min_km2": 0.041,
+  "t_eps<=10min_km2": 0.133,
+  "t_eps<=15min_km2": 0.25,
+  "t_eps<=20min_km2": 0.383
+ },
+ "ring_12_18_min": {
+  "cells": 9189,
+  "straight_m_p10_p50_p90": [
+   280.0,
+   356.0,
+   454.3
+  ]
+ },
+ "points": [
+  {
+   "id": "BXW_RIDGE_A",
+   "source": "config/targets_BXW.yaml (campaign, SCENARIO)",
+   "xy_m": [
+    306.0,
+    -454.0
+   ],
+   "straight_m": 16.0,
+   "path_m": 16.0,
+   "walk_mu_min": 0.44,
+   "t_eps_min": 0.59,
+   "sep_fr03_binds": false,
+   "fr03_slack_min": 19.41,
+   "sprint_real_min": 0.09
+  },
+  {
+   "id": "BXW_HOLLOW_B",
+   "source": "config/targets_BXW.yaml (campaign, SCENARIO)",
+   "xy_m": [
+    320.0,
+    -448.0
+   ],
+   "straight_m": 30.6,
+   "path_m": 33.9,
+   "walk_mu_min": 0.97,
+   "t_eps_min": 1.32,
+   "sep_fr03_binds": false,
+   "fr03_slack_min": 18.68,
+   "sprint_real_min": 0.19
+  },
+  {
+   "id": "BXW-T01",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    394.0,
+    262.0
+   ],
+   "straight_m": 723.5,
+   "path_m": 1080.5,
+   "walk_mu_min": 38.93,
+   "t_eps_min": 51.8,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -31.8,
+   "sprint_real_min": 6.0
+  },
+  {
+   "id": "BXW-T02",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -722.0,
+    -702.0
+   ],
+   "straight_m": 1041.9,
+   "path_m": 1316.7,
+   "walk_mu_min": 47.25,
+   "t_eps_min": 62.9,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -42.9,
+   "sprint_real_min": 7.31
+  },
+  {
+   "id": "BXW-T03",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -642.0,
+    -954.0
+   ],
+   "straight_m": 1057.7,
+   "path_m": 1140.4,
+   "walk_mu_min": 34.15,
+   "t_eps_min": 45.47,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -25.47,
+   "sprint_real_min": 6.34
+  },
+  {
+   "id": "BXW-T04",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -1058.0,
+    -374.0
+   ],
+   "straight_m": 1350.4,
+   "path_m": 2064.4,
+   "walk_mu_min": 83.43,
+   "t_eps_min": 110.94,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -90.94,
+   "sprint_real_min": 11.47
+  },
+  {
+   "id": "BXW-T05",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -318.0,
+    -298.0
+   ],
+   "straight_m": 627.7,
+   "path_m": 674.1,
+   "walk_mu_min": 24.72,
+   "t_eps_min": 32.88,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -12.88,
+   "sprint_real_min": 3.74
+  },
+  {
+   "id": "BXW-T06",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -86.0,
+    458.0
+   ],
+   "straight_m": 986.5,
+   "path_m": 1026.5,
+   "walk_mu_min": 52.59,
+   "t_eps_min": 69.94,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -49.94,
+   "sprint_real_min": 5.7
+  },
+  {
+   "id": "BXW-T07",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    390.0,
+    134.0
+   ],
+   "straight_m": 596.4,
+   "path_m": 989.9,
+   "walk_mu_min": 43.87,
+   "t_eps_min": 58.35,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -38.35,
+   "sprint_real_min": 5.5
+  },
+  {
+   "id": "BXW-T08",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -338.0,
+    470.0
+   ],
+   "straight_m": 1117.2,
+   "path_m": 1341.2,
+   "walk_mu_min": 67.75,
+   "t_eps_min": 90.11,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -70.11,
+   "sprint_real_min": 7.45
+  },
+  {
+   "id": "BXW-T09",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -762.0,
+    374.0
+   ],
+   "straight_m": 1338.8,
+   "path_m": 1903.3,
+   "walk_mu_min": 86.92,
+   "t_eps_min": 115.59,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -95.59,
+   "sprint_real_min": 10.57
+  },
+  {
+   "id": "BXW-T10",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    538.0,
+    -174.0
+   ],
+   "straight_m": 374.0,
+   "path_m": 608.6,
+   "walk_mu_min": 20.12,
+   "t_eps_min": 26.81,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -6.81,
+   "sprint_real_min": 3.38
+  },
+  {
+   "id": "BXW-T11",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    450.0,
+    678.0
+   ],
+   "straight_m": 1143.3,
+   "path_m": 1513.5,
+   "walk_mu_min": 57.51,
+   "t_eps_min": 76.49,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -56.49,
+   "sprint_real_min": 8.41
+  },
+  {
+   "id": "BXW-T12",
+   "source": "data/derived/BXW/planning/targets_v1.json (planning, DERIVED TPI)",
+   "xy_m": [
+    -90.0,
+    1206.0
+   ],
+   "straight_m": 1702.9,
+   "path_m": 1882.5,
+   "walk_mu_min": 89.53,
+   "t_eps_min": 119.04,
+   "sep_fr03_binds": true,
+   "fr03_slack_min": -99.04,
+   "sprint_real_min": 10.46
+  }
+ ]
+}

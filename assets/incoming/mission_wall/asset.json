@@ -1,0 +1,290 @@
+{
+  "asset_id": "mission_wall",
+  "prepared_utc": "2026-11-14T12:08:02.217581+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\mission_wall\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.03999999910593033
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.09000024199485779,
+      3.2200000286102295,
+      1.7999999523162842
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_mission_wall_body_frame_LOD0",
+      "source_name": "body_frame",
+      "source_parent": "",
+      "pivot_m": [
+        1.862645149230957e-09,
+        0.0,
+        0.8999999761581421
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_mission_wall_screen_wall_LOD0",
+      "source_name": "screen_wall",
+      "source_parent": "",
+      "pivot_m": [
+        0.04100000113248825,
+        0.0,
+        0.8999999761581421
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 26,
+    "materials": 3,
+    "parts": [
+      {
+        "name": "body_frame",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "screen_wall",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 26,
+    "materials": 3,
+    "parts": [
+      {
+        "name": "SM_mission_wall_body_frame_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_mission_wall_screen_wall_LOD0",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 14,
+      "materials": 3,
+      "parts": [
+        {
+          "name": "SM_mission_wall_body_frame_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 31
+        },
+        {
+          "name": "SM_mission_wall_screen_wall_LOD1",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        }
+      ]
+    },
+    "2": {
+      "triangles": 8,
+      "materials": 3,
+      "parts": [
+        {
+          "name": "SM_mission_wall_body_frame_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 22
+        },
+        {
+          "name": "SM_mission_wall_screen_wall_LOD2",
+          "triangles": 2,
+          "vertices": 4,
+          "uv_layers": 1,
+          "non_manifold_edges": 4
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 26,
+    "materials": 3,
+    "parts": [
+      {
+        "name": "SM_mission_wall_body_frame_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_mission_wall_screen_wall_Gazebo",
+        "triangles": 2,
+        "vertices": 4,
+        "uv_layers": 1,
+        "non_manifold_edges": 4
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\mission_wall_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "mission_wall",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      3.2200000286102295,
+      0.09000000357627869,
+      1.7999999523162842
+    ],
+    "parts": [
+      {
+        "name": "body_frame",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "screen_wall",
+        "triangles": 2,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Mission wall display (kılavuz H01 'görev duvarı')",
+    "notes": "Wall-mounted; screen_wall has full UVs for the timeline/plan render target."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 3.2200000286102295,
+    "lod0": 26,
+    "gazebo": 26,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 2,
+    "triangles": 26,
+    "dimensions_m": [
+      0.09000024199485779,
+      3.2200000286102295,
+      1.7999999523162842
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 2,
+      "dimensions_m": [
+        0.09000003337860107,
+        3.2200000286102295,
+        1.7999999523162842
+      ],
+      "max_dimension_error_m": 2.086162567138672e-07
+    },
+    "obj_reimport": {
+      "mesh_count": 2,
+      "dimensions_m": [
+        0.09000024199485779,
+        3.2200000286102295,
+        1.7999999523162842
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

@@ -1,0 +1,968 @@
+{
+  "asset_id": "science_station",
+  "prepared_utc": "2026-11-14T11:30:36.680867+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\science_station\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        9.437237480369731e-08,
+        -1.25,
+        0.0,
+        0.0
+      ],
+      [
+        1.25,
+        9.437237480369731e-08,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.25,
+        0.625
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.25,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.7708901166915894,
+      0.7568060159683228,
+      1.25
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_science_station_body_LOD0",
+      "source_name": "tripo_part_0",
+      "source_parent": "",
+      "pivot_m": [
+        0.01855234056711197,
+        0.06301689893007278,
+        0.5802115201950073
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_panel_1_LOD0",
+      "source_name": "tripo_part_1",
+      "source_parent": "",
+      "pivot_m": [
+        0.017099499702453613,
+        0.24127717316150665,
+        0.6877610683441162
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_leg_1_LOD0",
+      "source_name": "tripo_part_2",
+      "source_parent": "",
+      "pivot_m": [
+        0.24349671602249146,
+        0.24776482582092285,
+        0.3623085021972656
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_leg_2_LOD0",
+      "source_name": "tripo_part_3",
+      "source_parent": "",
+      "pivot_m": [
+        0.23710519075393677,
+        -0.19011209905147552,
+        0.3735888600349426
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_sensor_head_LOD0",
+      "source_name": "tripo_part_4",
+      "source_parent": "",
+      "pivot_m": [
+        0.007900446653366089,
+        0.02833794616162777,
+        0.9465625286102295
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_leg_3_LOD0",
+      "source_name": "tripo_part_5",
+      "source_parent": "",
+      "pivot_m": [
+        -0.23635917901992798,
+        0.2359876036643982,
+        0.3562931418418884
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_leg_4_LOD0",
+      "source_name": "tripo_part_6",
+      "source_parent": "",
+      "pivot_m": [
+        -0.22084163129329681,
+        -0.19709084928035736,
+        0.3695703148841858
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_panel_7_LOD0",
+      "source_name": "tripo_part_7",
+      "source_parent": "",
+      "pivot_m": [
+        -0.09669355303049088,
+        0.20342636108398438,
+        0.456674724817276
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_panel_8_LOD0",
+      "source_name": "tripo_part_8",
+      "source_parent": "",
+      "pivot_m": [
+        -0.18811950087547302,
+        0.05888395011425018,
+        0.7128089666366577
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_antenna_LOD0",
+      "source_name": "tripo_part_9",
+      "source_parent": "",
+      "pivot_m": [
+        0.19957460463047028,
+        0.17658506333827972,
+        1.0544891357421875
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_panel_10_LOD0",
+      "source_name": "tripo_part_10",
+      "source_parent": "",
+      "pivot_m": [
+        0.12227494269609451,
+        0.10478152334690094,
+        0.35539233684539795
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_panel_11_LOD0",
+      "source_name": "tripo_part_11",
+      "source_parent": "",
+      "pivot_m": [
+        0.22617578506469727,
+        0.0544087216258049,
+        0.7315012216567993
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_panel_12_LOD0",
+      "source_name": "tripo_part_12",
+      "source_parent": "",
+      "pivot_m": [
+        -0.202414408326149,
+        0.05837639421224594,
+        0.714937686920166
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_science_station_panel_13_LOD0",
+      "source_name": "tripo_part_13",
+      "source_parent": "",
+      "pivot_m": [
+        0.10423892736434937,
+        0.13568714261054993,
+        0.358772337436676
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 23792,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "tripo_part_0",
+        "triangles": 13980,
+        "vertices": 8819,
+        "uv_layers": 1,
+        "non_manifold_edges": 3366
+      },
+      {
+        "name": "tripo_part_1",
+        "triangles": 1874,
+        "vertices": 1679,
+        "uv_layers": 1,
+        "non_manifold_edges": 1248
+      },
+      {
+        "name": "tripo_part_2",
+        "triangles": 1270,
+        "vertices": 1113,
+        "uv_layers": 1,
+        "non_manifold_edges": 844
+      },
+      {
+        "name": "tripo_part_3",
+        "triangles": 1279,
+        "vertices": 1079,
+        "uv_layers": 1,
+        "non_manifold_edges": 783
+      },
+      {
+        "name": "tripo_part_4",
+        "triangles": 1153,
+        "vertices": 1008,
+        "uv_layers": 1,
+        "non_manifold_edges": 741
+      },
+      {
+        "name": "tripo_part_5",
+        "triangles": 1029,
+        "vertices": 980,
+        "uv_layers": 1,
+        "non_manifold_edges": 807
+      },
+      {
+        "name": "tripo_part_6",
+        "triangles": 1389,
+        "vertices": 1160,
+        "uv_layers": 1,
+        "non_manifold_edges": 815
+      },
+      {
+        "name": "tripo_part_7",
+        "triangles": 406,
+        "vertices": 563,
+        "uv_layers": 1,
+        "non_manifold_edges": 536
+      },
+      {
+        "name": "tripo_part_8",
+        "triangles": 327,
+        "vertices": 362,
+        "uv_layers": 1,
+        "non_manifold_edges": 331
+      },
+      {
+        "name": "tripo_part_9",
+        "triangles": 189,
+        "vertices": 253,
+        "uv_layers": 1,
+        "non_manifold_edges": 239
+      },
+      {
+        "name": "tripo_part_10",
+        "triangles": 110,
+        "vertices": 153,
+        "uv_layers": 1,
+        "non_manifold_edges": 152
+      },
+      {
+        "name": "tripo_part_11",
+        "triangles": 531,
+        "vertices": 554,
+        "uv_layers": 1,
+        "non_manifold_edges": 493
+      },
+      {
+        "name": "tripo_part_12",
+        "triangles": 168,
+        "vertices": 221,
+        "uv_layers": 1,
+        "non_manifold_edges": 208
+      },
+      {
+        "name": "tripo_part_13",
+        "triangles": 87,
+        "vertices": 132,
+        "uv_layers": 1,
+        "non_manifold_edges": 129
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 23792,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_science_station_body_LOD0",
+        "triangles": 13980,
+        "vertices": 8819,
+        "uv_layers": 1,
+        "non_manifold_edges": 3366
+      },
+      {
+        "name": "SM_science_station_panel_1_LOD0",
+        "triangles": 1874,
+        "vertices": 1679,
+        "uv_layers": 1,
+        "non_manifold_edges": 1248
+      },
+      {
+        "name": "SM_science_station_leg_1_LOD0",
+        "triangles": 1270,
+        "vertices": 1113,
+        "uv_layers": 1,
+        "non_manifold_edges": 844
+      },
+      {
+        "name": "SM_science_station_leg_2_LOD0",
+        "triangles": 1279,
+        "vertices": 1079,
+        "uv_layers": 1,
+        "non_manifold_edges": 783
+      },
+      {
+        "name": "SM_science_station_sensor_head_LOD0",
+        "triangles": 1153,
+        "vertices": 1008,
+        "uv_layers": 1,
+        "non_manifold_edges": 741
+      },
+      {
+        "name": "SM_science_station_leg_3_LOD0",
+        "triangles": 1029,
+        "vertices": 980,
+        "uv_layers": 1,
+        "non_manifold_edges": 807
+      },
+      {
+        "name": "SM_science_station_leg_4_LOD0",
+        "triangles": 1389,
+        "vertices": 1160,
+        "uv_layers": 1,
+        "non_manifold_edges": 815
+      },
+      {
+        "name": "SM_science_station_panel_7_LOD0",
+        "triangles": 406,
+        "vertices": 563,
+        "uv_layers": 1,
+        "non_manifold_edges": 536
+      },
+      {
+        "name": "SM_science_station_panel_8_LOD0",
+        "triangles": 327,
+        "vertices": 362,
+        "uv_layers": 1,
+        "non_manifold_edges": 331
+      },
+      {
+        "name": "SM_science_station_antenna_LOD0",
+        "triangles": 189,
+        "vertices": 253,
+        "uv_layers": 1,
+        "non_manifold_edges": 239
+      },
+      {
+        "name": "SM_science_station_panel_10_LOD0",
+        "triangles": 110,
+        "vertices": 153,
+        "uv_layers": 1,
+        "non_manifold_edges": 152
+      },
+      {
+        "name": "SM_science_station_panel_11_LOD0",
+        "triangles": 531,
+        "vertices": 554,
+        "uv_layers": 1,
+        "non_manifold_edges": 493
+      },
+      {
+        "name": "SM_science_station_panel_12_LOD0",
+        "triangles": 168,
+        "vertices": 221,
+        "uv_layers": 1,
+        "non_manifold_edges": 208
+      },
+      {
+        "name": "SM_science_station_panel_13_LOD0",
+        "triangles": 87,
+        "vertices": 132,
+        "uv_layers": 1,
+        "non_manifold_edges": 129
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 11890,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_science_station_body_LOD1",
+          "triangles": 6990,
+          "vertices": 5203,
+          "uv_layers": 1,
+          "non_manifold_edges": 3105
+        },
+        {
+          "name": "SM_science_station_panel_1_LOD1",
+          "triangles": 937,
+          "vertices": 1109,
+          "uv_layers": 1,
+          "non_manifold_edges": 1045
+        },
+        {
+          "name": "SM_science_station_leg_1_LOD1",
+          "triangles": 634,
+          "vertices": 723,
+          "uv_layers": 1,
+          "non_manifold_edges": 693
+        },
+        {
+          "name": "SM_science_station_leg_2_LOD1",
+          "triangles": 639,
+          "vertices": 696,
+          "uv_layers": 1,
+          "non_manifold_edges": 657
+        },
+        {
+          "name": "SM_science_station_sensor_head_LOD1",
+          "triangles": 576,
+          "vertices": 661,
+          "uv_layers": 1,
+          "non_manifold_edges": 623
+        },
+        {
+          "name": "SM_science_station_leg_3_LOD1",
+          "triangles": 514,
+          "vertices": 629,
+          "uv_layers": 1,
+          "non_manifold_edges": 620
+        },
+        {
+          "name": "SM_science_station_leg_4_LOD1",
+          "triangles": 694,
+          "vertices": 756,
+          "uv_layers": 1,
+          "non_manifold_edges": 690
+        },
+        {
+          "name": "SM_science_station_panel_7_LOD1",
+          "triangles": 203,
+          "vertices": 389,
+          "uv_layers": 1,
+          "non_manifold_edges": 376
+        },
+        {
+          "name": "SM_science_station_panel_8_LOD1",
+          "triangles": 163,
+          "vertices": 231,
+          "uv_layers": 1,
+          "non_manifold_edges": 231
+        },
+        {
+          "name": "SM_science_station_antenna_LOD1",
+          "triangles": 94,
+          "vertices": 174,
+          "uv_layers": 1,
+          "non_manifold_edges": 174
+        },
+        {
+          "name": "SM_science_station_panel_10_LOD1",
+          "triangles": 55,
+          "vertices": 102,
+          "uv_layers": 1,
+          "non_manifold_edges": 102
+        },
+        {
+          "name": "SM_science_station_panel_11_LOD1",
+          "triangles": 264,
+          "vertices": 353,
+          "uv_layers": 1,
+          "non_manifold_edges": 355
+        },
+        {
+          "name": "SM_science_station_panel_12_LOD1",
+          "triangles": 84,
+          "vertices": 150,
+          "uv_layers": 1,
+          "non_manifold_edges": 150
+        },
+        {
+          "name": "SM_science_station_panel_13_LOD1",
+          "triangles": 43,
+          "vertices": 91,
+          "uv_layers": 1,
+          "non_manifold_edges": 90
+        }
+      ]
+    },
+    "2": {
+      "triangles": 5941,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_science_station_body_LOD2",
+          "triangles": 3495,
+          "vertices": 3117,
+          "uv_layers": 1,
+          "non_manifold_edges": 2415
+        },
+        {
+          "name": "SM_science_station_panel_1_LOD2",
+          "triangles": 468,
+          "vertices": 700,
+          "uv_layers": 1,
+          "non_manifold_edges": 669
+        },
+        {
+          "name": "SM_science_station_leg_1_LOD2",
+          "triangles": 317,
+          "vertices": 432,
+          "uv_layers": 1,
+          "non_manifold_edges": 420
+        },
+        {
+          "name": "SM_science_station_leg_2_LOD2",
+          "triangles": 319,
+          "vertices": 414,
+          "uv_layers": 1,
+          "non_manifold_edges": 409
+        },
+        {
+          "name": "SM_science_station_sensor_head_LOD2",
+          "triangles": 288,
+          "vertices": 411,
+          "uv_layers": 1,
+          "non_manifold_edges": 399
+        },
+        {
+          "name": "SM_science_station_leg_3_LOD2",
+          "triangles": 257,
+          "vertices": 385,
+          "uv_layers": 1,
+          "non_manifold_edges": 384
+        },
+        {
+          "name": "SM_science_station_leg_4_LOD2",
+          "triangles": 346,
+          "vertices": 457,
+          "uv_layers": 1,
+          "non_manifold_edges": 436
+        },
+        {
+          "name": "SM_science_station_panel_7_LOD2",
+          "triangles": 101,
+          "vertices": 289,
+          "uv_layers": 1,
+          "non_manifold_edges": 247
+        },
+        {
+          "name": "SM_science_station_panel_8_LOD2",
+          "triangles": 81,
+          "vertices": 151,
+          "uv_layers": 1,
+          "non_manifold_edges": 145
+        },
+        {
+          "name": "SM_science_station_antenna_LOD2",
+          "triangles": 47,
+          "vertices": 128,
+          "uv_layers": 1,
+          "non_manifold_edges": 123
+        },
+        {
+          "name": "SM_science_station_panel_10_LOD2",
+          "triangles": 27,
+          "vertices": 74,
+          "uv_layers": 1,
+          "non_manifold_edges": 69
+        },
+        {
+          "name": "SM_science_station_panel_11_LOD2",
+          "triangles": 132,
+          "vertices": 224,
+          "uv_layers": 1,
+          "non_manifold_edges": 222
+        },
+        {
+          "name": "SM_science_station_panel_12_LOD2",
+          "triangles": 42,
+          "vertices": 108,
+          "uv_layers": 1,
+          "non_manifold_edges": 99
+        },
+        {
+          "name": "SM_science_station_panel_13_LOD2",
+          "triangles": 21,
+          "vertices": 69,
+          "uv_layers": 1,
+          "non_manifold_edges": 61
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 6493,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_science_station_body_Gazebo",
+        "triangles": 3819,
+        "vertices": 3332,
+        "uv_layers": 1,
+        "non_manifold_edges": 2522
+      },
+      {
+        "name": "SM_science_station_panel_1_Gazebo",
+        "triangles": 511,
+        "vertices": 740,
+        "uv_layers": 1,
+        "non_manifold_edges": 712
+      },
+      {
+        "name": "SM_science_station_leg_1_Gazebo",
+        "triangles": 346,
+        "vertices": 460,
+        "uv_layers": 1,
+        "non_manifold_edges": 450
+      },
+      {
+        "name": "SM_science_station_leg_2_Gazebo",
+        "triangles": 349,
+        "vertices": 441,
+        "uv_layers": 1,
+        "non_manifold_edges": 435
+      },
+      {
+        "name": "SM_science_station_sensor_head_Gazebo",
+        "triangles": 315,
+        "vertices": 436,
+        "uv_layers": 1,
+        "non_manifold_edges": 424
+      },
+      {
+        "name": "SM_science_station_leg_3_Gazebo",
+        "triangles": 281,
+        "vertices": 408,
+        "uv_layers": 1,
+        "non_manifold_edges": 406
+      },
+      {
+        "name": "SM_science_station_leg_4_Gazebo",
+        "triangles": 379,
+        "vertices": 487,
+        "uv_layers": 1,
+        "non_manifold_edges": 465
+      },
+      {
+        "name": "SM_science_station_panel_7_Gazebo",
+        "triangles": 110,
+        "vertices": 298,
+        "uv_layers": 1,
+        "non_manifold_edges": 259
+      },
+      {
+        "name": "SM_science_station_panel_8_Gazebo",
+        "triangles": 89,
+        "vertices": 159,
+        "uv_layers": 1,
+        "non_manifold_edges": 154
+      },
+      {
+        "name": "SM_science_station_antenna_Gazebo",
+        "triangles": 51,
+        "vertices": 132,
+        "uv_layers": 1,
+        "non_manifold_edges": 127
+      },
+      {
+        "name": "SM_science_station_panel_10_Gazebo",
+        "triangles": 30,
+        "vertices": 77,
+        "uv_layers": 1,
+        "non_manifold_edges": 72
+      },
+      {
+        "name": "SM_science_station_panel_11_Gazebo",
+        "triangles": 145,
+        "vertices": 236,
+        "uv_layers": 1,
+        "non_manifold_edges": 234
+      },
+      {
+        "name": "SM_science_station_panel_12_Gazebo",
+        "triangles": 45,
+        "vertices": 111,
+        "uv_layers": 1,
+        "non_manifold_edges": 103
+      },
+      {
+        "name": "SM_science_station_panel_13_Gazebo",
+        "triangles": 23,
+        "vertices": 71,
+        "uv_layers": 1,
+        "non_manifold_edges": 64
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "science_station_BaseColor.png",
+      "path": "textures/science_station_BaseColor.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "science_station_NormalGL.png",
+      "path": "textures/science_station_NormalGL.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "science_station_ORM.png",
+      "path": "textures/science_station_ORM.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\science_station_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "Four legs were generated; station is delivered in a fixed deployed pose. Folding limits are undefined."
+  ],
+  "material_channels": {
+    "BaseColor": "textures/science_station_BaseColor.png",
+    "NormalGL": "textures/science_station_NormalGL.png",
+    "NormalDX": "textures/science_station_NormalDX.png",
+    "AO": "textures/science_station_AO.png",
+    "Roughness": "textures/science_station_Roughness.png",
+    "Metallic": "textures/science_station_Metallic.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "materials": {
+    "MAT_science_station_Atlas": {
+      "Base Color": {
+        "image": "science_station_BaseColor.png",
+        "path": "textures/science_station_BaseColor.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "science_station_ORM.png",
+        "path": "textures/science_station_ORM.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "image": "science_station_ORM.png",
+        "path": "textures/science_station_ORM.png",
+        "component": "B",
+        "colorspace": "Non-Color"
+      },
+      "Normal": {
+        "image": "science_station_NormalGL.png",
+        "path": "textures/science_station_NormalGL.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "Tripo · AI üretimi",
+    "library": null,
+    "tripo_tasks": [
+      {
+        "asset_id": "science_station",
+        "historical": false,
+        "task_id": "d22a9e35-8dc4-4f79-a9a6-a3b7108c931c",
+        "type": "text_to_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": false,
+          "quad": false,
+          "prompt": "Compact deployable Mars environmental science station, one waist-high sensor box standing on three splayed folding tripod legs, white thermal insulation panels, graphite metal hinges, muted red identification bands without text, short separate upright communication antenna, small radiation detector and weather sensor on top, compact top solar panel. Realistic engineered NASA-inspired field equipment, robust and simple, complete assembled neutral pose, distinct sensor box and separate legs and antenna with visible joints. Single isolated object, no ground, no rocks, no platform, no people, no cables on ground, no letters, no logos.",
+          "texture": false,
+          "export_uv": true,
+          "face_limit": 25000,
+          "model_seed": 14112027,
+          "model_version": "v3.1-20260211",
+          "generate_parts": true,
+          "geometry_quality": "standard",
+          "texture_alignment": "geometry"
+        },
+        "created_at": "2026-11-14T10:48:47.633468Z",
+        "completed_at": "2026-11-14T10:49:31.467814Z",
+        "credits_consumed": 30
+      },
+      {
+        "asset_id": "science_station",
+        "historical": false,
+        "task_id": "c6235dab-3741-4b3f-9dc5-822f724df7f2",
+        "type": "texture_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": true,
+          "bake": true,
+          "texture": true,
+          "model_version": "v3.0-20250812",
+          "texture_quality": "standard",
+          "original_model_id": "d22a9e35-8dc4-4f79-a9a6-a3b7108c931c",
+          "texture_alignment": "original_image"
+        },
+        "created_at": "2026-11-14T10:49:34.279737Z",
+        "completed_at": "2026-11-14T10:50:38.707425Z",
+        "credits_consumed": 10
+      }
+    ],
+    "terms_urls": [
+      "https://developers.tripo3d.ai/en/terms",
+      "https://www.tripo3d.ai/terms"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 14,
+    "triangles": 23792,
+    "dimensions_m": [
+      0.7708901166915894,
+      0.7568060159683228,
+      1.25
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 14,
+      "dimensions_m": [
+        0.7708901166915894,
+        0.7568060159683228,
+        1.25
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 14,
+      "dimensions_m": [
+        0.7608486413955688,
+        0.7495409250259399,
+        1.2498822212219238
+      ],
+      "max_dimension_error_m": 0.010041475296020508
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-11-14T15:33:08.234647+00:00",
+  "matplotlib": "3.11.2",
+  "sources": [
+    {
+      "path": "test-results/t3-runtime-W94uGYGs/physical-motion.json",
+      "sha256": "33c3049d4b41ca4b1575732284e4d791a8a3be034ba63b8d3db21c256c19d189",
+      "run_passed": false,
+      "samples": 956
+    },
+    {
+      "path": "test-results/t3-runtime-UpMtpiHd/physical-motion.json",
+      "sha256": "c1f94286f58a1e321ae4096df5e838335e2ce9eaf71f8275b008ce08d3262dca",
+      "run_passed": true,
+      "samples": 877
+    }
+  ],
+  "terrain_sha256": "22833a64eb2c2f7631ca9f14644df0e1a073ae74ab12f7da8b79579a261ceec8",
+  "transform": "map ENU minus manifest spawn ENU; no rescaling or smoothing",
+  "limits": [
+    "Single simulated route; not continuous collision proof, calibrated rover dynamics, or low-rock detection.",
+    "Footprint drawings use planar yaw; roll/pitch and height are not represented."
+  ],
+  "alt_text": "Başarısız ve güncel rover koşularının ölçülen yolları, başlangıç, hedef ve senaryo engeline göre karşılaştırılır."
+}

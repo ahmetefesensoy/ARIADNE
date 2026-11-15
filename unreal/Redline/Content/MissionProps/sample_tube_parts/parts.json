@@ -1,0 +1,117 @@
+{
+  "schema": "redline.sample_tube_parts.v1",
+  "created_at_utc": "2026-11-15T09:32:45.460633+00:00",
+  "status": "SCENARIO",
+  "passed": true,
+  "parts": {
+    "cap": {
+      "mesh_asset": "/Game/MissionProps/sample_tube_parts/SM_SampleTubePart_SM_sample_tube_cap_LOD0.SM_SampleTubePart_SM_sample_tube_cap_LOD0",
+      "source_name": "SM_sample_tube_cap_LOD0",
+      "origin_cm": [
+        0.0,
+        9.313225746154785e-08,
+        12.923726439476013
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -0.0,
+        -9.313225746154785e-08,
+        -12.923726439476013
+      ],
+      "bounds_min_cm": [
+        -1.298597812652588,
+        -1.2131940126419067,
+        10.847451210021973
+      ],
+      "bounds_max_cm": [
+        1.2985979318618774,
+        1.2136001586914062,
+        15.00007152557373
+      ],
+      "triangles": 5693,
+      "collision": false,
+      "material": "/Game/MissionProps/sample_tube/Materials/M_MAT_Scenario_Titanium.M_MAT_Scenario_Titanium"
+    },
+    "tube": {
+      "mesh_asset": "/Game/MissionProps/sample_tube_parts/SM_SampleTubePart_SM_sample_tube_tube_LOD0.SM_SampleTubePart_SM_sample_tube_tube_LOD0",
+      "source_name": "SM_sample_tube_tube_LOD0",
+      "origin_cm": [
+        6.859190762042999e-05,
+        -0.08969418704509735,
+        5.423726141452789
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -6.859190762042999e-05,
+        0.08969418704509735,
+        -5.423726141452789
+      ],
+      "bounds_min_cm": [
+        -1.0074917078018188,
+        -1.1879823207855225,
+        -1.080334186553955e-05
+      ],
+      "bounds_max_cm": [
+        1.007764458656311,
+        1.0076957941055298,
+        10.847454071044922
+      ],
+      "triangles": 1304,
+      "collision": false,
+      "material": "/Game/MissionProps/sample_tube/Materials/M_MAT_Scenario_Titanium.M_MAT_Scenario_Titanium"
+    }
+  },
+  "sources": [
+    {
+      "path": "assets/incoming/sample_tube/asset.json",
+      "sha256": "74b9acb3b664dc7d0624286970dba61c58d71743105e92fa9cfbcc83e8294692"
+    },
+    {
+      "path": "assets/incoming/sample_tube/material_bindings.json",
+      "sha256": "d89185277bfe49abc15fb60c0366e3fbd2b55bef75a6b40d94fc8a703c0dccdb"
+    },
+    {
+      "path": "assets/incoming/sample_tube/SOURCE.md",
+      "sha256": "bf57643d128183265483dfe0d479e3ee8c0ea632eed7abb1bbba26c4b732656b"
+    },
+    {
+      "path": "assets/incoming/sample_tube/unreal/sample_tube_LOD0.fbx",
+      "sha256": "de79f486d505770cea3d02c0e05fbe3373979187324a0cc7c030f574e802afff"
+    }
+  ],
+  "limitation": "Source cap is an existing SCENARIO derivative, not flight sealing CAD. Visual motion only, no grasp/sealing physics.",
+  "body_asset": "/Game/MissionProps/sample_tube_parts/SM_SampleTubePart_SM_sample_tube_tube_LOD0.SM_SampleTubePart_SM_sample_tube_tube_LOD0",
+  "cap_asset": "/Game/MissionProps/sample_tube_parts/SM_SampleTubePart_SM_sample_tube_cap_LOD0.SM_SampleTubePart_SM_sample_tube_cap_LOD0",
+  "cap_origin_cm": [
+    0.0,
+    9.313225746154785e-08,
+    12.923726439476013
+  ],
+  "body_origin_cm": [
+    6.859190762042999e-05,
+    -0.08969418704509735,
+    5.423726141452789
+  ],
+  "cap_pivot_child_offset_cm": [
+    -0.0,
+    -9.313225746154785e-08,
+    -12.923726439476013
+  ],
+  "dimensions_cm": [
+    2.5971957445144653,
+    2.426794171333313,
+    15.000082328915596
+  ],
+  "min_z_cm": -1.080334186553955e-05,
+  "unit_error_cm": 2.2351741790771484e-07,
+  "axis_contract": "Source master +X forward/+Y left/+Z up, UE centimetres/+Y right. Absolute bind vertices, no recentering.",
+  "source_notice": "assets/incoming/sample_tube/SOURCE.md"
+}

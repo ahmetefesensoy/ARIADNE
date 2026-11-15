@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-11-14T17:33:55.343472+00:00",
+  "source": "test-results/t3-runtime-rBwIyXYE/perception-result.npz",
+  "source_sha256": "9e5b8bccb2adbfc94f4f52cac8c8f8fc2f1189454427c2d894ee125cb4ee3b58",
+  "processing": "Only finite classified returns; radius<=8 m; side panel |Y|<=0.8 m. No smoothing, interpolation or rescaling.",
+  "matplotlib": "3.11.2",
+  "alt_text": "Üstten ve yandan 3D LiDAR noktaları; gri zemin, turuncu çarpı engel adayı.",
+  "limits": [
+    "One stationary simulated point cloud; uncertain terrain classes are not verified ground truth."
+  ]
+}

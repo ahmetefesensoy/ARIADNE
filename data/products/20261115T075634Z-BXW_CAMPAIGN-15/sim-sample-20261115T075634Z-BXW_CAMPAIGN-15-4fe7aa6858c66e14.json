@@ -1,0 +1,72 @@
+{
+  "evidence_id": "ev-20261115T075634Z-BXW_CAMPAIGN-15-4fe7aa6858c66e14",
+  "input_ids": [
+    "scenario-BXW-20261115-ridge-a",
+    "config/targets_BXW.yaml",
+    "ev-20261115T075634Z-BXW_CAMPAIGN-15-820df794c7a5f018"
+  ],
+  "instrument": "SAMPLE",
+  "instrument_point_m": [
+    285.1,
+    -468.0,
+    -3580.166064453125
+  ],
+  "integration_s": 20.0,
+  "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed",
+  "measured_utc": "2026-11-15T07:59:42.870799+00:00",
+  "measurement": {
+    "input_ids": [
+      "scenario-BXW-20261115-ridge-a",
+      "config/targets_BXW.yaml"
+    ],
+    "integration_s": 20.0,
+    "labels": [
+      "hardness"
+    ],
+    "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed",
+    "noise_calibration": "UNCALIBRATED_SCENARIO",
+    "seed": 20261115,
+    "sigma": [
+      0.0
+    ],
+    "unit": "scenario_index",
+    "values": [
+      0.45
+    ]
+  },
+  "product_id": "sim-sample-20261115T075634Z-BXW_CAMPAIGN-15-4fe7aa6858c66e14",
+  "provenance_status": "SIMULATED",
+  "request_id": "integration-9-18",
+  "run_id": "20261115T075634Z-BXW_CAMPAIGN-15",
+  "sample": {
+    "analysis_point_m": [
+      285.1,
+      -468.0,
+      -3580.166064453125
+    ],
+    "container_id": "container-20261115T075634Z-BXW_CAMPAIGN-15-01",
+    "evidence_ids": [
+      "ev-20261115T075634Z-BXW_CAMPAIGN-15-820df794c7a5f018",
+      "ev-20261115T075634Z-BXW_CAMPAIGN-15-4fe7aa6858c66e14"
+    ],
+    "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed",
+    "origin_point_m": [
+      -30.0,
+      -382.0,
+      -3595.6417233867187
+    ],
+    "provenance_status": "SIMULATED",
+    "sample_id": "smp-BXW-85834d87582d",
+    "state": 7,
+    "state_name": "RECORDED",
+    "target_id": "BXW_RIDGE_A",
+    "tool": "CREW_SCOOP_SCENARIO"
+  },
+  "schema": "redline.science.product.v1",
+  "target_id": "BXW_RIDGE_A",
+  "target_point_m": [
+    -30.0,
+    -382.0,
+    -3595.6417233867187
+  ]
+}

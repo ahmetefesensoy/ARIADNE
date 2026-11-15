@@ -1,0 +1,302 @@
+{
+  "asset_id": "tool_neutron",
+  "prepared_utc": "2026-11-14T11:44:14.527333+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\tool_neutron\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        0.30000001192092896,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.30000001192092896,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.30000001192092896,
+        0.08027873933315277
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 0.3,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.30000001192092896,
+      0.22446082532405853,
+      0.16055747866630554
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_tool_neutron_tripo_node_d1f56ecd_0f00_4164_9f46_0aac237d08a3_LOD0",
+      "source_name": "tripo_node_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.08027873933315277
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 6449,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "tripo_node_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+        "triangles": 6449,
+        "vertices": 6565,
+        "uv_layers": 1,
+        "non_manifold_edges": 5311
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 6449,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_tool_neutron_tripo_node_d1f56ecd_0f00_4164_9f46_0aac237d08a3_LOD0",
+        "triangles": 6449,
+        "vertices": 6565,
+        "uv_layers": 1,
+        "non_manifold_edges": 5311
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 3224,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_tool_neutron_tripo_node_d1f56ecd_0f00_4164_9f46_0aac237d08a3_LOD1",
+          "triangles": 3224,
+          "vertices": 4475,
+          "uv_layers": 1,
+          "non_manifold_edges": 4328
+        }
+      ]
+    },
+    "2": {
+      "triangles": 1612,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_tool_neutron_tripo_node_d1f56ecd_0f00_4164_9f46_0aac237d08a3_LOD2",
+          "triangles": 1612,
+          "vertices": 3018,
+          "uv_layers": 1,
+          "non_manifold_edges": 2834
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 1999,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_tool_neutron_tripo_node_d1f56ecd_0f00_4164_9f46_0aac237d08a3_Gazebo",
+        "triangles": 1999,
+        "vertices": 3377,
+        "uv_layers": 1,
+        "non_manifold_edges": 3247
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "Color_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+      "path": "textures/Color_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "NormalGL_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+      "path": "textures/NormalGL_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "ORM_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+      "path": "textures/ORM_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\tool_neutron_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "Tripo SCENARIO instrument appearance; not flight CAD, measured geometry, sensor optics or calibrated detection/illumination physics."
+  ],
+  "materials": {
+    "tripo_material_d1f56ecd-0f00-4164-9f46-0aac237d08a3": {
+      "Base Color": {
+        "image": "Color_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+        "path": "textures/Color_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "ORM_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+        "path": "textures/ORM_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "image": "ORM_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+        "path": "textures/ORM_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+        "component": "B",
+        "colorspace": "Non-Color"
+      },
+      "Normal": {
+        "image": "NormalGL_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+        "path": "textures/NormalGL_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "material_channels": {
+    "BaseColor": "textures/Color_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+    "NormalGL": "textures/NormalGL_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+    "NormalDX": "textures/tool_neutron_NormalDX.png",
+    "AO": "textures/tool_neutron_AO.png",
+    "Roughness": "textures/tool_neutron_Roughness.png",
+    "Metallic": "textures/tool_neutron_Metallic.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "source_notice": {
+    "kind": "Tripo · AI üretimi",
+    "library": null,
+    "tripo_tasks": [
+      {
+        "asset_id": "tool_neutron",
+        "historical": false,
+        "task_id": "d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+        "type": "text_to_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": true,
+          "prompt": "One realistic compact Mars rover neutron sensor electronics box, a low rectangular robust white insulated instrument housing with slightly rounded edges, ribbed graphite side heat sink, two separate circular gold titanium electrical connectors recessed into one short end, small dark circular detector window on the broad front panel, four visible bolted corner mounting feet, no tall antenna. Clean coherent aerospace engineering, scientifically plausible packaging, muted white graphite and titanium finish, restrained dust, small red mechanical latches without writing. Complete isolated single scientific instrument, no vehicle, no ground, no stand, no pedestal, no scene, no wires on floor, no lettering, no labels, no logo. Realistic PBR materials.",
+          "texture": true,
+          "export_uv": true,
+          "face_limit": 8000,
+          "model_seed": 14112033,
+          "model_version": "v3.1-20260211",
+          "geometry_quality": "standard",
+          "texture_alignment": "geometry"
+        },
+        "created_at": "2026-11-14T11:21:00.901460Z",
+        "completed_at": "2026-11-14T11:23:06.783349Z",
+        "credits_consumed": 20
+      }
+    ],
+    "terms_urls": [
+      "https://developers.tripo3d.ai/en/terms",
+      "https://www.tripo3d.ai/terms"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 1,
+    "triangles": 6449,
+    "dimensions_m": [
+      0.30000001192092896,
+      0.22446082532405853,
+      0.16055747866630554
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.30000001192092896,
+        0.22446082532405853,
+        0.16055747866630554
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.3117522597312927,
+        0.22743861377239227,
+        0.1642325222492218
+      ],
+      "max_dimension_error_m": 0.01175224781036377
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

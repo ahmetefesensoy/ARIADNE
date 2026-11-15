@@ -1,0 +1,5 @@
+<library path="interpolating_planner">
+  <class type="redline_navigation::InterpolatingPlanner" base_class_type="nav2_core::GlobalPlanner">
+    <description>Smac Hybrid planner with bounded segment interpolation for a coarse DEM grid.</description>
+  </class>
+</library>

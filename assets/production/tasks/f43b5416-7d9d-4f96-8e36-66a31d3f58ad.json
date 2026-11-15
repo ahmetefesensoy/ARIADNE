@@ -1,0 +1,15 @@
+{
+  "task_id": "f43b5416-7d9d-4f96-8e36-66a31d3f58ad",
+  "type": "animate_rig",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "spec": "unreal",
+    "topology": "biped",
+    "out_format": "glb",
+    "original_model_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4"
+  },
+  "created_at": "2026-11-14T10:49:38.189245Z",
+  "completed_at": "2026-11-14T10:49:54.851109Z",
+  "credits_consumed": 25
+}

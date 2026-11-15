@@ -1,0 +1,255 @@
+{
+  "schema": "redline.campaign.preview.v1",
+  "created_at_utc": "2026-11-15T06:46:34.519671+00:00",
+  "created_at_local": "2026-11-15T09:46:34+03:00",
+  "status": "PARTIAL_PREVIEW",
+  "milestones_closed": [],
+  "ros_build": {
+    "receipt": "test-results/campaign-build-weuApPL4/ros-workspace.json",
+    "source_tree_sha256": "dc2376c9106aee045997e6843afe8131248623b62303cede78b3d7bfccd960c7",
+    "colcon_summary": "151 tests, 0 errors, 0 failures, 0 skipped",
+    "current_source_changes_ignoring_bytecode": []
+  },
+  "unreal_build": {
+    "receipt": "test-results/t4-build-source.json",
+    "exit_code": 0,
+    "current_source_changes": [],
+    "latest_automation_passed": 20,
+    "warning_successes": 3
+  },
+  "core_tests": {
+    "receipt": "test-results/campaign-release-core.xml",
+    "passed": 30
+  },
+  "physical_campaign": {
+    "run_id": "20261115T062406Z-BXW_CAMPAIGN-15",
+    "steps": 12,
+    "products": 7,
+    "evidence": 35,
+    "samples": 2,
+    "rover_displacement_m": 6.587829750989036,
+    "scout_flight_physics_s": 69.48,
+    "scout_max_home_distance_m": 33.740968716796125,
+    "human_source": "SIMULATED pose stand-in with explicit teleports; no Unreal user",
+    "science_source": "SIMULATED uncalibrated SCENARIO instruments",
+    "physics_wall_ratio_observed_approximately": 0.49
+  },
+  "evidence": [
+    {
+      "path": "test-results/campaign-field-physical-post-recovery/verification.json",
+      "sha256": "d18b51068ecc6a8b0b71f851c98bd826e54ca89c4269fd59675a964d6f9e822f",
+      "scope": "12 result-gated steps, SIMULATED human fixture + actual Gazebo/Nav2",
+      "passed": true
+    },
+    {
+      "path": "test-results/campaign-field-physical-post-recovery/scout-trajectory-verification.json",
+      "sha256": "a119e046d0f2999018c9a1d41c42dc793d0d2ae69fd4a3221b38ab50840517a6",
+      "scope": "physical BXW scout phases/trajectory; SIMULATED truth observations",
+      "passed": true
+    },
+    {
+      "path": "test-results/campaign-wall-final-ue-tests.json",
+      "sha256": "1950339cc9240d5dc5b754afb57892dcf09041d443714a684862f0350317582a",
+      "scope": "20 native EVA/prologue/music/campaign tests; three warning successes",
+      "passed": true
+    },
+    {
+      "path": "test-results/campaign-shutdown-verification.json",
+      "sha256": "364d14ef193960a4c7def62397546e7b04fd6773e9a149400eeaaf1705257548",
+      "scope": "No remaining processes in the owned probe partition; child graceful exit is separate",
+      "passed": true
+    },
+    {
+      "path": "test-results/campaign-field-physical-post-recovery/ue-science-console.png",
+      "sha256": "0be77307953f4928e18ff7e8fe8c272f9f73bde04e0a198d47e930d044fc1895",
+      "scope": "CUA visual observation; no whole-campaign manual traversal claim",
+      "passed": true
+    },
+    {
+      "path": "test-results/campaign-field-physical-post-recovery/ue-command-wall.png",
+      "sha256": "628d2ec87af6665875539ac8a2ec4c4f0ac48432276c72fefe3fbe65ee0b0a2d",
+      "scope": "CUA visual observation; no whole-campaign manual traversal claim",
+      "passed": true
+    },
+    {
+      "path": "test-results/campaign-user-opening.png",
+      "sha256": "968e8bf67960559f528c3281e9f1acb421f4306be826bffcdc8f963abbcbe968",
+      "scope": "CUA visual observation; no whole-campaign manual traversal claim",
+      "passed": true
+    }
+  ],
+  "product_files": [
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-sample-20261115T062406Z-BXW_CAMPAIGN-15-820df794c7a5f018.json",
+      "sha256": "821a41a0136ec74169904726a7a28078317fee4342cc112bc2c2dfbc03d68043"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-sample-20261115T062406Z-BXW_CAMPAIGN-15-820df794c7a5f018.xml",
+      "sha256": "573ada43ffc5eac0d3f4ea1c9a35240e892916d959269e2c31a4adb10816e1a8"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-apxs-20261115T062406Z-BXW_CAMPAIGN-15-d463a5b9b59eb29e.json",
+      "sha256": "9f9fa00a965d4746a22476dd59bf5cb92fc20e08df51b3ce168477232864ba39"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-apxs-20261115T062406Z-BXW_CAMPAIGN-15-d463a5b9b59eb29e.xml",
+      "sha256": "a72e9f9b9c1c4ae41c8f24850b6f8ac71b17630ee03cb51cd2538b052e9462c0"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-dosimeter-20261115T062406Z-BXW_CAMPAIGN-15-134fbfd5b4848c2c.json",
+      "sha256": "7a05098245752b20f8ce1a07f65db7bbaaca26dd4ff0f11b6ee1fdd5d32b37e7"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-dosimeter-20261115T062406Z-BXW_CAMPAIGN-15-134fbfd5b4848c2c.xml",
+      "sha256": "5fc15ef2041411d0310ad47bc2cf6d1a358d7846bebe6d74e3b07a32a435c78c"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-libs-20261115T062406Z-BXW_CAMPAIGN-15-fe7a804b6da3a83d.json",
+      "sha256": "a43013ee16a10b6bd42c44f7a5ba11c01a7c21c56526935d5d6af04237cdcb20"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-libs-20261115T062406Z-BXW_CAMPAIGN-15-fe7a804b6da3a83d.xml",
+      "sha256": "91e0c4b5307f91f2e1c62d4aa205245a09bf6353263f0526d3709456c3d4ebb5"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-dan-20261115T062406Z-BXW_CAMPAIGN-15-36344adc3c7ad4cc.json",
+      "sha256": "287304e2ff41962010786bc53fb5263fa1ca004b09c874e073935eea62f5b7fe"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-dan-20261115T062406Z-BXW_CAMPAIGN-15-36344adc3c7ad4cc.xml",
+      "sha256": "cc90929a7838ba74c58b536af0a69f28715d1eed25427b3b2af451cc22dcff86"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-drill-20261115T062406Z-BXW_CAMPAIGN-15-6938cf8b658af8dc.json",
+      "sha256": "93c6d507278a0ce7de138f6ccf3c54e31409689a213c5bfee7e0bbe1115306af"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-drill-20261115T062406Z-BXW_CAMPAIGN-15-6938cf8b658af8dc.xml",
+      "sha256": "2ac8ca94f935636d994b27a1b7733dc4f0282ffee3541759713934c82f643991"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-sample-20261115T062406Z-BXW_CAMPAIGN-15-4fe7aa6858c66e14.json",
+      "sha256": "73aa22b926ba8ef619591516673fb3a791dfdd640de8b93b986da2112b986ffb"
+    },
+    {
+      "path": "data/products/20261115T062406Z-BXW_CAMPAIGN-15/sim-sample-20261115T062406Z-BXW_CAMPAIGN-15-4fe7aa6858c66e14.xml",
+      "sha256": "340d406ae6fe68eec494c7882d712a70bd61d92fd0592ca7bfdf094e5d545fec"
+    }
+  ],
+  "current_sources": [
+    {
+      "path": "python/redline_core/src/redline_core/campaign.py",
+      "sha256": "20c50a18c05ff00fb6917351bc50621517f11e6f944dce247e053ad22d9f3f22"
+    },
+    {
+      "path": "python/redline_core/src/redline_core/campaign_sites.py",
+      "sha256": "8fd781c2fea959432fa14ae1f2e5203b2ba9ee02e9ab597c0aa93c1c3322f945"
+    },
+    {
+      "path": "python/redline_core/src/redline_core/science_operations.py",
+      "sha256": "b2b2d484e8c8b52bedc6e3ddfec4efeba59bdb4797a426bda8c3064b938d62e7"
+    },
+    {
+      "path": "ros_ws/src/redline_mission/redline_mission/campaign_controller.py",
+      "sha256": "7c5c3f6b79de03b199106d775275b7d98246767b169025d750de0048cbf229ec"
+    },
+    {
+      "path": "ros_ws/src/redline_mission/redline_mission/campaign_robot_pose.py",
+      "sha256": "96fa0ceffd34167b2a614b8e17cd5ce21cd95dfb3d3bc7084f1555b957a4491a"
+    },
+    {
+      "path": "ros_ws/src/redline_env/redline_env/scout_flight.py",
+      "sha256": "4443504e8b3a5d53ec8dd008dff17b03d487f52e943fa03fd8d4c468b957a5bf"
+    },
+    {
+      "path": "ros_ws/src/redline_science/redline_science/science_instruments.py",
+      "sha256": "bb44085c724b57f4fb2472b328ba4f81c6a5be4fc39f0098041ba6fee4cf1688"
+    },
+    {
+      "path": "ros_ws/src/redline_description/scripts/generate_scout.py",
+      "sha256": "3fc4c0213629735d62d2f20af2142554f655509b9118c83f486c48caadcc1114"
+    },
+    {
+      "path": "scripts/prepare_campaign_runtime.py",
+      "sha256": "bdff95f25a3aa4a0770e5b68ae3c6532ec202e5547a251e0322a1d8a21f265a7"
+    },
+    {
+      "path": "scripts/run-campaign-backend.sh",
+      "sha256": "a5c84ab70fd1e36d89751d53c2b36dbeb37b2e110f447d5c6ad485dd254ca0f1"
+    },
+    {
+      "path": "scripts/t3_supervisor.py",
+      "sha256": "b3e5cabcdebd5bc21372abc4c78a253a3682b7737950dc78ffc93a41a9ffeb50"
+    },
+    {
+      "path": "scripts/gazebo_presentation.py",
+      "sha256": "48d1e84e05eb98484456a3bf9d9cd22e7f950973d4c84b118a94d89ef1d07f7d"
+    },
+    {
+      "path": "scripts/prepare_campaign_display.py",
+      "sha256": "d03b36dd88a02d99f8b55daad61b7f08bef7932682fd73a3ead8e6cfd756f719"
+    },
+    {
+      "path": "scripts/start-t5-eva.ps1",
+      "sha256": "11b220856456870494d15c424b27856cb19f631db930627feed51a69f5bb1de8"
+    },
+    {
+      "path": "unreal/Redline/Source/Redline/Private/RedlineCampaignConsole.cpp",
+      "sha256": "cb2fc81933c8bfb23dc93442d637043ed839be7290543ba06f43a46398636db7"
+    },
+    {
+      "path": "unreal/Redline/Source/Redline/Private/RedlineHabitatDoor.cpp",
+      "sha256": "87c2a28bb684b11a50dbf668d200877a69bdb4330976e771ecc2feba7d51863f"
+    },
+    {
+      "path": "unreal/Redline/Source/Redline/Private/RedlineSampleInteraction.cpp",
+      "sha256": "4f81d9368bbd9ef759ee460bb11dd3991e83da4a57304e07746d41524f700ae3"
+    },
+    {
+      "path": "unreal/Redline/Source/Redline/Private/RedlineDroneActor.cpp",
+      "sha256": "fee19981c0a15fa5cd46d91773c8cbdc817073577e874d39f85d172b919d9c0a"
+    },
+    {
+      "path": "unreal/Redline/Source/Redline/Private/RedlinePrologueDirector.cpp",
+      "sha256": "eee942bca09fa2fa65a7816b0ccfa00a95311e1935c99a204a7e9b6b13cdb1d9"
+    },
+    {
+      "path": "unreal/Redline/Source/Redline/Private/RedlineEVAGameMode.cpp",
+      "sha256": "24e660d939a7e1db56ed1b364361358b0d52684f7b38e235e132af8564ee2314"
+    },
+    {
+      "path": "unreal/Redline/Content/Campaign/Materials/M_CampaignDisplay.uasset",
+      "sha256": "f8fe8bf4dda4befdb1183ac6eefbb59b6e78627d5293f392926a0eb2e3c2ea7a"
+    }
+  ],
+  "changes_after_physical_run": [
+    "Unreal console labels, unlit monitor and U direction",
+    "t3_supervisor signal handling and launcher shutdown grace period"
+  ],
+  "preserved_failures": [
+    "test-results/campaign-build-joGj0aPW",
+    "test-results/campaign-flow-physical/verification.json",
+    "test-results/campaign-field-physical-acceptance/verification.json"
+  ],
+  "user_session": {
+    "run_evidence": "test-results/campaign-NlzURU1f",
+    "unreal_pid": 43588,
+    "window_id": 17829202,
+    "state_observed": "fresh task 01 briefing during skippable voiced opening; no automated commands",
+    "bounded_seconds": 3600,
+    "robot_backend": "physical scout + Gazebo/Nav2 rover",
+    "human_pose_fixture_running": false
+  },
+  "open_acceptance": [
+    "Whole level/campaign manual traversal and sample visual performance",
+    "Sensor-based scout perception and failsafe RTL/landing",
+    "Physical arm/contact/force-controlled drilling",
+    "Calibrated science durations/noise and adaptive multi-point DAN",
+    "Active environment station",
+    "Full SEP/ReturnToShelter campaign and EV2/PR integration",
+    "Real-time performance target",
+    "OpenMCT/downlink"
+  ],
+  "git_github_touched": false,
+  "new_model_credits_spent": 0
+}

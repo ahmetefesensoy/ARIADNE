@@ -1,0 +1,41 @@
+{
+  "evidence_id": "ev-20261115T052626Z-BXW_CAMPAIGN-15-134fbfd5b4848c2c",
+  "input_ids": [
+    "scenario-BXW-20261115-ridge-a",
+    "config/targets_BXW.yaml"
+  ],
+  "instrument": "DOSIMETER",
+  "instrument_point_m": [
+    306.0,
+    -454.0,
+    -3581.3398433867187
+  ],
+  "integration_s": 20.0,
+  "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed",
+  "measured_utc": "2026-11-15T05:29:56.963987+00:00",
+  "measurement": {
+    "input_ids": [
+      "scenario-BXW-20261115-ridge-a",
+      "config/targets_BXW.yaml"
+    ],
+    "integration_s": 20.0,
+    "labels": [],
+    "limitation": "SIMULATED rehearsal using explicit SCENARIO values and uncalibrated scenario noise; no NASA assay, physical contact, sensor-derived spectrum, or drilled material is claimed",
+    "noise_calibration": "UNCALIBRATED_SCENARIO",
+    "seed": 20261115,
+    "sigma": [],
+    "unit": "deployment_record",
+    "values": []
+  },
+  "product_id": "sim-dosimeter-20261115T052626Z-BXW_CAMPAIGN-15-134fbfd5b4848c2c",
+  "provenance_status": "SIMULATED",
+  "request_id": "integration-5-10",
+  "run_id": "20261115T052626Z-BXW_CAMPAIGN-15",
+  "schema": "redline.science.product.v1",
+  "target_id": "BXW_RIDGE_A",
+  "target_point_m": [
+    306.0,
+    -454.0,
+    -3581.3398433867187
+  ]
+}

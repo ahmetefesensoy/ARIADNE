@@ -1,0 +1,20 @@
+{
+  "task_id": "d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+  "type": "text_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": true,
+    "prompt": "One realistic compact Mars rover neutron sensor electronics box, a low rectangular robust white insulated instrument housing with slightly rounded edges, ribbed graphite side heat sink, two separate circular gold titanium electrical connectors recessed into one short end, small dark circular detector window on the broad front panel, four visible bolted corner mounting feet, no tall antenna. Clean coherent aerospace engineering, scientifically plausible packaging, muted white graphite and titanium finish, restrained dust, small red mechanical latches without writing. Complete isolated single scientific instrument, no vehicle, no ground, no stand, no pedestal, no scene, no wires on floor, no lettering, no labels, no logo. Realistic PBR materials.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 8000,
+    "model_seed": 14112033,
+    "model_version": "v3.1-20260211",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "created_at": "2026-11-14T11:21:00.901460Z",
+  "completed_at": "2026-11-14T11:23:06.783349Z",
+  "credits_consumed": 20
+}

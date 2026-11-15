@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+"""rule_monitor entry point. Launch files run it with the REDLINE venv Python (D009)."""
+from redline_safety.rule_monitor import main
+
+main()

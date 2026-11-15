@@ -1,0 +1,706 @@
+{
+  "schema": "redline.drill_parts.v1",
+  "created_at_utc": "2026-11-15T09:53:24.784641+00:00",
+  "passed": true,
+  "status": "SCENARIO",
+  "parts": [
+    {
+      "name": "SM_tool_drill_bit_LOD0",
+      "source_name": "tripo_part_3",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_bit_LOD0.SM_DrillPart_SM_tool_drill_bit_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_bit_LOD0.SM_DrillPart_SM_tool_drill_bit_LOD0",
+      "pivot_cm": [
+        2.044288069009781,
+        2.2990697994828224,
+        35.84523797035217
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -2.044288069009781,
+        -2.2990697994828224,
+        -35.84523797035217
+      ],
+      "bounds_min_cm": [
+        -1.3376264572143555,
+        -1.0265660285949707,
+        0.0
+      ],
+      "bounds_max_cm": [
+        5.426202774047852,
+        5.624705791473389,
+        35.845237731933594
+      ],
+      "collision": false,
+      "is_bit": true
+    },
+    {
+      "name": "SM_tool_drill_bit_collar_LOD0",
+      "source_name": "tripo_part_6",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_bit_collar_LOD0.SM_DrillPart_SM_tool_drill_bit_collar_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_bit_collar_LOD0.SM_DrillPart_SM_tool_drill_bit_collar_LOD0",
+      "pivot_cm": [
+        2.0207230001688004,
+        2.277434803545475,
+        37.60599493980408
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -2.0207230001688004,
+        -2.277434803545475,
+        -37.60599493980408
+      ],
+      "bounds_min_cm": [
+        -4.434941291809082,
+        -4.105639457702637,
+        35.379302978515625
+      ],
+      "bounds_max_cm": [
+        8.476387023925781,
+        8.66050910949707,
+        39.83269119262695
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_feed_carriage_LOD0",
+      "source_name": "tripo_part_1",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_feed_carriage_LOD0.SM_DrillPart_SM_tool_drill_feed_carriage_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_feed_carriage_LOD0.SM_DrillPart_SM_tool_drill_feed_carriage_LOD0",
+      "pivot_cm": [
+        3.148263692855835,
+        -6.94078803062439,
+        53.05255651473999
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -3.148263692855835,
+        6.94078803062439,
+        -53.05255651473999
+      ],
+      "bounds_min_cm": [
+        -7.833179950714111,
+        -12.434147834777832,
+        47.85506820678711
+      ],
+      "bounds_max_cm": [
+        14.129707336425781,
+        -1.4474278688430786,
+        58.250038146972656
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_10_LOD0",
+      "source_name": "tripo_part_10",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_10_LOD0.SM_DrillPart_SM_tool_drill_fixture_10_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_10_LOD0.SM_DrillPart_SM_tool_drill_fixture_10_LOD0",
+      "pivot_cm": [
+        2.2846974432468414,
+        4.442330449819565,
+        51.21646523475647
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -2.2846974432468414,
+        -4.442330449819565,
+        -51.21646523475647
+      ],
+      "bounds_min_cm": [
+        -8.495055198669434,
+        -2.2990810871124268,
+        49.28760528564453
+      ],
+      "bounds_max_cm": [
+        13.06445026397705,
+        11.18374252319336,
+        53.14532470703125
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_11_LOD0",
+      "source_name": "tripo_part_11",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_11_LOD0.SM_DrillPart_SM_tool_drill_fixture_11_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_11_LOD0.SM_DrillPart_SM_tool_drill_fixture_11_LOD0",
+      "pivot_cm": [
+        9.67162549495697,
+        1.0785926133394241,
+        47.929078340530396
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -9.67162549495697,
+        -1.0785926133394241,
+        -47.929078340530396
+      ],
+      "bounds_min_cm": [
+        6.043252944946289,
+        -2.3039371967315674,
+        45.097557067871094
+      ],
+      "bounds_max_cm": [
+        13.299997329711914,
+        4.461122035980225,
+        50.760597229003906
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_12_LOD0",
+      "source_name": "tripo_part_12",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_12_LOD0.SM_DrillPart_SM_tool_drill_fixture_12_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_12_LOD0.SM_DrillPart_SM_tool_drill_fixture_12_LOD0",
+      "pivot_cm": [
+        11.00604459643364,
+        -3.008454479277134,
+        47.5965291261673
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -11.00604459643364,
+        3.008454479277134,
+        -47.5965291261673
+      ],
+      "bounds_min_cm": [
+        9.787097930908203,
+        -7.41791296005249,
+        45.08994674682617
+      ],
+      "bounds_max_cm": [
+        12.224990844726562,
+        1.4010039567947388,
+        50.103111267089844
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_13_LOD0",
+      "source_name": "tripo_part_13",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_13_LOD0.SM_DrillPart_SM_tool_drill_fixture_13_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_13_LOD0.SM_DrillPart_SM_tool_drill_fixture_13_LOD0",
+      "pivot_cm": [
+        -9.780104458332062,
+        -9.99249741435051,
+        50.14348030090332
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        9.780104458332062,
+        9.99249741435051,
+        -50.14348030090332
+      ],
+      "bounds_min_cm": [
+        -12.408025741577148,
+        -10.916500091552734,
+        49.30393600463867
+      ],
+      "bounds_max_cm": [
+        -7.152182579040527,
+        -9.06849479675293,
+        50.98301696777344
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_14_LOD0",
+      "source_name": "tripo_part_14",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_14_LOD0.SM_DrillPart_SM_tool_drill_fixture_14_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_14_LOD0.SM_DrillPart_SM_tool_drill_fixture_14_LOD0",
+      "pivot_cm": [
+        15.30376672744751,
+        -9.966687858104706,
+        50.131553411483765
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -15.30376672744751,
+        9.966687858104706,
+        -50.131553411483765
+      ],
+      "bounds_min_cm": [
+        12.798168182373047,
+        -10.899958610534668,
+        49.26105880737305
+      ],
+      "bounds_max_cm": [
+        17.809364318847656,
+        -9.033415794372559,
+        51.002044677734375
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_15_LOD0",
+      "source_name": "tripo_part_15",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_15_LOD0.SM_DrillPart_SM_tool_drill_fixture_15_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_15_LOD0.SM_DrillPart_SM_tool_drill_fixture_15_LOD0",
+      "pivot_cm": [
+        -3.2760217785835266,
+        -1.2736976146697998,
+        52.9796838760376
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        3.2760217785835266,
+        1.2736976146697998,
+        -52.9796838760376
+      ],
+      "bounds_min_cm": [
+        -4.111880302429199,
+        -1.7558801174163818,
+        52.311180114746094
+      ],
+      "bounds_max_cm": [
+        -2.4401633739471436,
+        -0.7915151715278625,
+        53.64818572998047
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_16_LOD0",
+      "source_name": "tripo_part_16",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_16_LOD0.SM_DrillPart_SM_tool_drill_fixture_16_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_16_LOD0.SM_DrillPart_SM_tool_drill_fixture_16_LOD0",
+      "pivot_cm": [
+        -2.1475765854120255,
+        -13.294652104377747,
+        54.16048765182495
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        2.1475765854120255,
+        13.294652104377747,
+        -54.16048765182495
+      ],
+      "bounds_min_cm": [
+        -10.461040496826172,
+        -14.619235038757324,
+        53.07508850097656
+      ],
+      "bounds_max_cm": [
+        6.165886878967285,
+        -11.970069885253906,
+        55.24588394165039
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_17_LOD0",
+      "source_name": "tripo_part_17",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_17_LOD0.SM_DrillPart_SM_tool_drill_fixture_17_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_17_LOD0.SM_DrillPart_SM_tool_drill_fixture_17_LOD0",
+      "pivot_cm": [
+        9.92879867553711,
+        -1.305523980408907,
+        52.94005870819092
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -9.92879867553711,
+        1.305523980408907,
+        -52.94005870819092
+      ],
+      "bounds_min_cm": [
+        9.18470573425293,
+        -1.7466305494308472,
+        52.251976013183594
+      ],
+      "bounds_max_cm": [
+        10.672891616821289,
+        -0.8644174337387085,
+        53.62813949584961
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_18_LOD0",
+      "source_name": "tripo_part_18",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_18_LOD0.SM_DrillPart_SM_tool_drill_fixture_18_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_18_LOD0.SM_DrillPart_SM_tool_drill_fixture_18_LOD0",
+      "pivot_cm": [
+        10.987501591444016,
+        -13.382284343242645,
+        54.1847825050354
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -10.987501591444016,
+        13.382284343242645,
+        -54.1847825050354
+      ],
+      "bounds_min_cm": [
+        6.165885925292969,
+        -14.561148643493652,
+        53.09300994873047
+      ],
+      "bounds_max_cm": [
+        15.809117317199707,
+        -12.20341968536377,
+        55.276554107666016
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_19_LOD0",
+      "source_name": "tripo_part_19",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_19_LOD0.SM_DrillPart_SM_tool_drill_fixture_19_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_19_LOD0.SM_DrillPart_SM_tool_drill_fixture_19_LOD0",
+      "pivot_cm": [
+        5.7666391134262085,
+        0.7306511979550123,
+        52.470964193344116
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -5.7666391134262085,
+        -0.7306511979550123,
+        -52.470964193344116
+      ],
+      "bounds_min_cm": [
+        1.5357699394226074,
+        0.15647971630096436,
+        51.30918502807617
+      ],
+      "bounds_max_cm": [
+        9.997509002685547,
+        1.3048229217529297,
+        53.63274383544922
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_4_LOD0",
+      "source_name": "tripo_part_4",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_4_LOD0.SM_DrillPart_SM_tool_drill_fixture_4_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_4_LOD0.SM_DrillPart_SM_tool_drill_fixture_4_LOD0",
+      "pivot_cm": [
+        -7.786387205123901,
+        5.376475304365158,
+        53.029197454452515
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        7.786387205123901,
+        -5.376475304365158,
+        -53.029197454452515
+      ],
+      "bounds_min_cm": [
+        -17.80936622619629,
+        -0.7196605801582336,
+        49.964778900146484
+      ],
+      "bounds_max_cm": [
+        2.2365901470184326,
+        11.472611427307129,
+        56.0936164855957
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_5_LOD0",
+      "source_name": "tripo_part_5",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_5_LOD0.SM_DrillPart_SM_tool_drill_fixture_5_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_5_LOD0.SM_DrillPart_SM_tool_drill_fixture_5_LOD0",
+      "pivot_cm": [
+        2.2497057914733887,
+        6.631492078304291,
+        47.134774923324585
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -2.2497057914733887,
+        -6.631492078304291,
+        -47.134774923324585
+      ],
+      "bounds_min_cm": [
+        -7.802029132843018,
+        2.0123610496520996,
+        43.480567932128906
+      ],
+      "bounds_max_cm": [
+        12.301441192626953,
+        11.250624656677246,
+        50.78898239135742
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_7_LOD0",
+      "source_name": "tripo_part_7",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_7_LOD0.SM_DrillPart_SM_tool_drill_fixture_7_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_7_LOD0.SM_DrillPart_SM_tool_drill_fixture_7_LOD0",
+      "pivot_cm": [
+        2.5791246443986893,
+        -7.293865084648132,
+        46.99207842350006
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -2.5791246443986893,
+        7.293865084648132,
+        -46.99207842350006
+      ],
+      "bounds_min_cm": [
+        -5.471965312957764,
+        -8.743902206420898,
+        44.92149353027344
+      ],
+      "bounds_max_cm": [
+        10.63021469116211,
+        -5.843827724456787,
+        49.06266403198242
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_8_LOD0",
+      "source_name": "tripo_part_8",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_8_LOD0.SM_DrillPart_SM_tool_drill_fixture_8_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_8_LOD0.SM_DrillPart_SM_tool_drill_fixture_8_LOD0",
+      "pivot_cm": [
+        -5.861316621303558,
+        0.8796490728855133,
+        48.27333688735962
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        5.861316621303558,
+        -0.8796490728855133,
+        -48.27333688735962
+      ],
+      "bounds_min_cm": [
+        -9.257431983947754,
+        -2.2990810871124268,
+        45.780696868896484
+      ],
+      "bounds_max_cm": [
+        -2.4652018547058105,
+        4.058379173278809,
+        50.7659797668457
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_fixture_9_LOD0",
+      "source_name": "tripo_part_9",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_9_LOD0.SM_DrillPart_SM_tool_drill_fixture_9_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_fixture_9_LOD0.SM_DrillPart_SM_tool_drill_fixture_9_LOD0",
+      "pivot_cm": [
+        -6.320229172706604,
+        -2.9237141832709312,
+        48.11709523200989
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        6.320229172706604,
+        2.9237141832709312,
+        -48.11709523200989
+      ],
+      "bounds_min_cm": [
+        -7.648473739624023,
+        -7.424783706665039,
+        46.53484344482422
+      ],
+      "bounds_max_cm": [
+        -4.991984844207764,
+        1.577355146408081,
+        49.69934844970703
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_gearbox_LOD0",
+      "source_name": "tripo_part_2",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_gearbox_LOD0.SM_DrillPart_SM_tool_drill_gearbox_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_gearbox_LOD0.SM_DrillPart_SM_tool_drill_gearbox_LOD0",
+      "pivot_cm": [
+        2.3184925317764282,
+        -0.9442852810025215,
+        43.03337335586548
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -2.3184925317764282,
+        0.9442852810025215,
+        -43.03337335586548
+      ],
+      "bounds_min_cm": [
+        -5.943811893463135,
+        -6.746760368347168,
+        38.95488357543945
+      ],
+      "bounds_max_cm": [
+        10.58079719543457,
+        4.858189582824707,
+        47.11186218261719
+      ],
+      "collision": false,
+      "is_bit": false
+    },
+    {
+      "name": "SM_tool_drill_motor_housing_LOD0",
+      "source_name": "tripo_part_0",
+      "asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_motor_housing_LOD0.SM_DrillPart_SM_tool_drill_motor_housing_LOD0",
+      "mesh_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_motor_housing_LOD0.SM_DrillPart_SM_tool_drill_motor_housing_LOD0",
+      "pivot_cm": [
+        2.2102192044258118,
+        3.067456930875778,
+        58.25012922286987
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -2.2102192044258118,
+        -3.067456930875778,
+        -58.25012922286987
+      ],
+      "bounds_min_cm": [
+        -7.5872483253479,
+        -8.484322547912598,
+        51.50025939941406
+      ],
+      "bounds_max_cm": [
+        12.007685661315918,
+        14.619235038757324,
+        64.99999237060547
+      ],
+      "collision": false,
+      "is_bit": false
+    }
+  ],
+  "sources": [
+    {
+      "path": "assets/incoming/tool_drill/asset.json",
+      "sha256": "8ba9cdc743769f8901491d764897e829f4dad18e1872e2d5cf3b545e57799ede"
+    },
+    {
+      "path": "assets/incoming/tool_drill/material_bindings.json",
+      "sha256": "73574c4f6f847fb027caf04a61cccc04bc6873f75626b646091e6f34ed026b60"
+    },
+    {
+      "path": "assets/incoming/tool_drill/SOURCE.md",
+      "sha256": "2ddbe70da5d24a95fbcedb9168e311f41ae1b004b52564e23efed114440472d8"
+    },
+    {
+      "path": "assets/incoming/tool_drill/unreal/tool_drill_LOD0.fbx",
+      "sha256": "c417a7b8f728641a48ef62a32699c2c4dbd4102ddfac1dd017172886bd424060"
+    }
+  ],
+  "limitation": "Existing Tripo visual pieces and authored pivots; no flight CAD, joint limits, torque/force or soil physics. Bit rotation is cosmetic.",
+  "dimensions_cm": [
+    35.618730545043945,
+    29.23847007751465,
+    64.99999237060547
+  ],
+  "unit_error_cm": 2.1457672119140625e-06,
+  "bit_asset": "/Game/MissionProps/tool_drill_parts/SM_DrillPart_SM_tool_drill_bit_LOD0.SM_DrillPart_SM_tool_drill_bit_LOD0",
+  "bit_origin_cm": [
+    2.044288069009781,
+    2.2990697994828224,
+    35.84523797035217
+  ],
+  "bit_pivot_child_offset_cm": [
+    -2.044288069009781,
+    -2.2990697994828224,
+    -35.84523797035217
+  ],
+  "source_notice": "assets/incoming/tool_drill/SOURCE.md",
+  "axis_contract": "UE centimetres; absolute bind vertices, no recentering; use pivot and negative child offset for rotation."
+}

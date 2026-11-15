@@ -1,0 +1,152 @@
+{
+ "schema": "redline.t6_rad_verification.v1",
+ "created_at": "2026-11-14T18:21:26+00:00",
+ "status": "ARCHIVE data, DERIVED checks",
+ "tables": {
+  "4189": {
+   "csv": "data/env/rad_4189.csv",
+   "sidecar": {
+    "schema": "redline.rad_table.v1",
+    "status": "ARCHIVE",
+    "product": "RAD_RDR_2024_139_17_46_4189_V00.TXT",
+    "source_url": "https://pds-ppi.igpp.ucla.edu/data/MSL-M-RAD-3-RDR-V1.0/DATA/SOL_04134_04257/RAD_RDR_2024_139_17_46_4189_V00.TXT",
+    "rdr_sha256": "c8a9a6d6fa3cd1b576921c97ab589684dafa70921e80bab37a8279e6a9940232",
+    "label_sha256": "506992cff1d28b8c6cfcede5750b261f7bbff62ceeac9ab75bfa536db56d82cb",
+    "csv_sha256": "1feed9dd4d625f2813bf0d4e93d56b055b1f6be099b63769cf18a9a0bc53cec3",
+    "file_header": {
+     "SOFTWARE_VERSION": "1.0",
+     "RDR_VERSION": "0",
+     "CREATION_TIME": "2024-310 01:20:50",
+     "START_SOL": "4189",
+     "START_TIME": "2024-139 17:46:12"
+    },
+    "readings": 88,
+    "unit": "uGy/h (as recorded; Hassler et al. 2014)",
+    "rule": "doses matched to observations by NN; stepwise, never interpolated (proje.md \u00a76.3)"
+   }
+  },
+  "4190": {
+   "csv": "data/env/rad_4190.csv",
+   "sidecar": {
+    "schema": "redline.rad_table.v1",
+    "status": "ARCHIVE",
+    "product": "RAD_RDR_2024_140_18_30_4190_V00.TXT",
+    "source_url": "https://pds-ppi.igpp.ucla.edu/data/MSL-M-RAD-3-RDR-V1.0/DATA/SOL_04134_04257/RAD_RDR_2024_140_18_30_4190_V00.TXT",
+    "rdr_sha256": "2f4df513fccdfb3ee217fc6a4d72fb04cf46e5f6755d79412083ac38a23487ff",
+    "label_sha256": "6734878f8678aee70376310aa15299880b89078c6c0edb536197f51c5a234db6",
+    "csv_sha256": "da820ba29ba6f0b1e89d1807beaed15519ccf3da588266c90943094a785bf491",
+    "file_header": {
+     "SOFTWARE_VERSION": "1.0",
+     "RDR_VERSION": "0",
+     "CREATION_TIME": "2024-310 01:22:49",
+     "START_SOL": "4190",
+     "START_TIME": "2024-140 18:30:00"
+    },
+    "readings": 129,
+    "unit": "uGy/h (as recorded; Hassler et al. 2014)",
+    "rule": "doses matched to observations by NN; stepwise, never interpolated (proje.md \u00a76.3)"
+   }
+  },
+  "4191": {
+   "csv": "data/env/rad_4191.csv",
+   "sidecar": {
+    "schema": "redline.rad_table.v1",
+    "status": "ARCHIVE",
+    "product": "RAD_RDR_2024_141_19_08_4191_V00.TXT",
+    "source_url": "https://pds-ppi.igpp.ucla.edu/data/MSL-M-RAD-3-RDR-V1.0/DATA/SOL_04134_04257/RAD_RDR_2024_141_19_08_4191_V00.TXT",
+    "rdr_sha256": "579b5fc91cf49f8451ff55b23ce4df7b8eee1cf4d3ef830f2dc1a9ff2594bb41",
+    "label_sha256": "259bfe5cc5c592cb0a5470387267cd9e04ef67c8bc097f8bc48164d54d40eca2",
+    "csv_sha256": "bfb3d0f521ce103699413ccb565f7dd537feaad31b66ca3ab7059a868f3040f8",
+    "file_header": {
+     "SOFTWARE_VERSION": "1.0",
+     "RDR_VERSION": "0",
+     "CREATION_TIME": "2024-310 01:25:31",
+     "START_SOL": "4191",
+     "START_TIME": "2024-141 19:08:25"
+    },
+    "readings": 128,
+    "unit": "uGy/h (as recorded; Hassler et al. 2014)",
+    "rule": "doses matched to observations by NN; stepwise, never interpolated (proje.md \u00a76.3)"
+   }
+  }
+ },
+ "counts": {
+  "observation_sections_4190": null,
+  "dose_blocks_4190": 129
+ },
+ "spec_count_note": "proje.md \u00a76.3 says 186 observation sections / 93 dose blocks for sol 4190; the PDS V00 file (created 2024-310) has 258 / 129 (see VERIFICATION_LOG)",
+ "checks": [
+  {
+   "check": "sol 4190 obs 76 E",
+   "expected": 5.72,
+   "expected_utc": "05:04:45",
+   "observed": 5.72292,
+   "observed_utc": "2024-05-20T05:04:45+00:00",
+   "pass": true
+  },
+  {
+   "check": "sol 4190 obs 78 E",
+   "expected": 9.97,
+   "expected_utc": "05:21:50",
+   "observed": 9.97416,
+   "observed_utc": "2024-05-20T05:21:50+00:00",
+   "pass": true
+  },
+  {
+   "check": "sol 4190 obs 80 E",
+   "expected": 85.38,
+   "expected_utc": "05:38:56",
+   "observed": 85.38292,
+   "observed_utc": "2024-05-20T05:38:56+00:00",
+   "pass": true
+  },
+  {
+   "check": "sol 4190 obs 82 E",
+   "expected": 214.04,
+   "expected_utc": null,
+   "observed": 214.03734,
+   "observed_utc": "2024-05-20T05:48:02+00:00",
+   "pass": true
+  },
+  {
+   "check": "sol 4190 obs 84 E",
+   "expected": 316.37,
+   "expected_utc": null,
+   "observed": 316.37013,
+   "observed_utc": "2024-05-20T05:57:07+00:00",
+   "pass": true
+  },
+  {
+   "check": "sol 4190 obs 86 E",
+   "expected": 343.28,
+   "expected_utc": null,
+   "observed": 343.28198,
+   "observed_utc": "2024-05-20T06:06:13+00:00",
+   "pass": true
+  },
+  {
+   "check": "sol 4190 obs 88 E",
+   "expected": 351.42427,
+   "expected_utc": "06:15:19",
+   "observed": 351.42427,
+   "observed_utc": "2024-05-20T06:15:19+00:00",
+   "pass": true
+  },
+  {
+   "check": "sol 4190 E maximum",
+   "expected": 351.42427,
+   "observed": 351.42427,
+   "observed_utc": "2024-05-20T06:15:19+00:00",
+   "pass": true
+  },
+  {
+   "check": "first 25% E alarm (6 h median background)",
+   "expected_utc": "2024-05-20T05:21:50+00:00",
+   "expected_background": 5.6,
+   "observed_utc": "2024-05-20T05:21:50+00:00",
+   "observed_background": 5.60264,
+   "pass": true
+  }
+ ],
+ "all_pass": true
+}

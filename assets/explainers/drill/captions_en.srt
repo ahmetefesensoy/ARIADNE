@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:03,500
+B5 · Drilling with fault handling
+
+2
+00:00:03,500 --> 00:00:08,000
+The drill comes down to the rock and the bit spins up.
+
+3
+00:00:08,000 --> 00:00:13,500
+The feed force pushes the bit into the rock; the cuttings are thrown out.
+
+4
+00:00:13,500 --> 00:00:16,500
+Stall! Torque over the limit: the bit retracts and the feed is lowered.
+
+5
+00:00:16,500 --> 00:00:21,000
+It switches to percussive mode and reaches 5 cm.
+
+6
+00:00:21,000 --> 00:00:25,000
+The powder sample goes into a tube and on to the lab. (Simulation)
+

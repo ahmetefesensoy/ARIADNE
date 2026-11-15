@@ -1,0 +1,1 @@
+{"utc": "2026-11-15T12:16:17.521352+00:00", "decision_id": "dec-20261115T121523Z-BXW_CAMPAIGN-15-1", "context": "player_command_accepted", "chosen": "START", "evidence_ids": [], "rejected_reasons": [], "assumptions": {"status": "SCENARIO", "pet_s": 0.0, "operation_id": "integration-0-0"}}

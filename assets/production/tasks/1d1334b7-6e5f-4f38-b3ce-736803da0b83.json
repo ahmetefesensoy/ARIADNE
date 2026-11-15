@@ -1,0 +1,20 @@
+{
+  "task_id": "1d1334b7-6e5f-4f38-b3ce-736803da0b83",
+  "type": "text_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": true,
+    "prompt": "One realistic compact Mars exploration multispectral camera head, sturdy rectangular white thermal-insulated optical housing with six small round glass lens apertures in a clean two by three array on the front, each aperture has a recessed dark baffle and a titanium ring. Subtle lens coating reflections, graphite rear electronics module, small bolted mounting plate underneath and a secured rear electrical connector. Plausible precision optical instrument, clean aerospace machining, white graphite titanium with tiny red fasteners, no bright lights. Complete isolated single camera, no gimbal, no mast, no drone, no rover, no tripod, no terrain, no base, no pedestal, no writing, no labels, no logos. Realistic PBR materials.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 12000,
+    "model_seed": 14112034,
+    "model_version": "v3.1-20260211",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "created_at": "2026-11-14T11:23:17.229013Z",
+  "completed_at": "2026-11-14T11:26:17.061618Z",
+  "credits_consumed": 20
+}

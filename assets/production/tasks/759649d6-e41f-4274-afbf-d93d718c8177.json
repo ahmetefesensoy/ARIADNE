@@ -1,0 +1,20 @@
+{
+  "task_id": "759649d6-e41f-4274-afbf-d93d718c8177",
+  "type": "text_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": true,
+    "prompt": "One realistic Mars rover contact-science sensor head inspired by APXS, compact short cylindrical metal instrument with a broad circular flat sensing window at the front, protective annular contact rim, small recessed round detector apertures arranged around the central window, bolted flange at the back for mounting on a robot wrist. White ceramic thermal sleeve, brushed titanium rings, dark graphite rear connector block, small secured cable connector. Functional restrained aerospace engineering, clear coherent manufactured geometry, no decorative spikes. Complete isolated single instrument, mounted axis horizontal, no arm, no rover, no ground, no pedestal, no words, no labels, no logos. Realistic PBR materials.",
+    "texture": true,
+    "export_uv": true,
+    "face_limit": 12000,
+    "model_seed": 14112030,
+    "model_version": "v3.1-20260211",
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "created_at": "2026-11-14T11:18:24.123348Z",
+  "completed_at": "2026-11-14T11:20:23.985151Z",
+  "credits_consumed": 20
+}

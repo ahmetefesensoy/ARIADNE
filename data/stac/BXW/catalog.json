@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-11-14T10:02:54.201118+00:00",
+  "entries": [
+    {
+      "key": "gale_dem_v3",
+      "product_id": "MSL_Gale_DEM_Mosaic_1m_v3",
+      "status": "DERIVED",
+      "source_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+      "final_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+      "checked_at": "2026-11-14T10:02:54.210695+00:00",
+      "http_status": 200,
+      "available": true,
+      "error": null,
+      "content_length": 3868256546,
+      "etag": "\"746836824e520f8f0a7fb3987bdef0ff-462\"",
+      "last_modified": "Wed, 09 Nov 2022 15:50:28 GMT",
+      "content_type": "image/tiff",
+      "unknown_fields": [
+        "horizontal_crs",
+        "vertical_datum",
+        "nodata",
+        "acquired_at",
+        "license",
+        "footprint",
+        "alignment"
+      ],
+      "metadata_verified": false,
+      "acquired_at": null,
+      "sha256": null,
+      "method": "HEAD"
+    }
+  ],
+  "schema_version": 1,
+  "ok": true,
+  "errors": []
+}

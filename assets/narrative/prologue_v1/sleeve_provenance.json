@@ -1,0 +1,28 @@
+{
+  "created_at_utc": "2026-11-14T22:48:03.929272+00:00",
+  "status": "SCENARIO",
+  "method": "original code-native vector typography and trumpet drawing, no copied album art/portrait",
+  "artist_name": "Chet Baker",
+  "official_album_cover": false,
+  "recording_rights_granted": false,
+  "font_files_not_redistributed": true,
+  "generation_credits": 0,
+  "files": [
+    {
+      "file": "chet_baker_sleeve.svg",
+      "sha256": "6b486733bb733da43d26ebd4485db692822b1dfc89c8ff2c82e6739ac581485b"
+    },
+    {
+      "file": "chet_baker_sleeve.png",
+      "sha256": "656d88fd42e278459c66fcc87da18d0526d4ff467ab4cf60ecc60e50c9bd795e"
+    },
+    {
+      "file": "chet_baker_label.svg",
+      "sha256": "519e7b215b1d275faa0cdba04b58e102aea21afecc004cc45b1e4f0cb32ba390"
+    },
+    {
+      "file": "chet_baker_label.png",
+      "sha256": "6aeca8e83f0a413d0772a238a93ca636e09352c9b3c4206c606a674fd5d4a375"
+    }
+  ]
+}

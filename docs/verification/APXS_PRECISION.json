@@ -1,0 +1,188 @@
+{
+ "check": "APXS precision error versus integration time (proje.md §9.2 B1 counting law)",
+ "status": "DERIVED from ARCHIVE",
+ "source": {
+  "url": "https://pds-geosciences.wustl.edu/msl/urn-nasa-pds-msl_apxs_supplement_sols_0_2301/data/ds01_2020je006536rr.csv",
+  "label_url": "https://pds-geosciences.wustl.edu/msl/urn-nasa-pds-msl_apxs_supplement_sols_0_2301/data/ds01_2020je006536rr.xml",
+  "sha256": "6a6e4359a543b315783bc672b9a173e4930592ba62c071d5c93b9a7b85584f8c",
+  "doi": "10.1029/2020JE006536",
+  "label_sha256": "c7b752b4bdb4041594ec7a1d6042b8efa11d47b5af989ede2c7ebf95bcea6ccd",
+  "status": "ARCHIVE",
+  "citation": "Berger, J. A. et al. (2020), JGR Planets 125(12), doi:10.1029/2020JE006536",
+  "columns": "oxide wt% and '<oxide>_error' = 'Precision Error' (label); Lifetime HH:MM:SS; Standoff cm (negative = contact sensor pressed in)"
+ },
+ "rows_used": 690,
+ "rows_excluded": "Preparation_method == Failed",
+ "calibrated_integration_s": [
+  540.0,
+  41657.0
+ ],
+ "calibrated_standoff_cm": [
+  0.0,
+  5.59
+ ],
+ "model": "log e = log sigma_ref + exp_t log(t/t_ref) + exp_v log(v/v_ref) + per_cm_standoff max(s,0)",
+ "oxides": {
+  "Na2O": {
+   "exp_t": -0.159,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.175,
+   "mad_log": 0.121,
+   "counting_law_mad_log": 0.47,
+   "sigma_ref_wt": 0.1559,
+   "v_ref_wt": 2.55,
+   "sigma_1h_over_10min": 0.752,
+   "n": 690
+  },
+  "MgO": {
+   "exp_t": -0.109,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.217,
+   "mad_log": 0.129,
+   "counting_law_mad_log": 0.545,
+   "sigma_ref_wt": 0.1917,
+   "v_ref_wt": 6.02,
+   "sigma_1h_over_10min": 0.823,
+   "n": 690
+  },
+  "Al2O3": {
+   "exp_t": -0.089,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.111,
+   "mad_log": 0.155,
+   "counting_law_mad_log": 0.511,
+   "sigma_ref_wt": 0.2387,
+   "v_ref_wt": 8.885,
+   "sigma_1h_over_10min": 0.853,
+   "n": 690
+  },
+  "SiO2": {
+   "exp_t": -0.095,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.063,
+   "mad_log": 0.067,
+   "counting_law_mad_log": 0.521,
+   "sigma_ref_wt": 0.5896,
+   "v_ref_wt": 46.125,
+   "sigma_1h_over_10min": 0.844,
+   "n": 690
+  },
+  "P2O5": {
+   "exp_t": -0.099,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.133,
+   "mad_log": 0.137,
+   "counting_law_mad_log": 0.514,
+   "sigma_ref_wt": 0.0664,
+   "v_ref_wt": 0.9,
+   "sigma_1h_over_10min": 0.838,
+   "n": 689
+  },
+  "SO3": {
+   "exp_t": -0.29,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.188,
+   "mad_log": 0.099,
+   "counting_law_mad_log": 0.277,
+   "sigma_ref_wt": 0.1271,
+   "v_ref_wt": 6.16,
+   "sigma_1h_over_10min": 0.595,
+   "n": 690
+  },
+  "Cl": {
+   "exp_t": -0.317,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.224,
+   "mad_log": 0.092,
+   "counting_law_mad_log": 0.248,
+   "sigma_ref_wt": 0.0337,
+   "v_ref_wt": 1.1,
+   "sigma_1h_over_10min": 0.566,
+   "n": 690
+  },
+  "K2O": {
+   "exp_t": -0.123,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.212,
+   "mad_log": 0.189,
+   "counting_law_mad_log": 0.529,
+   "sigma_ref_wt": 0.0325,
+   "v_ref_wt": 0.78,
+   "sigma_1h_over_10min": 0.802,
+   "n": 690
+  },
+  "CaO": {
+   "exp_t": -0.191,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.139,
+   "mad_log": 0.122,
+   "counting_law_mad_log": 0.454,
+   "sigma_ref_wt": 0.0796,
+   "v_ref_wt": 5.445,
+   "sigma_1h_over_10min": 0.71,
+   "n": 690
+  },
+  "TiO2": {
+   "exp_t": -0.208,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.226,
+   "mad_log": 0.124,
+   "counting_law_mad_log": 0.389,
+   "sigma_ref_wt": 0.041,
+   "v_ref_wt": 0.99,
+   "sigma_1h_over_10min": 0.688,
+   "n": 690
+  },
+  "Cr2O3": {
+   "exp_t": -0.432,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.265,
+   "mad_log": 0.163,
+   "counting_law_mad_log": 0.199,
+   "sigma_ref_wt": 0.0187,
+   "v_ref_wt": 0.32,
+   "sigma_1h_over_10min": 0.462,
+   "n": 689
+  },
+  "MnO": {
+   "exp_t": -0.357,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.201,
+   "mad_log": 0.285,
+   "counting_law_mad_log": 0.312,
+   "sigma_ref_wt": 0.0221,
+   "v_ref_wt": 0.25,
+   "sigma_1h_over_10min": 0.527,
+   "n": 690
+  },
+  "FeO": {
+   "exp_t": -0.042,
+   "counting_law_exp_t": -0.5,
+   "per_cm_standoff": 0.06,
+   "mad_log": 0.082,
+   "counting_law_mad_log": 0.577,
+   "sigma_ref_wt": 0.2329,
+   "v_ref_wt": 18.46,
+   "sigma_1h_over_10min": 0.928,
+   "n": 690
+  }
+ },
+ "fitted_model_fits_better_than_counting_law": [
+  "Al2O3",
+  "CaO",
+  "Cl",
+  "Cr2O3",
+  "FeO",
+  "K2O",
+  "MgO",
+  "MnO",
+  "Na2O",
+  "P2O5",
+  "SO3",
+  "SiO2",
+  "TiO2"
+ ],
+ "conclusion": "The archive's precision errors shrink far more slowly with integration than sqrt(t) for the major oxides and grow with standoff; simulated APXS products use the fitted DERIVED model, not the counting law.",
+ "model_file": "data/derived/instruments/apxs_precision_v1.json",
+ "generated_utc": "2026-11-15T05:17:51Z"
+}

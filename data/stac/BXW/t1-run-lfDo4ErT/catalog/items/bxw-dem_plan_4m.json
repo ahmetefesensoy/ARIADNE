@@ -1,0 +1,92 @@
+{
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/ssys/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/projection/v2.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "bxw-dem_plan_4m",
+  "collection": "redline-bxw-derived-terrain",
+  "geometry": null,
+  "properties": {
+    "datetime": "2026-11-14T10:15:38.338743Z",
+    "created": "2026-11-14T10:15:38.338743Z",
+    "ssys:targets": [
+      "Mars"
+    ],
+    "ssys:target_class": "planet",
+    "proj:code": null,
+    "proj:wkt2": null,
+    "proj:shape": [
+      750,
+      750
+    ],
+    "proj:transform": [
+      4.0,
+      0.0,
+      -1500.0,
+      0.0,
+      -4.0,
+      1500.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "proj:bbox": [
+      -1500.0,
+      -1500.0,
+      1500.0,
+      1500.0
+    ],
+    "redline:status": "DERIVED",
+    "redline:site_id": "BXW",
+    "redline:datetime_kind": "processing",
+    "redline:acquired_at": null,
+    "redline:alignment_verified": false,
+    "redline:geometry_reason": "Mars native/engineering data; no WGS84 footprint asserted",
+    "redline:vertical_reference": "source unchanged except explicit H0 offset; datum unverified",
+    "redline:frame": "map",
+    "redline:source_wkt2": "PROJCRS[\"Mars_Equirectangular_clon0\",BASEGEOGCRS[\"GCS_Mars_2000_Sphere\",DATUM[\"Mars_2000_(Sphere)\",ELLIPSOID[\"Mars_2000_Sphere_IAU_IAG\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference_Meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unnamed\",METHOD[\"Equidistant Cylindrical (Spherical)\",ID[\"EPSG\",1029]],PARAMETER[\"Latitude of 1st standard parallel\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Longitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+    "redline:local_mapping": {
+      "origin": {
+        "E0_m": 8142565.198776576,
+        "N0_m": -284814.9215994864,
+        "H0_m": 0.0,
+        "status": "SCENARIO"
+      },
+      "east_scale_factor": 0.9964855531857645
+    },
+    "redline:frame_kind": "local affine approximation, not geodetic ENU"
+  },
+  "links": [
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "../../../../../derived/BXW/dem_plan_4m.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ],
+      "redline:sha256": "4f0456381e71c90be7993ea974a5ecc47c8904d9107e4a80450f5f077043ccc0",
+      "redline:status": "DERIVED"
+    },
+    "provenance": {
+      "href": "../../../../../derived/BXW/dem_plan_4m.provenance.json",
+      "type": "application/json",
+      "roles": [
+        "metadata"
+      ],
+      "redline:sha256": "70079183de5f43a351d3e682ae0017a39a0e94da9c3d16eed0bb2b95ed38f552"
+    }
+  }
+}

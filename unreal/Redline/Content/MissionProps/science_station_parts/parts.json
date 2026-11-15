@@ -1,0 +1,326 @@
+{
+  "schema": "redline.science_station_parts.v1",
+  "passed": true,
+  "status": "SCENARIO",
+  "parts": [
+    {
+      "name": "SM_science_station_antenna_LOD0",
+      "source_name": "tripo_part_9",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_antenna_LOD0.SM_StationPart_SM_science_station_antenna_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_antenna_LOD0.SM_StationPart_SM_science_station_antenna_LOD0",
+      "pivot_cm": [
+        19.957460463047028,
+        -17.658506333827972,
+        105.44891357421875
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -19.957460463047028,
+        17.658506333827972,
+        -105.44891357421875
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_body_LOD0",
+      "source_name": "tripo_part_0",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_body_LOD0.SM_StationPart_SM_science_station_body_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_body_LOD0.SM_StationPart_SM_science_station_body_LOD0",
+      "pivot_cm": [
+        1.855234056711197,
+        -6.301689893007278,
+        58.02115201950073
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -1.855234056711197,
+        6.301689893007278,
+        -58.02115201950073
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_leg_1_LOD0",
+      "source_name": "tripo_part_2",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_1_LOD0.SM_StationPart_SM_science_station_leg_1_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_1_LOD0.SM_StationPart_SM_science_station_leg_1_LOD0",
+      "pivot_cm": [
+        24.349671602249146,
+        -24.776482582092285,
+        36.23085021972656
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -24.349671602249146,
+        24.776482582092285,
+        -36.23085021972656
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_leg_2_LOD0",
+      "source_name": "tripo_part_3",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_2_LOD0.SM_StationPart_SM_science_station_leg_2_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_2_LOD0.SM_StationPart_SM_science_station_leg_2_LOD0",
+      "pivot_cm": [
+        23.710519075393677,
+        19.011209905147552,
+        37.35888600349426
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -23.710519075393677,
+        -19.011209905147552,
+        -37.35888600349426
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_leg_3_LOD0",
+      "source_name": "tripo_part_5",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_3_LOD0.SM_StationPart_SM_science_station_leg_3_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_3_LOD0.SM_StationPart_SM_science_station_leg_3_LOD0",
+      "pivot_cm": [
+        -23.635917901992798,
+        -23.59876036643982,
+        35.62931418418884
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        23.635917901992798,
+        23.59876036643982,
+        -35.62931418418884
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_leg_4_LOD0",
+      "source_name": "tripo_part_6",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_4_LOD0.SM_StationPart_SM_science_station_leg_4_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_leg_4_LOD0.SM_StationPart_SM_science_station_leg_4_LOD0",
+      "pivot_cm": [
+        -22.08416312932968,
+        19.709084928035736,
+        36.95703148841858
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        22.08416312932968,
+        -19.709084928035736,
+        -36.95703148841858
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_panel_10_LOD0",
+      "source_name": "tripo_part_10",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_10_LOD0.SM_StationPart_SM_science_station_panel_10_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_10_LOD0.SM_StationPart_SM_science_station_panel_10_LOD0",
+      "pivot_cm": [
+        12.227494269609451,
+        -10.478152334690094,
+        35.539233684539795
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -12.227494269609451,
+        10.478152334690094,
+        -35.539233684539795
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_panel_11_LOD0",
+      "source_name": "tripo_part_11",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_11_LOD0.SM_StationPart_SM_science_station_panel_11_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_11_LOD0.SM_StationPart_SM_science_station_panel_11_LOD0",
+      "pivot_cm": [
+        22.617578506469727,
+        -5.44087216258049,
+        73.15012216567993
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -22.617578506469727,
+        5.44087216258049,
+        -73.15012216567993
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_panel_12_LOD0",
+      "source_name": "tripo_part_12",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_12_LOD0.SM_StationPart_SM_science_station_panel_12_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_12_LOD0.SM_StationPart_SM_science_station_panel_12_LOD0",
+      "pivot_cm": [
+        -20.2414408326149,
+        -5.837639421224594,
+        71.4937686920166
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        20.2414408326149,
+        5.837639421224594,
+        -71.4937686920166
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_panel_13_LOD0",
+      "source_name": "tripo_part_13",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_13_LOD0.SM_StationPart_SM_science_station_panel_13_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_13_LOD0.SM_StationPart_SM_science_station_panel_13_LOD0",
+      "pivot_cm": [
+        10.423892736434937,
+        -13.568714261054993,
+        35.8772337436676
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -10.423892736434937,
+        13.568714261054993,
+        -35.8772337436676
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_panel_1_LOD0",
+      "source_name": "tripo_part_1",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_1_LOD0.SM_StationPart_SM_science_station_panel_1_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_1_LOD0.SM_StationPart_SM_science_station_panel_1_LOD0",
+      "pivot_cm": [
+        1.7099499702453613,
+        -24.127717316150665,
+        68.77610683441162
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -1.7099499702453613,
+        24.127717316150665,
+        -68.77610683441162
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_panel_7_LOD0",
+      "source_name": "tripo_part_7",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_7_LOD0.SM_StationPart_SM_science_station_panel_7_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_7_LOD0.SM_StationPart_SM_science_station_panel_7_LOD0",
+      "pivot_cm": [
+        -9.669355303049088,
+        -20.342636108398438,
+        45.6674724817276
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        9.669355303049088,
+        20.342636108398438,
+        -45.6674724817276
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_panel_8_LOD0",
+      "source_name": "tripo_part_8",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_8_LOD0.SM_StationPart_SM_science_station_panel_8_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_panel_8_LOD0.SM_StationPart_SM_science_station_panel_8_LOD0",
+      "pivot_cm": [
+        -18.811950087547302,
+        -5.888395011425018,
+        71.28089666366577
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        18.811950087547302,
+        5.888395011425018,
+        -71.28089666366577
+      ],
+      "collision": false
+    },
+    {
+      "name": "SM_science_station_sensor_head_LOD0",
+      "source_name": "tripo_part_4",
+      "asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_sensor_head_LOD0.SM_StationPart_SM_science_station_sensor_head_LOD0",
+      "mesh_asset": "/Game/MissionProps/science_station_parts/SM_StationPart_SM_science_station_sensor_head_LOD0.SM_StationPart_SM_science_station_sensor_head_LOD0",
+      "pivot_cm": [
+        0.7900446653366089,
+        -2.833794616162777,
+        94.65625286102295
+      ],
+      "bind_location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pivot_child_offset_cm": [
+        -0.7900446653366089,
+        2.833794616162777,
+        -94.65625286102295
+      ],
+      "collision": false
+    }
+  ],
+  "created_at_utc": "2026-11-15T09:32:48.471702+00:00",
+  "dimensions_cm": [
+    77.08900833129883,
+    75.68060302734375,
+    125.0
+  ],
+  "unit_error_cm": 3.337860107421875e-06,
+  "source_fbx_sha256": "f36598c7a505b28ebbebd5c932bbe1a5c1296f12caa1d0469f873fe00fe8d182",
+  "source_notice": "assets/incoming/science_station/SOURCE.md",
+  "axis_contract": "UE centimetres; absolute bind vertices retained, no recentering; pivot child offset required for rotation.",
+  "limitation": "Source pivots and separated antenna/sensor/legs are visual hints; no hinge travel, contact or deployment physics is validated."
+}

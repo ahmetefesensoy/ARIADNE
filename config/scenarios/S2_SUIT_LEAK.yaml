@@ -1,0 +1,31 @@
+# S2: suit leak on EV2 (proje.md §16 S2, §8.7 SUIT_LEAK, §17: limiting = O2 and EV2; D015 leak factor).
+provenance_status: SCENARIO
+note: >-
+  Same start and plan request as S0 (2024-05-21 04:00 UTC, no SEP alarm in the real RAD E series,
+  dusk about 9 h away). At PET 50 min, while the crew works at the first station, EV2's suit
+  starts leaking: ev_sim multiplies EV2's O2 consumption by 3 (SCENARIO). The leak is not
+  announced to the safety chain; rule_monitor must find it from EV2's telemetry (O2 rate vs the
+  metabolic model) and mission_manager must turn the crew home. Expected: the red line narrows
+  to EV2 with O2 as the limit, and the return margin stays >= 0 (FR-01). Dose values are ARCHIVE
+  RAD; crew, timing, the leak and the rules are scenario choices.
+id: S2_SUIT_LEAK
+site: BXW
+seed: 2
+time_scale: 60
+start:
+  historical_utc: "2024-05-21T04:00:00Z"
+  pet_min: 0
+initial_phase: BRIEFING
+crew: [EV1, EV2]
+crew_trail_s: {EV2: 20}
+suit_profile: default
+plan: {objective: SCIENCE, max_duration_min: 300}
+replay:
+  rad: {sols: [4190, 4191], detector: E}
+events:
+  - {t_min: 50, type: SUIT_LEAK, params: {crew_id: EV2, k_leak: 3.0}}
+expected:
+  - {rule: SUIT_LEAK, must_hold: false}
+  - {rule: FR-01, must_hold: true}
+  - {rule: FR-04, must_hold: true}
+  - {rule: FR-12, must_hold: true}

@@ -1,0 +1,15 @@
+# Flight rules evaluated by rule_monitor (proje.md §12; D012, D014, D015). Parameters are SCENARIO (v0.3 [K]).
+provenance_status: SCENARIO
+rules:
+  FR-01: {evaluated: true, text: "remaining O2 >= walkback O2 + reserve (margin_now_min >= 0)", severity: WARNING}
+  FR-03: {evaluated: true, text: "t_shelter(x) <= T_SEP_max during SEP", t_sep_max_min: 20.0, severity: EMERGENCY}
+  FR-04: {evaluated: true, text: "mode = SHELTER within 30 s (PET) of a SEP alarm", window_s: 30.0, severity: EMERGENCY}
+  FR-05: {evaluated: true, text: "buddy distance <= 100 m with terrain line of sight; violation <= 60 s (CAUTION then WARNING)", max_distance_m: 100.0, grace_s: 60.0, eye_height_m: 2.0, hysteresis_m: 0.5, distance_hysteresis_m: 2.0, severity: WARNING}
+  FR-06: {evaluated: false, text: "link loss > 300 s -> return", until: T9}
+  FR-07: {evaluated: false, text: "metabolic cap / heart rate", until: T9}
+  FR-08: {evaluated: false, text: "do not enter cells with slope >= s_max", until: T7}
+  FR-09: {evaluated: false, text: "position sigma > 20 m -> relocalize", until: T7}
+  FR-12: {evaluated: true, text: "all crew in shelter by sunset - T_dusk (needs sun_table)", t_dusk_min: 30.0, shelter_radius_m: 10.0, severity: WARNING}
+  FR-13: {evaluated: false, text: "rescue time <= T_rescue_max", until: T9}
+  FR-14: {evaluated: false, text: "drone >= 30 m from EVs", until: T7}
+  SUIT_LEAK: {evaluated: true, text: "suit leak from telemetry: reported O2 rate / metabolic-model O2 rate >= factor_on for hold_s (PET); cleared below factor_off (S2, proje.md 8.7)", factor_on: 1.5, factor_off: 1.2, hold_s: 30.0, severity: WARNING}

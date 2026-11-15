@@ -1,0 +1,124 @@
+# Space Apps claims ledger (docs/SPACE_APPS_SUNUM_PLANI.md). Checked by scripts/space_apps_claims.py.
+# on_slide: true  -> must pass, or the slide/video drops the claim.
+# on_slide: false -> goal; shown only as "in progress" until its evidence passes.
+claims:
+  - id: rad_spike
+    slide: 2
+    text_en: "20 May 2024, Curiosity radiation detector: 5.7 -> 351 uGy/h (x61); alarm 05:21:50 UTC, peak 06:15:19 UTC (53 min)"
+    on_slide: true
+    evidence: docs/verification/T6_RAD.json
+    checks:
+      - {key: all_pass, equals: true}
+      - {key: checks.0.observed, approx: 5.72, tol: 0.01}
+      - {key: checks.7.observed, approx: 351.42, tol: 0.01}
+      - {key: checks.8.observed_utc, equals: "2024-05-20T05:21:50+00:00"}
+      - {key: checks.7.observed_utc, equals: "2024-05-20T06:15:19+00:00"}
+  - id: light_time
+    slide: 2
+    text_en: "At the alarm, Earth was 15.8 light-minutes away: about 32 min for a question and an answer"
+    on_slide: true
+    evidence: docs/verification/LIGHT_TIME_SOL4190.json
+    checks:
+      - {key: events.alarm_utc.one_way_min, approx: 15.8, tol: 0.1}
+      - {key: events.alarm_utc.round_trip_min, approx: 31.7, tol: 0.2}
+  - id: storm_shrinks_line_ros
+    slide: 3
+    text_en: "Real storm replay: shelter rule held at once; safe-return area 6.02 -> 0.41 km2"
+    on_slide: true
+    evidence: test-results/s1-bxw-20261114T193408Z-S1_SEP_4190-42/s1_summary.json
+    checks:
+      - {key: fr04.value, equals: 0.0}
+      - {key: abort_area_km2_before_alarm, approx: 6.02, tol: 0.01}
+      - {key: abort_area_km2_during_alarm_min, approx: 0.41, tol: 0.01}
+  - id: drone_replan
+    slide: 5
+    text_en: "Simulated drone scouting found 16 blocked cells on the route; the plan changed v1 -> v2; no rule violations"
+    on_slide: true
+    evidence: test-results/scn-bxw-20261115T065851Z-S4_BLOCKED_CORRIDOR-4/summary.json
+    checks:
+      - {key: plans.plan-BXW-0002.version, equals: 2}
+      - {key: decisions.4.context, equals: "replan after precursor"}
+      - {key: all_expected_ok, equals: true}
+      - {key: violations_above_info, equals: 0}
+      - {key: debrief_reached, equals: true}
+  - id: drone_replan_cells
+    slide: 5
+    text_en: "16 blocked cells (S4 acceptance log)"
+    on_slide: true
+    evidence: docs/VERIFICATION_LOG.md
+    checks:
+      - {contains: "Rotada 16 engelli hücre bulundu"}
+  - id: suit_leak
+    slide: 5
+    text_en: "Suit leak caught from telemetry in 36 s; whole crew sent home; lowest margin +17 min"
+    on_slide: true
+    evidence: test-results/scn-bxw-20261115T070933Z-S2_SUIT_LEAK-2/s2_acceptance.json
+    checks:
+      - {key: detection_delay_s, max: 40}
+      - {key: limiting_after_detection_is_crew_o2, equals: true}
+      - {key: min_published_margin_after_detection_min, min: 17.0}
+      - {key: margin_within_tolerance, equals: true}
+  - id: apxs_finding
+    slide: 6
+    text_en: "690 archive APXS measurements: 6x longer counting cuts major-oxide error only 7-29% (counting law: 59%); each cm of standoff adds 6-24%"
+    on_slide: true
+    evidence: docs/verification/APXS_PRECISION.json
+    checks:
+      - {key: rows_used, equals: 690}
+      - {key: oxides.SiO2.sigma_1h_over_10min, min: 0.82, max: 0.93}
+      - {key: oxides.FeO.sigma_1h_over_10min, min: 0.82, max: 0.93}
+      - {key: oxides.Al2O3.sigma_1h_over_10min, min: 0.82, max: 0.93}
+      - {key: oxides.MgO.sigma_1h_over_10min, min: 0.82, max: 0.93}
+      - {key: oxides.CaO.sigma_1h_over_10min, min: 0.705, max: 0.93}
+      - {key: oxides.Na2O.sigma_1h_over_10min, min: 0.705, max: 0.93}
+      - {key: oxides.SiO2.per_cm_standoff, min: 0.058, max: 0.219}
+      - {key: oxides.MgO.per_cm_standoff, min: 0.058, max: 0.219}
+      - {key: oxides.SiO2.exp_t, max: -0.04}
+      - {key: oxides.SiO2.exp_t, min: -0.2}
+      - {key: oxides.SiO2.counting_law_exp_t, equals: -0.5}
+  - id: sensitivity
+    slide: 6
+    text_en: "Storm-time safe area 0.38 km2; it moves most with warning time (0.25-0.82) and with walking speed over terrain no robot has seen (0.31-0.54)"
+    on_slide: true
+    evidence: docs/verification/SENSITIVITY.json
+    checks:
+      - {key: base_km2, approx: 0.383, tol: 0.001}
+      - {key: bars.0.parameter, equals: sep_limit_min}
+      - {key: bars.0.metric_low, approx: 0.25, tol: 0.001}
+      - {key: bars.0.metric_high, approx: 0.825, tol: 0.001}
+      - {key: bars.1.parameter, equals: speed_factor_unobserved}
+      - {key: bars.1.metric_low, approx: 0.306, tol: 0.001}
+      - {key: bars.1.metric_high, approx: 0.539, tol: 0.001}
+  - id: storm_chapter_realtime_ros
+    slide: 5
+    text_en: "Real-time storm chapter: the real alarm hits 11.8 min into the walk; shelter mode in 0 s; crew home 8 min later; no rule broken (simulated walker)"
+    on_slide: true
+    evidence: test-results/c1-bxw-20261115T101234Z-C1_SOL4190_CHAPTER-42/c1_summary.json
+    checks:
+      - {key: alarm_pet_s, approx: 710, tol: 2}
+      - {key: fr04.value, equals: 0.0}
+      - {key: abort_area_km2_during_alarm_min, approx: 0.41, tol: 0.01}
+      - {key: debrief_reached, equals: true}
+      - {key: phases.3.pet_s, max: 1200}
+      - {key: env_first.earth_light_time_s, approx: 950, tol: 5}
+  - id: storm_chapter_capture
+    slide: 5
+    text_en: "Real-time storm chapter capture complete (all topics seen)"
+    on_slide: true
+    evidence: test-results/c1-bxw-20261115T101234Z-C1_SOL4190_CHAPTER-42/capture.json
+    checks:
+      - {key: passed, equals: true}
+  - id: python_tests
+    slide: 5
+    text_en: "700 automated core and data tests pass"
+    on_slide: true
+    evidence: test-results/space-apps-python.xml
+    checks:
+      - {junit_min_tests: 700}
+  - id: unreal_live_storm
+    slide: 5
+    text_en: "Live in Unreal: the real storm alarm reaches the astronaut and the red line shrinks (C1)"
+    on_slide: false
+    evidence: test-results/c1-live-unreal/capture.json
+    checks:
+      - {key: passed, equals: true}

@@ -5,11 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "redline-core"
 version = "0.1.0"
-description = "ROS-independent REDLINE frame and time contracts"
+description = "ROS-independent REDLINE algorithms: frame/time contracts, walking cost, return field and red line"
 requires-python = ">=3.12,<3.13"
+# Exact versions are pinned in scripts/requirements-core.txt.
+dependencies = ["numpy>=1.26,<2", "scipy>=1.13", "numba>=0.60", "scikit-image>=0.24", "Pillow>=10", "PyYAML>=6"]
 
 [project.optional-dependencies]
-test = ["pytest==8.3.5"]
+test = ["pytest==8.3.5", "hypothesis>=6.100", "networkx>=3.2"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

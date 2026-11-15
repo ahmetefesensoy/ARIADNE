@@ -1,0 +1,59 @@
+{
+ "task": "drill",
+ "status": "SCENARIO presentation",
+ "video": "drill.mp4",
+ "poster": "poster.png",
+ "fps": 30,
+ "frames": 750,
+ "resolution": [
+  1920,
+  1080
+ ],
+ "captions": {
+  "tr": "captions_tr.srt",
+  "en": "captions_en.srt"
+ },
+ "beats": [
+  {
+   "start_s": 0.0,
+   "end_s": 3.5,
+   "tr": "B5 · Sondaj ve arıza yönetimi",
+   "en": "B5 · Drilling with fault handling"
+  },
+  {
+   "start_s": 3.5,
+   "end_s": 8.0,
+   "tr": "Matkap kayaya iner, uç dönmeye başlar.",
+   "en": "The drill comes down to the rock and the bit spins up."
+  },
+  {
+   "start_s": 8.0,
+   "end_s": 13.5,
+   "tr": "Besleme kuvvetiyle uç kayaya girer; toz dışarı atılır.",
+   "en": "The feed force pushes the bit into the rock; the cuttings are thrown out."
+  },
+  {
+   "start_s": 13.5,
+   "end_s": 16.5,
+   "tr": "Sıkışma! Tork sınırı aşıldı: uç geri çekilir, besleme azalır.",
+   "en": "Stall! Torque over the limit: the bit retracts and the feed is lowered."
+  },
+  {
+   "start_s": 16.5,
+   "end_s": 21.0,
+   "tr": "Darbeli moda geçilir; 5 cm'e ulaşılır.",
+   "en": "It switches to percussive mode and reaches 5 cm."
+  },
+  {
+   "start_s": 21.0,
+   "end_s": 25.0,
+   "tr": "Toz numune tüpe alınır ve laboratuvara gider. (Simülasyon)",
+   "en": "The powder sample goes into a tube and on to the lab. (Simulation)"
+  }
+ ],
+ "assets": [
+  "assets/incoming/tool_drill",
+  "assets/incoming/rock_07"
+ ],
+ "note": "Shows how the instrument works; numbers are the SCENARIO model's story, not a measurement."
+}

@@ -1,0 +1,20 @@
+# BXW science question and observation model for science_value.py (proje.md §7.10; D011).
+provenance_status: SCENARIO
+note: >-
+  The question comes from the v3 guide (§3: "does the ridge-clay / hollow-carbonate pattern
+  seen at the east edge also hold in the west extension?"). REDLINE does not claim an answer.
+  Priors are uniform because no pre-EVA evidence favours a hypothesis. p_seen is the chance
+  that a station's measurement shows its class signature: 0.85 when the pattern holds and
+  0.15 when it does not (an instrument sensitivity / false-positive assumption), 0.5 when the
+  pattern is mixed. These are scenario numbers to be revised with the user and T8 data.
+site_id: BXW
+question: Does the east-edge boxwork pattern (clay-rich ridges, carbonate-rich hollows) continue west?
+sources:
+  question: research/proje-fikirleri/REDLINE_V3_KILAVUZU.md §3
+hypotheses:
+  - {id: H1_pattern_continues, prior: 0.3333333333333333}
+  - {id: H2_pattern_absent, prior: 0.3333333333333333}
+  - {id: H3_mixed, prior: 0.3333333333333334}
+observation:
+  ridge:   {H1_pattern_continues: 0.85, H2_pattern_absent: 0.15, H3_mixed: 0.5}
+  hollow:  {H1_pattern_continues: 0.85, H2_pattern_absent: 0.15, H3_mixed: 0.5}

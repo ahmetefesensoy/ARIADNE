@@ -1,0 +1,611 @@
+{
+ "schema": "redline.tablet_atlas.v1",
+ "site_id": "BXW",
+ "frame": "map",
+ "units": "m",
+ "bounds_map_m": [
+  -1500.0,
+  -1500.0,
+  1500.0,
+  1500.0
+ ],
+ "size_px": 2048,
+ "m_per_px": 1.46484375,
+ "north_up": true,
+ "pixel_of": "col = (x + 1500) / m_per_px, row = (1500 - y) / m_per_px",
+ "habitat_xy_m": [
+  290.0,
+  -454.0
+ ],
+ "question": {
+  "tr": "Doğu kenarında görülen örüntü (kil zengini sırtlar, karbonat zengini çukurlar) kutu ağı yapısının batı uzantısında da sürüyor mu?",
+  "en": "Does the east-edge boxwork pattern (clay-rich ridges, carbonate-rich hollows) continue into the west extension?"
+ },
+ "mission_brief": {
+  "tr": "Bu EVA'nın amacı tek bir soruya cevap aramak: doğuda bilinen sırt-çukur örüntüsü batıda da var mı? Önce doğudaki iki kontrol istasyonunda aletlerimizi bilinen örüntü üzerinde sınarız. Sonra batıdaki test istasyonlarında aynı ölçümleri yaparız; rover en uzak batı alanını tarar. Her ölçüm haritaya ve inanç çubuğuna işlenir. Her dakika dönüş payından ödenir: kırmızı çizginin dışına çıkılmaz, alarm gelirse bilim bekler. Numuneler laboratuvara getirilir; pH ve bileşim orada ölçülür ve numunenin alındığı noktaya bağlanır. Sonuçlar simülasyondur: Mars'ta yeni bir keşif iddiası yoktur; amaç doğru kararı, doğru kanıtla, güvenle vermektir.",
+  "en": "This EVA asks one question: does the ridge-hollow pattern known in the east also hold in the west? First we check our instruments on the known pattern at two east control stations. Then we repeat the same measurements at the west test stations while the rover surveys the far west. Every measurement goes onto the map and the belief bar. Every minute is paid from the return margin: we never cross the red line, and science waits when an alarm comes. Samples go to the lab, where pH and composition are measured and tied to where each sample was taken. Results are simulated: there is no claim of a new discovery on Mars; the goal is the right decision, on the right evidence, safely."
+ },
+ "stations": [
+  {
+   "id": "ST-H",
+   "role": "infrastructure",
+   "science_class": null,
+   "target_id": null,
+   "xy_m": [
+    262.0,
+    -430.0
+   ],
+   "z_m": -3584.81,
+   "straight_m": 36.9,
+   "name": {
+    "tr": "Habitat önü",
+    "en": "Habitat apron"
+   },
+   "purpose": {
+    "tr": "Çevre istasyonu ve drone kalkışı; bütün yürüyüşler buradan başlar.",
+    "en": "Environment station and drone launch; every walk starts here."
+   },
+   "tasks": [
+    {
+     "id": "B7_ENV_STATION",
+     "spec": "proje.md §9.2 B7",
+     "action": "DeployStation",
+     "actor": "EV1",
+     "asset": "assets/incoming/science_station",
+     "duration_min": 15.0,
+     "data_status": "ARCHIVE",
+     "data_note": "dose is the real MSL RAD replay (sol 4190); weather needs REMS, not fetched",
+     "purpose": {
+      "tr": "Doz ve hava istasyonu kurulur; uzay havası alarmı sahada da görünür olur.",
+      "en": "A dose and weather station is set up so a space-weather alarm is visible in the field too."
+     }
+    },
+    {
+     "id": "SCOUT_CORRIDOR",
+     "spec": "proje.md §7.11, §18 T7",
+     "action": "ExecuteScout",
+     "actor": "scout_1",
+     "asset": "assets/incoming/scout_1",
+     "duration_min": 20.0,
+     "data_status": "SIMULATED",
+     "data_note": "scout_stub over hidden SCENARIO truth; corridor survey policy (D015)",
+     "purpose": {
+      "tr": "Drone yürüyüş koridorunu önden tarar; engel bulursa rota yeniden planlanır.",
+      "en": "The drone surveys the walking corridor ahead; if it finds an obstacle the route is replanned."
+     }
+    }
+   ],
+   "cell": [
+    267,
+    440
+   ],
+   "path_m": 37.2,
+   "walk_mu_min": 1.43,
+   "t_eps_min": 1.91,
+   "slope_deg": 4.9,
+   "inside_sep_limit": true
+  },
+  {
+   "id": "ST-E1",
+   "role": "control",
+   "science_class": "hollow",
+   "target_id": "BXW-T10",
+   "xy_m": [
+    538.0,
+    -174.0
+   ],
+   "z_m": -3599.57,
+   "straight_m": 374.0,
+   "name": {
+    "tr": "Doğu çukuru",
+    "en": "East hollow"
+   },
+   "purpose": {
+    "tr": "Kontrol: bilinen örüntüde bir çukur karbonat imzası vermeli. Yüzey numunesi laboratuvara gider.",
+    "en": "Control: a hollow on the known pattern should show the carbonate signature. A surface sample goes to the lab."
+   },
+   "tasks": [
+    {
+     "id": "B10_FIELD_NOTE",
+     "spec": "proje.md §9.2 B10",
+     "action": "science_note",
+     "actor": "EV1",
+     "asset": "assets/incoming/station_marker",
+     "duration_min": 5.0,
+     "data_status": "SCENARIO",
+     "data_note": "photo, note and target flag on /crew/EV1/science_note; the backroom answers after the light time",
+     "purpose": {
+      "tr": "Fotoğraf, not ve hedef bayrağı; bilim arka odası ışık gecikmesiyle cevap verir.",
+      "en": "Photo, note and target flag; the science backroom answers after the light-time delay."
+     }
+    },
+    {
+     "id": "B1_XRF_HAND",
+     "spec": "proje.md §9.2 B10",
+     "action": "ContactScience",
+     "actor": "EV1",
+     "asset": "assets/incoming/tool_apxs",
+     "duration_min": 15.0,
+     "data_status": "DERIVED",
+     "data_note": "EV1_XRF uses the APXS precision model (D018); composition SCENARIO",
+     "purpose": {
+      "tr": "Astronot el tipi XRF'i yüzeye tutar; hızlı ama standoff'a duyarlı bir kimya okuması.",
+      "en": "The astronaut holds the handheld XRF to the surface: a quick chemistry read that is sensitive to standoff."
+     }
+    },
+    {
+     "id": "B6_COLLECT",
+     "spec": "proje.md §9.2 B6",
+     "action": "CollectSample",
+     "actor": "EV1",
+     "asset": "assets/incoming/sample_tube",
+     "duration_min": 10.0,
+     "data_status": "SCENARIO",
+     "data_note": "sample chain states of SampleRecord; Mars 2020 sample dossier structure is a [K] reference",
+     "purpose": {
+      "tr": "Astronot yüzey numunesini tüpe alır; kökeni (nokta, derinlik, zaman) kayda girer ve bir daha değişmez.",
+      "en": "The astronaut takes a surface sample into a tube; its origin (point, depth, time) is recorded and never changes."
+     }
+    },
+    {
+     "id": "B6_CACHE",
+     "spec": "proje.md §9.2 B6",
+     "action": "CacheSample",
+     "actor": "EV1",
+     "asset": "assets/incoming/sample_case",
+     "duration_min": 5.0,
+     "data_status": "SCENARIO",
+     "data_note": "duplicate-command protection by request id; one sample per container",
+     "purpose": {
+      "tr": "Tüp taşıma kutusuna kilitlenir; numune zinciri kopmadan laboratuvara gider.",
+      "en": "The tube is locked into the carry case so the sample chain reaches the lab unbroken."
+     }
+    }
+   ],
+   "cell": [
+    331,
+    509
+   ],
+   "path_m": 608.6,
+   "walk_mu_min": 20.12,
+   "t_eps_min": 26.81,
+   "slope_deg": 4.9,
+   "inside_sep_limit": false
+  },
+  {
+   "id": "ST-E2",
+   "role": "control",
+   "science_class": "ridge",
+   "target_id": "BXW-T01",
+   "xy_m": [
+    394.0,
+    262.0
+   ],
+   "z_m": -3644.47,
+   "straight_m": 723.5,
+   "name": {
+    "tr": "Kuzeydoğu sırtı",
+    "en": "Northeast ridge"
+   },
+   "purpose": {
+    "tr": "Kontrol: bilinen örüntüde bir sırt kil imzası vermeli. Rover LIBS'i ve kamera burada sınanır.",
+    "en": "Control: a ridge on the known pattern should show the clay signature. The rover LIBS and the camera are checked here."
+   },
+   "tasks": [
+    {
+     "id": "B3_MULTISPECTRAL",
+     "spec": "proje.md §9.2 B3",
+     "action": "MultispectralImage",
+     "actor": "EV1",
+     "asset": "assets/incoming/tool_multispectral",
+     "duration_min": 5.0,
+     "data_status": "SCENARIO",
+     "data_note": "splib07 and Mastcam filter curves not fetched; spectral index is SIMULATED",
+     "purpose": {
+      "tr": "Filtreli kamerayla panorama; renk indeksi hangi kayaya ölçüm yapılacağını seçmeye yardım eder.",
+      "en": "A filtered-camera panorama; the colour index helps choose which rock to measure."
+     }
+    },
+    {
+     "id": "B2_LIBS_AEGIS",
+     "spec": "proje.md §9.2 B2",
+     "action": "RemoteLibs",
+     "actor": "rover_1",
+     "asset": "assets/incoming/tool_libs",
+     "duration_min": 15.0,
+     "data_status": "SCENARIO",
+     "data_note": "ChemCam RDR not fetched; range <= 7 m and first-shot dust are spec [?] items",
+     "purpose": {
+      "tr": "Rover direği uzaktan lazerle 1×5 nokta tarar; hedefi boş bırakırsan rover kendisi seçer (AEGIS benzeri).",
+      "en": "The rover mast fires a 1x5 laser raster from a distance; leave the target empty and the rover picks one (AEGIS-like)."
+     }
+    }
+   ],
+   "cell": [
+    440,
+    473
+   ],
+   "path_m": 1080.5,
+   "walk_mu_min": 38.93,
+   "t_eps_min": 51.8,
+   "slope_deg": 10.5,
+   "inside_sep_limit": false
+  },
+  {
+   "id": "ST-W1",
+   "role": "test",
+   "science_class": "ridge",
+   "target_id": "BXW-T05",
+   "xy_m": [
+    -318.0,
+    -298.0
+   ],
+   "z_m": -3624.72,
+   "straight_m": 627.7,
+   "name": {
+    "tr": "Batı sırtı",
+    "en": "West ridge"
+   },
+   "purpose": {
+    "tr": "Test: batıdaki sırt da kil imzası veriyor mu? Rover APXS'i arşivden kalibre hata çubuklarıyla ölçer.",
+    "en": "Test: does the west ridge show the clay signature too? The rover APXS measures with archive-calibrated error bars."
+   },
+   "tasks": [
+    {
+     "id": "B3_MULTISPECTRAL",
+     "spec": "proje.md §9.2 B3",
+     "action": "MultispectralImage",
+     "actor": "EV1",
+     "asset": "assets/incoming/tool_multispectral",
+     "duration_min": 5.0,
+     "data_status": "SCENARIO",
+     "data_note": "splib07 and Mastcam filter curves not fetched; spectral index is SIMULATED",
+     "purpose": {
+      "tr": "Filtreli kamerayla panorama; renk indeksi hangi kayaya ölçüm yapılacağını seçmeye yardım eder.",
+      "en": "A filtered-camera panorama; the colour index helps choose which rock to measure."
+     }
+    },
+    {
+     "id": "B1_APXS_ARM",
+     "spec": "proje.md §9.2 B1",
+     "action": "ContactScience",
+     "actor": "rover_1",
+     "asset": "assets/incoming/tool_apxs",
+     "duration_min": 30.0,
+     "data_status": "DERIVED",
+     "data_note": "precision from the MSL APXS supplement fit (D018, apxs_precision_v1.json); composition SCENARIO",
+     "purpose": {
+      "tr": "Rover kolu APXS'i kayaya değdirir; oksit kimyası hata çubuklarıyla gelir. İyi temas (az boşluk) uzun ölçümden daha çok kazandırır.",
+      "en": "The rover arm places the APXS on the rock; oxide chemistry comes with error bars. Good contact (small standoff) gains more than a long count."
+     }
+    },
+    {
+     "id": "B10_FIELD_NOTE",
+     "spec": "proje.md §9.2 B10",
+     "action": "science_note",
+     "actor": "EV1",
+     "asset": "assets/incoming/station_marker",
+     "duration_min": 5.0,
+     "data_status": "SCENARIO",
+     "data_note": "photo, note and target flag on /crew/EV1/science_note; the backroom answers after the light time",
+     "purpose": {
+      "tr": "Fotoğraf, not ve hedef bayrağı; bilim arka odası ışık gecikmesiyle cevap verir.",
+      "en": "Photo, note and target flag; the science backroom answers after the light-time delay."
+     }
+    }
+   ],
+   "cell": [
+    300,
+    295
+   ],
+   "path_m": 674.1,
+   "walk_mu_min": 24.72,
+   "t_eps_min": 32.88,
+   "slope_deg": 8.6,
+   "inside_sep_limit": false
+  },
+  {
+   "id": "ST-W2",
+   "role": "test",
+   "science_class": "hollow",
+   "target_id": "BXW-T08",
+   "xy_m": [
+    -338.0,
+    470.0
+   ],
+   "z_m": -3800.8,
+   "straight_m": 1117.2,
+   "name": {
+    "tr": "Kuzeybatı çukuru",
+    "en": "Northwest hollow"
+   },
+   "purpose": {
+    "tr": "Test: batıdaki çukur karbonat imzası veriyor mu? Rover sondaj yapar; toz numune tüple laboratuvara gider.",
+    "en": "Test: does the west hollow show the carbonate signature? The rover drills; the powder sample goes to the lab in a tube."
+   },
+   "tasks": [
+    {
+     "id": "B5_DRILL_FDIR",
+     "spec": "proje.md §9.2 B5",
+     "action": "Drill",
+     "actor": "rover_1",
+     "asset": "assets/incoming/tool_drill",
+     "duration_min": 40.0,
+     "data_status": "SCENARIO",
+     "data_note": "hardness and torque model SCENARIO; the 2016 Curiosity drill feed fault is a history reference [?]",
+     "purpose": {
+      "tr": "Rover matkabı 5 cm'e iner; sıkışmada (stall) geri çeker, beslemeyi azaltır, darbeli moda geçer. Sonuç bir toz numunesidir.",
+      "en": "The rover drill goes to 5 cm; on a stall it retracts, lowers the feed and switches to percussive mode. The result is a powder sample."
+     }
+    },
+    {
+     "id": "B1_APXS_ARM",
+     "spec": "proje.md §9.2 B1",
+     "action": "ContactScience",
+     "actor": "rover_1",
+     "asset": "assets/incoming/tool_apxs",
+     "duration_min": 30.0,
+     "data_status": "DERIVED",
+     "data_note": "precision from the MSL APXS supplement fit (D018, apxs_precision_v1.json); composition SCENARIO",
+     "purpose": {
+      "tr": "Rover kolu APXS'i kayaya değdirir; oksit kimyası hata çubuklarıyla gelir. İyi temas (az boşluk) uzun ölçümden daha çok kazandırır.",
+      "en": "The rover arm places the APXS on the rock; oxide chemistry comes with error bars. Good contact (small standoff) gains more than a long count."
+     }
+    },
+    {
+     "id": "B6_COLLECT",
+     "spec": "proje.md §9.2 B6",
+     "action": "CollectSample",
+     "actor": "EV1",
+     "asset": "assets/incoming/sample_tube",
+     "duration_min": 10.0,
+     "data_status": "SCENARIO",
+     "data_note": "sample chain states of SampleRecord; Mars 2020 sample dossier structure is a [K] reference",
+     "purpose": {
+      "tr": "Astronot yüzey numunesini tüpe alır; kökeni (nokta, derinlik, zaman) kayda girer ve bir daha değişmez.",
+      "en": "The astronaut takes a surface sample into a tube; its origin (point, depth, time) is recorded and never changes."
+     }
+    },
+    {
+     "id": "B6_CACHE",
+     "spec": "proje.md §9.2 B6",
+     "action": "CacheSample",
+     "actor": "EV1",
+     "asset": "assets/incoming/sample_case",
+     "duration_min": 5.0,
+     "data_status": "SCENARIO",
+     "data_note": "duplicate-command protection by request id; one sample per container",
+     "purpose": {
+      "tr": "Tüp taşıma kutusuna kilitlenir; numune zinciri kopmadan laboratuvara gider.",
+      "en": "The tube is locked into the carry case so the sample chain reaches the lab unbroken."
+     }
+    }
+   ],
+   "cell": [
+    492,
+    290
+   ],
+   "path_m": 1341.2,
+   "walk_mu_min": 67.75,
+   "t_eps_min": 90.11,
+   "slope_deg": 8.4,
+   "inside_sep_limit": false
+  },
+  {
+   "id": "ST-W3",
+   "role": "test",
+   "science_class": "hollow",
+   "target_id": "BXW-T09",
+   "xy_m": [
+    -762.0,
+    374.0
+   ],
+   "z_m": -3826.45,
+   "straight_m": 1338.8,
+   "name": {
+    "tr": "Uzak batı (rover)",
+    "en": "Far west (rover)"
+   },
+   "purpose": {
+    "tr": "Test, yalnız robot: rover uzak batıda nötron taraması yapar; insan buraya yürümez.",
+    "en": "Test, robot only: the rover runs a neutron survey in the far west; no one walks here."
+   },
+   "tasks": [
+    {
+     "id": "B4_DAN_SURVEY",
+     "spec": "proje.md §9.2 B4",
+     "action": "NeutronSurvey",
+     "actor": "rover_1",
+     "asset": "assets/incoming/tool_neutron",
+     "duration_min": 45.0,
+     "data_status": "SCENARIO",
+     "data_note": "DAN RDR not fetched; WEH truth SCENARIO; GP posterior and its sigma go to the tablet as a field",
+     "purpose": {
+      "tr": "Rover durup nötron sayar; bir sonraki nokta en belirsiz ve ulaşması ucuz yer. Yeraltı su eşdeğeri haritası ve belirsizliği tablete gelir.",
+      "en": "The rover stops and counts neutrons; the next point is the most uncertain, cheapest-to-reach place. A subsurface water-equivalent map and its uncertainty reach the tablet."
+     }
+    }
+   ],
+   "cell": [
+    468,
+    184
+   ],
+   "path_m": 1903.3,
+   "walk_mu_min": 86.92,
+   "t_eps_min": 115.59,
+   "slope_deg": 7.9,
+   "inside_sep_limit": false
+  },
+  {
+   "id": "ST-LAB",
+   "role": "infrastructure",
+   "science_class": null,
+   "target_id": null,
+   "xy_m": [
+    285.1,
+    -468.0
+   ],
+   "z_m": -3581.61,
+   "straight_m": 14.8,
+   "name": {
+    "tr": "Bilim laboratuvarı (H05)",
+    "en": "Science lab (H05)"
+   },
+   "purpose": {
+    "tr": "Getirilen numunelerin pH ve bileşim analizi; sonuç numunenin köken noktasına bağlanır.",
+    "en": "pH and composition analysis of returned samples; each result is tied to the sample's origin."
+   },
+   "tasks": [
+    {
+     "id": "LAB_PH_CHEM",
+     "spec": "research/notes/SAHA_VE_BILIM_ISTASYONU.md §4",
+     "action": "lab_analysis",
+     "actor": "EV1",
+     "asset": "assets/incoming/lab_bench",
+     "duration_min": 30.0,
+     "data_status": "SCENARIO",
+     "data_note": "simulated lab analysis; Phoenix WCL (pH 7.7 +/- 0.3, Kounaves et al. 2010) is a procedure reference from another site, never a Gale result",
+     "purpose": {
+      "tr": "Laboratuvarda numune hazırlanır; pH, iletkenlik ve bileşim ölçülür ve numunenin alındığı noktaya bağlanır.",
+      "en": "In the lab the sample is prepared; pH, conductivity and composition are measured and tied to where it was taken."
+     }
+    }
+   ],
+   "cell": [
+    258,
+    446
+   ],
+   "path_m": 12.9,
+   "walk_mu_min": 0.35,
+   "t_eps_min": 0.49,
+   "slope_deg": 6.6,
+   "inside_sep_limit": true
+  }
+ ],
+ "inputs": {
+  "dem_sha256": "ec5c291feaa5f9d60e5c9c9ef308af80b3cea5c07979fa773575d10f28c621c1",
+  "planning_grid_sha256": "bf2a5f1a1e4796a50a2fe29e0e25c3eeda51c518d26d055a3c2a6920617fabbd",
+  "campaign_sha256": "886b595b00603aec07941019551e0934f0bebcc7a1482f45fdb1372de98774f8"
+ },
+ "generated_utc": "2026-11-15T07:43:31Z",
+ "layers": {
+  "imagery": {
+   "file": "imagery.png",
+   "status": "DERIVED",
+   "source": "data/engines/BXW/surface-v1/atlas_context.png",
+   "credit": "HiRISE 78-quad colour basemap: T. J. Parker and F. J. Calef III; NASA/JPL-Caltech, USGS Astrogeology, University of Arizona",
+   "limits": "grey strips are provider HiRISE RED-only areas without colour; lighting is baked into the mosaic; not newly measured",
+   "sha256": "d28094fd61f3bae63253b669d15329bfb253061e9192631e643e537c28073e92"
+  },
+  "hillshade": {
+   "file": "hillshade.png",
+   "status": "DERIVED",
+   "source": "data/derived/BXW/dem_enu.tif",
+   "sun": {
+    "azimuth_deg": 315,
+    "elevation_deg": 45,
+    "note": "cartographic light, not the EVA sun"
+   },
+   "sha256": "deaf8d0b3ce9d2e3d1c76f6b826176aacf29e8e54bd504e4e30bc952de0fd87c"
+  },
+  "science_units": {
+   "file": "science_units.png",
+   "status": "DERIVED",
+   "rule": "TPI on the 1 m DTM, annulus 5-25 m; ridge >= +1.0 m, hollow <= -1.0 m",
+   "legend": {
+    "ridge": [
+     230,
+     120,
+     50
+    ],
+    "hollow": [
+     40,
+     150,
+     230
+    ]
+   },
+   "note": "terrain position only; composition is not observed from orbit here",
+   "sha256": "2b6b47ad0b8b0ff6f95c24e5fe70915e4abc9e8e41ee0b4fddc8b626c66a90b1"
+  },
+  "slope_class": {
+   "file": "slope_class.png",
+   "status": "DERIVED",
+   "rule": "caution >= 15.0 deg, no-go >= 25.0 deg or no walk home (4 m planning grid)",
+   "limits_status": "SCENARIO (FR-08)",
+   "sha256": "9f580053978af79aa26916bf9aa0b42fca9bb3783d52622a3e78c0914a65e512"
+  },
+  "return_time": {
+   "file": "return_time.png",
+   "status": "DERIVED",
+   "quantity": "risk-adjusted walk back to the habitat T_eps (z 1.645, sigma_theta 0.2) at EVA start; the live red line still comes from ROS",
+   "contours_min": [
+    10.0,
+    20.0,
+    30.0,
+    45.0,
+    60.0
+   ],
+   "sep_shelter_limit_min": 20.0,
+   "contour_rgba": [
+    [
+     255,
+     255,
+     255,
+     230
+    ],
+    [
+     255,
+     40,
+     40,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     200
+    ],
+    [
+     255,
+     255,
+     255,
+     170
+    ],
+    [
+     255,
+     255,
+     255,
+     140
+    ]
+   ],
+   "sha256": "fb8db934013e10bcaa3b6b263bcf98c10e2a8a1815ec1ee795dfb54d51a4e405"
+  },
+  "stations": {
+   "file": "stations.png",
+   "status": "SCENARIO",
+   "legend": {
+    "control": [
+     70,
+     160,
+     255
+    ],
+    "test": [
+     255,
+     120,
+     40
+    ],
+    "infrastructure": [
+     230,
+     230,
+     230
+    ]
+   },
+   "sha256": "35739d6c591565063812cf6c28e873595ba13761a99ab482ab31eae088f36978"
+  }
+ },
+ "atlas_dir": "data/engines/BXW/tablet-atlas-v1",
+ "previews": [
+  "docs/verification/TABLET_ATLAS_PREVIEW_safety.png",
+  "docs/verification/TABLET_ATLAS_PREVIEW_science.png"
+ ]
+}

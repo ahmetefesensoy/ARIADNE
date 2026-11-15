@@ -41,6 +41,27 @@ data/derived/
 data/engines/
 data/env/
 runs/
+# Tripo download metadata may contain expiring signed artifact URLs.
+**/tripo-out/
+.tripo/
+
+# Local renders, packaged applications and raw capture media. Public demo media
+# is published separately; keep only the small submission documentation below.
+outputs/**
+!outputs/submission/
+!outputs/submission/*.md
+!outputs/submission/render/
+!outputs/submission/render/*.json
+
+# Source notices and manifests are public, but multi-gigabyte working downloads
+# and generated model payloads stay out of the application repository.
+assets/incoming/**
+!assets/incoming/**/
+!assets/incoming/**/SOURCE.md
+!assets/incoming/**/asset.json
+!assets/incoming/**/manifest.json
+assets/video/**/*.mp4
+assets/video/**/*.mov
 
 # Local AI-assistant tooling (kept on disk, not published)
 AGENTS.md

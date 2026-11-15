@@ -1,0 +1,113 @@
+{
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/ssys/v1.1.1/schema.json"
+  ],
+  "type": "Collection",
+  "id": "redline-bxw-derived-terrain",
+  "title": "REDLINE BXW derived terrain processing outputs",
+  "description": "Local processing-time catalog for Mars. Core Item geometry is null; native grids and local engineering-frame metadata carry spatial context. No Earth footprint, acquisition-time or independent accuracy claim.",
+  "license": "other",
+  "ssys:targets": [
+    "Mars"
+  ],
+  "ssys:target_class": "planet",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-11-14T10:11:41.533946Z",
+          "2026-11-14T10:39:42.074679Z"
+        ]
+      ]
+    }
+  },
+  "redline:extent_kind": "conservative_target_body_envelope_not_footprint",
+  "redline:extent_convention": "SSYS 1.1.1 official Collection example; proposal extension does not explicitly override core WGS84 wording. Do not spatially index as Earth.",
+  "redline:extent_reference": "https://raw.githubusercontent.com/stac-extensions/ssys/v1.1.1/examples/collection.json",
+  "redline:datetime_kind": "processing",
+  "redline:acquired_at": null,
+  "redline:license_note": "Source product licensing remains unresolved; no redistribution rights granted by this catalog.",
+  "links": [
+    {
+      "rel": "item",
+      "href": "items/bxw-aligned_reference.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-dtm_residual_m.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-slope_sigma.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-dem_enu.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-dem_plan_4m.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-hirise_019698_enu.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-hirise_019698_plan_4m.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-roughness.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-slope_2m.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-slope_5m.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-gale_dem_v3.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "items/bxw-hirise_dtm_bxw_019698.json",
+      "type": "application/geo+json"
+    }
+  ],
+  "assets": {
+    "run_manifest": {
+      "href": "../run_manifest.json",
+      "type": "application/json",
+      "roles": [
+        "metadata"
+      ],
+      "redline:sha256": "54f6ab5be5958d9891f9ad002314db82cd0480b70223c2d4e409f0041dd74c90"
+    }
+  }
+}

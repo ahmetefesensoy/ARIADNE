@@ -1,0 +1,74 @@
+00:01.438  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\astronaut\master.blend"
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\calibration\\calibration_1m.fbx'
+export finished in 0.0026 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\calibration\\axes.fbx'
+export finished in 0.0063 sec.
+Info: Saved as "calibration.blend"
+FBX version: 7400
+FBX version: 7400
+VALIDATED astronaut True FBX delta 1.1920928955078125e-07 OBJ delta 0.006285190582275391
+00:02.078  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\habitat\master.blend"
+FBX version: 7400
+VALIDATED habitat True FBX delta 2.384185791015625e-07 OBJ delta 0.0
+00:02.156  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\pr_1\master.blend"
+FBX version: 7400
+VALIDATED pr_1 True FBX delta 0.0 OBJ delta 0.004629850387573242
+00:02.610  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\rock_07\master.blend"
+FBX version: 7400
+VALIDATED rock_07 True FBX delta 1.4901161193847656e-08 OBJ delta 0.0018183737993240356
+00:02.688  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\rock_09\master.blend"
+FBX version: 7400
+VALIDATED rock_09 True FBX delta 1.4901161193847656e-08 OBJ delta 0.0009769201278686523
+00:02.766  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\rover_1\master.blend"
+FBX version: 7400
+VALIDATED rover_1 True FBX delta 0.0 OBJ delta 0.00010156631469726562
+00:03.172  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\sample_case\master.blend"
+FBX version: 7400
+VALIDATED sample_case True FBX delta 0.0 OBJ delta 0.001757204532623291
+00:03.281  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\sample_tube\master.blend"
+FBX version: 7400
+VALIDATED sample_tube True FBX delta 0.0 OBJ delta 0.00013828277587890625
+00:03.375  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\science_station\master.blend"
+FBX version: 7400
+VALIDATED science_station True FBX delta 0.0 OBJ delta 0.010041475296020508
+00:03.516  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\scout_1\master.blend"
+FBX version: 7400
+VALIDATED scout_1 True FBX delta 0.0 OBJ delta 0.003166019916534424
+00:03.781  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_apxs\master.blend"
+FBX version: 7400
+VALIDATED tool_apxs True FBX delta 0.0 OBJ delta 0.003829672932624817
+00:03.891  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_drill\master.blend"
+FBX version: 7400
+VALIDATED tool_drill True FBX delta 0.0 OBJ delta 0.004975080490112305
+00:04.016  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_libs\master.blend"
+FBX version: 7400
+VALIDATED tool_libs True FBX delta 0.0 OBJ delta 0.0044602155685424805
+00:04.125  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_multispectral\master.blend"
+FBX version: 7400
+VALIDATED tool_multispectral True FBX delta 1.4901161193847656e-08 OBJ delta 0.002406984567642212
+00:04.219  blend            | Read blend: "C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_neutron\master.blend"
+FBX version: 7400
+VALIDATED tool_neutron True FBX delta 0.0 OBJ delta 0.01175224781036377
+REPORT C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\verification.json
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+OBJ import of 'assembly.obj' took 7.77 ms
+OBJ import of 'assembly.obj' took 2.90 ms
+OBJ import of 'assembly.obj' took 27.61 ms
+OBJ import of 'assembly.obj' took 1.44 ms
+OBJ import of 'assembly.obj' took 1.57 ms
+OBJ import of 'assembly.obj' took 29.75 ms
+OBJ import of 'assembly.obj' took 3.26 ms
+OBJ import of 'assembly.obj' took 2.09 ms
+OBJ import of 'assembly.obj' took 8.50 ms
+OBJ import of 'assembly.obj' took 11.52 ms
+OBJ import of 'assembly.obj' took 3.05 ms
+OBJ import of 'assembly.obj' took 5.17 ms
+OBJ import of 'assembly.obj' took 4.09 ms
+OBJ import of 'assembly.obj' took 3.71 ms
+OBJ import of 'assembly.obj' took 2.94 ms
+
+Blender quit

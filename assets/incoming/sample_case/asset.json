@@ -1,0 +1,488 @@
+{
+  "asset_id": "sample_case",
+  "prepared_utc": "2026-11-14T11:20:19.020516+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\industrial_pastic_container\\source.gltf",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        5.3800015109572996e-08,
+        -0.7126027941703796,
+        0.0,
+        0.00036367675056681037
+      ],
+      [
+        0.7126027941703796,
+        5.3800015109572996e-08,
+        0.0,
+        -0.0004934945609420538
+      ],
+      [
+        0.0,
+        0.0,
+        0.7126027941703796,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 0.7126027881352477,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.44999998807907104,
+      0.3257755637168884,
+      0.29845377802848816
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_sample_case_industrial_pastic_container_LOD0",
+      "source_name": "industrial_pastic_container",
+      "source_parent": "",
+      "pivot_m": [
+        0.0003636777400970459,
+        -0.0004934929311275482,
+        0.14778010547161102
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_sample_case_industrial_pastic_container_lid_a_LOD0",
+      "source_name": "industrial_pastic_container_lid_a",
+      "source_parent": "",
+      "pivot_m": [
+        7.450580596923828e-09,
+        0.13963040709495544,
+        0.22532132267951965
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_sample_case_industrial_pastic_container_lid_b_LOD0",
+      "source_name": "industrial_pastic_container_lid_b",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        -0.13850148022174835,
+        0.21250829100608826
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 7118,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "industrial_pastic_container",
+        "triangles": 2392,
+        "vertices": 2817,
+        "uv_layers": 1,
+        "non_manifold_edges": 2636
+      },
+      {
+        "name": "industrial_pastic_container_lid_a",
+        "triangles": 2334,
+        "vertices": 3592,
+        "uv_layers": 1,
+        "non_manifold_edges": 3432
+      },
+      {
+        "name": "industrial_pastic_container_lid_b",
+        "triangles": 2392,
+        "vertices": 3822,
+        "uv_layers": 1,
+        "non_manifold_edges": 3656
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 7118,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_sample_case_industrial_pastic_container_LOD0",
+        "triangles": 2392,
+        "vertices": 2817,
+        "uv_layers": 1,
+        "non_manifold_edges": 2636
+      },
+      {
+        "name": "SM_sample_case_industrial_pastic_container_lid_a_LOD0",
+        "triangles": 2334,
+        "vertices": 3592,
+        "uv_layers": 1,
+        "non_manifold_edges": 3432
+      },
+      {
+        "name": "SM_sample_case_industrial_pastic_container_lid_b_LOD0",
+        "triangles": 2392,
+        "vertices": 3822,
+        "uv_layers": 1,
+        "non_manifold_edges": 3656
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 3559,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_sample_case_industrial_pastic_container_LOD1",
+          "triangles": 1196,
+          "vertices": 1782,
+          "uv_layers": 1,
+          "non_manifold_edges": 1750
+        },
+        {
+          "name": "SM_sample_case_industrial_pastic_container_lid_a_LOD1",
+          "triangles": 1167,
+          "vertices": 2580,
+          "uv_layers": 1,
+          "non_manifold_edges": 2360
+        },
+        {
+          "name": "SM_sample_case_industrial_pastic_container_lid_b_LOD1",
+          "triangles": 1196,
+          "vertices": 2785,
+          "uv_layers": 1,
+          "non_manifold_edges": 2521
+        }
+      ]
+    },
+    "2": {
+      "triangles": 1779,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_sample_case_industrial_pastic_container_LOD2",
+          "triangles": 598,
+          "vertices": 1208,
+          "uv_layers": 1,
+          "non_manifold_edges": 1083
+        },
+        {
+          "name": "SM_sample_case_industrial_pastic_container_lid_a_LOD2",
+          "triangles": 583,
+          "vertices": 2002,
+          "uv_layers": 1,
+          "non_manifold_edges": 1557
+        },
+        {
+          "name": "SM_sample_case_industrial_pastic_container_lid_b_LOD2",
+          "triangles": 598,
+          "vertices": 2193,
+          "uv_layers": 1,
+          "non_manifold_edges": 1686
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 1999,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_sample_case_industrial_pastic_container_Gazebo",
+        "triangles": 672,
+        "vertices": 1282,
+        "uv_layers": 1,
+        "non_manifold_edges": 1178
+      },
+      {
+        "name": "SM_sample_case_industrial_pastic_container_lid_a_Gazebo",
+        "triangles": 655,
+        "vertices": 2074,
+        "uv_layers": 1,
+        "non_manifold_edges": 1638
+      },
+      {
+        "name": "SM_sample_case_industrial_pastic_container_lid_b_Gazebo",
+        "triangles": 672,
+        "vertices": 2267,
+        "uv_layers": 1,
+        "non_manifold_edges": 1781
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "industrial_pastic_container_diff",
+      "path": "textures/industrial_pastic_container_diff.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "industrial_pastic_container_metal-industrial_pastic_container_rough",
+      "path": "textures/industrial_pastic_container_metal_industrial_pastic_container_rough.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "industrial_pastic_container_nor_gl",
+      "path": "textures/industrial_pastic_container_nor_gl.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 3,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\sample_case_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "CC0 industrial container is a scenario carrying/cache case. Sterility and sample containment are not physically modeled."
+  ],
+  "material_channels": {
+    "BaseColor": "textures/industrial_pastic_container_diff.png",
+    "NormalGL": "textures/industrial_pastic_container_nor_gl.png",
+    "NormalDX": "textures/sample_case_NormalDX.png",
+    "Roughness": "textures/sample_case_Roughness.png",
+    "Metallic": "textures/sample_case_Metallic.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "materials": {
+    "industrial_pastic_container": {
+      "Base Color": {
+        "image": "industrial_pastic_container_diff",
+        "path": "textures/industrial_pastic_container_diff.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "industrial_pastic_container_metal-industrial_pastic_container_rough",
+        "path": "textures/industrial_pastic_container_metal_industrial_pastic_container_rough.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "image": "industrial_pastic_container_metal-industrial_pastic_container_rough",
+        "path": "textures/industrial_pastic_container_metal_industrial_pastic_container_rough.png",
+        "component": "B",
+        "colorspace": "Non-Color"
+      },
+      "Normal": {
+        "image": "industrial_pastic_container_nor_gl",
+        "path": "textures/industrial_pastic_container_nor_gl.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "Poly Haven · CC0",
+    "library": {
+      "source": "https://polyhaven.com/a/industrial_pastic_container",
+      "credit": {
+        "Galo Benivegna": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "info": {
+        "type": 2,
+        "categories": [
+          "collection: project_lighthouse",
+          "containers",
+          "office",
+          "industrial"
+        ],
+        "tags": [
+          "worn",
+          "storage",
+          "rectangular",
+          "dirty"
+        ],
+        "description": "Free 4K model of an industrial blue plastic container with hinged grid lids, scuffed wear, a dirtied base, molded ribs, and small sticker details.",
+        "authors": {
+          "Galo Benivegna": "All"
+        },
+        "donated": true,
+        "max_resolution": [
+          4096,
+          4096
+        ],
+        "polycount": 7118,
+        "files_hash": "77cda45559262d55ab7c128db322f028d56de412",
+        "texel_density": 1935.5407083852544,
+        "dimensions": [
+          475.95515847206116,
+          631.4878165721893,
+          423.1307804584503
+        ],
+        "date_published": 1782777600,
+        "staging": null,
+        "category_id": "438024ce-31bb-594b-bbca-c4c6681dc68a",
+        "category": "Containers & Storage/Boxes & Crates/Bins",
+        "name": "Industrial Plastic Container",
+        "collections": [
+          "project_lighthouse"
+        ],
+        "attributes": {
+          "condition": [
+            "worn"
+          ],
+          "material": [
+            "plastic"
+          ]
+        },
+        "img_version": "c1aa7f7b",
+        "download_count": 676,
+        "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/industrial_pastic_container.png?width=256&height=256&format=webp&v=c1aa7f7b"
+      },
+      "retrieved_utc": "2026-11-14T11:00:02.196595+00:00",
+      "files": [
+        {
+          "path": "incoming/industrial_pastic_container/source.gltf",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/industrial_pastic_container/industrial_pastic_container_1k.gltf",
+          "bytes": 6201,
+          "sha256": "4f7946b6e2063cfa469cc923d5e4ec304d3127aa33ce2b003981265af81d0d5b",
+          "source_md5": "f95dffa23ce23811fc30ca095d540462"
+        },
+        {
+          "path": "incoming/industrial_pastic_container/textures/industrial_pastic_container_nor_gl_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/industrial_pastic_container/industrial_pastic_container_nor_gl_1k.jpg",
+          "bytes": 125304,
+          "sha256": "608ccf9fd66eed1cf4c41f30e104e3fc535513e4c67b4912a16d9c6903c72a84",
+          "source_md5": "0704784279c977d8d4b645e2f9bda94a"
+        },
+        {
+          "path": "incoming/industrial_pastic_container/textures/industrial_pastic_container_diff_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/industrial_pastic_container/industrial_pastic_container_diff_1k.jpg",
+          "bytes": 184497,
+          "sha256": "dd4711467c6976f521983c56116dbcfa68f6ae8bdf02352212fa1468f73b81bc",
+          "source_md5": "4e43de54f8d4c1cdd8d3606bd8a33a2b"
+        },
+        {
+          "path": "incoming/industrial_pastic_container/textures/industrial_pastic_container_arm_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/industrial_pastic_container/industrial_pastic_container_arm_1k.jpg",
+          "bytes": 881895,
+          "sha256": "41e9b8f374013fc5e552f48de06e3dbdb86cfd3e0ee24576c499e6b4689c363c",
+          "source_md5": "74c4ca9b23d48b709d571c20d11ee689"
+        },
+        {
+          "path": "incoming/industrial_pastic_container/industrial_pastic_container.bin",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/industrial_pastic_container/industrial_pastic_container.bin",
+          "bytes": 370100,
+          "sha256": "4ee471df26a3a386536109ee5a0c68300eced2706c0f667963a7a54ecb9343fd",
+          "source_md5": "eee904657e41bf1373801f56775ede28"
+        }
+      ]
+    },
+    "tripo_tasks": [],
+    "terms_urls": [
+      "https://polyhaven.com/license"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 3,
+    "triangles": 7118,
+    "dimensions_m": [
+      0.44999998807907104,
+      0.3257755637168884,
+      0.29845377802848816
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 3,
+      "dimensions_m": [
+        0.44999998807907104,
+        0.3257755637168884,
+        0.29845377802848816
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 3,
+      "dimensions_m": [
+        0.45009392499923706,
+        0.3257755637168884,
+        0.30021098256111145
+      ],
+      "max_dimension_error_m": 0.001757204532623291
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING",
+  "revisions": [
+    {
+      "date_utc": "2026-11-14T12:14:45+00:00",
+      "texture": "industrial_pastic_container_diff.png",
+      "reason": "Blue Earth warehouse tote recoloured to the project's light-grey palette; wear and labels kept.",
+      "sha256_before": "896e7bc4b0b5af990d0b9967e46d31f4c77366187a1f69bac7cdac40fdf411ca",
+      "sha256_after": "c2aae734345384c583ade5b0176f84c0b2e65cdc7c081bf16d69ae43dbd145aa",
+      "files": [
+        "incoming/sample_case/textures/industrial_pastic_container_diff.png",
+        "incoming/sample_case/unreal/sample_case_LOD0.fbm/industrial_pastic_container_diff.png",
+        "incoming/sample_case/unreal/sample_case_LOD1.fbm/industrial_pastic_container_diff.png",
+        "incoming/sample_case/unreal/sample_case_LOD2.fbm/industrial_pastic_container_diff.png",
+        "incoming/sample_case/master.blend (packed image)",
+        "incoming/sample_case/presentation.glb"
+      ],
+      "script": "production/texture_fixes.py + production/refresh_textures.py",
+      "material_slots_rebound": 1
+    }
+  ]
+}

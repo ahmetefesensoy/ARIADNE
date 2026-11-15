@@ -1,0 +1,10 @@
+# Additive player command adapter; frozen instrument actions remain unchanged (D017).
+string request_id
+string command
+string target_id
+uint32 expected_revision
+---
+bool accepted
+string reason
+string operation_id
+uint32 revision

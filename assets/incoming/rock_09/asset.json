@@ -1,0 +1,384 @@
+{
+  "asset_id": "rock_09",
+  "prepared_utc": "2026-11-14T11:20:23.822886+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\rock_09\\source.gltf",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        1.3050674851911026e-07,
+        -1.7286142110824585,
+        0.0,
+        -0.019446106627583504
+      ],
+      [
+        1.7286142110824585,
+        1.3050674851911026e-07,
+        0.0,
+        -0.00047042491496540606
+      ],
+      [
+        0.0,
+        0.0,
+        1.7286142110824585,
+        0.0009923934703692794
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.728614250740321,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.2501569986343384,
+      0.12775012850761414,
+      0.05695585533976555
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_rock_09_rock_09_LOD0_LOD0",
+      "source_name": "rock_09_LOD0",
+      "source_parent": "",
+      "pivot_m": [
+        3.725290298461914e-09,
+        7.450580596923828e-09,
+        0.028409268707036972
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 12416,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "rock_09_LOD0",
+        "triangles": 12416,
+        "vertices": 6628,
+        "uv_layers": 1,
+        "non_manifold_edges": 826
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 4500,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_rock_09_rock_09_LOD0_LOD0",
+        "triangles": 4500,
+        "vertices": 2616,
+        "uv_layers": 1,
+        "non_manifold_edges": 718
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 2249,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_rock_09_rock_09_LOD1_LOD1",
+          "triangles": 2249,
+          "vertices": 1450,
+          "uv_layers": 1,
+          "non_manifold_edges": 637
+        }
+      ]
+    },
+    "2": {
+      "triangles": 1124,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_rock_09_rock_09_LOD2_LOD2",
+          "triangles": 1124,
+          "vertices": 798,
+          "uv_layers": 1,
+          "non_manifold_edges": 458
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 800,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_rock_09_rock_09_Gazebo_Gazebo",
+        "triangles": 800,
+        "vertices": 600,
+        "uv_layers": 1,
+        "non_manifold_edges": 386
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "rock_09_diff",
+      "path": "textures/rock_09_diff.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "rock_09_nor_gl",
+      "path": "textures/rock_09_nor_gl.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "rock_09_rough",
+      "path": "textures/rock_09_rough.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\rock_09_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [],
+  "material_channels": {
+    "BaseColor": "textures/rock_09_diff.png",
+    "NormalGL": "textures/rock_09_nor_gl.png",
+    "NormalDX": "textures/rock_09_NormalDX.png",
+    "Roughness": "textures/rock_09_Roughness.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "materials": {
+    "rock_09": {
+      "Base Color": {
+        "image": "rock_09_diff",
+        "path": "textures/rock_09_diff.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "rock_09_rough",
+        "path": "textures/rock_09_rough.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "unresolved": "MATH",
+        "upstream": [
+          {
+            "image": "rock_09_rough",
+            "path": "textures/",
+            "component": "B",
+            "colorspace": "Non-Color"
+          }
+        ]
+      },
+      "Normal": {
+        "image": "rock_09_nor_gl",
+        "path": "textures/rock_09_nor_gl.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "source_notice": {
+    "kind": "Poly Haven · CC0",
+    "library": {
+      "source": "https://polyhaven.com/a/rock_09",
+      "credit": {
+        "Jenelle van Heerden": "All"
+      },
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "info": {
+        "lods": true,
+        "name": "Rock 09",
+        "categories": [
+          "nature",
+          "rocks",
+          "collection: verdant_trail"
+        ],
+        "type": 2,
+        "version_required": {
+          "blend": "4.0.1"
+        },
+        "tags": [
+          "rock",
+          "landscape",
+          "geology",
+          "formation",
+          "weathered",
+          "stone",
+          "dirt",
+          "boulder",
+          "terrain"
+        ],
+        "info": null,
+        "date_published": 1707177600,
+        "staging": null,
+        "max_resolution": [
+          8192,
+          8192
+        ],
+        "polycount": 23280,
+        "texel_density": 40149.92941912837,
+        "dimensions": [
+          74.13503155112267,
+          144.81624960899353,
+          32.94885210925713
+        ],
+        "authors": {
+          "Jenelle van Heerden": "All"
+        },
+        "files_hash": "1560e10c5800cc570d6e0a692fb5300443f72156",
+        "description": "Free 8K weathered boulder model with rugged, rust-brown stone, detailed dirt and erosion - ideal for natural terrain and landscape scenes.",
+        "category_id": "229f6baa-7051-5eb5-8f2d-ed2aba17c8ea",
+        "category": "Nature/Rocks & Stone/Boulders",
+        "collections": [
+          "verdant_trail"
+        ],
+        "attributes": {
+          "condition": [
+            "weathered"
+          ],
+          "material": [
+            "stone"
+          ],
+          "lods": true
+        },
+        "img_version": "57031fbf",
+        "download_count": 16455,
+        "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/rock_09.png?width=256&height=256&format=webp&v=57031fbf"
+      },
+      "retrieved_utc": "2026-11-14T10:52:25.790196+00:00",
+      "files": [
+        {
+          "path": "incoming/rock_09/source.gltf",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/rock_09/rock_09_1k.gltf",
+          "bytes": 2745,
+          "sha256": "636e57eb0090889627da18edaec202ff9f65f83101b94f91b7da4d21dc080ab9",
+          "source_md5": "d12ac6e8433fe1346fe6945154269f66"
+        },
+        {
+          "path": "incoming/rock_09/textures/rock_09_arm_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_09/rock_09_arm_1k.jpg",
+          "bytes": 322950,
+          "sha256": "594e2cec49e6bb40bd9bab2649e37dcc261079456cf4d6f680f56770c19db5ea",
+          "source_md5": "323d7cca17cd87656e7f80230a372368"
+        },
+        {
+          "path": "incoming/rock_09/textures/rock_09_nor_gl_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_09/rock_09_nor_gl_1k.jpg",
+          "bytes": 757031,
+          "sha256": "2195b5c7da3a23af2a5f93dbb20f38bc069028509b106397bc8d2aee0bc55729",
+          "source_md5": "dc1a208133a23006582f792a309c2dcc"
+        },
+        {
+          "path": "incoming/rock_09/textures/rock_09_diff_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_09/rock_09_diff_1k.jpg",
+          "bytes": 595103,
+          "sha256": "afb7ae5ae82238d304aba589391ac6bc87f7cf1dbfe50980c21f762cfdd87efd",
+          "source_md5": "07f92b23d6e05fbd28cbabecdd98b321"
+        },
+        {
+          "path": "incoming/rock_09/rock_09.bin",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/rock_09/rock_09.bin",
+          "bytes": 286592,
+          "sha256": "780c37d6fc11ca3a01c3763535ef883908b6007271a46bd446d2289ded820751",
+          "source_md5": "6f2f71c9ca594566c1a3b29da27293a1"
+        }
+      ]
+    },
+    "tripo_tasks": [],
+    "terms_urls": [
+      "https://polyhaven.com/license"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 1,
+    "triangles": 4500,
+    "dimensions_m": [
+      0.2501569986343384,
+      0.12775012850761414,
+      0.05695585533976555
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.2501569986343384,
+        0.12775014340877533,
+        0.05695585533976555
+      ],
+      "max_dimension_error_m": 1.4901161193847656e-08,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 1,
+      "dimensions_m": [
+        0.24969984591007233,
+        0.1287270486354828,
+        0.05759658291935921
+      ],
+      "max_dimension_error_m": 0.0009769201278686523
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

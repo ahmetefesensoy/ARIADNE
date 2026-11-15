@@ -1,0 +1,185 @@
+{
+  "recorded_at_utc": "2026-11-14T13:00:14.132776+00:00",
+  "milestone": "T3",
+  "milestone_complete": true,
+  "requirement": "docs/proje.md section 18: rover reaches a goal issued through RViz",
+  "scope": "Gazebo simulation, actual RViz UI goal, one controlled goal source; not physical hardware validation",
+  "rviz_ui_observation": {
+    "operator": "Root agent through computer-use UI",
+    "run_id": "t3-runtime-rSbG87au",
+    "clicked_goal_map_xy_m": [
+      144.97500610351562,
+      -299.0
+    ],
+    "goal_uuid": "47753ffb3f2b20dc989c14667f2430c5",
+    "action_status": 4,
+    "publisher": {
+      "node_name": "rviz_navigation",
+      "node_namespace": "/rover_1",
+      "publisher_gid": "010f3bf0965163460000000000002403"
+    },
+    "original_goal_stamp_ns": 16238000000,
+    "observer_source_timestamp_ns": 1794661068807589788,
+    "armed_sim_stamp_ns": 2543000000,
+    "retained_uuid_baseline": [],
+    "original_goal_topic": "/rover_1/goal_pose",
+    "evidence_topic": "/redline/t3/rviz_goal_evidence"
+  },
+  "acceptance_metrics": {
+    "start_map_xy": [
+      144.99999698690607,
+      -289.0006522073716
+    ],
+    "final_map_xy": [
+      144.89527544864708,
+      -298.51520234950556
+    ],
+    "goal_map": {
+      "map_x_m": 144.97500610351562,
+      "map_y_m": -299.0,
+      "ground_z_m": -3599.12939453125,
+      "yaw_rad": -1.5707963267948963
+    },
+    "goal_error_m": 0.491310227097603,
+    "estimated_displacement_m": 9.515126431517153,
+    "measured_start_map_xyz": [
+      144.98724117693843,
+      -289.0233525432178,
+      -3598.465645166818
+    ],
+    "measured_final_map_xyz": [
+      144.8713832668589,
+      -298.5189324518529,
+      -3598.624152749342
+    ],
+    "measured_goal_error_m": 0.49210128851391455,
+    "measured_displacement_m": 9.496286687784977,
+    "measured_ground_contact_height_error_m": 0.0052417819078982575
+  },
+  "acceptance_thresholds": {
+    "estimated_goal_error_max_m": 0.7,
+    "physical_goal_error_max_m": 1.0,
+    "estimated_and_physical_displacement_min_m": 3.0,
+    "manifest_height_residual_max_m": 0.5,
+    "required_action_status": 4
+  },
+  "sensors": {
+    "topic_counts": {
+      "/rover_1/imu": 4636,
+      "/rover_1/camera/image": 464,
+      "/rover_1/depth/image": 464,
+      "/rover_1/scan": 927,
+      "/rover_1/odom": 4634
+    },
+    "samples": {
+      "/rover_1/imu": {
+        "frame_id": "rover_1/imu_link"
+      },
+      "/rover_1/camera/image": {
+        "width": 320,
+        "height": 240,
+        "encoding": "rgb8",
+        "frame_id": "rover_1/camera_optical_frame",
+        "data_bytes": 230400
+      },
+      "/rover_1/depth/image": {
+        "width": 320,
+        "height": 240,
+        "encoding": "32FC1",
+        "frame_id": "rover_1/depth_optical_frame",
+        "data_bytes": 307200
+      },
+      "/rover_1/scan": {
+        "rays": 360,
+        "finite_returns": 54,
+        "frame_id": "rover_1/lidar_link"
+      }
+    }
+  },
+  "ros_build": {
+    "workspace": "/home/ahmetefesensoy/.cache/redline/ros/ws-1749a5d0a400754b-z1wesfxy",
+    "source_tree_sha256": "1749a5d0a400754b173f7d6ab27c196d6144b6a4c88a6654928d53519bc84250",
+    "source_snapshot_verified": true,
+    "fresh_workspace": true,
+    "actual_test_cases": 55,
+    "ctest_wrapper_records": 8,
+    "reported_test_records": 63,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "render_environment": {
+    "GALLIUM_DRIVER": "d3d12",
+    "MESA_D3D12_DEFAULT_ADAPTER_NAME": "NVIDIA",
+    "DISPLAY": ":0"
+  },
+  "render_device_lines": [
+    "15:57:27: GL_VENDOR = Microsoft Corporation",
+    "15:57:27: GL_RENDERER = D3D12 (NVIDIA GeForce RTX 5080)"
+  ],
+  "process_exit_codes": {
+    "simulation": 0,
+    "navigation": 0,
+    "rviz_goal_observer": -9,
+    "verification": 0
+  },
+  "evidence": [
+    {
+      "path": "test-results/t3-runtime-rSbG87au/navigation_result.json",
+      "sha256": "1640eb7487ea8249c72ed8bf23f9dbf22293609d87f189d0b881e9ea554e654a"
+    },
+    {
+      "path": "test-results/t3-runtime-rSbG87au/result.json",
+      "sha256": "f3b31502820d8eb2bd3e7a7141faa29c6ce499b8c999a06b5dbfe594e5960935"
+    },
+    {
+      "path": "test-results/t3-runtime-rSbG87au/navigation.log",
+      "sha256": "c3223bf8bd243bc7f0a066b9976e21c52ad71888d96593e64bf0ba5b4824efed"
+    },
+    {
+      "path": "test-results/t3-runtime-rSbG87au/rviz_goal_observer.log",
+      "sha256": "f03e27e4ccb9747a377694bc723ff28c4fb2c0b9fcde8da759e6e39d68416f91"
+    },
+    {
+      "path": "test-results/t3-runtime-rSbG87au/bxw.sdf",
+      "sha256": "6b6a5539160288154e83e7cd054882aa3b1447bea017e915e086970a1fcb73d8"
+    },
+    {
+      "path": "test-results/t3-build-njksBciX/ros-workspace.json",
+      "sha256": "ee89accfb8f42e2baacdb33f19938219b49f77dc4cbd1a3a5e8e2b6dc104d14d"
+    }
+  ],
+  "prior_rejected_attempt": {
+    "run_id": "t3-runtime-dB3CXyzs",
+    "reason": "Actual RViz goal at (144.925,-297.75) exceeded unchanged 1 m controlled-target tolerance; correctly rejected"
+  },
+  "limits": [
+    "Single controlled goal source: action UUID correlation uses readiness baseline and timestamps; simultaneous unrelated action clients are outside this acceptance scope.",
+    "Manifest elevation residual is a geometry check, not a contact sensor measurement.",
+    "Successful run used bounded SIGKILL fallback for the ros2 run observer wrapper (exit -9); simulation, navigation and verification exited 0. Subsequent direct-binary cleanup check is recorded separately.",
+    "Unreal rendering/bridge behavior belongs to T4 and is not established by this result."
+  ],
+  "observer_cleanup_after_navigation": {
+    "change": "Supervisor launches installed C++ binary directly, owning actual observer PID for SIGINT",
+    "evidence_path": "test-results/t3-observer-cleanup-20261114/result.json",
+    "evidence_sha256": "633cdc21f05dbefbe93766e88462bcb3bd2c0665d8da4c495a0f94aa37bcd7f4",
+    "result": {
+      "created_at_utc": "2026-11-14T13:00:32.876165+00:00",
+      "scope": "Observer process lifecycle only; no navigation goal published",
+      "workspace": "/home/ahmetefesensoy/.cache/redline/ros/ws-1749a5d0a400754b-z1wesfxy",
+      "binary_sha256": "b4340a98fb82ca444b4c13a640a05957127528a43fbd17752b186dc91390017c",
+      "supervisor_sha256": "ff6a66dc7d47730b6d3c6c37bf932f1af8020367c36aa418380a0688635f1de0",
+      "passed": true,
+      "exit_code": 0,
+      "shutdown_elapsed_s": 0.10679960699962976,
+      "output": "[INFO] [1794661232.931350046] [rclcpp]: signal_handler(SIGINT/SIGTERM)\n"
+    },
+    "navigation_repeated": false
+  },
+  "execution_source_provenance": {
+    "supervisor_path": "scripts/t3_supervisor.py",
+    "supervisor_sha256_at_navigation": "9785f85c4ca26a1d62cc9df6dfbd218ce73cb0fb044a5764adc17d80c80faf75",
+    "supervisor_sha256_after_cleanup": "ff6a66dc7d47730b6d3c6c37bf932f1af8020367c36aa418380a0688635f1de0",
+    "note": "The successful navigation run preceded the separately verified direct-binary cleanup change."
+  }
+}

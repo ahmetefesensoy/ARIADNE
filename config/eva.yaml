@@ -1,0 +1,50 @@
+# Live EVA return-field scenario for walkback_field (proje.md §7.5-7.6, §8.4; D008-D010).
+provenance_status: SCENARIO
+note: >-
+  Scenario choices with stated sources, not measurements or a suit specification. The suit
+  is sized at its design point (D010): every consumable holds the reserve plus
+  design_duration_h at design_metabolic_w, using redline_core's own conversions. The Mars
+  consumption predicted by the walking model then sets the real endurance. The habitat is
+  the cell chosen by scripts/select_habitat.py under the D010 siting rules. Daylight and SEP
+  terms are not applied before T6.
+sources:
+  design_duration_h: >-
+    Apollo 15-17 extended PLSS, 8 h EVA (Apollo Lunar Surface Journal, PLSS technical
+    information); xEMU 8 h EVA target (NASA ICES-2025-61).
+  design_metabolic_w: >-
+    Apollo PLSS design average crewman metabolic rate 1200 Btu/h = 351.7 W
+    (NTRS 19720019460).
+  reserve: >-
+    Apollo OPS emergency oxygen ~30 min (ALSJ); FR-01 o2_res 0.1 kg (proje.md §12) kept as the
+    O2 floor.
+site_id: BXW
+crew_ids: [EV1]
+habitat:
+  requested_xy_m: [290.0, -454.0]
+  placement: fixed
+  selection: data/derived/BXW/planning/habitat_selection_v1.json
+reserve:
+  o2_kg: 0.1                    # FR-01 floor
+  co2_capacity_kg: 0.0
+  water_kg: 0.0
+  battery_wh: 0.0
+  minutes_at_design_rate: 30.0  # each reserve = max(floor, 30 min at the design rate)
+start:
+  basis: design_point
+  design_duration_h: 8.0
+  design_metabolic_w: 351.7
+lines:
+  terminate_threshold_min: 30.0  # proje.md §7.6 default T_term
+  simplify_tolerance_m: 4.0      # one planning cell; display polygons only, MarginField stays authoritative
+  min_hole_area_m2: 10000.0      # display only: smaller holes are not sent (T2 figure rule)
+  max_display_vertices: 3000     # both levels together; tolerance doubles up to max_tolerance_m (D010)
+  max_tolerance_m: 32.0
+  quantum_m: 0.0625              # 1/16 m: exact in float32, short in rosbridge JSON
+tile:                   # FieldTile for Unreal/web: 8-bit, about 1.42 min per code
+  lo_min: -60.0
+  hi_min: 300.0
+  bit_depth: 8
+sigma_fallback_percentile: 95.0  # missing σ (0.5% of BXW cells, all without slope) uses this percentile
+risk:
+  z_eps: 1.645
+  sigma_theta: 0.2

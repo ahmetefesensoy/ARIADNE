@@ -1,0 +1,1788 @@
+{
+  "schema": "redline.mission_props.import.v1",
+  "created_at_utc": "2026-11-15T09:17:38.218961+00:00",
+  "status": "SCENARIO",
+  "passed": true,
+  "assets": {
+    "station_marker": {
+      "mesh_asset": "/Game/MissionProps/station_marker/SM_station_marker.SM_station_marker",
+      "dimensions_cm": [
+        73.5,
+        90.97114562988281,
+        178.43704223632812
+      ],
+      "min_cm": [
+        -36.75,
+        -45.485572814941406,
+        0.0
+      ],
+      "max_cm": [
+        36.75,
+        45.485572814941406,
+        178.43704223632812
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 2.384185791015625e-06,
+      "triangles": 1108,
+      "source_materials": [
+        {
+          "slot": "MAT_RL_red",
+          "source_material": "MAT_RL_red",
+          "material": "/Game/MissionProps/station_marker/Materials/M_MAT_RL_red.M_MAT_RL_red"
+        },
+        {
+          "slot": "MAT_RL_alu",
+          "source_material": "MAT_RL_alu",
+          "material": "/Game/MissionProps/station_marker/Materials/M_MAT_RL_alu.M_MAT_RL_alu"
+        },
+        {
+          "slot": "MAT_RL_white",
+          "source_material": "MAT_RL_white",
+          "material": "/Game/MissionProps/station_marker/Materials/M_MAT_RL_white.M_MAT_RL_white"
+        },
+        {
+          "slot": "MAT_RL_graphite",
+          "source_material": "MAT_RL_graphite",
+          "material": "/Game/MissionProps/station_marker/Materials/M_MAT_RL_graphite.M_MAT_RL_graphite"
+        },
+        {
+          "slot": "MAT_RL_rubber",
+          "source_material": "MAT_RL_rubber",
+          "material": "/Game/MissionProps/station_marker/Materials/M_MAT_RL_rubber.M_MAT_RL_rubber"
+        }
+      ],
+      "source_fbx_sha256": "2b11a283642b9137d45dbd92244f3e30eca5e04341df15831433df82de008194",
+      "source_notice": "assets/incoming/station_marker/SOURCE.md",
+      "material_source": "presentation.glb PBR factors",
+      "material_bindings": {
+        "MAT_RL_red": {
+          "Base Color": {
+            "constant": [
+              0.5,
+              0.03500000014901161,
+              0.029999999329447746,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.41999998688697815
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        },
+        "MAT_RL_alu": {
+          "Base Color": {
+            "constant": [
+              0.6200000047683716,
+              0.6299999952316284,
+              0.6499999761581421,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.3199999928474426
+          },
+          "Metallic": {
+            "constant": 1.0
+          }
+        },
+        "MAT_RL_white": {
+          "Base Color": {
+            "constant": [
+              0.800000011920929,
+              0.800000011920929,
+              0.7799999713897705,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.44999998807907104
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        },
+        "MAT_RL_graphite": {
+          "Base Color": {
+            "constant": [
+              0.04500000178813934,
+              0.04699999839067459,
+              0.05000000074505806,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.550000011920929
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        },
+        "MAT_RL_rubber": {
+          "Base Color": {
+            "constant": [
+              0.02500000037252903,
+              0.02500000037252903,
+              0.02500000037252903,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.8799999952316284
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_station_marker_beacon_LOD0",
+          "source_name": "beacon",
+          "source_parent": "",
+          "pivot_m": [
+            0.11249998211860657,
+            -0.035144269466400146,
+            1.7493704557418823
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_station_marker_body_pole_LOD0",
+          "source_name": "body_pole",
+          "source_parent": "",
+          "pivot_m": [
+            0.11249998211860657,
+            -0.035144269466400146,
+            0.8593704700469971
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_station_marker_flag_LOD0",
+          "source_name": "flag",
+          "source_parent": "",
+          "pivot_m": [
+            0.11250000447034836,
+            0.20985573530197144,
+            1.488370418548584
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_station_marker_id_plate_LOD0",
+          "source_name": "id_plate",
+          "source_parent": "",
+          "pivot_m": [
+            0.1369999796152115,
+            -0.035144269466400146,
+            1.1293704509735107
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_station_marker_leg_1_LOD0",
+          "source_name": "leg_1",
+          "source_parent": "",
+          "pivot_m": [
+            -0.12375184148550034,
+            -0.03514423593878746,
+            0.1893705129623413
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_station_marker_leg_2_LOD0",
+          "source_name": "leg_2",
+          "source_parent": "",
+          "pivot_m": [
+            0.234562948346138,
+            -0.24068889021873474,
+            0.1893705129623413
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_station_marker_leg_3_LOD0",
+          "source_name": "leg_3",
+          "source_parent": "",
+          "pivot_m": [
+            0.2345629781484604,
+            0.17040032148361206,
+            0.1893705129623413
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "sample_tube": {
+      "mesh_asset": "/Game/MissionProps/sample_tube/SM_sample_tube.SM_sample_tube",
+      "dimensions_cm": [
+        2.5971957445144653,
+        2.426794171333313,
+        15.000082328915596
+      ],
+      "min_cm": [
+        -1.298597812652588,
+        -1.2131940126419067,
+        -1.080334186553955e-05
+      ],
+      "max_cm": [
+        1.2985979318618774,
+        1.2136001586914062,
+        15.00007152557373
+      ],
+      "minzcm": -1.080334186553955e-05,
+      "min_z_cm": -1.080334186553955e-05,
+      "unit_error_cm": 2.2351741790771484e-07,
+      "triangles": 6997,
+      "source_materials": [
+        {
+          "slot": "MAT_Scenario_Titanium",
+          "source_material": "MAT_Scenario_Titanium",
+          "material": "/Game/MissionProps/sample_tube/Materials/M_MAT_Scenario_Titanium.M_MAT_Scenario_Titanium"
+        }
+      ],
+      "source_fbx_sha256": "de79f486d505770cea3d02c0e05fbe3373979187324a0cc7c030f574e802afff",
+      "source_notice": "assets/incoming/sample_tube/SOURCE.md",
+      "material_source": "material_bindings.json",
+      "material_bindings": {
+        "MAT_Scenario_Titanium": {
+          "Base Color": {
+            "constant": [
+              0.5199999809265137,
+              0.550000011920929,
+              0.5799999833106995,
+              1.0
+            ]
+          },
+          "Roughness": {
+            "constant": 0.3799999952316284
+          },
+          "Metallic": {
+            "constant": 0.800000011920929
+          },
+          "Normal": {
+            "constant": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_sample_tube_tube_LOD0",
+          "source_name": "tube",
+          "source_parent": "",
+          "pivot_m": [
+            6.859190762042999e-07,
+            0.0008969418704509735,
+            0.05423726141452789
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_sample_tube_cap_LOD0",
+          "source_name": "cap",
+          "source_parent": "",
+          "pivot_m": [
+            0.0,
+            -9.313225746154785e-10,
+            0.12923726439476013
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "sample_case": {
+      "mesh_asset": "/Game/MissionProps/sample_case/SM_sample_case.SM_sample_case",
+      "dimensions_cm": [
+        44.99999809265137,
+        32.577558517456055,
+        29.84537696838379
+      ],
+      "min_cm": [
+        -22.499998092651367,
+        -16.451343536376953,
+        0.0
+      ],
+      "max_cm": [
+        22.5,
+        16.1262149810791,
+        29.84537696838379
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 2.1457672119140625e-06,
+      "triangles": 7110,
+      "source_materials": [
+        {
+          "slot": "industrial_pastic_container",
+          "source_material": "industrial_pastic_container",
+          "material": "/Game/MissionProps/sample_case/Materials/M_industrial_pastic_container.M_industrial_pastic_container"
+        }
+      ],
+      "source_fbx_sha256": "2dd8a83718383476aa1c8ba1bdef3cbda99784662467f535e6f45b05189aca0d",
+      "source_notice": "assets/incoming/sample_case/SOURCE.md",
+      "material_source": "material_bindings.json",
+      "material_bindings": {
+        "industrial_pastic_container": {
+          "Base Color": {
+            "image": "industrial_pastic_container_diff",
+            "path": "textures/industrial_pastic_container_diff.png",
+            "component": "RGB",
+            "colorspace": "sRGB"
+          },
+          "Roughness": {
+            "image": "industrial_pastic_container_metal-industrial_pastic_container_rough",
+            "path": "textures/industrial_pastic_container_metal_industrial_pastic_container_rough.png",
+            "component": "G",
+            "colorspace": "Non-Color"
+          },
+          "Metallic": {
+            "image": "industrial_pastic_container_metal-industrial_pastic_container_rough",
+            "path": "textures/industrial_pastic_container_metal_industrial_pastic_container_rough.png",
+            "component": "B",
+            "colorspace": "Non-Color"
+          },
+          "Normal": {
+            "image": "industrial_pastic_container_nor_gl",
+            "path": "textures/industrial_pastic_container_nor_gl.png",
+            "component": "RGB",
+            "colorspace": "Non-Color",
+            "normal_convention": "OpenGL",
+            "strength": 1.0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_sample_case_industrial_pastic_container_LOD0",
+          "source_name": "industrial_pastic_container",
+          "source_parent": "",
+          "pivot_m": [
+            0.0003636777400970459,
+            -0.0004934929311275482,
+            0.14778010547161102
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_sample_case_industrial_pastic_container_lid_a_LOD0",
+          "source_name": "industrial_pastic_container_lid_a",
+          "source_parent": "",
+          "pivot_m": [
+            7.450580596923828e-09,
+            0.13963040709495544,
+            0.22532132267951965
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_sample_case_industrial_pastic_container_lid_b_LOD0",
+          "source_name": "industrial_pastic_container_lid_b",
+          "source_parent": "",
+          "pivot_m": [
+            0.0,
+            -0.13850148022174835,
+            0.21250829100608826
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "tool_apxs": {
+      "mesh_asset": "/Game/MissionProps/tool_apxs/SM_tool_apxs.SM_tool_apxs",
+      "dimensions_cm": [
+        18.000001907348633,
+        12.854279518127441,
+        10.389872550964355
+      ],
+      "min_cm": [
+        -9.000000953674316,
+        -6.427140235900879,
+        0.0
+      ],
+      "max_cm": [
+        9.000000953674316,
+        6.4271392822265625,
+        10.389872550964355
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 1.1920928955078125e-06,
+      "triangles": 10883,
+      "source_materials": [
+        {
+          "slot": "tripo_material_759649d6-e41f-4274-afbf-d93d718c8177",
+          "source_material": "tripo_material_759649d6-e41f-4274-afbf-d93d718c8177",
+          "material": "/Game/MissionProps/tool_apxs/Materials/M_tripo_material_759649d6_e41f_4274_afbf_d93d718c8177.M_tripo_material_759649d6_e41f_4274_afbf_d93d718c8177"
+        }
+      ],
+      "source_fbx_sha256": "89d5f9464a7cb3298f5b7fb3f876827d1a94e05e9fdfa27b6e965dcd9cec45d7",
+      "source_notice": "assets/incoming/tool_apxs/SOURCE.md",
+      "material_source": "material_bindings.json",
+      "material_bindings": {
+        "tripo_material_759649d6-e41f-4274-afbf-d93d718c8177": {
+          "Base Color": {
+            "image": "Color_759649d6-e41f-4274-afbf-d93d718c8177",
+            "path": "textures/Color_759649d6_e41f_4274_afbf_d93d718c8177.png",
+            "component": "RGB",
+            "colorspace": "sRGB"
+          },
+          "Roughness": {
+            "image": "ORM_759649d6-e41f-4274-afbf-d93d718c8177",
+            "path": "textures/ORM_759649d6_e41f_4274_afbf_d93d718c8177.png",
+            "component": "G",
+            "colorspace": "Non-Color"
+          },
+          "Metallic": {
+            "image": "ORM_759649d6-e41f-4274-afbf-d93d718c8177",
+            "path": "textures/ORM_759649d6_e41f_4274_afbf_d93d718c8177.png",
+            "component": "B",
+            "colorspace": "Non-Color"
+          },
+          "Normal": {
+            "image": "NormalGL_759649d6-e41f-4274-afbf-d93d718c8177",
+            "path": "textures/NormalGL_759649d6_e41f_4274_afbf_d93d718c8177.png",
+            "component": "RGB",
+            "colorspace": "Non-Color",
+            "normal_convention": "OpenGL",
+            "strength": 1.0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_tool_apxs_tripo_node_759649d6_e41f_4274_afbf_d93d718c8177_LOD0",
+          "source_name": "tripo_node_759649d6-e41f-4274-afbf-d93d718c8177",
+          "source_parent": "",
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.05194936320185661
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "tool_libs": {
+      "mesh_asset": "/Game/MissionProps/tool_libs/SM_tool_libs.SM_tool_libs",
+      "dimensions_cm": [
+        31.999999046325684,
+        16.583853721618652,
+        20.231767654418945
+      ],
+      "min_cm": [
+        -16.0,
+        -8.291925430297852,
+        0.0
+      ],
+      "max_cm": [
+        15.999999046325684,
+        8.2919282913208,
+        20.231767654418945
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 6.556510925292969e-07,
+      "triangles": 10635,
+      "source_materials": [
+        {
+          "slot": "tripo_material_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+          "source_material": "tripo_material_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+          "material": "/Game/MissionProps/tool_libs/Materials/M_tripo_material_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.M_tripo_material_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50"
+        }
+      ],
+      "source_fbx_sha256": "56ea068fd393078b30738a5b96c69150d49cde591aa91e1cbf9bac384a29af5a",
+      "source_notice": "assets/incoming/tool_libs/SOURCE.md",
+      "material_source": "material_bindings.json",
+      "material_bindings": {
+        "tripo_material_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50": {
+          "Base Color": {
+            "image": "Color_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+            "path": "textures/Color_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.png",
+            "component": "RGB",
+            "colorspace": "sRGB"
+          },
+          "Roughness": {
+            "image": "ORM_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+            "path": "textures/ORM_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.png",
+            "component": "G",
+            "colorspace": "Non-Color"
+          },
+          "Metallic": {
+            "image": "ORM_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+            "path": "textures/ORM_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.png",
+            "component": "B",
+            "colorspace": "Non-Color"
+          },
+          "Normal": {
+            "image": "NormalGL_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+            "path": "textures/NormalGL_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.png",
+            "component": "RGB",
+            "colorspace": "Non-Color",
+            "normal_convention": "OpenGL",
+            "strength": 1.0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_tool_libs_tripo_node_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50_LOD0",
+          "source_name": "tripo_node_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50",
+          "source_parent": "",
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.10115883499383926
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "tool_neutron": {
+      "mesh_asset": "/Game/MissionProps/tool_neutron/SM_tool_neutron.SM_tool_neutron",
+      "dimensions_cm": [
+        30.000000953674316,
+        22.446083068847656,
+        16.055747985839844
+      ],
+      "min_cm": [
+        -15.0,
+        -11.223042488098145,
+        0.0
+      ],
+      "max_cm": [
+        15.000000953674316,
+        11.223040580749512,
+        16.055747985839844
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 5.364418029785156e-07,
+      "triangles": 6448,
+      "source_materials": [
+        {
+          "slot": "tripo_material_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+          "source_material": "tripo_material_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+          "material": "/Game/MissionProps/tool_neutron/Materials/M_tripo_material_d1f56ecd_0f00_4164_9f46_0aac237d08a3.M_tripo_material_d1f56ecd_0f00_4164_9f46_0aac237d08a3"
+        }
+      ],
+      "source_fbx_sha256": "03e9413a1a59ff28edc6b88f123bbd7142ea15cecf7ef70896510808c8481b5e",
+      "source_notice": "assets/incoming/tool_neutron/SOURCE.md",
+      "material_source": "material_bindings.json",
+      "material_bindings": {
+        "tripo_material_d1f56ecd-0f00-4164-9f46-0aac237d08a3": {
+          "Base Color": {
+            "image": "Color_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+            "path": "textures/Color_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+            "component": "RGB",
+            "colorspace": "sRGB"
+          },
+          "Roughness": {
+            "image": "ORM_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+            "path": "textures/ORM_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+            "component": "G",
+            "colorspace": "Non-Color"
+          },
+          "Metallic": {
+            "image": "ORM_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+            "path": "textures/ORM_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+            "component": "B",
+            "colorspace": "Non-Color"
+          },
+          "Normal": {
+            "image": "NormalGL_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+            "path": "textures/NormalGL_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+            "component": "RGB",
+            "colorspace": "Non-Color",
+            "normal_convention": "OpenGL",
+            "strength": 1.0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_tool_neutron_tripo_node_d1f56ecd_0f00_4164_9f46_0aac237d08a3_LOD0",
+          "source_name": "tripo_node_d1f56ecd-0f00-4164-9f46-0aac237d08a3",
+          "source_parent": "",
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.08027873933315277
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "tool_drill": {
+      "mesh_asset": "/Game/MissionProps/tool_drill/SM_tool_drill.SM_tool_drill",
+      "dimensions_cm": [
+        35.618730545043945,
+        29.23847007751465,
+        64.99999237060547
+      ],
+      "min_cm": [
+        -17.80936622619629,
+        -14.619235038757324,
+        0.0
+      ],
+      "max_cm": [
+        17.809364318847656,
+        14.619235038757324,
+        64.99999237060547
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 2.1457672119140625e-06,
+      "triangles": 11103,
+      "source_materials": [
+        {
+          "slot": "MAT_tool_drill_Atlas",
+          "source_material": "MAT_tool_drill_Atlas",
+          "material": "/Game/MissionProps/tool_drill/Materials/M_MAT_tool_drill_Atlas.M_MAT_tool_drill_Atlas"
+        }
+      ],
+      "source_fbx_sha256": "c417a7b8f728641a48ef62a32699c2c4dbd4102ddfac1dd017172886bd424060",
+      "source_notice": "assets/incoming/tool_drill/SOURCE.md",
+      "material_source": "material_bindings.json",
+      "material_bindings": {
+        "MAT_tool_drill_Atlas": {
+          "Base Color": {
+            "image": "tool_drill_BaseColor.png",
+            "path": "textures/tool_drill_BaseColor.png",
+            "component": "RGB",
+            "colorspace": "sRGB"
+          },
+          "Roughness": {
+            "image": "tool_drill_ORM.png",
+            "path": "textures/tool_drill_ORM.png",
+            "component": "G",
+            "colorspace": "Non-Color"
+          },
+          "Metallic": {
+            "image": "tool_drill_ORM.png",
+            "path": "textures/tool_drill_ORM.png",
+            "component": "B",
+            "colorspace": "Non-Color"
+          },
+          "Normal": {
+            "image": "tool_drill_NormalGL.png",
+            "path": "textures/tool_drill_NormalGL.png",
+            "component": "RGB",
+            "colorspace": "Non-Color",
+            "normal_convention": "OpenGL",
+            "strength": 1.0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_tool_drill_motor_housing_LOD0",
+          "source_name": "tripo_part_0",
+          "source_parent": "",
+          "pivot_m": [
+            0.022102192044258118,
+            -0.030674569308757782,
+            0.5825012922286987
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_feed_carriage_LOD0",
+          "source_name": "tripo_part_1",
+          "source_parent": "",
+          "pivot_m": [
+            0.03148263692855835,
+            0.0694078803062439,
+            0.5305255651473999
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_gearbox_LOD0",
+          "source_name": "tripo_part_2",
+          "source_parent": "",
+          "pivot_m": [
+            0.023184925317764282,
+            0.009442852810025215,
+            0.4303337335586548
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_bit_LOD0",
+          "source_name": "tripo_part_3",
+          "source_parent": "",
+          "pivot_m": [
+            0.02044288069009781,
+            -0.022990697994828224,
+            0.35845237970352173
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_4_LOD0",
+          "source_name": "tripo_part_4",
+          "source_parent": "",
+          "pivot_m": [
+            -0.07786387205123901,
+            -0.05376475304365158,
+            0.5302919745445251
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_5_LOD0",
+          "source_name": "tripo_part_5",
+          "source_parent": "",
+          "pivot_m": [
+            0.022497057914733887,
+            -0.06631492078304291,
+            0.47134774923324585
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_bit_collar_LOD0",
+          "source_name": "tripo_part_6",
+          "source_parent": "",
+          "pivot_m": [
+            0.020207230001688004,
+            -0.02277434803545475,
+            0.37605994939804077
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_7_LOD0",
+          "source_name": "tripo_part_7",
+          "source_parent": "",
+          "pivot_m": [
+            0.025791246443986893,
+            0.07293865084648132,
+            0.4699207842350006
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_8_LOD0",
+          "source_name": "tripo_part_8",
+          "source_parent": "",
+          "pivot_m": [
+            -0.058613166213035583,
+            -0.008796490728855133,
+            0.4827333688735962
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_9_LOD0",
+          "source_name": "tripo_part_9",
+          "source_parent": "",
+          "pivot_m": [
+            -0.06320229172706604,
+            0.029237141832709312,
+            0.4811709523200989
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_10_LOD0",
+          "source_name": "tripo_part_10",
+          "source_parent": "",
+          "pivot_m": [
+            0.022846974432468414,
+            -0.04442330449819565,
+            0.5121646523475647
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_11_LOD0",
+          "source_name": "tripo_part_11",
+          "source_parent": "",
+          "pivot_m": [
+            0.0967162549495697,
+            -0.010785926133394241,
+            0.47929078340530396
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_12_LOD0",
+          "source_name": "tripo_part_12",
+          "source_parent": "",
+          "pivot_m": [
+            0.1100604459643364,
+            0.03008454479277134,
+            0.475965291261673
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_13_LOD0",
+          "source_name": "tripo_part_13",
+          "source_parent": "",
+          "pivot_m": [
+            -0.09780104458332062,
+            0.0999249741435051,
+            0.5014348030090332
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_14_LOD0",
+          "source_name": "tripo_part_14",
+          "source_parent": "",
+          "pivot_m": [
+            0.1530376672744751,
+            0.09966687858104706,
+            0.5013155341148376
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_15_LOD0",
+          "source_name": "tripo_part_15",
+          "source_parent": "",
+          "pivot_m": [
+            -0.032760217785835266,
+            0.012736976146697998,
+            0.529796838760376
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_16_LOD0",
+          "source_name": "tripo_part_16",
+          "source_parent": "",
+          "pivot_m": [
+            -0.021475765854120255,
+            0.13294652104377747,
+            0.5416048765182495
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_17_LOD0",
+          "source_name": "tripo_part_17",
+          "source_parent": "",
+          "pivot_m": [
+            0.0992879867553711,
+            0.01305523980408907,
+            0.5294005870819092
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_18_LOD0",
+          "source_name": "tripo_part_18",
+          "source_parent": "",
+          "pivot_m": [
+            0.10987501591444016,
+            0.13382284343242645,
+            0.541847825050354
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_tool_drill_fixture_19_LOD0",
+          "source_name": "tripo_part_19",
+          "source_parent": "",
+          "pivot_m": [
+            0.057666391134262085,
+            -0.007306511979550123,
+            0.5247096419334412
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "lab_bench": {
+      "mesh_asset": "/Game/MissionProps/lab_bench/SM_lab_bench.SM_lab_bench",
+      "dimensions_cm": [
+        75.0,
+        200.0,
+        157.0
+      ],
+      "min_cm": [
+        -37.5,
+        -100.0,
+        0.0
+      ],
+      "max_cm": [
+        37.5,
+        100.0,
+        157.0
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 1.7881393432617188e-05,
+      "triangles": 1918,
+      "source_materials": [
+        {
+          "slot": "MAT_RL_white",
+          "source_material": "MAT_RL_white",
+          "material": "/Game/MissionProps/lab_bench/Materials/M_MAT_RL_white.M_MAT_RL_white"
+        },
+        {
+          "slot": "MAT_RL_graphite",
+          "source_material": "MAT_RL_graphite",
+          "material": "/Game/MissionProps/lab_bench/Materials/M_MAT_RL_graphite.M_MAT_RL_graphite"
+        },
+        {
+          "slot": "MAT_RL_glass",
+          "source_material": "MAT_RL_glass",
+          "material": "/Game/MissionProps/lab_bench/Materials/M_MAT_RL_glass.M_MAT_RL_glass"
+        },
+        {
+          "slot": "MAT_RL_screen",
+          "source_material": "MAT_RL_screen",
+          "material": "/Game/MissionProps/lab_bench/Materials/M_MAT_RL_screen.M_MAT_RL_screen"
+        },
+        {
+          "slot": "MAT_RL_alu",
+          "source_material": "MAT_RL_alu",
+          "material": "/Game/MissionProps/lab_bench/Materials/M_MAT_RL_alu.M_MAT_RL_alu"
+        }
+      ],
+      "source_fbx_sha256": "89f600f6506cf9cc2bd0440f21565590c20a04aec6d5b4a848f28786c8e1b8e5",
+      "source_notice": "assets/incoming/lab_bench/SOURCE.md",
+      "material_source": "presentation.glb PBR factors",
+      "material_bindings": {
+        "MAT_RL_white": {
+          "Base Color": {
+            "constant": [
+              0.800000011920929,
+              0.800000011920929,
+              0.7799999713897705,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.44999998807907104
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        },
+        "MAT_RL_graphite": {
+          "Base Color": {
+            "constant": [
+              0.04500000178813934,
+              0.04699999839067459,
+              0.05000000074505806,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.550000011920929
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        },
+        "MAT_RL_glass": {
+          "Base Color": {
+            "constant": [
+              0.550000011920929,
+              0.6200000047683716,
+              0.6600000262260437,
+              0.25
+            ]
+          },
+          "Roughness": {
+            "constant": 0.05000000074505806
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        },
+        "MAT_RL_screen": {
+          "Base Color": {
+            "constant": [
+              0.012000000104308128,
+              0.014000000432133675,
+              0.01600000075995922,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.11999999731779099
+          },
+          "Metallic": {
+            "constant": 0
+          }
+        },
+        "MAT_RL_alu": {
+          "Base Color": {
+            "constant": [
+              0.6200000047683716,
+              0.6299999952316284,
+              0.6499999761581421,
+              1
+            ]
+          },
+          "Roughness": {
+            "constant": 0.3199999928474426
+          },
+          "Metallic": {
+            "constant": 1.0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_lab_bench_body_bench_LOD0",
+          "source_name": "body_bench",
+          "source_parent": "",
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.45499998331069946
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_lab_bench_glovebox_LOD0",
+          "source_name": "glovebox",
+          "source_parent": "",
+          "pivot_m": [
+            -0.014293700456619263,
+            -0.3499999940395355,
+            1.2400000095367432
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_lab_bench_instrument_LOD0",
+          "source_name": "instrument",
+          "source_parent": "",
+          "pivot_m": [
+            0.12050003558397293,
+            0.550000011920929,
+            1.0500000715255737
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_lab_bench_rack_LOD0",
+          "source_name": "rack",
+          "source_parent": "",
+          "pivot_m": [
+            -0.1499999612569809,
+            0.550000011920929,
+            0.987500011920929
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    },
+    "science_station": {
+      "mesh_asset": "/Game/MissionProps/science_station/SM_science_station.SM_science_station",
+      "dimensions_cm": [
+        77.08900833129883,
+        75.68060302734375,
+        125.0
+      ],
+      "min_cm": [
+        -38.54450607299805,
+        -37.840301513671875,
+        0.0
+      ],
+      "max_cm": [
+        38.54450225830078,
+        37.840301513671875,
+        125.0
+      ],
+      "minzcm": 0.0,
+      "min_z_cm": 0.0,
+      "unit_error_cm": 3.337860107421875e-06,
+      "triangles": 23792,
+      "source_materials": [
+        {
+          "slot": "MAT_science_station_Atlas",
+          "source_material": "MAT_science_station_Atlas",
+          "material": "/Game/MissionProps/science_station/Materials/M_MAT_science_station_Atlas.M_MAT_science_station_Atlas"
+        }
+      ],
+      "source_fbx_sha256": "f36598c7a505b28ebbebd5c932bbe1a5c1296f12caa1d0469f873fe00fe8d182",
+      "source_notice": "assets/incoming/science_station/SOURCE.md",
+      "material_source": "material_bindings.json",
+      "material_bindings": {
+        "MAT_science_station_Atlas": {
+          "Base Color": {
+            "image": "science_station_BaseColor.png",
+            "path": "textures/science_station_BaseColor.png",
+            "component": "RGB",
+            "colorspace": "sRGB"
+          },
+          "Roughness": {
+            "image": "science_station_ORM.png",
+            "path": "textures/science_station_ORM.png",
+            "component": "G",
+            "colorspace": "Non-Color"
+          },
+          "Metallic": {
+            "image": "science_station_ORM.png",
+            "path": "textures/science_station_ORM.png",
+            "component": "B",
+            "colorspace": "Non-Color"
+          },
+          "Normal": {
+            "image": "science_station_NormalGL.png",
+            "path": "textures/science_station_NormalGL.png",
+            "component": "RGB",
+            "colorspace": "Non-Color",
+            "normal_convention": "OpenGL",
+            "strength": 1.0
+          }
+        }
+      },
+      "source_parts": [
+        {
+          "name": "SM_science_station_body_LOD0",
+          "source_name": "tripo_part_0",
+          "source_parent": "",
+          "pivot_m": [
+            0.01855234056711197,
+            0.06301689893007278,
+            0.5802115201950073
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_panel_1_LOD0",
+          "source_name": "tripo_part_1",
+          "source_parent": "",
+          "pivot_m": [
+            0.017099499702453613,
+            0.24127717316150665,
+            0.6877610683441162
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_leg_1_LOD0",
+          "source_name": "tripo_part_2",
+          "source_parent": "",
+          "pivot_m": [
+            0.24349671602249146,
+            0.24776482582092285,
+            0.3623085021972656
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_leg_2_LOD0",
+          "source_name": "tripo_part_3",
+          "source_parent": "",
+          "pivot_m": [
+            0.23710519075393677,
+            -0.19011209905147552,
+            0.3735888600349426
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_sensor_head_LOD0",
+          "source_name": "tripo_part_4",
+          "source_parent": "",
+          "pivot_m": [
+            0.007900446653366089,
+            0.02833794616162777,
+            0.9465625286102295
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_leg_3_LOD0",
+          "source_name": "tripo_part_5",
+          "source_parent": "",
+          "pivot_m": [
+            -0.23635917901992798,
+            0.2359876036643982,
+            0.3562931418418884
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_leg_4_LOD0",
+          "source_name": "tripo_part_6",
+          "source_parent": "",
+          "pivot_m": [
+            -0.22084163129329681,
+            -0.19709084928035736,
+            0.3695703148841858
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_panel_7_LOD0",
+          "source_name": "tripo_part_7",
+          "source_parent": "",
+          "pivot_m": [
+            -0.09669355303049088,
+            0.20342636108398438,
+            0.456674724817276
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_panel_8_LOD0",
+          "source_name": "tripo_part_8",
+          "source_parent": "",
+          "pivot_m": [
+            -0.18811950087547302,
+            0.05888395011425018,
+            0.7128089666366577
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_antenna_LOD0",
+          "source_name": "tripo_part_9",
+          "source_parent": "",
+          "pivot_m": [
+            0.19957460463047028,
+            0.17658506333827972,
+            1.0544891357421875
+          ],
+          "suggested_axis": [
+            0,
+            0,
+            1
+          ],
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_panel_10_LOD0",
+          "source_name": "tripo_part_10",
+          "source_parent": "",
+          "pivot_m": [
+            0.12227494269609451,
+            0.10478152334690094,
+            0.35539233684539795
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_panel_11_LOD0",
+          "source_name": "tripo_part_11",
+          "source_parent": "",
+          "pivot_m": [
+            0.22617578506469727,
+            0.0544087216258049,
+            0.7315012216567993
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_panel_12_LOD0",
+          "source_name": "tripo_part_12",
+          "source_parent": "",
+          "pivot_m": [
+            -0.202414408326149,
+            0.05837639421224594,
+            0.714937686920166
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        },
+        {
+          "name": "SM_science_station_panel_13_LOD0",
+          "source_name": "tripo_part_13",
+          "source_parent": "",
+          "pivot_m": [
+            0.10423892736434937,
+            0.13568714261054993,
+            0.358772337436676
+          ],
+          "suggested_axis": null,
+          "joint_limits": null,
+          "physics_parameters": null
+        }
+      ],
+      "pivot": "Combined source absolute transforms retained; source master origin, centimetres. No recentering.",
+      "collision": "none: no generated simple collision, all render sections disabled",
+      "physics": false,
+      "status": "SCENARIO"
+    }
+  },
+  "sources": [
+    {
+      "path": "assets/incoming/station_marker/asset.json",
+      "bytes": 14627,
+      "sha256": "e3eddf17eee9f18b7e9e95f81892e99d74a4b2e9934722020232dc410fe17032"
+    },
+    {
+      "path": "assets/incoming/station_marker/SOURCE.md",
+      "bytes": 1276,
+      "sha256": "637a70e4ba5229ac5d84b930e18bb099cd9454eae6d683e6985bc26288c9d436"
+    },
+    {
+      "path": "assets/incoming/station_marker/presentation.glb",
+      "bytes": 82780,
+      "sha256": "188884ec1546cddf1a2ba5e64eb5c523fab8711c8d19c45b39b7f0a346f9d116"
+    },
+    {
+      "path": "assets/incoming/station_marker/unreal/station_marker_LOD0.fbx",
+      "bytes": 77340,
+      "sha256": "2b11a283642b9137d45dbd92244f3e30eca5e04341df15831433df82de008194"
+    },
+    {
+      "path": "assets/incoming/sample_tube/asset.json",
+      "bytes": 8649,
+      "sha256": "74b9acb3b664dc7d0624286970dba61c58d71743105e92fa9cfbcc83e8294692"
+    },
+    {
+      "path": "assets/incoming/sample_tube/SOURCE.md",
+      "bytes": 1834,
+      "sha256": "bf57643d128183265483dfe0d479e3ee8c0ea632eed7abb1bbba26c4b732656b"
+    },
+    {
+      "path": "assets/incoming/sample_tube/presentation.glb",
+      "bytes": 523516,
+      "sha256": "f66ad7d5eed4221d8fd556b6f6766b077ccad4e683929b72abdc3cfcc6b2376a"
+    },
+    {
+      "path": "assets/incoming/sample_tube/material_bindings.json",
+      "bytes": 424,
+      "sha256": "d89185277bfe49abc15fb60c0366e3fbd2b55bef75a6b40d94fc8a703c0dccdb"
+    },
+    {
+      "path": "assets/incoming/sample_tube/unreal/sample_tube_LOD0.fbx",
+      "bytes": 224988,
+      "sha256": "de79f486d505770cea3d02c0e05fbe3373979187324a0cc7c030f574e802afff"
+    },
+    {
+      "path": "assets/incoming/sample_case/asset.json",
+      "bytes": 16115,
+      "sha256": "929199c46faa7241ccb4ec598b7e23ff6f4d7ca32fba26654a7e96f6c0683bc7"
+    },
+    {
+      "path": "assets/incoming/sample_case/SOURCE.md",
+      "bytes": 1691,
+      "sha256": "1ce35cf971f8157f9aefd3e752a7460d94dde548a9a35724f4efab7589a46485"
+    },
+    {
+      "path": "assets/incoming/sample_case/presentation.glb",
+      "bytes": 2879188,
+      "sha256": "9e26e5dffb7143da28713d5bbe63266fafc868a0bc3b2b9c030b3da764cd5d51"
+    },
+    {
+      "path": "assets/incoming/sample_case/material_bindings.json",
+      "bytes": 1056,
+      "sha256": "fcefc203f31a9e3dc8a88c872917d82828f04fca9fe6e09b91ff22daf43604a2"
+    },
+    {
+      "path": "assets/incoming/sample_case/unreal/sample_case_LOD0.fbx",
+      "bytes": 275036,
+      "sha256": "2dd8a83718383476aa1c8ba1bdef3cbda99784662467f535e6f45b05189aca0d"
+    },
+    {
+      "path": "assets/incoming/sample_case/textures/industrial_pastic_container_diff.png",
+      "bytes": 434837,
+      "sha256": "c2aae734345384c583ade5b0176f84c0b2e65cdc7c081bf16d69ae43dbd145aa"
+    },
+    {
+      "path": "assets/incoming/sample_case/textures/industrial_pastic_container_metal_industrial_pastic_container_rough.png",
+      "bytes": 1813688,
+      "sha256": "9c581289d6d3c64214a5fc90d372209535adff4af8a3763951edc54bbb88b74d"
+    },
+    {
+      "path": "assets/incoming/sample_case/textures/industrial_pastic_container_nor_gl.png",
+      "bytes": 254801,
+      "sha256": "4e21d165bea51ec5d598d6f497887f5332d1c3715d66266ebcdb90e051c37d4f"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/asset.json",
+      "bytes": 9576,
+      "sha256": "0da739a8adaa055d4ed6cc637be51d25f5fb6d5bb4d3a52097b16c859e8306e4"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/SOURCE.md",
+      "bytes": 2599,
+      "sha256": "bfae1d99e503fc95d72a5863e2e98fde1bbae0cae52595ae9a83a16d404df32a"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/presentation.glb",
+      "bytes": 4059992,
+      "sha256": "1aa7447686c8851759a8dfcfdb2d8c1b759ca57ada30dc33c7e8281f1c43b1df"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/material_bindings.json",
+      "bytes": 1014,
+      "sha256": "4955a0b99fcea954038c3b2d442b61019d1101b03ef5671365692538e2772eba"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/unreal/tool_apxs_LOD0.fbx",
+      "bytes": 491180,
+      "sha256": "89d5f9464a7cb3298f5b7fb3f876827d1a94e05e9fdfa27b6e965dcd9cec45d7"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/textures/Color_759649d6_e41f_4274_afbf_d93d718c8177.png",
+      "bytes": 1130923,
+      "sha256": "4cdd8507f80908b0b50b5a99c2e4183ab5de676c3461ab94ba807804adc95e19"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/textures/ORM_759649d6_e41f_4274_afbf_d93d718c8177.png",
+      "bytes": 1317242,
+      "sha256": "998a9636847dd73ad2acc491659739637fb3a3510ab7782c6f7c8eb55e1c9b77"
+    },
+    {
+      "path": "assets/incoming/tool_apxs/textures/NormalGL_759649d6_e41f_4274_afbf_d93d718c8177.png",
+      "bytes": 563653,
+      "sha256": "48b4bb1ad557073b3278977a679c2641ed250606eda16af1943781a480f9be2a"
+    },
+    {
+      "path": "assets/incoming/tool_libs/asset.json",
+      "bytes": 9577,
+      "sha256": "4e57f4421c0e28835f59d065854341209f714aeb8aa50e6a7ca66321ab639c63"
+    },
+    {
+      "path": "assets/incoming/tool_libs/SOURCE.md",
+      "bytes": 2606,
+      "sha256": "aae2607b97f53829ba6e74a2ce9c732e03c8aba846ffdf231b279e55ba403013"
+    },
+    {
+      "path": "assets/incoming/tool_libs/presentation.glb",
+      "bytes": 3722680,
+      "sha256": "68fee454b7027d0deeb3d3674e161c1df7d84577c3e742a6ea908e902f78c99d"
+    },
+    {
+      "path": "assets/incoming/tool_libs/material_bindings.json",
+      "bytes": 1014,
+      "sha256": "073661fc110c5dad82a6ad8579804d766218369de431fd0805b70fac57894e62"
+    },
+    {
+      "path": "assets/incoming/tool_libs/unreal/tool_libs_LOD0.fbx",
+      "bytes": 485324,
+      "sha256": "56ea068fd393078b30738a5b96c69150d49cde591aa91e1cbf9bac384a29af5a"
+    },
+    {
+      "path": "assets/incoming/tool_libs/textures/Color_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.png",
+      "bytes": 1089059,
+      "sha256": "f7e3dded18ac8481c8a94ac2fee69df5b330b8512bfddf8d70188a31a0437764"
+    },
+    {
+      "path": "assets/incoming/tool_libs/textures/ORM_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.png",
+      "bytes": 1263370,
+      "sha256": "19112b84d1edc005fa608dba7a053dbf91e18f44efe8f2d77660b41a97a36806"
+    },
+    {
+      "path": "assets/incoming/tool_libs/textures/NormalGL_c6ce5d78_a4cb_4265_8e9a_9110cfeb6f50.png",
+      "bytes": 486293,
+      "sha256": "005d2c788b188bb39879debcd3780843c8da0acf22f8586afd68d75eda7b571c"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/asset.json",
+      "bytes": 9639,
+      "sha256": "3aa8bd7d49b21233c7600a282bedf71f983c43e75e322da89c2607145c57f71a"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/SOURCE.md",
+      "bytes": 2638,
+      "sha256": "7256bc502ae25e70ef00dd47eb95faa3c4d222e0b6eab9cf7a6d1f2eb00818b5"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/presentation.glb",
+      "bytes": 3621576,
+      "sha256": "6b2ea0ba6e11485bfc5a6519ac3987c8c19333c88d5da1c31426140c43c17bd8"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/material_bindings.json",
+      "bytes": 1014,
+      "sha256": "249a3591b73bf4321ef03cb51faac76e25ce0a1ff1fb95323441ce58eeb7885c"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/unreal/tool_neutron_LOD0.fbx",
+      "bytes": 343180,
+      "sha256": "03e9413a1a59ff28edc6b88f123bbd7142ea15cecf7ef70896510808c8481b5e"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/textures/Color_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+      "bytes": 1168638,
+      "sha256": "d8bf6ffe7d384875aff30e0f56d4f94fb1049db7312d1fbf21ce1ade05ef3094"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/textures/ORM_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+      "bytes": 940343,
+      "sha256": "0896bb5aa13e4f5e87305e8f9e879ef7702369bf4c7ebc41bed0108492c1943d"
+    },
+    {
+      "path": "assets/incoming/tool_neutron/textures/NormalGL_d1f56ecd_0f00_4164_9f46_0aac237d08a3.png",
+      "bytes": 561262,
+      "sha256": "5beb183dbc085c57b2a625c68588e048223ceb4a948a435873f9718222bb31ef"
+    },
+    {
+      "path": "assets/incoming/tool_drill/asset.json",
+      "bytes": 33759,
+      "sha256": "8ba9cdc743769f8901491d764897e829f4dad18e1872e2d5cf3b545e57799ede"
+    },
+    {
+      "path": "assets/incoming/tool_drill/SOURCE.md",
+      "bytes": 2814,
+      "sha256": "2ddbe70da5d24a95fbcedb9168e311f41ae1b004b52564e23efed114440472d8"
+    },
+    {
+      "path": "assets/incoming/tool_drill/presentation.glb",
+      "bytes": 3194924,
+      "sha256": "7e4356bf530f4d69029056cf0db912092e352896e9b586828aa52ee923622e48"
+    },
+    {
+      "path": "assets/incoming/tool_drill/material_bindings.json",
+      "bytes": 799,
+      "sha256": "73574c4f6f847fb027caf04a61cccc04bc6873f75626b646091e6f34ed026b60"
+    },
+    {
+      "path": "assets/incoming/tool_drill/unreal/tool_drill_LOD0.fbx",
+      "bytes": 576732,
+      "sha256": "c417a7b8f728641a48ef62a32699c2c4dbd4102ddfac1dd017172886bd424060"
+    },
+    {
+      "path": "assets/incoming/tool_drill/textures/tool_drill_BaseColor.png",
+      "bytes": 963103,
+      "sha256": "cc935987412ca9f1f30f69da2a95ea6728db7b7c15b83b5161c5ef674092a665"
+    },
+    {
+      "path": "assets/incoming/tool_drill/textures/tool_drill_ORM.png",
+      "bytes": 887172,
+      "sha256": "d7b45c039a1f91c4c751588434a4a9cfc8ab9f3cb3aa91e9534b83792e1c1c1e"
+    },
+    {
+      "path": "assets/incoming/tool_drill/textures/tool_drill_NormalGL.png",
+      "bytes": 912307,
+      "sha256": "416fc67e1d1382fb10e08e276a3d651b04e81e063c2544ecc6c500f48b2d77fb"
+    },
+    {
+      "path": "assets/incoming/lab_bench/asset.json",
+      "bytes": 10231,
+      "sha256": "97ca905b258e2fe768ee6a5c9d56545a775aeb807c46c148846d1608f9e36a22"
+    },
+    {
+      "path": "assets/incoming/lab_bench/SOURCE.md",
+      "bytes": 1290,
+      "sha256": "61b66c387346af2d0605d644cab302bece54c3291d00cebacff6e0c73b1d4ee6"
+    },
+    {
+      "path": "assets/incoming/lab_bench/presentation.glb",
+      "bytes": 127812,
+      "sha256": "e37479a8e6cae385615b4a45d8cf81e8b74eecca58a37fbdcc90e5c886ced56e"
+    },
+    {
+      "path": "assets/incoming/lab_bench/unreal/lab_bench_LOD0.fbx",
+      "bytes": 85708,
+      "sha256": "89f600f6506cf9cc2bd0440f21565590c20a04aec6d5b4a848f28786c8e1b8e5"
+    },
+    {
+      "path": "assets/incoming/science_station/asset.json",
+      "bytes": 26440,
+      "sha256": "abd91307da655ee889f5d174f7bed3cfe3deb795634bd34377383e8bd5fbc518"
+    },
+    {
+      "path": "assets/incoming/science_station/SOURCE.md",
+      "bytes": 2582,
+      "sha256": "dc34af94c6562cf90aa972d7f7d4f4b405ff9991d57688fb8d56c8fb55ac43fc"
+    },
+    {
+      "path": "assets/incoming/science_station/presentation.glb",
+      "bytes": 3279720,
+      "sha256": "2baa6d57bae8421863d65076db9ceab06f014f461d98a97b64dc55a326657d5b"
+    },
+    {
+      "path": "assets/incoming/science_station/material_bindings.json",
+      "bytes": 844,
+      "sha256": "fb26897c957f1e2d14624039c9c9b62dd0506d93cd0a221d5a266fb75defc838"
+    },
+    {
+      "path": "assets/incoming/science_station/unreal/science_station_LOD0.fbx",
+      "bytes": 1029132,
+      "sha256": "f36598c7a505b28ebbebd5c932bbe1a5c1296f12caa1d0469f873fe00fe8d182"
+    },
+    {
+      "path": "assets/incoming/science_station/textures/science_station_BaseColor.png",
+      "bytes": 893124,
+      "sha256": "2e53c538931d27eec1cda0340d8190df3359d47859e64e68e08448f25306534f"
+    },
+    {
+      "path": "assets/incoming/science_station/textures/science_station_ORM.png",
+      "bytes": 765697,
+      "sha256": "0e8e41e4ec233df015b07aa12dcc94c42397fe55815b2939550667f62515d4b0"
+    },
+    {
+      "path": "assets/incoming/science_station/textures/science_station_NormalGL.png",
+      "bytes": 885808,
+      "sha256": "6f5b7b960315f741893d496f910571bade7ad53225af317ca28072115820a98b"
+    }
+  ],
+  "limits": "Existing visual art; no measured hardware, mechanical rig, ROS control or physical contact acceptance. SOURCE.md notices preserved."
+}

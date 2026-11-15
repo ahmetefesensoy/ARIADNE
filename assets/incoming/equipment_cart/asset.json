@@ -1,0 +1,590 @@
+{
+  "asset_id": "equipment_cart",
+  "prepared_utc": "2026-11-14T12:08:48.620620+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\equipment_cart\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        -0.41199997067451477
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        -1.4901161193847656e-08
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.002349182963371277
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      1.75600004196167,
+      0.9700000286102295,
+      1.0523490905761719
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_equipment_cart_body_frame_LOD0",
+      "source_name": "body_frame",
+      "source_parent": "",
+      "pivot_m": [
+        -0.2619999647140503,
+        0.0,
+        0.3613491654396057
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_equipment_cart_body_tray_LOD0",
+      "source_name": "body_tray",
+      "source_parent": "",
+      "pivot_m": [
+        -0.2619999647140503,
+        -2.9802322387695312e-08,
+        0.5998491644859314
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_equipment_cart_handle_LOD0",
+      "source_name": "handle",
+      "source_parent": "",
+      "pivot_m": [
+        0.6028954982757568,
+        -8.940696716308594e-08,
+        0.7219448089599609
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_equipment_cart_leg_stand_LOD0",
+      "source_name": "leg_stand",
+      "source_parent": "",
+      "pivot_m": [
+        0.3610992729663849,
+        -7.450580596923828e-08,
+        0.23734918236732483
+      ],
+      "suggested_axis": [
+        0,
+        0,
+        1
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_equipment_cart_tool_rack_LOD0",
+      "source_name": "tool_rack",
+      "source_parent": "",
+      "pivot_m": [
+        -0.8419999480247498,
+        0.0,
+        0.7623491287231445
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_equipment_cart_wheel_L_LOD0",
+      "source_name": "wheel_L",
+      "source_parent": "",
+      "pivot_m": [
+        -0.5119999647140503,
+        0.4300000071525574,
+        0.25234919786453247
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_equipment_cart_wheel_R_LOD0",
+      "source_name": "wheel_R",
+      "source_parent": "",
+      "pivot_m": [
+        -0.5120000243186951,
+        -0.4300000071525574,
+        0.25234919786453247
+      ],
+      "suggested_axis": [
+        0,
+        1,
+        0
+      ],
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 1376,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "body_frame",
+        "triangles": 308,
+        "vertices": 504,
+        "uv_layers": 1,
+        "non_manifold_edges": 504
+      },
+      {
+        "name": "body_tray",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "handle",
+        "triangles": 132,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "leg_stand",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "tool_rack",
+        "triangles": 408,
+        "vertices": 648,
+        "uv_layers": 1,
+        "non_manifold_edges": 648
+      },
+      {
+        "name": "wheel_L",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "wheel_R",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 1376,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_equipment_cart_body_frame_LOD0",
+        "triangles": 308,
+        "vertices": 504,
+        "uv_layers": 1,
+        "non_manifold_edges": 504
+      },
+      {
+        "name": "SM_equipment_cart_body_tray_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_equipment_cart_handle_LOD0",
+        "triangles": 132,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_equipment_cart_leg_stand_LOD0",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_equipment_cart_tool_rack_LOD0",
+        "triangles": 408,
+        "vertices": 648,
+        "uv_layers": 1,
+        "non_manifold_edges": 648
+      },
+      {
+        "name": "SM_equipment_cart_wheel_L_LOD0",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "SM_equipment_cart_wheel_R_LOD0",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 688,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_equipment_cart_body_frame_LOD1",
+          "triangles": 154,
+          "vertices": 350,
+          "uv_layers": 1,
+          "non_manifold_edges": 339
+        },
+        {
+          "name": "SM_equipment_cart_body_tray_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 31
+        },
+        {
+          "name": "SM_equipment_cart_handle_LOD1",
+          "triangles": 66,
+          "vertices": 150,
+          "uv_layers": 1,
+          "non_manifold_edges": 142
+        },
+        {
+          "name": "SM_equipment_cart_leg_stand_LOD1",
+          "triangles": 68,
+          "vertices": 148,
+          "uv_layers": 1,
+          "non_manifold_edges": 136
+        },
+        {
+          "name": "SM_equipment_cart_tool_rack_LOD1",
+          "triangles": 204,
+          "vertices": 444,
+          "uv_layers": 1,
+          "non_manifold_edges": 411
+        },
+        {
+          "name": "SM_equipment_cart_wheel_L_LOD1",
+          "triangles": 92,
+          "vertices": 196,
+          "uv_layers": 1,
+          "non_manifold_edges": 177
+        },
+        {
+          "name": "SM_equipment_cart_wheel_R_LOD1",
+          "triangles": 92,
+          "vertices": 196,
+          "uv_layers": 1,
+          "non_manifold_edges": 175
+        }
+      ]
+    },
+    "2": {
+      "triangles": 344,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_equipment_cart_body_frame_LOD2",
+          "triangles": 77,
+          "vertices": 273,
+          "uv_layers": 1,
+          "non_manifold_edges": 212
+        },
+        {
+          "name": "SM_equipment_cart_body_tray_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 21
+        },
+        {
+          "name": "SM_equipment_cart_handle_LOD2",
+          "triangles": 33,
+          "vertices": 117,
+          "uv_layers": 1,
+          "non_manifold_edges": 91
+        },
+        {
+          "name": "SM_equipment_cart_leg_stand_LOD2",
+          "triangles": 34,
+          "vertices": 114,
+          "uv_layers": 1,
+          "non_manifold_edges": 86
+        },
+        {
+          "name": "SM_equipment_cart_tool_rack_LOD2",
+          "triangles": 102,
+          "vertices": 342,
+          "uv_layers": 1,
+          "non_manifold_edges": 261
+        },
+        {
+          "name": "SM_equipment_cart_wheel_L_LOD2",
+          "triangles": 46,
+          "vertices": 150,
+          "uv_layers": 1,
+          "non_manifold_edges": 117
+        },
+        {
+          "name": "SM_equipment_cart_wheel_R_LOD2",
+          "triangles": 46,
+          "vertices": 150,
+          "uv_layers": 1,
+          "non_manifold_edges": 117
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 1376,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_equipment_cart_body_frame_Gazebo",
+        "triangles": 308,
+        "vertices": 504,
+        "uv_layers": 1,
+        "non_manifold_edges": 504
+      },
+      {
+        "name": "SM_equipment_cart_body_tray_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_equipment_cart_handle_Gazebo",
+        "triangles": 132,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_equipment_cart_leg_stand_Gazebo",
+        "triangles": 136,
+        "vertices": 216,
+        "uv_layers": 1,
+        "non_manifold_edges": 216
+      },
+      {
+        "name": "SM_equipment_cart_tool_rack_Gazebo",
+        "triangles": 408,
+        "vertices": 648,
+        "uv_layers": 1,
+        "non_manifold_edges": 648
+      },
+      {
+        "name": "SM_equipment_cart_wheel_L_Gazebo",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      },
+      {
+        "name": "SM_equipment_cart_wheel_R_Gazebo",
+        "triangles": 184,
+        "vertices": 288,
+        "uv_layers": 1,
+        "non_manifold_edges": 288
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 5,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\equipment_cart_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "equipment_cart",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      0.9700000286102295,
+      1.7559999525547028,
+      1.0523491352796555
+    ],
+    "parts": [
+      {
+        "name": "wheel_L",
+        "triangles": 184,
+        "suggested_source_pivot": [
+          0.43,
+          0.1,
+          0.25
+        ]
+      },
+      {
+        "name": "wheel_R",
+        "triangles": 184,
+        "suggested_source_pivot": [
+          -0.43,
+          0.1,
+          0.25
+        ]
+      },
+      {
+        "name": "body_frame",
+        "triangles": 308,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "body_tray",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "handle",
+        "triangles": 132,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "tool_rack",
+        "triangles": 408,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "leg_stand",
+        "triangles": 136,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Hand-pulled equipment cart (kılavuz M10 'alet arabası'); Apollo MET-like layout, SCENARIO design",
+    "notes": "Two wheels roll about master +Y; the astronaut pulls the handle at the front (+X)."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 1.7559999227523804,
+    "lod0": 1376,
+    "gazebo": 1376,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 7,
+    "triangles": 1376,
+    "dimensions_m": [
+      1.75600004196167,
+      0.9700000286102295,
+      1.0523490905761719
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [
+      {
+        "part": "SM_equipment_cart_wheel_L_LOD0",
+        "axis": "Y",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.35355343274011974
+      },
+      {
+        "part": "SM_equipment_cart_wheel_R_LOD0",
+        "axis": "Y",
+        "angle_deg": 90,
+        "pivot_drift_m": 0.0,
+        "vertex_displacement_m": 0.35355343274011974
+      }
+    ],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 7,
+      "dimensions_m": [
+        1.75600004196167,
+        0.9700000286102295,
+        1.0523490905761719
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "obj_reimport": {
+      "mesh_count": 7,
+      "dimensions_m": [
+        1.75600004196167,
+        0.9700000286102295,
+        1.0523490905761719
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

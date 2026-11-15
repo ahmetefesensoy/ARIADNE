@@ -43,9 +43,15 @@ if sys.version_info[:2] != (3, 12) or sys.prefix == sys.base_prefix:
 
 env -u PYTHONPATH "$REDLINE_VENV/bin/python" -m pip --disable-pip-version-check install \
     -r "$REDLINE_ROOT/scripts/requirements-test.txt"
+# redline_core (T2) numerical stack: exact wheels only, never source builds.
+env -u PYTHONPATH "$REDLINE_VENV/bin/python" -m pip --disable-pip-version-check install \
+    --only-binary=:all: \
+    -c "$REDLINE_ROOT/scripts/requirements-test.txt" \
+    -r "$REDLINE_ROOT/scripts/requirements-core.txt"
 env -u PYTHONPATH "$REDLINE_VENV/bin/python" -m pip --disable-pip-version-check install \
     --no-build-isolation \
     -c "$REDLINE_ROOT/scripts/requirements-test.txt" \
+    -c "$REDLINE_ROOT/scripts/requirements-core.txt" \
     -e "$REDLINE_ROOT/python/redline_core[test]" \
     -e "$REDLINE_ROOT/python/redline_data[test]"
 

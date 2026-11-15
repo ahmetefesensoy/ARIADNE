@@ -1,0 +1,45 @@
+schema_version: 1
+# Exact paths from docs/proje.md §6.1. HEAD success is availability only,
+# not product metadata, observation time, CRS, license or alignment validation.
+# THEMIS/CRISM/REMS/etc. await exact product selection; no placeholder URL.
+products:
+  gale_dem_v3:
+    product_id: MSL_Gale_DEM_Mosaic_1m_v3
+    url: https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif
+    status: DERIVED
+    sites: [BXW, YKB]
+    decision_role: topography_prior
+    metadata_verified: false
+    unknown_fields: [horizontal_crs, vertical_datum, nodata, acquired_at, license, footprint, alignment]
+  gale_lrgb:
+    product_id: MSL_Gale_HiRISE-LRGB_78quads_sharp_cog
+    url: https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_HiRISE-LRGB_78quads_sharp_cog.tif
+    status: ARCHIVE
+    sites: [BXW, YKB]
+    decision_role: orbital_morphology
+    metadata_verified: false
+    unknown_fields: [horizontal_crs, bands, nodata, acquired_at, license, footprint, alignment]
+  hirise_dtm_bxw_019698:
+    product_id: DTEEC_019698_1750_019988_1750_U01
+    url: https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.tif
+    status: DERIVED
+    sites: [BXW]
+    decision_role: registered_dtm_comparison
+    metadata_verified: false
+    unknown_fields: [raster_valid_footprint, alignment, correlated_error, exact_areoid_model_realization]
+  places_interp:
+    product_id: msl_places_localized_interp
+    url: https://planetarydata.jpl.nasa.gov/img/data/msl/msl_places/data_localizations/localized_interp.csv
+    status: ARCHIVE
+    sites: [BXW, YKB]
+    decision_role: rover_localization_reference
+    metadata_verified: false
+    unknown_fields: [coordinate_semantics, units, acquired_at, release_version, license]
+  mmgis_msl_waypoints:
+    product_id: MSL_waypoints
+    url: https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json
+    status: ARCHIVE
+    sites: [BXW, YKB]
+    decision_role: operational_traverse_reference
+    metadata_verified: false
+    unknown_fields: [coordinate_semantics, acquired_at, release_version, license]

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>redline_planner</name>
+  <version>0.1.0</version>
+  <description>REDLINE planner nodes: live return field and red line; T5 thread launch (proje.md section 8.4).</description>
+  <maintainer email="maintainer@example.invalid">REDLINE team (placeholder)</maintainer>
+  <license>LicenseRef-Project-Pending</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>redline_msgs</exec_depend>
+  <exec_depend>redline_safety</exec_depend>
+  <exec_depend>action_msgs</exec_depend>
+  <exec_depend>rosgraph_msgs</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>diagnostic_updater</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>redline_env</exec_depend>
+  <exec_depend>redline_crew</exec_depend>
+  <exec_depend>redline_mission</exec_depend>
+  <exec_depend>rosbridge_server</exec_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>ros2launch</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

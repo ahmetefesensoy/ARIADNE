@@ -1,0 +1,396 @@
+{
+  "asset_id": "lab_bench",
+  "prepared_utc": "2026-11-14T12:08:00.091925+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\lab_bench\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        7.549790126404332e-08,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        7.549790126404332e-08,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.02000001072883606
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 1.0,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.7500001788139343,
+      2.0,
+      1.5700000524520874
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_lab_bench_body_bench_LOD0",
+      "source_name": "body_bench",
+      "source_parent": "",
+      "pivot_m": [
+        0.0,
+        0.0,
+        0.45499998331069946
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_lab_bench_glovebox_LOD0",
+      "source_name": "glovebox",
+      "source_parent": "",
+      "pivot_m": [
+        -0.014293700456619263,
+        -0.3499999940395355,
+        1.2400000095367432
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_lab_bench_instrument_LOD0",
+      "source_name": "instrument",
+      "source_parent": "",
+      "pivot_m": [
+        0.12050003558397293,
+        0.550000011920929,
+        1.0500000715255737
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_lab_bench_rack_LOD0",
+      "source_name": "rack",
+      "source_parent": "",
+      "pivot_m": [
+        -0.1499999612569809,
+        0.550000011920929,
+        0.987500011920929
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 1918,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "body_bench",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "glovebox",
+        "triangles": 1316,
+        "vertices": 2384,
+        "uv_layers": 1,
+        "non_manifold_edges": 2384
+      },
+      {
+        "name": "instrument",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "rack",
+        "triangles": 564,
+        "vertices": 888,
+        "uv_layers": 1,
+        "non_manifold_edges": 888
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 1918,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_lab_bench_body_bench_LOD0",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_lab_bench_glovebox_LOD0",
+        "triangles": 1316,
+        "vertices": 2384,
+        "uv_layers": 1,
+        "non_manifold_edges": 2384
+      },
+      {
+        "name": "SM_lab_bench_instrument_LOD0",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "SM_lab_bench_rack_LOD0",
+        "triangles": 564,
+        "vertices": 888,
+        "uv_layers": 1,
+        "non_manifold_edges": 888
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 966,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_lab_bench_body_bench_LOD1",
+          "triangles": 12,
+          "vertices": 36,
+          "uv_layers": 1,
+          "non_manifold_edges": 31
+        },
+        {
+          "name": "SM_lab_bench_glovebox_LOD1",
+          "triangles": 658,
+          "vertices": 1726,
+          "uv_layers": 1,
+          "non_manifold_edges": 1474
+        },
+        {
+          "name": "SM_lab_bench_instrument_LOD1",
+          "triangles": 14,
+          "vertices": 28,
+          "uv_layers": 1,
+          "non_manifold_edges": 28
+        },
+        {
+          "name": "SM_lab_bench_rack_LOD1",
+          "triangles": 282,
+          "vertices": 606,
+          "uv_layers": 1,
+          "non_manifold_edges": 563
+        }
+      ]
+    },
+    "2": {
+      "triangles": 490,
+      "materials": 5,
+      "parts": [
+        {
+          "name": "SM_lab_bench_body_bench_LOD2",
+          "triangles": 6,
+          "vertices": 30,
+          "uv_layers": 1,
+          "non_manifold_edges": 22
+        },
+        {
+          "name": "SM_lab_bench_glovebox_LOD2",
+          "triangles": 329,
+          "vertices": 1397,
+          "uv_layers": 1,
+          "non_manifold_edges": 1027
+        },
+        {
+          "name": "SM_lab_bench_instrument_LOD2",
+          "triangles": 14,
+          "vertices": 28,
+          "uv_layers": 1,
+          "non_manifold_edges": 28
+        },
+        {
+          "name": "SM_lab_bench_rack_LOD2",
+          "triangles": 141,
+          "vertices": 465,
+          "uv_layers": 1,
+          "non_manifold_edges": 351
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 1918,
+    "materials": 5,
+    "parts": [
+      {
+        "name": "SM_lab_bench_body_bench_Gazebo",
+        "triangles": 24,
+        "vertices": 48,
+        "uv_layers": 1,
+        "non_manifold_edges": 48
+      },
+      {
+        "name": "SM_lab_bench_glovebox_Gazebo",
+        "triangles": 1316,
+        "vertices": 2384,
+        "uv_layers": 1,
+        "non_manifold_edges": 2384
+      },
+      {
+        "name": "SM_lab_bench_instrument_Gazebo",
+        "triangles": 14,
+        "vertices": 28,
+        "uv_layers": 1,
+        "non_manifold_edges": 28
+      },
+      {
+        "name": "SM_lab_bench_rack_Gazebo",
+        "triangles": 564,
+        "vertices": 888,
+        "uv_layers": 1,
+        "non_manifold_edges": 888
+      }
+    ]
+  },
+  "textures": [],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 4,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\lab_bench_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration exists in assets/calibration",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "SCENARIO engineering prop: dimensions are design choices, not measured hardware.",
+    "Flat PBR colours (textures only where noted); bevels, wear and decals are left to engine materials.",
+    "No mass, inertia, joint limits or controller; moving parts are presentation pivots only."
+  ],
+  "generator": {
+    "asset_id": "lab_bench",
+    "kind": "REDLINE procedural original geometry",
+    "provenance": {
+      "status": "SCENARIO",
+      "note": "Original procedural prop; dimensions are design choices, not measured hardware. No generative AI and no third-party mesh."
+    },
+    "generator": {
+      "script": "production/procedural_assets.py",
+      "sha256": "c4d5b67d5f01b015210be556962c7fd54f2f0f3e9aefb8a0ce26d8d761a544cd",
+      "blender": "5.2.3 LTS"
+    },
+    "source_frame": "metres, +Z up, front toward -Y (build_package rotates +90° Z -> front +X)",
+    "source_dimensions_m": [
+      2.0,
+      0.75,
+      1.570000022649765
+    ],
+    "parts": [
+      {
+        "name": "body_bench",
+        "triangles": 24,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "glovebox",
+        "triangles": 1316,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "rack",
+        "triangles": 564,
+        "suggested_source_pivot": null
+      },
+      {
+        "name": "instrument",
+        "triangles": 14,
+        "suggested_source_pivot": null
+      }
+    ],
+    "purpose": "Sample laboratory bench with glovebox (kılavuz H05, optional)",
+    "notes": "Glass uses alpha 0.25 in Blender; the engine material decides translucency. Results stay model-labelled."
+  },
+  "source_notice": {
+    "kind": "REDLINE prosedürel · özgün",
+    "library": null,
+    "tripo_tasks": [],
+    "terms_urls": [],
+    "note": "Original geometry from production/procedural_assets.py; no third-party mesh or generative AI."
+  },
+  "build_spec": {
+    "source": "source.glb",
+    "longest": 2.0,
+    "lod0": 1918,
+    "gazebo": 1918,
+    "texture": 1024
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 4,
+    "triangles": 1918,
+    "dimensions_m": [
+      0.7500001788139343,
+      2.0,
+      1.5700000524520874
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "rotation_checks": [],
+    "front_is_plus_x": true,
+    "fbx_reimport": {
+      "mesh_count": 4,
+      "dimensions_m": [
+        0.75,
+        2.0,
+        1.5700000524520874
+      ],
+      "max_dimension_error_m": 1.7881393432617188e-07
+    },
+    "obj_reimport": {
+      "mesh_count": 4,
+      "dimensions_m": [
+        0.7500001788139343,
+        2.0,
+        1.5700000524520874
+      ],
+      "max_dimension_error_m": 0.0
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

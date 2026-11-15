@@ -1,0 +1,22 @@
+{
+  "task_id": "310774f0-cd27-4265-8657-3c02c288e33d",
+  "type": "text_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": false,
+    "quad": false,
+    "prompt": "Realistic Mars science rover, exactly six independent metal wheels, three wheels on each side, exposed rocker bogie suspension. Rectangular low insulated chassis, off-white panels, graphite mechanisms, restrained red accents, bronze metal wheel rims. Tall camera mast with separate pan and tilt head, two forward stereo camera eyes. Five-link folded robotic arm at front with shoulder elbow wrist joints and round contact science turret. Each wheel and steering knuckle, suspension member, mast head and arm link an editable separate solid, assembled neutral pose with visible gaps at moving joints. Scientific aerospace construction, physically plausible panel seams and bolts, clean silhouette, moderate dust. No astronaut, no terrain, no platform, no scenery, no text, no logos. One complete vehicle.",
+    "texture": false,
+    "export_uv": true,
+    "face_limit": 120000,
+    "model_seed": 14112026,
+    "model_version": "v3.1-20260211",
+    "generate_parts": true,
+    "geometry_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "created_at": "2026-11-14T10:48:25.725480Z",
+  "completed_at": "2026-11-14T10:51:04.600580Z",
+  "credits_consumed": 50
+}

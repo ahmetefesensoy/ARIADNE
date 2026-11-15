@@ -1,12 +1,15 @@
-# REDLINE
+# ARIADNE
 
 **Known · Unknown · Red line** — an uncertainty-aware Mars EVA planning tool built for NASA Space Apps 2026.
+
+- **30-second project demo:** https://youtu.be/4aTVG5DYbDs
+- **Public repository:** https://github.com/ahmetefesensoy/ARIADNE
 
 Map uncertainty is converted into a *return margin*: the red line shows how far a crew can safely go given what is known, what is not, and the current radiation environment. Robot observations update the plan, and a radiation event triggers re-planning.
 
 *TR: Haritadaki belirsizlikler dönüş payına bağlanır; robot gözlemleri planı günceller, radyasyon olayı yeniden planlamayı tetikler.*
 
-> **Status:** idea phase finished; implementation is at milestone **T0** (infrastructure). Nothing is marked done without observed test evidence — see [journal/PROGRESS.md](journal/PROGRESS.md).
+> **Status:** implementation is in progress. [Playable EV1 and T5 acceptance](docs/EVA_PLAYABLE.md) are available; T6 and broader mission work remain open. Dated evidence is in [journal/PROGRESS.md](journal/PROGRESS.md). The [rover preview](docs/ROVER_PREVIEW.md) is tracked separately.
 
 ## Repository layout
 

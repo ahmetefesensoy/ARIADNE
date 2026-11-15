@@ -1,0 +1,190 @@
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+14:44:06 | INFO: Data are loaded, start creating Blender stuff
+14:44:06 | INFO: Blender create Mesh node tripo_mesh_759649d6-e41f-4274-afbf-d93d718c8177
+14:44:06 | INFO: glTF import finished in 0.02s
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:338: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  images={n.image for m in mats if m.use_nodes for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image and n.image.size[0]}
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_apxs\\unreal\\tool_apxs_LOD0.fbx'
+export finished in 0.0158 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_apxs\\unreal\\tool_apxs_LOD1.fbx'
+export finished in 0.0120 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_apxs\\unreal\\tool_apxs_LOD2.fbx'
+export finished in 0.0090 sec.
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+14:44:06 | INFO: Starting glTF 2.0 export
+14:44:06 | INFO: Extracting primitive: tripo_mesh_759649d6-e41f-4274-afbf-d93d718c8177.001
+14:44:06 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:44:06 | INFO: Primitives created: 1
+14:44:06 | INFO: Finished glTF 2.0 export in 0.21430659294128418 s
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:421: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  node=next((n for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image and n.image.colorspace_settings.name=='sRGB'),None) if m.use_nodes else None
+00:02.828  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_apxs\preview\perspective.png'
+00:03.296  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_apxs\preview\front.png'
+00:03.796  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_apxs\preview\side.png'
+00:04.234  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_apxs\preview\back.png'
+
+Info: Saved as "master.blend"
+PACKAGE_DONE tool_apxs 10896 triangles; 1999 Gazebo; 1 parts
+14:44:08 | INFO: Data are loaded, start creating Blender stuff
+14:44:08 | INFO: Blender create Mesh node tripo_mesh_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50
+14:44:08 | INFO: glTF import finished in 0.02s
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_libs\\unreal\\tool_libs_LOD0.fbx'
+export finished in 0.0148 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_libs\\unreal\\tool_libs_LOD1.fbx'
+export finished in 0.0116 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_libs\\unreal\\tool_libs_LOD2.fbx'
+export finished in 0.0086 sec.
+14:44:09 | INFO: Starting glTF 2.0 export
+14:44:09 | INFO: Extracting primitive: tripo_mesh_c6ce5d78-a4cb-4265-8e9a-9110cfeb6f50.001
+14:44:09 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:44:09 | INFO: Primitives created: 1
+14:44:09 | INFO: Finished glTF 2.0 export in 0.1824636459350586 s
+00:05.453  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_libs\preview\perspective.png'
+00:05.890  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_libs\preview\front.png'
+00:06.375  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_libs\preview\side.png'
+00:06.812  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_libs\preview\back.png'
+
+Info: Saved as "master.blend"
+PACKAGE_DONE tool_libs 10639 triangles; 3000 Gazebo; 1 parts
+14:44:11 | INFO: Data are loaded, start creating Blender stuff
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_0
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_1
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_2
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_3
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_4
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_5
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_6
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_7
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_8
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_9
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_10
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_11
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_12
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_13
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_14
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_15
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_16
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_17
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_18
+14:44:11 | INFO: Blender create Mesh node tripo_mesh_19
+14:44:11 | INFO: glTF import finished in 0.05s
+C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\production\build_package.py:275: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new("MAT_"+asset_id+"_Atlas");mat.use_nodes=True
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_drill\\unreal\\tool_drill_LOD0.fbx'
+export finished in 0.0217 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_drill\\unreal\\tool_drill_LOD1.fbx'
+export finished in 0.0192 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_drill\\unreal\\tool_drill_LOD2.fbx'
+export finished in 0.0172 sec.
+14:44:12 | INFO: Starting glTF 2.0 export
+14:44:12 | INFO: Extracting primitive: tripo_mesh_6.001
+14:44:12 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_3.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_1.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_4.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_5.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_7.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_8.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_9.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_10.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_11.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_12.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_13.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_14.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_15.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_16.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_17.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_18.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_19.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_2.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Extracting primitive: tripo_mesh_0.001
+14:44:12 | INFO: Primitives created: 1
+14:44:12 | INFO: Finished glTF 2.0 export in 0.028641939163208008 s
+00:08.015  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_drill\preview\perspective.png'
+00:08.421  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_drill\preview\front.png'
+00:08.828  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_drill\preview\side.png'
+00:09.250  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_drill\preview\back.png'
+
+Info: Saved as "master.blend"
+PACKAGE_DONE tool_drill 11103 triangles; 2987 Gazebo; 20 parts
+14:44:13 | INFO: Data are loaded, start creating Blender stuff
+14:44:13 | INFO: Blender create Mesh node tripo_mesh_d1f56ecd-0f00-4164-9f46-0aac237d08a3
+14:44:13 | INFO: glTF import finished in 0.01s
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_neutron\\unreal\\tool_neutron_LOD0.fbx'
+export finished in 0.0130 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_neutron\\unreal\\tool_neutron_LOD1.fbx'
+export finished in 0.0111 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_neutron\\unreal\\tool_neutron_LOD2.fbx'
+export finished in 0.0084 sec.
+14:44:14 | INFO: Starting glTF 2.0 export
+14:44:14 | INFO: Extracting primitive: tripo_mesh_d1f56ecd-0f00-4164-9f46-0aac237d08a3.001
+14:44:14 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:44:14 | INFO: Primitives created: 1
+14:44:14 | INFO: Finished glTF 2.0 export in 0.17837214469909668 s
+00:10.468  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_neutron\preview\perspective.png'
+00:10.921  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_neutron\preview\front.png'
+00:11.421  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_neutron\preview\side.png'
+00:11.875  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_neutron\preview\back.png'
+
+Info: Saved as "master.blend"
+PACKAGE_DONE tool_neutron 6449 triangles; 1999 Gazebo; 1 parts
+14:44:16 | INFO: Data are loaded, start creating Blender stuff
+14:44:16 | INFO: Blender create Mesh node tripo_mesh_1d1334b7-6e5f-4f38-b3ce-736803da0b83
+14:44:16 | INFO: glTF import finished in 0.01s
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_multispectral\\unreal\\tool_multispectral_LOD0.fbx'
+export finished in 0.0169 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_multispectral\\unreal\\tool_multispectral_LOD1.fbx'
+export finished in 0.0119 sec.
+
+FBX export starting... 'C:\\Users\\USER\\Desktop\\SPACE APPS BASKETBEYBİ\\assets\\incoming\\tool_multispectral\\unreal\\tool_multispectral_LOD2.fbx'
+export finished in 0.0090 sec.
+14:44:16 | INFO: Starting glTF 2.0 export
+14:44:16 | INFO: Extracting primitive: tripo_mesh_1d1334b7-6e5f-4f38-b3ce-736803da0b83.001
+14:44:17 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+14:44:17 | INFO: Primitives created: 1
+14:44:17 | INFO: Finished glTF 2.0 export in 0.1742393970489502 s
+00:13.109  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_multispectral\preview\perspective.png'
+00:13.609  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_multispectral\preview\front.png'
+00:14.125  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_multispectral\preview\side.png'
+00:14.593  render           | Saved: 'C:\Users\USER\Desktop\SPACE APPS BASKETBEYBİ\assets\incoming\tool_multispectral\preview\back.png'
+
+Info: Saved as "master.blend"
+PACKAGE_DONE tool_multispectral 10757 triangles; 2999 Gazebo; 1 parts
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

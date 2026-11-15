@@ -1,0 +1,25 @@
+# Optional T1 raster/CRS environment for CPython 3.12 on Linux.
+# Rasterio's wheel bundles GDAL 3.9.3; it does not install osgeo or gdalinfo.
+numpy==1.26.4
+rasterio==1.4.3
+pyproj==3.7.1
+PyYAML==6.0.2
+
+# Rasterio/PyProj runtime dependencies. Keep affine on its compatible 2.x API.
+affine==2.4.0
+attrs==25.3.0
+certifi==2026.10.23
+click==8.1.8
+cligj==0.7.2
+click-plugins==1.1.1.2
+pyparsing==3.2.3
+
+# Deterministic offline STAC JSON Schema validation.
+jsonschema==4.23.0
+jsonschema-specifications==2025.4.1
+referencing==0.36.2
+rpds-py==0.25.1
+typing-extensions==4.16.0
+
+# T6 env step (SPICE sun table, proje.md §6.4): wheel only, resolved 2026-11-14.
+spiceypy==8.4.0

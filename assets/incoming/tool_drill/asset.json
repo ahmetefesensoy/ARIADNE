@@ -1,0 +1,1236 @@
+{
+  "asset_id": "tool_drill",
+  "prepared_utc": "2026-11-14T11:44:12.215015+00:00",
+  "blender_version": "5.2.3 LTS",
+  "source": "incoming\\tool_drill\\source.glb",
+  "provenance": {
+    "status": "SCENARIO",
+    "note": "Visual derivative; source library art is not an archive measurement. Source scale and placement are scenario choices."
+  },
+  "master": {
+    "unit": "metre",
+    "axes": "+X forward/+Y left/+Z up",
+    "handedness": "right",
+    "source_to_master_matrix": [
+      [
+        0.6499999761581421,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.6499999761581421,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.6499999761581421,
+        0.32499998807907104
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uniform_scale": 0.65,
+    "scale_basis": "SCENARIO visual sizing; not a measured robot dimension",
+    "dimensions_m": [
+      0.35618728399276733,
+      0.29238471388816833,
+      0.6499999165534973
+    ]
+  },
+  "parts": [
+    {
+      "name": "SM_tool_drill_motor_housing_LOD0",
+      "source_name": "tripo_part_0",
+      "source_parent": "",
+      "pivot_m": [
+        0.022102192044258118,
+        -0.030674569308757782,
+        0.5825012922286987
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_feed_carriage_LOD0",
+      "source_name": "tripo_part_1",
+      "source_parent": "",
+      "pivot_m": [
+        0.03148263692855835,
+        0.0694078803062439,
+        0.5305255651473999
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_gearbox_LOD0",
+      "source_name": "tripo_part_2",
+      "source_parent": "",
+      "pivot_m": [
+        0.023184925317764282,
+        0.009442852810025215,
+        0.4303337335586548
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_bit_LOD0",
+      "source_name": "tripo_part_3",
+      "source_parent": "",
+      "pivot_m": [
+        0.02044288069009781,
+        -0.022990697994828224,
+        0.35845237970352173
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_4_LOD0",
+      "source_name": "tripo_part_4",
+      "source_parent": "",
+      "pivot_m": [
+        -0.07786387205123901,
+        -0.05376475304365158,
+        0.5302919745445251
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_5_LOD0",
+      "source_name": "tripo_part_5",
+      "source_parent": "",
+      "pivot_m": [
+        0.022497057914733887,
+        -0.06631492078304291,
+        0.47134774923324585
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_bit_collar_LOD0",
+      "source_name": "tripo_part_6",
+      "source_parent": "",
+      "pivot_m": [
+        0.020207230001688004,
+        -0.02277434803545475,
+        0.37605994939804077
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_7_LOD0",
+      "source_name": "tripo_part_7",
+      "source_parent": "",
+      "pivot_m": [
+        0.025791246443986893,
+        0.07293865084648132,
+        0.4699207842350006
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_8_LOD0",
+      "source_name": "tripo_part_8",
+      "source_parent": "",
+      "pivot_m": [
+        -0.058613166213035583,
+        -0.008796490728855133,
+        0.4827333688735962
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_9_LOD0",
+      "source_name": "tripo_part_9",
+      "source_parent": "",
+      "pivot_m": [
+        -0.06320229172706604,
+        0.029237141832709312,
+        0.4811709523200989
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_10_LOD0",
+      "source_name": "tripo_part_10",
+      "source_parent": "",
+      "pivot_m": [
+        0.022846974432468414,
+        -0.04442330449819565,
+        0.5121646523475647
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_11_LOD0",
+      "source_name": "tripo_part_11",
+      "source_parent": "",
+      "pivot_m": [
+        0.0967162549495697,
+        -0.010785926133394241,
+        0.47929078340530396
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_12_LOD0",
+      "source_name": "tripo_part_12",
+      "source_parent": "",
+      "pivot_m": [
+        0.1100604459643364,
+        0.03008454479277134,
+        0.475965291261673
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_13_LOD0",
+      "source_name": "tripo_part_13",
+      "source_parent": "",
+      "pivot_m": [
+        -0.09780104458332062,
+        0.0999249741435051,
+        0.5014348030090332
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_14_LOD0",
+      "source_name": "tripo_part_14",
+      "source_parent": "",
+      "pivot_m": [
+        0.1530376672744751,
+        0.09966687858104706,
+        0.5013155341148376
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_15_LOD0",
+      "source_name": "tripo_part_15",
+      "source_parent": "",
+      "pivot_m": [
+        -0.032760217785835266,
+        0.012736976146697998,
+        0.529796838760376
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_16_LOD0",
+      "source_name": "tripo_part_16",
+      "source_parent": "",
+      "pivot_m": [
+        -0.021475765854120255,
+        0.13294652104377747,
+        0.5416048765182495
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_17_LOD0",
+      "source_name": "tripo_part_17",
+      "source_parent": "",
+      "pivot_m": [
+        0.0992879867553711,
+        0.01305523980408907,
+        0.5294005870819092
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_18_LOD0",
+      "source_name": "tripo_part_18",
+      "source_parent": "",
+      "pivot_m": [
+        0.10987501591444016,
+        0.13382284343242645,
+        0.541847825050354
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    },
+    {
+      "name": "SM_tool_drill_fixture_19_LOD0",
+      "source_name": "tripo_part_19",
+      "source_parent": "",
+      "pivot_m": [
+        0.057666391134262085,
+        -0.007306511979550123,
+        0.5247096419334412
+      ],
+      "suggested_axis": null,
+      "joint_limits": null,
+      "physics_parameters": null
+    }
+  ],
+  "source_audit": {
+    "triangles": 11103,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "tripo_part_0",
+        "triangles": 3030,
+        "vertices": 2513,
+        "uv_layers": 1,
+        "non_manifold_edges": 1698
+      },
+      {
+        "name": "tripo_part_1",
+        "triangles": 1965,
+        "vertices": 1934,
+        "uv_layers": 1,
+        "non_manifold_edges": 1559
+      },
+      {
+        "name": "tripo_part_2",
+        "triangles": 944,
+        "vertices": 843,
+        "uv_layers": 1,
+        "non_manifold_edges": 636
+      },
+      {
+        "name": "tripo_part_3",
+        "triangles": 1050,
+        "vertices": 859,
+        "uv_layers": 1,
+        "non_manifold_edges": 594
+      },
+      {
+        "name": "tripo_part_4",
+        "triangles": 755,
+        "vertices": 831,
+        "uv_layers": 1,
+        "non_manifold_edges": 723
+      },
+      {
+        "name": "tripo_part_5",
+        "triangles": 815,
+        "vertices": 785,
+        "uv_layers": 1,
+        "non_manifold_edges": 613
+      },
+      {
+        "name": "tripo_part_6",
+        "triangles": 759,
+        "vertices": 616,
+        "uv_layers": 1,
+        "non_manifold_edges": 417
+      },
+      {
+        "name": "tripo_part_7",
+        "triangles": 268,
+        "vertices": 320,
+        "uv_layers": 1,
+        "non_manifold_edges": 286
+      },
+      {
+        "name": "tripo_part_8",
+        "triangles": 169,
+        "vertices": 214,
+        "uv_layers": 1,
+        "non_manifold_edges": 199
+      },
+      {
+        "name": "tripo_part_9",
+        "triangles": 147,
+        "vertices": 184,
+        "uv_layers": 1,
+        "non_manifold_edges": 169
+      },
+      {
+        "name": "tripo_part_10",
+        "triangles": 532,
+        "vertices": 581,
+        "uv_layers": 1,
+        "non_manifold_edges": 492
+      },
+      {
+        "name": "tripo_part_11",
+        "triangles": 162,
+        "vertices": 226,
+        "uv_layers": 1,
+        "non_manifold_edges": 214
+      },
+      {
+        "name": "tripo_part_12",
+        "triangles": 122,
+        "vertices": 181,
+        "uv_layers": 1,
+        "non_manifold_edges": 176
+      },
+      {
+        "name": "tripo_part_13",
+        "triangles": 85,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 143
+      },
+      {
+        "name": "tripo_part_14",
+        "triangles": 71,
+        "vertices": 121,
+        "uv_layers": 1,
+        "non_manifold_edges": 121
+      },
+      {
+        "name": "tripo_part_15",
+        "triangles": 63,
+        "vertices": 105,
+        "uv_layers": 1,
+        "non_manifold_edges": 105
+      },
+      {
+        "name": "tripo_part_16",
+        "triangles": 48,
+        "vertices": 107,
+        "uv_layers": 1,
+        "non_manifold_edges": 106
+      },
+      {
+        "name": "tripo_part_17",
+        "triangles": 48,
+        "vertices": 98,
+        "uv_layers": 1,
+        "non_manifold_edges": 98
+      },
+      {
+        "name": "tripo_part_18",
+        "triangles": 40,
+        "vertices": 90,
+        "uv_layers": 1,
+        "non_manifold_edges": 90
+      },
+      {
+        "name": "tripo_part_19",
+        "triangles": 30,
+        "vertices": 68,
+        "uv_layers": 1,
+        "non_manifold_edges": 68
+      }
+    ]
+  },
+  "lod0": {
+    "triangles": 11103,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_tool_drill_motor_housing_LOD0",
+        "triangles": 3030,
+        "vertices": 2513,
+        "uv_layers": 1,
+        "non_manifold_edges": 1698
+      },
+      {
+        "name": "SM_tool_drill_feed_carriage_LOD0",
+        "triangles": 1965,
+        "vertices": 1934,
+        "uv_layers": 1,
+        "non_manifold_edges": 1559
+      },
+      {
+        "name": "SM_tool_drill_gearbox_LOD0",
+        "triangles": 944,
+        "vertices": 843,
+        "uv_layers": 1,
+        "non_manifold_edges": 636
+      },
+      {
+        "name": "SM_tool_drill_bit_LOD0",
+        "triangles": 1050,
+        "vertices": 859,
+        "uv_layers": 1,
+        "non_manifold_edges": 594
+      },
+      {
+        "name": "SM_tool_drill_fixture_4_LOD0",
+        "triangles": 755,
+        "vertices": 831,
+        "uv_layers": 1,
+        "non_manifold_edges": 723
+      },
+      {
+        "name": "SM_tool_drill_fixture_5_LOD0",
+        "triangles": 815,
+        "vertices": 785,
+        "uv_layers": 1,
+        "non_manifold_edges": 613
+      },
+      {
+        "name": "SM_tool_drill_bit_collar_LOD0",
+        "triangles": 759,
+        "vertices": 616,
+        "uv_layers": 1,
+        "non_manifold_edges": 417
+      },
+      {
+        "name": "SM_tool_drill_fixture_7_LOD0",
+        "triangles": 268,
+        "vertices": 320,
+        "uv_layers": 1,
+        "non_manifold_edges": 286
+      },
+      {
+        "name": "SM_tool_drill_fixture_8_LOD0",
+        "triangles": 169,
+        "vertices": 214,
+        "uv_layers": 1,
+        "non_manifold_edges": 199
+      },
+      {
+        "name": "SM_tool_drill_fixture_9_LOD0",
+        "triangles": 147,
+        "vertices": 184,
+        "uv_layers": 1,
+        "non_manifold_edges": 169
+      },
+      {
+        "name": "SM_tool_drill_fixture_10_LOD0",
+        "triangles": 532,
+        "vertices": 581,
+        "uv_layers": 1,
+        "non_manifold_edges": 492
+      },
+      {
+        "name": "SM_tool_drill_fixture_11_LOD0",
+        "triangles": 162,
+        "vertices": 226,
+        "uv_layers": 1,
+        "non_manifold_edges": 214
+      },
+      {
+        "name": "SM_tool_drill_fixture_12_LOD0",
+        "triangles": 122,
+        "vertices": 181,
+        "uv_layers": 1,
+        "non_manifold_edges": 176
+      },
+      {
+        "name": "SM_tool_drill_fixture_13_LOD0",
+        "triangles": 85,
+        "vertices": 144,
+        "uv_layers": 1,
+        "non_manifold_edges": 143
+      },
+      {
+        "name": "SM_tool_drill_fixture_14_LOD0",
+        "triangles": 71,
+        "vertices": 121,
+        "uv_layers": 1,
+        "non_manifold_edges": 121
+      },
+      {
+        "name": "SM_tool_drill_fixture_15_LOD0",
+        "triangles": 63,
+        "vertices": 105,
+        "uv_layers": 1,
+        "non_manifold_edges": 105
+      },
+      {
+        "name": "SM_tool_drill_fixture_16_LOD0",
+        "triangles": 48,
+        "vertices": 107,
+        "uv_layers": 1,
+        "non_manifold_edges": 106
+      },
+      {
+        "name": "SM_tool_drill_fixture_17_LOD0",
+        "triangles": 48,
+        "vertices": 98,
+        "uv_layers": 1,
+        "non_manifold_edges": 98
+      },
+      {
+        "name": "SM_tool_drill_fixture_18_LOD0",
+        "triangles": 40,
+        "vertices": 90,
+        "uv_layers": 1,
+        "non_manifold_edges": 90
+      },
+      {
+        "name": "SM_tool_drill_fixture_19_LOD0",
+        "triangles": 30,
+        "vertices": 68,
+        "uv_layers": 1,
+        "non_manifold_edges": 68
+      }
+    ]
+  },
+  "lods": {
+    "1": {
+      "triangles": 5546,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_tool_drill_motor_housing_LOD1",
+          "triangles": 1515,
+          "vertices": 1651,
+          "uv_layers": 1,
+          "non_manifold_edges": 1475
+        },
+        {
+          "name": "SM_tool_drill_feed_carriage_LOD1",
+          "triangles": 982,
+          "vertices": 1290,
+          "uv_layers": 1,
+          "non_manifold_edges": 1236
+        },
+        {
+          "name": "SM_tool_drill_gearbox_LOD1",
+          "triangles": 472,
+          "vertices": 547,
+          "uv_layers": 1,
+          "non_manifold_edges": 516
+        },
+        {
+          "name": "SM_tool_drill_bit_LOD1",
+          "triangles": 525,
+          "vertices": 548,
+          "uv_layers": 1,
+          "non_manifold_edges": 496
+        },
+        {
+          "name": "SM_tool_drill_fixture_4_LOD1",
+          "triangles": 377,
+          "vertices": 559,
+          "uv_layers": 1,
+          "non_manifold_edges": 540
+        },
+        {
+          "name": "SM_tool_drill_fixture_5_LOD1",
+          "triangles": 407,
+          "vertices": 528,
+          "uv_layers": 1,
+          "non_manifold_edges": 499
+        },
+        {
+          "name": "SM_tool_drill_bit_collar_LOD1",
+          "triangles": 378,
+          "vertices": 404,
+          "uv_layers": 1,
+          "non_manifold_edges": 374
+        },
+        {
+          "name": "SM_tool_drill_fixture_7_LOD1",
+          "triangles": 134,
+          "vertices": 219,
+          "uv_layers": 1,
+          "non_manifold_edges": 215
+        },
+        {
+          "name": "SM_tool_drill_fixture_8_LOD1",
+          "triangles": 84,
+          "vertices": 145,
+          "uv_layers": 1,
+          "non_manifold_edges": 142
+        },
+        {
+          "name": "SM_tool_drill_fixture_9_LOD1",
+          "triangles": 73,
+          "vertices": 126,
+          "uv_layers": 1,
+          "non_manifold_edges": 125
+        },
+        {
+          "name": "SM_tool_drill_fixture_10_LOD1",
+          "triangles": 266,
+          "vertices": 396,
+          "uv_layers": 1,
+          "non_manifold_edges": 383
+        },
+        {
+          "name": "SM_tool_drill_fixture_11_LOD1",
+          "triangles": 81,
+          "vertices": 160,
+          "uv_layers": 1,
+          "non_manifold_edges": 159
+        },
+        {
+          "name": "SM_tool_drill_fixture_12_LOD1",
+          "triangles": 61,
+          "vertices": 127,
+          "uv_layers": 1,
+          "non_manifold_edges": 122
+        },
+        {
+          "name": "SM_tool_drill_fixture_13_LOD1",
+          "triangles": 42,
+          "vertices": 102,
+          "uv_layers": 1,
+          "non_manifold_edges": 100
+        },
+        {
+          "name": "SM_tool_drill_fixture_14_LOD1",
+          "triangles": 35,
+          "vertices": 85,
+          "uv_layers": 1,
+          "non_manifold_edges": 79
+        },
+        {
+          "name": "SM_tool_drill_fixture_15_LOD1",
+          "triangles": 31,
+          "vertices": 75,
+          "uv_layers": 1,
+          "non_manifold_edges": 72
+        },
+        {
+          "name": "SM_tool_drill_fixture_16_LOD1",
+          "triangles": 24,
+          "vertices": 84,
+          "uv_layers": 1,
+          "non_manifold_edges": 77
+        },
+        {
+          "name": "SM_tool_drill_fixture_17_LOD1",
+          "triangles": 24,
+          "vertices": 74,
+          "uv_layers": 1,
+          "non_manifold_edges": 69
+        },
+        {
+          "name": "SM_tool_drill_fixture_18_LOD1",
+          "triangles": 20,
+          "vertices": 70,
+          "uv_layers": 1,
+          "non_manifold_edges": 63
+        },
+        {
+          "name": "SM_tool_drill_fixture_19_LOD1",
+          "triangles": 15,
+          "vertices": 53,
+          "uv_layers": 1,
+          "non_manifold_edges": 46
+        }
+      ]
+    },
+    "2": {
+      "triangles": 2766,
+      "materials": 1,
+      "parts": [
+        {
+          "name": "SM_tool_drill_motor_housing_LOD2",
+          "triangles": 757,
+          "vertices": 1042,
+          "uv_layers": 1,
+          "non_manifold_edges": 988
+        },
+        {
+          "name": "SM_tool_drill_feed_carriage_LOD2",
+          "triangles": 491,
+          "vertices": 858,
+          "uv_layers": 1,
+          "non_manifold_edges": 816
+        },
+        {
+          "name": "SM_tool_drill_gearbox_LOD2",
+          "triangles": 236,
+          "vertices": 346,
+          "uv_layers": 1,
+          "non_manifold_edges": 334
+        },
+        {
+          "name": "SM_tool_drill_bit_LOD2",
+          "triangles": 261,
+          "vertices": 336,
+          "uv_layers": 1,
+          "non_manifold_edges": 331
+        },
+        {
+          "name": "SM_tool_drill_fixture_4_LOD2",
+          "triangles": 187,
+          "vertices": 385,
+          "uv_layers": 1,
+          "non_manifold_edges": 369
+        },
+        {
+          "name": "SM_tool_drill_fixture_5_LOD2",
+          "triangles": 203,
+          "vertices": 350,
+          "uv_layers": 1,
+          "non_manifold_edges": 337
+        },
+        {
+          "name": "SM_tool_drill_bit_collar_LOD2",
+          "triangles": 189,
+          "vertices": 248,
+          "uv_layers": 1,
+          "non_manifold_edges": 248
+        },
+        {
+          "name": "SM_tool_drill_fixture_7_LOD2",
+          "triangles": 67,
+          "vertices": 154,
+          "uv_layers": 1,
+          "non_manifold_edges": 141
+        },
+        {
+          "name": "SM_tool_drill_fixture_8_LOD2",
+          "triangles": 42,
+          "vertices": 105,
+          "uv_layers": 1,
+          "non_manifold_edges": 95
+        },
+        {
+          "name": "SM_tool_drill_fixture_9_LOD2",
+          "triangles": 36,
+          "vertices": 89,
+          "uv_layers": 1,
+          "non_manifold_edges": 80
+        },
+        {
+          "name": "SM_tool_drill_fixture_10_LOD2",
+          "triangles": 133,
+          "vertices": 275,
+          "uv_layers": 1,
+          "non_manifold_edges": 257
+        },
+        {
+          "name": "SM_tool_drill_fixture_11_LOD2",
+          "triangles": 40,
+          "vertices": 119,
+          "uv_layers": 1,
+          "non_manifold_edges": 103
+        },
+        {
+          "name": "SM_tool_drill_fixture_12_LOD2",
+          "triangles": 30,
+          "vertices": 97,
+          "uv_layers": 1,
+          "non_manifold_edges": 85
+        },
+        {
+          "name": "SM_tool_drill_fixture_13_LOD2",
+          "triangles": 21,
+          "vertices": 81,
+          "uv_layers": 1,
+          "non_manifold_edges": 68
+        },
+        {
+          "name": "SM_tool_drill_fixture_14_LOD2",
+          "triangles": 17,
+          "vertices": 68,
+          "uv_layers": 1,
+          "non_manifold_edges": 58
+        },
+        {
+          "name": "SM_tool_drill_fixture_15_LOD2",
+          "triangles": 15,
+          "vertices": 59,
+          "uv_layers": 1,
+          "non_manifold_edges": 51
+        },
+        {
+          "name": "SM_tool_drill_fixture_16_LOD2",
+          "triangles": 12,
+          "vertices": 72,
+          "uv_layers": 1,
+          "non_manifold_edges": 54
+        },
+        {
+          "name": "SM_tool_drill_fixture_17_LOD2",
+          "triangles": 12,
+          "vertices": 62,
+          "uv_layers": 1,
+          "non_manifold_edges": 49
+        },
+        {
+          "name": "SM_tool_drill_fixture_18_LOD2",
+          "triangles": 10,
+          "vertices": 60,
+          "uv_layers": 1,
+          "non_manifold_edges": 45
+        },
+        {
+          "name": "SM_tool_drill_fixture_19_LOD2",
+          "triangles": 7,
+          "vertices": 45,
+          "uv_layers": 1,
+          "non_manifold_edges": 33
+        }
+      ]
+    }
+  },
+  "gazebo": {
+    "triangles": 2987,
+    "materials": 1,
+    "parts": [
+      {
+        "name": "SM_tool_drill_motor_housing_Gazebo",
+        "triangles": 818,
+        "vertices": 1096,
+        "uv_layers": 1,
+        "non_manifold_edges": 1043
+      },
+      {
+        "name": "SM_tool_drill_feed_carriage_Gazebo",
+        "triangles": 529,
+        "vertices": 891,
+        "uv_layers": 1,
+        "non_manifold_edges": 851
+      },
+      {
+        "name": "SM_tool_drill_gearbox_Gazebo",
+        "triangles": 255,
+        "vertices": 365,
+        "uv_layers": 1,
+        "non_manifold_edges": 356
+      },
+      {
+        "name": "SM_tool_drill_bit_Gazebo",
+        "triangles": 283,
+        "vertices": 354,
+        "uv_layers": 1,
+        "non_manifold_edges": 347
+      },
+      {
+        "name": "SM_tool_drill_fixture_4_Gazebo",
+        "triangles": 203,
+        "vertices": 399,
+        "uv_layers": 1,
+        "non_manifold_edges": 382
+      },
+      {
+        "name": "SM_tool_drill_fixture_5_Gazebo",
+        "triangles": 220,
+        "vertices": 365,
+        "uv_layers": 1,
+        "non_manifold_edges": 352
+      },
+      {
+        "name": "SM_tool_drill_bit_collar_Gazebo",
+        "triangles": 205,
+        "vertices": 263,
+        "uv_layers": 1,
+        "non_manifold_edges": 262
+      },
+      {
+        "name": "SM_tool_drill_fixture_7_Gazebo",
+        "triangles": 72,
+        "vertices": 159,
+        "uv_layers": 1,
+        "non_manifold_edges": 149
+      },
+      {
+        "name": "SM_tool_drill_fixture_8_Gazebo",
+        "triangles": 45,
+        "vertices": 108,
+        "uv_layers": 1,
+        "non_manifold_edges": 100
+      },
+      {
+        "name": "SM_tool_drill_fixture_9_Gazebo",
+        "triangles": 39,
+        "vertices": 92,
+        "uv_layers": 1,
+        "non_manifold_edges": 84
+      },
+      {
+        "name": "SM_tool_drill_fixture_10_Gazebo",
+        "triangles": 143,
+        "vertices": 284,
+        "uv_layers": 1,
+        "non_manifold_edges": 267
+      },
+      {
+        "name": "SM_tool_drill_fixture_11_Gazebo",
+        "triangles": 43,
+        "vertices": 122,
+        "uv_layers": 1,
+        "non_manifold_edges": 107
+      },
+      {
+        "name": "SM_tool_drill_fixture_12_Gazebo",
+        "triangles": 32,
+        "vertices": 99,
+        "uv_layers": 1,
+        "non_manifold_edges": 88
+      },
+      {
+        "name": "SM_tool_drill_fixture_13_Gazebo",
+        "triangles": 22,
+        "vertices": 82,
+        "uv_layers": 1,
+        "non_manifold_edges": 70
+      },
+      {
+        "name": "SM_tool_drill_fixture_14_Gazebo",
+        "triangles": 19,
+        "vertices": 70,
+        "uv_layers": 1,
+        "non_manifold_edges": 60
+      },
+      {
+        "name": "SM_tool_drill_fixture_15_Gazebo",
+        "triangles": 17,
+        "vertices": 61,
+        "uv_layers": 1,
+        "non_manifold_edges": 54
+      },
+      {
+        "name": "SM_tool_drill_fixture_16_Gazebo",
+        "triangles": 12,
+        "vertices": 72,
+        "uv_layers": 1,
+        "non_manifold_edges": 54
+      },
+      {
+        "name": "SM_tool_drill_fixture_17_Gazebo",
+        "triangles": 12,
+        "vertices": 62,
+        "uv_layers": 1,
+        "non_manifold_edges": 49
+      },
+      {
+        "name": "SM_tool_drill_fixture_18_Gazebo",
+        "triangles": 10,
+        "vertices": 60,
+        "uv_layers": 1,
+        "non_manifold_edges": 45
+      },
+      {
+        "name": "SM_tool_drill_fixture_19_Gazebo",
+        "triangles": 8,
+        "vertices": 46,
+        "uv_layers": 1,
+        "non_manifold_edges": 35
+      }
+    ]
+  },
+  "textures": [
+    {
+      "name": "tool_drill_BaseColor.png",
+      "path": "textures/tool_drill_BaseColor.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "tool_drill_NormalGL.png",
+      "path": "textures/tool_drill_NormalGL.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "tool_drill_ORM.png",
+      "path": "textures/tool_drill_ORM.png",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "Non-Color"
+    }
+  ],
+  "collisions": {
+    "status": "DRAFT_SIMPLE_PROXIES",
+    "shapes": "part bounding boxes",
+    "count": 1,
+    "inertial_defined": false
+  },
+  "rig": {
+    "armatures": [],
+    "animations": []
+  },
+  "exports": {
+    "unreal_lod0": "unreal\\tool_drill_LOD0.fbx"
+  },
+  "checks": {
+    "source_loaded_in_blender": true,
+    "unreal_import": "NOT_RUN",
+    "gazebo_import": "NOT_RUN",
+    "engine_scale_calibration": "NOT_RUN; 1 m Blender FBX calibration passed",
+    "physics_navigation_controls": "NOT_RUN",
+    "joint_axis_and_pivot_acceptance": "REVIEW_REQUIRED",
+    "normal_map_binding_in_engines": "NOT_RUN",
+    "non_manifold_visuals": "See per-part counts; open panels are not dynamic collision geometry",
+    "local_file_roundtrip": "PASS"
+  },
+  "limitations": [
+    "Tripo SCENARIO instrument appearance; not flight CAD, measured geometry, sensor optics or calibrated detection/illumination physics."
+  ],
+  "materials": {
+    "MAT_tool_drill_Atlas": {
+      "Base Color": {
+        "image": "tool_drill_BaseColor.png",
+        "path": "textures/tool_drill_BaseColor.png",
+        "component": "RGB",
+        "colorspace": "sRGB"
+      },
+      "Roughness": {
+        "image": "tool_drill_ORM.png",
+        "path": "textures/tool_drill_ORM.png",
+        "component": "G",
+        "colorspace": "Non-Color"
+      },
+      "Metallic": {
+        "image": "tool_drill_ORM.png",
+        "path": "textures/tool_drill_ORM.png",
+        "component": "B",
+        "colorspace": "Non-Color"
+      },
+      "Normal": {
+        "image": "tool_drill_NormalGL.png",
+        "path": "textures/tool_drill_NormalGL.png",
+        "component": "RGB",
+        "colorspace": "Non-Color",
+        "normal_convention": "OpenGL",
+        "strength": 1.0
+      }
+    }
+  },
+  "material_channels": {
+    "BaseColor": "textures/tool_drill_BaseColor.png",
+    "NormalGL": "textures/tool_drill_NormalGL.png",
+    "NormalDX": "textures/tool_drill_NormalDX.png",
+    "AO": "textures/tool_drill_AO.png",
+    "Roughness": "textures/tool_drill_Roughness.png",
+    "Metallic": "textures/tool_drill_Metallic.png"
+  },
+  "export_settings": {
+    "fbx_binary_version": 7400,
+    "blender_axis_forward": "-Y",
+    "blender_axis_up": "Z",
+    "unit_scale_length": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "obj": "raw metres +X/+Y/+Z, no baked axis change",
+    "unreal_import_scale_and_orientation": "NOT_VERIFIED_IN_ENGINE",
+    "lod_files": "Separate FBX files; import LOD1/LOD2 explicitly; no automatic LOD-group claim",
+    "material_binding": "Connect BaseColor as sRGB; ORM/roughness/metallic/normal as linear; choose NormalDX for Unreal, NormalGL for Blender/glTF; engine binding untested"
+  },
+  "source_notice": {
+    "kind": "Tripo · AI üretimi",
+    "library": null,
+    "tripo_tasks": [
+      {
+        "asset_id": "tool_drill",
+        "historical": false,
+        "task_id": "a005625a-7eb4-4989-bc0e-50a30764a8aa",
+        "type": "text_to_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": false,
+          "quad": false,
+          "prompt": "One realistic compact Mars rover coring drill end effector, upright scientific industrial instrument. Rectangular white thermal-covered motor housing attached to two parallel graphite feed rails, central silver sliding carriage and one clearly separate long spiral metal drill bit projecting straight downward, drill bit coaxial with motor, protective circular collar above bit. Rear bolted robot wrist mounting plate, secured short electrical connector. Separate editable solids for fixed motor housing, sliding carriage and drill bit, visibly distinct joint gaps, assembled neutral pose. Clean plausible aerospace engineering, graphite titanium white with small red accents, restrained wear. One complete isolated drill tool only, no robot arm, no rover, no ground, no sample rock, no pedestal, no text, no labels, no logo. Realistic PBR materials.",
+          "texture": false,
+          "export_uv": true,
+          "face_limit": 12000,
+          "model_seed": 14112032,
+          "model_version": "v3.1-20260211",
+          "generate_parts": true,
+          "geometry_quality": "standard",
+          "texture_alignment": "geometry"
+        },
+        "created_at": "2026-11-14T11:18:34.712729Z",
+        "completed_at": "2026-11-14T11:19:21.191567Z",
+        "credits_consumed": 30
+      },
+      {
+        "asset_id": "tool_drill",
+        "historical": false,
+        "task_id": "695a96a1-3728-4fc2-a536-c41fb26406fb",
+        "type": "texture_model",
+        "status": "success",
+        "progress": 100,
+        "input": {
+          "pbr": true,
+          "bake": true,
+          "texture": true,
+          "model_version": "v3.0-20250812",
+          "texture_quality": "standard",
+          "original_model_id": "a005625a-7eb4-4989-bc0e-50a30764a8aa",
+          "texture_alignment": "original_image"
+        },
+        "created_at": "2026-11-14T11:19:44.949579Z",
+        "completed_at": "2026-11-14T11:20:44.108060Z",
+        "credits_consumed": 10
+      }
+    ],
+    "terms_urls": [
+      "https://developers.tripo3d.ai/en/terms",
+      "https://www.tripo3d.ai/terms"
+    ]
+  },
+  "local_verification": {
+    "master_loaded": true,
+    "mesh_count": 20,
+    "triangles": 11103,
+    "dimensions_m": [
+      0.35618728399276733,
+      0.29238471388816833,
+      0.6499999165534973
+    ],
+    "source_metadata_dimensions_error_m": 0.0,
+    "nonfinite_vertices": 0,
+    "uv_missing_parts": [],
+    "max_skin_influences": 0,
+    "rotation_checks": [],
+    "required_wheel_groups": null,
+    "wheel_groups": 0,
+    "rotor_groups": 0,
+    "fbx_reimport": {
+      "mesh_count": 20,
+      "dimensions_m": [
+        0.35618728399276733,
+        0.29238471388816833,
+        0.6499999165534973
+      ],
+      "max_dimension_error_m": 0.0,
+      "armature_count": 0,
+      "animations": []
+    },
+    "obj_reimport": {
+      "mesh_count": 20,
+      "dimensions_m": [
+        0.36084944009780884,
+        0.29602837562561035,
+        0.645024836063385
+      ],
+      "max_dimension_error_m": 0.004975080490112305
+    },
+    "pass": true
+  },
+  "delivery_status": "LOCAL_VISUAL_PACKAGE_PREPARED; ENGINE_ACCEPTANCE_PENDING"
+}

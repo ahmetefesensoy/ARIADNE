@@ -1,0 +1,28 @@
+# S0: nominal two-person EVA (proje.md §16; D015). No rule violation; plan and line stable.
+provenance_status: SCENARIO
+note: >-
+  Starts at historical 2024-05-21 04:00 UTC (BXW LMST 08:44, Sun 39 deg): the real RAD E series
+  has no SEP alarm for the next 6 h (the sol 4190 alarm ended 2024-05-20 08:04 UTC) and the dusk
+  limit is about 9 h away. BRIEFING asks planner_server for plan v1; both crew members walk it
+  (SIMULATED, ev_sim plan mode), EV2 20 s behind EV1. Dose values are ARCHIVE RAD; crew, timing,
+  rules and the plan are scenario choices.
+id: S0_NOMINAL
+site: BXW
+seed: 1
+time_scale: 60
+start:
+  historical_utc: "2024-05-21T04:00:00Z"
+  pet_min: 0
+initial_phase: BRIEFING
+crew: [EV1, EV2]
+crew_trail_s: {EV2: 20}
+suit_profile: default
+plan: {objective: SCIENCE, max_duration_min: 300}
+replay:
+  rad: {sols: [4190, 4191], detector: E}
+events: []
+expected:
+  - {rule: FR-01, must_hold: true}
+  - {rule: FR-04, must_hold: true}
+  - {rule: FR-05, must_hold: true}
+  - {rule: FR-12, must_hold: true}

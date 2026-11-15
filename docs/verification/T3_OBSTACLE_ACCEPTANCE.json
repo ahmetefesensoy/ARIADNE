@@ -1,0 +1,189 @@
+{
+  "created_at_utc": "2026-11-14T17:08:09.065664+00:00",
+  "schema": "redline.t3.obstacle-acceptance.v1",
+  "rover": "NASA-derived delivered metre-scale visual; compliant skid-steer SCENARIO physics",
+  "test_obstacle": "SCENARIO 1 x 1 x 3.5 m pillar 5 m ahead; sensed, not provided to planner as ground truth",
+  "terrain": "T1-derived BXW physical mesh; static cost support 4 m, working costmap 0.2 m",
+  "goal_source": "programmatic NavigateToPose; does not replace delivered-model RViz-click acceptance",
+  "runs": {
+    "mppi": {
+      "status": "SIMULATED",
+      "started_at_utc": "2026-11-14T15:26:23.991350+00:00",
+      "ended_at_utc": "2026-11-14T15:29:43.186060+00:00",
+      "passed_navigation": true,
+      "action_status": 4,
+      "physical_goal_error_m": 0.44616282982715383,
+      "physical_displacement_m": 9.575615026620495,
+      "estimated_goal_error_m": 0.49220595771636577,
+      "ground_height_residual_m": 0.05298378966335804,
+      "minimum_sampled_planar_clearance_m": 0.6881826018649948,
+      "sampled_envelope_overlaps": 0,
+      "maximum_sample_gap_wall_s": 8.703513607000104,
+      "clean_shutdown": false,
+      "child_exit_diagnostics": [
+        {
+          "log": "simulation.log",
+          "line": "[ERROR] [gz-1]: process[gz-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'"
+        },
+        {
+          "log": "simulation.log",
+          "line": "[ERROR] [gz-1]: process[gz-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'"
+        },
+        {
+          "log": "simulation.log",
+          "line": "[ERROR] [gz-1]: process has died [pid 544, exit code -9, cmd 'gz sim -s -r --headless-rendering -v 3 /mnt/c/Users/USER/Desktop/SPACE APPS BASKETBEYBİ/test-results/t3-runtime-JS5gnQtK/bxw.sdf']."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "test-results/t3-runtime-JS5gnQtK/result.json",
+          "sha256": "9936486c90930bfe7e5c260f77ebe048fc0578698b5edbb8027ffeb809f31ec2"
+        },
+        {
+          "path": "test-results/t3-runtime-JS5gnQtK/navigation_result.json",
+          "sha256": "96052f436aaac30ef0310d9c052b196281aeb318b782bfe3f920771f0a99ca19"
+        },
+        {
+          "path": "test-results/t3-runtime-JS5gnQtK/clearance-analysis.json",
+          "sha256": "62bcc115a9cf1a94d844d376b6304ad94e7becd5745b6036f6e3e9c1b4033341"
+        },
+        {
+          "path": "test-results/t3-runtime-JS5gnQtK/physical-motion.json",
+          "sha256": "86d6cb42193491ff711b90d2b99a7239eb94f9a35dcb0d22faebddb66d3218f0"
+        },
+        {
+          "path": "test-results/t3-runtime-JS5gnQtK/perception.log",
+          "sha256": "da586f2505e6aaa68ccc1b8b380678d87f01cf0b154c18a214d66f1222380399"
+        },
+        {
+          "path": "test-results/t3-runtime-JS5gnQtK/rover-geometry.json",
+          "sha256": "36a15171d4870c69ff45cd53d6b75accbb9f34518a1762bb62ce38d6c7df78bc"
+        },
+        {
+          "path": "test-results/t3-runtime-JS5gnQtK/nav2-delivered.yaml",
+          "sha256": "32c71c54e222f0cf3db0f723e7b1964ae69a6ddbeeea92894a26b07bc689dc34"
+        },
+        {
+          "path": "test-results/t3-build-dOTJEdcp/ros-workspace.json",
+          "sha256": "a330af9d292c1be52f5052b726534bc305bd6a5dfb50bd6f83d0bebe4b2218f1"
+        }
+      ]
+    },
+    "rpp": {
+      "status": "SIMULATED",
+      "started_at_utc": "2026-11-14T15:22:44.671146+00:00",
+      "ended_at_utc": "2026-11-14T15:24:39.578922+00:00",
+      "passed_navigation": true,
+      "action_status": 4,
+      "physical_goal_error_m": 0.19655182751307124,
+      "physical_displacement_m": 9.773038176693358,
+      "estimated_goal_error_m": 0.2852773489638975,
+      "ground_height_residual_m": 0.05384795696772926,
+      "minimum_sampled_planar_clearance_m": 0.48760603417860754,
+      "sampled_envelope_overlaps": 0,
+      "maximum_sample_gap_wall_s": 8.534338382999977,
+      "clean_shutdown": false,
+      "child_exit_diagnostics": [
+        {
+          "log": "simulation.log",
+          "line": "[ERROR] [cmd_watchdog.py-4]: process has died [pid 1055, exit code 1, cmd '/home/ahmetefesensoy/.cache/redline/ros/ws-c486bb951d219d62-z3bgioye/install/redline_bringup/lib/redline_bringup/cmd_watchdog.py --ros-args --params-file /tmp/launch_params_jsqes74o']."
+        },
+        {
+          "log": "simulation.log",
+          "line": "[ERROR] [gz-1]: process[gz-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'"
+        },
+        {
+          "log": "simulation.log",
+          "line": "[ERROR] [gz-1]: process has died [pid 1052, exit code -11, cmd 'gz sim -s -r --headless-rendering -v 3 /mnt/c/Users/USER/Desktop/SPACE APPS BASKETBEYBİ/test-results/t3-runtime-UpMtpiHd/bxw.sdf']."
+        }
+      ],
+      "evidence": [
+        {
+          "path": "test-results/t3-runtime-UpMtpiHd/result.json",
+          "sha256": "e9b5b2565915a9c6b77b77dacc064370c5d0f6a3193bb0328472219d65fdf584"
+        },
+        {
+          "path": "test-results/t3-runtime-UpMtpiHd/navigation_result.json",
+          "sha256": "42cb1dcfcff5ce9008f96c7b9858385d93a5699c5bf65d062febf2c392e681f4"
+        },
+        {
+          "path": "test-results/t3-runtime-UpMtpiHd/clearance-analysis.json",
+          "sha256": "8bbea969b8d568b1731bdc46142c9311c9618cb0961431a3c94aaf02ed58e8a4"
+        },
+        {
+          "path": "test-results/t3-runtime-UpMtpiHd/physical-motion.json",
+          "sha256": "c1f94286f58a1e321ae4096df5e838335e2ce9eaf71f8275b008ce08d3262dca"
+        },
+        {
+          "path": "test-results/t3-runtime-UpMtpiHd/perception.log",
+          "sha256": "49740564192694d9f1f1b0a6fa30293d1182f6f8f3761de67fefcf1206638b3f"
+        },
+        {
+          "path": "test-results/t3-runtime-UpMtpiHd/rover-geometry.json",
+          "sha256": "18aacd859964dcea29d8f9b5bebf3b09af4e979844a4e5cf3dceebb9dc3600cf"
+        },
+        {
+          "path": "test-results/t3-runtime-UpMtpiHd/nav2-delivered.yaml",
+          "sha256": "0fa0134de34daaa168c671144be12b50f77dca0695da7bdf68d45fe78a6b8f64"
+        },
+        {
+          "path": "test-results/t3-build-blH4VNZ8/ros-workspace.json",
+          "sha256": "b87143a95075f409648482a3f842b7049c89046f0361c55080bf494f94249d13"
+        }
+      ]
+    }
+  },
+  "rotation": {
+    "result": {
+      "created_at_utc": "2026-11-14T14:44:06.835900+00:00",
+      "passed": true,
+      "simulation_only": true,
+      "probe_sha256": "a5af92a06df0cd433e603ef0167118f0a9824fd42b932e8e370ece5a565778a3",
+      "readiness_imu_samples": 100,
+      "yaw_before_rad": -1.5710993085257206,
+      "yaw_after_rad": -0.06365627248748491,
+      "physical_yaw_change_rad": 1.5074430360382356,
+      "physical_translation_m": 0.02625145465778414,
+      "imu_max_abs_wz_radps": 0.22833469753538818,
+      "joint_delta_rad": {
+        "wheel_fl_joint": -7.066887279888324,
+        "wheel_ml_joint": -7.066887282861696,
+        "wheel_rl_joint": -7.066887281368832,
+        "wheel_fr_joint": 7.066887282270696,
+        "wheel_mr_joint": 7.066887282314542,
+        "wheel_rr_joint": 7.0668872802017795,
+        "wheel_fl_suspension_joint": -0.011358290731654348,
+        "wheel_fr_suspension_joint": 0.00832757769349185,
+        "wheel_ml_suspension_joint": 0.0037551486814495633,
+        "wheel_mr_suspension_joint": -0.006555990847881166,
+        "wheel_rl_suspension_joint": 0.028110125881869716,
+        "wheel_rr_suspension_joint": -0.021510268930797147
+      },
+      "maximum_encoder_vx_mps": 0.003505058502620623,
+      "maximum_encoder_wz_radps": 0.2000000000450604,
+      "command_wz_radps": 0.2,
+      "command_duration_s": 8
+    },
+    "evidence": {
+      "path": "test-results/t3-runtime-TiSy4OGe/rotation-result.json",
+      "sha256": "475b7b2a9fa1f6ff3dda84494aed3f8c65f7a5338fe7bcefa42c0930774174ff"
+    }
+  },
+  "latest_build": {
+    "path": "test-results/t3-build-y1iXPyWC",
+    "records": 73,
+    "actual_cases": 63,
+    "ctest_wrappers": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "limits": [
+    "Single high commissioning obstacle; low-rock 3D detection is not validated by this acceptance.",
+    "Yaw-only sampled envelope check; gaps up to 8.7 s, not continuous collision proof.",
+    "Physics constants are SCENARIO; rocker-bogie, steering and terrain-contact calibration remain open.",
+    "Gazebo required bounded shutdown; phase passed and clean process shutdown are separate.",
+    "RPP run logged watchdog failure during shutdown; it is comparison evidence, not a safety claim.",
+    "New RViz visual acceptance is open: COPY MODE reappeared and the CUA capture returned the wrong surface."
+  ]
+}

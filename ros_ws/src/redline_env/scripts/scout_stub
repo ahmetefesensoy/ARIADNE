@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+"""scout_stub entry point (SIMULATED scout, D015). Launch files run it with the REDLINE venv Python (D009)."""
+from redline_env.scout_stub import main
+
+main()

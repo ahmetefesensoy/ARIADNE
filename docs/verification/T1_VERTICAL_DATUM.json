@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "verification_scope": "product_metadata_declarations_and_artifact_linkage",
+  "observed_at_utc": "2026-11-14T10:34:19.159595+00:00",
+  "evidence_paths_relative_to": "docs/verification",
+  "http_observations_path": "source-metadata/http-observations.json",
+  "status": "metadata_verified",
+  "global_limits": {
+    "absolute_terrain_accuracy_verified": false,
+    "independent_sigma_verified": false,
+    "vertical_realization_transform_verified": false,
+    "source_pixel_equality_verified": false,
+    "full_file_sha256_computed": false,
+    "acquisition_times_asserted": false
+  },
+  "products": {
+    "MSL_Gale_DEM_Mosaic_1m_v3": {
+      "product_id": "MSL_Gale_DEM_Mosaic_1m_v3",
+      "target": "Mars",
+      "archive_status": "ARCHIVE",
+      "source_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+      "catalog_url": "https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m",
+      "catalog_edition": "version 3",
+      "vertical_datum": "MOLA",
+      "units": "m",
+      "declared_units": "Meters",
+      "declaration_status": "metadata_verified",
+      "realization_status": "declared_not_realization_verified",
+      "vertical_realization": null,
+      "vertical_realization_limit": "The exact areoid realization/version, gravity model, and transformation grid are not specified in the product metadata.",
+      "evidence": [
+        {
+          "role": "vertical_datum_declaration",
+          "path": "source-metadata/gale-v3-fgdc.xml",
+          "sha256": "63672068718403653375a817f2cefe40f24901540ddb45ac9963bfccb59f3993",
+          "size_bytes": 13786,
+          "source_url": "https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m.xml",
+          "observed_at_utc": "2026-11-14T10:34:17.877821+00:00",
+          "http_status": 200,
+          "selectors": {
+            "vertical_datum": "/metadata/spref/vertdef/altdatum",
+            "units": "/metadata/spref/vertdef/altunits"
+          },
+          "observed_values": {
+            "vertical_datum": "MOLA",
+            "units": "Meters"
+          }
+        },
+        {
+          "role": "source_product_and_horizontal_metadata",
+          "path": "source-metadata/gale-v3-pds3.lbl",
+          "sha256": "52eaf7a3f5c03812e0e6f3d5305495a329cb64eea65e161b0a6204a8092a9a16",
+          "size_bytes": 2188,
+          "source_url": "https://astrogeology.usgs.gov/ckan/dataset/b3d63877-8544-49bb-b0f3-532cf2c648d1/resource/cd140a94-1e66-46e0-8d5a-d8f0e4128b7e/download/msl_gale_dem_mosaic_1m_v3_pds3.lbl",
+          "observed_at_utc": "2026-11-14T10:34:17.937338+00:00",
+          "http_status": 200
+        },
+        {
+          "role": "source_product_and_horizontal_metadata",
+          "path": "source-metadata/gale-v3-isis3.lbl",
+          "sha256": "dd55ca3c5256ea7384c06b87279ce2ee8d08ce38cf69eda5dc57af3f11aae2cc",
+          "size_bytes": 1391,
+          "source_url": "https://astrogeology.usgs.gov/ckan/dataset/b3d63877-8544-49bb-b0f3-532cf2c648d1/resource/d1a8afb0-3a48-4dcb-92a8-6c5794bb662f/download/msl_gale_dem_mosaic_1m_v3.lbl",
+          "observed_at_utc": "2026-11-14T10:34:17.895328+00:00",
+          "http_status": 200
+        },
+        {
+          "role": "source_grid_and_pixel_interpretation",
+          "path": "source-metadata/gale-v3-source.vrt",
+          "sha256": "b4bea2368d651e01bb041301a2ca45198d121e7f4d1417ab51d8c3c5584fd392",
+          "size_bytes": 1799,
+          "source_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.vrt",
+          "observed_at_utc": "2026-11-14T10:34:18.040087+00:00",
+          "http_status": 200
+        },
+        {
+          "role": "publisher_supplied_checksum_only",
+          "path": "source-metadata/gale-v3-source.md5",
+          "sha256": "d0a70c53809078b0b40475600261ce984eef5723b8a71cb8af193382c192d863",
+          "size_bytes": 64,
+          "source_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif.md5",
+          "observed_at_utc": "2026-11-14T10:34:18.035353+00:00",
+          "http_status": 200,
+          "publisher_claimed_tiff_md5": "bc4cbabf8b06d24f3b25400f0468933b",
+          "tiff_md5_recomputed": false
+        }
+      ],
+      "source_linkage": {
+        "requested_catalog_download_url": "https://planetarymaps.usgs.gov/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+        "observed_final_url": "https://asc-pds-services.s3.us-west-2.amazonaws.com/mosaic/Mars/MSL/MSL_Gale_DEM_Mosaic_1m_v3.tif",
+        "http_observation_index": 7,
+        "source_file_size_bytes": 3868256546,
+        "etag": "746836824e520f8f0a7fb3987bdef0ff-462",
+        "etag_is_full_file_hash": false,
+        "method": "HTTP GET Range bytes=0-63 followed redirect from the official catalog download link to the fetched S3 object."
+      },
+      "warnings": [
+        "The detached historical PDS3/ISIS3 labels describe a raw BandSequential pointer at byte 919904; use the actual LZW TIFF driver for pixels.",
+        "A local H0 is a separate explicit scenario reference in the same source elevation units.",
+        "MOLA declaration does not establish a 10 cm absolute accuracy or independent uncertainty."
+      ]
+    },
+    "DTEEC_019698_1750_019988_1750_U01": {
+      "product_id": "DTEEC_019698_1750_019988_1750_U01",
+      "target": "Mars",
+      "archive_status": "ARCHIVE",
+      "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.tif",
+      "original_source_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+      "catalog_url": "https://stac.astrogeology.usgs.gov/api/collections/mro_hirise_socet_dtms/items/DTEEC_019698_1750_019988_1750_U01",
+      "original_dataset_id": "MRO-M-HIRISE-5-DTM-V1.0",
+      "original_product_version": "1.0",
+      "source_observation_ids": [
+        "ESP_019698_1750",
+        "ESP_019988_1750"
+      ],
+      "vertical_datum": "Mars 2000 Datum (martian equipotential surface)",
+      "units": "m",
+      "declared_units": "meters",
+      "declaration_status": "metadata_verified_for_original_IMG",
+      "realization_status": "declared_not_realization_verified",
+      "vertical_definition_reference": "Smith et al. (2001), as stated by the original PDS IMAGE/NOTE.",
+      "vertical_realization_transform_verified": false,
+      "declaration_applies_to": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+      "ard_transfer_status": "source_product_linked_by_USGS_provenance; numerical_elevation_preservation_not_independently_verified",
+      "evidence": [
+        {
+          "role": "original_product_vertical_datum_declaration",
+          "path": "source-metadata/hirise-DTEEC_019698_1750_019988_1750_U01-label-prefix16384.lbl",
+          "sha256": "e85b8a680648dca524a50432264fcb2fb57ca9be4715bfad1ab28a9cbf1a8590",
+          "size_bytes": 16384,
+          "source_url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_019600_019699/ESP_019698_1750_ESP_019988_1750/DTEEC_019698_1750_019988_1750_U01.IMG",
+          "observed_at_utc": "2026-11-14T10:34:18.727397+00:00",
+          "http_status": 206,
+          "http_range": "bytes=0-16383",
+          "partial_artifact": true,
+          "complete_IMG_downloaded": false,
+          "selector": "PDS3 OBJECT=IMAGE / NOTE",
+          "scale": 1,
+          "offset": 0
+        },
+        {
+          "role": "USGS_ARD_derivation_provenance",
+          "path": "source-metadata/hirise-DTEEC_019698_1750_019988_1750_U01-provenance.txt",
+          "sha256": "29875aad7e9accfd0604493d526503444bfb282cad8780f3c2015c28aa451dc5",
+          "size_bytes": 4036,
+          "source_url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_019698_1750_ESP_019988_1750/provenance.txt",
+          "observed_at_utc": "2026-11-14T10:34:18.612822+00:00",
+          "http_status": 200,
+          "source_product_id": "DTEEC_019698_1750_019988_1750_U01",
+          "resampling": "cubic",
+          "target_horizontal_crs": "IAU_2015:49910"
+        }
+      ],
+      "warnings": [
+        "The published provenance includes UInt16 output options while the observed ARD TIFF is Float32. Numerical identity is not established by this metadata record.",
+        "The original IMG and ARD TIFF central meridians differ (137.38 versus 0 degrees); transformations must use each artifact's own metadata.",
+        "No acquisition date is inferred from HTTP Last-Modified, STAC datetime, or label publication timing.",
+        "BXW valid-mask results are outside the scope of this metadata declaration record."
+      ]
+    }
+  }
+}

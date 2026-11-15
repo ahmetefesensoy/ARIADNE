@@ -1,0 +1,271 @@
+{
+  "schema": "redline.t4.acceptance.v1",
+  "created_at_utc": "2026-11-14T17:45:26.084946+00:00",
+  "milestone": "T4",
+  "complete_scope": "Spec section18 T4: fresh C++ bridge, imported terrain, coordinate automation and actual Unreal rover proxy at ROS-derived map pose",
+  "milestone_complete": true,
+  "current_source_matches_built_inputs": true,
+  "engine": "5.8.4-58902052+++UE5+Release-5.8",
+  "automation": {
+    "succeeded": 9,
+    "failed": 0,
+    "warnings": 0,
+    "not_run": 0,
+    "report_created_on_engine_utc": "2026.11.14-17.43.35"
+  },
+  "terrain": {
+    "status": "DERIVED",
+    "meshes": 17,
+    "triangle_total": 3003000,
+    "native_complex_collision_checks": [
+      {
+        "id": "P1",
+        "blocking_hit": true,
+        "map_xy_m": [
+          -308.7,
+          -118.30000000000001
+        ],
+        "dem_z_m": -3666.80001953125,
+        "trace_z_m": -3666.8047346353605,
+        "error_m": 0.004715104110346147,
+        "passed": true
+      },
+      {
+        "id": "P2",
+        "blocking_hit": true,
+        "map_xy_m": [
+          31.100000000000023,
+          216.30000000000007
+        ],
+        "dem_z_m": -3714.1953222656252,
+        "trace_z_m": -3714.173152042532,
+        "error_m": 0.022170223093326058,
+        "passed": true
+      },
+      {
+        "id": "P3",
+        "blocking_hit": true,
+        "map_xy_m": [
+          317.9,
+          -230.7
+        ],
+        "dem_z_m": -3563.02880859375,
+        "trace_z_m": -3563.0483060105325,
+        "error_m": 0.019497416782542132,
+        "passed": true
+      }
+    ],
+    "max_import_dimension_error_cm": 0.03125,
+    "source_policy": "Every technical terrain mesh reimported from the SHA-recorded FBX; no cached-UAsset extent-only attribution"
+  },
+  "live_pose": {
+    "created_at_utc": "2026-11-14T17:44:04.437595+00:00",
+    "passed": true,
+    "scope": "actual UE actor location/quaternion vs independently composed ROS TF and odometry, exact source stamps",
+    "matched_samples": 72,
+    "physics_stamp_range_s": [
+      9.64,
+      73.44
+    ],
+    "max_position_error_m": 6.495640703928252e-11,
+    "max_rotation_error_rad": 1.5190416499823289e-06,
+    "max_logged_map_error_m": 3.91040868762258e-10,
+    "map_from_odom": {
+      "translation": {
+        "x": 145.0,
+        "y": -289.0,
+        "z": -3598.0761620501676
+      },
+      "rotation": {
+        "x": -0.0,
+        "y": 0.0,
+        "z": 0.7071067811865476,
+        "w": -0.7071067811865475
+      }
+    },
+    "feed_sha256": "1ddb929d5edc973d5873bbc8b470cbe7dc392e82853b30050cf50c0bf2a66229",
+    "poses_sha256": "5e4d9937e14d333c128ef8b3f20938ca29ccfe8d91b6092fbf98185e2302effb",
+    "limits": [
+      "Estimated ROS pose is compared; not independent rover localization truth or photorealistic scene acceptance.",
+      "Technical UE presentation actor has physics/collision disabled."
+    ]
+  },
+  "offline_actor_replay": {
+    "created_at_utc": "2026-11-14T17:44:41.739969+00:00",
+    "passed": true,
+    "scope": "actual UE actor location/quaternion vs independently composed ROS TF and odometry, exact source stamps",
+    "matched_samples": 65,
+    "physics_stamp_range_s": [
+      108.2,
+      122.92
+    ],
+    "max_position_error_m": 6.2585131810883e-12,
+    "max_rotation_error_rad": 1.2776822513476837e-06,
+    "max_logged_map_error_m": 3.198285452926274e-10,
+    "map_from_odom": {
+      "translation": {
+        "x": 145.0,
+        "y": -289.0,
+        "z": -3598.0761620501676
+      },
+      "rotation": {
+        "x": -0.0,
+        "y": 0.0,
+        "z": 0.7071067811865476,
+        "w": -0.7071067811865475
+      }
+    },
+    "feed_sha256": "99bd343ac51e90084ffbb5ea12f42819884f9abaf6c6b9ef6618fbbfe96858a3",
+    "poses_sha256": "06a2e79af82d7ae135625614be618783f9f11349073e58fc9a61d0446cb02d20",
+    "limits": [
+      "Estimated ROS pose is compared; not independent rover localization truth or photorealistic scene acceptance.",
+      "Technical UE presentation actor has physics/collision disabled."
+    ]
+  },
+  "live_ros_runtime": "test-results/t3-runtime-5RZwQquS; full stationary ROS/Gazebo/Nav2 graph, no T4 motion commands",
+  "static_snapshot_invalidation": "A conflicting or malformed status freezes the UE actor for this connection; later valid history cannot clear the latch. Tested in real isolated ROS and UE frame guard.",
+  "transport_capture": {
+    "topic_counts": {
+      "/rover_1/odom": 649,
+      "/redline/bridge/tf_static_snapshot": 1,
+      "/redline/bridge/tf_static_snapshot_status": 1,
+      "/clock": 648
+    },
+    "sent_operations": [
+      "subscribe",
+      "subscribe",
+      "subscribe",
+      "subscribe",
+      "unsubscribe",
+      "unsubscribe",
+      "unsubscribe",
+      "unsubscribe"
+    ]
+  },
+  "reconnect_mock_events": [
+    {
+      "event": "listening",
+      "elapsed_sec": 0.02231654599995636
+    },
+    {
+      "event": "connected",
+      "elapsed_sec": 21.925715129999958,
+      "connection": 1
+    },
+    {
+      "event": "outage_begin",
+      "elapsed_sec": 26.943311172999984
+    },
+    {
+      "event": "disconnected",
+      "elapsed_sec": 26.94413938499997,
+      "connection": 1
+    },
+    {
+      "event": "outage_end",
+      "elapsed_sec": 29.94759541799999
+    },
+    {
+      "event": "connected",
+      "elapsed_sec": 30.57728691799997,
+      "connection": 2
+    },
+    {
+      "event": "disconnected",
+      "elapsed_sec": 30.703857390999985,
+      "connection": 2
+    },
+    {
+      "event": "stopped",
+      "elapsed_sec": 100.09224016699994
+    }
+  ],
+  "python_checks": {
+    "transport_and_pose_unit_cases": 3,
+    "isolated_real_ros_static_snapshot_case": 1,
+    "static_snapshot_test_domain": 84
+  },
+  "evidence": [
+    {
+      "path": "test-results/t4-build-source.json",
+      "sha256": "24282e4ecad660d3c79b0c87fd7a86e061a73f60060d3adb5334c7da5d5e0c90"
+    },
+    {
+      "path": "test-results/t4-automation-guard9093/index.json",
+      "sha256": "95afd266e7eeeac2f6962eb74a0dfc2ccf35342f05cecdcad7316e1a0c77bfe2"
+    },
+    {
+      "path": "test-results/t4-guard-mock9093.json",
+      "sha256": "203075b3a32065027103736c1f0d674bb22ff23a9296708dfd5d307fdff40aa9"
+    },
+    {
+      "path": "test-results/t4-terrain-import.json",
+      "sha256": "d67062880487850d4e0f5ba5421b31be8f804e95abf118e6e58a815fb71c0c72"
+    },
+    {
+      "path": "test-results/t4-content-artifacts.json",
+      "sha256": "8ca70e73f958dac257d57ac18fe06ffa36e21757356583b030d86b710e6c5791"
+    },
+    {
+      "path": "test-results/t4-final-live-capture.json",
+      "sha256": "68674f7e431e446313e3563ccc27db513b79935debadaed590ab5562df44b224"
+    },
+    {
+      "path": "test-results/t4-final-live-feed.jsonl",
+      "sha256": "1ddb929d5edc973d5873bbc8b470cbe7dc392e82853b30050cf50c0bf2a66229"
+    },
+    {
+      "path": "test-results/t4-final-live-pose.csv",
+      "sha256": "5e4d9937e14d333c128ef8b3f20938ca29ccfe8d91b6092fbf98185e2302effb"
+    },
+    {
+      "path": "test-results/t4-final-live-verification.json",
+      "sha256": "8fd24f3f08b57de2613464cd836cfbd35e99feca6c8408651ed93dd209b48680"
+    },
+    {
+      "path": "test-results/t4-final-offline-pose.csv",
+      "sha256": "06a2e79af82d7ae135625614be618783f9f11349073e58fc9a61d0446cb02d20"
+    },
+    {
+      "path": "test-results/t4-live-feed7.jsonl",
+      "sha256": "99bd343ac51e90084ffbb5ea12f42819884f9abaf6c6b9ef6618fbbfe96858a3"
+    },
+    {
+      "path": "test-results/t4-final-offline-verification.json",
+      "sha256": "f4d00edd1e8ddabb8f245353b527b553c388fe1a9abe5f39b6a46ae336a26d8c"
+    },
+    {
+      "path": "test-results/t4-direct-static-inspection.json",
+      "sha256": "a2ab152b600b8ffc148e117764164bc1efdc6a4f5f0323c0b14b8fd7adb42761"
+    },
+    {
+      "path": "test-results/t4-python-final.xml",
+      "sha256": "dd919650d78a43ca0f98f4f1a3629a1ad3fff482c27209d3adfefb2f1ecef707"
+    },
+    {
+      "path": "scripts/t4_static_tf_snapshot.py",
+      "sha256": "0f982ff16a280c04e7958bd2f084ff20635d9b5cce6791823d96c70af223fed1"
+    },
+    {
+      "path": "scripts/t4_bridge_runtime.py",
+      "sha256": "ea01ed968aa18d1d4da14fdb72ec455ec8168638f762ab2baaeda6981fc254eb"
+    },
+    {
+      "path": "scripts/t4_capture_feed.py",
+      "sha256": "506b51944a633b698ebf58bb23d59cd2d104295af25c1836e932580482050ce1"
+    },
+    {
+      "path": "scripts/t4_verify_pose.py",
+      "sha256": "fcae2ad1e3687c50bd67c7a1fb09ed3ce68824b75dd31fb6afa5d2bbe5ddb2b9"
+    }
+  ],
+  "limits": [
+    "Actual runtime actor tested under NullRHI; final visual design, rover mesh/rig and rendered UI are not included.",
+    "T4 live acceptance is a stationary pose comparison against ROS estimation, not independent localization truth or navigation acceptance.",
+    "Imported terrain is query-only; robot physics authority remains Gazebo/ROS.",
+    "Live and offline UE clients stopped at bounded test end; process shutdown is not separately certified.",
+    "WSL localhost forwarding failed in this session; local WSL private IP was verified. Resolve anew after WSL restart.",
+    "Static TF snapshot adapter is session-scoped; restart it with a new simulation run, and never use it as a second /tf publisher.",
+    "T5 overlays/EV1, T6 mission events, cooked packaging and full performance profiling are separate milestones."
+  ]
+}

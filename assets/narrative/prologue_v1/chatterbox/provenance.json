@@ -1,0 +1,367 @@
+{
+  "schema": "redline.synthetic-voice.v1",
+  "status": "SCENARIO",
+  "synthetic_audio": true,
+  "created_at_utc": "2026-11-15T11:05:00.948098+00:00",
+  "language": "tr",
+  "tool": "Chatterbox Multilingual V3",
+  "tool_license": "MIT",
+  "tool_source": "https://github.com/resemble-ai/chatterbox",
+  "source_revision": "ab55923c27757c90cfcc407baa57dc25a7d25217",
+  "model": {
+    "repository": "ResembleAI/chatterbox",
+    "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+    "license": "mit",
+    "source_url": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+    "files": [
+      {
+        "name": "grapheme_mtl_merged_expanded_v1.json",
+        "size_bytes": 69989,
+        "sha256": "69632f47220a788a52ce2661d096453c5655e9bf25289d89a8d832c46ee07dbf",
+        "expected_lfs_sha256": null,
+        "elapsed_s": 0.57,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/grapheme_mtl_merged_expanded_v1.json"
+      },
+      {
+        "name": "conds.pt",
+        "size_bytes": 107374,
+        "sha256": "6552d70568833628ba019c6b03459e77fe71ca197d5c560cef9411bee9d87f4e",
+        "expected_lfs_sha256": "6552d70568833628ba019c6b03459e77fe71ca197d5c560cef9411bee9d87f4e",
+        "elapsed_s": 0.92,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/conds.pt"
+      },
+      {
+        "name": "Cangjie5_TC.json",
+        "size_bytes": 1920163,
+        "sha256": "7073fd9de919443ae88e0bd2449917a65fe54898a4413ed1edcc4b67f28bce8c",
+        "expected_lfs_sha256": null,
+        "elapsed_s": 1.74,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/Cangjie5_TC.json"
+      },
+      {
+        "name": "ve.pt",
+        "size_bytes": 5698626,
+        "sha256": "4b16d836bc598509860f6fa068165a8bb5e9ac84f05582dfcf278a5a372879f1",
+        "expected_lfs_sha256": "4b16d836bc598509860f6fa068165a8bb5e9ac84f05582dfcf278a5a372879f1",
+        "elapsed_s": 2.45,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/ve.pt"
+      },
+      {
+        "name": "s3gen.pt",
+        "size_bytes": 1057165844,
+        "sha256": "9b9ff07e60b20c136e2b1b3d7563a24604e8d2c4c267888d1ee929dd0151d2a3",
+        "expected_lfs_sha256": "9b9ff07e60b20c136e2b1b3d7563a24604e8d2c4c267888d1ee929dd0151d2a3",
+        "elapsed_s": 220.13,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/s3gen.pt"
+      },
+      {
+        "name": "t3_mtl23ls_v3.safetensors",
+        "size_bytes": 2143989928,
+        "sha256": "5abca8321ede76f8e61f1cc0d19aea6c946b28871017ce8726f8a69203f05953",
+        "expected_lfs_sha256": "5abca8321ede76f8e61f1cc0d19aea6c946b28871017ce8726f8a69203f05953",
+        "elapsed_s": 399.34,
+        "url": "https://huggingface.co/ResembleAI/chatterbox/resolve/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/t3_mtl23ls_v3.safetensors"
+      }
+    ]
+  },
+  "voice": "Bundled conds.pt default voice; no user recording or artist voice reference supplied",
+  "reference_audio_supplied": false,
+  "artist_imitation_requested": false,
+  "credits_spent": 0,
+  "input_script_sha256": "e03f06a35d9bd32f8ce017fe64c3ecb216153dcb5ebae54afa2be0a92fa089a6",
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "device": "cuda",
+  "parameters": {
+    "language_id": "tr",
+    "exaggeration": 0.35,
+    "cfg_weight": 0.5,
+    "temperature": 0.75,
+    "seed": 271828
+  },
+  "dependency_override": "Official source pins torch/torchaudio2.6.0 on Python3.12; matching official cu128 2.11.0 wheels used for RTX5080 Blackwell support.",
+  "quality_scope": "Finite audio, duration, RMS, peak and clipping checked. Naturalness/pronunciation require listening review.",
+  "original_voice_hashes": {
+    "landing.wav": "1f46b56d9436aa0b93d631eb5f2d4ec6badd0b20eeb7ceacf1efa3229dd97b6c",
+    "rest.wav": "75334b335c493e35475698ad16b740de2b199834efaf50b765fd8ee07a556037",
+    "data.wav": "2fe0c69d372202b0561c6f1079de91d1f0a1843b9c7cb8963bdd18dd88508e1c",
+    "airlock.wav": "9c81838b388aea74738c473aa2f159983d776767540506431de627dd76dee280",
+    "ready.wav": "d95264985752698d99a7c054fbd24fb9caf6c4e6af1a4ca0951d34d3f06aeaba",
+    "mission_traverse.wav": "4a276299364b06843b63bfbcbc5cb4d3de72d8434c651be27dd49f781d3e0b64",
+    "mission_science.wav": "63dfbc8e4f95759f0ac8843e5d629971c7a1b316c5ff08ce82784b5f9f7bb01f",
+    "mission_return.wav": "6446679f52badea684460ded5b8c4b1aa8d83b0db89c55021b1636e7e5a5b52b",
+    "mission_debrief.wav": "f272991e033b9a817bef7c060b33b4c8cc1b0c759d2e4f360c0d70bd621d6cf6"
+  },
+  "clips": [
+    {
+      "text": "İnişe az kaldı. Biraz sarsılabiliriz. Tamam… temas ettik. Mars'tayız.",
+      "path": "assets/narrative/prologue_v1/chatterbox/landing.wav",
+      "sha256": "fb746188214f449882f1b7a6204ef08ae00f9e9e4c41a5e531b7728dc6209f3e",
+      "elapsed_s": 5.424,
+      "raw_stats": {
+        "duration_s": 4.24,
+        "sample_rate_hz": 24000,
+        "sample_count": 101760,
+        "finite": true,
+        "peak": 0.9904254674911499,
+        "rms": 0.1278013707920356,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.10939465408805031
+      },
+      "gain": 0.8986037104381636,
+      "output_stats": {
+        "duration_s": 4.64,
+        "sample_rate_hz": 24000,
+        "sample_count": 111360,
+        "finite": true,
+        "peak": 0.8900146484375,
+        "rms": 0.10978111506248382,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.18805675287356322
+      },
+      "shot_id": "landing",
+      "planned_shot_duration_s": 16.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Dışarı çıkmadan bir plak dinleyelim. Acelemiz yok. Sonra komutada buluşuruz.",
+      "path": "assets/narrative/prologue_v1/chatterbox/rest.wav",
+      "sha256": "3f93ac9b57df499767c088a18fb448fc8900ac479368f6d3a0c478b99ccd09f8",
+      "elapsed_s": 1.969,
+      "raw_stats": {
+        "duration_s": 4.96,
+        "sample_rate_hz": 24000,
+        "sample_count": 119040,
+        "finite": true,
+        "peak": 1.0215386152267456,
+        "rms": 0.12440202475923512,
+        "clipping_samples": 1,
+        "quiet_sample_ratio": 0.15571236559139784
+      },
+      "gain": 0.8712348086836162,
+      "output_stats": {
+        "duration_s": 5.36,
+        "sample_rate_hz": 24000,
+        "sample_count": 128640,
+        "finite": true,
+        "peak": 0.8900146484375,
+        "rms": 0.10426083931655078,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.22359297263681593
+      },
+      "shot_id": "rest",
+      "planned_shot_duration_s": 12.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Bugün sırtın öbür tarafına bakacağız. Önce drone gitsin. Bu çizgiyi gözden kaçırma; eve dönecek vaktimiz kalsın.",
+      "path": "assets/narrative/prologue_v1/chatterbox/data.wav",
+      "sha256": "9ab541ece43ce8cf741a83f323b9758cab5e96eeb690c96e23bcee2169fab6db",
+      "elapsed_s": 3.067,
+      "raw_stats": {
+        "duration_s": 8.16,
+        "sample_rate_hz": 24000,
+        "sample_count": 195840,
+        "finite": true,
+        "peak": 1.02256441116333,
+        "rms": 0.13425189464908713,
+        "clipping_samples": 1,
+        "quiet_sample_ratio": 0.06728962418300653
+      },
+      "gain": 0.8703608205838917,
+      "output_stats": {
+        "duration_s": 8.56,
+        "sample_rate_hz": 24000,
+        "sample_count": 205440,
+        "finite": true,
+        "peak": 0.8900146484375,
+        "rms": 0.11408472743267081,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.11314739096573209
+      },
+      "shot_id": "data",
+      "planned_shot_duration_s": 13.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Kask kilidin tamam. Basınç düşüyor… Dış kapı hazır. Hazır olunca çıkabiliriz.",
+      "path": "assets/narrative/prologue_v1/chatterbox/airlock.wav",
+      "sha256": "4ce4993e00336500cfcfd917734b7fd40b9dacb3f4f7dc1bdb677296e2acbd69",
+      "elapsed_s": 1.655,
+      "raw_stats": {
+        "duration_s": 4.2,
+        "sample_rate_hz": 24000,
+        "sample_count": 100800,
+        "finite": true,
+        "peak": 0.9410579800605774,
+        "rms": 0.13055353690366453,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.11776785714285715
+      },
+      "gain": 0.9457440655704437,
+      "output_stats": {
+        "duration_s": 4.6,
+        "sample_rate_hz": 24000,
+        "sample_count": 110400,
+        "finite": true,
+        "peak": 0.8900146484375,
+        "rms": 0.11797994845848633,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.19519021739130435
+      },
+      "shot_id": "airlock",
+      "planned_shot_duration_s": 12.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Telsiz açık. Konumun geliyor. Hadi başlayalım; dönüş payını birlikte izleyeceğiz.",
+      "path": "assets/narrative/prologue_v1/chatterbox/ready.wav",
+      "sha256": "a57feb5fe07420498e860c6db792527ca2feb0a5823ec3f90b2b6d98a82635dd",
+      "elapsed_s": 1.915,
+      "raw_stats": {
+        "duration_s": 3.88,
+        "sample_rate_hz": 24000,
+        "sample_count": 93120,
+        "finite": true,
+        "peak": 0.9954845309257507,
+        "rms": 0.13938378171860233,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.12444158075601375
+      },
+      "gain": 0.8940369964085174,
+      "output_stats": {
+        "duration_s": 4.28,
+        "sample_rate_hz": 24000,
+        "sample_count": 102720,
+        "finite": true,
+        "peak": 0.8900146484375,
+        "rms": 0.11864836511960052,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.20830412772585669
+      },
+      "shot_id": "ready",
+      "planned_shot_duration_s": 9.0,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Görev başladı. İşaretli bağlam istasyonuna ilerle. Dönüş payını kontrol et. Her bilinmeyen, zamanından bir parçadır.",
+      "path": "assets/narrative/prologue_v1/chatterbox/mission_traverse.wav",
+      "sha256": "f0890e8367d1deed5df1aa003a6de91b93630d88552948cc5f97c35df7c6bf94",
+      "elapsed_s": 2.67,
+      "raw_stats": {
+        "duration_s": 7.28,
+        "sample_rate_hz": 24000,
+        "sample_count": 174720,
+        "finite": true,
+        "peak": 0.9615660905838013,
+        "rms": 0.1420209757805252,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.06323260073260073
+      },
+      "gain": 0.9255734043820629,
+      "output_stats": {
+        "duration_s": 7.68,
+        "sample_rate_hz": 24000,
+        "sample_count": 184320,
+        "finite": true,
+        "peak": 0.889984130859375,
+        "rms": 0.127981906835882,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.11348198784722222
+      },
+      "shot_id": "mission_traverse",
+      "planned_shot_duration_s": 9,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "İstasyondayız. Önce çevreyi incele. Sırtı ve çukuru birlikte oku. Kaya rengi tek başına bir mineral ölçümü değildir.",
+      "path": "assets/narrative/prologue_v1/chatterbox/mission_science.wav",
+      "sha256": "ece964b312d8f634b8e76775bbccb44352c98964e98983719518d80b7f27d4bd",
+      "elapsed_s": 2.652,
+      "raw_stats": {
+        "duration_s": 6.96,
+        "sample_rate_hz": 24000,
+        "sample_count": 167040,
+        "finite": true,
+        "peak": 0.9068861603736877,
+        "rms": 0.1432951630061,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.11358357279693486
+      },
+      "gain": 0.9813800660859907,
+      "output_stats": {
+        "duration_s": 7.36,
+        "sample_rate_hz": 24000,
+        "sample_count": 176640,
+        "finite": true,
+        "peak": 0.8900146484375,
+        "rms": 0.13675223069218997,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.1625679347826087
+      },
+      "shot_id": "mission_science",
+      "planned_shot_duration_s": 9,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "İnceleme tamam. Şimdi habitata dönüyoruz. Panodaki dönüş payını izle ve işaretli girişe yaklaş.",
+      "path": "assets/narrative/prologue_v1/chatterbox/mission_return.wav",
+      "sha256": "d0b46af2b0bf7fd14393afa73eceb8bf5fe5bd45183e40692f8eff3f487c1884",
+      "elapsed_s": 2.063,
+      "raw_stats": {
+        "duration_s": 5.44,
+        "sample_rate_hz": 24000,
+        "sample_count": 130560,
+        "finite": true,
+        "peak": 0.9898876547813416,
+        "rms": 0.1349089073951161,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.13326439950980393
+      },
+      "gain": 0.8990919279588289,
+      "output_stats": {
+        "duration_s": 5.84,
+        "sample_rate_hz": 24000,
+        "sample_count": 140160,
+        "finite": true,
+        "peak": 0.8900146484375,
+        "rms": 0.11706790461828191,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.19545519406392695
+      },
+      "shot_id": "mission_return",
+      "planned_shot_duration_s": 8,
+      "fits_planned_shot": true
+    },
+    {
+      "text": "Habitata döndün. Komuta odasında rotanı ve kalan kaynaklarını inceleyebilirsin. Bir sonraki çıkış, yeni bir soruyla başlayacak.",
+      "path": "assets/narrative/prologue_v1/chatterbox/mission_debrief.wav",
+      "sha256": "dc9b68367b76c60af9064752b6a4742bf13574a69b1e4156b5613807ecc654e1",
+      "elapsed_s": 2.548,
+      "raw_stats": {
+        "duration_s": 6.68,
+        "sample_rate_hz": 24000,
+        "sample_count": 160320,
+        "finite": true,
+        "peak": 0.7630597352981567,
+        "rms": 0.13617034229652294,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.13303393213572853
+      },
+      "gain": 1.0,
+      "output_stats": {
+        "duration_s": 7.08,
+        "sample_rate_hz": 24000,
+        "sample_count": 169920,
+        "finite": true,
+        "peak": 0.7630615234375,
+        "rms": 0.13226779811874628,
+        "clipping_samples": 0,
+        "quiet_sample_ratio": 0.1819267890772128
+      },
+      "shot_id": "mission_debrief",
+      "planned_shot_duration_s": 9,
+      "fits_planned_shot": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "redline.tablet.asset.v1",
+  "source_task_id": "2ba0f9c0-286a-4899-8487-f1ca42345949",
+  "status": "SCENARIO",
+  "source": "tripo-out\\realistic-rugged-handheld-eva-sc-2ba0f9c0\\model.glb",
+  "source_sha256": "aa336f3358a301051f759f79ceccfae3f8ce69df485982d10ad3a160768b576c",
+  "source_bounds": [
+    0.4035007059574127,
+    1.0,
+    0.8587823510169983
+  ],
+  "source_to_canonical_matrix": [
+    [
+      0.0,
+      0.3199999928474426,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.2561766803264618,
+      0.0
+    ],
+    [
+      0.04956620931625366,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "dimensions_m": [
+    0.3199666738510132,
+    0.21999475359916687,
+    0.019976601004600525
+  ],
+  "triangles": 79999,
+  "uv_layers": 1,
+  "textures": [
+    {
+      "path": "textures/T_00_Color_2ba0f9c0_286a_4899_8487_f1ca42345949.jpg",
+      "sha256": "25d12df6b2520b46a7371a6c25436ef2c49b2094dcbcf6fa8a8d8b216bc24cb3",
+      "bytes": 2985517,
+      "source_image": "Color_2ba0f9c0-286a-4899-8487-f1ca42345949",
+      "size_px": [
+        4096,
+        4096
+      ],
+      "colorspace": "sRGB",
+      "method": "original bytes copied"
+    }
+  ],
+  "fbx_sha256": "ebe8073d8372c3926ab457e1b3696bcfb5371054cbddda8b54fa58e27745fb95",
+  "note": "Authored dimensions; generated visual, not real mission hardware. Original model preserved."
+}

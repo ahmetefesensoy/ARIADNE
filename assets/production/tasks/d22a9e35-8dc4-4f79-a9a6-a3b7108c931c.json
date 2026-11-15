@@ -1,0 +1,22 @@
+{
+  "task_id": "d22a9e35-8dc4-4f79-a9a6-a3b7108c931c",
+  "type": "text_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": false,
+    "quad": false,
+    "prompt": "Compact deployable Mars environmental science station, one waist-high sensor box standing on three splayed folding tripod legs, white thermal insulation panels, graphite metal hinges, muted red identification bands without text, short separate upright communication antenna, small radiation detector and weather sensor on top, compact top solar panel. Realistic engineered NASA-inspired field equipment, robust and simple, complete assembled neutral pose, distinct sensor box and separate legs and antenna with visible joints. Single isolated object, no ground, no rocks, no platform, no people, no cables on ground, no letters, no logos.",
+    "texture": false,
+    "export_uv": true,
+    "face_limit": 25000,
+    "model_seed": 14112027,
+    "model_version": "v3.1-20260211",
+    "generate_parts": true,
+    "geometry_quality": "standard",
+    "texture_alignment": "geometry"
+  },
+  "created_at": "2026-11-14T10:48:47.633468Z",
+  "completed_at": "2026-11-14T10:49:31.467814Z",
+  "credits_consumed": 30
+}

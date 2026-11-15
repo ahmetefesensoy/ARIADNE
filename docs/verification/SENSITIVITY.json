@@ -1,0 +1,86 @@
+{
+ "check": "one-at-a-time sensitivity of the storm-mode safe-return area (T12 subset)",
+ "status": "DERIVED terrain, SCENARIO parameters; local sensitivity, not validation",
+ "metric": "km2 of walkable cells with T_eps <= sep limit (base 20 min)",
+ "grid": "data/derived/BXW/planning/bxw_planning_4m_v2.npz",
+ "grid_sha256": "bf2a5f1a1e4796a50a2fe29e0e25c3eeda51c518d26d055a3c2a6920617fabbd",
+ "habitat_xy_m": [
+  290.0,
+  -454.0
+ ],
+ "base_km2": 0.3832,
+ "bars": [
+  {
+   "parameter": "sep_limit_min",
+   "base": 20.0,
+   "low": 15.0,
+   "high": 30.0,
+   "why": "warning-time limit; 20 min in D012, Löwe+2025 report >=30 min warnings",
+   "metric_low": 0.2503,
+   "metric_high": 0.8247,
+   "delta_low": -0.13289999999999996,
+   "delta_high": 0.4415,
+   "swing": 0.5744
+  },
+  {
+   "parameter": "speed_factor_unobserved",
+   "base": 0.7,
+   "low": 0.6,
+   "high": 0.85,
+   "why": "how much slower a crew walks over terrain no robot has seen",
+   "metric_low": 0.3056,
+   "metric_high": 0.5387,
+   "delta_low": -0.0776,
+   "delta_high": 0.15549999999999997,
+   "swing": 0.23309999999999997
+  },
+  {
+   "parameter": "tobler_peak_kmh",
+   "base": 6.0,
+   "low": 5.0,
+   "high": 7.0,
+   "why": "Earth-equivalent peak walking speed +/-1 km/h",
+   "metric_low": 0.2931,
+   "metric_high": 0.4993,
+   "delta_low": -0.09009999999999996,
+   "delta_high": 0.11610000000000004,
+   "swing": 0.2062
+  },
+  {
+   "parameter": "sigma_theta",
+   "base": 0.2,
+   "low": 0.1,
+   "high": 0.3,
+   "why": "relative model-time uncertainty",
+   "metric_low": 0.4786,
+   "metric_high": 0.3224,
+   "delta_low": 0.09540000000000004,
+   "delta_high": -0.060799999999999965,
+   "swing": 0.1562
+  },
+  {
+   "parameter": "slope_max_deg",
+   "base": 25.0,
+   "low": 20.0,
+   "high": 30.0,
+   "why": "suited slope ban",
+   "metric_low": 0.3268,
+   "metric_high": 0.4241,
+   "delta_low": -0.056400000000000006,
+   "delta_high": 0.04089999999999999,
+   "swing": 0.0973
+  },
+  {
+   "parameter": "z_eps",
+   "base": 1.645,
+   "low": 1.282,
+   "high": 2.326,
+   "why": "risk quantile 90% / 99% instead of 95%",
+   "metric_low": 0.4218,
+   "metric_high": 0.3304,
+   "delta_low": 0.03860000000000002,
+   "delta_high": -0.05279999999999996,
+   "swing": 0.09139999999999998
+  }
+ ]
+}

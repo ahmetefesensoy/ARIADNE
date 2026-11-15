@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from redline_env.scout_flight import main
+main()

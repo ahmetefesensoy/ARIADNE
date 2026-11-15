@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "asset_id": "redline_sessiz_yorunge",
+  "asset_status": "AI_GENERATED_SELECTED_FOR_PRESENTATION",
+  "generated_at_utc": "2026-11-14T18:18:41.654181Z",
+  "provider": "Beatra Music Generation Studio",
+  "model": "suno-6",
+  "task_id": "task_mcp_17065155b553b94635083e6cc7bfafea8c33225d",
+  "title": "REDLINE — Sessiz Yörünge",
+  "instrumental": true,
+  "reference_audio": null,
+  "requested_duration_seconds": 60,
+  "duration_fit": null,
+  "prompt": "Instrumental background score for a Mars EVA simulation, Soviet-era space-age orchestral melancholy fused with restrained cinematic electronica. Slow processional pulse, minor-modal harmony, broad low strings, solemn low brass, distant choir-like Mellotron, muted military snare, deep analog bass and sparse radio-static textures. Begin isolated and weightless, rise into noble controlled grandeur, then recede into quiet cosmic loneliness. Leave clear midrange space for mission dialogue, alarms and UI; worn tape warmth, cold vast reverb, loop-friendly ending that returns toward the opening texture.",
+  "model_options": {
+    "suno": {
+      "custom_mode": true,
+      "negative_tags": "no lyrics, no lead vocal, no propaganda anthem, no bright pop, no trap hi-hats, no EDM drop, no sirens, no alarm beeps, no huge trailer hits, no abrupt ending",
+      "style_weight": 0.82,
+      "weirdness_constraint": 0.22
+    }
+  },
+  "billing": {
+    "charged_credits": "360.0000",
+    "refunded_credits": "0.0000",
+    "net_charged_credits": "360.0000"
+  },
+  "clips": [
+    {
+      "take": 1,
+      "file": "redline_sessiz_yorunge_take_01.mp3",
+      "artifact_id": "artifact_01M7DMGTGQHKRPJX815H6BQ01F",
+      "source_url": "https://cdn.beatra.ai/tenants/f4539d05e3c5/generated_output/2026/11/14/artifact_01M7DMGTGQHKRPJX815H6BQ01F.mp3",
+      "mime_type": "audio/mpeg",
+      "duration_seconds": 59.6,
+      "size_bytes": 1391098,
+      "sha256": "17F5240A6B4F437982B5F87571D04C4B1CA69CF5D2D3CFF274881D7C867AE011"
+    },
+    {
+      "take": 2,
+      "file": "redline_sessiz_yorunge_take_02.mp3",
+      "artifact_id": "artifact_01M7DMGVX5VA87RR7B42KCPQQ9",
+      "source_url": "https://cdn.beatra.ai/tenants/f4539d05e3c5/generated_output/2026/11/14/artifact_01M7DMGVX5VA87RR7B42KCPQQ9.mp3",
+      "mime_type": "audio/mpeg",
+      "duration_seconds": 62.4,
+      "size_bytes": 1449826,
+      "sha256": "7D1A5C7BBD172291099F17E3923B64121039504063AC1D6D02EF28FBAD3681EB"
+    }
+  ],
+  "assets_url": "https://console.beatra.ai/assets?focus=task_mcp_17065155b553b94635083e6cc7bfafea8c33225d",
+  "integration": {
+    "selected_takes": [1, 2],
+    "selection": "User selected both takes for different mission sections.",
+    "listening_review": "User selected both; assistant-side auditory mix review remains incomplete.",
+    "loop_verification": "not_verified; runtime looping disabled",
+    "routing": {
+      "take_01": ["BRIEFING", "PRECURSOR", "TRAVERSE", "STATION_SCIENCE", "DEBRIEF"],
+      "take_02": ["CONTINGENCY", "RETURN"]
+    },
+    "unreal_import": {
+      "status": "complete",
+      "engine": "5.8.4-58902052",
+      "imported_at_utc": "2026-11-14T19:11:06Z",
+      "assets": [
+        {
+          "path": "/Game/Audio/Music/SW_REDLINE_SessizYorunge_Exploration",
+          "duration_seconds": 59.62897872924805,
+          "looping": false,
+          "uasset_sha256": "CF6EBEC04867BF01DBD02B40039B95D58103645798E2F1C15B57207210C1EA64"
+        },
+        {
+          "path": "/Game/Audio/Music/SW_REDLINE_SessizYorunge_Crisis",
+          "duration_seconds": 62.41297912597656,
+          "looping": false,
+          "uasset_sha256": "9D5D0ECFD9C1A9EA5B462E7FC564720B186E64CA84F79A987A086CA9A68172A0"
+        }
+      ]
+    },
+    "runtime_verification": {
+      "status": "passed",
+      "report": "test-results/redline-music-automation-v3/index.json",
+      "engine_game_world": true,
+      "audio_device_enabled": true,
+      "playback_muted_for_automation": true,
+      "observed_bed_sequence": ["take_01", "take_02", "take_01"],
+      "full_live_ros_pie_auditory_mix": "not_verified"
+    }
+  }
+}
+

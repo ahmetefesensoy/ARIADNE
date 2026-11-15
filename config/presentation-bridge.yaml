@@ -1,0 +1,7 @@
+# Display-only Gazebo body state. Never remap to /tf or any Nav2/EKF input.
+- ros_topic_name: /redline/presentation/gz_dynamic_poses
+  gz_topic_name: /world/bxw/dynamic_pose/info
+  ros_type_name: tf2_msgs/msg/TFMessage
+  gz_type_name: gz.msgs.Pose_V
+  direction: GZ_TO_ROS
+  qos_profile: SENSOR_DATA

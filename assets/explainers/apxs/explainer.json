@@ -1,0 +1,60 @@
+{
+ "task": "apxs",
+ "status": "SCENARIO presentation",
+ "video": "apxs.mp4",
+ "poster": "poster.png",
+ "fps": 30,
+ "frames": 720,
+ "resolution": [
+  1920,
+  1080
+ ],
+ "captions": {
+  "tr": "captions_tr.srt",
+  "en": "captions_en.srt"
+ },
+ "beats": [
+  {
+   "start_s": 0.0,
+   "end_s": 3.0,
+   "tr": "B1 · APXS ile temas bilimi",
+   "en": "B1 · Contact science with the APXS"
+  },
+  {
+   "start_s": 3.0,
+   "end_s": 7.0,
+   "tr": "Ölçüm kafası kayaya yaklaşır.",
+   "en": "The sensor head comes down to the rock."
+  },
+  {
+   "start_s": 7.0,
+   "end_s": 11.0,
+   "tr": "Küryum-244 kaynakları kayayı alfa parçacığı ve X ışınıyla uyarır.",
+   "en": "Curium-244 sources excite the rock with alpha particles and X-rays."
+  },
+  {
+   "start_s": 11.0,
+   "end_s": 15.0,
+   "tr": "Atomlar kendine özgü X ışınıyla cevap verir; dedektör bunları sayar.",
+   "en": "Each element answers with its own X-rays; the detector counts them."
+  },
+  {
+   "start_s": 15.0,
+   "end_s": 19.0,
+   "tr": "Temas iyileşince hata çubukları küçülür.",
+   "en": "Better contact shrinks the error bars."
+  },
+  {
+   "start_s": 19.0,
+   "end_s": 24.0,
+   "tr": "Gerçek APXS arşivi: 1 saat saymak hatayı yalnız ~%16 azaltır; iyi temas daha çok kazandırır.",
+   "en": "Real APXS archive: counting for an hour cuts the error by only ~16%; good contact gains more."
+  }
+ ],
+ "assets": [
+  "assets/incoming/tool_apxs",
+  "assets/incoming/rock_09",
+  "data/derived/instruments/apxs_precision_v1.json"
+ ],
+ "note": "Shows how the instrument works; numbers are the SCENARIO model's story, not a measurement."
+}

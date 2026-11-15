@@ -1,0 +1,23 @@
+{
+  "task_id": "7583fea2-05ef-4340-8cc9-5b5a756d3eb4",
+  "type": "text_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": true,
+    "prompt": "Photorealistic full-body adult human astronaut, 1.85m tall, believable anatomy and natural proportions. Neutral standing A-pose, arms slightly separated from torso, feet shoulder-width apart, both gloved hands visible with five fingers. Helmet with raised visor revealing a realistic human face: natural skin, subtle pores, clear eyes, eyelids, nose, lips and calm expression. Contemporary Mars EVA suit in off-white woven fabric with muted red accents, graphite flexible joints, reinforced knees and elbows, layered seams, stitching, fabric folds and realistic pressure-suit bulk. Detailed locking neck ring, metal wrist couplings, chest life-support controls, oxygen connectors, short secured hoses and compact backpack. Thick articulated gloves and boots with treaded soles. Restrained wear and fine reddish dust around boots. Realistic fabric, rubber, painted metal and skin PBR materials. Complete coherent geometry from every angle, isolated single character, no ground or scenery.",
+    "texture": true,
+    "auto_size": true,
+    "export_uv": true,
+    "face_limit": 200000,
+    "model_seed": 1401126,
+    "model_version": "v3.1-20260211",
+    "negative_prompt": "cartoon, anime, toy, chibi, robot, mannequin, plastic skin, distorted face, opaque visor hiding face, extra limbs, missing fingers, fused hands, duplicate person, cropped feet, pedestal, scenery, text, logos, weapons",
+    "texture_quality": "detailed",
+    "geometry_quality": "detailed",
+    "texture_alignment": "geometry"
+  },
+  "created_at": "2026-11-14T07:46:30.551793Z",
+  "completed_at": "2026-11-14T07:48:27.257376Z",
+  "credits_consumed": 50
+}
